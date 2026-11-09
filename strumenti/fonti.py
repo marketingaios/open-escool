@@ -14,7 +14,7 @@ import urllib.error
 import urllib.request
 from datetime import date
 
-from comune import cartella, chiave, leggi, aiuto
+from comune import cartella, chiave, leggi, aiuto, tr
 
 
 def nome_file(url):
@@ -26,7 +26,12 @@ def nome_file(url):
 def salva(slug, urls):
     k = chiave("TAVILY_API_KEY", obbligatoria=False)
     if not k:
-        sys.exit("no hay TAVILY_API_KEY: lee las páginas con la búsqueda web del asistente y guárdalas en lavoro/fonti/ (formato arriba)")
+        sys.exit(tr("TAVILY_API_KEY non c'è: leggi le pagine con la ricerca web dell'assistente e salvale in lavoro/fonti/ "
+                    "(formato sopra)",
+                    "no hay TAVILY_API_KEY: lee las páginas con la búsqueda web del asistente y guárdalas en lavoro/fonti/ "
+                    "(formato arriba)",
+                    "no TAVILY_API_KEY: read the pages with the assistant's web search and save them in lavoro/fonti/ "
+                    "(format above)"))
     out = cartella(slug) / "lavoro" / "fonti"
     out.mkdir(parents=True, exist_ok=True)
     for i in range(0, len(urls), 10):
@@ -40,9 +45,11 @@ def salva(slug, urls):
         for r in ris.get("results", []):
             f = out / nome_file(r["url"])
             f.write_text(f"URL: {r['url']}\nLetta: {date.today().isoformat()}\n\n{r.get('raw_content', '')}", encoding="utf-8")
-            print(f"ok {f.name} ({len(r.get('raw_content', '').split())} palabras)")
+            n_parole = len(r.get("raw_content", "").split())
+            print(tr(f"ok {f.name} ({n_parole} parole)", f"ok {f.name} ({n_parole} palabras)", f"ok {f.name} ({n_parole} words)"))
         for r in ris.get("failed_results", []):
-            print(f"NO leída: {r.get('url')} ({r.get('error', '')})")
+            url, err = r.get("url"), r.get("error", "")
+            print(tr(f"NON letta: {url} ({err})", f"NO leída: {url} ({err})", f"NOT read: {url} ({err})"))
 
 
 def piano(s):
@@ -53,20 +60,29 @@ def piano(s):
 
 def controlla(slug):
     d = cartella(slug)
-    m = leggi(d / "lavoro" / "mappa.json") or sys.exit("falta lavoro/mappa.json")
+    m = leggi(d / "lavoro" / "mappa.json") or sys.exit(tr("manca lavoro/mappa.json", "falta lavoro/mappa.json",
+                                                           "lavoro/mappa.json is missing"))
     fonti = {f.name: piano(f.read_text(encoding="utf-8")) for f in (d / "lavoro" / "fonti").glob("*.md")}
     ok, male = 0, []
     for t in m["tappe"]:
         for c in t["concetti"]:
             testo = fonti.get(c.get("fonte", ""))
             cit = piano(c.get("citazione", ""))
+            n, fonte = t["n"], c.get("fonte")
             if testo is None:
-                male.append(f"etapa {t['n']}: fuente «{c.get('fonte')}» no guardada · {c['testo'][:70]}")
+                txt = c["testo"][:70]
+                male.append(tr(f"tappa {n}: fonte «{fonte}» non salvata · {txt}",
+                               f"etapa {n}: fuente «{fonte}» no guardada · {txt}",
+                               f"stage {n}: source «{fonte}» not saved · {txt}"))
             elif cit and cit in testo:
                 ok += 1
             else:
-                male.append(f"etapa {t['n']}: cita no encontrada en {c.get('fonte')} · «{c.get('citazione', '')[:80]}»")
-    print(f"citas encontradas: {ok}; por arreglar: {len(male)}")
+                cit_txt = c.get("citazione", "")[:80]
+                male.append(tr(f"tappa {n}: citazione non trovata in {fonte} · «{cit_txt}»",
+                               f"etapa {n}: cita no encontrada en {fonte} · «{cit_txt}»",
+                               f"stage {n}: quote not found in {fonte} · «{cit_txt}»"))
+    print(tr(f"citazioni trovate: {ok}; da sistemare: {len(male)}", f"citas encontradas: {ok}; por arreglar: {len(male)}",
+             f"quotes found: {ok}; to fix: {len(male)}"))
     for x in male:
         print("  " + x)
     sys.exit(1 if male else 0)

@@ -128,6 +128,7 @@ el aviso privado: [SECURITY.md](SECURITY.md).
 - `AGENTS.md`: las reglas para el asistente.
 - `percorsi/`: las rutas. `utente/` guarda tus datos y no entra en el repositorio.
 
-Los nombres internos (carpetas, herramientas, claves de los JSON) están en italiano, el idioma en que nació el proyecto.
+La plataforma, el asistente y los mensajes de las herramientas siguen el idioma que eliges (italiano, español o inglés). Los
+nombres internos (carpetas, herramientas, claves de los JSON) están en italiano, el idioma en que nació el proyecto.
 
 Un proyecto de [Ismagit](https://ismagit.com), agencia de marketing con IA.

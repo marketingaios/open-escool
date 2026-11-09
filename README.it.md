@@ -27,7 +27,7 @@ inglese e valgono anche in italiano:
 - `lesson` (lezione), `language` (lingua);
 - `install` (installa), `customize` (personalizza), `start` (avvia), `diagnose` (diagnosi).
 
-Interfaccia in italiano, spagnolo e inglese. Percorsi pronti: ChatGPT Ads (video in italiano, spagnolo e inglese) e GEO (video in
+Interfaccia, assistente e messaggi degli strumenti in italiano, spagnolo o inglese, a scelta. Percorsi pronti: ChatGPT Ads (video in italiano, spagnolo e inglese) e GEO (video in
 spagnolo).
 
 Il resto della documentazione è in spagnolo: [README.md](README.md). Licenza [PolyForm Noncommercial 1.0.0](LICENSE): uso

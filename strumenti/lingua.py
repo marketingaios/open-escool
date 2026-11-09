@@ -11,29 +11,41 @@ import shutil
 import sys
 from datetime import date
 
-from comune import PERCORSI, cartella, leggi, scrivi, aiuto
+from comune import PERCORSI, cartella, leggi, scrivi, aiuto, tr
 
 NOMI = {"it": "italiano", "es": "español", "en": "inglés"}
+NOMI_IT = {"it": "italiano", "es": "spagnolo", "en": "inglese"}  # el nombre del idioma en los mensajes en italiano e inglés
+NOMI_EN = {"it": "Italian", "es": "Spanish", "en": "English"}
 
 
 def main(slug, lingua):
     if lingua not in NOMI:
-        sys.exit("idioma: it, es o en")
+        sys.exit(tr("lingua: it, es o en", "idioma: it, es o en", "language: it, es or en"))
+    nl = tr(NOMI_IT[lingua], NOMI[lingua], NOMI_EN[lingua])
     da = cartella(slug)
-    m = leggi(da / "lavoro" / "mappa.json") or sys.exit(f"falta percorsi/{slug}/lavoro/mappa.json")
+    m = leggi(da / "lavoro" / "mappa.json") or sys.exit(tr(f"manca percorsi/{slug}/lavoro/mappa.json",
+                                                           f"falta percorsi/{slug}/lavoro/mappa.json",
+                                                           f"percorsi/{slug}/lavoro/mappa.json is missing"))
     if not m.get("approvata"):
-        sys.exit("el mapa de partida no está aprobado: primero la aprobación")
+        sys.exit(tr("la mappa di partenza non è approvata: prima l'approvazione",
+                    "el mapa de partida no está aprobado: primero la aprobación",
+                    "the starting map is not approved: approve it first"))
     base = m.get("da") or slug  # desde chatgpt-ads-es se vuelve siempre al nombre de partida: chatgpt-ads-en, no chatgpt-ads-es-en
     mb = leggi(PERCORSI / base / "lavoro" / "mappa.json", {})
     if (mb.get("lingua_video") or mb.get("lingua")) == lingua:
-        sys.exit(f"percorsi/{base} ya tiene los vídeos en {NOMI[lingua]}")
+        sys.exit(tr(f"percorsi/{base} ha già i video in {nl}", f"percorsi/{base} ya tiene los vídeos en {nl}",
+                    f"percorsi/{base} already has the videos in {nl}"))
     nuovo = f"{base}-{lingua}"
     a = PERCORSI / nuovo
     if (a / "lavoro" / "mappa.json").exists():
-        sys.exit(f"ya existe percorsi/{nuovo}: actualízala con video.py / schede.py / costruisci.py")
+        sys.exit(tr(f"esiste già percorsi/{nuovo}: aggiornalo con video.py / schede.py / costruisci.py",
+                    f"ya existe percorsi/{nuovo}: actualízala con video.py / schede.py / costruisci.py",
+                    f"percorsi/{nuovo} already exists: update it with video.py / schede.py / costruisci.py"))
     cartella(nuovo)
     if not any(lingua in (t.get("ricerche_youtube") or {}) for t in m["tappe"]):
-        print(f"atención: el mapa no tiene búsquedas de YouTube en {NOMI[lingua]}: añádelas a las etapas antes de `video.py cerca`")
+        print(tr(f"attenzione: la mappa non ha ricerche YouTube in {nl}: aggiungile alle tappe prima di `video.py cerca`",
+                 f"atención: el mapa no tiene búsquedas de YouTube en {nl}: añádelas a las etapas antes de `video.py cerca`",
+                 f"warning: the map has no YouTube searches in {nl}: add them to the stages before `video.py cerca`"))
     scrivi(a / "lavoro" / "mappa.json", {**m, "lingua_video": lingua, "da": base, "copiata": date.today().isoformat()})
     for sotto in ("fonti",):
         if (da / "lavoro" / sotto).exists():
@@ -54,9 +66,15 @@ def main(slug, lingua):
             (a / "schede").mkdir(exist_ok=True)
             shutil.copy2(f, a / "schede" / f.name)
             schede += 1
-    print(f"percorsi/{nuovo}: mapa copiado (vídeos en {NOMI[lingua]}), {len(pert)} vídeos pertinentes ya encontrados, "
-          f"{schede} fichas ya hechas reutilizadas")
-    print(f"después: python strumenti/video.py lista {nuovo} · python strumenti/schede.py {nuovo} · python strumenti/costruisci.py {nuovo}")
+    print(tr(f"percorsi/{nuovo}: mappa copiata (video in {nl}), {len(pert)} video pertinenti già trovati, "
+             f"{schede} schede già fatte riusate",
+             f"percorsi/{nuovo}: mapa copiado (vídeos en {nl}), {len(pert)} vídeos pertinentes ya encontrados, "
+             f"{schede} fichas ya hechas reutilizadas",
+             f"percorsi/{nuovo}: map copied (videos in {nl}), {len(pert)} relevant videos already found, "
+             f"{schede} cards already done reused"))
+    comandi = (f"python strumenti/video.py lista {nuovo} · python strumenti/schede.py {nuovo} · "
+               f"python strumenti/costruisci.py {nuovo}")
+    print(tr(f"poi: {comandi}", f"después: {comandi}", f"next: {comandi}"))
 
 
 if __name__ == "__main__":

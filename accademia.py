@@ -58,7 +58,7 @@ blocco = threading.Lock()
 # ---------- archivos JSON en UTF-8 (en Windows cp1252 lo rompe todo: siempre encoding explícito) ----------
 def leggi_json(p, base=None):
     try:
-        return json.loads(Path(p).read_text(encoding="utf-8"))
+        return json.loads(Path(p).read_text(encoding="utf-8-sig"))  # -sig: también un config.json guardado con BOM (Bloc de notas)
     except (OSError, json.JSONDecodeError):
         return base
 
@@ -81,6 +81,21 @@ def unisci(a, b):
 
 def config():
     return unisci(leggi_json(CONFIG_ESEMPIO, {}), leggi_json(CONFIG, {}))
+
+
+def lingua_messaggi():
+    """Idioma de los mensajes del servidor (it, es o en), con la misma regla que comune.lingua_messaggi(): OPEN_ESCOOL_LINGUA
+    si está, si no `lingua` de config() (config.json encima de config.esempio.json). Se lee en cada mensaje: un cambio en
+    Ajustes vale enseguida."""
+    l = (os.environ.get("OPEN_ESCOOL_LINGUA", "") or config().get("lingua")
+         or (leggi_json(CONFIG_ESEMPIO, {}) or {}).get("lingua") or "")  # "lingua": "" en config.json: la de base
+    return l[:2] if l[:2] in ("it", "es", "en") else "es"
+
+
+def tr(it, es, en):
+    """Un mensaje para quien usa Open Escool en su idioma: tr(f"…italiano…", f"…español…", f"…english…").
+    Los prompts para el asistente quedan en italiano; PAGINA_ACCESSO y web/ tienen sus propios textos."""
+    return {"it": it, "es": es, "en": en}[lingua_messaggi()]
 
 
 def el():
@@ -263,10 +278,14 @@ def rinnova_youtube(slug, timeout=20):
         r, sp = md.rinnova(PERCORSI / slug, k, timeout=timeout)
         md.pulisci(PERCORSI / slug)
         if "--silenzioso" not in sys.argv and sys.stderr:
-            print(f"datos de YouTube renovados: {slug}, {r} vídeos" + (f", {sp} ya no disponibles" if sp else ""), file=sys.stderr)
+            persi = tr(f", {sp} non più disponibili", f", {sp} ya no disponibles", f", {sp} no longer available") if sp else ""
+            print(tr(f"dati di YouTube rinnovati: {slug}, {r} video", f"datos de YouTube renovados: {slug}, {r} vídeos",
+                     f"YouTube data refreshed: {slug}, {r} videos") + persi, file=sys.stderr)
     except (OSError, ValueError) as e:  # red, cuota o clave: se reintenta en una hora; mientras, se quedan los datos válidos
         if "--silenzioso" not in sys.argv and sys.stderr:
-            print(f"datos de YouTube no renovados ({slug}): {e.__class__.__name__}", file=sys.stderr)
+            print(tr(f"dati di YouTube non rinnovati ({slug}): {e.__class__.__name__}",
+                     f"datos de YouTube no renovados ({slug}): {e.__class__.__name__}",
+                     f"YouTube data not refreshed ({slug}): {e.__class__.__name__}"), file=sys.stderr)
 
 
 def avvisi_voce(slug):
@@ -578,7 +597,9 @@ def avvia_rete(porta):
     ip = ip_locale()
     RETE["errore"] = None
     if not ip:
-        RETE["errore"] = "no hay red privada: Wi-Fi apagado o red que no es de casa"
+        RETE["errore"] = tr("nessuna rete privata: Wi-Fi spento o rete non di casa",
+                            "no hay red privada: Wi-Fi apagado o red que no es de casa",
+                            "no private network: Wi-Fi is off or this is not a home network")
         ferma_rete()
         return False
     if RETE["server"] and RETE["ip"] == ip:
@@ -587,7 +608,8 @@ def avvia_rete(porta):
     try:
         srv = ThreadingHTTPServer((ip, porta), GestoreRete)
     except OSError as e:
-        RETE["errore"] = f"no puedo abrir {ip}:{porta}: {e}"
+        RETE["errore"] = tr(f"non riesco ad aprire {ip}:{porta}: {e}", f"no puedo abrir {ip}:{porta}: {e}",
+                            f"can't open {ip}:{porta}: {e}")
         return False
     RETE.update(server=srv, ip=ip, porta=porta)
     threading.Thread(target=srv.serve_forever, daemon=True).start()
@@ -670,7 +692,7 @@ class Gestore(BaseHTTPRequestHandler):
     def file_a_pezzi(self, f):
         """Un archivo servido también por partes (Range): el vídeo se abre en un minuto concreto sin descargarlo entero."""
         if not f.is_file():
-            return self.errore(404, "no encontrado")
+            return self.errore(404, tr("non trovato", "no encontrado", "not found"))
         tot = f.stat().st_size
         da, a, codice = 0, tot - 1, 200
         m = re.match(r"bytes=(\d*)-(\d*)$", self.headers.get("Range") or "")
@@ -711,7 +733,7 @@ class Gestore(BaseHTTPRequestHandler):
     def corpo(self, grezzo=False):
         n = int(self.headers.get("Content-Length") or 0)
         if n > 50 * 1024 * 1024:
-            raise ValueError("demasiado grande")
+            raise ValueError(tr("troppo grande", "demasiado grande", "too large"))
         b = self.rfile.read(n) if n else b""
         return b if grezzo else (json.loads(b.decode("utf-8")) if b else {})
 
@@ -720,14 +742,14 @@ class Gestore(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if not self.host_ok():
-            return self.errore(403, "host no permitido")
+            return self.errore(403, tr("host non ammesso", "host no permitido", "host not allowed"))
         u = urlparse(self.path)
         parti = [unquote(x) for x in u.path.strip("/").split("/") if x]
         # el manifest y los iconos se piden sin cookie (los necesita el teléfono para «Añadir a pantalla de inicio»): no dicen nada personal
         pubblico = parti in (["manifest.webmanifest"],) or (len(parti) == 2 and parti[0] == "icone")
         if not self.autorizzato() and not pubblico:
             if parti[:1] == ["api"]:
-                return self.errore(401, "hace falta el código")
+                return self.errore(401, tr("serve il codice", "hace falta el código", "the code is required"))
             b = PAGINA_ACCESSO.encode("utf-8")
             self.intestazioni(200, "text/html; charset=utf-8", len(b))
             return self.wfile.write(b)
@@ -746,16 +768,16 @@ class Gestore(BaseHTTPRequestHandler):
 
     def do_POST(self):
         if not self.host_ok() or not self.origine_ok():
-            return self.errore(403, "petición no permitida")
+            return self.errore(403, tr("richiesta non ammessa", "petición no permitida", "request not allowed"))
         parti = [unquote(x) for x in urlparse(self.path).path.strip("/").split("/") if x]
         if self.da_rete and parti == ["api", "accesso"]:
             return self.accesso()
         if not self.autorizzato():
-            return self.errore(401, "hace falta el código")
+            return self.errore(401, tr("serve il codice", "hace falta el código", "the code is required"))
         try:
             return self.api_post(parti[1:] if parti[:1] == ["api"] else [])
         except (ValueError, KeyError, json.JSONDecodeError) as e:
-            return self.errore(400, f"petición no válida: {e}")
+            return self.errore(400, tr(f"richiesta non valida: {e}", f"petición no válida: {e}", f"invalid request: {e}"))
 
     # ----- lectura -----
     def api_get(self, p):
@@ -763,12 +785,14 @@ class Gestore(BaseHTTPRequestHandler):
             return self.json({**config(), "versione": VERSIONE, "motori": {m: bool(trova(m)) for m in ("claude", "codex")},
                               "da_rete": self.da_rete})
         if p == ["rete"]:
-            return self.errore(403, "solo desde el ordenador") if self.da_rete else self.json(stato_rete())
+            if self.da_rete:
+                return self.errore(403, tr("solo dal computer", "solo desde el ordenador", "only from the computer"))
+            return self.json(stato_rete())
         if p == ["percorsi"]:
             return self.json(elenco_percorsi())
         if len(p) == 2 and p[0] == "percorsi" and SLUG.match(p[1]):
             dati = percorso(p[1])
-            return self.json(dati) if dati else self.errore(404, "ruta no encontrada")
+            return self.json(dati) if dati else self.errore(404, tr("percorso non trovato", "ruta no encontrada", "path not found"))
         if len(p) == 3 and p[0] == "schede" and SLUG.match(p[1]) and VIDEO_ID.match(p[2]):
             return self.json(scheda_video(p[1], p[2]))
         if len(p) == 2 and p[0] == "chat" and re.match(r"^[A-Za-z0-9_-]{1,120}$", p[1]):
@@ -778,10 +802,12 @@ class Gestore(BaseHTTPRequestHandler):
         if len(p) == 3 and p[0] == "esporta" and p[2] == "avvisi" and SLUG.match(p[1]):
             return self.json(avvisi_voce(p[1]))
         if p == ["diagnosi"]:
-            return self.errore(403, "solo desde el ordenador") if self.da_rete else self.json(diagnosi())
+            if self.da_rete:
+                return self.errore(403, tr("solo dal computer", "solo desde el ordenador", "only from the computer"))
+            return self.json(diagnosi())
         if p[:1] == ["elevenlabs"]:
             return self.elevenlabs_get(p[1:], parse_qs(urlparse(self.path).query))
-        return self.errore(404, "no encontrado")
+        return self.errore(404, tr("non trovato", "no encontrado", "not found"))
 
     def elevenlabs_get(self, p, q):
         """Estado de la clave y del plan, modelos, verificación de una voz: llamadas de solo lectura, no gastan créditos.
@@ -797,7 +823,8 @@ class Gestore(BaseHTTPRequestHandler):
             except e.Errore as x:
                 return self.json({**base, "errore": x.messaggio})
         if not k:
-            return self.errore(400, "falta la clave de ElevenLabs")
+            return self.errore(400, tr("manca la chiave di ElevenLabs", "falta la clave de ElevenLabs",
+                                       "the ElevenLabs key is missing"))
         try:
             if p == ["modelli"]:
                 return self.json(e.modelli(k))
@@ -808,12 +835,12 @@ class Gestore(BaseHTTPRequestHandler):
                 return self.json(e.verifica(k, p[1], lingua, modello, caratteri))
         except e.Errore as x:
             return self.errore(502, f"ElevenLabs: {x.messaggio}")
-        return self.errore(404, "no encontrado")
+        return self.errore(404, tr("non trovato", "no encontrado", "not found"))
 
     def esporta(self, slug):
         d = PERCORSI / slug
         if not (d / "percorso.json").exists():
-            return self.errore(404, "ruta no encontrada")
+            return self.errore(404, tr("percorso non trovato", "ruta no encontrada", "path not found"))
         # se comparten la ruta, las fichas y el mapa; no las páginas de las fuentes (son de otros: va la lista con URL y fecha)
         # ni los datos en bruto de YouTube ni el registro de llamadas
         fuori = ("lavoro/fonti/", "lavoro/youtube/", "lavoro/chiamate.jsonl")
@@ -834,7 +861,8 @@ class Gestore(BaseHTTPRequestHandler):
                 z.writestr(f"{slug}/lavoro/fonti_elenco.json", json.dumps(elenco, ensure_ascii=False, indent=1))
             avvisi = avvisi_voce(slug)
             if avvisi:
-                z.writestr(f"{slug}/AVVISO_VOCE.txt", "\n".join(f"Etapa {a['tappa']} · {a['voce']}: {a['avviso']}" for a in avvisi) + "\n")
+                parola = tr("Tappa", "Etapa", "Stage")
+                z.writestr(f"{slug}/AVVISO_VOCE.txt", "\n".join(f"{parola} {a['tappa']} · {a['voce']}: {a['avviso']}" for a in avvisi) + "\n")
         b = buf.getvalue()
         self.intestazioni(200, "application/zip", len(b), {"Content-Disposition": f'attachment; filename="{slug}.open-escool.zip"'})
         self.wfile.write(b)
@@ -891,11 +919,13 @@ class Gestore(BaseHTTPRequestHandler):
             return self.ripasso(self.corpo())
         if p == ["terminale"]:
             if self.da_rete:
-                return self.errore(403, "desde el teléfono la terminal no se abre: lanza el comando en el ordenador")
+                return self.errore(403, tr("dal telefono il terminale non si apre: lancia il comando sul computer",
+                                           "desde el teléfono la terminal no se abre: lanza el comando en el ordenador",
+                                           "the terminal can't be opened from the phone: run the command on the computer"))
             return self.terminale(self.corpo())
         if p == ["rete"]:
             if self.da_rete:
-                return self.errore(403, "solo desde el ordenador")
+                return self.errore(403, tr("solo dal computer", "solo desde el ordenador", "only from the computer"))
             d = self.corpo()
             if "attiva" in d:
                 with blocco:
@@ -923,7 +953,8 @@ class Gestore(BaseHTTPRequestHandler):
         if p == ["elevenlabs", "chiave"]:
             # la clave solo se pone desde el ordenador: desde el teléfono pasaría en claro por la red de casa (http)
             if self.da_rete:
-                return self.errore(403, "la clave se pone desde el ordenador")
+                return self.errore(403, tr("la chiave si mette dal computer", "la clave se pone desde el ordenador",
+                                           "the key can only be set from the computer"))
             d, e = self.corpo(), el()
             if d.get("rimuovi"):
                 from comune import togli_chiave
@@ -931,11 +962,20 @@ class Gestore(BaseHTTPRequestHandler):
                 with blocco:
                     togli_chiave(e.NOME_CHIAVE)
                 if os.environ.get(e.NOME_CHIAVE):
-                    return self.json({"ok": False, "messaggio": "quitada de .env, pero el servidor también la recibe del entorno (variable ELEVENLABS_API_KEY): quítala de ahí y reinicia"})
-                return self.json({"ok": True, "messaggio": "clave quitada"})
+                    return self.json({"ok": False, "messaggio": tr(
+                        "tolta da .env, ma il server la riceve anche dall'ambiente (variabile ELEVENLABS_API_KEY): "
+                        "toglila lì e riavvia",
+                        "quitada de .env, pero el servidor también la recibe del entorno (variable ELEVENLABS_API_KEY): "
+                        "quítala de ahí y reinicia",
+                        "removed from .env, but the server also gets it from the environment (ELEVENLABS_API_KEY variable): "
+                        "remove it there and restart")})
+                return self.json({"ok": True, "messaggio": tr("chiave rimossa", "clave quitada", "key removed")})
             v = (d.get("chiave") or "").strip().strip('"').strip("'")
             if not re.fullmatch(r"[A-Za-z0-9_\-\.]{20,200}", v):
-                return self.json({"ok": False, "messaggio": "no parece una clave: vuelve a copiarla entera, en una sola línea"})
+                return self.json({"ok": False, "messaggio": tr(
+                    "non sembra una chiave: ricopiala intera, su una riga",
+                    "no parece una clave: vuelve a copiarla entera, en una sola línea",
+                    "this doesn't look like a key: copy it again in full, on one line")})
             ok, msg = e.prova_chiave(v)
             if ok:
                 from comune import scrivi_chiave
@@ -945,7 +985,7 @@ class Gestore(BaseHTTPRequestHandler):
             return self.json({"ok": ok, "messaggio": msg})
         if p == ["importa"]:
             return self.importa(self.corpo(grezzo=True))
-        return self.errore(404, "no encontrado")
+        return self.errore(404, tr("non trovato", "no encontrado", "not found"))
 
     def flusso(self, evento):
         self.wfile.write(("data: " + json.dumps(evento, ensure_ascii=False) + "\n\n").encode("utf-8"))
@@ -960,7 +1000,8 @@ class Gestore(BaseHTTPRequestHandler):
                                   env=env, encoding="utf-8", errors="replace", bufsize=1,
                                   creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
         except OSError as e:
-            return "", None, f"no puedo arrancar {motore}: {e}"
+            return "", None, tr(f"non riesco ad avviare {motore}: {e}", f"no puedo arrancar {motore}: {e}",
+                                f"can't start {motore}: {e}")
         # stderr se lee aparte: si se llenara su tubería (~64 KB) el asistente se pararía y la chat se quedaría colgada
         errores = []
         lector = threading.Thread(target=lambda: errores.append(pr.stderr.read()), daemon=True)
@@ -983,7 +1024,7 @@ class Gestore(BaseHTTPRequestHandler):
                 elif e.get("type") == "result":
                     sessione = e.get("session_id", sessione)
                     if e.get("is_error"):
-                        err = e.get("result") or "error de Claude Code"
+                        err = e.get("result") or tr("errore di Claude Code", "error de Claude Code", "Claude Code error")
             else:
                 if e.get("type") == "thread.started":
                     sessione = e.get("thread_id")
@@ -997,7 +1038,9 @@ class Gestore(BaseHTTPRequestHandler):
         pr.wait(timeout=600)
         lector.join(timeout=5)
         if pr.returncode and not err and not testo:
-            err = ("".join(errores) or f"{motore} ha salido con el código {pr.returncode}")[-400:]
+            err = ("".join(errores) or tr(f"{motore} è uscito con codice {pr.returncode}",
+                                          f"{motore} ha salido con el código {pr.returncode}",
+                                          f"{motore} exited with code {pr.returncode}"))[-400:]
         return testo, sessione, err
 
     def inizia_flusso(self):
@@ -1028,7 +1071,9 @@ class Gestore(BaseHTTPRequestHandler):
                 (f"(Video al minuto {secondi // 60}:{secondi % 60:02d}) " if secondi is not None else "") + domanda)
         cmd = comando_assistente(motore, modello, sessione, nuova, PERCORSI / slug)
         if not cmd:
-            return self.errore(424, f"{motore} no está instalado: abre los ajustes o instálalo")
+            return self.errore(424, tr(f"{motore} non è installato: apri le impostazioni o installalo",
+                                       f"{motore} no está instalado: abre los ajustes o instálalo",
+                                       f"{motore} is not installed: open the settings or install it"))
         self.inizia_flusso()
         self.flusso({"t": "inizio", "chat": cid, "motore": motore})
         salva_chat(cid, {"percorso": slug, "tappa": n, "video": vid, "motore": motore, "ambito": "percorso" if percorso_intero else "video",
@@ -1045,7 +1090,9 @@ class Gestore(BaseHTTPRequestHandler):
         p = leggi_percorso(slug)
         note = [x for x in tutte_le_note() if x["percorso"] in del_gruppo(slug) and x["tipo"] in ("dubbio", "domanda")]
         if not note:
-            return self.errore(409, "todavía no hay dudas ni preguntas en esta ruta")
+            return self.errore(409, tr("non ci sono ancora dubbi o domande in questo percorso",
+                                       "todavía no hay dudas ni preguntas en esta ruta",
+                                       "there are no doubts or questions in this path yet"))
         cfg = config()
         motore = cfg["assistente"]["motore"]
         # el prompt queda en italiano: es el que se ha probado
@@ -1063,7 +1110,7 @@ class Gestore(BaseHTTPRequestHandler):
                   f"\n\nDUBBI E DOMANDE:\n{righe}\n\nCONCETTI UFFICIALI:\n{concetti}")
         cmd = comando_assistente(motore, cfg["assistente"].get("modello_" + motore), str(uuid.uuid4()), True, PERCORSI / slug)
         if not cmd:
-            return self.errore(424, f"{motore} no está instalado")
+            return self.errore(424, tr(f"{motore} non è installato", f"{motore} no está instalado", f"{motore} is not installed"))
         self.inizia_flusso()
         self.flusso({"t": "inizio", "motore": motore})
         testo, _, err = self.esegui_assistente(cmd, prompt, motore, PERCORSI / slug)
@@ -1093,7 +1140,7 @@ class Gestore(BaseHTTPRequestHandler):
             iniziale = f"Leggi .contesto/{d['video']}.md: è il contesto del video che sto guardando. Dimmi in una riga che sei pronto e aspetta la mia domanda."
         exe = trova(motore)
         if not exe:
-            return self.errore(424, f"{motore} no está instalado")
+            return self.errore(424, tr(f"{motore} non è installato", f"{motore} no está instalado", f"{motore} is not installed"))
         if motore == "codex" and iniziale.startswith("/"):
             iniziale = "$" + iniziale[1:]  # en Codex las skills se llaman con $nombre
         if d.get("prova"):  # para las pruebas y el diagnóstico: dice qué abriría, sin abrir nada
@@ -1105,11 +1152,14 @@ class Gestore(BaseHTTPRequestHandler):
         try:
             z = zipfile.ZipFile(io.BytesIO(b))
         except zipfile.BadZipFile:
-            return self.errore(400, "no es un zip de Open Escool")
+            return self.errore(400, tr("non è uno zip di Open Escool", "no es un zip de Open Escool",
+                                       "this is not an Open Escool zip"))
         nomi = [n for n in z.namelist() if not n.endswith("/")]
         radici = {n.split("/")[0] for n in nomi}
         if len(radici) != 1 or not SLUG.match(next(iter(radici))) or f"{next(iter(radici))}/percorso.json" not in nomi:
-            return self.errore(400, "el zip debe contener una carpeta con percorso.json")
+            return self.errore(400, tr("lo zip deve contenere una cartella con percorso.json",
+                                       "el zip debe contener una carpeta con percorso.json",
+                                       "the zip must contain a folder with percorso.json"))
         slug = next(iter(radici))
         dest = PERCORSI / slug
         if dest.exists():
@@ -1124,7 +1174,7 @@ class Gestore(BaseHTTPRequestHandler):
             out.write_bytes(z.read(n))
         if not leggi_json(dest / "percorso.json"):
             shutil.rmtree(dest, ignore_errors=True)
-            return self.errore(400, "percorso.json no válido")
+            return self.errore(400, tr("percorso.json non valido", "percorso.json no válido", "percorso.json is not valid"))
         return self.json({"ok": True, "slug": slug})
 
 
@@ -1176,9 +1226,10 @@ class GestoreRete(Gestore):
                 RETE["falliti"][ip] = falliti + [ora]
                 RETE["falliti_ora"] = tutti + [ora]
         if bloccato:
-            return self.errore(429, "demasiados intentos: espera un minuto")
+            return self.errore(429, tr("troppi tentativi: aspetta un minuto", "demasiados intentos: espera un minuto",
+                                       "too many attempts: wait a minute"))
         if not giusto:
-            return self.errore(403, "código incorrecto")
+            return self.errore(403, tr("codice sbagliato", "código incorrecto", "wrong code"))
         b = json.dumps({"ok": True}).encode("utf-8")
         self.intestazioni(200, "application/json; charset=utf-8", len(b),
                           {"Set-Cookie": f"accademia={tok}; Path=/; Max-Age=31536000; HttpOnly; SameSite=Strict"})
@@ -1201,11 +1252,12 @@ def apri_terminale(cartella, argv):
         else:
             term = shutil.which("x-terminal-emulator") or shutil.which("gnome-terminal")
             if not term:
-                return False, "no se ha encontrado ninguna terminal"
+                return False, tr("nessun terminale trovato", "no se ha encontrado ninguna terminal", "no terminal found")
             subprocess.Popen([term, "--", *argv], cwd=cartella)
-        return True, "terminal abierta"
+        return True, tr("terminale aperto", "terminal abierta", "terminal opened")
     except (OSError, subprocess.SubprocessError) as e:
-        return False, f"no puedo abrir la terminal: {e}"
+        return False, tr(f"non riesco ad aprire il terminale: {e}", f"no puedo abrir la terminal: {e}",
+                         f"can't open the terminal: {e}")
 
 
 def sh_q(s):
@@ -1248,6 +1300,9 @@ def e_accademia(porta):
 
 
 def main():
+    if any(a in ("-h", "--help") for a in sys.argv[1:]):  # la ayuda, sin arrancar el servidor
+        print(__doc__)
+        return
     if "--diagnosi" in sys.argv:
         print(json.dumps(diagnosi(), ensure_ascii=False, indent=1))
         return
@@ -1260,19 +1315,26 @@ def main():
         srv = ThreadingHTTPServer(("127.0.0.1", porta), Gestore)
     except OSError:
         if e_accademia(porta):
-            print(f"Open Escool ya está abierta en http://127.0.0.1:{porta}")
+            print(tr(f"Open Escool è già aperta su http://127.0.0.1:{porta}",
+                     f"Open Escool ya está abierta en http://127.0.0.1:{porta}",
+                     f"Open Escool is already open at http://127.0.0.1:{porta}"))
             if "--apri" in sys.argv:
                 webbrowser.open(f"http://127.0.0.1:{porta}")
             return
-        print(f"El puerto {porta} lo usa otro programa: elige otro puerto en config.json (\"porta\": 8766) y reinicia")
+        print(tr(f"La porta {porta} è usata da un altro programma: scegli un'altra porta in config.json (\"porta\": 8766) e riavvia",
+                 f"El puerto {porta} lo usa otro programa: elige otro puerto en config.json (\"porta\": 8766) y reinicia",
+                 f"Port {porta} is used by another program: choose another port in config.json (\"porta\": 8766) and restart"))
         sys.exit(2)
     url = f"http://127.0.0.1:{porta}"
-    print(f"Open Escool {VERSIONE} en {url} (Ctrl+C para detenerla)")
+    print(tr(f"Open Escool {VERSIONE} su {url} (Ctrl+C per fermare)", f"Open Escool {VERSIONE} en {url} (Ctrl+C para detenerla)",
+             f"Open Escool {VERSIONE} at {url} (Ctrl+C to stop)"))
     if config().get("rete", {}).get("telefono"):
         if avvia_rete(porta):
-            print(f"Desde el teléfono (misma red Wi-Fi): http://{RETE['ip']}:{porta} · código en Ajustes → Teléfono")
+            print(tr(f"Dal telefono (stessa rete Wi-Fi): http://{RETE['ip']}:{porta} · codice in Impostazioni → Telefono",
+                     f"Desde el teléfono (misma red Wi-Fi): http://{RETE['ip']}:{porta} · código en Ajustes → Teléfono",
+                     f"From the phone (same Wi-Fi network): http://{RETE['ip']}:{porta} · code in Settings → Phone"))
         else:
-            print(f"Teléfono: {RETE['errore']}")
+            print(tr(f"Telefono: {RETE['errore']}", f"Teléfono: {RETE['errore']}", f"Phone: {RETE['errore']}"))
     threading.Thread(target=sorveglia_rete, args=(porta,), daemon=True).start()
     if "--apri" in sys.argv:
         threading.Timer(0.6, lambda: webbrowser.open(url)).start()

@@ -31,7 +31,7 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 
 import metadati
-from comune import PERCORSI, cartella, chiave, leggi, registra, scrivi, secondi, aiuto
+from comune import PERCORSI, cartella, chiave, leggi, registra, scrivi, secondi, aiuto, tr
 
 MODELLO = "gemini-3.8-flash"
 RISERVE = ["gemini-3.5-flash"]                    # 3.7 Flash no: usa la cuota de 3.8
@@ -41,6 +41,7 @@ TETTO_GIORNO_S = 8 * 3600
 RICHIESTE_GIORNO = 20                            # por modelo, plan gratuito
 QUOTA_DI = {"gemini-3.7-flash": "gemini-3.8-flash"}   # modelos que gastan la cuota de otro (visto en los 429)
 ESAURITI = set()                                 # modelos con el límite diario alcanzado en esta ejecución
+PAUSA_BREVE = [False]                            # 429 con el plan de pago: límite por minuto, se reintenta en minutos
 PREZZI = {"gemini-3.8-flash": (0.75, 3.75)}      # $ por millón de tokens, entrada y salida, plan de pago (08/11/2026)
 PREZZO_ALTRI = PREZZI["gemini-3.8-flash"]        # los modelos sin precio leído: para el tope cuentan como 3.8 Flash
 TOKEN_AL_SECONDO = 100                           # para la estimación antes de la llamada (medidos ~95 con MEDIA_RESOLUTION_LOW)
@@ -172,7 +173,10 @@ def una(slug, vid, m, meta, modello, tetto=None):
         if not vivi:
             break
         if attesa:
-            print(f"{vid}: Gemini sobrecargado ({', '.join(vivi)}), reintento dentro de {attesa} s")
+            elenco = ", ".join(vivi)
+            print(tr(f"{vid}: Gemini sovraccarico ({elenco}), riprovo fra {attesa} s",
+                     f"{vid}: Gemini sobrecargado ({elenco}), reintento dentro de {attesa} s",
+                     f"{vid}: Gemini overloaded ({elenco}), retrying in {attesa} s"))
             time.sleep(attesa)
         for mod in vivi:  # con el 503 se pasa enseguida al modelo siguiente: solo se espera cuando todos están sobrecargados
             ris, err, sec = chiama(vid, testo, mod)
@@ -181,15 +185,25 @@ def una(slug, vid, m, meta, modello, tetto=None):
                 registra(slug, {**riga, **err})
                 if err["errore"] == "HTTP 429" and tetto is not None and "free_tier" in err["dettaglio"]:
                     n = annulla_costi(slug)
-                    print("Google sigue respondiendo con el límite gratuito: la facturación no está activa en el proyecto de la clave"
-                          + (f"; las {n} fichas anteriores han pasado gratis (coste devuelto a 0 $)" if n else ""))
+                    print(tr("Google risponde ancora col limite gratuito: la fatturazione non è attiva sul progetto della chiave",
+                             "Google sigue respondiendo con el límite gratuito: la facturación no está activa en el proyecto "
+                             "de la clave",
+                             "Google still answers with the free limit: billing is not active on the key's project")
+                          + (tr(f"; le {n} schede di prima sono passate gratis (costo riportato a 0 $)",
+                                f"; las {n} fichas anteriores han pasado gratis (coste devuelto a 0 $)",
+                                f"; the {n} earlier cards went through for free (cost set back to 0 $)") if n else ""))
                     return None
                 if err["errore"] == "HTTP 429":
                     ESAURITI.add(mod)
                     if tetto is None:
-                        print(f"{vid}: {mod} ha agotado las peticiones gratuitas de hoy")
+                        print(tr(f"{vid}: {mod} ha finito le richieste gratuite di oggi",
+                                 f"{vid}: {mod} ha agotado las peticiones gratuitas de hoy",
+                                 f"{vid}: {mod} has used up today's free requests"))
                     else:
-                        print(f"{vid}: {mod} responde 429 también con el plan de pago: {err['dettaglio'][:160]}")
+                        dettaglio = err["dettaglio"][:160]
+                        print(tr(f"{vid}: {mod} risponde 429 anche a pagamento: {dettaglio}",
+                                 f"{vid}: {mod} responde 429 también con el plan de pago: {dettaglio}",
+                                 f"{vid}: {mod} answers 429 on the paid plan too: {dettaglio}"))
                 elif err["errore"] not in RIPROVA:
                     print(f"{vid}: {err['errore']} {err['dettaglio'][:160]}")
                     return False
@@ -210,13 +224,33 @@ def una(slug, vid, m, meta, modello, tetto=None):
             registra(slug, {**riga, "costo_usd": spesa, "token_in": u.get("promptTokenCount"), "token_out": u.get("candidatesTokenCount"),
                             "token_pensiero": u.get("thoughtsTokenCount"), "durata_video_s": meta.get("durata_s"),
                             "piano": "pagamento" if tetto is not None else "gratuito"})
-            print(f"{vid}: ok en {sec:.0f} s con {mod}, {u.get('promptTokenCount')} tokens, consejo {sch.get('consiglio')}"
-                  + (f", {spesa:.3f} $ (en total {SPESA[0]:.3f} $ de {tetto:g} $)" if tetto is not None else ""))
+            token, consiglio = u.get("promptTokenCount"), sch.get("consiglio")
+            print(tr(f"{vid}: ok in {sec:.0f} s con {mod}, {token} token, consiglio {consiglio}",
+                     f"{vid}: ok en {sec:.0f} s con {mod}, {token} tokens, consejo {consiglio}",
+                     f"{vid}: ok in {sec:.0f} s with {mod}, {token} tokens, advice {consiglio}")
+                  + (tr(f", {spesa:.3f} $ (in tutto {SPESA[0]:.3f} $ su {tetto:g} $)",
+                        f", {spesa:.3f} $ (en total {SPESA[0]:.3f} $ de {tetto:g} $)",
+                        f", {spesa:.3f} $ ({SPESA[0]:.3f} $ in total out of {tetto:g} $)") if tetto is not None else ""))
             return True
-    if all(x in ESAURITI for x in [modello] + RISERVE):
-        print("todos los modelos han agotado las peticiones gratuitas de hoy: se vuelve a empezar después de las 9:00 (medianoche del Pacífico)")
+    if all(x in ESAURITI for x in [modello] + RISERVE) and tetto is not None:
+        # a pago un 429 no es la cuota del día: es el límite por minuto o el de gasto del proyecto
+        print(tr("Gemini risponde 429 su tutti i modelli anche a pagamento: limite al minuto o di spesa del progetto; "
+                 "riprova fra qualche minuto",
+                 "Gemini responde 429 en todos los modelos también con el plan de pago: límite por minuto o de gasto del "
+                 "proyecto; vuelve a intentarlo dentro de unos minutos",
+                 "Gemini answers 429 on every model on the paid plan too: per-minute or project spend limit; try again in a "
+                 "few minutes"))
+        PAUSA_BREVE[0] = True
         return None
-    print(f"{vid}: Gemini sobrecargado también en los modelos de reserva, lo salto: vuelve a lanzarlo más tarde")
+    if all(x in ESAURITI for x in [modello] + RISERVE):
+        print(tr("tutti i modelli hanno finito le richieste gratuite di oggi: si riparte dopo le 9:00 (mezzanotte del Pacifico)",
+                 "todos los modelos han agotado las peticiones gratuitas de hoy: se vuelve a empezar después de las 9:00 "
+                 "(medianoche del Pacífico)",
+                 "all models have used up today's free requests: it starts again after 9:00 in Italy (midnight Pacific time)"))
+        return None
+    print(tr(f"{vid}: Gemini sovraccarico anche sui modelli di riserva, lo salto: rilancia più tardi",
+             f"{vid}: Gemini sobrecargado también en los modelos de reserva, lo salto: vuelve a lanzarlo más tarde",
+             f"{vid}: Gemini overloaded on the backup models too, skipping it: run it again later"))
     return False
 
 
@@ -235,33 +269,40 @@ def main(a):
     if "--pagamento" in a:
         tetto = 1.0 if tetto is None else tetto
     elif tetto is not None:
-        sys.exit("--tetto solo vale con --pagamento")
+        sys.exit(tr("--tetto vale solo con --pagamento", "--tetto solo vale con --pagamento", "--tetto only works with --pagamento"))
     a = [x for x in a if x not in ("--aspetta", "--pagamento")]
     if not a:
-        sys.exit("falta el nombre de la ruta\n" + __doc__)
+        sys.exit(tr("manca il nome del percorso", "falta el nombre de la ruta", "the path name is missing") + "\n" + __doc__)
     slug, scelti = a[0], a[1:]
     d = cartella(slug)
-    m = leggi(d / "lavoro" / "mappa.json") or sys.exit("falta lavoro/mappa.json")
+    m = leggi(d / "lavoro" / "mappa.json") or sys.exit(tr("manca lavoro/mappa.json", "falta lavoro/mappa.json",
+                                                          "lavoro/mappa.json is missing"))
     lista = {v["id"]: v for v in (leggi(d / "lavoro" / "youtube" / "lista.json") or [])}
     pert = {v["id"]: v for v in (leggi(d / "lavoro" / "youtube" / "pertinenti.json") or [])}
     meta_yt = metadati.validi(d)
     fatte, falliti = 0, {}
     while True:
         ids = [i for i in (scelti or lista) if not (d / "schede" / f"{i}.json").exists() and falliti.get(i, 0) < 2]
-        finita = False
+        finita = al_tetto = False
         for vid in ids:
             meta = lista.get(vid) or pert.get(vid) or meta_yt.get(vid) or {}
             if tetto is None and uso_oggi(slug)[0] + (meta.get("durata_s") or 0) > TETTO_GIORNO_S:
-                print("alcanzado el tope del plan gratuito (8 h de vídeo al día): vuelve a lanzar mañana el mismo comando")
+                print(tr("tetto del piano gratuito (8 h di video al giorno) raggiunto: ripartire domani con lo stesso comando",
+                         "alcanzado el tope del plan gratuito (8 h de vídeo al día): vuelve a lanzar mañana el mismo comando",
+                         "free plan cap reached (8 h of video a day): run the same command again tomorrow"))
                 finita = True
                 break
             if tetto is not None:
                 p_in, p_out = PREZZI.get(modello, PREZZO_ALTRI)
                 stima = ((meta.get("durata_s") or 900) * TOKEN_AL_SECONDO + 12000) * p_in / 1e6 + 6000 * p_out / 1e6
                 if SPESA[0] + stima > tetto:
-                    print(f"{vid}: con esta ficha (~{stima:.2f} $) se superaría el tope de {tetto:g} $ "
-                          f"(gastados {SPESA[0]:.3f} $): me detengo")
-                    finita = True
+                    print(tr(f"{vid}: con questa scheda (~{stima:.2f} $) si supererebbe il tetto di {tetto:g} $ "
+                             f"(spesi {SPESA[0]:.3f} $): mi fermo",
+                             f"{vid}: con esta ficha (~{stima:.2f} $) se superaría el tope de {tetto:g} $ "
+                             f"(gastados {SPESA[0]:.3f} $): me detengo",
+                             f"{vid}: this card (~{stima:.2f} $) would go over the {tetto:g} $ cap "
+                             f"({SPESA[0]:.3f} $ spent): stopping"))
+                    finita = al_tetto = True
                     break
             esito = una(slug, vid, m, meta, modello, tetto)
             if esito is None:
@@ -271,18 +312,29 @@ def main(a):
             if not esito:
                 falliti[vid] = falliti.get(vid, 0) + 1
         restano = [i for i in (scelti or lista) if not (d / "schede" / f"{i}.json").exists() and falliti.get(i, 0) < 2]
-        if not aspetta or not restano:
+        if not aspetta or not restano or al_tetto:  # al tope de gasto se para también con --aspetta
             break
-        quando = prossimo_azzeramento() if finita else datetime.now(timezone.utc) + timedelta(minutes=30)
-        print(f"{len(restano)} fichas aún por hacer: vuelvo a empezar a las {quando.astimezone().strftime('%H:%M del %d/%m')}", flush=True)
+        quando = (datetime.now(timezone.utc) + timedelta(minutes=5) if PAUSA_BREVE[0] else prossimo_azzeramento() if finita
+                  else datetime.now(timezone.utc) + timedelta(minutes=30))
+        PAUSA_BREVE[0] = False
+        ora, giorno = quando.astimezone().strftime("%H:%M"), quando.astimezone().strftime("%d/%m")
+        print(tr(f"{len(restano)} schede ancora da fare: riparto alle {ora} del {giorno}",
+                 f"{len(restano)} fichas aún por hacer: vuelvo a empezar a las {ora} del {giorno}",
+                 f"{len(restano)} cards still to do: starting again at {ora} on {giorno}"), flush=True)
         # a pasos cortos mirando el reloj: un solo sleep largo se retrasa todo el tiempo en que el ordenador está en reposo (07/11)
         while (resta := (quando - datetime.now(timezone.utc)).total_seconds()) > 0:
             time.sleep(min(300, max(1, resta)))
         ESAURITI.clear()
     if tetto is not None:
-        print(f"gasto estimado con el plan de pago: {SPESA[0]:.3f} $ (tope {tetto:g} $)")
-    print(f"fichas nuevas: {fatte}; en total {len(list((d / 'schede').glob('*.json'))) if (d / 'schede').exists() else 0}"
-          + (f"; saltadas tras 2 errores: {', '.join(i for i, n in falliti.items() if n >= 2)}" if any(n >= 2 for n in falliti.values()) else ""))
+        print(tr(f"spesa stimata col piano a pagamento: {SPESA[0]:.3f} $ (tetto {tetto:g} $)",
+                 f"gasto estimado con el plan de pago: {SPESA[0]:.3f} $ (tope {tetto:g} $)",
+                 f"estimated spend on the paid plan: {SPESA[0]:.3f} $ (cap {tetto:g} $)"))
+    totale = len(list((d / "schede").glob("*.json"))) if (d / "schede").exists() else 0
+    saltati = ", ".join(i for i, n in falliti.items() if n >= 2)
+    print(tr(f"schede nuove: {fatte}; in tutto {totale}", f"fichas nuevas: {fatte}; en total {totale}",
+             f"new cards: {fatte}; {totale} in total")
+          + (tr(f"; saltate dopo 2 errori: {saltati}", f"; saltadas tras 2 errores: {saltati}",
+                f"; skipped after 2 errors: {saltati}") if saltati else ""))
 
 
 if __name__ == "__main__":

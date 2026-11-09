@@ -25,6 +25,8 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
+from comune import tr  # también solo biblioteca estándar (strumenti/ está en sys.path: script, lezione.py, accademia.py)
+
 API = "https://api.elevenlabs.io"
 NOME_CHIAVE = "ELEVENLABS_API_KEY"
 MODELLO_BASE = "eleven_multilingual_v2"
@@ -68,13 +70,18 @@ def chiama(k, metodo, percorso, corpo=None, timeout=60, tentativi=3):
                 time.sleep(4 * (i + 1))
                 continue
             if e.code == 401:
-                raise Errore(401, "la clave de ElevenLabs no funciona o no tiene permiso para esta operación", msg) from None
-            raise Errore(e.code, msg or f"error {e.code}", stato) from None
+                raise Errore(401, tr("la chiave di ElevenLabs non funziona o non ha il permesso per questa operazione",
+                                     "la clave de ElevenLabs no funciona o no tiene permiso para esta operación",
+                                     "the ElevenLabs key does not work or lacks permission for this operation"), msg) from None
+            raise Errore(e.code, msg or tr(f"errore {e.code}", f"error {e.code}", f"error {e.code}"), stato) from None
         except (urllib.error.URLError, OSError) as e:
             if i < tentativi - 1:
                 time.sleep(3)
                 continue
-            raise Errore(0, f"no consigo conectar con ElevenLabs ({type(e).__name__}): revisa la red") from None
+            tipo = type(e).__name__
+            raise Errore(0, tr(f"non riesco a raggiungere ElevenLabs ({tipo}): controlla la rete",
+                               f"no consigo conectar con ElevenLabs ({tipo}): revisa la red",
+                               f"cannot reach ElevenLabs ({tipo}): check the network")) from None
 
 
 def abbonamento(k):
@@ -128,40 +135,76 @@ def verifica(k, voice_id, lingua, modello, caratteri):
     """Todo lo que se puede saber sin gastar créditos. Los `problemi` detienen la lección (se pregunta al usuario), los `avvisi` no."""
     problemi, avvisi, ab, v, costo = [], [], None, None, 1.0
     if not k:
-        return {"ok": False, "problemi": ["falta la clave de ElevenLabs (Ajustes → Voz de las lecciones, desde el ordenador)"], "avvisi": []}
+        manca = tr("manca la chiave di ElevenLabs (Impostazioni → Voce delle lezioni, dal computer)",
+                   "falta la clave de ElevenLabs (Ajustes → Voz de las lecciones, desde el ordenador)",
+                   "the ElevenLabs key is missing (Settings → Lesson voice, from the computer)")
+        return {"ok": False, "problemi": [manca], "avvisi": []}
     try:
         ab = abbonamento(k)
     except Errore as e:
         if e.codice == 401 and "permission" not in (e.dettaglio or "").lower():
             return {"ok": False, "problemi": [e.messaggio], "avvisi": []}
-        avvisi.append("no consigo leer el plan y los créditos (¿la clave no tiene el permiso «User: read»?): revísalos en elevenlabs.io")
+        avvisi.append(tr("non riesco a leggere il piano e i crediti (la chiave non ha il permesso «User: read»?): "
+                         "controllali su elevenlabs.io",
+                         "no consigo leer el plan y los créditos (¿la clave no tiene el permiso «User: read»?): "
+                         "revísalos en elevenlabs.io",
+                         "cannot read the plan and credits (does the key lack the «User: read» permission?): "
+                         "check them on elevenlabs.io"))
     try:
         mm = {m["id"]: m for m in modelli(k)}
         if modello not in mm:
-            problemi.append(f"el modelo «{modello}» no existe (modelos: {', '.join(mm)})")
+            elenco = ", ".join(mm)
+            problemi.append(tr(f"il modello «{modello}» non c'è (modelli: {elenco})",
+                               f"el modelo «{modello}» no existe (modelos: {elenco})",
+                               f"the model «{modello}» does not exist (models: {elenco})"))
         else:
             costo = mm[modello]["crediti_per_carattere"]
             if mm[modello]["lingue"] and lingua not in mm[modello]["lingue"]:
-                problemi.append(f"el modelo {mm[modello]['nome']} no habla «{lingua}»")
+                nome = mm[modello]["nome"]
+                problemi.append(tr(f"il modello {nome} non parla «{lingua}»", f"el modelo {nome} no habla «{lingua}»",
+                                   f"the model {nome} does not speak «{lingua}»"))
     except Errore as e:
-        avvisi.append(f"no consigo leer los modelos: {e.messaggio}")
+        avvisi.append(tr(f"non riesco a leggere i modelli: {e.messaggio}", f"no consigo leer los modelos: {e.messaggio}",
+                         f"cannot read the models: {e.messaggio}"))
     v = voce(k, voice_id)
     if not v:
-        problemi.append(f"la voz con ID «{voice_id}» no existe (en elevenlabs.io abre Voices, elige la voz y copia su ID)")
+        problemi.append(tr(f"la voce con ID «{voice_id}» non esiste (in elevenlabs.io apri Voices, scegli la voce e copia "
+                           "il suo ID)",
+                           f"la voz con ID «{voice_id}» no existe (en elevenlabs.io abre Voices, elige la voz y copia su ID)",
+                           f"the voice with ID «{voice_id}» does not exist (on elevenlabs.io open Voices, pick the voice "
+                           "and copy its ID)"))
     else:
+        nome = v["nome"]
         if v["libreria"] and ab and ab["gratuito"]:
-            problemi.append(f"«{v['nome']}» es una voz de la biblioteca de ElevenLabs: con el plan gratuito no se puede usar desde la API. "
-                            "Elige una voz de serie o creada por ti, o la voz gratuita de Open Escool")
+            problemi.append(tr(f"«{nome}» è una voce della libreria di ElevenLabs: col piano gratuito non si può usare "
+                               "dall'API. Scegli una voce di base o creata da te, oppure la voce gratuita di Open Escool",
+                               f"«{nome}» es una voz de la biblioteca de ElevenLabs: con el plan gratuito no se puede usar "
+                               "desde la API. Elige una voz de serie o creada por ti, o la voz gratuita de Open Escool",
+                               f"«{nome}» is an ElevenLabs library voice: on the free plan it cannot be used from the API. "
+                               "Choose a default voice or one you created, or the free Open Escool voice"))
         elif v["libreria"] and not v["nel_conto"]:
-            problemi.append(f"«{v['nome']}» está en la biblioteca pero no entre tus voces: añádela a tus voces en elevenlabs.io (Voice Library) y vuelve a probar")
+            problemi.append(tr(f"«{nome}» è nella libreria ma non fra le tue voci: aggiungila alle tue voci su elevenlabs.io "
+                               "(Voice Library) e riprova",
+                               f"«{nome}» está en la biblioteca pero no entre tus voces: añádela a tus voces en elevenlabs.io "
+                               "(Voice Library) y vuelve a probar",
+                               f"«{nome}» is in the library but not among your voices: add it to your voices on elevenlabs.io "
+                               "(Voice Library) and try again"))
         if v["lingue"] and lingua not in v["lingue"]:
-            avvisi.append(f"«{v['nome']}» está verificada en {', '.join(v['lingue'])}, no en «{lingua}»: puede tener acento extranjero")
+            verificate = ", ".join(v["lingue"])
+            avvisi.append(tr(f"«{nome}» è verificata in {verificate}, non in «{lingua}»: può avere un accento straniero",
+                             f"«{nome}» está verificada en {verificate}, no en «{lingua}»: puede tener acento extranjero",
+                             f"«{nome}» is verified in {verificate}, not in «{lingua}»: it may have a foreign accent"))
         costo *= v["moltiplicatore"]
     servono = round(caratteri * costo)
     if ab and servono > ab["rimasti"]:
-        problemi.append(f"hacen falta unos {servono} créditos y quedan {ab['rimasti']} (se renuevan el {ab['rinnovo']})")
+        problemi.append(tr(f"servono circa {servono} crediti e ne restano {ab['rimasti']} (si rinnovano il {ab['rinnovo']})",
+                           f"hacen falta unos {servono} créditos y quedan {ab['rimasti']} (se renuevan el {ab['rinnovo']})",
+                           f"about {servono} credits are needed and {ab['rimasti']} are left (renewed on {ab['rinnovo']})"))
     if ab and ab["gratuito"]:
-        avvisi.append("plan gratuito: uso no comercial; si publicas o compartes la lección, escribe «elevenlabs.io» en el título")
+        avvisi.append(tr("piano gratuito: uso non commerciale; se pubblichi o condividi la lezione scrivi «elevenlabs.io» "
+                         "nel titolo",
+                         "plan gratuito: uso no comercial; si publicas o compartes la lección, escribe «elevenlabs.io» en el título",
+                         "free plan: non-commercial use; if you publish or share the lesson, put “elevenlabs.io” in the title"))
     return {"ok": not problemi, "problemi": problemi, "avvisi": avvisi, "abbonamento": ab, "voce": v, "modello": modello,
             "caratteri": caratteri, "servono": servono}
 
@@ -215,9 +258,13 @@ def prova_chiave(k):
         return False, e.messaggio
     try:
         ab = abbonamento(k)
-        return True, f"clave de ElevenLabs válida: plan {ab['piano']}, quedan {ab['rimasti']} créditos hasta el {ab['rinnovo']}"
+        return True, tr(f"chiave ElevenLabs valida: piano {ab['piano']}, {ab['rimasti']} crediti rimasti fino al {ab['rinnovo']}",
+                        f"clave de ElevenLabs válida: plan {ab['piano']}, quedan {ab['rimasti']} créditos hasta el {ab['rinnovo']}",
+                        f"ElevenLabs key valid: plan {ab['piano']}, {ab['rimasti']} credits left until {ab['rinnovo']}")
     except Errore:
-        return True, f"clave de ElevenLabs válida ({n} modelos); no veo los créditos (falta el permiso «User: read»)"
+        return True, tr(f"chiave ElevenLabs valida ({n} modelli); non vedo i crediti (manca il permesso «User: read»)",
+                        f"clave de ElevenLabs válida ({n} modelos); no veo los créditos (falta el permiso «User: read»)",
+                        f"ElevenLabs key valid ({n} models); credits not visible (the «User: read» permission is missing)")
 
 
 def main():
@@ -228,7 +275,10 @@ def main():
             print(json.dumps(abbonamento(k), ensure_ascii=False, indent=1))
         elif a[:1] == ["modelli"]:
             for m in modelli(k):
-                print(f"{m['id']:<28} {m['crediti_per_carattere']:>4} créditos/carácter · {len(m['lingue'])} idiomas · {m['nome']}")
+                mid, cc, nl, nome = m["id"], m["crediti_per_carattere"], len(m["lingue"]), m["nome"]
+                print(tr(f"{mid:<28} {cc:>4} crediti/carattere · {nl} lingue · {nome}",
+                         f"{mid:<28} {cc:>4} créditos/carácter · {nl} idiomas · {nome}",
+                         f"{mid:<28} {cc:>4} credits/character · {nl} languages · {nome}"))
         elif a[:1] == ["voce"] and len(a) >= 2:
             print(json.dumps(verifica(k, a[1], a[2] if len(a) > 2 else "it", MODELLO_BASE, 0), ensure_ascii=False, indent=1))
         else:

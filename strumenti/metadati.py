@@ -24,7 +24,7 @@ import urllib.request
 from datetime import date, datetime
 from pathlib import Path
 
-from comune import chiave, leggi, secondi
+from comune import chiave, leggi, secondi, tr
 
 CAMPI = ("titolo", "canale", "pubblicato", "durata_s", "lingua_audio", "descrizione")
 VALIDI = 30   # días: pasado este plazo, los datos de la API ya no se usan y se borran
@@ -184,7 +184,7 @@ def pulisci(d, oggi=None):
             if any(set(r) - set(chiavi) for r in righe if isinstance(r, dict)):
                 f.write_text(json.dumps([{k: r[k] for k in chiavi if k in r} for r in righe if isinstance(r, dict)],
                                         ensure_ascii=False, indent=1), encoding="utf-8")
-                fatti.append(nome + " (ridotto)")
+                fatti.append(nome + tr(" (ridotto)", " (reducido)", " (reduced)"))
     scelta = Path(d) / "lavoro" / "scelta.md"  # tabla con los títulos: la rehace costruisci.py
     if scelta.exists() and (oggi - date.fromtimestamp(scelta.stat().st_mtime)).days >= VALIDI:
         scelta.unlink()
@@ -230,22 +230,34 @@ def main(a):
     d = cartella(a[0])
     n = separa(d)
     if n:
-        print(f"separados los datos de YouTube de {n} vídeos de percorso.json (ahora en lavoro/youtube/metadati.json)")
+        print(tr(f"separati i dati di YouTube di {n} video da percorso.json (ora in lavoro/youtube/metadati.json)",
+                 f"separados los datos de YouTube de {n} vídeos de percorso.json (ahora en lavoro/youtube/metadati.json)",
+                 f"YouTube data of {n} videos moved out of percorso.json (now in lavoro/youtube/metadati.json)"))
     k = chiave("YOUTUBE_API_KEY", obbligatoria=False)
     if k:
         try:
             r, s = rinnova(d, k, forza="--forza" in a)
-            print(f"renovados {r} vídeos" + (f", {s} ya no disponibles en YouTube" if s else ""))
+            print(tr(f"rinnovati {r} video" + (f", {s} non più disponibili su YouTube" if s else ""),
+                     f"renovados {r} vídeos" + (f", {s} ya no disponibles en YouTube" if s else ""),
+                     f"{r} videos renewed" + (f", {s} no longer available on YouTube" if s else "")))
         except (urllib.error.URLError, OSError, ValueError) as e:
-            print(f"YouTube no responde ({e.__class__.__name__}): se quedan los datos válidos, se vuelve a probar la próxima vez")
+            nome = e.__class__.__name__
+            print(tr(f"YouTube non risponde ({nome}): restano i dati validi, si riprova la prossima volta",
+                     f"YouTube no responde ({nome}): se quedan los datos válidos, se vuelve a probar la próxima vez",
+                     f"YouTube is not answering ({nome}): the valid data stay, it will try again next time"))
     else:
-        print("falta YOUTUBE_API_KEY: no se renueva nada (python strumenti/chiavi.py prepara YOUTUBE_API_KEY)")
+        print(tr("manca YOUTUBE_API_KEY: niente rinnovo (python strumenti/chiavi.py prepara YOUTUBE_API_KEY)",
+                 "falta YOUTUBE_API_KEY: no se renueva nada (python strumenti/chiavi.py prepara YOUTUBE_API_KEY)",
+                 "YOUTUBE_API_KEY is missing: nothing renewed (python strumenti/chiavi.py prepara YOUTUBE_API_KEY)"))
     for f in pulisci(d):
-        print(f"más de 30 días: {f}")
+        print(tr(f"oltre i 30 giorni: {f}", f"más de 30 días: {f}", f"over 30 days: {f}"))
     v = tutti(d)
     vecchi = [e for x in v.values() if (e := eta(x)) is not None]
-    print(f"{len(v)} vídeos en metadati.json" + (f", el más antiguo leído hace {max(vecchi)} día{'' if max(vecchi) == 1 else 's'}" if vecchi else "")
-          + f" · {datetime.now():%H:%M}")
+    n_v, g, ora = len(v), max(vecchi) if vecchi else 0, f" · {datetime.now():%H:%M}"
+    eta_txt = tr(f", il più vecchio letto {g} giorn{'o' if g == 1 else 'i'} fa",
+                 f", el más antiguo leído hace {g} día{'' if g == 1 else 's'}",
+                 f", the oldest read {g} day{'' if g == 1 else 's'} ago") if vecchi else ""
+    print(tr(f"{n_v} video in metadati.json", f"{n_v} vídeos en metadati.json", f"{n_v} videos in metadati.json") + eta_txt + ora)
 
 
 if __name__ == "__main__":

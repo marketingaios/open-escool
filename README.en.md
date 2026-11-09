@@ -29,6 +29,7 @@ One command: `/escool` in Claude Code, `$escool` in Codex. On its own it shows t
 Interface in Italian, Spanish and English. Ready-made paths: ChatGPT Ads (videos in Italian, Spanish and English) and GEO
 (videos in Spanish).
 
-The rest of the documentation is in Spanish: [README.md](README.md). Internal names (folders, tools, JSON keys) are in Italian,
+The platform, the assistant and the tool messages follow the language you choose (Italian, Spanish or English). The rest of the
+documentation is in Spanish: [README.md](README.md). Internal names (folders, tools, JSON keys) are in Italian,
 the language the project started in. License: [PolyForm Noncommercial 1.0.0](LICENSE), for personal and non-commercial use. A
 project by [Ismagit](https://ismagit.com).

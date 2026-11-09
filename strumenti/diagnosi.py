@@ -34,7 +34,7 @@ QUI = Path(__file__).resolve().parent
 RADICE = QUI.parent
 sys.path.insert(0, str(RADICE))
 sys.path.insert(0, str(QUI))
-from comune import chiave, aiuto  # noqa: E402
+from comune import chiave, aiuto, tr  # noqa: E402
 
 risultati = []
 
@@ -65,20 +65,22 @@ def main():
             "percorsi": [p.name for p in accademia.PERCORSI.iterdir() if (p / "percorso.json").exists()] if accademia.PERCORSI.exists() else []}
     print(json.dumps(info, ensure_ascii=False, indent=1))
 
-    @prova("Python 3.10 o superior")
+    @prova(tr("Python 3.10 o più", "Python 3.10 o superior", "Python 3.10 or later"))
     def _():
         return sys.version_info >= (3, 10), sys.version.split()[0]
 
-    @prova("archivos UTF-8 con acentos y caracteres no latinos")
+    @prova(tr("file UTF-8 con accenti e caratteri non latini", "archivos UTF-8 con acentos y caracteres no latinos",
+              "UTF-8 files with accents and non-Latin characters"))
     def _():
         testo = "àèéìòù ñ ü ç — «» 日本語 😀"
         with tempfile.TemporaryDirectory() as d:
             f = Path(d) / "prova àè.json"
             f.write_text(json.dumps({"t": testo}, ensure_ascii=False), encoding="utf-8")
             letto = json.loads(f.read_text(encoding="utf-8"))["t"]
-        return letto == testo, "igual" if letto == testo else f"distinto: {letto!r}"
+        return letto == testo, (tr("uguale", "igual", "same") if letto == testo
+                                else tr(f"diverso: {letto!r}", f"distinto: {letto!r}", f"different: {letto!r}"))
 
-    @prova("carpeta con permiso de escritura")
+    @prova(tr("cartella scrivibile", "carpeta con permiso de escritura", "writable folder"))
     def _():
         accademia.UTENTE.mkdir(exist_ok=True)
         f = accademia.UTENTE / ".prova-diagnosi"
@@ -87,18 +89,26 @@ def main():
 
     for nome in ("YOUTUBE_API_KEY", "GEMINI_API_KEY", "TAVILY_API_KEY"):
         v = chiave(nome, obbligatoria=False)
-        voce(f"clave {nome}", bool(v) or nome == "TAVILY_API_KEY", "presente" if v else "falta (opcional)" if nome == "TAVILY_API_KEY" else "falta")
+        stato = (tr("presente", "presente", "present") if v
+                 else tr("manca (facoltativa)", "falta (opcional)", "missing (optional)") if nome == "TAVILY_API_KEY"
+                 else tr("manca", "falta", "missing"))
+        voce(tr(f"chiave {nome}", f"clave {nome}", f"key {nome}"), bool(v) or nome == "TAVILY_API_KEY", stato)
 
     for m in ("claude", "codex"):
         exe = accademia.trova(m)
         if not exe:
-            voce(f"{m} instalado", m == "codex" and bool(accademia.trova("claude")) or m == "claude" and bool(accademia.trova("codex")),
-                 "no encontrado" + (" (basta con uno de los dos)" if accademia.trova("claude") or accademia.trova("codex") else ""))
+            voce(tr(f"{m} installato", f"{m} instalado", f"{m} installed"),
+                 m == "codex" and bool(accademia.trova("claude")) or m == "claude" and bool(accademia.trova("codex")),
+                 tr("non trovato", "no encontrado", "not found")
+                 + (tr(" (basta uno dei due)", " (basta con uno de los dos)", " (one of the two is enough)")
+                    if accademia.trova("claude") or accademia.trova("codex") else ""))
             continue
         r = subprocess.run([exe, "--version"], capture_output=True, encoding="utf-8", errors="replace", timeout=60,
                            creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
-        voce(f"{m} instalado", r.returncode == 0, f"{exe} · {(r.stdout or r.stderr).strip()[:80]}")
-    voce("modelo de Codex elegido", True, accademia.modello_codex(accademia.config().get("assistente", {}).get("modello_codex")) or "ninguno")
+        voce(tr(f"{m} installato", f"{m} instalado", f"{m} installed"), r.returncode == 0,
+             f"{exe} · {(r.stdout or r.stderr).strip()[:80]}")
+    voce(tr("modello Codex scelto", "modelo de Codex elegido", "Codex model chosen"), True,
+         accademia.modello_codex(accademia.config().get("assistente", {}).get("modello_codex")) or tr("nessuno", "ninguno", "none"))
 
     # servidor real en un puerto libre
     s = socket.socket()
@@ -127,12 +137,13 @@ def main():
 
     for p, tipo in (("/", "text/html"), ("/app.js", "javascript"), ("/stile.css", "text/css"), ("/manifest.webmanifest", "manifest"),
                     ("/sw.js", "javascript"), ("/icone/icona-192.png", "image/png"), ("/api/config", "json"), ("/api/percorsi", "json")):
-        @prova(f"servidor {p}")
+        @prova(tr(f"server {p}", f"servidor {p}", f"server {p}"))
         def _(p=p, tipo=tipo):
             st, ct, b = get(p)
-            return st == 200 and tipo in ct, f"{st} {ct} {len(b)} bytes"
+            return st == 200 and tipo in ct, tr(f"{st} {ct} {len(b)} byte", f"{st} {ct} {len(b)} bytes", f"{st} {ct} {len(b)} bytes")
 
-    @prova("servidor: notas con acentos (escribe y borra)")
+    @prova(tr("server: note con accenti (scrive e cancella)", "servidor: notas con acentos (escribe y borra)",
+              "server: notes with accents (writes and deletes)"))
     def _():
         slug = info["percorsi"][0] if info["percorsi"] else "prova-diagnosi"
         st, r = post("/api/note", {"percorso": slug, "tappa": 1, "video": "diagnosi00", "secondi": 1, "minuto": "0:01",
@@ -142,7 +153,8 @@ def main():
             post("/api/note", {"percorso": slug, "elimina": nuova["id"]})
         return st == 200 and nuova and nuova["testo"].endswith("日本"), f"{st}"
 
-    @prova("el servidor rechaza peticiones de otros sitios")
+    @prova(tr("server rifiuta richieste da altri siti", "el servidor rechaza peticiones de otros sitios",
+              "the server refuses requests from other sites"))
     def _():
         st, _ = post("/api/note", {"percorso": "x", "testo": "x", "tipo": "nota"}, intestazione=False)
         return st == 403, f"{st}"
@@ -152,7 +164,7 @@ def main():
             if not accademia.trova(m):
                 continue
 
-            @prova(f"pregunta real a {m}")
+            @prova(tr(f"domanda vera a {m}", f"pregunta real a {m}", f"real question to {m}"))
             def _(m=m):
                 import uuid
                 cmd = accademia.comando_assistente(m, accademia.config()["assistente"].get("modello_" + m), str(uuid.uuid4()), True, RADICE)
@@ -171,11 +183,17 @@ def main():
     nome = f"{datetime.now():%Y-%m-%d_%H%M}_{platform.node().split('.')[0] or 'pc'}"
     rapporto = {"info": info, "prove": risultati, "riassunto": f"{ok}/{len(risultati)} ok"}
     (out / f"{nome}.json").write_text(json.dumps(rapporto, ensure_ascii=False, indent=1), encoding="utf-8")
-    righe = [f"# Diagnóstico de Open Escool · {info['data']}", "", f"**{ok}/{len(risultati)} pruebas ok** · {info['sistema']} · Python {info['python']}", "",
-             "| | Prueba | Detalle |", "|---|---|---|"] + [f"| {'✅' if r['ok'] else '❌'} | {r['prova']} | {r['dettaglio'][:140].replace('|', '/')} |" for r in risultati] + \
-            ["", "```json", json.dumps(info, ensure_ascii=False, indent=1), "```"]
+    data, n, sistema, py = info["data"], len(risultati), info["sistema"], info["python"]
+    righe = [tr(f"# Diagnosi Open Escool · {data}", f"# Diagnóstico de Open Escool · {data}",
+                f"# Open Escool diagnostics · {data}"), "",
+             tr(f"**{ok}/{n} prove ok** · {sistema} · Python {py}", f"**{ok}/{n} pruebas ok** · {sistema} · Python {py}",
+                f"**{ok}/{n} tests ok** · {sistema} · Python {py}"), "",
+             tr("| | Prova | Dettaglio |", "| | Prueba | Detalle |", "| | Test | Detail |"), "|---|---|---|"] + \
+        [f"| {'✅' if r['ok'] else '❌'} | {r['prova']} | {' '.join(r['dettaglio'][:140].split()).replace('|', '/')} |" for r in risultati] + \
+        ["", "```json", json.dumps(info, ensure_ascii=False, indent=1), "```"]
     (out / f"{nome}.md").write_text("\n".join(righe) + "\n", encoding="utf-8")
-    print(f"\n{ok}/{len(risultati)} ok · informe: {out / (nome + '.md')}")
+    f_md = out / (nome + ".md")
+    print(tr(f"\n{ok}/{n} ok · rapporto: {f_md}", f"\n{ok}/{n} ok · informe: {f_md}", f"\n{ok}/{n} ok · report: {f_md}"))
 
 
 def lezioni(info):
@@ -186,55 +204,78 @@ def lezioni(info):
 
     lez = RADICE / "lezione"
 
-    @prova("lecciones: Node 18 o superior")
+    @prova(tr("lezioni: Node 18 o più", "lecciones: Node 18 o superior", "lessons: Node 18 or later"))
     def _():
         exe = shutil.which("node")
         if not exe:
-            return False, "falta Node (Windows: winget install OpenJS.NodeJS.LTS; Mac: brew install node)"
+            return False, tr("manca Node (Windows: winget install OpenJS.NodeJS.LTS; Mac: brew install node)",
+                             "falta Node (Windows: winget install OpenJS.NodeJS.LTS; Mac: brew install node)",
+                             "Node is missing (Windows: winget install OpenJS.NodeJS.LTS; Mac: brew install node)")
         v = subprocess.run([exe, "-v"], capture_output=True, encoding="utf-8", errors="replace", timeout=30).stdout.strip()
         return int(v.lstrip("v").split(".")[0]) >= 18, f"{v} · {exe}"
 
-    @prova("lecciones: ffmpeg")
+    @prova(tr("lezioni: ffmpeg", "lecciones: ffmpeg", "lessons: ffmpeg"))
     def _():
         exe = shutil.which("ffmpeg")
         if not exe:
-            return False, "falta ffmpeg (Windows: winget install Gyan.FFmpeg; Mac: brew install ffmpeg)"
+            return False, tr("manca ffmpeg (Windows: winget install Gyan.FFmpeg; Mac: brew install ffmpeg)",
+                             "falta ffmpeg (Windows: winget install Gyan.FFmpeg; Mac: brew install ffmpeg)",
+                             "ffmpeg is missing (Windows: winget install Gyan.FFmpeg; Mac: brew install ffmpeg)")
         r = subprocess.run([exe, "-version"], capture_output=True, encoding="utf-8", errors="replace", timeout=30)
         return r.returncode == 0, r.stdout.splitlines()[0][:80] if r.stdout else r.stderr[:200]
 
-    @prova("lecciones: Remotion y su Chrome")
+    @prova(tr("lezioni: Remotion e il suo Chrome", "lecciones: Remotion y su Chrome", "lessons: Remotion and its Chrome"))
     def _():
         cli = lez / "node_modules" / "@remotion" / "cli" / "remotion-cli.js"
         base = lez / "node_modules" / ".remotion" / "chrome-headless-shell"
         chrome = list(base.glob("*/*/chrome-headless-shell")) + list(base.glob("*/*/chrome-headless-shell.exe"))
         if not cli.exists():
-            return False, "falta Remotion: en la carpeta lezione/ lanza «npm install» (lo hace la instalación)"
-        return True, f"Remotion ok · Chrome {'ok: ' + chrome[0].parent.name if chrome else 'aún no descargado (lo descarga el primer render)'}"
+            return False, tr("manca Remotion: nella cartella lezione/ lancia «npm install» (lo fa l'installazione)",
+                             "falta Remotion: en la carpeta lezione/ lanza «npm install» (lo hace la instalación)",
+                             "Remotion is missing: run «npm install» in the lezione/ folder (the installer does it)")
+        stato = "ok: " + chrome[0].parent.name if chrome else tr("non ancora scaricato (lo scarica il primo render)",
+                                                                   "aún no descargado (lo descarga el primer render)",
+                                                                   "not downloaded yet (the first render downloads it)")
+        return True, f"Remotion ok · Chrome {stato}"
 
     py = comune.python_voce(((accademia_config().get("lezioni") or {}).get("voce") or {}).get("python") or "")
     mod = comune.moduli_voce(py)
     info["voce"] = {"python": str(py), "installate": sorted(mod), "mac_apple": comune.mac_apple(),
                     "auto": {l: comune.modello_gratuito("auto", mod, l) for l in ("it", "es", "en")}}
 
-    @prova("lecciones: voz gratuita instalada")
+    @prova(tr("lezioni: voce gratuita installata", "lecciones: voz gratuita instalada", "lessons: free voice installed"))
     def _():
         if not py.exists():
-            return False, f"falta el entorno de la voz ({py}): vuelve a lanzar la instalación"
+            return False, tr(f"manca l'ambiente della voce ({py}): rilancia l'installazione",
+                             f"falta el entorno de la voz ({py}): vuelve a lanzar la instalación",
+                             f"the voice environment is missing ({py}): run the installer again")
         voci = sorted(mod - {"whisper"})
-        return bool(voci) and "whisper" in mod, f"voces: {', '.join(voci) or 'ninguna'} · Whisper: {'sí' if 'whisper' in mod else 'no'} · por defecto: {', '.join(f'{l} {m}' for l, m in info['voce']['auto'].items())}"
+        elenco = ", ".join(voci) or tr("nessuna", "ninguna", "none")
+        whisper = tr("sì", "sí", "yes") if "whisper" in mod else "no"
+        base = ", ".join(f"{l} {m}" for l, m in info["voce"]["auto"].items())
+        return bool(voci) and "whisper" in mod, tr(f"voci: {elenco} · Whisper: {whisper} · di base: {base}",
+                                                   f"voces: {elenco} · Whisper: {whisper} · por defecto: {base}",
+                                                   f"voices: {elenco} · Whisper: {whisper} · default: {base}")
 
-    @prova("lecciones: enlaces en la carpeta (si no, copia)")
+    @prova(tr("lezioni: collegamenti nella cartella (se no, copia)", "lecciones: enlaces en la carpeta (si no, copia)",
+              "lessons: links in the folder (otherwise, copy)"))
     def _():
         with tempfile.TemporaryDirectory() as d:
             try:
                 (Path(d) / "l").symlink_to(Path(d), target_is_directory=True)
-                return True, "se pueden crear"
+                return True, tr("si possono creare", "se pueden crear", "they can be created")
             except OSError as e:
-                return True, f"no se pueden crear ({e.__class__.__name__}): lezione.py copia los archivos, está bien"
+                errore = e.__class__.__name__
+                return True, tr(f"non si possono creare ({errore}): lezione.py copia i file, va bene",
+                                f"no se pueden crear ({errore}): lezione.py copia los archivos, está bien",
+                                f"they cannot be created ({errore}): lezione.py copies the files, that's fine")
 
-    @prova("lecciones: clave de ElevenLabs (opcional)")
+    @prova(tr("lezioni: chiave ElevenLabs (facoltativa)", "lecciones: clave de ElevenLabs (opcional)",
+              "lessons: ElevenLabs key (optional)"))
     def _():
-        return True, "presente" if chiave("ELEVENLABS_API_KEY", obbligatoria=False) else "ausente (se usa la voz gratuita)"
+        return True, (tr("presente", "presente", "present") if chiave("ELEVENLABS_API_KEY", obbligatoria=False)
+                      else tr("assente (si usa la voce gratuita)", "ausente (se usa la voz gratuita)",
+                              "absent (the free voice is used)"))
 
     if "--lezione" not in sys.argv or not py.exists():
         return
@@ -250,7 +291,7 @@ def lezioni(info):
         provate.add(modello)
         prova_voce(info, py, modello, lingua, testo)
 
-    @prova("lecciones: un fotograma con Remotion")
+    @prova(tr("lezioni: un fotogramma con Remotion", "lecciones: un fotograma con Remotion", "lessons: one frame with Remotion"))
     def _():
         import time
 
@@ -272,13 +313,16 @@ def lezioni(info):
                                 f"--public-dir={pub}", "--bundle-cache=false", "--log=error"], cwd=str(lez), capture_output=True,
                                encoding="utf-8", errors="replace", timeout=900, creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
             ok = r.returncode == 0 and (Path(d) / "f.jpg").exists()
-            return ok, f"in {time.time() - t:.0f} s" if ok else (r.stderr or r.stdout)[-400:]
+            secondi_ = f"{time.time() - t:.0f}"
+            return ok, tr(f"in {secondi_} s", f"en {secondi_} s", f"in {secondi_} s") if ok else (r.stderr or r.stdout)[-400:]
 
 
 def prova_voce(info, py, modello, lingua, testo):
     import comune
 
-    @prova(f"lecciones: voz real ({modello}, {lingua}) y Whisper en este ordenador")
+    @prova(tr(f"lezioni: voce vera ({modello}, {lingua}) e Whisper su questo computer",
+              f"lecciones: voz real ({modello}, {lingua}) y Whisper en este ordenador",
+              f"lessons: real voice ({modello}, {lingua}) and Whisper on this computer"))
     def _():
         import time
 
@@ -297,8 +341,11 @@ def prova_voce(info, py, modello, lingua, testo):
             if r.returncode != 0 or not meta:
                 return False, (r.stderr or r.stdout)[-400:]
             per_lezione = meta["tempo_s"] / max(meta["durata_s"], 0.1) * 240 / 60
-            return meta.get("voto_scena", 0) >= 0.8, (f"{meta['durata_s']} s de voz en {meta['tempo_s']} s con el control (nota {meta.get('voto_scena')}) · "
-                                                       f"una lección de 4 minutos ≈ {per_lezione:.0f} minutos")
+            ds, ts, vs = meta["durata_s"], meta["tempo_s"], meta.get("voto_scena")
+            return meta.get("voto_scena", 0) >= 0.8, tr(
+                f"{ds} s di voce in {ts} s con il controllo (voto {vs}) · una lezione di 4 minuti ≈ {per_lezione:.0f} minuti",
+                f"{ds} s de voz en {ts} s con el control (nota {vs}) · una lección de 4 minutos ≈ {per_lezione:.0f} minutos",
+                f"{ds} s of voice in {ts} s with the check (score {vs}) · a 4-minute lesson ≈ {per_lezione:.0f} minutes")
 
 
 def pulito(testo, sostituzioni):
@@ -328,18 +375,33 @@ def condivisa(info, ok, out):
     tenuti = {k: info.get(k) for k in ("versione", "sistema", "macchina", "python", "codifica_preferita", "codifica_file",
                                        "codifica_console")}
     tenuti["corsi"] = len(info.get("percorsi", []))
-    righe = [f"### Diagnóstico para compartir · Open Escool {info.get('versione', '')} · {info['data'][:10]}", "",
-             "Contiene: sistema, versiones, qué pruebas pasan y los errores. Quitados: nombre del ordenador y del usuario, carpetas, "
-             "lista de rutas, claves (solo presente/falta), notas, chat y perfil. Es público: reléelo antes de pegarlo.", "",
-             f"**{ok}/{len(risultati)} pruebas ok**", "", "| | Prueba | Detalle |", "|---|---|---|"]
-    righe += [f"| {'✅' if r['ok'] else '❌'} | {pulito(r['prova'], sost)} | {pulito(r['dettaglio'][:200], sost).replace('|', '/')} |"
+    versione, giorno, n = info.get("versione", ""), info["data"][:10], len(risultati)
+    righe = [tr(f"### Diagnosi da condividere · Open Escool {versione} · {giorno}",
+                f"### Diagnóstico para compartir · Open Escool {versione} · {giorno}",
+                f"### Diagnostics to share · Open Escool {versione} · {giorno}"), "",
+             tr("Contiene: sistema, versioni, quali prove passano e gli errori. Tolti: nome del computer e dell'utente, "
+                "cartelle, elenco dei corsi, chiavi (solo presente/manca), note, chat e profilo. "
+                "È pubblica: rileggila prima di incollarla.",
+                "Contiene: sistema, versiones, qué pruebas pasan y los errores. Quitados: nombre del ordenador y del usuario, "
+                "carpetas, lista de rutas, claves (solo presente/falta), notas, chat y perfil. "
+                "Es público: reléelo antes de pegarlo.",
+                "Contains: system, versions, which tests pass and the errors. Removed: computer and user name, folders, "
+                "list of paths, keys (only present/missing), notes, chat and profile. "
+                "It is public: read it again before pasting it."), "",
+             tr(f"**{ok}/{n} prove ok**", f"**{ok}/{n} pruebas ok**", f"**{ok}/{n} tests ok**"), "",
+             tr("| | Prova | Dettaglio |", "| | Prueba | Detalle |", "| | Test | Detail |"), "|---|---|---|"]
+    righe += [f"| {'✅' if r['ok'] else '❌'} | {pulito(r['prova'], sost)} | {' '.join(pulito(r['dettaglio'][:200], sost).split()).replace('|', '/')} |"
               for r in risultati]
     righe += ["", "```json", pulito(json.dumps(tenuti, ensure_ascii=False, indent=1), sost), "```"]
     testo = "\n".join(righe) + "\n"
     f = out / f"{datetime.now():%Y-%m-%d_%H%M}_condivisa.md"
     f.write_text(testo, encoding="utf-8")
-    print("\n----- desde aquí: copia y pega en la incidencia -----\n" + testo + "----- hasta aquí -----")
-    print(f"{ok}/{len(risultati)} ok · guardado también en diagnosi/{f.name}")
+    print(tr("\n----- da qui: copia e incolla nella segnalazione -----\n",
+             "\n----- desde aquí: copia y pega en la incidencia -----\n",
+             "\n----- from here: copy and paste into the issue -----\n") + testo
+          + tr("----- fin qui -----", "----- hasta aquí -----", "----- up to here -----"))
+    print(tr(f"{ok}/{n} ok · salvata anche in diagnosi/{f.name}", f"{ok}/{n} ok · guardado también en diagnosi/{f.name}",
+             f"{ok}/{n} ok · also saved in diagnosi/{f.name}"))
 
 
 def accademia_config():

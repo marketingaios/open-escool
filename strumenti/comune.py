@@ -25,7 +25,9 @@ def chiave(nome, obbligatoria=True):
                 if v:
                     return v
     if obbligatoria:
-        sys.exit(f"Falta {nome}: python strumenti/chiavi.py prepara {nome} (la guía está en docs/chiavi.md)")
+        sys.exit(tr(f"Manca {nome}: python strumenti/chiavi.py prepara {nome} (la guida è in docs/chiavi.md)",
+                    f"Falta {nome}: python strumenti/chiavi.py prepara {nome} (la guía está en docs/chiavi.md)",
+                    f"{nome} is missing: python strumenti/chiavi.py prepara {nome} (the guide is in docs/chiavi.md)"))
     return None
 
 
@@ -60,9 +62,31 @@ def aiuto(doc):
         sys.exit(0)
 
 
+def lingua_messaggi():
+    """Idioma de los mensajes de las herramientas (it, es o en): OPEN_ESCOOL_LINGUA si está, si no `lingua` de config.json
+    y, si falta, la de config.esempio.json. Se lee en cada mensaje: un cambio en Ajustes vale enseguida, también en el servidor."""
+    l = os.environ.get("OPEN_ESCOOL_LINGUA", "")
+    for f in () if l else (RADICE / "config.json", RADICE / "config.esempio.json"):
+        try:
+            l = json.loads(f.read_text(encoding="utf-8-sig")).get("lingua") or ""
+        except (OSError, ValueError, AttributeError):
+            l = ""
+        if l:
+            break
+    return l[:2] if l[:2] in ("it", "es", "en") else "es"
+
+
+def tr(it, es, en):
+    """Un mensaje para quien usa Open Escool en su idioma: tr(f"…italiano…", f"…español…", f"…english…").
+    La ayuda (--help) y los comentarios quedan en español; los prompts para los modelos, en italiano."""
+    return {"it": it, "es": es, "en": en}[lingua_messaggi()]
+
+
 def cartella(slug):
     if not slug or not NOME_PERCORSO.match(slug):
-        sys.exit(f"nombre de ruta no válido: {slug!r} (minúsculas, cifras y guiones; empieza por una letra o una cifra)")
+        sys.exit(tr(f"nome di percorso non valido: {slug!r} (minuscole, cifre e trattini, inizia con una lettera o una cifra)",
+                    f"nombre de ruta no válido: {slug!r} (minúsculas, cifras y guiones; empieza por una letra o una cifra)",
+                    f"invalid path name: {slug!r} (lowercase letters, digits and hyphens; starts with a letter or a digit)"))
     d = PERCORSI / slug
     (d / "lavoro").mkdir(parents=True, exist_ok=True)
     return d

@@ -6,9 +6,10 @@ estándar) y una página web que se instala como app (PWA). Tú, el asistente, e
 a las preguntas sobre los vídeos desde el chat de la plataforma, personalizas e instalas.
 
 ## Idioma
-Habla con quien usa Open Escool en el idioma de `config.json` → `lingua` (por defecto, el de `config.esempio.json`: italiano). Los
-textos de los archivos internos (herramientas, guías) están en español; los nombres del código (funciones, variables, claves de los
-JSON, subcomandos, opciones) y los prompts para los modelos siguen en italiano: no los traduzcas.
+Habla con quien usa Open Escool en el idioma de `config.json` → `lingua` (por defecto, el de `config.esempio.json`: español). Los
+mensajes de las herramientas salen en ese mismo idioma; la ayuda (`--help`), las guías y los comentarios están en español; los
+nombres del código (funciones, variables, claves de los JSON, subcomandos, opciones) y los prompts para los modelos siguen en
+italiano: no los traduzcas.
 
 ## Comandos (skill)
 Un solo comando, **`/escool`** (en Codex `$escool`). Solo, sin palabras, muestra el estado de los cursos y el menú. Las palabras van

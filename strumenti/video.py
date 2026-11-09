@@ -20,7 +20,7 @@ import urllib.request
 from datetime import datetime, timezone
 
 import metadati
-from comune import cartella, chiave, leggi, lingue_video, scrivi, secondi, aiuto
+from comune import cartella, chiave, leggi, lingue_video, scrivi, secondi, aiuto, tr
 
 API = "https://www.googleapis.com/youtube/v3/"
 
@@ -99,9 +99,13 @@ def pertinente(c, m):
 
 def cerca(slug, solo=None):
     d = cartella(slug)
-    m = leggi(d / "lavoro" / "mappa.json") or sys.exit("falta lavoro/mappa.json: primero el mapa, aprobado")
+    m = leggi(d / "lavoro" / "mappa.json") or sys.exit(tr("manca lavoro/mappa.json: prima la mappa, approvata",
+                                                           "falta lavoro/mappa.json: primero el mapa, aprobado",
+                                                           "lavoro/mappa.json is missing: first the map, approved"))
     if not m.get("approvata"):
-        sys.exit("el mapa aún no está aprobado: enséñalo y pide el sí antes de buscar los vídeos")
+        sys.exit(tr("la mappa non è ancora approvata: mostrala e chiedi il sì prima di cercare i video",
+                    "el mapa aún no está aprobado: enséñalo y pide el sí antes de buscar los vídeos",
+                    "the map is not approved yet: show it and ask for a yes before searching for videos"))
     out = d / "lavoro" / "youtube"
     lingue = lingue_video(m)
     per_tappa, n_ricerche = {}, 0
@@ -146,10 +150,14 @@ def cerca(slug, solo=None):
                     voce["tappe"].append(n)
     scrivi(out / "candidati.json", cand)
     scrivi(out / "pertinenti.json", sorted(pert.values(), key=lambda r: -r["punteggio"]))
-    print(f"{n_ricerche} búsquedas, {len(tutti)} vídeos únicos, {len(pert)} pertinentes (título, idioma, duración)")
+    n_tutti, n_pert = len(tutti), len(pert)
+    print(tr(f"{n_ricerche} ricerche, {n_tutti} video unici, {n_pert} pertinenti (titolo, lingua, durata)",
+             f"{n_ricerche} búsquedas, {n_tutti} vídeos únicos, {n_pert} pertinentes (título, idioma, duración)",
+             f"{n_ricerche} searches, {n_tutti} unique videos, {n_pert} relevant (title, language, length)"))
     for n in per_tappa:
         top = [r for r in pert.values() if n in r["tappe"]][:5]
-        print(f"etapa {n}: " + " | ".join(f"{r['canale'][:18]} {r['durata_s'] // 60}′ {r['lingua_audio'] or '?'}" for r in top))
+        print(tr(f"tappa {n}: ", f"etapa {n}: ", f"stage {n}: ")
+              + " | ".join(f"{r['canale'][:18]} {r['durata_s'] // 60}′ {r['lingua_audio'] or '?'}" for r in top))
 
 
 def lista(slug, minuti=450):
@@ -158,8 +166,11 @@ def lista(slug, minuti=450):
     antes de las fichas, apuntándolos en lavoro/youtube/tolti_a_mano.json ([{"id", "titolo", "perche"}]): así no vuelven en
     la vuelta siguiente."""
     d = cartella(slug)
-    m = leggi(d / "lavoro" / "mappa.json")
-    pert = leggi(d / "lavoro" / "youtube" / "pertinenti.json") or sys.exit("primero `cerca`")
+    m = leggi(d / "lavoro" / "mappa.json") or sys.exit(tr("manca lavoro/mappa.json: prima la mappa, approvata",
+                                                           "falta lavoro/mappa.json: primero el mapa, aprobado",
+                                                           "lavoro/mappa.json is missing: first the map, approved"))
+    pert = leggi(d / "lavoro" / "youtube" / "pertinenti.json") or sys.exit(tr("prima `cerca`", "primero `cerca`",
+                                                                              "run `cerca` first"))
     lingua = m.get("lingua_video") or m.get("lingua", "it")
     if m.get("lingua_video"):  # audio en otro idioma: fuera (si YouTube no lo dice, se queda: lo dirá la ficha)
         pert = [r for r in pert if not r.get("lingua_audio") or r["lingua_audio"] == lingua]
@@ -179,9 +190,14 @@ def lista(slug, minuti=450):
         if not aggiunti:
             break
     scrivi(d / "lavoro" / "youtube" / "lista.json", scelti)
-    print(f"{len(scelti)} vídeos, {tot // 60} minutos (tope {minuti}): lavoro/youtube/lista.json, se puede cambiar a mano")
+    n_sc, min_tot = len(scelti), tot // 60
+    print(tr(f"{n_sc} video, {min_tot} minuti (tetto {minuti}): lavoro/youtube/lista.json, modificabile a mano",
+             f"{n_sc} vídeos, {min_tot} minutos (tope {minuti}): lavoro/youtube/lista.json, se puede cambiar a mano",
+             f"{n_sc} videos, {min_tot} minutes (cap {minuti}): lavoro/youtube/lista.json, can be edited by hand"))
+    parola_tappe = tr("tappe", "etapas", "stages")
     for s in scelti:
-        print(f"  {s['id']}  {s['canale'][:20]:20} {s['durata_s'] // 60:>3}′ {s['lingua_audio'] or '?':>2} etapas {s['tappe']} · {s['titolo'][:60]}")
+        print(f"  {s['id']}  {s['canale'][:20]:20} {s['durata_s'] // 60:>3}′ {s['lingua_audio'] or '?':>2} "
+              f"{parola_tappe} {s['tappe']} · {s['titolo'][:60]}")
 
 
 if __name__ == "__main__":

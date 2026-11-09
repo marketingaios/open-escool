@@ -16,6 +16,7 @@ sys.path.insert(0, str(RADICE))
 sys.path.insert(0, str(RADICE / "strumenti"))
 import accademia  # noqa: E402  (solo funciones: el servidor arranca solo con `python accademia.py`)
 import comune  # noqa: E402
+from comune import tr  # noqa: E402
 
 
 def stato():
@@ -42,25 +43,42 @@ def stato():
 
 
 def testo(s):
-    righe = [] if s["config"] else ["Falta config.json: primero /escool install (luego customize)."]
+    righe = [] if s["config"] else [tr("config.json manca: prima /escool install (poi customize).",
+                                        "Falta config.json: primero /escool install (luego customize).",
+                                        "config.json is missing: first /escool install (then customize).")]
     if not s["corsi"]:
-        return "\n".join(righe + ["Aún no hay ningún curso. Consejo: /escool create \"tema\"."])
+        return "\n".join(righe + [tr("Nessun corso ancora. Consiglio: /escool create \"tema\".",
+                                     "Aún no hay ningún curso. Consejo: /escool create \"tema\".",
+                                     "No courses yet. Tip: /escool create \"topic\".")])
     consigli = []
     for c in s["corsi"]:
         lingue = ", ".join(f"{l or '?'} ({slug})" for slug, l in c["lingue"])
-        r = [f"- {c['titolo']} [{c['nome']}] · vídeos en {lingue} · etapas hechas {c['tappe_fatte']}/{c['tappe']}"]
+        r = [tr(f"- {c['titolo']} [{c['nome']}] · video in {lingue} · tappe fatte {c['tappe_fatte']}/{c['tappe']}",
+                f"- {c['titolo']} [{c['nome']}] · vídeos en {lingue} · etapas hechas {c['tappe_fatte']}/{c['tappe']}",
+                f"- {c['titolo']} [{c['nome']}] · videos in {lingue} · stages done {c['tappe_fatte']}/{c['tappe']}")]
         if c["prossima"]:
-            r.append(f"  siguiente etapa por hacer: la {c['prossima']}")
+            r.append(tr(f"  prossima tappa da fare: la {c['prossima']}", f"  siguiente etapa por hacer: la {c['prossima']}",
+                        f"  next stage to do: {c['prossima']}"))
         if c["giorni_dal_controllo"] is not None:
             g = c["giorni_dal_controllo"]
-            r.append(("  fuentes revisadas hoy" if g == 0 else f"  fuentes revisadas hace {g} día{'' if g == 1 else 's'}") + (" → por actualizar" if c["da_aggiornare"] else ""))
+            oggi = tr("  fonti controllate oggi", "  fuentes revisadas hoy", "  sources checked today")
+            fa = tr(f"  fonti controllate {g} giorn{'o' if g == 1 else 'i'} fa",
+                    f"  fuentes revisadas hace {g} día{'' if g == 1 else 's'}",
+                    f"  sources checked {g} day{'' if g == 1 else 's'} ago")
+            aggiorna = tr(" → da aggiornare", " → por actualizar", " → needs updating")
+            r.append((oggi if g == 0 else fa) + (aggiorna if c["da_aggiornare"] else ""))
         if c["da_ricontrollare"]:
             n = c["da_ricontrollare"]
-            r.append(f"  por revisar: {'etapa' if len(n) == 1 else 'etapas'} {', '.join(map(str, n))}")
+            r.append(tr(f"  da ricontrollare: {'tappa' if len(n) == 1 else 'tappe'} {', '.join(map(str, n))}",
+                        f"  por revisar: {'etapa' if len(n) == 1 else 'etapas'} {', '.join(map(str, n))}",
+                        f"  to recheck: {'stage' if len(n) == 1 else 'stages'} {', '.join(map(str, n))}"))
         if c["dubbi"]:
-            r.append("  dudas abiertas: " + ", ".join(f"etapa {n} ({k})" for n, k in c["dubbi"].items()))
+            tappa = tr("tappa", "etapa", "stage")
+            r.append(tr("  dubbi aperti: ", "  dudas abiertas: ", "  open doubts: ")
+                     + ", ".join(f"{tappa} {n} ({k})" for n, k in c["dubbi"].items()))
         if c["schede_mancanti"]:
-            r.append("  fichas que faltan: " + ", ".join(f"{k} ({v})" for k, v in c["schede_mancanti"].items()))
+            r.append(tr("  schede ancora da fare: ", "  fichas que faltan: ", "  cards still to do: ")
+                     + ", ".join(f"{k} ({v})" for k, v in c["schede_mancanti"].items()))
         righe += r
         if c["da_aggiornare"]:
             consigli.append(f"/escool update {c['nome']}")
@@ -68,7 +86,10 @@ def testo(s):
             consigli.append(f"/escool reinforce {c['nome']} {n}")
         for n in c["da_ricontrollare"]:
             consigli.append(f"/escool update {c['nome']} {n}")
-    righe.append("Consejo: " + (consigli[0] if consigli else "/escool create \"tema\" para un curso nuevo, o sigue con la siguiente etapa"))
+    resto = tr("/escool create \"tema\" per un corso nuovo, o continua la prossima tappa",
+               "/escool create \"tema\" para un curso nuevo, o sigue con la siguiente etapa",
+               "/escool create \"topic\" for a new course, or go on with the next stage")
+    righe.append(tr("Consiglio: ", "Consejo: ", "Tip: ") + (consigli[0] if consigli else resto))
     return "\n".join(righe)
 
 

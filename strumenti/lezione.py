@@ -33,7 +33,7 @@ from difflib import SequenceMatcher
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from comune import PERCORSI, RADICE, leggi, mmss, scrivi, aiuto  # noqa: E402
+from comune import PERCORSI, RADICE, leggi, mmss, scrivi, aiuto, tr  # noqa: E402
 
 LEZIONE = RADICE / "lezione"
 FPS = 30
@@ -88,7 +88,7 @@ def cartelle(slug, tappa):
     dir_t = PERCORSI / base / "lavoro" / "lezioni" / f"t{tappa}"
     copione = dir_t / f"copione.{lingua}.json"
     if not copione.exists():
-        sys.exit(f"falta el guion: {copione}")
+        sys.exit(tr(f"manca il copione: {copione}", f"falta el guion: {copione}", f"the script is missing: {copione}"))
     lavoro = dir_t / lingua
     lavoro.mkdir(parents=True, exist_ok=True)
     return base, lingua, copione, lavoro
@@ -184,7 +184,9 @@ def scelta_voce(lingua, motore=None, voce_id=None, modello=None):
         e = imp.get("elevenlabs") or {}
         vid = voce_id or ((e.get("voci") or {}).get(lingua) or "").strip() or (e.get("voce") or "").strip()
         if not vid:
-            sys.exit("falta el ID de la voz de ElevenLabs: Ajustes → Voz de las lecciones, o --id <ID>")
+            sys.exit(tr("manca l'ID della voce ElevenLabs: Impostazioni → Voce delle lezioni, oppure --id <ID>",
+                        "falta el ID de la voz de ElevenLabs: Ajustes → Voz de las lecciones, o --id <ID>",
+                        "the ElevenLabs voice ID is missing: Settings → Lesson voice, or --id <ID>"))
         regole = {"stability": e.get("stabilita"), "similarity_boost": e.get("somiglianza"), "style": e.get("stile"), "speed": e.get("velocita")}
         return {"motore": "elevenlabs", "voce": vid, "modello": modello or e.get("modello") or elevenlabs.MODELLO_BASE,
                 "impostazioni": {k: float(v) for k, v in regole.items() if v is not None}}
@@ -243,17 +245,29 @@ def voce(slug, tappa, seme=7, motore=None, voce_id=None, modello=None, solo_veri
             return
     else:
         if not Path(sv["python"]).exists():
-            print(f"falta el entorno de la voz gratuita ({sv['python']}): lo crea la instalación (installa.ps1 / installa.sh, "
-                  "ver docs/lezioni.md); o usa ElevenLabs")
+            py = sv["python"]
+            print(tr(f"manca l'ambiente della voce gratuita ({py}): lo mette l'installazione (installa.ps1 / installa.sh, "
+                     "vedi docs/lezioni.md); oppure usa ElevenLabs",
+                     f"falta el entorno de la voz gratuita ({py}): lo crea la instalación (installa.ps1 / installa.sh, "
+                     "ver docs/lezioni.md); o usa ElevenLabs",
+                     f"the free voice environment is missing ({py}): the installer creates it (installa.ps1 / installa.sh, "
+                     "see docs/lezioni.md); or use ElevenLabs"))
             sys.exit(3)
         if sv["modello"] not in sv["installati"]:
-            print(f"la voz {NOMI_VOCE.get(sv['modello'], sv['modello'])} no está instalada en el entorno de la voz "
-                  f"(hay: {', '.join(NOMI_VOCE.get(x, x) for x in sv['installati'] if x != 'whisper') or 'ninguna'}): vuelve a lanzar la instalación "
-                  "o elige otra voz")
+            nome = NOMI_VOCE.get(sv["modello"], sv["modello"])
+            ci_sono = ", ".join(NOMI_VOCE.get(x, x) for x in sv["installati"] if x != "whisper") or tr("nessuna", "ninguna", "none")
+            print(tr(f"la voce {nome} non è installata nell'ambiente della voce (ci sono: {ci_sono}): rilancia l'installazione "
+                     "o scegli un'altra voce",
+                     f"la voz {nome} no está instalada en el entorno de la voz (hay: {ci_sono}): vuelve a lanzar la instalación "
+                     "o elige otra voz",
+                     f"the {nome} voice is not installed in the voice environment (installed: {ci_sono}): run the installer again "
+                     "or choose another voice"))
             sys.exit(3)
         if solo_verifica:
-            print(f"voz gratuita {NOMI_VOCE.get(sv['modello'], sv['modello'])} · {sv['voce']} ({lingua}): en el ordenador, sin coste · "
-                  f"control con Whisper {sv['whisper']}")
+            nome, vv, wh = NOMI_VOCE.get(sv["modello"], sv["modello"]), sv["voce"], sv["whisper"]
+            print(tr(f"voce gratuita {nome} · {vv} ({lingua}): sul computer, nessun costo · controllo con Whisper {wh}",
+                     f"voz gratuita {nome} · {vv} ({lingua}): en el ordenador, sin coste · control con Whisper {wh}",
+                     f"free voice {nome} · {vv} ({lingua}): on the computer, no cost · checked with Whisper {wh}"))
             return
         incarico = {"modello": sv["modello"], "voce": sv["voce"], "lingua": lingua, "whisper": sv["whisper"], "pronuncia": c.get("pronuncia") or {},
                     "soglia": sv["soglia"], "tentativi": sv["tentativi"], "seme": seme, "scene": scene}
@@ -277,9 +291,12 @@ def voce(slug, tappa, seme=7, motore=None, voce_id=None, modello=None, solo_veri
             pc = round(100 * sum(k.size for k in SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks()) / max(1, len(a)))
         controllo.append((s["id"], pc, durata_wav(cartella / f"{s['id']}.wav")))
     if any(pc is not None for _, pc, _ in controllo):
-        print("palabras del guion que Whisper encuentra en la escena entera (por debajo del 90 %, vuelve a escucharla):")
+        print(tr("parole del copione ritrovate da Whisper nella scena intera (sotto 90 % riascoltala):",
+                 "palabras del guion que Whisper encuentra en la escena entera (por debajo del 90 %, vuelve a escucharla):",
+                 "script words Whisper finds in the whole scene (below 90 %, listen to it again):"))
+    riascolta = tr("   ← da riascoltare", "   ← vuelve a escucharla", "   ← listen again")
     for i, pc, d in controllo:
-        print(f"  {i:<12} {'' if pc is None else f'{pc:>3} %'}  {d:5.1f} s{'   ← vuelve a escucharla' if pc is not None and pc < 90 else ''}")
+        print(f"  {i:<12} {'' if pc is None else f'{pc:>3} %'}  {d:5.1f} s{riascolta if pc is not None and pc < 90 else ''}")
     scrivi(lavoro / "voce.json", {**riassunto, "lingua": lingua, "cartella": cartella.name,
                                   "scene": [{"id": i, "parole_ritrovate": pc, "durata_s": round(d, 1)} for i, pc, d in controllo]})
 
@@ -301,19 +318,27 @@ def voce_elevenlabs(sv, lingua, scene, cartella, seme, solo_verifica):
         print(f"ElevenLabs: {e.messaggio}")
         sys.exit(3)
     v, ab = r.get("voce") or {}, r.get("abbonamento") or {}
-    print(f"ElevenLabs · voz «{v.get('nome', sv['voce'])}» · modelo {sv['modello']} · {len(da_fare)} escenas de {len(scene)} por hacer, "
-          f"{caratteri} caracteres ≈ {r.get('servono')} créditos" + (f" · plan {ab['piano']}, quedan {ab['rimasti']} hasta el {ab['rinnovo']}" if ab else ""))
+    nv, mv, nf, ns, servono = v.get("nome", sv["voce"]), sv["modello"], len(da_fare), len(scene), r.get("servono")
+    print(tr(f"ElevenLabs · voce «{nv}» · modello {mv} · {nf} scene su {ns} da fare, {caratteri} caratteri ≈ {servono} crediti",
+             f"ElevenLabs · voz «{nv}» · modelo {mv} · {nf} escenas de {ns} por hacer, {caratteri} caracteres ≈ {servono} créditos",
+             f"ElevenLabs · voice «{nv}» · model {mv} · {nf} of {ns} scenes to do, {caratteri} characters ≈ {servono} credits")
+          + (tr(f" · piano {ab['piano']}, ne restano {ab['rimasti']} fino al {ab['rinnovo']}",
+                f" · plan {ab['piano']}, quedan {ab['rimasti']} hasta el {ab['rinnovo']}",
+                f" · plan {ab['piano']}, {ab['rimasti']} left until {ab['rinnovo']}") if ab else ""))
     for x in r["avvisi"]:
-        print(f"  aviso: {x}")
+        print(tr(f"  avviso: {x}", f"  aviso: {x}", f"  warning: {x}"))
     for x in r["problemi"]:
-        print(f"  PROBLEMA: {x}")
+        print(tr(f"  PROBLEMA: {x}", f"  PROBLEMA: {x}", f"  PROBLEM: {x}"))
     riassunto = {"motore": "elevenlabs", "modello": sv["modello"], "voce": v.get("nome", sv["voce"]), "voce_id": sv["voce"],
                  "piano": ab.get("piano"), "gratuito": bool(ab.get("gratuito")), "etichetta": f"ElevenLabs · {(v.get('nome') or sv['voce']).split(' - ')[0].strip()}"}
     if not r["ok"]:
-        print("no se ha generado ninguna voz: elige qué hacer (voz gratuita, otra voz de ElevenLabs, esperar la renovación)")
+        print(tr("nessuna voce generata: scegli cosa fare (voce gratuita, un'altra voce ElevenLabs, aspettare il rinnovo)",
+                 "no se ha generado ninguna voz: elige qué hacer (voz gratuita, otra voz de ElevenLabs, esperar la renovación)",
+                 "no voice generated: choose what to do (free voice, another ElevenLabs voice, wait for the renewal)"))
         sys.exit(3)
     if solo_verifica:
-        print("comprobación superada: no se ha gastado ningún crédito")
+        print(tr("verifica superata: nessun credito speso", "comprobación superada: no se ha gastado ningún crédito",
+                 "check passed: no credits spent"))
         return riassunto
     tutti = [s["testo"] for s in scene]
     for i, s in enumerate(scene):
@@ -323,7 +348,12 @@ def voce_elevenlabs(sv, lingua, scene, cartella, seme, solo_verifica):
             mp3, parole, richiesta = elevenlabs.parla(k, sv["voce"], s["testo"], sv["modello"], sv["impostazioni"], seme + i,
                                                      " ".join(tutti[:i])[-400:], " ".join(tutti[i + 1:])[:400], lingua)
         except elevenlabs.Errore as e:
-            print(f"ElevenLabs se ha detenido en la escena «{s['id']}»: {e.messaggio} (las escenas ya hechas se quedan; vuelve a lanzarlo para seguir)")
+            sid = s["id"]
+            print(tr(f"ElevenLabs si è fermato alla scena «{sid}»: {e.messaggio} (le scene già fatte restano; "
+                     "rilancia per continuare)",
+                     f"ElevenLabs se ha detenido en la escena «{sid}»: {e.messaggio} (las escenas ya hechas se quedan; "
+                     "vuelve a lanzarlo para seguir)",
+                     f"ElevenLabs stopped at scene «{sid}»: {e.messaggio} (the scenes already done stay; run it again to continue)"))
             sys.exit(3)
         wav = Path(s["wav"])
         grezzo = wav.with_suffix(".mp3")
@@ -334,7 +364,9 @@ def voce_elevenlabs(sv, lingua, scene, cartella, seme, solo_verifica):
         scrivi(wav.with_suffix(".voce.json"), {"impronta": chiave_impronta(s), "motore": "elevenlabs", "voce_id": sv["voce"], "voce": v.get("nome"),
                                                "modello": sv["modello"], "impostazioni": sv["impostazioni"], "piano": ab.get("piano"),
                                                "caratteri": len(s["testo"]), "richiesta": richiesta, "durata_s": round(durata_wav(wav), 1)})
-        print(f"  {s['id']}: {durata_wav(wav):.1f} s, {len(parole)} palabras", flush=True)
+        sid, durata = s["id"], durata_wav(wav)
+        print(tr(f"  {sid}: {durata:.1f} s, {len(parole)} parole", f"  {sid}: {durata:.1f} s, {len(parole)} palabras",
+                 f"  {sid}: {durata:.1f} s, {len(parole)} words"), flush=True)
     py = python_della_voce()
     if py and da_fare:  # solo un informe: no rehace nada por sí solo, cada repetición costaría créditos
         f = cartella / "controllo.json"
@@ -362,7 +394,10 @@ def piano(slug, tappa, stima=False):
         f_voce, f_tempi = cartella_voce(lavoro) / f"{s['id']}.wav", cartella_voce(lavoro) / f"{s['id']}.parole.json"
         if stima or not f_voce.exists():
             if not stima:
-                sys.exit(f"falta la voz de «{s['id']}»: lanza antes el paso voce, o piano --stima")
+                sid = s["id"]
+                sys.exit(tr(f"manca la voce di «{sid}»: lancia prima il passo voce, oppure piano --stima",
+                            f"falta la voz de «{sid}»: lanza antes el paso voce, o piano --stima",
+                            f"the voice of «{sid}» is missing: run the voce step first, or piano --stima"))
             dur = len(parole) / PAROLE_AL_SECONDO
             tempi = [[i / PAROLE_AL_SECONDO, (i + 0.8) / PAROLE_AL_SECONDO] for i in range(len(parole))]
         else:
@@ -382,7 +417,10 @@ def piano(slug, tappa, stima=False):
          "titolo": c["titolo"], "tappa": tappa, "etichetta_passi": et["passi"], "crediti": et["crediti"], "passi": c["passi"],
          "tema": {"acc": colori.get("primario", "#AFF320")} if colori.get("primario") else {}, "scene": scene, "sottotitoli": sottotitoli}
     scrivi(lavoro / "piano.json", p)
-    print(f"plan: {len(scene)} escenas, {mmss(t)} ({'estimado' if stima else 'de la voz'}) → {lavoro / 'piano.json'}")
+    dove, durata = lavoro / "piano.json", mmss(t)
+    print(tr(f"piano: {len(scene)} scene, {durata} ({'stimato' if stima else 'dalla voce'}) → {dove}",
+             f"plan: {len(scene)} escenas, {durata} ({'estimado' if stima else 'de la voz'}) → {dove}",
+             f"plan: {len(scene)} scenes, {durata} ({'estimated' if stima else 'from the voice'}) → {dove}"))
     return p
 
 
@@ -406,7 +444,9 @@ def cartella_pubblica(lavoro):
 def remotion(lavoro, *argomenti):
     cli = LEZIONE / "node_modules" / "@remotion" / "cli" / "remotion-cli.js"
     if not cli.exists():
-        sys.exit("falta Remotion: en la carpeta lezione/ lanza `npm install`")
+        sys.exit(tr("manca Remotion: nella cartella lezione/ lancia `npm install`",
+                    "falta Remotion: en la carpeta lezione/ lanza `npm install`",
+                    "Remotion is missing: run `npm install` in the lezione/ folder"))
     extra = []
     base = LEZIONE / "node_modules" / ".remotion" / "chrome-headless-shell"
     chrome = list(base.glob("*/*/chrome-headless-shell")) + list(base.glob("*/*/chrome-headless-shell.exe"))
@@ -439,7 +479,8 @@ def video(slug, tappa):
     base, lingua, f_copione, lavoro = cartelle(slug, tappa)
     p = leggi(lavoro / "piano.json")
     if not p:
-        sys.exit("falta el plan: lanza antes el paso piano")
+        sys.exit(tr("manca il piano: lancia prima il passo piano", "falta el plan: lanza antes el paso piano",
+                    "the plan is missing: run the piano step first"))
     muto = lavoro / "muto.mp4"
     remotion(lavoro, "render", "src/index.ts", "Lezione", str(muto), "--codec=h264", "--crf=20", "--pixel-format=yuv420p", "--image-format=jpeg",
              "--jpeg-quality=92", "--concurrency=4", "--muted")
@@ -453,7 +494,8 @@ def video(slug, tappa):
     # portada: con el título ya escrito
     s0 = p["scene"][0]
     remotion(lavoro, "still", "src/index.ts", "Lezione", str(dest / f"t{tappa}.jpg"), f"--frame={s0['da_f'] + min(s0['durata_f'] - 1, 75)}", "--image-format=jpeg", "--jpeg-quality=88")
-    print(f"vídeo: {finale} ({mmss(p['durata_f'] / FPS)})")
+    durata = mmss(p["durata_f"] / FPS)
+    print(tr(f"video: {finale} ({durata})", f"vídeo: {finale} ({durata})", f"video: {finale} ({durata})"))
 
 
 def fermi(slug, tappa, secondi_):
@@ -462,7 +504,7 @@ def fermi(slug, tappa, secondi_):
     out.mkdir(exist_ok=True)
     for x in secondi_:
         remotion(lavoro, "still", "src/index.ts", "Lezione", str(out / f"{x:06.1f}.jpg"), f"--frame={round(x * FPS)}", "--image-format=jpeg", "--jpeg-quality=85")
-    print(f"fotogramas en {out}")
+    print(tr(f"fermi in {out}", f"fotogramas en {out}", f"frames in {out}"))
 
 
 # --- en la plataforma -------------------------------------------------------------------------------------------------------------
@@ -522,10 +564,13 @@ def pubblica(slug, tappa):
     base, lingua, f_copione, lavoro = cartelle(slug, tappa)
     c, p = leggi(f_copione), leggi(lavoro / "piano.json")
     if not p or p.get("stimato"):
-        sys.exit("hacen falta el plan de la voz real (paso piano sin --stima) y el vídeo")
+        sys.exit(tr("serve il piano dalla voce vera (passo piano senza --stima) e il video",
+                    "hacen falta el plan de la voz real (paso piano sin --stima) y el vídeo",
+                    "you need the plan from the real voice (piano step without --stima) and the video"))
     dest = PERCORSI / slug / "lezioni"
     if not (dest / f"t{tappa}.mp4").exists():
-        sys.exit("falta el vídeo: lanza antes el paso video")
+        sys.exit(tr("manca il video: lancia prima il passo video", "falta el vídeo: lanza antes el paso video",
+                    "the video is missing: run the video step first"))
     dur = p["durata_f"] / FPS
     scene = []
     for s, sp in zip(c["scene"], p["scene"]):
@@ -536,7 +581,10 @@ def pubblica(slug, tappa):
                                      "copertina": f"lezioni/t{tappa}.jpg", "controllata": c.get("controllata"), "creata": date.today().isoformat(),
                                      "voce": p.get("voce", ""), "voce_info": p.get("voce_info") or {}, "scene": scene, "frasi": frasi})
     metti_lezioni(slug)
-    print(f"publicada: etapa {tappa} de {slug}, {mmss(dur)}; los vídeos de YouTube quedan como alternativas")
+    durata = mmss(dur)
+    print(tr(f"pubblicata: tappa {tappa} di {slug}, {durata}; i video di YouTube restano come alternative",
+             f"publicada: etapa {tappa} de {slug}, {durata}; los vídeos de YouTube quedan como alternativas",
+             f"published: stage {tappa} of {slug}, {durata}; the YouTube videos stay as alternatives"))
 
 
 def main():

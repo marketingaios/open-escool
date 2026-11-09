@@ -13,7 +13,7 @@ from pathlib import Path
 
 RADICE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RADICE / "strumenti"))
-from comune import PERCORSI, aiuto, leggi  # noqa: E402
+from comune import PERCORSI, aiuto, leggi, tr  # noqa: E402
 
 OUT = RADICE / "docs" / "img"
 RUTA_FILTROS = "chatgpt-ads"
@@ -45,7 +45,7 @@ def grafico(titulo, subtitulo, filas, colores, tema, unidad=""):
     t = TEMAS[tema]
     ancho, izq, ancho_barras, alto_fila, grosor = 720, 24, 560, 54, 20
     alto = 92 + alto_fila * len(filas) + 12
-    maximo = max(v for _, v, _ in filas) or 1
+    maximo = max((v for _, v, _ in filas), default=0) or 1  # sin rutas listas: gráfico vacío, sin error
     p = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{ancho}" height="{alto}" viewBox="0 0 {ancho} {alto}" role="img" '
          f'aria-label="{esc(titulo)}. ' + esc("; ".join(f"{e}: {tx}" for e, _, tx in filas)) + '">',
          f'<rect width="{ancho}" height="{alto}" rx="8" fill="{t["fondo"]}"/>',
@@ -106,8 +106,10 @@ def main():
             "Minutos de vídeo de cada ruta lista", "Solo los fragmentos que hay que ver, sin las lecturas oficiales",
             filas, [t["serie"]] * len(filas), tema), encoding="utf-8")
     (OUT / "datos.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"gráficos en {OUT.relative_to(RADICE)}: filtros {'sí' if f else 'no (faltan los datos de la búsqueda)'}, "
-          f"{len(d['rutas'])} rutas")
+    dove, n = OUT.relative_to(RADICE), len(d["rutas"])
+    print(tr(f"grafici in {dove}: filtri {'sì' if f else 'no (mancano i dati della ricerca)'}, {n} percorsi",
+             f"gráficos en {dove}: filtros {'sí' if f else 'no (faltan los datos de la búsqueda)'}, {n} rutas",
+             f"charts in {dove}: filters {'yes' if f else 'no (the search data is missing)'}, {n} paths"))
 
 
 if __name__ == "__main__":

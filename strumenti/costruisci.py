@@ -18,7 +18,7 @@ import sys
 from datetime import date
 
 import metadati
-from comune import cartella, chiave, leggi, mmss, scrivi, secondi as s, aiuto
+from comune import cartella, chiave, leggi, mmss, scrivi, secondi as s, aiuto, tr
 
 MALE = {"sbagliata": 1.0, "superata": 0.5}
 
@@ -133,7 +133,8 @@ def a_mano(voci, cand, schede, t=None, date_video=None, lingua_testi="it"):
 
 def main(slug):
     d = cartella(slug)
-    m = leggi(d / "lavoro" / "mappa.json") or sys.exit("falta lavoro/mappa.json")
+    m = leggi(d / "lavoro" / "mappa.json") or sys.exit(tr("manca lavoro/mappa.json", "falta lavoro/mappa.json",
+                                                           "lavoro/mappa.json is missing"))
     metadati.separa(d)  # cursos anteriores al 09/11/2026: los datos de YouTube salen de percorso.json y de las fichas
     grezzo = leggi(d / "lavoro" / "youtube" / "grezzo_video.json", {})
     pert = {v["id"]: v for v in leggi(d / "lavoro" / "youtube" / "pertinenti.json", [])}
@@ -143,7 +144,10 @@ def main(slug):
         try:
             metadati.rinnova(d, k, ids=list(schede))
         except (OSError, ValueError) as e:  # red o cuota: se construye con los datos válidos que hay
-            print(f"datos de YouTube no renovados ({e.__class__.__name__}): las fechas de los vídeos sin datos no se comprueban")
+            nome = e.__class__.__name__
+            print(tr(f"dati di YouTube non rinnovati ({nome}): le date dei video senza dati non si controllano",
+                     f"datos de YouTube no renovados ({nome}): las fechas de los vídeos sin datos no se comprueban",
+                     f"YouTube data not renewed ({nome}): the dates of videos without data are not checked"))
     meta = metadati.validi(d)
     date_video = {vid: meta_video(vid, meta, grezzo, pert).get("pubblicato") for vid in schede}
     mano = leggi(d / "lavoro" / "scelta.json", {})
@@ -151,6 +155,10 @@ def main(slug):
     lingua_v = m.get("lingua_video")  # un idioma por ruta: los vídeos hablados en otros idiomas se quedan fuera
     pavimento = min(t.get("valido_da") or "0" for t in m["tappe"])
     tappe, righe, principali, usati = [], [], [], []
+    # papel del vídeo y elección a mano como se leen en scelta.md y en pantalla (en percorso.json quedan "principale", "a mano")
+    nomi_ruolo = {"principale": tr("principale", "principal", "main"),
+                  "alternativo": tr("alternativo", "alternativo", "alternative")}
+    a_mano_txt = tr("a mano", "a mano", "by hand")
     for t in m["tappe"]:
         cand = candidati(t, schede, lingua_v or lingua, principali, pavimento, lingua_v, usati, date_video, lingua)
         scelti, visti = [], set()
@@ -176,7 +184,10 @@ def main(slug):
             video.append({"id": c["vid"], "ruolo": ruolo, "lingua": sch.get("lingua_parlata") or mv.get("lingua_audio"),
                           "inizio": mmss(sp["inizio"]), "fine": mmss(sp["fine"]), "riassunto": sch.get("riassunto"), "punti": punti,
                           "attenzione": attenzione, "perche": sch.get("consiglio_perche"), "punteggio": c["punti"]})
-            righe.append(f"| {t['n']} | {ruolo} | {mv.get('canale', '')} · {(mv.get('titolo') or c['vid'])[:60]} | {mmss(sp['inizio'])}-{mmss(sp['fine'])} | {c['punti']} |")
+            punti_txt = a_mano_txt if c["punti"] == "a mano" else c["punti"]
+            video_txt = f"{mv.get('canale', '')} · {(mv.get('titolo') or c['vid'])[:60]}".replace("|", "/")  # «|» rompería la tabla
+            righe.append(f"| {t['n']} | {nomi_ruolo[ruolo]} | {video_txt} "
+                         f"| {mmss(sp['inizio'])}-{mmss(sp['fine'])} | {punti_txt} |")
         tappe.append({"n": t["n"], "titolo": t["titolo"], "obiettivo": t["obiettivo"],
                       "minuti_video": round((s(video[0]["fine"]) - s(video[0]["inizio"])) / 60) if video else t.get("minuti_video"),
                       "valido_da": t.get("valido_da"), "ricontrolla_dopo": t.get("ricontrolla_dopo"), "nota_ricontrollo": t.get("nota_ricontrollo"),
@@ -195,12 +206,18 @@ def main(slug):
     scrivi(d / "percorso.json", percorso)
     from lezione import metti_lezioni  # las lecciones generadas (lezioni/t<N>.json) siguen siendo el vídeo principal de su etapa
     if n_lez := metti_lezioni(slug):
-        print(f"lecciones generadas repuestas: {n_lez}")
-    (d / "lavoro" / "scelta.md").write_text("# Fragmentos elegidos\n\n| Etapa | Rol | Vídeo | Fragmento | Puntos |\n|---|---|---|---|---|\n"
-                                            + "\n".join(righe) + "\n", encoding="utf-8")
+        print(tr(f"lezioni generate rimesse: {n_lez}", f"lecciones generadas repuestas: {n_lez}",
+                 f"generated lessons put back: {n_lez}"))
+    testata = tr("# Spezzoni scelti\n\n| Tappa | Ruolo | Video | Spezzone | Punti |\n",
+                 "# Fragmentos elegidos\n\n| Etapa | Rol | Vídeo | Fragmento | Puntos |\n",
+                 "# Chosen clips\n\n| Stage | Role | Video | Clip | Points |\n")
+    (d / "lavoro" / "scelta.md").write_text(testata + "|---|---|---|---|---|\n" + "\n".join(righe) + "\n", encoding="utf-8")
     metadati.pulisci(d)
-    print(f"{len(schede)} fichas, {sum(len(t['video']) for t in tappe)} fragmentos en {len(tappe)} etapas, {percorso['durata_min']} min;"
-          f" etapas sin vídeo: {[t['n'] for t in tappe if not t['video']] or 'ninguna'}")
+    n_sch, n_sp, n_t, durata = len(schede), sum(len(t["video"]) for t in tappe), len(tappe), percorso["durata_min"]
+    senza = [t["n"] for t in tappe if not t["video"]]
+    print(tr(f"{n_sch} schede, {n_sp} spezzoni in {n_t} tappe, {durata} min; tappe senza video: {senza or 'nessuna'}",
+             f"{n_sch} fichas, {n_sp} fragmentos en {n_t} etapas, {durata} min; etapas sin vídeo: {senza or 'ninguna'}",
+             f"{n_sch} cards, {n_sp} clips in {n_t} stages, {durata} min; stages without video: {senza or 'none'}"))
     print("\n".join(righe))
 
 

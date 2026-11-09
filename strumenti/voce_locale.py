@@ -39,6 +39,8 @@ from pathlib import Path
 import numpy as np
 from scipy.io import wavfile
 
+from comune import tr  # solo biblioteca estándar: funciona también con el Python del entorno de la voz
+
 QUI = Path(__file__).resolve().parent
 if hasattr(sys.stdout, "reconfigure"):  # en Windows, si el asistente lee la salida, la consola no es UTF-8 por defecto
     sys.stdout.reconfigure(encoding="utf-8", errors="replace", line_buffering=True)
@@ -119,7 +121,8 @@ class VoceOnnx:
                 if not (d / nome).exists():
                     import urllib.request
 
-                    print(f"descargando {nome} (Kokoro-82M, Apache 2.0)…", flush=True)
+                    print(tr(f"scarico {nome} (Kokoro-82M, Apache 2.0)…", f"descargando {nome} (Kokoro-82M, Apache 2.0)…",
+                             f"downloading {nome} (Kokoro-82M, Apache 2.0)…"), flush=True)
                     urllib.request.urlretrieve(KOKORO_ONNX + rel, d / (nome + ".parziale"))
                     (d / (nome + ".parziale")).replace(d / nome)
             self.m = Kokoro(str(d / "kokoro-v1.0.onnx"), str(d / "voices-v1.0.bin"))
@@ -352,7 +355,8 @@ def controlla(f: Path) -> None:
     lavoro = json.loads(f.read_text(encoding="utf-8"))
     lingua = lavoro["lingua"]
     w = WhisperModel(lavoro.get("whisper") or "medium", device="cpu", compute_type="int8")
-    print("nueva escucha con Whisper (solo informe: no rehace nada):", flush=True)
+    print(tr("riascolto con Whisper (solo rapporto: non rifà nulla):", "nueva escucha con Whisper (solo informe: no rehace nada):",
+             "listening again with Whisper (report only: nothing is redone):"), flush=True)
     for s in lavoro["scene"]:
         segmenti, _ = w.transcribe(audio_16k(Path(s["wav"])), language=lingua, beam_size=5, vad_filter=False)
         v, diversi = voto(s["testo"], " ".join(x.text for x in segmenti).split(), lingua)
@@ -369,13 +373,18 @@ def prepara(modelli: list[str], whisper: str) -> None:
 
     t = time.time()
     WhisperModel(whisper, device="cpu", compute_type="int8")
-    print(f"Whisper {whisper}: listo ({time.time() - t:.0f} s)", flush=True)
+    sec = time.time() - t
+    print(tr(f"Whisper {whisper}: pronto ({sec:.0f} s)", f"Whisper {whisper}: listo ({sec:.0f} s)",
+             f"Whisper {whisper}: ready ({sec:.0f} s)"), flush=True)
     for modello in modelli:
         t = time.time()
         m = carica(modello)
         voce = {"supertonic": "F1", "kokoro-onnx": "if_sara"}.get(modello, "base")
         audio = genera_pezzo(modello, m, voce, "it", RISCALDA["it"], SEME)
-        print(f"{modello}: listo, frase de prueba de {len(audio) / m.sample_rate:.1f} s ({time.time() - t:.0f} s)", flush=True)
+        durata, sec = len(audio) / m.sample_rate, time.time() - t
+        print(tr(f"{modello}: pronto, frase di prova di {durata:.1f} s ({sec:.0f} s)",
+                 f"{modello}: listo, frase de prueba de {durata:.1f} s ({sec:.0f} s)",
+                 f"{modello}: ready, test sentence of {durata:.1f} s ({sec:.0f} s)"), flush=True)
 
 
 def main() -> None:
@@ -398,7 +407,10 @@ def main() -> None:
         if fatto.get("impronta") == impronta(lavoro, s["testo"]) and Path(s["wav"]).exists() and Path(s["parole"]).exists():
             continue
         da_fare.append(s)
-    print(f"voz: {modello} {voce} ({lingua}), {len(da_fare)} escenas por hacer de {len(lavoro['scene'])}", flush=True)
+    nf, ns = len(da_fare), len(lavoro["scene"])
+    print(tr(f"voce: {modello} {voce} ({lingua}), {nf} scene da fare su {ns}",
+             f"voz: {modello} {voce} ({lingua}), {nf} escenas por hacer de {ns}",
+             f"voice: {modello} {voce} ({lingua}), {nf} of {ns} scenes to do"), flush=True)
     if not da_fare:
         return
     from faster_whisper import WhisperModel
@@ -425,7 +437,10 @@ def main() -> None:
                     migliore = (v_scena, diversi, uscita.read_bytes(), parole, audio, sr, rapporto, tipo, giro + 1)
             if v_scena >= soglia:
                 break
-            print(f"  {s['id']}: escena entera al {v_scena:.0%} ({diversi[:3]}), la rehago", flush=True)
+            sid, primi = s["id"], diversi[:3]
+            print(tr(f"  {sid}: scena intera al {v_scena:.0%} ({primi}), la rifaccio",
+                     f"  {sid}: escena entera al {v_scena:.0%} ({primi}), la rehago",
+                     f"  {sid}: whole scene at {v_scena:.0%} ({primi}), redoing it"), flush=True)
         v_scena, diversi, dati, parole, audio, sr, rapporto, tipo, giri = migliore
         wav.write_bytes(dati)
         Path(s["parole"]).write_text(json.dumps(parole, ensure_ascii=False), encoding="utf-8")
@@ -438,8 +453,13 @@ def main() -> None:
              "durata_s": round(len(audio) / sr, 1), "tempo_s": round(time.time() - t, 1), "loudnorm": tipo, "voto_scena": round(v_scena, 3),
              "diversi_scena": diversi, "giri": giri, "pezzi": rapporto}, ensure_ascii=False, indent=1), encoding="utf-8")
         rifatti = sum(r["tentativi"] - 1 for r in rapporto)
-        print(f"  {s['id']}: {len(audio) / sr:.1f} s en {time.time() - t:.0f} s · escena {v_scena:.0%} · {len(rapporto)} trozos, {rifatti} rehechos"
-              + (f" · bajo el umbral: {[(r['pezzo'], r['voto'], r['diversi'][:3]) for r in deboli]}" if deboli else ""), flush=True)
+        sid, durata, sec, n_pezzi = s["id"], len(audio) / sr, time.time() - t, len(rapporto)
+        sotto = [(r["pezzo"], r["voto"], r["diversi"][:3]) for r in deboli]
+        print(tr(f"  {sid}: {durata:.1f} s in {sec:.0f} s · scena {v_scena:.0%} · {n_pezzi} pezzi, {rifatti} rifatti",
+                 f"  {sid}: {durata:.1f} s en {sec:.0f} s · escena {v_scena:.0%} · {n_pezzi} trozos, {rifatti} rehechos",
+                 f"  {sid}: {durata:.1f} s in {sec:.0f} s · scene {v_scena:.0%} · {n_pezzi} chunks, {rifatti} redone")
+              + (tr(f" · sotto soglia: {sotto}", f" · bajo el umbral: {sotto}", f" · below threshold: {sotto}") if deboli else ""),
+              flush=True)
 
 
 if __name__ == "__main__":
