@@ -90,7 +90,8 @@ encendido: en Mac `caffeinate -i -s python3 strumenti/schede.py <ruta> --aspetta
 suspensión).
 
 **7. Ruta** — `python strumenti/costruisci.py <ruta>`, luego lee `lavoro/scelta.md`. Revisa con ojo crítico:
-¿el fragmento principal de cada etapa habla de verdad de esa etapa? ¿es demasiado largo? Si no, elige a mano en
+empieza por «Por revisar» (fragmentos principales de menos de 3 minutos, vídeos descartados por el idioma hablado que dice
+la ficha). ¿El fragmento principal de cada etapa habla de verdad de esa etapa? ¿es demasiado largo? Si no, elige a mano en
 `lavoro/scelta.json` (`{"3": {"principale": "ID@1:20-9:40", "alternativi": ["ID"]}}`) y reconstruye. Las etapas sin vídeo
 se quedan con «Hueco declarado» y las lecturas oficiales: dilo, no lo escondas.
 

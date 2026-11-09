@@ -72,6 +72,9 @@ TESTI = {
 }
 
 
+MINUTI_POCHI = 3  # fragmento principal más corto: la etapa se avisa (09/11, GEO italiano: un fragmento genérico de pocos minutos)
+
+
 def testo(chiave, lingua, **campi):
     return TESTI.get(lingua, TESTI["it"])[chiave].format(**campi)
 
@@ -154,13 +157,18 @@ def main(slug):
     lingua = m.get("lingua", "it")
     lingua_v = m.get("lingua_video")  # un idioma por ruta: los vídeos hablados en otros idiomas se quedan fuera
     pavimento = min(t.get("valido_da") or "0" for t in m["tappe"])
-    tappe, righe, principali, usati = [], [], [], []
+    tappe, righe, principali, usati, deboli = [], [], [], [], []
     # papel del vídeo y elección a mano como se leen en scelta.md y en pantalla (en percorso.json quedan "principale", "a mano")
     nomi_ruolo = {"principale": tr("principale", "principal", "main"),
                   "alternativo": tr("alternativo", "alternativo", "alternative")}
     a_mano_txt = tr("a mano", "a mano", "by hand")
     for t in m["tappe"]:
         cand = candidati(t, schede, lingua_v or lingua, principali, pavimento, lingua_v, usati, date_video, lingua)
+        fuori_lingua = []  # los que quedan fuera solo por el idioma hablado (el de la ficha de Gemini, no el que declara YouTube)
+        if lingua_v:
+            dentro = {c["vid"] for c in cand}
+            fuori_lingua = [c for c in candidati(t, schede, lingua_v, principali, pavimento, None, usati, date_video, lingua)
+                            if c["vid"] not in dentro]
         scelti, visti = [], set()
         for c in cand:
             if c["vid"] not in visti:
@@ -188,6 +196,29 @@ def main(slug):
             video_txt = f"{mv.get('canale', '')} · {(mv.get('titolo') or c['vid'])[:60]}".replace("|", "/")  # «|» rompería la tabla
             righe.append(f"| {t['n']} | {nomi_ruolo[ruolo]} | {video_txt} "
                          f"| {mmss(sp['inizio'])}-{mmss(sp['fine'])} | {punti_txt} |")
+        n_tappa = t["n"]
+        durata_p = (s(video[0]["fine"]) - s(video[0]["inizio"])) / 60 if video else 0.0
+        if video and durata_p < MINUTI_POCHI:
+            deboli.append((n_tappa, tr(f"tappa {n_tappa}: lo spezzone principale dura solo {durata_p:.1f} min: controlla che copra davvero la "
+                             f"tappa (se no, buco dichiarato o lezione generata)",
+                             f"etapa {n_tappa}: el fragmento principal dura solo {durata_p:.1f} min: comprueba que cubra de verdad "
+                             f"la etapa (si no, hueco declarado o lección generada)",
+                             f"stage {n_tappa}: the main clip is only {durata_p:.1f} min long: check that it really covers the stage "
+                             f"(if not, a declared gap or a generated lesson)")))
+        punti_p = scelti[0]["punti"] if scelti and isinstance(scelti[0]["punti"], (int, float)) else None
+        migliori = {c["vid"] for c in fuori_lingua if punti_p is None or c["punti"] > punti_p}
+        if fuori_lingua and (not video or durata_p < MINUTI_POCHI):  # solo si la etapa queda débil: el idioma elegido manda
+            k = len({c["vid"] for c in fuori_lingua})
+            parlate = ", ".join(sorted({(c["sch"].get("lingua_parlata") or "?")[:2] for c in fuori_lingua}))
+            n_m = len(migliori)
+            piu = (tr(f", {n_m} con punteggio più alto del principale", f", {n_m} con más puntuación que el principal",
+                      f", {n_m} scoring higher than the main one") if video else "")
+            deboli.append((n_tappa, tr(f"tappa {n_tappa}: {k} video esclusi perché parlati in {parlate} (lingua letta dalla scheda di Gemini, non "
+                             f"quella dichiarata da YouTube){piu}",
+                             f"etapa {n_tappa}: {k} vídeos excluidos por estar hablados en {parlate} (idioma leído de la ficha de Gemini, "
+                             f"no el que declara YouTube){piu}",
+                             f"stage {n_tappa}: {k} videos left out because they are spoken in {parlate} (language read from the Gemini "
+                             f"card, not the one YouTube declares){piu}")))
         tappe.append({"n": t["n"], "titolo": t["titolo"], "obiettivo": t["obiettivo"],
                       "minuti_video": round((s(video[0]["fine"]) - s(video[0]["inizio"])) / 60) if video else t.get("minuti_video"),
                       "valido_da": t.get("valido_da"), "ricontrolla_dopo": t.get("ricontrolla_dopo"), "nota_ricontrollo": t.get("nota_ricontrollo"),
@@ -208,9 +239,16 @@ def main(slug):
     if n_lez := metti_lezioni(slug):
         print(tr(f"lezioni generate rimesse: {n_lez}", f"lecciones generadas repuestas: {n_lez}",
                  f"generated lessons put back: {n_lez}"))
+        percorso = leggi(d / "percorso.json", percorso)  # el resumen cuenta también las lecciones
+        tappe = percorso["tappe"]
+    con_lezione = {(leggi(f, {}) or {}).get("tappa") for f in (d / "lezioni").glob("t*.json")}
+    deboli = [x for n_tappa, x in deboli if n_tappa not in con_lezione]  # una lección generada ya cubre la etapa
     testata = tr("# Spezzoni scelti\n\n| Tappa | Ruolo | Video | Spezzone | Punti |\n",
                  "# Fragmentos elegidos\n\n| Etapa | Rol | Vídeo | Fragmento | Puntos |\n",
                  "# Chosen clips\n\n| Stage | Role | Video | Clip | Points |\n")
+    da_guardare = (tr("## Da controllare\n\n", "## Por revisar\n\n", "## To check\n\n") + "".join(f"- {x}\n" for x in deboli) + "\n"
+                   if deboli else "")
+    testata = testata.replace("\n\n", "\n\n" + da_guardare, 1)
     (d / "lavoro" / "scelta.md").write_text(testata + "|---|---|---|---|---|\n" + "\n".join(righe) + "\n", encoding="utf-8")
     metadati.pulisci(d)
     n_sch, n_sp, n_t, durata = len(schede), sum(len(t["video"]) for t in tappe), len(tappe), percorso["durata_min"]
@@ -219,6 +257,8 @@ def main(slug):
              f"{n_sch} fichas, {n_sp} fragmentos en {n_t} etapas, {durata} min; etapas sin vídeo: {senza or 'ninguna'}",
              f"{n_sch} cards, {n_sp} clips in {n_t} stages, {durata} min; stages without video: {senza or 'none'}"))
     print("\n".join(righe))
+    for x in deboli:
+        print(tr("ATTENZIONE ", "ATENCIÓN ", "WARNING ") + x)
 
 
 if __name__ == "__main__":
