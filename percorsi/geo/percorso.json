@@ -1,0 +1,529 @@
+{
+ "slug": "geo",
+ "titolo": "GEO: que la IA encuentre y cite tu web",
+ "sottotitolo": "Cómo eligen sus fuentes AI Overviews, AI Mode, ChatGPT y Perplexity, qué revisar en tu web y cómo medirlo.",
+ "arrivo": "Quien ya hace marketing digital sale con un diagnóstico de cómo aparece su marca en AI Overviews y AI Mode de Google, en la búsqueda de ChatGPT y en Perplexity; con su web revisada según las guías oficiales (rastreadores, indexación, contenido) y con un plan de acciones priorizadas y una forma de medirlas.",
+ "lingua": "es",
+ "lingua_video": "es",
+ "da": null,
+ "tema": "GEO (Generative Engine Optimization)",
+ "copertina": {
+  "icona": "lente"
+ },
+ "categoria": null,
+ "creato": "2026-11-08",
+ "controllato": "2026-11-09",
+ "stato": "pronto",
+ "schede_mancanti": 0,
+ "fonti": "9 páginas oficiales de Google, OpenAI y Perplexity, el estudio GEO (KDD 2024), un estudio de 2025 sobre fuentes en buscadores con IA y el estudio de Pew Research (2025), leídos el 8/11/2026",
+ "avvisi": [
+  "Google: el control «Search generative AI» de Search Console y el informe de rendimiento de IA generativa están disponibles para todas las webs del mundo desde el 31/8/2026, también en España y Latinoamérica (support-google-com-webmasters-answer-16984139.md, blog-google-...-new-controls-website-owners.md).",
+  "AI Mode en español: llegó a Latinoamérica el 23/9/2025 y a España en octubre de 2025 según la prensa (no oficial: Google no lo dice en las páginas guardadas). Los vídeos anteriores hablan de AI Mode como algo «solo de EE. UU.».",
+  "Los datos de clics de Pew Research son de adultos de EE. UU. en marzo de 2025: sirven como tendencia, no como cifra para España o Latinoamérica.",
+  "ChatGPT puede usar proveedores de búsqueda externos (la página oficial enlaza la política de privacidad de Microsoft y de Shopify): que tu web esté bien indexada fuera de Google también cuenta (deducción, ver Dubbi).",
+  "La FAQ oficial de OpenAI para editores (help.openai.com/en/articles/12627856), donde decía que ChatGPT añade utm_source=chatgpt.com a los enlaces, hoy abre otra página. Y la prensa especializada informa de un fallo en octubre de 2026 en que la UTM dejó de añadirse: en GA4 parte de ese tráfico puede aparecer como directo."
+ ],
+ "cambi_recenti": [
+  {
+   "data": "2023-11-16",
+   "cosa": "Primera versión del estudio que bautiza el GEO (Aggarwal y otros, Princeton); publicado en KDD 2024.",
+   "fonte": "arxiv-org-html-2311-09735v3.md"
+  },
+  {
+   "data": "2025-07-22",
+   "cosa": "Pew Research: con resumen de IA en Google se hace clic en un resultado en el 8 % de las visitas, frente al 15 % sin resumen (datos de EE. UU., marzo 2025).",
+   "fonte": "2-google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results.md"
+  },
+  {
+   "data": "2025-09-10",
+   "cosa": "Estudio de Chen, Wang, Chen y Koudas (preprint en arXiv): los buscadores con IA prefieren fuentes de terceros («earned media») a las de la marca y a las redes sociales.",
+   "fonte": "arxiv-org-html-2509-08919v1.md"
+  },
+  {
+   "data": "2026-06-03",
+   "cosa": "Google lanza en prueba el informe de rendimiento de IA generativa y el control para excluir la web de AI Overviews, AI Mode y Discover, y publica la guía oficial de optimización para IA generativa.",
+   "fonte": "blog-google-products-and-platforms-products-search-new-controls-website-owners.md"
+  },
+  {
+   "data": "2026-07-10",
+   "cosa": "Última actualización de la guía de Google para IA generativa (mitos: llms.txt, «chunking», menciones inauténticas, schema especial).",
+   "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md"
+  },
+  {
+   "data": "2026-08-31",
+   "cosa": "Informe y control de IA generativa en Search Console para todas las webs del mundo.",
+   "fonte": "support-google-com-webmasters-answer-16984139.md"
+  },
+  {
+   "data": "2026-10-15",
+   "cosa": "Google añade más enlaces en línea en AI Mode y AI Overviews, prueba una sección de webs oficiales arriba de la respuesta y carruseles de noticias en más países e idiomas.",
+   "fonte": "blog-google-products-and-platforms-products-search-updates-ai-mode-overviews-explore-web.md"
+  },
+  {
+   "data": "2026-10-29",
+   "cosa": "Última modificación de la página oficial de rastreadores de Perplexity (PerplexityBot y Perplexity-User).",
+   "fonte": "docs-perplexity-ai-docs-resources-perplexity-crawlers.md"
+  }
+ ],
+ "durata_min": 18,
+ "tappe": [
+  {
+   "n": 1,
+   "titolo": "Cómo eligen sus fuentes los buscadores con IA",
+   "obiettivo": "Sabes explicar qué es el GEO y en qué se parece y se diferencia del SEO, cómo buscan y citan fuentes AI Overviews, AI Mode, ChatGPT y Perplexity (búsqueda en el índice, «query fan-out», reescritura de la consulta) y qué dicen los estudios sobre clics y tipos de fuentes.",
+   "minuti_video": 7,
+   "valido_da": "2025-09-23",
+   "ricontrolla_dopo": null,
+   "nota_ricontrollo": null,
+   "concetti": [
+    "El GEO nace en un estudio académico (Princeton, KDD 2024) como forma de que quien crea contenido mejore su visibilidad en las respuestas de los motores generativos.",
+    "Un motor generativo responde juntando información de varias fuentes y resumiéndola con un modelo de lenguaje.",
+    "En Google, AI Overviews y AI Mode se apoyan en los mismos sistemas de ranking y calidad de la búsqueda: por eso el SEO sigue valiendo.",
+    "Google usa «grounding» (RAG): recupera páginas de su índice con su ranking y genera la respuesta con enlaces a esas páginas.",
+    "«Query fan-out»: el modelo lanza a la vez varias búsquedas relacionadas para completar la respuesta.",
+    "AI Overviews solo aparece cuando Google cree que aporta algo a la búsqueda clásica, así que a menudo no sale.",
+    "AI Mode y AI Overviews pueden usar modelos y técnicas distintos: muestran respuestas y enlaces diferentes.",
+    "Según Google, AI Overviews supera los 2.500 millones de usuarios al mes y AI Mode los mil millones.",
+    "ChatGPT, cuando busca con proveedores externos, reescribe tu pregunta en una o varias consultas concretas.",
+    "ChatGPT ordena los resultados con varios factores de relevancia y fiabilidad; salir no está garantizado.",
+    "Perplexity busca en la web en tiempo real y cada respuesta lleva citas numeradas con enlace a la fuente.",
+    "Perplexity valora el sitio web entero, no cada página, al poner sus etiquetas de fuente (Gobierno, Académica, De confianza).",
+    "Estudio de 2025 (preprint): los buscadores con IA prefieren con mucha diferencia fuentes de terceros con autoridad a los contenidos de la marca y a las redes sociales; Google mezcla más.",
+    "Pew (EE. UU., 2025): con un resumen de IA se hace clic en un resultado en el 8 % de las visitas; sin resumen, casi el doble (15 %).",
+    "Pew: en los enlaces del propio resumen de IA se hizo clic solo en el 1 % de las visitas."
+   ],
+   "letture": [
+    {
+     "titolo": "Google · AI features and your website",
+     "url": "https://developers.google.com/search/docs/appearance/ai-features"
+    },
+    {
+     "titolo": "Google · Optimizing your website for generative AI features",
+     "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+    },
+    {
+     "titolo": "OpenAI · Searching the web with ChatGPT",
+     "url": "https://help.openai.com/en/articles/9237897-chatgpt-search"
+    },
+    {
+     "titolo": "Perplexity · How does Perplexity work?",
+     "url": "https://www.perplexity.ai/help-center/en/articles/10352895-how-does-perplexity-work"
+    },
+    {
+     "titolo": "Estudio · GEO: Generative Engine Optimization (KDD 2024)",
+     "url": "https://arxiv.org/abs/2311.09735"
+    },
+    {
+     "titolo": "Pew Research · Google users are less likely to click on links when an AI summary appears",
+     "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+    }
+   ],
+   "nota_letture": null,
+   "buco": null,
+   "video": [
+    {
+     "id": "EgP-TCkDCQA",
+     "ruolo": "principale",
+     "lingua": "es",
+     "inizio": "0:00",
+     "fine": "6:40",
+     "riassunto": "La lección explica las diferencias entre las principales plataformas de búsqueda con IA (Google AI Overviews, Google AI Mode, ChatGPT y Perplexity) en cuanto a las fuentes y dominios que citan. Muestra con datos empíricos por qué no se puede aplicar una estrategia única para todas las plataformas y cómo priorizar los esfuerzos según la cuota de mercado y la autoridad de la marca.",
+     "punti": [
+      {
+       "minuto": "1:16",
+       "testo": "Diferencias de fuentes: AI Overviews, ChatGPT, Perplexity y AI Mode: AI Overviews prioriza sitios de autoridad, YouTube, redes sociales y enciclopedias.; ChatGPT recurre más a medios, editores y sitios generados por usuarios como Reddit.; Perplexity se solapa más con los resultados tradicionales del top 10 de Google."
+      },
+      {
+       "minuto": "3:05",
+       "testo": "Cómo priorizar plataformas y analizar datos con Brand Radar: Priorizar Google y ChatGPT por cuota de mercado actual.; Evolución del solapamiento con el top 10 de Google en AI Overviews.; Uso de herramientas de monitoreo como Brand Radar para auditar menciones por temática."
+      },
+      {
+       "minuto": "5:32",
+       "testo": "Fundamentos transversales de visibilidad y conclusión: Los pilares del SEO (contenido de calidad, menciones, autoridad temática) sirven para todas las plataformas.; Cada plataforma es un ecosistema con sus propias reglas sobre qué fuentes priorizar."
+      }
+     ],
+     "attenzione": [],
+     "perche": "Proporciona una perspectiva estratégica indispensable: demuestra por qué no existe un 'GEO único' y enseña a adaptar la táctica de contenidos y PR según la plataforma objetivo.",
+     "punteggio": "a mano"
+    },
+    {
+     "id": "RHh5LpSfL80",
+     "ruolo": "alternativo",
+     "lingua": "es",
+     "inizio": "0:00",
+     "fine": "6:29",
+     "riassunto": "Un vídeo divulgativo sobre GEO (Generative Engine Optimization) orientado a profesionales del marketing digital. Explica la transición del SEO tradicional al posicionamiento en motores generativos, ofreciendo recomendaciones clave para ser citado por modelos como Gemini, Perplexity y ChatGPT.",
+     "punti": [
+      {
+       "minuto": "0:43",
+       "testo": "Qué es el GEO y diferencia con el SEO: Frente a las palabras clave del SEO, el GEO prioriza la autoridad semántica; Creación de contenido pensado para algoritmos de síntesis y no solo de clasificación; Presentación del patrocinador NeoAttack"
+      },
+      {
+       "minuto": "2:18",
+       "testo": "Claves para posicionarte en la IA: Importancia de incorporar datos propios, estudios y estadísticas únicas; Optimización de la intención de búsqueda conversacional y preguntas frecuentes; Construcción de autoridad en sitios web de terceros (earned media)"
+      },
+      {
+       "minuto": "4:41",
+       "testo": "Diferencias entre los distintos motores generativos: Gemini se nutre de los fragmentos enriquecidos y del SEO técnico de Google; Perplexity funciona como buscador en tiempo real exigiendo citación estricta y contenido fresco; ChatGPT prioriza la popularidad de marca, huella digital y menciones en medios masivos"
+      }
+     ],
+     "attenzione": [],
+     "perche": "Es un vídeo excelente para comprender el cambio mental necesario entre el SEO clásico y el GEO antes de pasar a la configuración técnica.",
+     "punteggio": "a mano"
+    },
+    {
+     "id": "pxVomytG9UU",
+     "ruolo": "alternativo",
+     "lingua": "es",
+     "inizio": "0:00",
+     "fine": "3:35",
+     "riassunto": "El vídeo analiza la guía oficial de Google sobre optimización para búsquedas con IA generativa (AI Overviews y AI Mode). Sergio explica por qué el SEO sigue siendo la base fundamental del GEO, desmiente mitos populares como el uso del archivo llms.txt o el troceado en 'chunks', y ofrece una lista de verificación práctica para crear contenido de valor citables por motores de búsqueda de IA.",
+     "punti": [
+      {
+       "minuto": "1:45",
+       "testo": "De keywords a intenciones completas: La IA amplía las búsquedas mediante consultas relacionadas ('query fan-out').; Cubrir intenciones completas en lugar de crear múltiples páginas para variaciones de palabras clave."
+      },
+      {
+       "minuto": "2:46",
+       "testo": "El GEO es parte del SEO: Google enmarca la optimización para IA dentro de las bases del propio SEO.; No existen trucos mágicos ni etiquetas milagrosas para aparecer en la IA."
+      }
+     ],
+     "attenzione": [],
+     "perche": "Es una síntesis teórica imprescindible para comprender la visión de Google sobre la optimización para IA sin caer en trampas o mitos infundados.",
+     "punteggio": "a mano"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titolo": "Revisa tu web: rastreadores, indexación y contenido que se cite",
+   "obiettivo": "Sabes comprobar que Googlebot, OAI-SearchBot y PerplexityBot pueden entrar (y qué hacen GPTBot y Google-Extended), que tus páginas están indexadas con fragmento, y qué cambiar en el contenido según Google y los estudios; y sabes qué «trucos GEO» puedes ignorar.",
+   "minuti_video": 6,
+   "valido_da": "2026-05-20",
+   "ricontrolla_dopo": null,
+   "nota_ricontrollo": null,
+   "concetti": [
+    "Para salir como enlace en AI Overviews o AI Mode la página debe estar indexada y poder mostrarse en Google con fragmento.",
+    "No hace falta una optimización especial para AI Overviews y AI Mode: valen los fundamentos de SEO.",
+    "Primer control técnico: que el rastreo esté permitido en robots.txt y también en el CDN o el hosting.",
+    "El contenido importante tiene que estar en texto, y los datos estructurados deben coincidir con lo que se ve en la página.",
+    "Bloquear Google-Extended no te saca de la búsqueda de Google ni afecta al ranking: controla el entrenamiento de Gemini y el grounding en la app de Gemini y Vertex AI.",
+    "En ChatGPT, si bloqueas OAI-SearchBot tu web no sale en las respuestas de búsqueda (solo como enlace de navegación).",
+    "OAI-SearchBot (búsqueda) y GPTBot (entrenamiento) son independientes: puedes permitir uno y bloquear el otro.",
+    "OpenAI pide permitir OAI-SearchBot y que el hosting o el CDN dejen pasar sus IP publicadas.",
+    "En Perplexity, PerplexityBot es el que te pone en los resultados; recomiendan permitirlo en robots.txt.",
+    "Perplexity-User (visitas pedidas por un usuario) en general no respeta robots.txt.",
+    "Lo que más pesa a largo plazo, según Google: contenido único, convincente y útil.",
+    "Contenido «commodity» (lo que cualquiera puede escribir, tipo «7 consejos») frente a contenido con experiencia propia o de experto.",
+    "Mito 1: llms.txt y otros archivos o marcados «para IA» no los usa Google Search.",
+    "Mito 2: no hace falta trocear el contenido en pedacitos («chunking»).",
+    "Mito 3: buscar menciones no auténticas en la web no ayuda tanto como parece.",
+    "Mito 4: los datos estructurados no son obligatorios para la IA generativa y no hay un schema especial.",
+    "Crear una página por cada variante de consulta (incluidas las de fan-out) para manipular las respuestas de IA va contra las políticas de spam de Google.",
+    "Estudio GEO: añadir citas, frases citadas de fuentes relevantes y estadísticas subió la visibilidad más de un 40 % en sus pruebas.",
+    "Estudio GEO: el relleno de palabras clave apenas mejora nada en los motores generativos.",
+    "Estudio GEO: las webs en quinta posición ganaron mucho más que la primera al citar fuentes (+115,1 % frente a −30,3 %).",
+    "Negocio local o tienda: las respuestas pueden incluir productos y datos de negocios locales (Merchant Center y Perfil de Empresa al día)."
+   ],
+   "letture": [
+    {
+     "titolo": "Google · Optimizing your website for generative AI features (mitos incluidos)",
+     "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+    },
+    {
+     "titolo": "Google · Creating helpful, reliable, people-first content",
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+    },
+    {
+     "titolo": "Google · Google-Extended (rastreadores comunes)",
+     "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers"
+    },
+    {
+     "titolo": "OpenAI · Rastreadores (OAI-SearchBot, GPTBot, ChatGPT-User)",
+     "url": "https://developers.openai.com/api/docs/bots"
+    },
+    {
+     "titolo": "Perplexity · Perplexity Crawlers",
+     "url": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers"
+    }
+   ],
+   "nota_letture": null,
+   "buco": null,
+   "video": [
+    {
+     "id": "pxVomytG9UU",
+     "ruolo": "principale",
+     "lingua": "es",
+     "inizio": "3:35",
+     "fine": "10:02",
+     "riassunto": "El vídeo analiza la guía oficial de Google sobre optimización para búsquedas con IA generativa (AI Overviews y AI Mode). Sergio explica por qué el SEO sigue siendo la base fundamental del GEO, desmiente mitos populares como el uso del archivo llms.txt o el troceado en 'chunks', y ofrece una lista de verificación práctica para crear contenido de valor citables por motores de búsqueda de IA.",
+     "punti": [
+      {
+       "minuto": "3:35",
+       "testo": "Contenido no genérico (evitar el contenido commodity): Evitar publicar información genérica que cualquier IA puede responder sin citar la fuente.; Aportar experiencia real, datos concretos, ejemplos propios y criterio experto."
+      },
+      {
+       "minuto": "5:36",
+       "testo": "La técnica y la presencia del negocio siguen importando: Revisar rastreo, indexación, canonicals, sitemap, rendimiento móvil y JavaScript.; Para e-commerce y negocios locales son clave Merchant Center y Google Business Profile."
+      },
+      {
+       "minuto": "7:08",
+       "testo": "Mitos desmentidos por Google: No es necesario el archivo llms.txt ni el troceado en chunks.; Los datos estructurados no garantizan salir en IA y las menciones inauténticas no funcionan."
+      },
+      {
+       "minuto": "7:58",
+       "testo": "Checklist práctica y conclusiones: Checklist de 9 pasos para optimizar una web frente a motores generativos.; La IA no elimina el SEO, lo hace más exigente y enfocado en aportar valor real."
+      }
+     ],
+     "attenzione": [],
+     "perche": "Es una síntesis teórica imprescindible para comprender la visión de Google sobre la optimización para IA sin caer en trampas o mitos infundados.",
+     "punteggio": "a mano"
+    },
+    {
+     "id": "oVR4bAwG64A",
+     "ruolo": "alternativo",
+     "lingua": "es",
+     "inizio": "9:03",
+     "fine": "11:57",
+     "riassunto": "El vídeo explica la diferencia fundamental entre SEO y GEO (Generative Engine Optimization), demostrando con datos reales de la industria que la IA no reemplaza al SEO sino que transforma cómo se consume la información. Muestra qué factores influyen realmente en que una marca sea citada por los motores generativos, desmiente mitos como la efectividad de llms.txt o el spam de contenido con IA, y propone un plan de acción práctico para adaptar la estrategia de marketing.",
+     "punti": [
+      {
+       "minuto": "9:03",
+       "testo": "Mitos del GEO y tácticas perjudiciales: El archivo llms.txt es un índice para agentes, no una señal de posicionamiento en buscadores; Google ha confirmado que no soporta llms.txt y lo compara con la antigua etiqueta meta keywords; Crear artículos masivos con IA o manipular fechas hunde tanto el SEO como la visibilidad en GEO"
+      }
+     ],
+     "attenzione": [],
+     "perche": "Es uno de los mejores análisis estratégicos de GEO vs SEO disponibles: desmitifica el tráfico generativo, explica la necesidad de reputación/menciones de marca fuera de la web y da un plan práctico aplicable.",
+     "punteggio": "a mano"
+    },
+    {
+     "id": "oVR4bAwG64A",
+     "ruolo": "alternativo",
+     "lingua": "es",
+     "inizio": "5:25",
+     "fine": "7:16",
+     "riassunto": "El vídeo explica la diferencia fundamental entre SEO y GEO (Generative Engine Optimization), demostrando con datos reales de la industria que la IA no reemplaza al SEO sino que transforma cómo se consume la información. Muestra qué factores influyen realmente en que una marca sea citada por los motores generativos, desmiente mitos como la efectividad de llms.txt o el spam de contenido con IA, y propone un plan de acción práctico para adaptar la estrategia de marketing.",
+     "punti": [
+      {
+       "minuto": "5:25",
+       "testo": "Factores reales que hacen que la IA te nombre: Las menciones en fuentes de terceros (YouTube, otras webs, menciones de marca sin enlace) pesan 3 veces más que los enlaces; El 80% de las empresas auditadas no existen como entidad identificada para la IA en Wikipedia o Wikidata"
+      }
+     ],
+     "attenzione": [],
+     "perche": "Es uno de los mejores análisis estratégicos de GEO vs SEO disponibles: desmitifica el tráfico generativo, explica la necesidad de reputación/menciones de marca fuera de la web y da un plan práctico aplicable.",
+     "punteggio": "a mano"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titolo": "Mide tu visibilidad y arma tu plan GEO",
+   "obiettivo": "Sabes leer el informe de IA generativa de Search Console, separar el tráfico de ChatGPT y Perplexity en Analytics, hacer una prueba manual de preguntas en los tres buscadores, decidir si incluir o excluir tu web, y escribir un plan de acciones priorizadas con cómo medirlas.",
+   "minuti_video": 5,
+   "valido_da": "2026-06-03",
+   "ricontrolla_dopo": null,
+   "nota_ricontrollo": null,
+   "concetti": [
+    "El informe de rendimiento de IA generativa de Search Console muestra cómo le va a tu web en las funciones de IA de Google.",
+    "Está disponible para todas las webs del mundo desde el 31/8/2026.",
+    "Una impresión es cada vez que un enlace a tu web se mostró en una función de IA generativa de Google.",
+    "Se puede agrupar por páginas, países, fechas y dispositivos; el país es desde donde se hizo la búsqueda (útil para España frente a Latinoamérica).",
+    "Si no ves el informe, lo normal es que tu web aún no tenga suficientes impresiones en IA (o que la hayas excluido).",
+    "Esos datos siguen contando también en el informe de rendimiento general.",
+    "Con el control de Search Console puedes excluir tu web de AI Overviews, AI Mode y Discover con IA: entonces no recibes tráfico ni impresiones de esas funciones.",
+    "Ese control no se usa como señal de ranking en el resto de la búsqueda.",
+    "El cambio tarda: 1-2 días desde que el control está activo, a veces más por cachés.",
+    "Además de Search Console, mide conversiones y tiempo en la web con herramientas como Google Analytics.",
+    "Google afirma que los clics desde páginas con AI Overviews son de más calidad (más tiempo en la web): compruébalo con tus datos.",
+    "Tras cambiar robots.txt, ChatGPT tarda unas 24 horas en ajustarse.",
+    "En Perplexity cada ajuste de robots.txt es independiente y puede tardar hasta 24 horas.",
+    "Los buscadores con IA difieren mucho entre sí (variedad de dominios, frescura, estabilidad entre idiomas, sensibilidad a cómo se pregunta): prueba cada uno y en español.",
+    "Pew: las búsquedas en forma de pregunta generan resumen de IA mucho más a menudo (60 %): usa preguntas para tu prueba manual.",
+    "El estudio GEO mide la visibilidad en una respuesta por cuántas palabras se apoyan en tu fuente y en qué posición aparece.",
+    "Lo que funciona cambia según el sector: el plan se prueba y se ajusta a tu tema.",
+    "Las respuestas y citas de ChatGPT pueden estar incompletas, viejas o mal: revisa qué dicen de tu marca y qué fuente usan."
+   ],
+   "letture": [
+    {
+     "titolo": "Search Console · Generative AI performance report (Search)",
+     "url": "https://support.google.com/webmasters/answer/16984139?hl=es"
+    },
+    {
+     "titolo": "Search Console · Search generative AI control",
+     "url": "https://support.google.com/webmasters/answer/16908024?hl=es"
+    },
+    {
+     "titolo": "Google Search Central Blog · Search Generative AI performance reports",
+     "url": "https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports"
+    },
+    {
+     "titolo": "Google · New opportunities, control and insights for website owners",
+     "url": "https://blog.google/products-and-platforms/products/search/new-controls-website-owners/"
+    }
+   ],
+   "nota_letture": "El informe y el control de Search Console son de junio-agosto de 2026: si ningún vídeo en español los enseña, se aprenden con las dos páginas de ayuda de Google enlazadas abajo.",
+   "buco": null,
+   "video": [
+    {
+     "id": "lezione-t3",
+     "tipo": "lezione",
+     "ruolo": "principale",
+     "titolo": "Mide tu visibilidad en la IA y arma tu plan GEO",
+     "canale": "Open Escool · lección",
+     "lingua": "es",
+     "pubblicato": "2026-11-09",
+     "durata_s": 279,
+     "file": "lezioni/t3.mp4",
+     "copertina": "lezioni/t3.jpg",
+     "inizio": "0:00",
+     "fine": "4:39",
+     "riassunto": "En esta lección vemos cómo medir si los buscadores con IA muestran y citan tu web, y cómo convertir esa medida en un plan. Todo viene de las páginas de ayuda de Google, OpenAI y Perplexity, y de tres estudios, leídos el ocho de noviembre de dos mil veintiséis. Primero, una fecha. El tres de junio de dos mil veintiséis, Google presentó en Search Console un informe de rendimiento de IA generativa, y un control para incluir o excluir tu web. Empezó en prueba, con una parte de las webs, primero en el Reino Unido. Desde el treinta y uno de agosto está para todas las webs del mundo. Así que, si un v",
+     "punti": [
+      {
+       "minuto": "0:00",
+       "testo": "Mide tu visibilidad"
+      },
+      {
+       "minuto": "0:15",
+       "testo": "Un informe nuevo"
+      },
+      {
+       "minuto": "0:39",
+       "testo": "Qué mide el informe"
+      },
+      {
+       "minuto": "1:07",
+       "testo": "Para leerlo bien"
+      },
+      {
+       "minuto": "1:27",
+       "testo": "¿Incluir o excluir tu web?"
+      },
+      {
+       "minuto": "1:58",
+       "testo": "Los cambios tardan"
+      },
+      {
+       "minuto": "2:24",
+       "testo": "Después de la impresión"
+      },
+      {
+       "minuto": "2:59",
+       "testo": "ChatGPT y Perplexity"
+      },
+      {
+       "minuto": "3:23",
+       "testo": "Tu prueba manual"
+      },
+      {
+       "minuto": "3:59",
+       "testo": "Tu plan GEO"
+      }
+     ],
+     "attenzione": [],
+     "perche": "Lección generada por Open Escool a partir de las páginas oficiales (12), revisadas el 2026-11-08.",
+     "punteggio": "lezione",
+     "voce": "Chatterbox (voz gratuita en el ordenador)"
+    },
+    {
+     "id": "VxUpoKIXYCk",
+     "ruolo": "alternativo",
+     "lingua": "es",
+     "inizio": "1:44",
+     "fine": "8:30",
+     "riassunto": "El vídeo explica cómo funciona el informe de rendimiento de IA generativa introducido en Google Search Console y cómo analizar sus datos de impresiones en AI Overviews y AI Mode. Muestra cómo cruzar las páginas que reciben impresiones de IA con el informe general de búsqueda para deducir las consultas que activaron la respuesta generativa. Resulta muy útil para consultores SEO y responsables de marketing que buscan medir su visibilidad GEO con datos oficiales.",
+     "punti": [
+      {
+       "minuto": "1:44",
+       "testo": "Comparativa con Bing Webmaster Tools y alcance del informe: Bing Webmaster Tools ya ofrecía métricas de AI Performance; El informe de Google cubre AI Overviews y AI Mode, pero no la app independiente de Gemini"
+      },
+      {
+       "minuto": "2:37",
+       "testo": "Navegación práctica por el informe de IA en Search Console: Acceso a la pestaña 'Funciones de IA generativa'; Métrica disponible: impresiones totales (sin clics, CTR ni posición media); Segmentación por páginas, países, dispositivos y fechas"
+      },
+      {
+       "minuto": "5:52",
+       "testo": "Cruce con el informe de búsqueda tradicional para hallar consultas: El informe de IA no desglosa las keywords o 'query fan-outs'; Filtrar por URL exacta en Resultados de búsqueda para ver qué consultas generan tráfico; Comprobación en la SERP de si aparece AI Overview o AI Mode"
+      }
+     ],
+     "attenzione": [
+      {
+       "minuto": "2:01",
+       "dice": "Google anunció el 3 de junio el informe y en Estados Unidos empezó a lanzarlo y poco a poco lo ha ido desplegando",
+       "verdetto": "superata",
+       "perche": "El 2026-06-03 Google lanzó el informe en fase de prueba en EE. UU., pero desde el 2026-08-31 el informe de rendimiento de IA generativa está disponible de forma general para todas las webs del mundo."
+      }
+     ],
+     "perche": "Es una guía práctica de primer nivel para aprender a interpretar el informe oficial de IA generativa de Google Search Console y entender qué mide y qué no.",
+     "punteggio": "a mano"
+    },
+    {
+     "id": "WiXHepop730",
+     "ruolo": "alternativo",
+     "lingua": "es",
+     "inizio": "1:32",
+     "fine": "6:02",
+     "riassunto": "El vídeo explica de forma totalmente práctica cómo aislar y medir el tráfico procedente de herramientas de IA generativa (ChatGPT, Gemini, Perplexity, Claude, etc.) en Google Analytics 4. Enseña a configurar un grupo de canales personalizado con una expresión regular antes del canal Referral y a crear un informe específico con páginas de destino para añadirlo al menú de GA4. Es muy útil para cualquier profesional de marketing o SEO que necesite monitorizar el impacto de la IA en sus visitas.",
+     "punti": [
+      {
+       "minuto": "1:32",
+       "testo": "Creación del canal personalizado para IA: Configuración de un grupo de canales en Administración con regex; Reorganización de canales para colocar la regla de IA por encima de Referral"
+      }
+     ],
+     "attenzione": [
+      {
+       "minuto": "1:32",
+       "dice": "Vídeo del 2025-03-25, anterior al cambio del 2026-06-03",
+       "verdetto": "superata",
+       "perche": "El 3/6/2026 nace el informe de rendimiento de IA generativa de Search Console (global desde el 31/8/2026): los vídeos anteriores dicen que en Search Console no se puede ver la IA por separado."
+      }
+     ],
+     "perche": "No cubre los conceptos teóricos de GEO ni el informe de IA de Google Search Console, pero es un recurso práctico complementario excelente para la etapa 3, ya que muestra paso a paso cómo medir el tráfico de motores generativos en Google Analytics 4.",
+     "punteggio": "a mano"
+    },
+    {
+     "id": "GovwpXxfUt0",
+     "ruolo": "alternativo",
+     "lingua": "es",
+     "inizio": "1:03",
+     "fine": "8:16",
+     "riassunto": "La lección enseña tres métodos complementarios para medir y monitorizar la visibilidad y el impacto del tráfico procedente de motores de búsqueda y asistentes de IA. Explica cómo configurar Google Analytics (GA4) o herramientas alternativas para aislar visitas de IA, cómo rastrear la actividad de bots rastreadores (entrenamiento vs. citación/búsqueda) y cómo implementar encuestas de atribución autorreportada. Es un recurso muy útil para profesionales de marketing y SEO que necesitan justificar el retorno de inversión de sus esfuerzos de optimización para IA.",
+     "punti": [
+      {
+       "minuto": "1:03",
+       "testo": "Pilar 1: Tráfico de referencia de IA: Definición y limitaciones del tráfico de referencia desde chats y buscadores con IA; Comportamiento del referrer según la plataforma (ChatGPT, Claude, Perplexity, Copilot, Grok); Configuración paso a paso de un grupo de canales personalizado con regex en Google Analytics 4"
+      },
+      {
+       "minuto": "4:48",
+       "testo": "Pilar 2: Actividad de bots de IA: Diferencia entre bots de entrenamiento (GPTBot, Google-Extended) y bots de búsqueda/citación en tiempo real (OAI-SearchBot, ChatGPT-User); Importancia de la frecuencia de rastreo para predecir citaciones; Monitorización mediante logs o Ahrefs Bot Analytics integrado con Cloudflare"
+      },
+      {
+       "minuto": "6:39",
+       "testo": "Pilar 3: Atribución autorreportada: El problema del 'tráfico oscuro' de usuarios que descubren la marca en IA y entran directo o por búsqueda de marca; Cómo incluir la pregunta '¿Cómo nos conociste?' en formularios de registro o encuestas post-venta; Caso de estudio interno de Ahrefs: 3 % de conversiones provienen de IA y convierten 23 veces más"
+      }
+     ],
+     "attenzione": [],
+     "perche": "Ofrece una de las explicaciones más claras y aplicables en español sobre cómo solucionar la pérdida de atribución analítica en IA mediante GA4, cómo entender los distintos tipos de bots de IA y la vital importancia de las encuestas autorreportadas.",
+     "punteggio": "a mano"
+    },
+    {
+     "id": "oVR4bAwG64A",
+     "ruolo": "alternativo",
+     "lingua": "es",
+     "inizio": "11:58",
+     "fine": "13:43",
+     "riassunto": "El vídeo explica la diferencia fundamental entre SEO y GEO (Generative Engine Optimization), demostrando con datos reales de la industria que la IA no reemplaza al SEO sino que transforma cómo se consume la información. Muestra qué factores influyen realmente en que una marca sea citada por los motores generativos, desmiente mitos como la efectividad de llms.txt o el spam de contenido con IA, y propone un plan de acción práctico para adaptar la estrategia de marketing.",
+     "punti": [
+      {
+       "minuto": "11:58",
+       "testo": "Plan de acción práctico: qué cambiar el lunes: Lo que se mantiene: velocidad web, contenido propio y estar arriba en Google; Lo que se añade: presencia en YouTube, LinkedIn, Reddit, reseñas y contenido más corto y enfocado; Nuevas métricas: frecuencia de mención de la IA hacia tu marca y hacia la competencia"
+      }
+     ],
+     "attenzione": [],
+     "perche": "Es uno de los mejores análisis estratégicos de GEO vs SEO disponibles: desmitifica el tráfico generativo, explica la necesidad de reputación/menciones de marca fuera de la web y da un plan práctico aplicable.",
+     "punteggio": "a mano"
+    }
+   ]
+  }
+ ]
+}

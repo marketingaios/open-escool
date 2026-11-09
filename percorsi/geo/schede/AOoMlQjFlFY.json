@@ -1,0 +1,177 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "Pedro Serrano (Pedro SEO) analiza el auge del GEO (Generative Engine Optimization) frente al SEO clásico y argumenta por qué los profesionales del marketing deben aceptarlo. Explica técnicamente el funcionamiento interno de los buscadores con IA (RAG, query fan-out, tokenización y búsqueda semántica por similitud de coseno) y expone tácticas prácticas para ganar visibilidad en respuestas generativas, destacando las búsquedas de marca (brand queries), las menciones en directorios y el contenido de fuentes propias.",
+ "mostra_schermo": false,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "3:41",
+   "titolo": "Introducción: el dilema SEO vs. GEO y por qué aceptarlo",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Debate en la comunidad SEO sobre si el GEO es una disciplina nueva o simplemente SEO renombrado.",
+    "El fenómeno existe empíricamente y los usuarios y clientes ya demandan optimización para IA."
+   ]
+  },
+  {
+   "inizio": "3:41",
+   "fine": "11:24",
+   "titolo": "Diferencias clave entre SEO y GEO",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "El SEO persigue enlaces en las SERPs, mientras que el GEO busca ser citado en respuestas directas sintetizadas por IA.",
+    "Dependencia: el GEO se sustenta sobre los cimientos del SEO y el rastreo de Google.",
+    "Analogía histórica con conceptos como Growth Hacking o Inbound Marketing."
+   ]
+  },
+  {
+   "inizio": "11:24",
+   "fine": "17:39",
+   "titolo": "Cómo funciona un buscador moderno: Query Fan-out y Embeddings",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Deconstrucción de una consulta cruda (raw query) mediante agentes internos.",
+    "Explicación del 'query fan-out': desglose de la pregunta principal en múltiples subconsultas.",
+    "Tokenización, fragmentación en chunks, vectores de embeddings y cálculo de similitud del coseno."
+   ]
+  },
+  {
+   "inizio": "17:39",
+   "fine": "22:25",
+   "titolo": "Tácticas GEO: formato pregunta-respuesta y datos propios",
+   "tappe": [
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Redacción directa respondiendo a preguntas sin rodeos en el primer párrafo.",
+    "Importancia de publicar datos propios, encuestas y estudios originales que nadie más tenga.",
+    "El giro hacia el contenido audiovisual y vídeo frente al texto commodity."
+   ]
+  },
+  {
+   "inizio": "22:25",
+   "fine": "24:57",
+   "titolo": "Tácticas GEO: uso de directorios y autoridad cruzada",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Los LLM recurren a listas, rankings y fuentes de terceros para elaborar recomendaciones de productos.",
+    "Aparición en comparativas y colaboración con competidores para consolidar autoridad sectorial."
+   ]
+  },
+  {
+   "inizio": "24:57",
+   "fine": "25:42",
+   "titolo": "Datos estructurados y Schema markup",
+   "tappe": [
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Uso de JSON-LD para definir entidades, servicios y responder preguntas a los sistemas de rastreo.",
+    "Validación mediante herramientas de schema."
+   ]
+  },
+  {
+   "inizio": "25:42",
+   "fine": "31:31",
+   "titolo": "EEAT de 2026: Brand Queries y huella digital",
+   "tappe": [
+    2,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Fomento de búsquedas directas de marca ('Brand Queries') mediante activaciones en redes sociales.",
+    "Caso de estudio: cómo derivar tráfico de Instagram a búsquedas de YouTube aumentó la autoridad de marca.",
+    "SEO Off-page, notas de prensa y menciones en medios de alta autoridad (EEAT)."
+   ]
+  },
+  {
+   "inizio": "31:31",
+   "fine": "32:41",
+   "titolo": "Conclusiones y comunidad",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Resumen de la mentalidad de negocio detrás del posicionamiento orgánico moderno."
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "2:15",
+   "dice": "AI Overviews ya tiene 1,5 billones [billion] de usuarios al mes según anunció Google el año pasado",
+   "verdetto": "superata",
+   "perche": "La cifra de 1.500 millones ha quedado superada: según datos oficiales de Google recogidos en la mappa (tappa 1), AI Overviews supera los 2.500 millones de usuarios al mes y AI Mode los mil millones."
+  },
+  {
+   "minuto": "4:15",
+   "dice": "El SEO puede funcionar por sí solo, pero el GEO depende del SEO",
+   "verdetto": "giusta",
+   "perche": "Coincide con la mappa (tappa 1): AI Overviews y AI Mode se apoyan en los mismos sistemas de ranking y calidad de la búsqueda clásica (grounding/RAG), por lo que las prácticas de SEO son la base indispensable."
+  },
+  {
+   "minuto": "14:12",
+   "dice": "Las 'query fan-out' son las búsquedas relacionadas que lanzan los agentes de IA para recopilar información de la web y base de datos antes de generar la respuesta",
+   "verdetto": "giusta",
+   "perche": "Coincide con la definición de la mappa (tappa 1): 'Query fan-out: el modelo lanza a la vez varias búsquedas relacionadas para completar la respuesta'."
+  },
+  {
+   "minuto": "15:55",
+   "dice": "Los chunks son fragmentos de texto divididos en bloques pequeños para que la IA pueda procesarlos y compararlos",
+   "verdetto": "superata",
+   "perche": "Aunque describe la arquitectura interna general de un LLM con RAG, la guía oficial de optimización para IA de Google (actualizada el 10/7/2026, cambio reciente y mappa tappa 2, Mito 2) aclara expresamente que no hace falta trocear el contenido en pedacitos («chunking») para posicionar en sus respuestas generativas."
+  },
+  {
+   "minuto": "21:00",
+   "dice": "Los LLMs citan fuentes con datos que nadie más tiene: un estudio propio, encuesta a clientes o un benchmark interno",
+   "verdetto": "giusta",
+   "perche": "La mappa (tappa 2) subraya el valor del contenido con experiencia propia o de experto y cita el estudio GEO (KDD 2024), donde añadir citas y estadísticas originales aumenta la visibilidad más de un 40 %."
+  },
+  {
+   "minuto": "22:30",
+   "dice": "Los modelos de LLM acuden a rankings y directorios de terceros con autoridad para responder a consultas de recomendación de productos",
+   "verdetto": "giusta",
+   "perche": "Coincide con el estudio de Chen et al. de 2025 (mappa tappa 1 y cambios recientes): los buscadores con IA prefieren con mucha diferencia fuentes de terceros («earned media») frente a la propia web de marca."
+  },
+  {
+   "minuto": "25:11",
+   "dice": "El Schema markup / JSON-LD le dice explícitamente a cualquier sistema de LLM quién eres y es clave para el GEO",
+   "verdetto": "sbagliata",
+   "perche": "En la guía oficial de Google de julio de 2026 (mappa tappa 2, Mito 4), Google desmiente esto como mito: los datos estructurados no son obligatorios para la IA generativa y no existe ningún schema especial para IA."
+  }
+ ],
+ "per_chi_impara": "Aplica tanto para España como para Latinoamérica: los conceptos de grounding, embeddings y query fan-out funcionan igual en español. Conviene tener en cuenta que las búsquedas mostradas en Google (ej. 'precio carnet de coche barcelona') corresponden a España, pero las mecánicas aplican a toda la región hispanohablante donde AI Overviews y AI Mode ya están plenamente desplegados.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Excelente capacidad pedagógica para explicar conceptos complejos de IA aplicada a la búsqueda (RAG, fan-out, vectores) sin aburrir y con ejemplos estratégicos reales. Se queda a las puertas del 5 porque se grabó justo antes de las actualizaciones de Search Console de agosto de 2026 y de la guía de mitos de Google de julio de 2026, por lo que incurre en mitos como el chunking y la necesidad estricta de schema para IA."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Es muy recomendable como clase conceptual y estratégica para entender cómo razonan los LLM y cómo enfocar la autoridad de marca (Brand Queries y directorios de terceros). Sin embargo, es 'alternativo' porque no cubre las herramientas técnicas oficiales definitivas de 2026 (el informe y control de IA generativa en Search Console, gestión de robots.txt para OAI-SearchBot/PerplexityBot) y asume como necesarias técnicas que Google desmintió poco después.",
+ "tappa_migliore": 1,
+ "spezzone_migliore": {
+  "inizio": "11:24",
+  "fine": "17:39"
+ },
+ "video": "AOoMlQjFlFY",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T15:30:33+00:00"
+}

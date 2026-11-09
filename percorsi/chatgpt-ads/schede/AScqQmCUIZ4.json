@@ -1,0 +1,140 @@
+{
+ "lingua_parlata": "it",
+ "riassunto": "Il video spiega l'arrivo di ChatGPT Ads in Europa e guida passo passo l'utente nella creazione della prima campagna pubblicitaria sulla piattaforma Ads Manager di OpenAI. Vengono analizzati sia i principi teorici di funzionamento e privacy degli annunci, sia gli aspetti pratici: creazione dell'annuncio, configurazione di budget e offerte, installazione del Pixel e tracciamento dei dati di conversione.",
+ "mostra_ads_manager": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:34",
+   "titolo": "Introduzione: ChatGPT Ads in Europa",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Disponibilità di ChatGPT Ads per gli inserzionisti in Europa",
+    "Panoramica dell'Ads Manager"
+   ]
+  },
+  {
+   "inizio": "0:35",
+   "fine": "4:13",
+   "titolo": "Come funzionano le Ads e principi della piattaforma",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Aspetto visivo degli annunci sotto le risposte di ChatGPT",
+    "Indipendenza tra risposte organiche di ChatGPT e annunci sponsorizzati",
+    "Tutela della privacy delle conversazioni degli utenti"
+   ]
+  },
+  {
+   "inizio": "4:14",
+   "fine": "6:38",
+   "titolo": "Creazione della campagna e impostazione dell'annuncio",
+   "tappe": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Anteprima dell'annuncio a partire da un URL del sito web",
+    "Modifica di titolo, testo e immagine dell'annuncio",
+    "Scelta degli obiettivi (Clic o Copertura), budget e offerta manuale"
+   ]
+  },
+  {
+   "inizio": "6:39",
+   "fine": "7:28",
+   "titolo": "Configurazione dell'account pubblicitario e fatturazione",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Impostazione di Paese (Italia), valuta ed email di fatturazione",
+    "Stato di verifica del brand dell'account pubblicitario"
+   ]
+  },
+  {
+   "inizio": "7:29",
+   "fine": "11:48",
+   "titolo": "Configurazione del tracciamento (Data Source e Conversion Events)",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione della Data Source (Pixel ID e codici di installazione)",
+    "Configurazione degli eventi di conversione (es. Subscription Created)",
+    "Utilizzo dell'Event Stream (Start Polling) per verificare la ricezione dei segnali"
+   ]
+  },
+  {
+   "inizio": "11:49",
+   "fine": "13:17",
+   "titolo": "Revisione della campagna e conclusioni",
+   "tappe": [
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Associazione dell'evento di conversione alla campagna",
+    "Attivazione della campagna tramite toggle",
+    "Tempi di approvazione ed elaborazione della revisione dell'account"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:01",
+   "dice": "ChatGPT Ads è finalmente arrivato in Europa disponibile per tutti nel nostro OpenAI Ads Manager.",
+   "verdetto": "giusta",
+   "perche": "La tabella ufficiale di OpenAI conferma l'Italia e i paesi europei come 'Available' per il servizio Ads Manager."
+  },
+  {
+   "minuto": "2:54",
+   "dice": "Le Ads non influenzeranno la risposta che ChatGPT ti darà.",
+   "verdetto": "giusta",
+   "perche": "In conformità al principio 'Answer independence' della Tappa 1, gli annunci girano su sistemi separati e non modificano il contenuto generato dall'AI."
+  },
+  {
+   "minuto": "3:14",
+   "dice": "Quello che succederà con ChatGPT rimarrà privato dagli advertiser e non gli daranno i dati.",
+   "verdetto": "giusta",
+   "perche": "Gli inserzionisti ricevono unicamente metriche aggregate (clic, impressioni) e non le conversazioni private degli utenti (Tappa 1)."
+  },
+  {
+   "minuto": "5:33",
+   "dice": "Gli obiettivi disponibili nella campagna sono Clic (numero di persone che cliccano) e Copertura (numero di impression).",
+   "verdetto": "giusta",
+   "perche": "Gli obiettivi standard di campagna in Ads Manager includono Clicks e Views/Copertura (Tappa 3)."
+  },
+  {
+   "minuto": "6:05",
+   "dice": "La strategia di offerta è 'Offerta manuale', dove indico il massimo che sono disposto a pagare per un clic.",
+   "verdetto": "superata",
+   "perche": "Alla data di pubblicazione del video (settembre 2026) la funzione era presente, ma dal 9/11/2026 le offerte a Max Bid / Max CPC sono state sostituite da Target CPC e Intelligent Bidding, prima del ritiro definitivo a gennaio 2027 (Cambi recenti)."
+  }
+ ],
+ "per_italia": "L'impostazione mostrata seleziona l'Italia come paese e l'Euro come valuta, rispettando il vincolo di inserire l'Italia all'atto della creazione dell'account. Ricorda che per le campagne dirette a utenti in Italia/UE non è consentito l'uso di pubblici personalizzati (liste clienti) e occorre gestire i consensi degli utenti prima di inviare dati di conversione via Pixel.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Il video offre un'ottima guida pratica step-by-step direttamente dentro l'interfaccia dell'Ads Manager, spiegando in modo chiaro sia la parte di creazione dell'annuncio che la gestione delle conversioni."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È un ottimo tutorial pratico in italiano che mostra visivamente l'intera procedura di onboarding e configurazione di Ads Manager e Pixel.",
+ "tappa_migliore": 6,
+ "spezzone_migliore": {
+  "inizio": "7:30",
+  "fine": "10:40"
+ },
+ "video": "AScqQmCUIZ4",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T03:21:51+00:00"
+}

@@ -1,0 +1,193 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo muestra una exploración detallada en pantalla de ChatGPT Ads Manager (ads.openai.com) y explica la creación de campañas, la configuración de los grupos de anuncios con context hints, la configuración de los anuncios y la instalación del Pixel de seguimiento. Resulta útil para familiarizarse con la interfaz, pero necesita complementos respecto a las normas europeas y a las últimas actualizaciones de las pujas.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:11",
+   "titolo": "Introducción al cambio en el e-commerce y a ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "La IA está cambiando la forma en que las personas buscan y compran productos y servicios",
+    "Los anuncios en ChatGPT introducen una nueva forma de descubrir marcas y negocios"
+   ]
+  },
+  {
+   "inizio": "1:12",
+   "fine": "2:20",
+   "titolo": "Vista general de Ads Manager y del panel de resumen",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Acceso por ads.openai.com",
+    "Análisis de las métricas básicas del panel: gasto, impresiones, clics y CPC medio"
+   ]
+  },
+  {
+   "inizio": "2:21",
+   "fine": "3:13",
+   "titolo": "Configuración de la campaña y Creative Enhancements",
+   "tappe": [
+    3,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Los anuncios no alteran las respuestas orgánicas de ChatGPT, sino que aparecen en tarjetas separadas",
+    "Los Creative Enhancements pueden modificar o traducir textos y títulos de forma automática"
+   ]
+  },
+  {
+   "inizio": "3:14",
+   "fine": "5:13",
+   "titolo": "Segmentación geográfica, plataformas y audiencias personalizadas",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Selección de las ubicaciones geográficas y de las plataformas objetivo (web de escritorio, móvil)",
+    "Función de carga de listas de clientes para crear audiencias personalizadas"
+   ]
+  },
+  {
+   "inizio": "5:14",
+   "fine": "6:15",
+   "titolo": "Grupo de anuncios, pujas y Context Hints",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Configuración de las estrategias de puja",
+    "Introducción de las 'pistas de contexto' (context hints) para definir los temas de la conversación"
+   ]
+  },
+  {
+   "inizio": "6:16",
+   "fine": "7:15",
+   "titolo": "Creación del anuncio con textos, imágenes y estructura",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Límites de caracteres, máximo 50 para el título y 100 para el texto",
+    "Requisitos de las imágenes cuadradas y estructura jerárquica (Campaña -> Grupo -> Anuncios)"
+   ]
+  },
+  {
+   "inizio": "7:16",
+   "fine": "9:14",
+   "titolo": "Configuración del Pixel de medición y de la Conversion API",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creación de la fuente de datos del Pixel y seguimiento de eventos estándar (Page Viewed, Lead Created)",
+    "Generación de los códigos para implementar las conversiones por web o por API"
+   ]
+  },
+  {
+   "inizio": "9:15",
+   "fine": "10:37",
+   "titolo": "Gestión de la cuenta, facturación e integraciones",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Gestión de los usuarios de la cuenta de anunciante e invitaciones al equipo",
+    "Sección de facturación, diagnóstico de las conversiones y aplicaciones conectadas"
+   ]
+  },
+  {
+   "inizio": "10:38",
+   "fine": "13:23",
+   "titolo": "Ventanas de atribución, consejos sobre los textos y exclusión de audiencias",
+   "tappe": [
+    3,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Configuración de las ventanas de atribución (30 días clic, 1 día visualización)",
+    "Uso de los context hints en los textos del anuncio y listas de exclusión para usuarios de la parte baja del embudo"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "1:16",
+   "dice": "Entrás a ads.openai.com para empezar a hacer tus anuncios",
+   "verdetto": "giusta",
+   "perche": "El mapa, en el punto 2, confirma que el acceso a la plataforma de anunciantes es en ads.openai.com."
+  },
+  {
+   "minuto": "2:08",
+   "dice": "Hay 3 tipos de campaña: costo por clic, costo por 1000 impresiones, costo por adquisición (CPA)",
+   "verdetto": "sbagliata",
+   "perche": "Como especifica el mapa (etapas 3 y 5), el cargo siempre es por clic o por mil impresiones, nunca directamente por conversión/CPA."
+  },
+  {
+   "minuto": "2:44",
+   "dice": "Hacer anuncios no modifica las respuestas orgánicas de ChatGPT, el anuncio aparece abajo como una tarjeta",
+   "verdetto": "giusta",
+   "perche": "El mapa, en el punto 1, especifica que los anuncios no influyen en las respuestas de ChatGPT y que van separados debajo de la respuesta."
+  },
+  {
+   "minuto": "3:23",
+   "dice": "Mejora creativa genera automáticamente versiones y traducciones de títulos y descripciones sin tu revisión previa",
+   "verdetto": "giusta",
+   "perche": "El mapa confirma en los cambios del 2026-10-30 que los creative enhancements pueden reescribir y traducir los textos sin aprobación manual previa."
+  },
+  {
+   "minuto": "4:24",
+   "dice": "Podés crear audiencias personalizadas subiendo archivos CSV o TXT con correos electrónicos de clientes",
+   "verdetto": "superata",
+   "perche": "Como indican las restricciones GDPR/EEE del mapa (Avisos y etapa 3), las audiencias personalizadas basadas en listas de clientes no están permitidas en campañas en el Espacio Económico Europeo y en Suiza."
+  },
+  {
+   "minuto": "5:18",
+   "dice": "En estrategia de puja podés elegir oferta automática o CPC máximo",
+   "verdetto": "superata",
+   "perche": "En los cambios del 2026-11-09 la estrategia de puja automática pasó a llamarse 'Intelligent bidding' y Max CPC se sustituye por Target CPC (se retira definitivamente desde el 1/1/2027)."
+  },
+  {
+   "minuto": "6:17",
+   "dice": "El título tiene un máximo de 50 caracteres y la descripción un máximo de 100 caracteres",
+   "verdetto": "giusta",
+   "perche": "El mapa, en el punto 4, especifica que el límite del título es de 50 caracteres y el del texto/descripción de 100 caracteres."
+  },
+  {
+   "minuto": "11:13",
+   "dice": "La ventana de atribución permite configurar hasta 30 días por clic y 1 día por impresión",
+   "verdetto": "giusta",
+   "perche": "El mapa (cambios del 2026-09-30 y etapa 6) indica las ventanas de atribución flexibles: 7, 14 o 30 días para el clic y 0 o 1 día para la visualización."
+  }
+ ],
+ "per_chi_impara": "Para quien estudia desde Italia (Unión Europea), hay que tener en cuenta dos restricciones fundamentales respecto al vídeo: 1) las listas de audiencias personalizadas (Custom Audiences) no se pueden usar para segmentar en el EEE. 2) El presupuesto diario mínimo en Italia es de 15 € (no 100 $ como en el ejemplo) y la facturación se hace a posteriori con cargo a la tarjeta de crédito asociada a la cuenta.",
+ "qualita": {
+  "voto": 3,
+  "perche": "Ofrece una guía visual excelente de la interfaz de Ads Manager y de la configuración técnica del Pixel. Sin embargo, incluye opciones de segmentación (audiencias personalizadas) prohibidas en Italia/UE y nombres de pujas que la plataforma ya ha cambiado."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Es muy útil para ver en concreto cómo funciona la interfaz y la configuración de los anuncios y del Pixel, pero las partes sobre las estrategias de puja y sobre las custom audiences hay que adaptarlas a las reglas europeas del mapa.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "5:14",
+  "fine": "6:15"
+ },
+ "video": "R2xDpHF1GLc",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T10:14:09+00:00"
+}

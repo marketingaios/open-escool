@@ -1,0 +1,209 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video mostra una panoramica completa dell'Ads Manager di ChatGPT (in versione beta/anteprima), spiegando come creare una campagna pubblicitaria passo passo. Il relatore illustra l'interfaccia, la scelta degli obiettivi, il targeting geografico e di piattaforma, i budget, le strategie di offerta, la stesura dei context hints e la creazione degli annunci. Serve ad utenti ed espert di PPC che vogliono capire la struttura e il funzionamento della piattaforma pubblicitaria di OpenAI.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:50",
+   "titolo": "Introduzione e annuncio dell'espansione di ChatGPT Ads in Europa",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentazione del canale e del tema del video",
+    "Annuncio dell'espansione di ChatGPT Ads in 31 mercati europei"
+   ]
+  },
+  {
+   "inizio": "0:51",
+   "fine": "1:36",
+   "titolo": "Analisi dell'annuncio ufficiale di OpenAI",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Lancio iniziale tramite team OpenAI Ads e partner di agenzia",
+    "Rollout imminente dell'accesso self-service via Ads Manager"
+   ]
+  },
+  {
+   "inizio": "1:37",
+   "fine": "2:14",
+   "titolo": "Panoramica dell'interfaccia dell'Ads Manager Beta",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Navigazione del pannello principale (Overview, Campaigns, Tools, Billing, Settings)",
+    "Possibilità di esplorare l'interfaccia prima dell'inserimento dei dati di fatturazione"
+   ]
+  },
+  {
+   "inizio": "2:15",
+   "fine": "3:58",
+   "titolo": "Creazione della campagna: Obiettivi, Geolocalizzazione e Piattaforme",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta dell'obiettivo (Reach/Views, Clicks, Conversions)",
+    "Inclusione ed esclusione dei paesi target (es. Austria inclusa, Germania esclusa)",
+    "Selezione delle piattaforme idonee (iOS app, Android app, Web)",
+    "Impostazione del budget giornaliero o totale della campagna"
+   ]
+  },
+  {
+   "inizio": "3:59",
+   "fine": "5:51",
+   "titolo": "Configurazione del gruppo di annunci e strategie di offerta",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione del gruppo di annunci e strutturazione per argomenti",
+    "Differenza tra Maximize Results (offerta automatica) e Manual Max CPC",
+    "Soglie di offerta CPC e indicatore di erogazione (Strong Delivery a $3)",
+    "Opzioni per pubblico custom/first-party data"
+   ]
+  },
+  {
+   "inizio": "5:52",
+   "fine": "8:00",
+   "titolo": "I Context Hints: come guidare il targeting semantico",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Spiegazione di cosa sono i context hints (non parole chiave esatte, ma frasi descrittive del contesto)",
+    "Esempio di contestualizzazione generica errata vs contestualizzazione specifica efficace",
+    "Utilizzo delle frasi per definire sia target positivi che limitazioni/esclusioni"
+   ]
+  },
+  {
+   "inizio": "8:01",
+   "fine": "10:00",
+   "titolo": "Creazione del materiale pubblicitario (Ad Creative)",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Parametri URL di destinazione e tracciamento",
+    "Limiti di testo: Titolo fino a 50 caratteri, Descrizione fino a 100 caratteri",
+    "Caricamento dell'immagine pubblicitaria (quadrata, min 256x256 px)",
+    "Anteprima dell'annuncio"
+   ]
+  },
+  {
+   "inizio": "10:01",
+   "fine": "11:11",
+   "titolo": "Riepilogo e revisione della campagna",
+   "tappe": [
+    3,
+    5,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Schermata di riepilogo con dettagli di budget, gruppi e annunci",
+    "Pubblicazione della campagna (rimane non attiva senza setup di fatturazione completo)"
+   ]
+  },
+  {
+   "inizio": "11:12",
+   "fine": "12:33",
+   "titolo": "Panoramica degli strumenti avanzati e conclusione",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Sezione Conversions, Feeds prodotto, Change History, Audiences, Billing e Users",
+    "Saluti finali e invito ad iscriversi per i prossimi video sul tracciamento"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:26",
+   "dice": "ChatGPT Ads si sta espandendo in 31 mercati europei.",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla comunicazione ufficiale OpenAI e riportato nel materiale di riferimento sull'espansione europea di ChatGPT Ads."
+  },
+  {
+   "minuto": "2:49",
+   "dice": "Ci sono 3 diversi obiettivi di campagna: Reach, Clicks, Conversions.",
+   "verdetto": "giusta",
+   "perche": "In MAPPA Tappa 3 gli obiettivi indicati per la campagna sono Views (paghi a CPM/Reach), Clicks (paghi a clic) e Conversions."
+  },
+  {
+   "minuto": "3:20",
+   "dice": "È possibile impostare esclusioni geografiche (negative locations).",
+   "verdetto": "giusta",
+   "perche": "La MAPPA Tappa 3 conferma che le opzioni di targeting geografico prevedono sia l'inclusione che l'esclusione esplicita dei paesi."
+  },
+  {
+   "minuto": "4:02",
+   "dice": "Le piattaforme idonee selezionabili sono iOS app, Android app e Web.",
+   "verdetto": "giusta",
+   "perche": "Coincide con la MAPPA Tappa 3: piattaforme selezionabili app/web Android, web desktop, app/web iOS."
+  },
+  {
+   "minuto": "5:12",
+   "dice": "È possibile impostare sia un budget totale di campagna sia un budget giornaliero.",
+   "verdetto": "giusta",
+   "perche": "In MAPPA Tappa 5 si specifica la disponibilità di due tipi di budget: totale della campagna o giornaliero."
+  },
+  {
+   "minuto": "5:58",
+   "dice": "Le strategie d'offerta disponibili nel gruppo d'annunci sono Maximize Results e Manual Max CPC.",
+   "verdetto": "superata",
+   "perche": "Dal 9/11/2026 la strategia automatica si chiama 'Intelligent bidding' (ex Maximize Results) e le offerte a Max CPC sono state sostituite da Target CPC (con ritiro definitivo dal 1/1/2027)."
+  },
+  {
+   "minuto": "6:05",
+   "dice": "Un'offerta Max CPC di 3$ garantisce erogazione forte (Strong Delivery), mentre 2,50$ potrebbe non erogare.",
+   "verdetto": "superata",
+   "perche": "L'indicazione dei 3-5$ risale alla fase iniziale con Max CPC; dal 9/11/2026 la piattaforma ha introdotto Target CPC come media e dismesso le vecchie opzioni a Max CPC."
+  },
+  {
+   "minuto": "10:11",
+   "dice": "Il titolo dell'annuncio ha un limite massimo di 50 caratteri e la descrizione di 100 caratteri.",
+   "verdetto": "giusta",
+   "perche": "Coincide perfettamente con la MAPPA Tappa 4: Titolo massimo 50 caratteri, testo/descrizione massimo 100 caratteri."
+  },
+  {
+   "minuto": "10:24",
+   "dice": "L'immagine dell'annuncio deve essere quadrata e avere dimensioni minime di 256x256 pixel.",
+   "verdetto": "giusta",
+   "perche": "Coincide con le specifiche d'immagine indicate in MAPPA Tappa 4 (immagine quadrata, raccomandata 256x256 o fino a 1200x1200px)."
+  }
+ ],
+ "per_chi_impara": "Per chi opera in Italia (Unione Europea) occorre prestare attenzione ad alcuni aspetti normativi e aggiornamenti: 1) Le custom audiences (pubblici personalizzati con dati di prima parte) non sono utilizzabili per campagne rivolte al SEE/Svizzera per ragioni di privacy. 2) La valuta minima per il budget giornaliero in EUR è 15 €. 3) Dal 30/10/2026 i 'creative enhancements' sono attivi di default e possono modificare/tradurre i testi automaticamente, quindi va verificato se disattivarli se si desidera il controllo totale sul testo italiano.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Il video offre un walkthrough pratico ed esplicativo dell'Ads Manager fin dalle sue prime fasi di rilascio, mostrando direttamente a schermo la struttura delle campagne e fornendo ottimi consigli sulla stesura dei Context Hints. Alcune funzioni relative al bidding mostrate a schermo sono state aggiornate da OpenAI a fine 2026."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È un'ottima dimostrazione visiva di come è strutturata la piattaforma Ads Manager di ChatGPT, ideale per prendere confidenza con l'interfaccia e la logica dei Context Hints.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "5:52",
+  "fine": "8:00"
+ },
+ "video": "xq96hrSr8Jo",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T09:51:47+00:00"
+}

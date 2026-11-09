@@ -1,0 +1,241 @@
+{
+ "lingua_parlata": "hi",
+ "riassunto": "Un tutorial pratico e dettagliato che guida passo dopo passo alla creazione della prima campagna pubblicitaria su ChatGPT tramite Ads Manager di OpenAI. Spiega la differenza tra campagne Standard e Product Feed, la configurazione di budget, target geografico, context hints e la creazione grafica dell'annuncio, oltre a mostrare come creare una landing page gratuita con Canva.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:57",
+   "titolo": "Introduzione a ChatGPT Ads e confronto con Meta e Google Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Gli annunci su ChatGPT compaiono nel contesto delle conversazioni degli utenti",
+    "Esempio pratico di ricerca di appartamenti o servizi e comparsa di annunci sponsorizzati",
+    "Vantaggi dell'intercettare l'intenzione d'acquisto diretta dell'utente"
+   ]
+  },
+  {
+   "inizio": "1:58",
+   "fine": "3:26",
+   "titolo": "Accesso ad Ads Manager e login con account OpenAI",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Navigazione verso ads.openai.com da browser",
+    "Procedura di login con credenziali Google o account OpenAI"
+   ]
+  },
+  {
+   "inizio": "3:27",
+   "fine": "6:40",
+   "titolo": "Onboarding guidato, scansione del sito web e impostazioni account",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento dell'URL del proprio sito web per l'analisi automatica dell'AI",
+    "Generazione dell'anteprima dell'annuncio",
+    "Scelta di paese, valuta (INR nel video) e fuso orario"
+   ]
+  },
+  {
+   "inizio": "6:41",
+   "fine": "8:05",
+   "titolo": "Panoramica della dashboard di Ads Manager Beta",
+   "tappe": [
+    2,
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Presentazione delle schede Overview, Campaigns, Tools e Billing",
+    "Spiegazione della struttura a tre livelli: Campagna, Gruppo di annunci e Annuncio"
+   ]
+  },
+  {
+   "inizio": "8:06",
+   "fine": "11:34",
+   "titolo": "Creazione campagna: Standard vs Product Feed e Obiettivi",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Differenza tra campagna Standard (per servizi/brand) e Product Feed (per e-commerce)",
+    "Selezione dell'obiettivo di campagna: Reach, Clicks, Conversions"
+   ]
+  },
+  {
+   "inizio": "11:35",
+   "fine": "16:23",
+   "titolo": "Targeting geografico ed elegibilità delle piattaforme",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inclusione ed esclusione di specifiche località (es. Delhi)",
+    "Selezione dei dispositivi e sistemi operativi (iOS, Android, Web)"
+   ]
+  },
+  {
+   "inizio": "16:24",
+   "fine": "18:11",
+   "titolo": "Pubblici personalizzati (Custom Audiences)",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Possibilità di caricare elenchi di contatti (CSV/TXT) fino a 500 MB"
+   ]
+  },
+  {
+   "inizio": "18:12",
+   "fine": "20:27",
+   "titolo": "Impostazione del budget giornaliero e programmazione",
+   "tappe": [
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Confronto tra budget totale di campagna e budget giornaliero",
+    "Evidenziazione della soglia minima di budget giornaliero (725 INR nel video)",
+    "Impostazione delle date di inizio ed eventuale fine"
+   ]
+  },
+  {
+   "inizio": "20:28",
+   "fine": "25:36",
+   "titolo": "Configurazione dell'Ad Group, strategie d'offerta e Context Hints",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta della strategia d'offerta (Maximize Results / Max CPC)",
+    "Inserimento dell'URL di destinazione predefinito",
+    "Aggiunta dei Context Hints (argomenti, servizi e parole chiave di contesto)"
+   ]
+  },
+  {
+   "inizio": "25:37",
+   "fine": "28:20",
+   "titolo": "Creazione dell'annuncio: Titolo, Descrizione e Immagine",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento di titolo (max 50 caratteri) e descrizione (max 100 caratteri)",
+    "Caricamento dell'immagine quadrata personalizzata",
+    "Verifica riepilogo campagna e invio in pubblicazione"
+   ]
+  },
+  {
+   "inizio": "28:21",
+   "fine": "30:11",
+   "titolo": "Setup della fatturazione e monitoraggio prestazioni",
+   "tappe": [
+    2,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Aggiunta del metodo di pagamento (carta di credito/debito)",
+    "Panoramica della scheda Performance Trend"
+   ]
+  },
+  {
+   "inizio": "30:12",
+   "fine": "34:39",
+   "titolo": "Soluzione gratuita per Landing Page con Canva Sites",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Come creare un sito web/landing page gratis con Canva Sites",
+    "Personalizzazione dei modelli e pubblicazione del link da usare negli annunci"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "2:14",
+   "dice": "Per accedere ad Ads Manager di ChatGPT bisogna andare sul sito ads.openai.com",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma che la piattaforma ufficiale si trova su ads.openai.com."
+  },
+  {
+   "minuto": "8:35",
+   "dice": "Esistono due tipi di campagna: Standard e Product Feed",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma l'esistenza dei tipi di campagna Standard e Product Feed."
+  },
+  {
+   "minuto": "10:18",
+   "dice": "Gli obiettivi disponibili per la campagna sono Reach, Clicks e Conversions",
+   "verdetto": "giusta",
+   "perche": "La mappa indica che gli obiettivi principali disponibili sono Views (Reach), Clicks e Conversions."
+  },
+  {
+   "minuto": "16:56",
+   "dice": "È possibile caricare file CSV o TXT fino a 500 MB di email e numeri di telefono per creare Custom Audiences",
+   "verdetto": "superata",
+   "perche": "Sebbene la funzione esista a livello globale, la mappa avverte che nello Spazio Economico Europeo (SEE, compresa l'Italia) e in Svizzera i pubblici personalizzati basati su liste clienti non sono consentiti per motivi di privacy."
+  },
+  {
+   "minuto": "19:15",
+   "dice": "Il budget giornaliero minimo è di 725 INR",
+   "verdetto": "giusta",
+   "perche": "L'interfaccia a schermo per la valuta INR richiede esattamente un minimo di 725,00 INR. La mappa specifica che per la valuta EUR il minimo è invece 15 €."
+  },
+  {
+   "minuto": "21:07",
+   "dice": "La strategia d'offerta raccomandata si chiama Maximize Results",
+   "verdetto": "superata",
+   "perche": "Dal 09/11/2026 la strategia automatica è stata rinominata 'Intelligent bidding' e sono state introdotte le opzioni Target CPC e Target CPA."
+  },
+  {
+   "minuto": "23:35",
+   "dice": "I Context Hints servono ad inserire parole chiave e tag per fare targeting esatto",
+   "verdetto": "sbagliata",
+   "perche": "La mappa chiarisce che i context hints non sono parole chiave a corrispondenza esatta né regole di targeting rigide, ma frasi descrittive in linguaggio naturale utili a guidare l'IA."
+  },
+  {
+   "minuto": "26:10",
+   "dice": "I limiti di testo sono 50 caratteri per il titolo e 100 per la descrizione, con immagine quadrata",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma i limiti ufficiali: titolo fino a 50 caratteri (consigliati 16-24), testo fino a 100 (consigliati 32-48) e immagine quadrata."
+  },
+  {
+   "minuto": "27:39",
+   "dice": "L'annuncio apparirà esattamente come configurato una volta approvato",
+   "verdetto": "superata",
+   "perche": "Dal 30/10/2026 i 'Creative Enhancements' sono attivi di default e possono modificare titoli, testi, ridimensionare immagini o tradurre il contenuto senza approvazione preventiva."
+  }
+ ],
+ "per_chi_impara": "Per un utente che opera dall'Italia (Unione Europea), il video è un'ottima guida visiva ma presenta diverse differenze normative e di piattaforma: 1) Il budget giornaliero minimo in Euro è 15 € (non 725 INR). 2) Nell'Unione Europea e Svizzera i pubblici personalizzati (Custom Audiences con liste clienti CSV/TXT) NON sono consentiti. 3) Dal 09/11/2026 la strategia 'Maximize Results' è diventata 'Intelligent bidding'. 4) Dal 30/10/2026 i Creative Enhancements sono attivi di default, consentendo a OpenAI di riadattare o tradurre i testi se non disattivati nelle impostazioni.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Il video offre una dimostrazione reale e completa di Ads Manager, mostrando passo-passo ogni schermata e offrendo persino un utile e pratico trucco per creare landing page con Canva. Perde un punto a causa di un'inesattezza concettuale sui Context Hints (confusi con parole chiave classiche) e per alcuni aggiornamenti di piattaforma avvenuti successivamente."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Consigliato come risorsa pratica per familiarizzare con l'interfaccia grafica e i tre livelli della struttura delle campagne su ChatGPT Ads Manager, a patto di integrare la visione con le specifiche per l'Italia/UE (budget minimo 15 €, divieto di Custom Audiences) e i recenti aggiornamenti agli automatismi di offerta e creatività.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "8:06",
+  "fine": "11:34"
+ },
+ "video": "BPyft-qzUI4",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T09:30:14+00:00"
+}

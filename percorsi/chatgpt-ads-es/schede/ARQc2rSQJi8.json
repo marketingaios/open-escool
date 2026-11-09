@@ -1,0 +1,134 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo muestra las primeras impresiones y la configuración paso a paso de una cuenta publicitaria en ChatGPT Ads (OpenAI Ads Manager) desde Ecuador. El presentador muestra la recepción de la invitación por correo electrónico, la creación de la vista previa del anuncio introduciendo la URL de su sitio web y la navegación por la interfaz de Ads Manager. También se destaca el límite del presupuesto mínimo que pide la interfaz ($100 USD) y el carácter todavía experimental/beta de la plataforma.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:54",
+   "titolo": "Introducción a ChatGPT Ads y disponibilidad en Ecuador",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentación de la llegada de ChatGPT Ads para empresas y marcas",
+    "Objetivo del vídeo, mostrar el funcionamiento interno y los primeros pasos"
+   ]
+  },
+  {
+   "inizio": "0:54",
+   "fine": "2:54",
+   "titolo": "Acceso por correo electrónico y generación de la vista previa del anuncio",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Recepción del correo oficial de OpenAI Ads Platform",
+    "Introducción de la URL del sitio web para la extracción automática de la información",
+    "Visualización de la vista previa del anuncio patrocinado"
+   ]
+  },
+  {
+   "inizio": "2:54",
+   "fine": "5:28",
+   "titolo": "Países disponibles y primeras pruebas con los límites de presupuesto",
+   "tappe": [
+    2,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Revisión de la lista de países admitidos (entre ellos Ecuador, EE. UU., Colombia, etc.)",
+    "Prueba de cambio del presupuesto diario y total",
+    "Detección del umbral mínimo que impone la interfaz ($100 USD)"
+   ]
+  },
+  {
+   "inizio": "5:28",
+   "fine": "6:14",
+   "titolo": "Configuración de la cuenta publicitaria de la empresa",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Introducción de la razón social, el sitio web y el sector",
+    "Selección de país, moneda (USD) y zona horaria"
+   ]
+  },
+  {
+   "inizio": "6:14",
+   "fine": "8:17",
+   "titolo": "Exploración de Ads Manager Beta y creación manual de la campaña",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Resumen del panel (Campañas, Conversiones, Facturación)",
+    "Selección de los objetivos de campaña (Clics, Conversiones, Alcance)",
+    "Revisión final de las restricciones de presupuesto en la pantalla de creación"
+   ]
+  },
+  {
+   "inizio": "8:17",
+   "fine": "8:56",
+   "titolo": "Consideraciones finales, fase beta y conclusiones",
+   "tappe": [
+    1,
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Reflexión sobre el presupuesto mínimo elevado para los pequeños emprendedores",
+    "Invitación a unirse a la comunidad para futuras novedades"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:02",
+   "dice": "ChatGPT Ads está disponible en Ecuador",
+   "verdetto": "giusta",
+   "perche": "Ecuador figura entre los países en los que la plataforma Ads Manager en self-service está activa y accesible."
+  },
+  {
+   "minuto": "4:03",
+   "dice": "El presupuesto mínimo de la campaña en ChatGPT Ads es de 100 USD",
+   "verdetto": "giusta",
+   "perche": "En la interfaz que se ve en pantalla, en USD, el sistema bloquea el presupuesto total/diario e indica un valor mínimo de 100 USD."
+  },
+  {
+   "minuto": "5:01",
+   "dice": "País, moneda y zona horaria se eligen al configurar la cuenta y no se pueden cambiar después",
+   "verdetto": "giusta",
+   "perche": "Como especifican las guías oficiales (20001213-ads-manager-account-setup.md), estos tres datos fijados al crear la cuenta publicitaria no se pueden modificar después."
+  },
+  {
+   "minuto": "8:21",
+   "dice": "La plataforma ChatGPT Ads está actualmente en fase beta",
+   "verdetto": "giusta",
+   "perche": "La interfaz de Ads Manager muestra explícitamente la etiqueta 'Beta', lo que confirma que el servicio se está lanzando de forma gradual."
+  }
+ ],
+ "per_chi_impara": "Para un usuario que trabaja desde Italia (Unión Europea), hay que tener en cuenta algunas diferencias sustanciales con lo que se muestra en el vídeo (grabado en Ecuador con moneda USD): en Italia la facturación es en EUR con un presupuesto diario mínimo de 15 € por campaña; además se aplican las normas del GDPR (hace falta un banner de consentimiento para los datos de conversión) y las restricciones del EEE sobre el uso de audiencias personalizadas/retargeting.",
+ "qualita": {
+  "voto": 4,
+  "perche": "El vídeo es muy práctico y transparente: muestra en tiempo real el registro y la navegación por la interfaz oficial de Ads Manager, y deja ver de forma espontánea límites reales de la interfaz como la restricción del presupuesto mínimo."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Es un excelente vídeo exploratorio, tipo 'walkthrough', para ver cómo se presenta Ads Manager en el momento del primer registro. Sin embargo, como se centra en el mercado ecuatoriano/USD y se grabó en el primer acceso, no muestra cómo se completa y se lanza de verdad una campaña publicitaria ni las particularidades de la facturación en euros y del GDPR.",
+ "tappa_migliore": 2,
+ "spezzone_migliore": {
+  "inizio": "05:28",
+  "fine": "07:55"
+ },
+ "video": "ARQc2rSQJi8",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-07T11:33:54+00:00"
+}

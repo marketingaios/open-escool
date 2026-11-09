@@ -1,0 +1,242 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video offre una guida dettagliata e pratica passo-passo per la creazione di una campagna pubblicitaria su ChatGPT Ads Manager. Spiega la configurazione dell'account inserzionista, l'impostazione degli obiettivi della campagna, il targeting geografico, la scelta dei posizionamenti sulle piattaforme, la gestione del budget e delle offerte, la creazione di pubblici personalizzati, l'inserimento dei parametri di tracciamento UTM e la stesura delle inserzioni con verifica finale. È rivolto a marketer e imprenditori che desiderano esplorare la pubblicità su ChatGPT.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "00:35",
+   "titolo": "Introduzione a ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Presentazione del tutorial completo su come creare una campagna su ChatGPT Ads.",
+    "Potenziale impatto del nuovo canale pubblicitario rispetto alle piattaforme tradizionali."
+   ]
+  },
+  {
+   "inizio": "00:35",
+   "fine": "02:04",
+   "titolo": "Promozione e creazione account inserzionista",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Ricerca dell'offerta promozionale per i nuovi account.",
+    "Inserimento dei dati base dell'attività (nome, sito, paese, valuta, fuso orario).",
+    "Chiarimento su chi visualizza gli annunci (soltanto utenti del piano Free)."
+   ]
+  },
+  {
+   "inizio": "02:04",
+   "fine": "02:57",
+   "titolo": "Esplorazione dell'Ads Manager",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Struttura dell'interfaccia di Ads Manager e similitudini con Meta Ads e LinkedIn Ads.",
+    "Panoramica del menu laterale (Campagne, Pubblici, Conversioni, Fatturazione, Impostazioni)."
+   ]
+  },
+  {
+   "inizio": "02:57",
+   "fine": "05:03",
+   "titolo": "Creazione della campagna e targeting geografico",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta dell'obiettivo della campagna (Clic, Reach, Conversioni).",
+    "Configurazione della geolocalizzazione (Paese, Regione/Stato, Codice Postale/ZIP).",
+    "Opzioni per includere ed escludere specifiche aree geografiche."
+   ]
+  },
+  {
+   "inizio": "05:03",
+   "fine": "06:47",
+   "titolo": "Scelta dei posizionamenti e budget giornaliero",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Piattaforme e dispositivi disponibili (Desktop web, iOS app, iOS web, Android web, Android app).",
+    "Definizione del budget giornaliero e limitazioni sul minimo impostabile.",
+    "Disattivazione della personalizzazione automatica del testo se si richiede controllo stretto sul brand."
+   ]
+  },
+  {
+   "inizio": "06:47",
+   "fine": "08:24",
+   "titolo": "Configurazione ad group e strategie di offerta",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione del gruppo di annunci e scelta della strategia di bidding (Maximize Results vs Max CPC).",
+    "Funzionamento dell'algoritmo di asta e indicatore della stima di erogazione."
+   ]
+  },
+  {
+   "inizio": "08:24",
+   "fine": "09:28",
+   "titolo": "Creazione di pubblici personalizzati (Custom Audiences)",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Caricamento di file CSV con e-mail o numeri di telefono per il matching dei clienti.",
+    "Utilizzo del pubblico per retargeting o per aggiustamenti dell'offerta."
+   ]
+  },
+  {
+   "inizio": "09:28",
+   "fine": "10:38",
+   "titolo": "Tracciamento UTM e URL di destinazione",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Importanza dell'uso di parametri UTM per distinguere il traffico su GA4.",
+    "Impostazione dell'URL di destinazione predefinito."
+   ]
+  },
+  {
+   "inizio": "10:38",
+   "fine": "11:40",
+   "titolo": "Creazione dell'annuncio",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento di Titolo, Descrizione e immagine dell'annuncio.",
+    "Generazione e gestione di più varianti dell'inserzione per l'A/B testing."
+   ]
+  },
+  {
+   "inizio": "11:40",
+   "fine": "12:13",
+   "titolo": "Riepilogo e pubblicazione della campagna",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Controllo finale della struttura prima di inviare in pubblicazione.",
+    "Spiegazione dei termini dello strumento pubblicitario."
+   ]
+  },
+  {
+   "inizio": "12:13",
+   "fine": "14:04",
+   "titolo": "Verifica dell'account, fatturazione e conclusione",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Requisito di corrispondenza tra dominio di destinazione e nome azienda registrato nell'account.",
+    "Configurazione del profilo di fatturazione e salvataggio in bozza.",
+    "Riepilogo e invito all'interazione nei commenti."
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "00:59",
+   "dice": "Spend $500 within 14 days of creating your account and get $500 in credit.",
+   "verdetto": "non_verificabile",
+   "perche": "La mappa non riporta promozioni o crediti pubblicitari specifici di $500 per i nuovi account."
+  },
+  {
+   "minuto": "01:57",
+   "dice": "Ads only serve to free-plan users. Plus, Pro and Max never see them.",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 1 della mappa: gli annunci compaiono solo per gli utenti dei piani Free e Go, mentre Plus, Pro, Business ed Enterprise ne sono esenti."
+  },
+  {
+   "minuto": "04:31",
+   "dice": "Targeting options support three levels of geo: Country, Region or state, ZIP / postal code.",
+   "verdetto": "superata",
+   "perche": "La mappa precisa che per gli account nuovi la pubblicità è limitata inizialmente al solo paese di residenza (paese di casa), sbloccando le altre opzioni dopo la verifica."
+  },
+  {
+   "minuto": "05:15",
+   "dice": "Eligible platforms include Desktop web, iOS app, iOS web, Android web, and Android app.",
+   "verdetto": "giusta",
+   "perche": "Coincide con le piattaforme selezionabili elencate nella Tappa 3 della mappa."
+  },
+  {
+   "minuto": "06:16",
+   "dice": "The minimum daily budget is $25.",
+   "verdetto": "non_verificabile",
+   "perche": "La mappa riporta una soglia minima di budget giornaliero di 15 € per l'Euro, mentre non definisce la cifra esatta in dollari USA."
+  },
+  {
+   "minuto": "06:46",
+   "dice": "Text customization can be turned off for strict brand control.",
+   "verdetto": "giusta",
+   "perche": "In linea con la Tappa 4 della mappa: i Creative Enhancements possono essere disattivati dalle impostazioni della campagna se si desidera mantenere il controllo totale sui testi."
+  },
+  {
+   "minuto": "07:10",
+   "dice": "You can choose between Maximize results and Maximum CPC for bidding strategy.",
+   "verdetto": "superata",
+   "perche": "Come specificato nei cambi recenti della mappa, la strategia Maximize Results è stata rinominata 'Intelligent bidding' dal 09/11/2026 e la strategia CPC è stata sostituita da Target CPC, con ritirata definitiva di Max CPC dal 01/01/2027."
+  },
+  {
+   "minuto": "09:02",
+   "dice": "You can upload customer lists with hashed emails and phone numbers to create custom audiences.",
+   "verdetto": "sbagliata",
+   "perche": "Gli avvisi e la Tappa 3 della mappa evidenziano che nell'UE (Spazio Economico Europeo) e in Svizzera i pubblici personalizzati e le liste clienti non sono consentiti."
+  },
+  {
+   "minuto": "09:46",
+   "dice": "Without UTMs, GA4 cannot separate ChatGPT traffic from everything else.",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 6 della mappa: l'uso dei parametri UTM nell'URL di destinazione è il metodo fondamentale per identificare il traffico da ChatGPT su Google Analytics."
+  },
+  {
+   "minuto": "11:24",
+   "dice": "Ad creatives accept square and landscape images.",
+   "verdetto": "sbagliata",
+   "perche": "La Tappa 4 della mappa specifica che il formato consentito per le immagini è esclusivamente quadrato (al massimo 1200 x 1200 px)."
+  },
+  {
+   "minuto": "12:16",
+   "dice": "Your destination URL has to match the business name on the account, or it will not serve.",
+   "verdetto": "giusta",
+   "perche": "Allineato ai controlli di verifica e coerenza tra ragione sociale/brand dell'account e sito web descritti nella Tappa 2 e Tappa 4 della mappa."
+  }
+ ],
+ "per_chi_impara": "Chi opera dall'Italia deve prestare attenzione alle seguenti particolarità: 1) Il budget giornaliero minimo va impostato in Euro (minimo 15 €/giorno); 2) I pubblici personalizzati (Custom Audiences tramite caricamento di liste e-mail/telefono) NON sono utilizzabili per campagne rivolte al SEE (Spazio Economico Europeo) e alla Svizzera; 3) All'apertura dell'account è fondamentale scegliere Italia, EUR e fuso orario italiano prima di confermare, poiché tali dati non saranno più modificabili.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Il video offre un walkthrough chiarissimo e strutturato dell'interfaccia di ChatGPT Ads Manager. La spiegazione è pragmatica e visuale. Le uniche imperfezioni riguardano le recenti evoluzioni delle offerte (Intelligent Bidding / Target CPC) e il fatto che alcune funzioni (come le Custom Audiences) non sono valide nell'UE."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È una delle guide pratiche più complete e visive sulla piattaforma pubblicitaria di OpenAI, ottima per comprendere la struttura delle campagne e la logica operativa dell'Ads Manager.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "02:57",
+  "fine": "05:03"
+ },
+ "video": "h3aDJrLt_aE",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T09:51:02+00:00"
+}

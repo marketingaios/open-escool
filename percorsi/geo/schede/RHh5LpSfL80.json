@@ -1,0 +1,118 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "Un vídeo divulgativo sobre GEO (Generative Engine Optimization) orientado a profesionales del marketing digital. Explica la transición del SEO tradicional al posicionamiento en motores generativos, ofreciendo recomendaciones clave para ser citado por modelos como Gemini, Perplexity y ChatGPT.",
+ "mostra_schermo": false,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:42",
+   "titolo": "Introducción al cambio de hábitos de búsqueda",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "El usuario consulta directamente a la IA (ChatGPT, Gemini, Perplexity) en lugar de realizar búsquedas tradicionales",
+    "Evolución del SEO hacia el GEO (Generative Engine Optimization)"
+   ]
+  },
+  {
+   "inizio": "0:43",
+   "fine": "2:17",
+   "titolo": "Qué es el GEO y diferencia con el SEO",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Frente a las palabras clave del SEO, el GEO prioriza la autoridad semántica",
+    "Creación de contenido pensado para algoritmos de síntesis y no solo de clasificación",
+    "Presentación del patrocinador NeoAttack"
+   ]
+  },
+  {
+   "inizio": "2:18",
+   "fine": "4:40",
+   "titolo": "Claves para posicionarte en la IA",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Importancia de incorporar datos propios, estudios y estadísticas únicas",
+    "Optimización de la intención de búsqueda conversacional y preguntas frecuentes",
+    "Construcción de autoridad en sitios web de terceros (earned media)"
+   ]
+  },
+  {
+   "inizio": "4:41",
+   "fine": "6:29",
+   "titolo": "Diferencias entre los distintos motores generativos",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Gemini se nutre de los fragmentos enriquecidos y del SEO técnico de Google",
+    "Perplexity funciona como buscador en tiempo real exigiendo citación estricta y contenido fresco",
+    "ChatGPT prioriza la popularidad de marca, huella digital y menciones en medios masivos"
+   ]
+  },
+  {
+   "inizio": "6:30",
+   "fine": "7:13",
+   "titolo": "Conclusión y recomendaciones",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "El GEO como prioridad estratégica en marketing digital",
+    "Llamada a la acción e invitación a interactuar en comentarios"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "1:28",
+   "dice": "Casi el 44% de las citas de ChatGPT provienen del primer tercio de tus contenidos",
+   "verdetto": "non_verificabile",
+   "perche": "Menciona un dato atribuido a un estudio publicado en Marketing4eCommerce no detallado en los conceptos centrales de la mapa."
+  },
+  {
+   "minuto": "4:47",
+   "dice": "Gemini bebe directamente de los fragmentos enriquecidos, resultados de Google Maps y la autoridad del buscador tradicional",
+   "verdetto": "giusta",
+   "perche": "Coincide con el concepto de la Tappa 1: AI Overviews y los sistemas generativos de Google se apoyan en los mismos sistemas de ranking y calidad de la búsqueda clásica."
+  },
+  {
+   "minuto": "5:19",
+   "dice": "Perplexity es un buscador de fuentes en tiempo real que ofrece citas numeradas con enlace muy visible a la fuente",
+   "verdetto": "giusta",
+   "perche": "Coincide plenamente con la Tappa 1: Perplexity busca en tiempo real y cada respuesta lleva citas numeradas con enlace a la fuente original."
+  },
+  {
+   "minuto": "4:03",
+   "dice": "Las menciones en revistas del sector o notas de prensa en sitios de autoridad son más valiosas que los propios medios corporativos",
+   "verdetto": "giusta",
+   "perche": "Confirmado en la Tappa 1: los estudios demuestran que los buscadores con IA prefieren fuentes de terceros con autoridad frente al contenido propio de la marca."
+  }
+ ],
+ "per_chi_impara": "El contenido ofrece una sólida introducción conceptual sobre cómo funcionan los motores generativos en español. Sin embargo, no aborda aspectos técnicos prácticos como el archivo robots.txt para bots de IA o el uso del informe de IA generativa disponible en Google Search Console.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Explicación muy clara, fluida y estructurada de las bases del GEO y las diferencias entre motores, aunque carece de demostración práctica en pantalla de herramientas de analítica o código."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Es un vídeo excelente para comprender el cambio mental necesario entre el SEO clásico y el GEO antes de pasar a la configuración técnica.",
+ "tappa_migliore": 1,
+ "spezzone_migliore": {
+  "inizio": "4:41",
+  "fine": "6:29"
+ },
+ "video": "RHh5LpSfL80",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T11:39:54+00:00"
+}

@@ -1,0 +1,168 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video mostra da zero la creazione guidata di una prima campagna su ChatGPT Ads Manager (ads.openai.com) da interfaccia mobile. Spiega come inserire il sito web per generare una bozza di annuncio, come modificare testi, titoli e immagini, e come impostare budget e offerta. Si conclude fermandosi prima dell'inserimento dei dati di fatturazione per evitare spese involontarie.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "2:11",
+   "titolo": "Introduzione e disponibilità di ChatGPT Ads",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentazione della piattaforma pubblicitaria di ChatGPT",
+    "Invito ricevuto via email per accedere ad Ads Manager"
+   ]
+  },
+  {
+   "inizio": "2:12",
+   "fine": "4:33",
+   "titolo": "Come funzionano gli annunci secondo il creator",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Spiegazione concettuale di come gli annunci verrebbero mostrati in risposta alle query degli utenti",
+    "Paragone con la pagina dei risultati sponsorizzati di Google"
+   ]
+  },
+  {
+   "inizio": "4:34",
+   "fine": "5:33",
+   "titolo": "Accesso ad ads.openai.com e prima anteprima",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Accesso al portale ads.openai.com tramite browser",
+    "Inserimento dell'URL del proprio sito per creare una bozza automatica"
+   ]
+  },
+  {
+   "inizio": "5:34",
+   "fine": "7:33",
+   "titolo": "Modifica degli elementi dell'annuncio",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Revisione di titolo (max 50 caratteri), testo e immagine quadrata",
+    "Avviso sull'importanza di non fidarsi ciecamente della bozza estratta dal crawler"
+   ]
+  },
+  {
+   "inizio": "7:34",
+   "fine": "9:15",
+   "titolo": "Obiettivi, localizzazione, budget e offerte",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta dell'obiettivo (Clicks o Reach)",
+    "Restringimento geografico per città/regione",
+    "Differenza tra budget giornaliero e budget totale di campagna con offerta manuale"
+   ]
+  },
+  {
+   "inizio": "9:16",
+   "fine": "9:50",
+   "titolo": "Configurazione account e avviso su dati non modificabili",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Verifica di nome account, paese, valuta e fuso orario",
+    "Avvertenza: questi parametri non sono più modificabili dopo la conferma"
+   ]
+  },
+  {
+   "inizio": "9:51",
+   "fine": "11:30",
+   "titolo": "Perché fermarsi prima della fatturazione e considerazioni sulla beta",
+   "tappe": [
+    5,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Decisione di non inserire la carta di credito per evitare addebiti immediati",
+    "Stato beta della piattaforma e assenza di parametri certi sui costi di conversione"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "3:55",
+   "dice": "L'annuncio compare in cima alla pagina sopra le risposte, esattamente come accade con i risultati sponsorizzati di Google",
+   "verdetto": "sbagliata",
+   "perche": "In base alla mappa (Tappa 1, concetti ed errori tipici), l'annuncio compare sotto la risposta fornita da ChatGPT, chiaramente etichettato come sponsorizzato e separato da essa, non in cima alla risposta né al di sopra."
+  },
+  {
+   "minuto": "5:10",
+   "dice": "Inserire il sito all'iscrizione genera solo un'anteprima e nulla andrà mai live senza approvazione esplicita, quindi non si rischia nulla",
+   "verdetto": "sbagliata",
+   "perche": "La mappa (Tappa 2, errori tipici) segnala espressamente come errore credere che inserire il sito crei solo un'anteprima: se si completa la fatturazione, l'annuncio creato dalla procedura guidata può andare in onda dopo la revisione e iniziare a spendere."
+  },
+  {
+   "minuto": "6:58",
+   "dice": "Il campo del titolo accetta fino a un massimo di 50 caratteri",
+   "verdetto": "giusta",
+   "perche": "La mappa (Tappa 4, concetti) conferma: 'Titolo: consigliati 16-24 caratteri, massimo 50'."
+  },
+  {
+   "minuto": "7:03",
+   "dice": "Per l'immagine dell'annuncio occorre caricare un file PNG o JPG quadrato",
+   "verdetto": "giusta",
+   "perche": "La mappa (Tappa 4, concetti) conferma: 'Immagine PNG o JPG, quadrata, al massimo 1200 x 1200'."
+  },
+  {
+   "minuto": "7:39",
+   "dice": "Gli obiettivi disponibili nella configurazione mostrata sono Clicks oppure Reach",
+   "verdetto": "giusta",
+   "perche": "La mappa (Tappa 3, concetti) elenca tra gli obiettivi 'Views (paghi a mille impressioni), Clicks (paghi a clic)'."
+  },
+  {
+   "minuto": "8:44",
+   "dice": "Impostando il budget su totale di campagna (Campaign total), la strategia d'offerta passa automaticamente a Manual bid",
+   "verdetto": "giusta",
+   "perche": "Al momento della registrazione (22/10/2026), l'offerta manuale (Manual bid/Max Bid) era ancora presente per i budget totali. La mappa indica che Target CPA/CPC e Intelligent Bidding subentrano solo dal 09/11/2026 e il ritiro definitivo di Max Bid/CPC avviene il 01/01/2027."
+  },
+  {
+   "minuto": "9:32",
+   "dice": "Paese, valuta e fuso orario scelti in fase di impostazione account non potranno più essere modificati dopo aver cliccato Continua",
+   "verdetto": "giusta",
+   "perche": "La mappa (Tappa 2, concetti) indica esplicitamente: 'Paese, valuta e fuso orario non si cambiano dopo la creazione dell'account'."
+  },
+  {
+   "minuto": "10:35",
+   "dice": "ChatGPT Ads è attualmente in fase beta e non ci sono ancora parametri o dati certi sui costi di acquisizione medi",
+   "verdetto": "giusta",
+   "perche": "La mappa (Tappa 1, concetti) conferma: 'È una piattaforma in beta, senza parametri di riferimento sui risultati: diffidare di chi promette numeri'."
+  }
+ ],
+ "per_chi_impara": "Chi impara dall'Italia deve fare attenzione: il video mostra la valuta nigeriana (NGN) anziché l'euro (EUR, per cui il minimo giornaliero è 15 €). Inoltre, il video fa passare l'utente attraverso la procedura guidata 'Crea dal sito', mentre la mappa consiglia a un utente italiano di saltare la creazione immediata dell'annuncio per evitare avvii accidentali, inserire la P.IVA in Billing e ricordare che nello Spazio Economico Europeo gli annunci non sono personalizzati con liste clienti.",
+ "qualita": {
+  "voto": 3,
+  "perche": "Mostra fedelmente la schermata reale di ads.openai.com su dispositivo mobile e spiega con prudenza di fermarsi prima della fatturazione. Tuttavia la spiegazione iniziale sul posizionamento dell'annuncio (paragonato ai primi risultati di Google) è errata rispetto al funzionamento reale sotto le risposte, e la procedura rapida dal sito non è quella ideale raccomandata per chi parte da zero in Europa."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Utile da consultare visivamente per osservare la schermata reale della procedura guidata dal sito web su smartphone e l'avviso fondamentale sui dati non modificabili (paese, valuta, fuso orario). Tuttavia non è il video principale per un utente italiano perché usa valuta e impostazioni nigeriane e descrive in modo impreciso il posizionamento dell'annuncio in chat.",
+ "tappa_migliore": 2,
+ "spezzone_migliore": {
+  "inizio": "9:16",
+  "fine": "9:50"
+ },
+ "video": "JEk8EDOVfXo",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:36:28+00:00"
+}

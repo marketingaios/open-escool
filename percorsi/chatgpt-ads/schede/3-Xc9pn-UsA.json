@@ -1,0 +1,134 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Questo video guida passo passo nell'impostazione del tracciamento delle conversioni per ChatGPT Ads tramite Google Tag Manager (GTM). Mostra come creare una fonte dati in OpenAI Ads Manager per ottenere il Pixel ID, come importare il modello ufficiale 'OpenAI Ads Measurement Pixel' dalla Community Template Gallery di GTM e come configurare sia il tag base di Page View che i tag di evento di conversione (es. Lead Created).",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:16",
+   "titolo": "Introduzione al tracciamento conversioni ChatGPT Ads con GTM",
+   "tappe": [
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentazione della nuova funzionalità: il modello ufficiale OpenAI per Google Tag Manager."
+   ]
+  },
+  {
+   "inizio": "0:16",
+   "fine": "0:54",
+   "titolo": "Creazione della Data Source e del Pixel ID in Ads Manager",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Navigazione in Tools → Conversions → Data Source in OpenAI Ads Manager.",
+    "Creazione della fonte dati e copia del Pixel ID generato."
+   ]
+  },
+  {
+   "inizio": "0:54",
+   "fine": "2:44",
+   "titolo": "Installazione del template OpenAI in GTM e setup Pixel base",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Ricerca del modello 'OpenAI Ads Measurement Pixel' nella Community Template Gallery.",
+    "Inserimento del Pixel ID e configurazione dell'evento predefinito 'Page viewed'.",
+    "Impostazione del trigger di attivazione (Consent Initialization / All Pages)."
+   ]
+  },
+  {
+   "inizio": "2:44",
+   "fine": "4:35",
+   "titolo": "Configurazione di un evento di conversione (Lead Form Submit)",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione di un nuovo tag di conversione specifico.",
+    "Selezione dell'evento standard (es. 'Lead created').",
+    "Collegamento al trigger del modulo di contatto o pagina di ringraziamento."
+   ]
+  },
+  {
+   "inizio": "4:35",
+   "fine": "5:36",
+   "titolo": "Panoramica sugli altri tipi di eventi e verifica nello Stream Eventi",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Eventi predefiniti disponibili (Order created, Checkout started, Custom event, ecc.).",
+    "Verifica della ricezione degli eventi tramite il tab Event Stream (polling)."
+   ]
+  },
+  {
+   "inizio": "5:36",
+   "fine": "6:53",
+   "titolo": "Risorse correlate e conclusione",
+   "tappe": [
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Panoramica dei tutorial su Shopping Ads, Audience e Ads Manager.",
+    "Anticipazione del prossimo video sui Context Hints."
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:40",
+   "dice": "Il Pixel ID viene generato creando una Data Source su Ads Manager ed è l'unico codice necessario da inserire nel tag GTM.",
+   "verdetto": "giusta",
+   "perche": "Mappa Tappa 6: per le conversioni serve una fonte dati in Ads Manager e il Pixel di OpenAI."
+  },
+  {
+   "minuto": "1:40",
+   "dice": "Il modello ufficiale GTM di OpenAI carica l'SDK del Pixel di misurazione inviando visualizzazioni di pagina o eventi senza bisogno di codice HTML personalizzato.",
+   "verdetto": "giusta",
+   "perche": "Mappa Tappa 6: tracciamento tramite fonte dati e Pixel di OpenAI."
+  },
+  {
+   "minuto": "2:35",
+   "dice": "Il Pixel base va attivato su tutte le pagine con gestione dei consensi (Consent Initialization) dove richiesto dalla legge.",
+   "verdetto": "giusta",
+   "perche": "Mappa Tappa 6 e Avvisi: i dati di conversione si inviano solo dopo aver informato gli utenti e raccolto i consensi (GDPR in Italia/UE)."
+  },
+  {
+   "minuto": "4:35",
+   "dice": "Non occorre creare manualmente le azioni di conversione in Ads Manager prima dell'invio, perché vengono inviate direttamente tramite GTM.",
+   "verdetto": "giusta",
+   "perche": "Mappa Tappa 6: gli eventi standard inviati dal Pixel vengono riconosciuti dal sistema."
+  },
+  {
+   "minuto": "5:27",
+   "dice": "È possibile verificare l'invio corretto dei dati avviando il polling nella scheda Event Stream di Ads Manager.",
+   "verdetto": "giusta",
+   "perche": "Mappa Tappa 6: la scheda Event Stream permette di monitorare la trasmissione degli eventi."
+  }
+ ],
+ "per_chi_impara": "Per chi opera in Italia (UE), il video mostra una pratica corretta impostando il tag Pixel di GTM su 'Consent Initialization', in linea con le normative GDPR che impongono l'invio dei dati di conversione solo a seguito del consenso dell'utente.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Tutorial estremamente pratico, aggiornato, chiaro ed essenziale per comprendere come integrare il tracciamento conversioni di ChatGPT Ads tramite il modello ufficiale di GTM."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È la guida di riferimento perfetta per la Tappa 6 del percorso di apprendimento, spiegando in modo dettagliato come configurare il Pixel e gli eventi di conversione tramite Google Tag Manager.",
+ "tappa_migliore": 6,
+ "spezzone_migliore": {
+  "inizio": "0:54",
+  "fine": "4:35"
+ },
+ "video": "3-Xc9pn-UsA",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T09:01:08+00:00"
+}

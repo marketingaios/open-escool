@@ -1,0 +1,199 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video guida passo passo alla creazione di una prima campagna pubblicitaria su ChatGPT Ads Manager, illustrando l'interfaccia della piattaforma e la struttura delle campagne. Mostra come impostare gli eventi di conversione, integrare il Pixel nel proprio sito e scrivere i Context Hints guidati dall'AI. È rivolto a marketer e imprenditori che vogliono sperimentare la pubblicità su ChatGPT prima dei concorrenti.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "2:45",
+   "titolo": "Introduzione a ChatGPT Ads e pubblico di destinazione",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Espansione del servizio pubblicitario in Europa",
+    "Chi vede gli annunci: solo utenti con piani Free e Go",
+    "Formati visivi integrati nelle conversazioni"
+   ]
+  },
+  {
+   "inizio": "2:45",
+   "fine": "4:03",
+   "titolo": "Panoramica di Ads Manager e confronto con Meta",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Interfaccia minimale rispetto a Meta Ads Manager",
+    "Processo di verifica aziendale iniziale",
+    "Funzionalità in continuo aggiornamento"
+   ]
+  },
+  {
+   "inizio": "4:04",
+   "fine": "7:35",
+   "titolo": "Creazione della Campagna e scelta dell'Obiettivo",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Nomenclatura standard per tracciare le campagne",
+    "Differenza tra Clic e Conversioni",
+    "Necessità del tracciamento per le campagne a conversione"
+   ]
+  },
+  {
+   "inizio": "7:36",
+   "fine": "10:36",
+   "titolo": "Configurazione di Pixel ed Eventi di Conversione",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione di una Data Source e installazione dello script Pixel nell'header HTML",
+    "Creazione di eventi di conversione personalizzati (es. Subscription created)",
+    "Integrazione del codice tramite assistenti AI come Claude o Codex"
+   ]
+  },
+  {
+   "inizio": "10:37",
+   "fine": "13:31",
+   "titolo": "Targeting geografico, UTM e Budget",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Selezione dei paesi e opzioni di esclusione",
+    "Tracciamento analitico tramite parametri UTM dell'URL",
+    "Scelta tra Budget Giornaliero e Budget Totale di Campagna"
+   ]
+  },
+  {
+   "inizio": "13:32",
+   "fine": "17:29",
+   "titolo": "Impostazione del Gruppo di Annunci e Context Hints",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Nomenclatura del gruppo di annunci",
+    "Limiti per i pubblici personalizzati in SEE/Svizzera",
+    "Uso dei Context Hints in linguaggio naturale per guidare il sistema"
+   ]
+  },
+  {
+   "inizio": "17:30",
+   "fine": "19:53",
+   "titolo": "Creazione e configurazione dell'Annuncio",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Limiti dei caratteri: Titolo (max 50) e Descrizione (max 100)",
+    "Caricamento dell'immagine quadrata",
+    "Anteprima del formato finale dell'annuncio"
+   ]
+  },
+  {
+   "inizio": "19:54",
+   "fine": "23:43",
+   "titolo": "Analisi del Funnel e Risultati della Community",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Misurazione del tasso di conversione lungo le fasi del funnel",
+    "Confronto tra i risultati personali e quelli riportati da altri creator",
+    "Consigli per testare le campagne con budget controllati"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "1:45",
+   "dice": "Gli annunci vengono mostrati agli utenti con piano Free e Go, mentre Plus, Pro, Business ed Enterprise non li vedono.",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla mappa: gli annunci compaiono solo per gli utenti dei piani Free e Go."
+  },
+  {
+   "minuto": "2:44",
+   "dice": "La verifica dell'attività aziendale richiede circa 1-2 giorni.",
+   "verdetto": "superata",
+   "perche": "La mappa specifica che la verifica dell'attività può richiedere fino a 7 giorni lavorativi."
+  },
+  {
+   "minuto": "4:28",
+   "dice": "Il CPM medio è di circa 9$ e il CPC medio è di 0,67$.",
+   "verdetto": "non_verificabile",
+   "perche": "La mappa segnala che OpenAI non fornisce ancora dati di riferimento ufficiali per CTR, CPC o CPM."
+  },
+  {
+   "minuto": "7:00",
+   "dice": "Se scegli l'obiettivo Conversions è necessario configurare un evento di conversione specifico.",
+   "verdetto": "giusta",
+   "perche": "In linea con la mappa: l'obiettivo Conversions richiede un tracciamento attivo e un evento standard configurato."
+  },
+  {
+   "minuto": "12:48",
+   "dice": "È possibile scegliere un budget giornaliero oppure un budget totale per la campagna.",
+   "verdetto": "giusta",
+   "perche": "Coerente con la mappa, che prevede la scelta tra budget totale di campagna o giornaliero."
+  },
+  {
+   "minuto": "13:13",
+   "dice": "La personalizzazione del testo permette all'AI di adattare le varianti di titolo e descrizione.",
+   "verdetto": "giusta",
+   "perche": "Coerente con i Creative Enhancements attivi di base aggiornati al 30/10/2026."
+  },
+  {
+   "minuto": "14:26",
+   "dice": "I pubblici personalizzati non sono supportati per le campagne rivolte allo Spazio Economico Europeo o alla Svizzera.",
+   "verdetto": "giusta",
+   "perche": "In linea con le direttive sulle restrizioni di personalizzazione in SEE e Svizzera riportate nella mappa."
+  },
+  {
+   "minuto": "14:40",
+   "dice": "Il cap d'offerta ottimizzato per la conversione stabilisce la puntata massima nell'asta.",
+   "verdetto": "superata",
+   "perche": "Dal 09/11/2026 la strategia Max Bid è stata sostituita da Target CPA per le campagne a conversione e il sistema usa Intelligent Bidding."
+  },
+  {
+   "minuto": "17:42",
+   "dice": "Al momento OpenAI supporta soltanto annunci con immagine singola.",
+   "verdetto": "superata",
+   "perche": "Dal 26/10/2026 è disponibile in beta aperta il formato a più immagini (4-6 immagini quadrate)."
+  },
+  {
+   "minuto": "19:00",
+   "dice": "Il titolo supporta fino a 50 caratteri, la descrizione fino a 100 e l'immagine deve essere quadrata.",
+   "verdetto": "giusta",
+   "perche": "Pienamente conforme ai limiti stabiliti per il formato dell'annuncio singolo descritti nella mappa."
+  }
+ ],
+ "per_chi_impara": "Per chi opera dall'Italia (UE), le indicazioni di base del video sulla creazione di campagne e l'uso dell'interfaccia sono corrette e applicabili. Tuttavia, occorre considerare i recenti aggiornamenti: le strategie d'offerta Max Bid menzionate nel video sono state sostituite da Target CPA/CPC (novembre 2026), ed è ora disponibile il formato carosello/multi-immagine (ottobre 2026). Inoltre, in Italia/SEE i pubblici personalizzati rimangono disabilitati e il Pixel di conversione va installato garantendo il rispetto del consenso GDPR.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Il video offre una spiegazione pratica ed esaustiva di tutto il flusso di lavoro su Ads Manager, mostrando concretamente l'installazione del Pixel, l'uso dei Context Hints e la creazione delle creatività."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "È un'ottima guida pratica per comprendere l'interfaccia e la logica operativa di ChatGPT Ads, ma richiede integrazione con la documentazione aggiornata relativa ai cambi delle strategie d'offerta (Target CPA/CPC) e ai nuovi formati multi-immagine.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "16:01",
+  "fine": "17:29"
+ },
+ "video": "qHv38kdd4UE",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T08:43:24+00:00"
+}

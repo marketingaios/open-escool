@@ -1,0 +1,154 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "Dos profesionales hablan por videollamada de la llegada de ChatGPT Ads a Europa y a España, y comparan el modelo conversacional con la búsqueda clásica en Google. Uno de los dos cuenta su experiencia directa al abrir la cuenta y lanzar una primera campaña experimental: los datos que se piden, el formato visual de los anuncios y los primeros resultados a pocas horas de la publicación. El vídeo es un intercambio de opiniones informal y preliminar, útil para captar las diferencias conceptuales con Google Ads, pero sin una guía práctica paso a paso.",
+ "mostra_schermo": false,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "2:15",
+   "titolo": "Llegada de ChatGPT Ads y comparación con Google Search",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Lanzamiento de ChatGPT Ads en Europa y caída de los clics en los buscadores tradicionales",
+    "Diferencia entre la búsqueda por palabras clave y el contexto conversacional detallado",
+    "Dudas sobre cómo el algoritmo elige y muestra las sugerencias patrocinadas"
+   ]
+  },
+  {
+   "inizio": "2:15",
+   "fine": "4:49",
+   "titolo": "Evolución de OpenAI, registro de la cuenta y verificación",
+   "tappe": [
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "De entidad sin ánimo de lucro a la monetización con publicidad",
+    "Creación de la cuenta de anunciante y entrega de los datos fiscales (número de IVA intracomunitario)",
+    "Plazos de validación y aprobación de la cuenta"
+   ]
+  },
+  {
+   "inizio": "4:49",
+   "fine": "6:22",
+   "titolo": "Formato del anuncio, elementos gráficos y primeras impresiones",
+   "tappe": [
+    1,
+    4,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Composición del anuncio con título, texto, logo o imagen desde la URL o cargados",
+    "Primeras visualizaciones registradas por la campaña recién aprobada",
+    "Gasto en cero en las primeras horas a pesar de las impresiones servidas"
+   ]
+  },
+  {
+   "inizio": "6:22",
+   "fine": "7:59",
+   "titolo": "Métricas de medición y anuncios en los planes de pago",
+   "tappe": [
+    1,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Espera para medir el CTR y los cargos",
+    "Presencia de los anuncios limitada a las cuentas gratuitas o de bajo costo",
+    "Ausencia de publicidad para los usuarios de los planes avanzados"
+   ]
+  },
+  {
+   "inizio": "7:59",
+   "fine": "9:41",
+   "titolo": "Perspectivas futuras, tasas de conversión y conclusiones",
+   "tappe": [
+    1,
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Impacto en los ingresos publicitarios de OpenAI frente a Google y Meta",
+    "Incertidumbre sobre la eficacia real y las tasas de conversión de la plataforma",
+    "Necesidad de esperar datos consolidados antes de escalar el presupuesto"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:05",
+   "dice": "ChatGPT Ads ha salido la semana pasada en Europa/España",
+   "verdetto": "giusta",
+   "perche": "Conforme al cambio del 2026-08-31, que marca el inicio del self-service desde Ads Manager en los mercados europeos."
+  },
+  {
+   "minuto": "0:28",
+   "dice": "La búsqueda en ChatGPT es contextual y no funciona por keywords tradicionales como en Google",
+   "verdetto": "giusta",
+   "perche": "Conforme al concepto de las etapas 1 y 3: la elección del anuncio usa el contexto de la conversación y no palabras clave."
+  },
+  {
+   "minuto": "2:20",
+   "dice": "Ha estado por varias partes, ya salieron en Estados Unidos y ahora en toda Europa la semana pasada",
+   "verdetto": "giusta",
+   "perche": "Conforme a los cambios del 2026-02-09 (prueba en EE. UU.) y del 2026-08-31 (self-service ampliado a Europa)."
+  },
+  {
+   "minuto": "4:24",
+   "dice": "Para registrarte tienes que dar los datos comerciales y el código internacional fiscal (NIF/partita IVA comunitaria)",
+   "verdetto": "giusta",
+   "perche": "Conforme al concepto de la etapa 2: se piden los datos de facturación de la empresa y la identificación fiscal."
+  },
+  {
+   "minuto": "4:54",
+   "dice": "Hice la solicitud el jueves y me han validado hoy",
+   "verdetto": "giusta",
+   "perche": "Entra en los plazos oficiales de la etapa 2, donde la verificación del negocio puede tardar hasta 7 días hábiles."
+  },
+  {
+   "minuto": "5:17",
+   "dice": "Es una especie de banner que sale encima del chat con un título y una descripción",
+   "verdetto": "sbagliata",
+   "perche": "En contraste con el concepto de la etapa 1: el anuncio aparece debajo de la respuesta de ChatGPT, etiquetado como patrocinado y separado de ella, no encima del texto del chat."
+  },
+  {
+   "minuto": "5:27",
+   "dice": "Lleva un título, una descripción y una imagen que saca desde la propia web o puedes subir tú",
+   "verdetto": "giusta",
+   "perche": "Conforme al concepto de las etapas 1 y 4: el anuncio incluye logo/favicon, título, texto/descripción e imagen."
+  },
+  {
+   "minuto": "6:15",
+   "dice": "Llevo ya seis impresiones y sin embargo llevo cero gastado",
+   "verdetto": "giusta",
+   "perche": "Conforme al concepto de la etapa 6: el gasto se actualiza con 7-8 horas de retraso, así que ver un gasto en cero con impresiones es normal."
+  },
+  {
+   "minuto": "7:47",
+   "dice": "En la cuenta de pago de 8 dólares creo que sí aparecen anuncios, en las demás ya no",
+   "verdetto": "giusta",
+   "perche": "Conforme al concepto de la etapa 1: los anuncios solo se muestran a los usuarios de los planes Free y Go (plan económico), mientras que Plus, Pro, Business y Enterprise no los tienen."
+  }
+ ],
+ "per_chi_impara": "El vídeo está en español y refleja la misma situación que Italia (mercado europeo habilitado a finales de agosto de 2026, con régimen fiscal intracomunitario y restricciones del GDPR). Sin embargo, como no comparte pantalla y es una grabación puramente de conversación, quien aprende desde cero no puede ver Ads Manager, entender la interfaz ni seguir las operaciones de configuración.",
+ "qualita": {
+  "voto": 2,
+  "perche": "Es una charla informal entre dos colegas sin apoyo visual (ninguna pantalla de Ads Manager ni ejemplos prácticos en el vídeo). Los conceptos que se tratan son correctos e interesantes en el plano teórico, pero faltan por completo la sistematicidad, las pantallas de trabajo y la guía práctica que necesita quien empieza desde cero."
+ },
+ "consiglio": "scarta",
+ "consiglio_perche": "Nunca muestra la interfaz de Ads Manager ni la configuración de la campaña. Es un diálogo que comenta novedades y primeras impresiones sin dar instrucciones didácticas paso a paso para quien empieza.",
+ "tappa_migliore": 1,
+ "spezzone_migliore": {
+  "inizio": "0:05",
+  "fine": "2:15"
+ },
+ "video": "oqjNPBDVoxI",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:25:01+00:00"
+}

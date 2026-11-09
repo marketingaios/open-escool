@@ -1,0 +1,11 @@
+{
+  "name": "open-escool-lezione",
+  "private": true,
+  "description": "Le lezioni generate di Open Escool: schede animate dal copione (Remotion). Si lancia con strumenti/lezione.py.",
+  "dependencies": {
+    "@remotion/cli": "4.0.532",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.532"
+  }
+}

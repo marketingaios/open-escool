@@ -1,0 +1,169 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo analiza la plataforma publicitaria ChatGPT Ads (OpenAI Ads) a partir de los documentos oficiales del Help Center de OpenAI. El ponente explica el concepto de publicidad conversacional y contextual, la gestión de las ventanas de privacidad, la importancia de las indicaciones de contexto (context hints), los requisitos de los rastreadores web como OAI-AdsBot y la estructura de las cuentas/tenants para empresas y agencias.",
+ "mostra_schermo": false,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "02:49",
+   "titolo": "Introducción a ChatGPT Ads y al formato de los anuncios",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentación del formato gráfico de los anuncios en ChatGPT",
+    "Presencia del contenido patrocinado junto a la respuesta orgánica",
+    "Papel del contexto y de la respuesta en la entrega de los anuncios"
+   ]
+  },
+  {
+   "inizio": "02:49",
+   "fine": "05:05",
+   "titolo": "Publicidad conversacional y contextual",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Unión entre publicidad conversacional y contextual",
+    "El concepto de 'ventana de privacidad' en la relación con el usuario",
+    "Comparación con la publicidad nativa tradicional (p. ej., Taboola)"
+   ]
+  },
+  {
+   "inizio": "05:05",
+   "fine": "08:26",
+   "titolo": "El contexto de uso y la centralidad de la intención del usuario",
+   "tappe": [
+    1,
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Proporción de usuarios con plan gratuito frente a los de pago",
+    "Llegar a usuarios con un problema cuya solución todavía no conocen",
+    "Mapeo de los contextos negativos y positivos"
+   ]
+  },
+  {
+   "inizio": "08:26",
+   "fine": "10:18",
+   "titolo": "Orientación a resultados y landing pages que evolucionan",
+   "tappe": [
+    4,
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Paso hacia campañas orientadas a la conversión y a los resultados",
+    "Importancia de adaptar las landing pages a cada contexto concreto",
+    "Problemas de usar landing pages genéricas pensadas para Google o Meta"
+   ]
+  },
+  {
+   "inizio": "10:18",
+   "fine": "12:27",
+   "titolo": "Audiencias personalizadas y umbral mínimo de usuarios",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Carga de listas de clientes y archivos CSV/TXT para las audiencias personalizadas",
+    "Umbral mínimo de 25.000 usuarios coincidentes exigido por los documentos oficiales",
+    "Restricciones y advertencias sobre el uso de las listas en el mercado europeo"
+   ]
+  },
+  {
+   "inizio": "12:27",
+   "fine": "13:23",
+   "titolo": "Rastreadores de OpenAI, OAI-AdsBot y OAI-SearchBot",
+   "tappe": [
+    4
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Obligación de permitir el acceso al rastreador OAI-AdsBot para verificar la landing page",
+    "Uso recomendado de OAI-SearchBot para que entienda el contenido web",
+    "Revisión de los archivos robots.txt y de la accesibilidad de la URL de destino"
+   ]
+  },
+  {
+   "inizio": "13:23",
+   "fine": "18:43",
+   "titolo": "Grupos de anuncios e indicaciones de contexto (context hints)",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Diferencia entre las keywords tradicionales y las indicaciones de contexto (context hints)",
+    "Redacción de frases descriptivas sobre necesidades, problemas y casos de uso",
+    "Separación de los grupos de anuncios para cada contexto conversacional concreto"
+   ]
+  },
+  {
+   "inizio": "18:43",
+   "fine": "21:15",
+   "titolo": "Gestión de la cuenta, Tenant y roles para las agencias",
+   "tappe": [
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Estructura de la cuenta basada en el concepto de Tenant en ads.openai.com",
+    "El anunciante crea la cuenta e invita a la agencia o al equipo por correo electrónico",
+    "Roles disponibles, administrador, miembro y visualizador"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "05:07",
+   "dice": "ChatGPT tiene más de 1.000 millones de usuarios y el 77% de la cuota de mercado de las IA conversacionales.",
+   "verdetto": "non_verificabile",
+   "perche": "Los datos de tráfico o de cuota de mercado de ChatGPT no aparecen en la documentación oficial de referencia."
+  },
+  {
+   "minuto": "05:26",
+   "dice": "Cerca del 80% de los usuarios no paga ChatGPT (plan gratuito).",
+   "verdetto": "non_verificabile",
+   "perche": "El porcentaje exacto de usuarios de los planes Free frente a Plus/Pro no se especifica en las páginas oficiales de la documentación."
+  },
+  {
+   "minuto": "10:33",
+   "dice": "Cada audiencia personalizada debe incluir al menos 25.000 usuarios coincidentes para poder usarse.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el documento oficial 20001346-set-up-custom-audiences-for-your-campaign.md (aunque en el Espacio Económico Europeo y en Suiza las audiencias personalizadas no están disponibles)."
+  },
+  {
+   "minuto": "12:45",
+   "dice": "Debes permitir el rastreador OAI-AdsBot para que valide y revise las páginas de destino.",
+   "verdetto": "giusta",
+   "perche": "El mapa, en el punto 4 de la etapa 4, confirma que la página de destino debe dejar pasar obligatoriamente a OAI-AdsBot."
+  },
+  {
+   "minuto": "19:04",
+   "dice": "El anunciante debe crear el Tenant desde ads.openai.com y luego invitar a la agencia como usuario.",
+   "verdetto": "giusta",
+   "perche": "Coherente con el procedimiento de configuración de la cuenta publicitaria y la gestión de los roles de usuario descritos en los documentos 20001213 y 20001245."
+  }
+ ],
+ "per_chi_impara": "Para un usuario italiano (Unión Europea), muchas de las indicaciones estratégicas generales sobre el contexto son válidas, pero hay que prestar atención a dos aspectos fundamentales: en la UE/EEE las audiencias personalizadas (listas de clientes) no se pueden usar para personalizar los anuncios (se basan solo en la conversación en curso), y desde el 30/10/2026 los creative enhancements están activos por defecto y pueden modificar/traducir automáticamente los textos en italiano.",
+ "qualita": {
+  "voto": 3,
+  "perche": "El vídeo ofrece un excelente análisis conceptual y estratégico basado en la documentación de soporte de OpenAI y explica bien la lógica de los context hints y de los rastreadores. Sin embargo, nunca muestra la interfaz real de Ads Manager (ads.openai.com) en funcionamiento y no es un tutorial práctico paso a paso."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Muy útil como análisis teórico y estratégico del funcionamiento de los anuncios basados en el contexto y de los criterios del Help Center, pero hay que acompañarlo de una guía práctica que muestre la pantalla real de Ads Manager para quien debe configurar su primera campaña desde cero.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "13:23",
+  "fine": "18:43"
+ },
+ "video": "W6JKRHivquY",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-07T11:36:46+00:00"
+}

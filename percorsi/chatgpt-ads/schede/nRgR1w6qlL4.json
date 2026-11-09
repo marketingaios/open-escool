@@ -1,0 +1,195 @@
+{
+ "lingua_parlata": "it",
+ "riassunto": "Il video mostra in anteprima e in prima persona il processo di registrazione e configurazione di un account ChatGPT Ads dall'Italia subito dopo l'apertura europea. Spiega il funzionamento di base della piattaforma Ads Manager, la logica contestuale rispetto ai motori di ricerca e le differenze tra account gratuiti e a pagamento. È particolarmente utile per freelance e piccole agenzie che vogliono capire come funziona l'onboarding e quali intoppi pratici (come la verifica telefonica) si possono incontrare.",
+ "mostra_ads_manager": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "02:43",
+   "titolo": "Introduzione e arrivo di ChatGPT Ads in Europa e Italia",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Lancio di ChatGPT Ads self-service in Italia e nei mercati europei",
+    "Numeri di crescita comunicati da OpenAI ($1 miliardo di run rate)",
+    "Passaggio dal contatto commerciale diretto alla gestione autonoma via dashboard"
+   ]
+  },
+  {
+   "inizio": "02:44",
+   "fine": "04:17",
+   "titolo": "Onboarding iniziale e configurazione dell'account",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Accesso con account OpenAI esistente",
+    "Generazione automatica dell'anteprima inserendo l'URL del sito",
+    "Differenza tra account Privato e Aziendale e richiesta codici EIN/TIN"
+   ]
+  },
+  {
+   "inizio": "04:18",
+   "fine": "05:56",
+   "titolo": "Budget, minimi e impostazioni di spesa iniziale",
+   "tappe": [
+    2,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Richiesta di budget guidato durante l'onboarding",
+    "Opzione budget totale vs budget giornaliero",
+    "Strategie di offerta e sconti promozionali per nuovi inserzionisti"
+   ]
+  },
+  {
+   "inizio": "05:57",
+   "fine": "08:00",
+   "titolo": "Panoramica di Ads Manager: campagne, annunci e API",
+   "tappe": [
+    3,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Struttura a tre livelli: campagne, gruppi di annunci, annunci",
+    "Modifica di testi, titoli (max 50 caratteri), descrizioni (max 100) e immagini",
+    "Disponibilità di API key per reportistica ed esportazione dati"
+   ]
+  },
+  {
+   "inizio": "08:01",
+   "fine": "10:26",
+   "titolo": "Chi vede gli annunci e posizionamento di mercato",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Gli annunci appaiono esclusivamente agli utenti dei piani Free e Go",
+    "Utenti Plus, Pro, Enterprise ed Edu non vedono annunci",
+    "Riflessione sul target B2B professionale rispetto al B2C consumer"
+   ]
+  },
+  {
+   "inizio": "10:27",
+   "fine": "12:37",
+   "titolo": "Targeting contestuale vs parole chiave di Google Ads",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Assenza di keyword secche: il targeting si basa sulla conversazione e sul prompt",
+    "Integrazione dell'annuncio sotto la risposta di ChatGPT con etichetta sponsorizzata",
+    "Importanza della memoria e del contesto semantico della chat"
+   ]
+  },
+  {
+   "inizio": "12:38",
+   "fine": "14:21",
+   "titolo": "Problema riscontrato: bug nella verifica del numero di telefono",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Blocco nell'invio del codice SMS di verifica per i numeri cellulari italiani (+39)",
+    "Interazione con il supporto OpenAI via chat interna e scambio email"
+   ]
+  },
+  {
+   "inizio": "14:22",
+   "fine": "16:47",
+   "titolo": "Conclusioni, formati e considerazioni finali",
+   "tappe": [
+    4,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Formato annuncio disponibile e obiettivi di campagna (Clic, Visualizzazioni)",
+    "Interfaccia utente semplice ed essenziale",
+    "Necessità di attendere dati storici per valutare ROI e costi effettivi"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "01:12",
+   "dice": "OpenAI ha annunciato l'apertura di ChatGPT Ads anche in Italia e in 31 nazioni europee.",
+   "verdetto": "giusta",
+   "perche": "Corrisponde all'apertura del self-service in Europa e Italia a fine agosto 2026 (cambio 2026-08-31)."
+  },
+  {
+   "minuto": "04:26",
+   "dice": "C'è subito l'addebito su carta di un minimo di 100 dollari nel momento in cui vi registrate.",
+   "verdetto": "sbagliata",
+   "perche": "Come indicato nella mappa (20001216-billing-payment.md), l'addebito non è un pagamento anticipato né una ricarica: il pagamento è a consuntivo (a soglia o fine mese); quando si aggiunge la carta può solo comparire un blocco temporaneo di autorizzazione."
+  },
+  {
+   "minuto": "04:44",
+   "dice": "Il budget giornaliero parte da un minimo di 25 dollari al giorno.",
+   "verdetto": "sbagliata",
+   "perche": "Per account fatturati in EUR il minimo giornaliero è di 15 € (20001210-creating-campaigns-for-chatgpt-ads.md); 25 $ è il minimo mostrato nell'onboarding guidato in valuta USD."
+  },
+  {
+   "minuto": "05:08",
+   "dice": "È possibile impostare l'offerta manuale (Max CPC).",
+   "verdetto": "superata",
+   "perche": "Al momento della registrazione era possibile, ma dal 9 novembre 2026 Max CPC viene ritirato e sostituito da Target CPC per le campagne a clic (cambio 2026-11-09)."
+  },
+  {
+   "minuto": "06:21",
+   "dice": "Il titolo ha un limite di 50 caratteri e la descrizione di 100 caratteri.",
+   "verdetto": "giusta",
+   "perche": "Conforme alle specifiche ufficiali di OpenAI: titolo max 50 caratteri e testo/descrizione max 100 caratteri (tappa 4)."
+  },
+  {
+   "minuto": "08:52",
+   "dice": "Gli annunci vengono sponsorizzati solo negli account Free e Go, mentre Plus, Pro, Enterprise ed Edu non vedono pubblicità.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla documentazione ufficiale (20001047-ads-in-chatgpt.md): solo gli utenti dei livelli Free e Go sono esposti agli annunci pubblicitari (tappa 1)."
+  },
+  {
+   "minuto": "10:45",
+   "dice": "Non si comprano parole chiave come su Google Ads, ma l'algoritmo fa riferimento al contesto del prompt e della chat.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla tappa 1 e 3: la piattaforma lavora su pertinenza contestuale e context hints, non sull'acquisto di keyword a corrispondenza."
+  },
+  {
+   "minuto": "13:20",
+   "dice": "La verifica del numero di telefono italiano (+39) non funziona durante il setup iniziale a causa di un blocco di invio SMS.",
+   "verdetto": "non_verificabile",
+   "perche": "Si tratta di un bug tecnico contingente riscontrato dall'autore durante la beta iniziale, non documentato nelle linee guida ufficiali."
+  },
+  {
+   "minuto": "14:43",
+   "dice": "La tipologia di formato pubblicitario è praticamente solo una (singola immagine).",
+   "verdetto": "superata",
+   "perche": "Era vero a inizio settembre 2026, ma dal 26 ottobre 2026 è disponibile in beta aperta anche il formato a più immagini (cambio 2026-10-26)."
+  }
+ ],
+ "per_italia": "L'autore registra un account selezionando 'Italy' e fuso orario di Roma ma mantiene il budget in USD (anziché EUR dove il minimo giornaliero è 15 €). Riscontra un intoppo reale con la verifica SMS del prefisso +39 italiano che richiede l'assistenza. Non fa menzione del divieto di liste clienti/pubblici personalizzati per il SEE.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Video molto onesto, chiaro e tempestivo: mostra lo schermo reale di Ads Manager e i passaggi operativi affrontando problemi pratici (errore telefono, impostazioni brand e fatturazione). Piccole imprecisioni sulla natura del pagamento (confuso con un addebito anticipato anziché pre-autorizzazione) e valuta impostata in USD."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È una testimonianza pratica e autentica in lingua italiana che mostra l'interfaccia reale di Ads Manager appena approdato in Italia, utilissima per un principiante che vuole vedere cosa aspettarsi prima di registrarsi.",
+ "tappa_migliore": 2,
+ "spezzone_migliore": {
+  "inizio": "02:44",
+  "fine": "05:30"
+ },
+ "video": "nRgR1w6qlL4",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-06T03:27:56+00:00"
+}

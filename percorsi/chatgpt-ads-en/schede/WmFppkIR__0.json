@@ -1,0 +1,117 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video illustra come creare e configurare i pubblici personalizzati (Custom Audiences) in ChatGPT Ads Manager mediante il caricamento di liste clienti (email, numeri di telefono o ID pubblicitari). Spiega i tre utilizzi principali (inclusione, esclusione e aggiustamento offerte), specifica il requisito minimo di 25.000 utenti abbinati per l'inclusione e mostra i passaggi pratici all'interno dell'interfaccia di Ads Manager.",
+ "mostra_schermo": true,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "00:53",
+   "titolo": "Introduzione alla serie ChatGPT Ads",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentazione del quarto capitolo della serie di video dedicati a ChatGPT Ads",
+    "Panoramica dell'argomento: creazione e uso dei Custom Audiences"
+   ]
+  },
+  {
+   "inizio": "00:53",
+   "fine": "02:49",
+   "titolo": "Funzionamento e regole dei Custom Audiences",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Formati di dati accettati: email, numeri di telefono, hash SHA-256 e Google Advertising ID (GAID)",
+    "3 modalità d'uso: inclusione a livello di campagna, esclusione a livello di campagna, aggiustamento offerte a livello di gruppo",
+    "Requisito fondamentale: almeno 25.000 utenti abbinati (matched users) per inclusione e bid adjustment"
+   ]
+  },
+  {
+   "inizio": "02:49",
+   "fine": "04:54",
+   "titolo": "Creazione e caricamento del pubblico in Ads Manager",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Navigazione in Tools -> Audiences e creazione di un nuovo pubblico",
+    "Struttura del file CSV con intestazione e dati di prova",
+    "Stato del pubblico caricato: 'Exclusion only' se i matched users sono sotto la soglia di 25K"
+   ]
+  },
+  {
+   "inizio": "04:54",
+   "fine": "06:12",
+   "titolo": "Utilizzo nei filtri di campagna e nei gruppi di annunci",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento del pubblico tra le esclusioni di campagna",
+    "Configurazione degli aggiustamenti di offerta (Audience bid adjustments) nelle opzioni avanzate del gruppo di annunci"
+   ]
+  },
+  {
+   "inizio": "06:12",
+   "fine": "06:29",
+   "titolo": "Conclusione e prossimi contenuti",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Riepilogo dei vantaggi per l'ottimizzazione delle campagne",
+    "Anticipazione sui prossimi video dedicati alla strategia di campagna"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "01:23",
+   "dice": "Ci sono tre modi principali per usare i pubblici personalizzati: inclusione a livello di campagna, esclusione a livello di campagna e aggiustamento offerte a livello di gruppo di annunci.",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla documentazione ufficiale OpenAI (20001346) per la gestione dei pubblici personalizzati nelle aree in cui il retargeting è consentito."
+  },
+  {
+   "minuto": "02:18",
+   "dice": "L'inclusione del pubblico e gli aggiustamenti di offerta richiedono almeno 25.000 utenti abbinati (matched users), non semplicemente righe caricate nel file.",
+   "verdetto": "giusta",
+   "perche": "Documento ufficiale 20001346: i pubblici con meno di 25.000 utenti abbinati sono contrassegnati come 'Exclusion only' e non possono essere usati per inclusione o bid adjustment."
+  },
+  {
+   "minuto": "02:50",
+   "dice": "Si possono caricare file CSV o TXT con email, telefoni, hash SHA256 o Google Advertising IDs (GAID).",
+   "verdetto": "giusta",
+   "perche": "Elenco di identificatori supportati confermato nella pagina di guida ufficiale 20001346."
+  },
+  {
+   "minuto": "05:34",
+   "dice": "Nel gruppo di annunci si seleziona la strategia Manual Max CPC e nelle impostazioni avanzate si inseriscono gli audience bid adjustments.",
+   "verdetto": "superata",
+   "perche": "Dal 09/11/2026 le offerte manuali Max CPC vengono sostituite da Target CPC/Target CPA (Intelligent bidding) e ritirate definitivamente dal 01/01/2027 (20001634)."
+  }
+ ],
+ "per_chi_impara": "Importante per chi opera in Italia o nell'Unione Europea: nello Spazio Economico Europeo (SEE) e in Svizzera i pubblici personalizzati (liste clienti per personalizzazione o retargeting) NON sono consentiti (le risposte/annunci si basano unicamente sul contesto della conversazione). La procedura mostrata nel video è utile solo per campagne destinate a mercati extra-UE come gli Stati Uniti.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Spiegazione chiara ed efficacia dimostrazione pratica dell'interfaccia. Evidenzia correttamente la differenza essenziale tra righe caricate e utenti abbinati (matched users). Tuttavia non menziona il limite normativo UE per i pubblici personalizzati e usa la strategia d'offerta Max CPC ora superata."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Video utilissimo per capire la procedura tecnica di upload e la regola fondamentale dei 25.000 utenti abbinati per sbloccare l'inclusione e il bid adjustment in Ads Manager.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "00:53",
+  "fine": "02:49"
+ },
+ "video": "WmFppkIR__0",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T09:39:02+00:00"
+}

@@ -1,0 +1,141 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo guía paso a paso en la creación de una cuenta publicitaria en ChatGPT Ads (ads.openai.com). Muestra cómo se introduce la URL de la empresa, la generación de la vista previa del anuncio, la configuración de los datos de facturación, la carga del logo, la verificación del negocio y el procedimiento esencial para poner en pausa la campaña antes de que gaste dinero.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "00:45",
+   "titolo": "Introducción a ChatGPT Ads y oportunidades para las empresas",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentación de la función de publicidad en ChatGPT",
+    "Ventaja competitiva de posicionarse a tiempo"
+   ]
+  },
+  {
+   "inizio": "00:46",
+   "fine": "02:02",
+   "titolo": "Acceso a la plataforma y revisión de los países disponibles",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Navegación hacia ads.openai.com",
+    "Opciones de registro y selección del país de residencia de la empresa"
+   ]
+  },
+  {
+   "inizio": "02:03",
+   "fine": "02:57",
+   "titolo": "Introducción de la URL y generación de la vista previa del anuncio",
+   "tappe": [
+    2,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Introducción del sitio web de la empresa",
+    "Visualización del borrador del anuncio y del plan recomendado"
+   ]
+  },
+  {
+   "inizio": "02:58",
+   "fine": "03:35",
+   "titolo": "Configuración de la cuenta, la moneda y el método de pago",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Elección de país, moneda y zona horaria",
+    "Introducción de la tarjeta de crédito para la facturación"
+   ]
+  },
+  {
+   "inizio": "03:36",
+   "fine": "04:38",
+   "titolo": "Carga del logo y verificación del negocio",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Completar el perfil con el logo de la empresa, obligatorio",
+    "Inicio de la verificación de la empresa (EIN/TIN o identificación fiscal)"
+   ]
+  },
+  {
+   "inizio": "04:39",
+   "fine": "05:59",
+   "titolo": "Pausa de la campaña y consejos finales",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Desactivación o pausa de la campaña automática para evitar cargos",
+    "Planificación de los siguientes pasos de optimización"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "01:36",
+   "dice": "Hay la promoción de $500 dólares que tú inviertes, $500 adicionales que te van a dar en 14 días",
+   "verdetto": "non_verificabile",
+   "perche": "El mapa oficial de las reglas y funciones de OpenAI Ads no especifica promociones temporales de crédito publicitario."
+  },
+  {
+   "minuto": "01:53",
+   "dice": "No todos los países están disponibles por el momento para hacer publicidad",
+   "verdetto": "giusta",
+   "perche": "En la etapa 2 y en los avisos del mapa se confirma que la persona jurídica que hace publicidad debe tener sede en uno de los países de la lista oficial de países disponibles."
+  },
+  {
+   "minuto": "02:28",
+   "dice": "La IA va a ir viendo qué podría sacar de la información de tu página web para hacer anuncios",
+   "verdetto": "sbagliata",
+   "perche": "La etapa 4 del mapa precisa que los borradores sugeridos (Add new ad) usan simplemente los datos extraídos del sitio web y no la inteligencia artificial generativa."
+  },
+  {
+   "minuto": "03:09",
+   "dice": "Nombre de la cuenta, país donde se encuentra esa empresa, moneda y zona horaria se configuran al inicio",
+   "verdetto": "giusta",
+   "perche": "La etapa 2 del mapa confirma que país, moneda y zona horaria se eligen al crear la cuenta y no se pueden cambiar después."
+  },
+  {
+   "minuto": "03:48",
+   "dice": "Los anuncios no se publicarán hasta que completes la configuración de la cuenta y subas el logo",
+   "verdetto": "giusta",
+   "perche": "Como indica la etapa 2 del mapa, completar la configuración de la empresa, el perfil y la facturación es indispensable para que los anuncios se publiquen."
+  },
+  {
+   "minuto": "04:58",
+   "dice": "No te olvides de poner en pausa esta campaña para que no te cobre dólares",
+   "verdetto": "giusta",
+   "perche": "En las etapas 2 y 6 del mapa se destaca que, para no gastar dinero antes de completar la estrategia, hay que poner la campaña en pausa."
+  }
+ ],
+ "per_chi_impara": "En Italia (Unión Europea) el servicio self-service de ChatGPT Ads está disponible. Al registrar la cuenta hay que tener cuidado de elegir Italia, moneda EUR y zona horaria italiana, porque no se pueden cambiar después. Además, en las campañas que se publican en la UE hay que tener en cuenta los límites a la personalización de las audiencias y el respeto de la normativa sobre consentimientos para el seguimiento de las conversiones.",
+ "qualita": {
+  "voto": 5,
+  "perche": "El vídeo muestra claramente en pantalla todo el procedimiento de configuración en Ads Manager y destaca pasos clave como la carga del logo, la verificación fiscal y la desactivación temporal de la campaña para evitar cargos no deseados."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Es una guía práctica y eficaz para quien empieza desde cero y quiere abrir una cuenta de Ads Manager para ChatGPT Ads sin cometer el error de lanzar campañas de pago no deseadas.",
+ "tappa_migliore": 2,
+ "spezzone_migliore": {
+  "inizio": "03:36",
+  "fine": "05:06"
+ },
+ "video": "D206ndv7D_Y",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-07T11:11:03+00:00"
+}

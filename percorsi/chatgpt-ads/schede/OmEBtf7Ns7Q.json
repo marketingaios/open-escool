@@ -1,0 +1,136 @@
+{
+ "lingua_parlata": "it",
+ "riassunto": "Il video spiega la struttura gerarchica delle campagne in ChatGPT Ads (campagna, gruppi di annunci, annunci), i tre modelli di costo (CPM, CPC e oCPC), la gestione del budget giornaliero flessibile su 7 giorni e le opzioni di targeting. Viene evidenziato un limite fondamentale per chi opera in Italia/UE, ovvero l'impossibilità di usare i pubblici personalizzati per via delle normative privacy.",
+ "mostra_ads_manager": false,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:16",
+   "titolo": "La struttura: campagna, gruppo di annunci e annuncio",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Spiegazione dei 3 livelli gerarchici",
+    "Pianificazione dei gruppi di annunci per temi/intenti anziché per parole chiave",
+    "Best practice sulla suddivisione dei gruppi di annunci"
+   ]
+  },
+  {
+   "inizio": "1:17",
+   "fine": "2:49",
+   "titolo": "Obiettivi di campagna e logiche di spesa",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Differenza tra CPM, CPC e oCPC (Conversioni)",
+    "Spiegazione del funzionamento di oCPC: pagamento per clic con ottimizzazione sulla conversione",
+    "Budget minimo giornaliero di 15 € e blocco di garanzia sulla carta"
+   ]
+  },
+  {
+   "inizio": "2:50",
+   "fine": "4:46",
+   "titolo": "Gestione del budget e strategie di offerta",
+   "tappe": [
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Finestra mobile a 7 giorni per il budget giornaliero (fino a 2x al giorno, max 7x a settimana)",
+    "Differenza tra budget giornaliero e budget totale",
+    "Funzionamento della strategia automatica 'Massimizza i risultati'"
+   ]
+  },
+  {
+   "inizio": "4:47",
+   "fine": "6:33",
+   "titolo": "Leve di targeting e restrizioni privacy per l'Italia/UE",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "I tre pilastri del targeting: pubblici personalizzati, geografico e piattaforma",
+    "Soglia minima di 25.000 contatti per i pubblici personalizzati",
+    "Inutilizzabilità delle liste clienti in Italia, SEE e Svizzera causa blocco della personalizzazione"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "1:36",
+   "dice": "Offerta massima predefinita indicata da OpenAI: 60$ CPM",
+   "verdetto": "giusta",
+   "perche": "Riflette le indicazioni predefinite fornite nelle guide di OpenAI per l'offerta CPM iniziale."
+  },
+  {
+   "minuto": "1:54",
+   "dice": "Offerta massima consigliata per il CPC: tra 3 e 5 dollari USD",
+   "verdetto": "superata",
+   "perche": "Dal 9 novembre 2026 le strategie di offerta Max CPC sono state sostituite da Target CPC ed entro il 1° gennaio 2027 il valore massimo manuale viene ritirato."
+  },
+  {
+   "minuto": "2:11",
+   "dice": "Con l'oCPC si continua a pagare per clic e non per conversione",
+   "verdetto": "giusta",
+   "perche": "Conforme alla documentazione: l'obiettivo Conversions addebita i clic (o le impressioni), ottimizzando la delivery verso gli utenti propensi a convertire (concetto Tappa 3 e 5)."
+  },
+  {
+   "minuto": "2:38",
+   "dice": "Il minimo allocabile per campagna è di 15 € giornalieri",
+   "verdetto": "giusta",
+   "perche": "Per l'account con fatturazione in EUR il budget giornaliero minimo è esattamente 15 € (Avvisi Italia / Tappa 5)."
+  },
+  {
+   "minuto": "2:46",
+   "dice": "La piattaforma può addebitare provvisoriamente 100 € sulla carta all'apertura dell'account",
+   "verdetto": "giusta",
+   "perche": "Corrisponde alla pre-autorizzazione/blocco temporaneo che la piattaforma applica sulla carta al momento della registrazione (Avvisi Italia)."
+  },
+  {
+   "minuto": "2:57",
+   "dice": "Il budget giornaliero è una media mobile su 7 giorni (può spendere fino a 2x al giorno e non oltre 7x a settimana)",
+   "verdetto": "giusta",
+   "perche": "Coincide con l'aggiornamento sulla gestione del budget giornaliero flessibile su base settimanale (cambio del 30/10/2026, 20001413-daily-budgets.md)."
+  },
+  {
+   "minuto": "3:42",
+   "dice": "La strategia di offerta automatica predefinita si chiama 'Massimizza i risultati'",
+   "verdetto": "superata",
+   "perche": "Dal 9 novembre 2026 la strategia automatica di offerta è stata rinominata in 'Intelligent bidding' (20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md)."
+  },
+  {
+   "minuto": "5:40",
+   "dice": "Servono almeno 25.000 utenti per utilizzare un segmento di pubblico personalizzato",
+   "verdetto": "giusta",
+   "perche": "Coincide con la soglia minima specificata nelle linee guida ufficiali (20001346-set-up-custom-audiences-for-your-campaign.md)."
+  },
+  {
+   "minuto": "5:54",
+   "dice": "In Italia, nello Spazio Economico Europeo e in Svizzera i segmenti di pubblico personalizzati sono disattivati",
+   "verdetto": "giusta",
+   "perche": "In SEE e Svizzera la personalizzazione degli annunci basata su dati profilati/liste utenti non è consentita per ragioni di privacy (Avvisi Italia, 20001047-ads-in-chatgpt.md)."
+  }
+ ],
+ "per_italia": "Viene opportunamente evidenziato che chi fa campagne indirizzate all'Italia/SEE non può usare i pubblici personalizzati (liste clienti) perché la personalizzazione degli annunci è disattivata nell'area economica europea. Inoltre, specifica la soglia minima di budget giornaliero in valuta locale (15 €).",
+ "qualita": {
+  "voto": 4,
+  "perche": "Spiegazione chiara, rigorosa e lineare delle dinamiche strutturali, dei budget e dei limiti privacy italiani. L'unica pecca è l'assenza di riprese dirette della schermata di Ads Manager e l'uso di nomi di bidding precedenti al recente aggiornamento di novembre 2026."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È un'ottima lezione teorico-strutturale per chi deve comprendere la gerarchia della piattaforma e la gestione reale del budget, evitando errori comuni come l'uso di pubblici personalizzati in Italia.",
+ "tappa_migliore": 5,
+ "spezzone_migliore": {
+  "inizio": "2:50",
+  "fine": "4:46"
+ },
+ "video": "OmEBtf7Ns7Q",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T03:48:56+00:00"
+}

@@ -1,0 +1,145 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video offre una guida completa e visiva su come creare e gestire campagne pubblicitarie su ChatGPT Ads Manager. Spiega il posizionamento degli annunci contestuali, la distinzione tra utenti che vedono la pubblicità e quelli esenti, e mostra passo dopo passo l'impostazione di campagne, tracciamento pixel, context hints, cataloghi prodotti in bulk e analisi dei risultati.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "01:30",
+   "titolo": "Posizionamento e funzionamento degli annunci in ChatGPT",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Gli annunci compaiono sotto la risposta nella conversazione",
+    "La pertinenza si basa sul contesto del dialogo",
+    "Gli annunci variano o restano nella cronologia della chat"
+   ]
+  },
+  {
+   "inizio": "01:31",
+   "fine": "02:13",
+   "titolo": "Pubblico target e piani utenti esenti da pubblicità",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Utenti dei piani Free e Go vedono gli annunci",
+    "Piani Plus, Pro e Business non vedono pubblicità"
+   ]
+  },
+  {
+   "inizio": "02:14",
+   "fine": "04:13",
+   "titolo": "Configurazione account e impostazioni di campagna",
+   "tappe": [
+    2,
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Iscrizione a Ads Manager e impostazione profilo di fatturazione",
+    "Scelta dell'obiettivo di campagna (Conversioni / Clic)",
+    "Configurazione del pixel di tracciamento e sorgente dati"
+   ]
+  },
+  {
+   "inizio": "04:14",
+   "fine": "05:46",
+   "titolo": "Creazione del gruppo di annunci e Context Hints",
+   "tappe": [
+    3,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Uso dei Context Hints basati su Cosa, Chi e Quando",
+    "Impostazione di URL di destinazione e parametri UTM",
+    "Anteprima e pubblicazione dell'annuncio"
+   ]
+  },
+  {
+   "inizio": "05:47",
+   "fine": "06:55",
+   "titolo": "Creazione annunci in bulk e nuovi formati",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Caricamento catalogo prodotti tramite CSV, URL o SFTP",
+    "Formati annunci di prodotto e a più immagini"
+   ]
+  },
+  {
+   "inizio": "06:56",
+   "fine": "08:10",
+   "titolo": "Analisi dei risultati e metriche di campagna",
+   "tappe": [
+    5,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Monitoraggio di impressioni, clic e costi nel tempo",
+    "Segmentazione dei report per dispositivo, posizione e piattaforma"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "01:31",
+   "dice": "Users with paid plans like Plus, Pro, Business do not see ads",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 1 della mappa: gli utenti dei piani Plus, Pro e Business non vedono gli annunci."
+  },
+  {
+   "minuto": "01:40",
+   "dice": "Free users and ChatGPT Go ($8/mo) see ads",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 1 della mappa: solo gli utenti dei piani Free e Go vedono gli annunci."
+  },
+  {
+   "minuto": "04:10",
+   "dice": "Daily budget has a minimum limit of $25",
+   "verdetto": "sbagliata",
+   "perche": "La mappa specifica che per gli account con fatturazione in EUR il budget giornaliero minimo è di 15 € (l'indicazione dei 25 $ riguarda la documentazione statunitense)."
+  },
+  {
+   "minuto": "04:17",
+   "dice": "We have two bidding strategies: Maximize results or Manual Max bid",
+   "verdetto": "superata",
+   "perche": "Superata dal cambio del 09/11/2026: le strategie d'offerta sono state aggiornate con Intelligent Bidding, Target CPA e Target CPC, ritirando Max Bid e Maximize Results."
+  },
+  {
+   "minuto": "04:54",
+   "dice": "Context hints allow detailed descriptions of What, Who, and When",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 3 della mappa: la scrittura corretta dei context hints prevede la descrizione di cosa si offre, a chi serve e quando è utile."
+  },
+  {
+   "minuto": "05:12",
+   "dice": "Context hints are hints and not exact rules",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 3 della mappa: i context hints guidano l'algoritmo ma non costituiscono regole rigide di targeting né parole chiave a corrispondenza esatta."
+  }
+ ],
+ "per_chi_impara": "Per chi impara dall'Italia, occorre prestare attenzione ad alcune specificità: l'account inserzionista self-service è disponibile per l'Italia, ma il budget giornaliero minimo in Euro è 15 € (anziché 25 $). Inoltre, per le campagne rivolte a utenti del SEE (Spazio Economico Europeo) non è consentita la personalizzazione dei pubblici (liste clienti). Paese (Italia), valuta (EUR) e fuso orario vanno impostati correttamente alla creazione dell'account poiché non sono modificabili successivamente.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Il video è estremamente chiaro, visivo e strutturato in modo didattico con reali passaggi a schermo nell'Ads Manager. Alcuni dettagli sulle strategie d'offerta (bidding) sono stati aggiornati dopo la pubblicazione, ma la spiegazione di concetti chiave come i Context Hints resta eccellente."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Offre una dimostrazione pratica completa e chiara della piattaforma pubblicitaria, risultando ideale per capire il flusso di lavoro dalla configurazione iniziale alla creazione di annunci e context hints.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "04:14",
+  "fine": "05:15"
+ },
+ "video": "2ejNV87vaSI",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T09:50:31+00:00"
+}

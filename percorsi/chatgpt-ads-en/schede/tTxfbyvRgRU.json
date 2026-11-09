@@ -1,0 +1,162 @@
+{
+ "lingua_parlata": "ta",
+ "riassunto": "Il video è un tutorial pratico passo-passo in lingua tamil che mostra come registrare un account su ChatGPT Ads Manager (ads.openai.com) e impostare una prima campagna pubblicitaria. L'autore mostra dal vivo la creazione dell'account, l'inserimento dei dati aziendali, la configurazione della fatturazione con carta, l'impostazione del budget giornaliero, del targeting geografico tramite codici postali e la creazione delle inserzioni con immagini e testi.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:03",
+   "titolo": "Introduzione a ChatGPT Ads e vantaggi della piattaforma",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentazione del tutorial per la creazione di campagne in ChatGPT Ads",
+    "Confronto dell'opportunità con la ricerca su Google"
+   ]
+  },
+  {
+   "inizio": "1:04",
+   "fine": "2:38",
+   "titolo": "Registrazione e configurazione profilo aziendale",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Accesso a ChatGPT Ads Manager e salto della creazione automatica dell'annuncio",
+    "Inserimento del nome aziendale, sito web, settore, paese e valuta"
+   ]
+  },
+  {
+   "inizio": "2:39",
+   "fine": "3:30",
+   "titolo": "Impostazione della fatturazione e gestione valuta",
+   "tappe": [
+    2,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento dati della carta di credito per la verifica",
+    "Spiegazione delle trattenute temporanee di verifica (50-100 USD)"
+   ]
+  },
+  {
+   "inizio": "3:31",
+   "fine": "5:17",
+   "titolo": "Creazione della campagna: obiettivo, budget e targeting",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta dell'obiettivo Clicks e impostazione del budget giornaliero",
+    "Selezione delle piattaforme e del targeting geografico tramite codici postali"
+   ]
+  },
+  {
+   "inizio": "5:18",
+   "fine": "5:54",
+   "titolo": "Configurazione del gruppo di annunci e strategia di offerta",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta della strategia d'offerta Maximize Results",
+    "Impostazione dell'URL di destinazione predefinito"
+   ]
+  },
+  {
+   "inizio": "5:55",
+   "fine": "8:08",
+   "titolo": "Creazione dell'annuncio: titoli, testi e immagini",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento di headline (max 50 caratteri) e descrizione (max 100 caratteri)",
+    "Caricamento dell'immagine quadratica dell'annuncio"
+   ]
+  },
+  {
+   "inizio": "8:09",
+   "fine": "10:13",
+   "titolo": "Riepilogo della campagna, stato di verifica e conclusioni",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Controllo della schermata di riepilogo prima della pubblicazione",
+    "Verifica dello stato 'Account brand review in progress' e raccomandazioni finali"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "1:28",
+   "dice": "Non inserire il sito web nella prima schermata guidata, clicca su 'Skip to Ads Manager'",
+   "verdetto": "giusta",
+   "perche": "In Tappa 2 della mappa è indicato di saltare la creazione automatica dell'annuncio iniziale per evitare pubblicazioni indesiderate prima di configurare l'account."
+  },
+  {
+   "minuto": "2:01",
+   "dice": "Paese, valuta e fuso orario inseriti durante il setup dell'account definiscono la gestione dell'account",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma che Paese, valuta e fuso orario si scelgono alla creazione dell'account e non si possono modificare in seguito."
+  },
+  {
+   "minuto": "2:54",
+   "dice": "Al momento di inserire la carta di credito può comparire un addebito temporaneo di verifica tra 50$ e 100$",
+   "verdetto": "giusta",
+   "perche": "La mappa segnala che all'aggiunta della carta può comparire un blocco temporaneo di importo variabile a scopo di verifica che non costituisce spesa pubblicitaria."
+  },
+  {
+   "minuto": "4:13",
+   "dice": "Il sistema richiede un budget giornaliero minimo di 725 INR per procedere con la campagna",
+   "verdetto": "non_verificabile",
+   "perche": "L'interfaccia a schermo mostra il vincolo minimo locale in INR (725 ₹), mentre la mappa riporta il minimo ufficiale per l'EUR (15 €)."
+  },
+  {
+   "minuto": "5:27",
+   "dice": "Seleziona 'Maximize results' come strategia di offerta per massimizzare i risultati del budget",
+   "verdetto": "superata",
+   "perche": "Il cambio del 09/11/2026 ha rinominato e aggiornato la strategia di offerta automatica in 'Intelligent bidding' e introdotto Target CPC / Target CPA."
+  },
+  {
+   "minuto": "5:59",
+   "dice": "Il limite della Headline è 50 caratteri e il limite della Description è 100 caratteri",
+   "verdetto": "giusta",
+   "perche": "La mappa in Tappa 4 specifica: Titolo massimo 50 caratteri, Testo/Descrizione massimo 100 caratteri."
+  },
+  {
+   "minuto": "9:26",
+   "dice": "Dopo la creazione della campagna, l'account passa per una revisione del brand ('Account brand review in progress')",
+   "verdetto": "giusta",
+   "perche": "In Tappa 2 e 6 la mappa conferma che la verifica dell'attività e la revisione del brand/annunci sono controlli di approvazione obbligatori prima della messa in onda."
+  }
+ ],
+ "per_chi_impara": "Per chi impara dall'Italia: il video mostra una configurazione con Paese India e valuta INR. Gli utenti italiani devono selezionare 'Italia' e 'EUR' in fase di iscrizione (scelta irreversibile), considerando che il budget giornaliero minimo in euro è di 15 €. Inoltre, nel SEE/Italia non sono consentiti i pubblici personalizzati e la normativa richiede l'acquisizione del consenso degli utenti prima di inviare dati di conversione.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Dimostrazione dal vivo molto chiara ed efficace dell'intera interfaccia di Ads Manager Beta. L'audio è in tamil, ma i passaggi a schermo nell'interfaccia in inglese sono perfettamente comprensibili e accurati rispetto ai concetti di base della piattaforma."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Ottimo come guida visuale e pratica per navigare l'interfaccia di Ads Manager dal vivo, anche se la lingua parlata è il tamil e alcune opzioni di offerta si sono evolute con i successivi aggiornamenti della piattaforma (novembre 2026).",
+ "tappa_migliore": 2,
+ "spezzone_migliore": {
+  "inizio": "1:04",
+  "fine": "3:30"
+ },
+ "video": "tTxfbyvRgRU",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T09:55:04+00:00"
+}

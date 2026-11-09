@@ -1,0 +1,144 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "Sergio explica un marco metodológico para medir el impacto comercial y el ROI de una estrategia de GEO (Generative Engine Optimization). Propone trascender las métricas superficiales de vanidad estructurando la medición en cuatro capas progresivas: visibilidad, tráfico referral, demanda de marca y conversiones/ventas (integrando analítica digital, encuestas y CRM). Resulta de gran utilidad para profesionales y agencias de marketing digital que necesitan justificar el retorno de inversión en motores generativos ante clientes o directivos.",
+ "mostra_schermo": false,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:15",
+   "titolo": "Introducción y el dilema del ROI en GEO",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "El problema de medir el GEO solo por menciones frente a buscar una atribución irreal e hiperprecisa",
+    "Por qué se requiere un modelo multicapa de información para medir el impacto comercial"
+   ]
+  },
+  {
+   "inizio": "1:15",
+   "fine": "3:04",
+   "titolo": "Capa 1: Visibilidad y Share of Voice",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Monitorización sistemática de prompts relevantes para el sector de la empresa",
+    "Métricas de cuota de presencia, citas y share of voice frente a competidores",
+    "Limitación: la visibilidad es indicador de notoriedad pero aún no representa ROI"
+   ]
+  },
+  {
+   "inizio": "3:04",
+   "fine": "6:08",
+   "titolo": "Capa 2: Tráfico de referencia desde motores de IA",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Detección y segmentación en analítica web del tráfico procedente de citas y enlaces de IA",
+    "Mayor cualificación y tasa de conversión del tráfico procedente de consultas de IA contextualmente complejas",
+    "El sesgo de los clics: las respuestas completas de IA reducen el clic directo inmediato"
+   ]
+  },
+  {
+   "inizio": "6:08",
+   "fine": "7:41",
+   "titolo": "Capa 3: Evolución de la demanda de marca y tráfico directo",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "El impacto diferido: usuarios que descubren la marca en una IA y buscan directamente su nombre en Google días después",
+    "Aumento correlacionado de búsquedas de marca y navegación directa",
+    "Precaución metodológica con la interpretación del tráfico directo en GA4"
+   ]
+  },
+  {
+   "inizio": "7:41",
+   "fine": "13:10",
+   "titolo": "Capa 4: Leads, ventas y modelos de atribución",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Medición de transacciones en e-commerce y formularios/demos en empresas B2B",
+    "Uso de campos de atribución declarada ('¿cómo nos conociste?') en formularios y CRM",
+    "Diferenciación entre conversión directa, declarada y asistida",
+    "Fórmula clásica de ROI aplicada al coste e ingresos atribuidos a GEO"
+   ]
+  },
+  {
+   "inizio": "13:10",
+   "fine": "15:46",
+   "titolo": "Estructura del cuadro de mando (Dashboard GEO) y conclusión",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Los cuatro bloques esenciales: visibilidad, tráfico, conversión e influencia comercial",
+    "Evitar la trampa de métricas vanidosas y centrar el informe en decisiones que impacten al negocio"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "1:41",
+   "dice": "Herramientas como Brand Radar de Ahrefs permiten medir menciones, citas, impresiones estimadas y Share of Voice en ChatGPT, Gemini y LLMs",
+   "verdetto": "non_verificabile",
+   "perche": "La mención a la herramienta específica Brand Radar de Ahrefs no figura en la documentación oficial de la mapa."
+  },
+  {
+   "minuto": "3:24",
+   "dice": "En GA4 podemos analizar las fuentes y referencias que envían sesiones hacia nuestra web y separar aquellas procedentes de plataformas de IA",
+   "verdetto": "giusta",
+   "perche": "La mapa confirma en la etapa 3 el objetivo de 'separar el tráfico de ChatGPT y Perplexity en Analytics'."
+  },
+  {
+   "minuto": "4:00",
+   "dice": "Un volumen menor de visitas de IA puede convertir mucho mejor porque el usuario llega tras una consulta bastante específica",
+   "verdetto": "giusta",
+   "perche": "Coincide con lo señalado por Google en la etapa 3 ('los clics desde páginas con AI Overviews son de más calidad: compruébalo con tus datos') y el alto contexto de las consultas."
+  },
+  {
+   "minuto": "5:11",
+   "dice": "No todas las recomendaciones generan un clic inmediato: un usuario puede leer una respuesta en ChatGPT, recordar la marca y buscarla días después en Google o entrar directo",
+   "verdetto": "giusta",
+   "perche": "En la etapa 1 y los avisos se destaca el bajo porcentaje de clics inmediatos en las respuestas de IA y el comportamiento omnicanal del usuario."
+  },
+  {
+   "minuto": "7:16",
+   "dice": "En GA4, parte de las visitas procedentes de IA pueden reclasificarse como tráfico directo si se pierde el parámetro de referencia",
+   "verdetto": "giusta",
+   "perche": "El aviso de la mapa confirma que 'en GA4 parte de ese tráfico puede aparecer como directo' debido a fallos o pérdidas en parámetros de rastreo y referencias."
+  },
+  {
+   "minuto": "8:21",
+   "dice": "Preguntar en formularios y CRM cómo conoció el cliente a la marca ayuda a capturar la influencia de ChatGPT y otras IA",
+   "verdetto": "giusta",
+   "perche": "Coincide con las buenas prácticas de medición indirecta de conversiones contempladas en la etapa 3 ('Además de Search Console, mide conversiones...')."
+  }
+ ],
+ "per_chi_impara": "Aplica de forma global e idéntica tanto a España como a Latinoamérica, ya que plantea un marco conceptual y estratégico para la medición de ROI, GA4 y CRM que no depende de regulaciones locales.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Exposición conceptual impecable, madura y realista sobre analítica de negocio aplicada a GEO. El ritmo es fluido y el enfoque evita trucos vacíos. Su único punto débil formativo es que se trata de un busto parlante en todo momento: no muestra en pantalla Search Console, GA4 ni dashboards reales."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Es un vídeo excelente para entender cómo enfocar la medición de negocio y el ROI de GEO frente a clientes o directivos, pero debe complementarse con vídeos donde se muestre en pantalla la configuración técnica de GA4 y el informe de IA de Google Search Console.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "13:10",
+  "fine": "15:10"
+ },
+ "video": "Kg1NK4aAbek",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T15:55:36+00:00"
+}

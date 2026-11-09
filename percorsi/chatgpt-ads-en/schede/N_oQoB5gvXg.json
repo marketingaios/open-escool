@@ -1,0 +1,199 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Silvio Perez di AdConversion illustra il funzionamento di ChatGPT Ads partendo dai formati dell'annuncio e dalla struttura dell'Ads Manager, condividendo i dati reali di 25.000 $ di spesa della sua agenzia. Spiega come ideare la strategia per intercettare le conversazioni degli utenti (brand, competitor, soluzioni, pain point) e come redigere i context hints. Infine, guida passo dopo passo l'installazione tecnica del Pixel di OpenAI e degli eventi di conversione tramite Google Tag Manager.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:53",
+   "titolo": "Introduzione e panoramica del percorso",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentazione degli argomenti: formati annuncio, dati di spesa reale, lancio della prima campagna",
+    "Esperienza dell'agenzia su oltre 40 milioni di dollari/anno di spesa pubblicitaria B2B"
+   ]
+  },
+  {
+   "inizio": "0:53",
+   "fine": "1:56",
+   "titolo": "Cosa sono e come appaiono gli annunci su ChatGPT",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Posizionamento testuale e contestuale con etichetta 'Sponsored' in fondo alla chat",
+    "Separazione visiva tra risposta organica e annuncio",
+    "Studio di Wired: circa 1 prompt su 5 mostra un annuncio sponsorizzato"
+   ]
+  },
+  {
+   "inizio": "1:56",
+   "fine": "5:35",
+   "titolo": "Panoramica interfaccia Ads Manager (ads.openai.com)",
+   "tappe": [
+    2,
+    3,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Accesso e creazione account su ads.openai.com",
+    "Gerarchia di account: Campagne, Ad Groups e Annunci",
+    "Impostazione di Max CPC e Context Hints a livello di Ad Group",
+    "Specifiche dell'annuncio: titolo 50 caratteri, testo 100 caratteri, immagine quadrata 256x256",
+    "Sezioni Conversions, Audiences (liste clienti) e Billing (soglie di pagamento)"
+   ]
+  },
+  {
+   "inizio": "5:35",
+   "fine": "8:34",
+   "titolo": "Metriche e risultati reali da 25.000 $ di spesa",
+   "tappe": [
+    1,
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "CPC medio riscontrato tra 2,67 $ e 7,87 $; CTR tra 0,43% e 1,00%; CPM tra 15,28 $ e 67,99 $",
+    "Traffico prevalentemente mobile (70% mobile contro 30% desktop)",
+    "Criticità sulla qualità dei lead B2B: gli annunci sono mostrati solo agli utenti del piano Free"
+   ]
+  },
+  {
+   "inizio": "8:34",
+   "fine": "13:03",
+   "titolo": "Strategia: dal funnel a clic al 'funnel di conversazione'",
+   "tappe": [
+    3,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Differenza tra ricerca classica e dialogo con l'AI",
+    "L'annuncio deve apparire come la naturale continuazione della risoluzione del problema discusso nella chat",
+    "Importanza dell'intento e del tempismo contestuale"
+   ]
+  },
+  {
+   "inizio": "13:03",
+   "fine": "19:05",
+   "titolo": "Pianificazione di campagne, context hints e creatività",
+   "tappe": [
+    3,
+    4,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Modello su foglio di calcolo per mappare campagne, gruppi e context hints",
+    "I quattro cluster tematici: Brand, Competitor, Funzionalità/Soluzioni, Pain Point",
+    "Regole per la scrittura dei context hints e abbinamento con copy e immagini pertinenti",
+    "Uso di parametri UTM completi per tracciare la provenienza dei lead"
+   ]
+  },
+  {
+   "inizio": "19:05",
+   "fine": "28:15",
+   "titolo": "Configurazione del tracciamento conversioni con Google Tag Manager",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione della Data Source Web in Ads Manager",
+    "Installazione dello script base del Pixel su tutte le pagine tramite tag HTML personalizzato in GTM",
+    "Creazione dell'evento di conversione ('Lead created') e installazione del tag di evento",
+    "Configurazione avanzata: tag sequencing (Pixel prima dell'evento) e attivazione una volta per pagina",
+    "Test di funzionamento e debug in modalità anteprima di GTM ed Event Stream di OpenAI"
+   ]
+  },
+  {
+   "inizio": "28:15",
+   "fine": "28:32",
+   "titolo": "Conclusioni e saluti",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Riepilogo e invito ai corsi gratuiti di AdConversion"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "1:06",
+   "dice": "Gli annunci compaiono in fondo alla conversazione, con etichetta 'Sponsored' e visivamente separati dalla risposta",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 1: l'annuncio compare sotto la risposta, etichettato come sponsorizzato e separato."
+  },
+  {
+   "minuto": "1:59",
+   "dice": "È possibile creare l'account pubblicitario gratuito su ads.openai.com",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 2: ci si iscrive su ads.openai.com con il proprio account OpenAI."
+  },
+  {
+   "minuto": "3:03",
+   "dice": "A livello di Ad Group si imposta l'offerta Maximum CPC bid",
+   "verdetto": "superata",
+   "perche": "Come da cambio del 9/11/2026 (20001634), Target CPC sostituisce Max CPC nelle nuove campagne a clic e Target CPA sostituisce Max Bid in quelle a conversione, mentre Max Bid/Max CPC vanno in pensione definitiva il 1/1/2027."
+  },
+  {
+   "minuto": "3:47",
+   "dice": "I titoli hanno un limite massimo di 50 caratteri e le descrizioni di 100 caratteri",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 4: titolo massimo 50 caratteri, testo/descrizione massimo 100 caratteri."
+  },
+  {
+   "minuto": "3:58",
+   "dice": "L'immagine ha una dimensione quadrata di circa 250x250 o 256x256 pixel",
+   "verdetto": "giusta",
+   "perche": "La Tappa 4 richiede immagine quadrata (fino a 1200x1200); 256x256 pixel è la risoluzione minima accettata dalla piattaforma mostrata a schermo."
+  },
+  {
+   "minuto": "5:01",
+   "dice": "Nella sezione Audiences è possibile caricare elenchi di email (in chiaro o con hash) per creare pubblici personalizzati (matched audiences)",
+   "verdetto": "giusta",
+   "perche": "La funzione esiste nella piattaforma, ma come avvisato nella mappa (Avvisi e Tappa 1/3), i pubblici personalizzati vanno evitati per campagne rivolte a utenti nello Spazio Economico Europeo e in Svizzera."
+  },
+  {
+   "minuto": "5:15",
+   "dice": "Gli annunci su ChatGPT vengono mostrati esclusivamente agli utenti con account gratuito (Free tier)",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 1: gli annunci li vedono solo gli utenti dei piani Free e Go; Plus, Pro, Business, Enterprise ed Edu no."
+  },
+  {
+   "minuto": "5:58",
+   "dice": "I benchmark medi riscontrati sono: CPC tra 2,67 $ e 7,87 $, CTR tra 0,43% e 1,00%, CPM tra 15,28 $ e 67,99 $",
+   "verdetto": "non_verificabile",
+   "perche": "Sono metriche derivate dai test privati dell'agenzia del relatore; la Tappa 1 specifica che OpenAI non ha ancora rilasciato parametri o benchmark ufficiali."
+  },
+  {
+   "minuto": "17:35",
+   "dice": "L'immagine dell'annuncio è quadrata con formato minimo 256x256 pixel",
+   "verdetto": "giusta",
+   "perche": "Conforme alle specifiche di Ads Manager indicate nella Tappa 4."
+  }
+ ],
+ "per_chi_impara": "Per chi opera dall'Italia (SEE):\n1. Pubblici personalizzati: la funzione 'Audiences' mostrata al minuto 5:01 NON va utilizzata per campagne verso Italia/SEE/Svizzera, dove la personalizzazione basata su liste clienti non è ammessa.\n2. Budget e valuta: l'autore imposta tutto in USD. In Italia l'account va aperto in EUR con budget giornaliero minimo di 15 € (non modificabile a posteriori).\n3. Offerte: l'autore usa Max CPC (opzione in dismissione dal 9/11/2026 a favore di Target CPC e Target CPA).\n4. Creative Enhancements: attivi di default dal 30/10/2026, possono riscrivere e tradurre testi in italiano se non disattivati.\n5. Consenso e privacy: l'installazione del Pixel via GTM mostrata a fine video deve essere subordinata al consenso dell'utente (cookie banner) per rispettare le normative europee.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Video eccezionale per chiarezza espositiva, concretezza strategica e completezza tecnica. Mostra l'interfaccia reale di Ads Manager, illustra una pianificazione metodica dei context hints e fornisce un tutorial pratico impeccabile di tracciamento conversioni su Google Tag Manager."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È una delle guide pratiche più complete e approfondite disponibili su ChatGPT Ads. Mostra esattamente l'Ads Manager reale, insegna a impostare i context hints e illustra l'intero setup di tracciamento su GTM; basta integrare le specificità normative per l'Italia (niente liste clienti, valuta EUR, banner consensi).",
+ "tappa_migliore": 6,
+ "spezzone_migliore": {
+  "inizio": "19:05",
+  "fine": "26:00"
+ },
+ "video": "N_oQoB5gvXg",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:46:18+00:00"
+}

@@ -1,0 +1,49 @@
+# Open Escool: en el repositorio no entra nada personal ni nada de terceros que no se pueda redistribuir.
+
+# Claves (solo .env.example va a git) y archivos temporales de las claves
+.env
+.env.*
+!.env.example
+incolla-*.txt
+
+# Configuración de cada instalación (se crea desde config.esempio.json)
+config.json
+
+# Datos de quien aprende: notas, progreso, chat, repasos
+utente/
+
+# Diagnósticos completos (llevan el nombre del ordenador); la versión para compartir se copia a mano
+diagnosi/
+
+# Rutas: en git solo las rutas listas que trae Open Escool; las que crea cada persona se quedan en su ordenador
+percorsi/*
+!percorsi/.gitkeep
+!percorsi/chatgpt-ads/
+!percorsi/chatgpt-ads-es/
+!percorsi/chatgpt-ads-en/
+!percorsi/geo/
+# dentro de las rutas listas: datos de la API de YouTube (duran 30 días), páginas de terceros, registro de llamadas,
+# trabajo de las lecciones (voz, fotogramas, render) y contexto de la chat
+percorsi/*/.contesto/
+percorsi/*/lavoro/youtube/
+percorsi/*/lavoro/fonti/
+percorsi/*/lavoro/chiamate.jsonl
+percorsi/*/lavoro/scelta.md
+percorsi/*/lavoro/lezioni/*/*/
+
+# Lo que pone la instalación
+__pycache__/
+*.pyc
+strumenti/.voce
+strumenti/.modelli/
+lezione/node_modules
+*.tmp
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Claude Code y Codex: las skills van a git; los permisos y la memoria local de cada persona, no
+.claude/settings.local.json
+.claude/*.local.*
+CLAUDE.local.md

@@ -1,0 +1,184 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "Il video guida l'utente passo dopo passo nella creazione della prima campagna pubblicitaria su ChatGPT Ads Manager. Mostra come iscrivere la propria azienda, configurare il budget e il target geografico, utilizzare l'IA per creare una landing page ad alta conversione, inserire i context hints e impostare i parametri di tracciamento UTM. È pensato per marketer e imprenditori che vogliono iniziare a fare pubblicità su ChatGPT.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:25",
+   "titolo": "Novità di ChatGPT Ads e costi di ingresso",
+   "tappe": [
+    1,
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentazione dell'apertura degli annunci su ChatGPT anche per piccoli budget",
+    "Passaggio da soglie minime elevate (10.000€/mese del periodo iniziale) a 15€ al giorno"
+   ]
+  },
+  {
+   "inizio": "1:25",
+   "fine": "3:05",
+   "titolo": "Chi vede gli annunci e come funziona il formato",
+   "tappe": [
+    1,
+    4,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Gli annunci compaiono solo per gli utenti Free e non nei piani a pagamento",
+    "Struttura dell'annuncio: nome, favicon, titolo, testo, URL di destinazione e immagine",
+    "Modelli di costo disponibili: CPM (costo per mille impressioni) e CPC (costo per clic)"
+   ]
+  },
+  {
+   "inizio": "3:05",
+   "fine": "3:40",
+   "titolo": "Registrazione dell'account aziendale su Ads Manager",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento di ragione sociale, sito web aziendale e settore di appartenenza",
+    "Accesso alla dashboard del Gestor de Anuncios (Ads Manager)"
+   ]
+  },
+  {
+   "inizio": "3:40",
+   "fine": "6:20",
+   "titolo": "Configurazione della campagna: targeting e budget",
+   "tappe": [
+    3,
+    4,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Selezione del paese target (Spagna) e delle piattaforme (iOS, Android, Web)",
+    "Impostazione del budget giornaliero (15€ minimo, alzato a 20€ nell'esempio)",
+    "Spiegazione del margine di spesa giornaliero (fino al doppio nel singolo giorno)",
+    "Attivazione della personalizzazione automatica del testo tramite IA"
+   ]
+  },
+  {
+   "inizio": "6:20",
+   "fine": "7:44",
+   "titolo": "Creazione del gruppo di annunci e strategia di offerta",
+   "tappe": [
+    3,
+    5,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta tra strategia automatica (massimizzare i risultati) e manuale (CPC massimo)",
+    "Pianificazione del test A/B creando due campagne separate per confrontare le offerte"
+   ]
+  },
+  {
+   "inizio": "7:44",
+   "fine": "13:08",
+   "titolo": "Sviluppo rapido della landing page con IA (Claude Code)",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scrittura del prompt per generare una landing page priva di punti di fuga",
+    "Generazione del codice HTML/CSS e deploy immediato della pagina sul dominio"
+   ]
+  },
+  {
+   "inizio": "13:08",
+   "fine": "15:17",
+   "titolo": "Integrazione URL di destinazione e Context Hints",
+   "tappe": [
+    3,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Configurazione manuale delle stringhe UTM per il tracciamento su Google Analytics",
+    "Scrittura dei context hints descrittivi in linguaggio naturale per intercettare l'intento dell'utente"
+   ]
+  },
+  {
+   "inizio": "15:17",
+   "fine": "18:09",
+   "titolo": "Composizione dell'annuncio e caricamento asset",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scrittura di titolo e descrizione persuasivi orientati al beneficio dell'utente",
+    "Caricamento dell'immagine pubblicitaria e critica ai limiti dell'interfaccia beta"
+   ]
+  },
+  {
+   "inizio": "18:09",
+   "fine": "19:09",
+   "titolo": "Revisione finale e impostazione della fatturazione",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Verifica del riepilogo campagna e caricamento del logo del brand",
+    "Schermata di inserimento dati di fatturazione e carta di credito"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:37",
+   "dice": "Ahora podemos hacer anuncios en ChatGPT con tan solo 15 euros al día",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma che in euro il budget giornaliero minimo è di 15 €."
+  },
+  {
+   "minuto": "1:28",
+   "dice": "Los que van a ver los anuncios son los usuarios que no tienen los planes contratados de Plus, Pro, Business y demás",
+   "verdetto": "giusta",
+   "perche": "Come indicato nella Tappa 1 della mappa, gli annunci compaiono solo per gli utenti dei piani Free e Go."
+  },
+  {
+   "minuto": "2:43",
+   "dice": "Recomendamos empezar con una puja máxima de entre 3 y 5 dólares por clic",
+   "verdetto": "giusta",
+   "perche": "La Tappa 5 della mappa riporta che la documentazione ufficiale suggerisce un'offerta iniziale indicativa di 3-5 $ per CPC."
+  },
+  {
+   "minuto": "4:45",
+   "dice": "Si pones 20€ al día, tu gasto diario máximo puede ser de hasta 40€, pero se equilibra en 7 días",
+   "verdetto": "giusta",
+   "perche": "La Tappa 5 conferma che il budget giornaliero è una media settimanale e il sistema può spendere fino al doppio nel singolo giorno."
+  },
+  {
+   "minuto": "17:11",
+   "dice": "Solo deja subir una imagen para el anuncio",
+   "verdetto": "superata",
+   "perche": "Dal 26/10/2026 OpenAI ha introdotto in beta aperta il formato a più immagini (4-6 immagini quadrate) in Ads Manager."
+  }
+ ],
+ "per_chi_impara": "Valido per chi lavora dall'Italia e nell'Unione Europea. Si ricordi che l'Italia è inclusa tra i paesi disponibili in self-service su ads.openai.com. Nel SEE e in Svizzera non è consentito utilizzare pubblici personalizzati (liste clienti) per il targeting e le campagne devono basarsi sul contesto della conversazione.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Tutorial estremamente pratico, completo e trasparente. Mostra l'intero workflow reale, dall'iscrizione su Ads Manager fino alla creazione automatizzata della landing page e al tracciamento UTM."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È uno dei migliori walkthrough pratici disponibili per imparare a creare campagne su ChatGPT Ads Manager, spiegando sia la parte strategica che i dettagli operativi.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "3:40",
+  "fine": "7:44"
+ },
+ "video": "h6Aliamr9Ow",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T08:19:15+00:00"
+}

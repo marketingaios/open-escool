@@ -1,0 +1,112 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "La lección explica las diferencias entre las principales plataformas de búsqueda con IA (Google AI Overviews, Google AI Mode, ChatGPT y Perplexity) en cuanto a las fuentes y dominios que citan. Muestra con datos empíricos por qué no se puede aplicar una estrategia única para todas las plataformas y cómo priorizar los esfuerzos según la cuota de mercado y la autoridad de la marca.",
+ "mostra_schermo": false,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:15",
+   "titolo": "Introducción y superposición de fuentes entre motores con IA",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Cada buscador con IA funciona de manera distinta al seleccionar y citar fuentes.",
+    "Solo el 14 % de las 50 fuentes más mencionadas son compartidas entre ChatGPT, Perplexity y AI Overviews."
+   ]
+  },
+  {
+   "inizio": "1:16",
+   "fine": "3:04",
+   "titolo": "Diferencias de fuentes: AI Overviews, ChatGPT, Perplexity y AI Mode",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "AI Overviews prioriza sitios de autoridad, YouTube, redes sociales y enciclopedias.",
+    "ChatGPT recurre más a medios, editores y sitios generados por usuarios como Reddit.",
+    "Perplexity se solapa más con los resultados tradicionales del top 10 de Google.",
+    "AI Mode y AI Overviews difieren significativamente en sus citas (solo 13,7 % de coincidencia)."
+   ]
+  },
+  {
+   "inizio": "3:05",
+   "fine": "5:31",
+   "titolo": "Cómo priorizar plataformas y analizar datos con Brand Radar",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Priorizar Google y ChatGPT por cuota de mercado actual.",
+    "Evolución del solapamiento con el top 10 de Google en AI Overviews.",
+    "Uso de herramientas de monitoreo como Brand Radar para auditar menciones por temática."
+   ]
+  },
+  {
+   "inizio": "5:32",
+   "fine": "6:40",
+   "titolo": "Fundamentos transversales de visibilidad y conclusión",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Los pilares del SEO (contenido de calidad, menciones, autoridad temática) sirven para todas las plataformas.",
+    "Cada plataforma es un ecosistema con sus propias reglas sobre qué fuentes priorizar."
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:58",
+   "dice": "Solo el 14 % (7 de 50) de las fuentes más mencionadas se comparten entre ChatGPT, Perplexity y Google AI.",
+   "verdetto": "non_verificabile",
+   "perche": "Es un dato estadístico extraído de un estudio interno de Ahrefs (Brand Radar); no está fijado directamente en los conceptos normativos de la mapa."
+  },
+  {
+   "minuto": "1:50",
+   "dice": "Alrededor del 28,6 % de las citas de Perplexity provienen del top 10 de Google, frente al 8-10 % en ChatGPT.",
+   "verdetto": "giusta",
+   "perche": "La mapa confirma en la Tappa 1 que Perplexity busca en tiempo real y se solapa significativamente con la búsqueda clásica de Google, a diferencia de ChatGPT."
+  },
+  {
+   "minuto": "2:22",
+   "dice": "La coincidencia de citas entre AI Overviews y AI Mode es de solo el 13,7 %, aunque sus respuestas son semánticamente similares en un 86 %.",
+   "verdetto": "giusta",
+   "perche": "La mapa indica explícitamente en la Tappa 1 que AI Mode y AI Overviews pueden usar modelos y técnicas distintos y muestran respuestas y enlaces diferentes."
+  },
+  {
+   "minuto": "3:22",
+   "dice": "Google AI Overviews y ChatGPT acumulan la inmensa mayoría del tráfico de búsqueda con IA.",
+   "verdetto": "giusta",
+   "perche": "Coincide con la mapa de referencia (Tappa 1 y 3) donde se destaca la hegemonía de usuarios y volumen de Google (más de 2.500 M en AIO y 1.000 M en AI Mode) y ChatGPT."
+  },
+  {
+   "minuto": "4:08",
+   "dice": "Un estudio reciente señala que el 38 % de las citas en AI Overviews provienen de las 10 primeras páginas orgánicas de Google.",
+   "verdetto": "non_verificabile",
+   "perche": "Se trata de un dato de un estudio específico publicado en el blog de Ahrefs en 2026 presentado en pantalla."
+  }
+ ],
+ "per_chi_impara": "Útil para profesionales del marketing y SEO en España y Latinoamérica. La lección aclara las diferencias de comportamiento de las respuestas generativas según el motor de búsqueda, destacando la presencia de AI Mode y AI Overviews en español.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Explicación clara, excelente ritmo, fundamentación basada en datos reales de estudios de IA y alineación adecuada con los conceptos de optimización para motores generativos."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Proporciona una perspectiva estratégica indispensable: demuestra por qué no existe un 'GEO único' y enseña a adaptar la táctica de contenidos y PR según la plataforma objetivo.",
+ "tappa_migliore": 1,
+ "spezzone_migliore": {
+  "inizio": "1:16",
+  "fine": "3:04"
+ },
+ "video": "EgP-TCkDCQA",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T11:40:16+00:00"
+}

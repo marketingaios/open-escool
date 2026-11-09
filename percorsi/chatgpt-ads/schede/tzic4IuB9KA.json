@@ -1,0 +1,261 @@
+{
+ "lingua_parlata": "it",
+ "riassunto": "Il video guida un principiante o professionista italiano alla scoperta di ChatGPT Ads subito dopo il lancio self-service in Europa. Mostra passo dopo passo la registrazione a OpenAI Ads Manager, la configurazione dei dati di fatturazione con partita IVA, la verifica aziendale e la creazione completa di una prima campagna di test. Spiega nel dettaglio la differenza tra parole chiave e context hints, i limiti di caratteri per evitare il troncamento dei testi e le impostazioni di budget e offerta.",
+ "mostra_ads_manager": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:06",
+   "titolo": "Introduzione a ChatGPT Ads e novità per il mercato pubblicitario",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Arrivo della pubblicità sulle piattaforme di intelligenza artificiale",
+    "Disponibilità della piattaforma Ads in Italia e in Europa"
+   ]
+  },
+  {
+   "inizio": "1:06",
+   "fine": "5:50",
+   "titolo": "Panoramica della landing page ads.openai.com e registrazione account",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Come appare l'annuncio nativo sotto la risposta di ChatGPT",
+    "Accesso e iscrizione tramite account OpenAI",
+    "Scelta iniziale vincolante di valuta (EUR) e fuso orario"
+   ]
+  },
+  {
+   "inizio": "5:50",
+   "fine": "7:27",
+   "titolo": "Configurazione di fatturazione (carta e partita IVA) e logo",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento metodo di pagamento obbligatorio per pubblicare",
+    "Inserimento della partita IVA con prefisso IT",
+    "Caricamento del logo aziendale per gli annunci"
+   ]
+  },
+  {
+   "inizio": "7:27",
+   "fine": "9:42",
+   "titolo": "Verifica dell'azienda con Persona e impostazioni Ads Manager",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Procedura di Business Verification tramite codice fiscale / partita IVA",
+    "Tempi di approvazione della verifica",
+    "Tema chiaro/scuro e impostazioni generali dell'account"
+   ]
+  },
+  {
+   "inizio": "9:42",
+   "fine": "10:49",
+   "titolo": "Panoramica del cruscotto metriche e struttura delle campagne",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Dashboard di riepilogo con spesa, impressioni, clic e conversioni",
+    "Configurazione del tracciamento conversioni e Pixel",
+    "Struttura gerarchica: campagne, gruppi di annunci e annunci"
+   ]
+  },
+  {
+   "inizio": "10:49",
+   "fine": "13:34",
+   "titolo": "Creazione Campagna: obiettivi pubblicitari e geolocalizzazione",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta dell'obiettivo: Copertura (Views), Clic o Conversioni",
+    "Targeting geografico a livello di paese, regione e CAP",
+    "Inclusione esplicita delle aree di erogazione"
+   ]
+  },
+  {
+   "inizio": "13:34",
+   "fine": "16:01",
+   "titolo": "Esclusioni geografiche, piattaforme, budget giornaliero e testo AI",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Avviso su pubblici personalizzati non supportati in SEE e Svizzera",
+    "Selezione piattaforme: iOS, Android, Web",
+    "Budget giornaliero minimo impostato a 15 €",
+    "Opzione di personalizzazione automatica del testo tramite AI"
+   ]
+  },
+  {
+   "inizio": "16:01",
+   "fine": "21:09",
+   "titolo": "Creazione Ad Group: strategie d'offerta, parametri URL e Context Hints",
+   "tappe": [
+    3,
+    5,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta tra massimizzazione automatica dei risultati e offerta manuale CPC max",
+    "Parametri dinamici di tracciamento URL e UTM",
+    "Cosa sono i context hints (suggerimenti di contesto) e come scriverli",
+    "Differenza sostanziale tra parole chiave classiche e contesto semantico"
+   ]
+  },
+  {
+   "inizio": "21:09",
+   "fine": "23:37",
+   "titolo": "Creazione dell'annuncio: limiti caratteri, rischio troncamento e immagini",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Titolo fino a 50 caratteri con rischio troncamento oltre i 24",
+    "Descrizione fino a 100 caratteri con rischio troncamento oltre i 48",
+    "Requisiti immagine quadrata (minimo 256x256 pixel)",
+    "Inserimento URL di destinazione specifico"
+   ]
+  },
+  {
+   "inizio": "23:37",
+   "fine": "24:16",
+   "titolo": "Riepilogo finale della campagna, anteprima e revisione",
+   "tappe": [
+    4,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Controllo dell'anteprima dell'annuncio",
+    "Verifica dello stato dell'account prima della pubblicazione effettiva"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:35",
+   "dice": "La piattaforma ChatGPT Ads è stata lanciata in Italia ed Europa da pochissimo.",
+   "verdetto": "giusta",
+   "perche": "Conforme al lancio self-service di Ads Manager per i mercati europei avvenuto a fine agosto 2026."
+  },
+  {
+   "minuto": "2:08",
+   "dice": "L'annuncio su ChatGPT compare sotto la risposta, ha dimensioni ridotte rispetto a Meta o Google, ed è composto da titolo, descrizione breve e immagine quadrata.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 1: l'annuncio è separato ed etichettato come sponsorizzato sotto il messaggio dell'assistente."
+  },
+  {
+   "minuto": "4:06",
+   "dice": "ChatGPT Ads va oltre le singole parole chiave perché sfrutta segnali di contesto più ricchi forniti direttamente dalla conversazione in corso.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 1 e alla Tappa 3: il matching avviene per contesto semantico e non per aste di parole chiave a corrispondenza esatta."
+  },
+  {
+   "minuto": "5:33",
+   "dice": "La valuta (EUR) e il fuso orario si scelgono in fase di registrazione e non si possono più modificare successivamente.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 2 e a 20001213-ads-manager-account-setup.md: paese, valuta e fuso orario sono immutabili dopo la creazione dell'account."
+  },
+  {
+   "minuto": "7:13",
+   "dice": "Nel campo della partita IVA occorre inserire la sigla IT davanti al numero, altrimenti il sistema dà errore.",
+   "verdetto": "giusta",
+   "perche": "Dato pratico veritiero per i form di validazione VIES/Stripe/OpenAI per le aziende italiane."
+  },
+  {
+   "minuto": "9:33",
+   "dice": "Nelle impostazioni generali dell'account si definiscono il nome dell'account e il logo aziendale.",
+   "verdetto": "superata",
+   "perche": "Il video è del 04/09/2026. Dal 25/09/2026 OpenAI ha separato la gestione del nome dell'account, del brand name pubblico e della ragione sociale legale (20001213-ads-manager-account-setup.md)."
+  },
+  {
+   "minuto": "11:38",
+   "dice": "Gli obiettivi disponibili sono Copertura, Clic e Conversioni; per le conversioni serve configurare eventi e pixel.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 3: i tre obiettivi base sono Views, Clicks e Conversions, quest'ultimo vincolato a eventi di tracciamento."
+  },
+  {
+   "minuto": "14:00",
+   "dice": "A schermo appare l'avviso: i segmenti di pubblico personalizzati non sono supportati per le campagne rivolte a posizioni nel SEE o in Svizzera.",
+   "verdetto": "giusta",
+   "perche": "Conforme agli Avvisi Italia e alla Tappa 3: per normative sulla privacy in SEE/Svizzera le custom audience non sono ammesse."
+  },
+  {
+   "minuto": "14:58",
+   "dice": "Il budget giornaliero minimo è di almeno 15,00 €.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla documentazione ufficiale OpenAI (20001210-creating-campaigns-for-chatgpt-ads.md) che fissa il minimo in euro a 15 € al giorno."
+  },
+  {
+   "minuto": "15:20",
+   "dice": "L'opzione di personalizzazione del testo genera automaticamente varianti di testo e traduzioni create dall'AI senza approvazione preventiva.",
+   "verdetto": "superata",
+   "perche": "All'epoca era una spunta facoltativa; dal 30/10/2026 i creative enhancements sono attivi di base e modificano anche formati immagine e URL di destinazione (20001614-creative-enhancements-for-chatgpt-ads.md)."
+  },
+  {
+   "minuto": "16:34",
+   "dice": "Come strategia di offerta si può scegliere Massimizza i risultati oppure Manuale: CPC max.",
+   "verdetto": "superata",
+   "perche": "Dal 09/11/2026 'Massimizza i risultati' è stata ridenominata 'Intelligent bidding' e il CPC max manuale è sostituito da Target CPC, con ritiro definitivo del Max CPC dal 01/01/2027 (20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md)."
+  },
+  {
+   "minuto": "19:20",
+   "dice": "I suggerimenti di contesto (context hints) guidano l'abbinamento descrivendo cosa offri e quando serve, ma non sono parole chiave a corrispondenza esatta e non garantiscono l'erogazione.",
+   "verdetto": "giusta",
+   "perche": "Conforme esattamente ai concetti ufficiali della Tappa 3."
+  },
+  {
+   "minuto": "22:25",
+   "dice": "Il titolo supporta fino a 50 caratteri, ma oltre i 24 caratteri c'è l'avviso che potrebbe essere troncato in alcuni posizionamenti.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 4: 16-24 caratteri consigliati per il titolo per evitare troncamenti, limite massimo 50."
+  },
+  {
+   "minuto": "22:47",
+   "dice": "La descrizione supporta fino a 100 caratteri, ma oltre i 48 caratteri può essere troncata.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 4: 32-48 caratteri consigliati per il testo, limite massimo 100."
+  },
+  {
+   "minuto": "23:24",
+   "dice": "L'immagine dell'annuncio deve essere quadrata con risoluzione minima di 256x256 pixel.",
+   "verdetto": "superata",
+   "perche": "All'epoca del video (settembre 2026) c'era solo l'immagine quadrata singola; dal 26/10/2026 è stato introdotto anche il formato a più immagini da 4-6 creatività (20001212-creating-ads-for-chatgpt-ads.md)."
+  }
+ ],
+ "per_italia": "Valido e calibrato per l'Italia: mostra la registrazione con dati di fatturazione italiani (partita IVA con prefisso IT obbligatorio), imposta la valuta in euro evidenziando il budget giornaliero minimo di 15 €, seleziona la copertura geografica italiana (anche a livello regionale e CAP) e mostra chiaramente a schermo l'avviso ufficiale che vieta l'uso dei pubblici personalizzati (liste clienti) per gli utenti residenti nello Spazio Economico Europeo e in Svizzera.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Tutorial eccellente, registrato a schermo intero direttamente su Ads Manager senza tagli superficiali. Mostra con precisione il flusso di iscrizione, i vincoli di fatturazione per l'Italia, gli avvisi di sistema su budget e troncamento dei caratteri, e fornisce una spiegazione impeccabile sui context hints."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È il video di riferimento in lingua italiana per chi parte da zero: segue passo passo l'onboarding in Ads Manager, imposta una campagna reale con budget in euro e chiarisce le differenze chiave tra ChatGPT Ads e i motori di ricerca tradizionali. L'unica cautela per chi lo guarda dopo novembre 2026 riguarda i cambi successivi su offerte (Target CPC/CPA) e formati (multi-immagine).",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "19:10",
+  "fine": "21:05"
+ },
+ "video": "tzic4IuB9KA",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-06T03:44:26+00:00"
+}

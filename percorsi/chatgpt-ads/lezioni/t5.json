@@ -1,0 +1,456 @@
+{
+ "tappa": 5,
+ "lingua": "it",
+ "titolo": "Budget e offerte: quanto puoi spendere davvero",
+ "durata_s": 209,
+ "file": "lezioni/t5.mp4",
+ "copertina": "lezioni/t5.jpg",
+ "controllata": "2026-11-06",
+ "creata": "2026-11-09",
+ "voce": "Chatterbox (voce gratuita sul computer)",
+ "voce_info": {
+  "motore": "gratuita",
+  "modello": "chatterbox",
+  "voce": "base"
+ },
+ "scene": [
+  {
+   "id": "apertura",
+   "titolo": "Budget e offerte",
+   "inizio": 0.0,
+   "fine": 13.1,
+   "testo": "In questa lezione vediamo quanto può spendere davvero una campagna di ChatGPT Ads, e quale offerta scegliere per la prima. Tutto quello che senti viene dalle pagine ufficiali di OpenAI, lette il sei novembre duemilaventisei.",
+   "fonti": [],
+   "consiglio": false
+  },
+  {
+   "id": "tipi",
+   "titolo": "Due tipi di budget",
+   "inizio": 13.1,
+   "fine": 38.4,
+   "testo": "Quando crei una campagna scegli fra due tipi di budget. Il budget totale è la cifra da spendere in tutta la durata della campagna: è il controllo più stretto sulla spesa complessiva. Il budget giornaliero è quanto vuoi spendere in media ogni giorno. A chi è nuovo della piattaforma, OpenAI consiglia di partire dal giornaliero, per vedere come va prima di impegnare un totale. Attenzione: da totale si può passare a giornaliero, ma poi non si torna indietro. Se hai sbagliato tipo, crei una campagna nuova.",
+   "fonti": [
+    "20001210-creating-campaigns-for-chatgpt-ads.md"
+   ],
+   "consiglio": false
+  },
+  {
+   "id": "settimana",
+   "titolo": "Il giornaliero è una media su 7 giorni",
+   "inizio": 38.4,
+   "fine": 67.7,
+   "testo": "Ed ecco il punto che molti video sbagliano. Il budget giornaliero non è un tetto del giorno: è una media su sette giorni. La settimana va da domenica a sabato, nel fuso orario del tuo account. Prendiamo quindici euro al giorno, che in euro è anche il minimo. In un singolo giorno la campagna può spendere fino al doppio, cioè trenta euro. Ma in tutta la settimana non supera sette volte il budget: centocinque euro. I giorni in cui spende meno lasciano spazio ai giorni dopo. Quando crei o modifichi la campagna, Ads Manager ti mostra proprio questi due massimi.",
+   "fonti": [
+    "20001413-daily-budgets.md",
+    "20001210-creating-campaigns-for-chatgpt-ads.md"
+   ],
+   "consiglio": false
+  },
+  {
+   "id": "addebiti",
+   "titolo": "Da non confondere",
+   "inizio": 67.7,
+   "fine": 91.0,
+   "testo": "Due cose da non confondere. Il ritmo di spesa distribuisce il budget nel tempo, ma non garantisce né una spesa uguale ogni giorno, né che il budget venga speso tutto. Poi c'è la soglia di pagamento: è il momento in cui ti viene addebitata la carta. Non è il budget della campagna, e non è un tetto di spesa. E ricorda che i dati di spesa possono arrivare con sette o otto ore di ritardo: una spesa a zero non vuol dire che non stai spendendo.",
+   "fonti": [
+    "20001515-budget-pacing.md",
+    "20001216-billing-payment.md"
+   ],
+   "consiglio": false
+  },
+  {
+   "id": "paghi",
+   "titolo": "Cosa ottimizzi e cosa paghi",
+   "inizio": 91.0,
+   "fine": 112.9,
+   "testo": "Ora, cosa paghi. Dipende dall'obiettivo della campagna. Con Views paghi le impressioni, a costo per mille: è il CPM. Con Clicks paghi ogni clic: è il CPC. Con Conversions il sistema cerca le conversioni, ma paghi comunque a clic o a impressioni, secondo l'opzione scelta. In nessun caso paghi a conversione: cosa ottimizzi e cosa paghi sono due impostazioni separate.",
+   "fonti": [
+    "20001216-billing-payment.md",
+    "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
+   ],
+   "consiglio": false
+  },
+  {
+   "id": "date",
+   "titolo": "Le offerte cambiano",
+   "inizio": 112.9,
+   "fine": 149.3,
+   "testo": "Le offerte stanno cambiando proprio in questi giorni. La strategia automatica, che si chiamava Maximize Results, ora si chiama Intelligent bidding: regola da sola le offerte per ottenere più risultati dentro il budget, ed è già selezionata di base nei gruppi di annunci nuovi. Da lunedì nove novembre, nelle campagne nuove arrivano Target CPC per i clic, e Target CPA per le conversioni, che prende il posto di Max Bid. Il primo gennaio duemilaventisette, Max Bid e Max CPC si ritirano anche dalle campagne che esistono già. Per questo, se un video o una vecchia pagina consiglia un Max CPC da tre a cinque dollari, sta parlando di un'opzione in uscita.",
+   "fonti": [
+    "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md",
+    "20001425-maximize-results-bid-strategy.md",
+    "20001207-ads-in-chatgpt-the-basics.md"
+   ],
+   "consiglio": false
+  },
+  {
+   "id": "media",
+   "titolo": "Target CPA e Target CPC sono medie",
+   "inizio": 149.3,
+   "fine": 165.9,
+   "testo": "E qui c'è l'errore più comune. Target CPC e Target CPA non sono prezzi massimi: sono medie. Se chiedi, per esempio, un costo medio di cinquanta euro a conversione, alcune conversioni costeranno di più e altre di meno, e anche la media finale può uscire più alta o più bassa del tuo obiettivo.",
+   "fonti": [
+    "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
+   ],
+   "consiglio": false
+  },
+  {
+   "id": "realistico",
+   "titolo": "Un obiettivo realistico",
+   "inizio": 165.9,
+   "fine": 182.4,
+   "testo": "Come scegli un obiettivo realistico? Guarda i risultati recenti: se hai speso quattrocento euro e ottenuto dieci acquisti, il tuo costo reale per acquisto è quaranta euro. Mettere un obiettivo di venti non ti farà pagare la metà: un obiettivo sotto i risultati reali rischia di frenare la consegna degli annunci.",
+   "fonti": [
+    "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
+   ],
+   "consiglio": false
+  },
+  {
+   "id": "prima",
+   "titolo": "La tua prima campagna",
+   "inizio": 182.4,
+   "fine": 209.2,
+   "testo": "Quindi, il nostro consiglio per la tua prima campagna. Budget giornaliero, almeno quindici euro, sapendo che un giorno può arrivare a trenta. Intelligent bidding, senza obiettivo di costo: all'inizio non hai ancora dati tuoi da cui partire. Gli obiettivi di costo li aggiungi dopo, quando avrai un costo reale da guardare. E in questo percorso la campagna resta in pausa: la prepari, ma non spendi niente. Nella prossima tappa vediamo come misurare i risultati.",
+   "fonti": [
+    "20001210-creating-campaigns-for-chatgpt-ads.md",
+    "20001413-daily-budgets.md",
+    "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
+   ],
+   "consiglio": true
+  }
+ ],
+ "frasi": [
+  {
+   "inizio": 0.3,
+   "testo": "In questa lezione vediamo quanto può spendere davvero una campagna"
+  },
+  {
+   "inizio": 3.6,
+   "testo": "di ChatGPT Ads, e quale offerta scegliere per la prima."
+  },
+  {
+   "inizio": 7.3,
+   "testo": "Tutto quello che senti viene dalle pagine ufficiali di OpenAI,"
+  },
+  {
+   "inizio": 10.5,
+   "testo": "lette il sei novembre duemilaventisei."
+  },
+  {
+   "inizio": 13.4,
+   "testo": "Quando crei una campagna scegli fra due tipi di budget."
+  },
+  {
+   "inizio": 16.5,
+   "testo": "Il budget totale è la cifra da spendere in tutta la"
+  },
+  {
+   "inizio": 18.6,
+   "testo": "durata della campagna: è il controllo più stretto sulla spesa complessiva."
+  },
+  {
+   "inizio": 22.3,
+   "testo": "Il budget giornaliero è quanto vuoi spendere in media ogni giorno."
+  },
+  {
+   "inizio": 25.5,
+   "testo": "A chi è nuovo della piattaforma,"
+  },
+  {
+   "inizio": 27.1,
+   "testo": "OpenAI consiglia di partire dal giornaliero,"
+  },
+  {
+   "inizio": 29.0,
+   "testo": "per vedere come va prima di impegnare un totale."
+  },
+  {
+   "inizio": 31.9,
+   "testo": "Attenzione: da totale si può passare a giornaliero,"
+  },
+  {
+   "inizio": 34.2,
+   "testo": "ma poi non si torna indietro."
+  },
+  {
+   "inizio": 35.5,
+   "testo": "Se hai sbagliato tipo, crei una campagna nuova."
+  },
+  {
+   "inizio": 38.7,
+   "testo": "Ed ecco il punto che molti video sbagliano."
+  },
+  {
+   "inizio": 41.2,
+   "testo": "Il budget giornaliero non è un tetto del giorno:"
+  },
+  {
+   "inizio": 43.2,
+   "testo": "è una media su sette giorni."
+  },
+  {
+   "inizio": 44.7,
+   "testo": "La settimana va da domenica a sabato,"
+  },
+  {
+   "inizio": 46.7,
+   "testo": "nel fuso orario del tuo account."
+  },
+  {
+   "inizio": 49.1,
+   "testo": "Prendiamo quindici euro al giorno,"
+  },
+  {
+   "inizio": 50.6,
+   "testo": "che in euro è anche il minimo."
+  },
+  {
+   "inizio": 51.9,
+   "testo": "In un singolo giorno la campagna può spendere fino al doppio,"
+  },
+  {
+   "inizio": 54.4,
+   "testo": "cioè trenta euro. Ma in tutta la settimana non supera sette"
+  },
+  {
+   "inizio": 57.6,
+   "testo": "volte il budget: centocinque euro."
+  },
+  {
+   "inizio": 59.6,
+   "testo": "I giorni in cui spende meno lasciano spazio ai giorni dopo."
+  },
+  {
+   "inizio": 62.7,
+   "testo": "Quando crei o modifichi la campagna,"
+  },
+  {
+   "inizio": 64.6,
+   "testo": "Ads Manager ti mostra proprio questi due massimi."
+  },
+  {
+   "inizio": 68.1,
+   "testo": "Due cose da non confondere."
+  },
+  {
+   "inizio": 70.1,
+   "testo": "Il ritmo di spesa distribuisce il budget nel tempo,"
+  },
+  {
+   "inizio": 72.6,
+   "testo": "ma non garantisce né una spesa uguale ogni giorno,"
+  },
+  {
+   "inizio": 75.0,
+   "testo": "né che il budget venga speso tutto."
+  },
+  {
+   "inizio": 76.9,
+   "testo": "Poi c'è la soglia di pagamento:"
+  },
+  {
+   "inizio": 78.4,
+   "testo": "è il momento in cui ti viene addebitata la carta."
+  },
+  {
+   "inizio": 80.6,
+   "testo": "Non è il budget della campagna,"
+  },
+  {
+   "inizio": 81.9,
+   "testo": "e non è un tetto di spesa."
+  },
+  {
+   "inizio": 83.5,
+   "testo": "E ricorda che i dati di spesa possono arrivare con sette"
+  },
+  {
+   "inizio": 86.1,
+   "testo": "o otto ore di ritardo:"
+  },
+  {
+   "inizio": 87.7,
+   "testo": "una spesa a zero non vuol dire che non stai spendendo."
+  },
+  {
+   "inizio": 91.3,
+   "testo": "Ora, cosa paghi. Dipende dall'obiettivo della campagna."
+  },
+  {
+   "inizio": 94.8,
+   "testo": "Con Views paghi le impressioni,"
+  },
+  {
+   "inizio": 96.1,
+   "testo": "a costo per mille: è il CPM."
+  },
+  {
+   "inizio": 97.9,
+   "testo": "Con Clicks paghi ogni clic:"
+  },
+  {
+   "inizio": 99.1,
+   "testo": "è il CPC. Con Conversions il sistema cerca le conversioni,"
+  },
+  {
+   "inizio": 103.3,
+   "testo": "ma paghi comunque a clic o a impressioni,"
+  },
+  {
+   "inizio": 105.4,
+   "testo": "secondo l'opzione scelta. In nessun caso paghi a conversione:"
+  },
+  {
+   "inizio": 109.0,
+   "testo": "cosa ottimizzi e cosa paghi sono due impostazioni separate."
+  },
+  {
+   "inizio": 113.3,
+   "testo": "Le offerte stanno cambiando proprio in questi giorni."
+  },
+  {
+   "inizio": 116.4,
+   "testo": "La strategia automatica, che si chiamava Maximize Results,"
+  },
+  {
+   "inizio": 119.3,
+   "testo": "ora si chiama Intelligent bidding:"
+  },
+  {
+   "inizio": 121.4,
+   "testo": "regola da sola le offerte per ottenere più risultati dentro il"
+  },
+  {
+   "inizio": 124.2,
+   "testo": "budget, ed è già selezionata di base nei gruppi di annunci"
+  },
+  {
+   "inizio": 127.1,
+   "testo": "nuovi. Da lunedì nove novembre,"
+  },
+  {
+   "inizio": 129.2,
+   "testo": "nelle campagne nuove arrivano Target CPC per i clic,"
+  },
+  {
+   "inizio": 131.8,
+   "testo": "e Target CPA per le conversioni,"
+  },
+  {
+   "inizio": 133.7,
+   "testo": "che prende il posto di Max Bid."
+  },
+  {
+   "inizio": 135.7,
+   "testo": "Il primo gennaio duemilaventisette, Max Bid e Max CPC si ritirano"
+  },
+  {
+   "inizio": 139.7,
+   "testo": "anche dalle campagne che esistono già."
+  },
+  {
+   "inizio": 141.3,
+   "testo": "Per questo, se un video o una vecchia pagina consiglia un"
+  },
+  {
+   "inizio": 144.5,
+   "testo": "Max CPC da tre a cinque dollari,"
+  },
+  {
+   "inizio": 146.7,
+   "testo": "sta parlando di un'opzione in uscita."
+  },
+  {
+   "inizio": 149.6,
+   "testo": "E qui c'è l'errore più comune."
+  },
+  {
+   "inizio": 151.8,
+   "testo": "Target CPC e Target CPA non sono prezzi massimi:"
+  },
+  {
+   "inizio": 154.9,
+   "testo": "sono medie. Se chiedi, per esempio,"
+  },
+  {
+   "inizio": 156.9,
+   "testo": "un costo medio di cinquanta euro a conversione,"
+  },
+  {
+   "inizio": 159.2,
+   "testo": "alcune conversioni costeranno di più e altre di meno,"
+  },
+  {
+   "inizio": 161.7,
+   "testo": "e anche la media finale può uscire più alta o più"
+  },
+  {
+   "inizio": 163.9,
+   "testo": "bassa del tuo obiettivo."
+  },
+  {
+   "inizio": 166.2,
+   "testo": "Come scegli un obiettivo realistico?"
+  },
+  {
+   "inizio": 168.5,
+   "testo": "Guarda i risultati recenti: se hai speso quattrocento euro e ottenuto"
+  },
+  {
+   "inizio": 171.7,
+   "testo": "dieci acquisti, il tuo costo reale per acquisto è quaranta euro."
+  },
+  {
+   "inizio": 175.2,
+   "testo": "Mettere un obiettivo di venti non ti farà pagare la metà:"
+  },
+  {
+   "inizio": 177.9,
+   "testo": "un obiettivo sotto i risultati reali rischia di frenare la consegna"
+  },
+  {
+   "inizio": 180.9,
+   "testo": "degli annunci."
+  },
+  {
+   "inizio": 182.8,
+   "testo": "Quindi, il nostro consiglio per la tua prima campagna."
+  },
+  {
+   "inizio": 185.9,
+   "testo": "Budget giornaliero, almeno quindici euro,"
+  },
+  {
+   "inizio": 187.9,
+   "testo": "sapendo che un giorno può arrivare a trenta."
+  },
+  {
+   "inizio": 190.0,
+   "testo": "Intelligent bidding, senza obiettivo di costo:"
+  },
+  {
+   "inizio": 192.6,
+   "testo": "all'inizio non hai ancora dati tuoi da cui partire."
+  },
+  {
+   "inizio": 195.1,
+   "testo": "Gli obiettivi di costo li aggiungi dopo,"
+  },
+  {
+   "inizio": 197.1,
+   "testo": "quando avrai un costo reale da guardare."
+  },
+  {
+   "inizio": 199.0,
+   "testo": "E in questo percorso la campagna resta in pausa:"
+  },
+  {
+   "inizio": 201.5,
+   "testo": "la prepari, ma non spendi niente."
+  },
+  {
+   "inizio": 203.8,
+   "testo": "Nella prossima tappa vediamo come misurare i risultati."
+  }
+ ]
+}

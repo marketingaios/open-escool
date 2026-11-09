@@ -1,0 +1,174 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo muestra el proceso de alta y la creación de la primera campaña publicitaria en OpenAI Ads Manager para un ecommerce español de azulejos. El creador configura la cuenta, completa los datos de facturación y la verificación de la empresa, y aprovecha la integración de ChatGPT/Claude para pulir los textos del anuncio y los parámetros UTM. Es útil para entender el flujo práctico de la interfaz de Ads Manager para empresas europeas recién habilitadas con el despliegue.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:27",
+   "titolo": "Introducción e invitación a OpenAI Ads Manager Beta",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Recepción del correo de invitación a OpenAI Ads Manager Beta en Europa",
+    "Visión general de la oportunidad de publicidad en ChatGPT"
+   ]
+  },
+  {
+   "inizio": "1:28",
+   "fine": "2:10",
+   "titolo": "Configuración de la campaña con presupuesto y segmentación",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Configuración del presupuesto total en 100 €",
+    "Selección de las plataformas y del país (España)",
+    "Configuración de la puja de CPC máximo en 2,60 €"
+   ]
+  },
+  {
+   "inizio": "2:11",
+   "fine": "4:02",
+   "titolo": "Uso de ChatGPT Cowork para la configuración",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Conexión de ChatGPT con la interfaz del navegador para ayudar en la configuración",
+    "Confirmación de que las audiencias personalizadas no están disponibles en el Espacio Económico Europeo"
+   ]
+  },
+  {
+   "inizio": "4:03",
+   "fine": "8:37",
+   "titolo": "Configuración del anuncio con URL, logo y primeros borradores",
+   "tappe": [
+    4,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Elección de una URL de destino específica por categoría",
+    "Carga del logo cuadrado de la empresa",
+    "Desactivación de la personalización automática del texto (creative enhancements)",
+    "Introducción de parámetros UTM para el seguimiento"
+   ]
+  },
+  {
+   "inizio": "8:38",
+   "fine": "21:36",
+   "titolo": "Optimización del copy con Claude Code sobre datos reales",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Análisis de las solicitudes reales de WhatsApp, correo y Google Search Console con Claude",
+    "Crítica a los textos genéricos que ChatGPT Ads propone por defecto",
+    "Adaptación del título (máx. 50 caracteres) y del texto (máx. 100 caracteres) al lenguaje real de los clientes"
+   ]
+  },
+  {
+   "inizio": "21:37",
+   "fine": "23:22",
+   "titolo": "Introducción de los textos definitivos en el anuncio",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Copia de los textos elaborados en el formulario del anuncio",
+    "Control del recuento de caracteres (título y descripción)",
+    "Revisión final de los parámetros antes del envío"
+   ]
+  },
+  {
+   "inizio": "23:23",
+   "fine": "26:30",
+   "titolo": "Verificación del negocio, configuración de facturación y conclusión",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Envío del anuncio a revisión",
+    "Completar los datos de la empresa para la verificación del perfil publicitario",
+    "Exploración del panel de facturación, de las claves de API y de las herramientas de conversión"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:43",
+   "dice": "El gestor de anuncios de ChatGPT está disponible para los anunciantes con sede en Europa",
+   "verdetto": "giusta",
+   "perche": "Conforme a la fecha 2026-08-31 del self-service de Ads Manager en Europa para los países que cumplen los requisitos."
+  },
+  {
+   "minuto": "1:45",
+   "dice": "Configura un presupuesto total de campaña de 100 €",
+   "verdetto": "giusta",
+   "perche": "El mapa indica que el mínimo de 15 € es solo para el presupuesto diario en EUR, mientras que no hay un mínimo especificado para el presupuesto total."
+  },
+  {
+   "minuto": "2:01",
+   "dice": "Configura la puja máxima de CPC en 2,60 €",
+   "verdetto": "superata",
+   "perche": "En el momento del vídeo (septiembre de 2026) el Max CPC manual era lo estándar; desde el 2026-11-09 se introduce Target CPC para las campañas de clics y Max CPC se retirará el 2027-01-01."
+  },
+  {
+   "minuto": "3:17",
+   "dice": "Las audiencias personalizadas no son compatibles con campañas dirigidas a ubicaciones del Espacio Económico Europeo o de Suiza",
+   "verdetto": "giusta",
+   "perche": "Conforme a la regla según la cual en el EEE y Suiza las audiencias personalizadas deben evitarse y no hay anuncios personalizados."
+  },
+  {
+   "minuto": "5:11",
+   "dice": "Desactiva la personalización del texto generada automáticamente por la IA",
+   "verdetto": "giusta",
+   "perche": "En el formulario de la campaña se puede desactivar la personalización/creative enhancements; desde el 2026-10-30 están activos por defecto, pero se pueden gestionar en la configuración."
+  },
+  {
+   "minuto": "8:25",
+   "dice": "El título llega a 50 caracteres y la descripción a 100 caracteres",
+   "verdetto": "giusta",
+   "perche": "Conforme a los límites del formato del anuncio (título máx. 50 caracteres, texto máx. 100 caracteres)."
+  },
+  {
+   "minuto": "18:02",
+   "dice": "Cuenta los caracteres con precisión antes de darlos por buenos, para respetar los límites",
+   "verdetto": "giusta",
+   "perche": "Los límites de caracteres del título (50) y del texto (100) son estrictos."
+  },
+  {
+   "minuto": "24:08",
+   "dice": "Las aprobaciones y las actualizaciones de estado de la verificación aparecerán en los próximos días",
+   "verdetto": "giusta",
+   "perche": "La verificación del negocio puede tardar hasta 7 días hábiles."
+  }
+ ],
+ "per_chi_impara": "Muy relevante para quien trabaja desde Italia y en la Unión Europea: muestra claramente la interfaz europea en euros, la prohibición de las custom audiences en el Espacio Económico Europeo, el procedimiento de verificación de la empresa y la configuración con el IVA intracomunitario.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Excelente demostración práctica de principio a fin sobre una cuenta de empresa real europea, con Ads Manager en pantalla. Único defecto: está en español y dedica bastante tiempo a herramientas externas de terminal (Claude Code) para pulir el copywriting, pero el flujo de trabajo general es claro y coherente con la documentación."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Es un excelente caso de estudio práctico para ver Ads Manager funcionando en Europa, pero no está en italiano y parte del tiempo se dedica a prompt engineering avanzado en lugar de solo a la plataforma.",
+ "tappa_migliore": 4,
+ "spezzone_migliore": {
+  "inizio": "1:28",
+  "fine": "8:37"
+ },
+ "video": "O8kO6t_Cvc0",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:15:13+00:00"
+}

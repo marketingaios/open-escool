@@ -1,0 +1,20 @@
+{
+ "nome": "Open Escool",
+ "sottotitolo": "",
+ "logo": "",
+ "colori": {"primario": "#AFF320", "accento": "#7BC91B"},
+ "tema": "scuro",
+ "lingua": "es",
+ "disposizione": {"chat": "destra", "tappe": "sinistra", "densita": "comoda"},
+ "assistente": {"motore": "claude", "modello_claude": "sonnet", "modello_codex": ""},
+ "profilo": {"nome": "", "livello": "principiante", "obiettivo": "", "come_spiegare": "esempi concreti, frasi brevi"},
+ "sottotitoli": {"lingua": "es", "sempre": true},
+ "aggiornamento": {"avviso_dopo_giorni": 30},
+ "buco": {"dubbi_per_segnale": 2},
+ "lezioni": {
+  "motore": "gratuita",
+  "voce": {"python": "", "modello": "auto", "voci": {}, "whisper": "", "soglia": 0.9, "tentativi": 4},
+  "elevenlabs": {"voce": "", "voci": {"it": "", "es": "", "en": ""}, "modello": "eleven_multilingual_v2", "stabilita": 0.5, "somiglianza": 0.75, "stile": 0.0, "velocita": 1.0}
+ },
+ "porta": 8765
+}

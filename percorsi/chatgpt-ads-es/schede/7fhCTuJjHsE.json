@@ -1,0 +1,202 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo explica, desde el punto de vista del usuario final, la llegada de los anuncios publicitarios a ChatGPT. Explica en qué países empezó el despliegue, quién verá la publicidad (usuarios Free y Go mayores de edad), la separación entre respuestas orgánicas y patrocinadas y cómo se protege la privacidad de las conversaciones. Es útil para entender el funcionamiento general de la colocación de los anuncios, pero no trata la creación técnica de las campañas.",
+ "mostra_schermo": false,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:21",
+   "titolo": "Introducción a la llegada de los anuncios a ChatGPT",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "ChatGPT introduce los anuncios publicitarios",
+    "Resumen de los 7 puntos esenciales que hay que conocer"
+   ]
+  },
+  {
+   "inizio": "1:21",
+   "fine": "1:51",
+   "titolo": "Punto 1, dónde están activos los anuncios",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Inicio de las pruebas en EE. UU. y ampliación a otros mercados internacionales",
+    "Ausencia provisional en los países europeos en el momento de la grabación"
+   ]
+  },
+  {
+   "inizio": "1:51",
+   "fine": "2:23",
+   "titolo": "Punto 2, quién ve los anuncios",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Publicidad visible solo para los usuarios adultos de los planes Free y Go",
+    "Exclusión total de los menores de 18 años"
+   ]
+  },
+  {
+   "inizio": "2:23",
+   "fine": "2:40",
+   "titolo": "Punto 3, qué pasa con quien paga",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Las suscripciones Plus, Pro, Business, Enterprise y Edu siguen sin anuncios"
+   ]
+  },
+  {
+   "inizio": "2:40",
+   "fine": "3:14",
+   "titolo": "Punto 4, dónde y cómo aparecen los anuncios",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Anuncios claramente etiquetados y separados de la respuesta generada",
+    "Ningún patrocinio insertado dentro del texto de la respuesta"
+   ]
+  },
+  {
+   "inizio": "3:14",
+   "fine": "4:01",
+   "titolo": "Punto 5, ¿pagar para influir en las respuestas?",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Las empresas no pueden pagar para alterar los consejos de la IA",
+    "Separación técnica clara entre el sistema publicitario y el modelo de lenguaje"
+   ]
+  },
+  {
+   "inizio": "4:01",
+   "fine": "5:13",
+   "titolo": "Punto 6, cómo se elige el anuncio y cómo se gestiona la privacidad",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Los anunciantes no leen los chats ni reciben datos personales",
+    "Segmentación contextual basada en el tema de la conversación",
+    "Informes agregados solo sobre visualizaciones y clics"
+   ]
+  },
+  {
+   "inizio": "5:13",
+   "fine": "5:50",
+   "titolo": "Punto 7, opción sin anuncios y sin pagar",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Hipótesis de elegir entre un plan con anuncios o un plan sin anuncios con un tope reducido de mensajes",
+    "Tres modelos de uso comparados"
+   ]
+  },
+  {
+   "inizio": "5:50",
+   "fine": "7:05",
+   "titolo": "Reflexión final sobre los modelos de monetización",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Costos de mantenimiento de los modelos de IA y sostenibilidad",
+    "Importancia de la transparencia y del etiquetado claro"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "1:27",
+   "dice": "Las pruebas de los anuncios empezaron en Estados Unidos y luego llegaron a otros países",
+   "verdetto": "giusta",
+   "perche": "El mapa confirma en los cambios recientes el inicio de la prueba de anuncios en ChatGPT en EE. UU. el 2026-02-09."
+  },
+  {
+   "minuto": "1:40",
+   "dice": "En España (Europa) por el momento no hay anuncios",
+   "verdetto": "giusta",
+   "perche": "En el momento del vídeo (agosto de 2026) el self-service en Europa todavía no estaba activo; el mapa fija la llegada a Europa el 2026-08-31."
+  },
+  {
+   "minuto": "1:58",
+   "dice": "Los anuncios se muestran solo a los usuarios adultos de los planes Free y Go",
+   "verdetto": "giusta",
+   "perche": "El mapa (etapa 1) indica expresamente que los anuncios solo los ven los usuarios de los planes Free y Go y nunca los menores."
+  },
+  {
+   "minuto": "2:10",
+   "dice": "ChatGPT no mostrará anuncios a menores de 18 años",
+   "verdetto": "giusta",
+   "perche": "El mapa (etapa 1) confirma que los usuarios menores de edad no ven anuncios."
+  },
+  {
+   "minuto": "2:26",
+   "dice": "Los planes de pago como Plus, Pro, Business, Enterprise y Education no tienen publicidad",
+   "verdetto": "giusta",
+   "perche": "El mapa (etapa 1) especifica que Plus, Pro, Business, Enterprise y Edu no ven anuncios."
+  },
+  {
+   "minuto": "2:58",
+   "dice": "Los anuncios están claramente identificados como contenido patrocinado y separados de las respuestas del chat",
+   "verdetto": "giusta",
+   "perche": "El mapa (etapa 1) establece que el anuncio aparece debajo de la respuesta, etiquetado como patrocinado y separado de ella."
+  },
+  {
+   "minuto": "3:34",
+   "dice": "Los anuncios no cambian las respuestas de ChatGPT: pagar un anuncio no altera lo que dice el modelo",
+   "verdetto": "giusta",
+   "perche": "El mapa (etapa 1) indica que los anuncios no cambian las respuestas de ChatGPT porque funcionan en sistemas separados."
+  },
+  {
+   "minuto": "4:16",
+   "dice": "OpenAI no comparte las conversaciones, el historial ni los datos personales con los anunciantes, que solo reciben métricas agregadas como visualizaciones y clics",
+   "verdetto": "giusta",
+   "perche": "El mapa (etapa 1) confirma que el anunciante solo recibe datos agregados (visualizaciones, clics) y nunca las conversaciones."
+  },
+  {
+   "minuto": "4:34",
+   "dice": "ChatGPT usa el contexto de la conversación para elegir qué anuncio mostrar",
+   "verdetto": "giusta",
+   "perche": "El mapa (etapa 1) define que la elección del anuncio se basa en el contexto de la conversación y no en las palabras clave."
+  },
+  {
+   "minuto": "5:32",
+   "dice": "Se podrá usar ChatGPT gratis y sin anuncios aceptando un límite menor de mensajes diarios",
+   "verdetto": "non_verificabile",
+   "perche": "La documentación oficial del mapa explica la gestión de las campañas y la visualización de los anuncios, pero no menciona esta disyuntiva concreta para los usuarios."
+  }
+ ],
+ "per_chi_impara": "Las reglas básicas que expone (quién ve los anuncios, ausencia de anuncios en los planes de pago, protección de los chats y separación entre respuestas y patrocinios) valen plenamente también para Italia. Sin embargo, a un anunciante italiano hay que recordarle que en el Espacio Económico Europeo no se permite la personalización avanzada ni las listas de clientes, y el vídeo no muestra cómo abrir o configurar Ads Manager desde Italia.",
+ "qualita": {
+  "voto": 3,
+  "perche": "Exposición muy clara, excelente gráfica y respeto riguroso de las políticas de privacidad y de etiquetado de los anuncios de OpenAI. La nota es limitada porque se trata de un vídeo divulgativo para usuarios y consumidores, sin ninguna captura práctica de la plataforma Ads Manager ni instrucciones para configurar una campaña."
+ },
+ "consiglio": "scarta",
+ "consiglio_perche": "El vídeo está en español y trata el tema solo desde el punto de vista del usuario final de ChatGPT (noticia, privacidad, ética). Quien aprende necesita una guía práctica de Ads Manager (apertura de la cuenta en Italia, presupuesto en euros, context hints, configuración de anuncios y seguimiento), aspectos que aquí faltan por completo.",
+ "tappa_migliore": 1,
+ "spezzone_migliore": {
+  "inizio": "2:40",
+  "fine": "4:56"
+ },
+ "video": "7fhCTuJjHsE",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:21:07+00:00"
+}

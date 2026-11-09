@@ -1,0 +1,154 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video è una presentazione panoramica e promozionale sui concetti base della pubblicità su ChatGPT Ads. Aleric Heck illustra la differenza tra il targeting per parole chiave (Google) e il targeting per conversazione (Context Hints), oltre ai formati di annuncio e alle fasi di consapevolezza del cliente. Non mostra l'interfaccia reale di Ads Manager, ma serve come introduzione teorica al concetto di pubblicità su intelligenza artificiale.",
+ "mostra_schermo": false,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "01:35",
+   "titolo": "Introduzione a ChatGPT Ads e opportunità per gli inserzionisti",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Paragone con l'ingresso precoce su Google Ads (2008), Facebook Ads (2012) e YouTube Ads (2015).",
+    "Come appare un annuncio sotto la risposta di ChatGPT."
+   ]
+  },
+  {
+   "inizio": "01:36",
+   "fine": "03:09",
+   "titolo": "Formati pubblicitari e pubblico di ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "I tre formati mostrati: Standard Ad, Product Ad e Carousel Ad.",
+    "Gli annunci vengono mostrati agli utenti dei piani Free e Go, ma non a Plus, Pro e Business."
+   ]
+  },
+  {
+   "inizio": "03:10",
+   "fine": "04:43",
+   "titolo": "Costi di partenza e promozione promozionale",
+   "tappe": [
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Spiegazione del budget minimo giornaliero proposto nel video.",
+    "Promozione sul credito pubblicitario gratuito."
+   ]
+  },
+  {
+   "inizio": "04:44",
+   "fine": "06:13",
+   "titolo": "Targeting conversazionale e Context Hints",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Differenza tra Google (keywords), Meta (persone) e ChatGPT (conversazioni).",
+    "Esempi pratici di scrittura dei Context Hints per descrivere l'intenzione dell'utente."
+   ]
+  },
+  {
+   "inizio": "06:14",
+   "fine": "07:31",
+   "titolo": "Fasi del buyer funnel e copywriting del 'Next Step'",
+   "tappe": [
+    4
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Mappatura delle offerte sulle 3 fasi: Awareness, Consideration, Decision.",
+    "Scrivere annunci che sembrino il passo successivo naturale dopo la risposta di ChatGPT.",
+    "Testare più angoli, titoli e descrizioni (fino a 18 annunci)."
+   ]
+  },
+  {
+   "inizio": "07:32",
+   "fine": "09:42",
+   "titolo": "Ottimizzazione per conversioni e sviluppi futuri",
+   "tappe": [
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Scelta degli eventi di conversione (Book a call, Sales, Trial).",
+    "Impostazione dei limiti di costo per conversione.",
+    "Novità in arrivo: Video Ads ed integrazioni CRM."
+   ]
+  },
+  {
+   "inizio": "09:43",
+   "fine": "10:54",
+   "titolo": "Riepilogo e risorse esterne",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Le 3 chiavi per il successo con ChatGPT Ads.",
+    "Invito all'azione e promozione del workshop a pagamento dell'autore."
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "02:03",
+   "dice": "Gli annunci vengono visti dagli utenti dei piani Free e Go, ma non dai clienti Plus, Pro e Business.",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 1: gli annunci compaiono solo per i piani Free e Go, mentre i piani a pagamento Plus, Pro, Business, Enterprise ed Edu ne sono esenti."
+  },
+  {
+   "minuto": "02:24",
+   "dice": "Solo il 5,6% degli utenti di ChatGPT paga un abbonamento, quindi il 94,4% del pubblico vede i tuoi annunci.",
+   "verdetto": "non_verificabile",
+   "perche": "L'ambiente della piattaforma è in beta e OpenAI non pubblica stime ufficiali sulla percentuale esatta di utenti abbonati convertiti in pubblico pubblicitario."
+  },
+  {
+   "minuto": "03:15",
+   "dice": "Il budget giornaliero minimo per iniziare è di 25 $ al giorno.",
+   "verdetto": "sbagliata",
+   "perche": "Come indicato nella Tappa 5, per chi fattura in EUR il budget giornaliero minimo è di 15 € (non 25 $)."
+  },
+  {
+   "minuto": "05:14",
+   "dice": "ChatGPT Ads non usa parole chiave come Google Ads, ma i Context Hints per targettizzare il contesto della conversazione.",
+   "verdetto": "giusta",
+   "perche": "Confermato dalle Tappe 1 e 3: la selezione degli annunci usa il contesto della conversazione e i context hints forniti dall'inserzionista, non le parole chiave tradizionali."
+  },
+  {
+   "minuto": "07:58",
+   "dice": "Puoi impostare un Cost Cap massimo per conversione (es. 50 $).",
+   "verdetto": "superata",
+   "perche": "Dal 09/11/2026 la strategia per le campagne di conversione è stata aggiornata con 'Target CPA' (Intelligent Bidding), che opera su medie target anziché su un cap rigido (Tappa 5)."
+  },
+  {
+   "minuto": "08:16",
+   "dice": "Puoi semplicemente chiedere a ChatGPT di creare la campagna incollando la tua landing page.",
+   "verdetto": "sbagliata",
+   "perche": "Come indicato nella Tappa 4, la creazione delle campagne e l'impostazione degli attributi avvengono dentro l'interfaccia Ads Manager; le bozze suggerite usano i dati del sito ma non creano automaticamente l'intera campagna da una chat."
+  }
+ ],
+ "per_chi_impara": "Per chi opera dall'Italia (Unione Europea), occorre fare attenzione ai riferimenti monetari del video (tutti in dollari USA): il budget minimo reale in euro è 15 €/giorno. Inoltre, nell'Area Economica Europea (SEE) e in Svizzera non sono consentiti annunci personalizzati tramite liste clienti (pubblici personalizzati).",
+ "qualita": {
+  "voto": 2,
+  "perche": "Il video è una presentazione teorica/promozionale per vendere corsi esterni. Non mostra mai la vera schermata di OpenAI Ads Manager, usa cifre in dollari non valide per l'Italia ed è in lingua inglese."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Utile solo come introduzione concettuale sul funzionamento del targeting conversazionale (Context Hints) e sulla logica del 'Next Step', ma inadatto per imparare a creare operativamente una campagna su Ads Manager.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "05:14",
+  "fine": "06:04"
+ },
+ "video": "bsYCDnabiCs",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T09:11:42+00:00"
+}

@@ -1,0 +1,118 @@
+{
+ "lingua_parlata": "it",
+ "riassunto": "La seconda parte della lezione sintetizza il flusso pratico di creazione della prima campagna in Ads Manager, soffermandosi su creatività, parametri URL, pixel e tracciamento eventi. Prosegue delineando le best practice di copy e landing page raccomandate da OpenAI per la piattaforma. Chiude con un riepilogo in 5 punti chiave sullo stato dell'advertising in ChatGPT in Italia e sulle strategie per iniziare.",
+ "mostra_ads_manager": false,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "2:35",
+   "titolo": "Passaggi chiave per creare la prima campagna",
+   "tappe": [
+    4,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Composizione annuncio: URL, titolo (max 50 car.), testo (max 100 car.), immagine 1:1",
+    "Parametri query e UTM dinamici per tracciare il traffico su CRM e Analytics",
+    "Pixel di tracciamento OpenAI tramite codice base HTML o Google Tag Manager",
+    "Evento di conversione specifico per misurare le azioni reali sul sito"
+   ]
+  },
+  {
+   "inizio": "2:35",
+   "fine": "4:09",
+   "titolo": "Best practice per le creatività dell'annuncio",
+   "tappe": [
+    4
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Titolo conciso e focalizzato sul valore, evitando claim generici",
+    "Testo descrittivo orientato a benefici concreti e casi d'uso",
+    "Landing page coerente con l'offerta specifica e non generica",
+    "Test di varianti multiple di copy e angolazioni diverse"
+   ]
+  },
+  {
+   "inizio": "4:09",
+   "fine": "6:03",
+   "titolo": "Sintesi: 5 cose da portare a casa",
+   "tappe": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Intercettare l'intento dell'utente e non singole keyword",
+    "Self-service attivo in Italia con annunci per utenti Free e Go",
+    "Assenza di personalizzazione in Europa: centralità del contesto e della creatività",
+    "Approccio graduale a test con budget controllati",
+    "Accesso diretto immediato senza intermediari tecnici"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:29",
+   "dice": "Titolo con limite di 50 caratteri e descrizione fino a 100 caratteri",
+   "verdetto": "giusta",
+   "perche": "Conforme alla documentazione di OpenAI Ads: titolo massimo 50 caratteri (consigliati 16-24) e testo massimo 100 caratteri (consigliati 32-48)."
+  },
+  {
+   "minuto": "0:45",
+   "dice": "Serve un'immagine idealmente quadrata di almeno 256x256 pixel",
+   "verdetto": "giusta",
+   "perche": "Come indicato nelle specifiche creative, l'immagine richiesta per il formato standard è quadrata (rapporto 1:1, max 1200x1200)."
+  },
+  {
+   "minuto": "1:13",
+   "dice": "Puoi aggiungere segnaposto compilati automaticamente per campagna e annuncio",
+   "verdetto": "giusta",
+   "perche": "La piattaforma supporta parametri dinamici ({campaign_id}, {ad_id}, ecc.) nell'URL di destinazione per tracciare le sorgenti di traffico."
+  },
+  {
+   "minuto": "1:32",
+   "dice": "Ads Manager genera un id Pixel univoco e uno script di configurazione da installare nell'HTML del sito",
+   "verdetto": "giusta",
+   "perche": "Corrisponde alla configurazione del Pixel di OpenAI per tracciare visite ed eventi tramite codice base o GTM."
+  },
+  {
+   "minuto": "1:55",
+   "dice": "Si definisce un evento specifico da misurare con una seconda chiamata nel punto in cui avviene la conversione",
+   "verdetto": "giusta",
+   "perche": "Allineato con il concetto di tracciamento eventi standard/personalizzati via script o Tag Manager post-conversione."
+  },
+  {
+   "minuto": "4:30",
+   "dice": "Gli annunci sono visibili agli utenti dal 24 agosto e dal 31 agosto il self-service è attivo in Italia",
+   "verdetto": "giusta",
+   "perche": "Riflette la cronologia nota del roll-out in Europa (31 agosto 2026 per la disponibilità self-service da chatgpt_ads.md)."
+  },
+  {
+   "minuto": "4:41",
+   "dice": "La personalizzazione è disattivata in Europa: la pertinenza si basa sul contesto della conversazione e sulla creatività",
+   "verdetto": "giusta",
+   "perche": "Conforme alle regole per lo Spazio Economico Europeo e Svizzera, dove i segmenti di pubblico personalizzati sono disattivati e vale solo il contesto conversazionale."
+  }
+ ],
+ "per_italia": "Viene ribadito con precisione che nello Spazio Economico Europeo (Italia compresa) la personalizzazione degli annunci e i pubblici personalizzati sono disabilitati per motivi normativi; l'asta e l'erogazione si basano interamente sul contesto della conversazione in corso e sui context hints/creatività. Viene inoltre confermata l'apertura self-service per le aziende italiane.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Ottima esposizione didattica, chiara e ordinata. Fornisce indicazioni concrete su copy, formati grafici, pixel e logica di tracciamento. Manca soltanto la condivisione dello schermo dell'interfaccia reale di Ads Manager, sostituita da slide concettuali."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Costituisce una guida sintetica, corretta e immediatamente fruibile per un inserzionista italiano alle prime armi, spiegando sia i requisiti operativi dell'annuncio sia i vincoli normativi specifici dell'UE.",
+ "tappa_migliore": 4,
+ "spezzone_migliore": {
+  "inizio": "2:35",
+  "fine": "4:09"
+ },
+ "video": "dWeuheOW5_w",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-06T03:08:46+00:00"
+}

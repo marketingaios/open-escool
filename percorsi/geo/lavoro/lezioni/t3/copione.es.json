@@ -1,0 +1,361 @@
+{
+ "tappa": 3,
+ "lingua": "es",
+ "titolo": "Mide tu visibilidad en la IA y arma tu plan GEO",
+ "percorso": "GEO: que la IA encuentre y cite tu web",
+ "controllata": "2026-11-08",
+ "passi": [
+  "Search Console",
+  "Incluir o excluir",
+  "Analytics",
+  "Prueba manual",
+  "Tu plan"
+ ],
+ "pronuncia": {
+  "ChatGPT": "Chat GPT",
+  "chatgpt.com": "chat GPT punto com",
+  "perplexity.ai": "perplexity punto a i",
+  "robots.txt": "robots punto te equis te",
+  "Google-Extended": "Google Extended"
+ },
+ "scene": [
+  {
+   "id": "apertura",
+   "passo": 0,
+   "tipo": "apertura",
+   "fonti": [],
+   "voce": "{{titolo}}En esta lección vemos cómo medir si los buscadores con IA muestran y citan tu web, y cómo convertir esa medida en un plan. {{fonti}}Todo viene de las páginas de ayuda de Google, OpenAI y Perplexity, y de tres estudios, leídos el ocho de noviembre de dos mil veintiséis.",
+   "schermo": {
+    "sopra": "Etapa 3 · GEO",
+    "titolo": "Mide tu visibilidad",
+    "sotto": "en la IA, y arma tu plan GEO",
+    "fonti": "Fuentes: Google, OpenAI, Perplexity y 3 estudios · leídas el 8/11/2026"
+   }
+  },
+  {
+   "id": "llegada",
+   "passo": 0,
+   "tipo": "tempo",
+   "fonti": [
+    "blog-google-products-and-platforms-products-search-new-controls-website-owners.md",
+    "developers-google-com-search-blog-2026-06-gen-ai-performance-reports.md",
+    "support-google-com-webmasters-answer-16984139.md"
+   ],
+   "voce": "Primero, una fecha. {{junio}}El tres de junio de dos mil veintiséis, Google presentó en Search Console un informe de rendimiento de IA generativa, y un control para incluir o excluir tu web. Empezó en prueba, con una parte de las webs, primero en el Reino Unido. {{agosto}}Desde el treinta y uno de agosto está para todas las webs del mundo. {{viejo}}Así que, si un vídeo te dice que Search Console no separa la IA, está hablando de antes de junio.",
+   "schermo": {
+    "titolo": "Un informe nuevo",
+    "eventi": [
+     {
+      "cue": "junio",
+      "data": "3/6/2026",
+      "testo": "Informe de IA generativa y control de inclusión, en prueba"
+     },
+     {
+      "cue": "agosto",
+      "data": "31/8/2026",
+      "testo": "Para todas las webs del mundo",
+      "oggi": true
+     }
+    ],
+    "nota": {
+     "cue": "viejo",
+     "testo": "«Search Console no separa la IA»: dato de antes de junio de 2026",
+     "avviso": true
+    }
+   }
+  },
+  {
+   "id": "informe",
+   "passo": 0,
+   "tipo": "punti",
+   "fonti": [
+    "support-google-com-webmasters-answer-16984139.md",
+    "developers-google-com-search-blog-2026-06-gen-ai-performance-reports.md"
+   ],
+   "voce": "¿Qué te da el informe? {{impresiones}}Impresiones: cuántas veces se mostraron enlaces a tu web en AI Overviews y en AI Mode. {{paginas}}Las puedes ver por páginas, para saber qué URL salen más y cuáles menos; {{paises}}por países, según desde dónde se hizo la búsqueda, y así separas España de cada país de Latinoamérica; {{dispositivos}}y por dispositivo: ordenador, tableta o móvil. Esas impresiones siguen contando también en el informe de rendimiento general, y Google dice que añadirá más métricas con el tiempo.",
+   "schermo": {
+    "titolo": "Qué mide el informe",
+    "righe": [
+     {
+      "cue": "impresiones",
+      "testo": "Impresiones: tus enlaces en AI Overviews y AI Mode",
+      "icona": "info"
+     },
+     {
+      "cue": "paginas",
+      "testo": "Por páginas: qué URL salen más y cuáles menos",
+      "icona": "documento"
+     },
+     {
+      "cue": "paises",
+      "testo": "Por países: desde dónde se buscó",
+      "icona": "info"
+     },
+     {
+      "cue": "dispositivos",
+      "testo": "Por dispositivo: ordenador, tableta o móvil",
+      "icona": "info"
+     }
+    ]
+   }
+  },
+  {
+   "id": "leer",
+   "passo": 0,
+   "tipo": "punti",
+   "fonti": [
+    "support-google-com-webmasters-answer-16984139.md"
+   ],
+   "voce": "Cuatro detalles para leerlo bien. {{nosale}}Si no ves el informe, lo normal es que tu web todavía no tenga suficientes impresiones en la IA de Google. {{excluida}}O que esté excluida con el control, que vemos ahora. {{puntos}}En el gráfico, la línea de puntos son datos preliminares: pueden cambiar en las horas siguientes. {{pacifico}}Y las fechas van en la hora del Pacífico, no en la tuya.",
+   "schermo": {
+    "titolo": "Para leerlo bien",
+    "righe": [
+     {
+      "cue": "nosale",
+      "testo": "¿No ves el informe? Aún pocas impresiones en la IA",
+      "icona": "info"
+     },
+     {
+      "cue": "excluida",
+      "testo": "… o tu web está excluida: revisa el control",
+      "icona": "avviso"
+     },
+     {
+      "cue": "puntos",
+      "testo": "Línea de puntos = datos preliminares",
+      "icona": "info"
+     },
+     {
+      "cue": "pacifico",
+      "testo": "Fechas en hora del Pacífico (PT)",
+      "icona": "info"
+     }
+    ]
+   }
+  },
+  {
+   "id": "control",
+   "passo": 1,
+   "tipo": "confronto",
+   "fonti": [
+    "support-google-com-webmasters-answer-16908024.md",
+    "blog-google-products-and-platforms-products-search-new-controls-website-owners.md"
+   ],
+   "voce": "El control está en los ajustes de cada propiedad de Search Console. {{incluida}}Con la web incluida, tus enlaces y tu contenido pueden salir en AI Overviews, en AI Mode y en los resúmenes con IA de Discover, y servir de base a sus respuestas. {{excluida}}Si la excluyes, no recibes ni tráfico ni impresiones de esas funciones. El resto de la búsqueda no cambia: según Google, este control no es una señal de ranking. {{entreno}}Y ojo: excluir no frena el entrenamiento de los modelos. Para eso está Google-Extended, que viste en la etapa dos.",
+   "schermo": {
+    "titolo": "¿Incluir o excluir tu web?",
+    "colonne": [
+     {
+      "cue": "incluida",
+      "nome": "Incluida",
+      "righe": [
+       "Puede salir en AI Overviews, AI Mode y la IA de Discover",
+       "Tu contenido puede servir de base"
+      ]
+     },
+     {
+      "cue": "excluida",
+      "nome": "Excluida",
+      "righe": [
+       "Sin tráfico ni impresiones de esas funciones",
+       "El resto de la búsqueda no cambia"
+      ]
+     }
+    ],
+    "nota": {
+     "cue": "entreno",
+     "testo": "Excluir no frena el entrenamiento: eso es Google-Extended",
+     "avviso": true
+    }
+   }
+  },
+  {
+   "id": "tiempos",
+   "passo": 1,
+   "tipo": "punti",
+   "fonti": [
+    "support-google-com-webmasters-answer-16908024.md",
+    "developers-openai-com-docs-gptbot.md",
+    "docs-perplexity-ai-docs-resources-perplexity-crawlers.md"
+   ],
+   "voce": "Si cambias algo, no midas al día siguiente. {{google}}En Google, el control tarda uno o dos días en aplicarse, y parte del contenido algo más, por las cachés. {{chatgpt}}En ChatGPT, después de cambiar tu robots.txt, sus sistemas tardan unas veinticuatro horas en ajustarse. {{perplexity}}En Perplexity, hasta veinticuatro horas. {{hereda}}Y antes de tocar nada, mira qué valor tiene tu propiedad: por defecto hereda el ajuste de su propiedad padre, normalmente el dominio.",
+   "schermo": {
+    "titolo": "Los cambios tardan",
+    "righe": [
+     {
+      "cue": "google",
+      "testo": "Google, control de IA: 1-2 días, a veces más",
+      "icona": "info"
+     },
+     {
+      "cue": "chatgpt",
+      "testo": "ChatGPT, tras cambiar robots.txt: ~24 h",
+      "icona": "info"
+     },
+     {
+      "cue": "perplexity",
+      "testo": "Perplexity, tras cambiar robots.txt: hasta 24 h",
+      "icona": "info"
+     },
+     {
+      "cue": "hereda",
+      "testo": "Tu propiedad hereda el ajuste de su propiedad padre",
+      "icona": "avviso"
+     }
+    ]
+   }
+  },
+  {
+   "id": "clics",
+   "passo": 2,
+   "tipo": "confronto",
+   "fonti": [
+    "developers-google-com-search-docs-appearance-ai-features.md",
+    "2-google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results.md"
+   ],
+   "voce": "Search Console te da impresiones. Para lo que pasa después, Google propone medir las conversiones y el tiempo en la web con herramientas como Google Analytics. {{google}}Google dice que los clics que llegan desde páginas con AI Overviews son de más calidad: la gente pasa más tiempo en la web. No da cifras. {{pew}}El Pew Research Center, en Estados Unidos y en marzo de dos mil veinticinco, midió otra cosa: con resumen de IA, se hizo clic en un resultado en el ocho por ciento de las visitas; sin resumen, en el quince. En los enlaces del propio resumen, solo en el uno por ciento. {{tuyos}}Lo que vale para tu web te lo dicen tus datos.",
+   "schermo": {
+    "titolo": "Después de la impresión",
+    "colonne": [
+     {
+      "cue": "google",
+      "nome": "Google",
+      "righe": [
+       "Clics «de más calidad»: más tiempo en la web",
+       "Sin cifras"
+      ]
+     },
+     {
+      "cue": "pew",
+      "nome": "Pew · EE. UU. 2025",
+      "righe": [
+       "Clic en un resultado: 8 % con resumen, 15 % sin",
+       "En los enlaces del resumen: 1 %"
+      ]
+     }
+    ],
+    "nota": {
+     "cue": "tuyos",
+     "testo": "Conversiones y tiempo en la web: en tu Analytics"
+    }
+   }
+  },
+  {
+   "id": "otras",
+   "passo": 2,
+   "tipo": "punti",
+   "consiglio": true,
+   "fonti": [
+    "help-openai-com-en-articles-9237897-chatgpt-search.md",
+    "docs-perplexity-ai-docs-resources-perplexity-crawlers.md",
+    "www-perplexity-ai-help-center-en-articles-10352895-how-does-perplexity-work.md"
+   ],
+   "voce": "{{nada}}Para ChatGPT y Perplexity, ninguna de las páginas oficiales que leímos ofrece un informe para webs como el de Search Console. {{referencia}}Nuestro consejo: en Analytics, mira las visitas y las conversiones que llegan desde chatgpt.com y desde perplexity.ai. {{aviso}}Antes de fiarte de esas cifras, lee en la ruta el aviso sobre la etiqueta de ChatGPT. {{mano}}Y lo que no deja visita, como una mención sin clic, solo lo ves preguntando tú.",
+   "schermo": {
+    "titolo": "ChatGPT y Perplexity",
+    "righe": [
+     {
+      "cue": "nada",
+      "testo": "Sin informe oficial para webs (en las páginas leídas)",
+      "icona": "info"
+     },
+     {
+      "cue": "referencia",
+      "testo": "Analytics: visitas desde chatgpt.com y perplexity.ai",
+      "icona": "spunta"
+     },
+     {
+      "cue": "aviso",
+      "testo": "Lee el aviso de la ruta sobre la etiqueta de ChatGPT",
+      "icona": "avviso"
+     },
+     {
+      "cue": "mano",
+      "testo": "Menciones sin clic: solo con la prueba manual",
+      "icona": "info"
+     }
+    ]
+   }
+  },
+  {
+   "id": "prueba",
+   "passo": 3,
+   "tipo": "tabella",
+   "consiglio": true,
+   "fonti": [
+    "2-google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results.md",
+    "arxiv-org-html-2509-08919v1.md",
+    "help-openai-com-en-articles-9237897-chatgpt-search.md"
+   ],
+   "voce": "Así que haz una prueba manual. {{preguntas}}Escribe preguntas reales de tus clientes, en forma de pregunta: en el estudio de Pew, el sesenta por ciento de las búsquedas que empezaban por quién, qué, cuándo o por qué sacaban un resumen de IA. {{motores}}Hazlas en la IA de Google, en ChatGPT y en Perplexity, en español y de varias formas: un estudio de dos mil veinticinco ve que estos buscadores se diferencian mucho entre sí, también según el idioma y según cómo se formula la pregunta. {{anota}}Y anota si te citan, a quién citan y qué dicen de ti, porque, como avisa OpenAI, las citas pueden estar incompletas, viejas o mal.",
+   "schermo": {
+    "titolo": "Tu prueba manual",
+    "intestazione": [
+     "Paso",
+     "Qué haces",
+     "Por qué"
+    ],
+    "righe": [
+     {
+      "cue": "preguntas",
+      "celle": [
+       "Preguntas",
+       "De tus clientes, en forma de pregunta",
+       "Pew: 60 % sacan resumen de IA"
+      ]
+     },
+     {
+      "cue": "motores",
+      "celle": [
+       "Buscadores",
+       "Google, ChatGPT, Perplexity · en español",
+       "Difieren por idioma y por frase"
+      ]
+     },
+     {
+      "cue": "anota",
+      "celle": [
+       "Anota",
+       "¿Te citan? ¿A quién? ¿Qué dicen?",
+       "Las citas pueden estar mal"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "plan",
+   "passo": 4,
+   "tipo": "riepilogo",
+   "consiglio": true,
+   "fonti": [
+    "arxiv-org-html-2311-09735v3.md",
+    "developers-google-com-search-docs-appearance-ai-features.md",
+    "support-google-com-webmasters-answer-16984139.md"
+   ],
+   "voce": "Con todo esto, nuestro consejo para tu plan GEO. {{base}}Primero, la foto de partida: el informe de IA, Analytics y tu prueba manual, en la misma semana. {{pocas}}Después, elige pocas páginas y pocas preguntas: las que más valen para tu negocio. {{accion}}Para cada una, una acción de las etapas anteriores, con su métrica: rastreo, contenido propio o presencia en otras webs. {{repite}}Y repite la medida con las mismas preguntas, sin prisa: volver a rastrear una página puede llevar de varios días a varios meses. El estudio GEO lo deja claro: lo que funciona cambia según el sector. Tu plan se prueba y se ajusta a tu tema. Con esto cierras la ruta: diagnóstico, web revisada y plan.",
+   "schermo": {
+    "titolo": "Tu plan GEO",
+    "righe": [
+     {
+      "cue": "base",
+      "testo": "Foto de partida: informe de IA, Analytics y prueba manual"
+     },
+     {
+      "cue": "pocas",
+      "testo": "Pocas páginas y preguntas: las que más valen"
+     },
+     {
+      "cue": "accion",
+      "testo": "Una acción por página, con su métrica"
+     },
+     {
+      "cue": "repite",
+      "testo": "Repite con las mismas preguntas, sin prisa"
+     }
+    ],
+    "sotto": "Lo que funciona cambia según el sector (estudio GEO)"
+   }
+  }
+ ]
+}

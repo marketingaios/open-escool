@@ -1,0 +1,215 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video presenta un'introduzione all'advertising su ChatGPT Ads, spiegando come funzionano gli annunci sotto le risposte e il cambio di paradigma rispetto a Google Ads (descrivere persone e contesti anziché comprare parole chiave). Spiega la struttura in quattro mosse per creare il primo annuncio (Customer Sketch con Context Hint, scrittura dell'annuncio, budget e metriche di redditività). È un webinar introduttivo pensato per imprenditori e marketer che vogliono capire le basi strategiche della piattaforma, sebbene mostri la landing page promozionale invece dell'interfaccia operativa di Ads Manager.",
+ "mostra_schermo": false,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:50",
+   "titolo": "Introduzione e contesto",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentazione del webinar e collegamento",
+    "Obiettivo: capire ChatGPT Ads e il marketing con AI"
+   ]
+  },
+  {
+   "inizio": "0:50",
+   "fine": "5:41",
+   "titolo": "Come funzionano i ChatGPT Ads e disponibilità",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Oltre 1.2 miliardi di utenti a settimana",
+    "L'annuncio compare sotto la risposta generata da ChatGPT",
+    "Espansione recente da 9 a 63 e poi 89 paesi",
+    "Risolvere problemi d'intento in tempo reale"
+   ]
+  },
+  {
+   "inizio": "5:41",
+   "fine": "10:05",
+   "titolo": "Differenza tra Google Ads e ChatGPT Ads",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Google si basa su parole chiave e asta al rialzo",
+    "ChatGPT si basa sulla descrizione della persona e del contesto",
+    "L'asta considera la pertinenza oltre all'offerta economica"
+   ]
+  },
+  {
+   "inizio": "10:05",
+   "fine": "13:38",
+   "titolo": "Risultati dei primi inserzionisti e requisiti",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Dati dei primi inserzionisti su traffico nuovo e costi",
+    "Cronologia del roll-out internazionale",
+    "Cosa serve per iniziare: paese supportato, carta, landing page mobile e impostazioni iniziali"
+   ]
+  },
+  {
+   "inizio": "13:38",
+   "fine": "17:59",
+   "titolo": "Le 4 mosse per il primo annuncio: Step 1 (Describe)",
+   "tappe": [
+    3,
+    4
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Panoramica dei 4 passaggi: Describe, Write, Set, Judge",
+    "Costruzione del Customer Sketch e del Context Hint Template",
+    "Definire ruolo, momento/trigger, problema con parole loro e chi escludere"
+   ]
+  },
+  {
+   "inizio": "17:59",
+   "fine": "19:07",
+   "titolo": "Step 2 e 3: Scrittura, Budget e Pubblicazione",
+   "tappe": [
+    4,
+    5,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Specifiche dell'annuncio: titolo (max 50 car.), descrizione (max 100 car.), immagine quadrata",
+    "Impostazione di budget (es. 25 $/giorno min USA / 15 €) e offerta (bid iniziale 3-5 $)",
+    "Processo di pubblicazione: verifica fino a 7 giorni, ritardi nelle metriche di spesa e risultati"
+   ]
+  },
+  {
+   "inizio": "19:07",
+   "fine": "20:57",
+   "titolo": "Creative enhancements e calcolo del costo sostenibile (Judge)",
+   "tappe": [
+    4,
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Funzione di riscrittura automatica (Creative enhancements) attiva di default",
+    "Formula per calcolare il CPC massimo sostenibile",
+    "Importanza della landing page nella conversione"
+   ]
+  },
+  {
+   "inizio": "20:57",
+   "fine": "24:34",
+   "titolo": "Community promozionale e Q&A",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentazione del gruppo e della risorsa PDF di sintesi",
+    "Conclusione della diretta"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "1:15",
+   "dice": "1.2 billion people use ChatGPT every week",
+   "verdetto": "non_verificabile",
+   "perche": "La mappa non riporta statistiche globali aggregate sul numero totale di utenti settimanali di ChatGPT."
+  },
+  {
+   "minuto": "1:52",
+   "dice": "The ad on ChatGPT shows below the answer",
+   "verdetto": "giusta",
+   "perche": "La mappa al punto 1 di Tappa 1 conferma: «L'annuncio compare sotto la risposta, etichettato come sponsorizzato e separato dalla risposta»."
+  },
+  {
+   "minuto": "5:16",
+   "dice": "ChatGPT yesterday opened ads in 89 countries",
+   "verdetto": "non_verificabile",
+   "perche": "La mappa non tiene traccia dell'espansione a 89 paesi, ma solo che oggi l'Italia è «Available»."
+  },
+  {
+   "minuto": "8:03",
+   "dice": "On Google you buy words/keywords, on ChatGPT you describe people/context hints",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma in Tappa 1 e Tappa 3 che la scelta dell'annuncio usa il contesto e context hints descrittivi, non parole chiave."
+  },
+  {
+   "minuto": "10:37",
+   "dice": "Early results: 93% of visitors were new, 15.3% lower cost per customer than paid search, 51% lower cost per trial than another ad channel",
+   "verdetto": "non_verificabile",
+   "perche": "La mappa segnala in Tappa 1 che OpenAI dichiara che non ci sono ancora parametri di riferimento sui risultati."
+  },
+  {
+   "minuto": "13:34",
+   "dice": "Country, currency and time zone can't be changed later",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma negli avvisi e in Tappa 2: «Paese, valuta e fuso orario non si cambiano dopo la creazione dell'account»."
+  },
+  {
+   "minuto": "18:01",
+   "dice": "Headline up to 50 characters, Description up to 100 characters, Image square",
+   "verdetto": "giusta",
+   "perche": "La mappa in Tappa 4 conferma: Titolo massimo 50 caratteri, Testo massimo 100 caratteri, Immagine quadrata."
+  },
+  {
+   "minuto": "18:27",
+   "dice": "Budget: $25 a day minimum (R$45, €15 or £15 in local currency)",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma negli avvisi e in Tappa 5: «con fatturazione in EUR il budget giornaliero minimo è 15 €» (lo slide mostra 25 $ e 15 €)."
+  },
+  {
+   "minuto": "18:41",
+   "dice": "Bid: start at $3 to $5 a click, OpenAI's starting point, not an average price",
+   "verdetto": "superata",
+   "perche": "La mappa in Tappa 5 indica che l'offerta massima di 3-5 $ a clic vale per il Max CPC, ritirato e sostituito da Target CPC/Target CPA dal 9/11/2026."
+  },
+  {
+   "minuto": "18:53",
+   "dice": "Verification takes up to 7 business days, spend catches up in 8 hours, results arrive in 48 hours",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma: verifica attività fino a 7 giorni lavorativi (Tappa 2), spesa con ritardo di 7-8 ore e conversioni visibili dopo 24-48 ore (Tappa 6)."
+  },
+  {
+   "minuto": "18:58",
+   "dice": "Ads can keep showing for up to 24 hours after pausing",
+   "verdetto": "giusta",
+   "perche": "La mappa in Tappa 6 conferma: «Dopo la pausa gli annunci possono ancora comparire fino a 24 ore, e quella spesa si paga»."
+  },
+  {
+   "minuto": "19:07",
+   "dice": "Creative enhancements turn on by default before October 29/30: headlines, descriptions, images and links can change without approving each version",
+   "verdetto": "giusta",
+   "perche": "La mappa nei cambi recenti conferma che dal 30/10/2026 (chatgpt_ads.md dice 29/10) i creative enhancements sono attivi di base e modificano testi, immagini, link e traduzioni senza approvazione."
+  }
+ ],
+ "per_chi_impara": "Molto rilevante per comprendere la logica di targeting tramite context hints e la struttura copy/visual dell'annuncio. Per l'Italia (SEE) bisogna tenere a mente che il budget minimo è 15 € (come indicato tra parentesi nelle slide), che non sono disponibili le liste clienti/pubblici personalizzati per via delle norme sulla privacy, e che la riscrittura automatica/traduzione dei Creative Enhancements va valutata con attenzione per annunci scritti in lingua italiana.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Ottima spiegazione concettuale della differenza tra search advertising classico e ChatGPT Ads. Ritmo chiaro ed eccellente sintesi della logica dei Context Hints. Non riceve il massimo punteggio solo perché non effettua una vera demo dentro la dashboard operativa di Ads Manager ma si appoggia a slide e alla pagina promozionale di OpenAI."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Ideale come introduzione concettuale e per capire come impostare i context hints e il copywriting per ChatGPT Ads prima di passare a un tutorial pratico che mostri la configurazione passo-passo dentro Ads Manager.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "14:55",
+  "fine": "17:55"
+ },
+ "video": "14QXEYT-wSE",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:42:49+00:00"
+}

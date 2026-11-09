@@ -1,0 +1,203 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video mostra una prima esplorazione pratica dell'interfaccia di ChatGPT Ads Manager durante la fase beta self-service di maggio 2026. L'autore illustra la configurazione completa di una campagna: selezione degli obiettivi, aree geografiche disponibili, impostazione dell'offerta CPC, scrittura dei context hints e creazione dell'annuncio (titolo, testo, immagine). È utile per chi parte da zero e vuole vedere il flusso reale di creazione all'interno della piattaforma, pur tenendo conto che diverse funzioni si sono evolute successivamente.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:12",
+   "titolo": "Introduzione e contesto di ChatGPT Ads Manager",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Lancio iniziale di ChatGPT Ads Manager in beta",
+    "Assenza di benchmark e best practice consolidate",
+    "Evoluzione rapida attesa nei mesi successivi"
+   ]
+  },
+  {
+   "inizio": "1:12",
+   "fine": "3:45",
+   "titolo": "Struttura generale e differenze con altre piattaforme",
+   "tappe": [
+    2,
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Struttura semplificata a tre livelli (campagna, gruppo annunci, annuncio)",
+    "Assenza di account manager agenzia multi-cliente",
+    "Fatturazione con carta di credito e assenza di fatturazione mensile"
+   ]
+  },
+  {
+   "inizio": "3:45",
+   "fine": "4:06",
+   "titolo": "Menu strumenti: cronologia e tracciamento conversioni",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Sezione Data Sources per la creazione del Pixel",
+    "Mappatura degli eventi di conversione"
+   ]
+  },
+  {
+   "inizio": "4:06",
+   "fine": "5:16",
+   "titolo": "Creazione campagna: obiettivi e geolocalizzazione",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta del nome campagna",
+    "Obiettivi disponibili a maggio 2026 (Clicks e Reach)",
+    "Paesi supportati all'epoca (USA, Canada, Australia, Nuova Zelanda)"
+   ]
+  },
+  {
+   "inizio": "5:16",
+   "fine": "6:37",
+   "titolo": "Gruppo di annunci e offerta Max CPC",
+   "tappe": [
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Impostazione del Maximum CPC bid",
+    "Soglia minima consigliata dalla piattaforma di 3 $",
+    "Indicatore di stima di erogazione (May not deliver vs Strong delivery)"
+   ]
+  },
+  {
+   "inizio": "6:37",
+   "fine": "9:15",
+   "titolo": "Targeting tramite context hints",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "I context hints come descrizioni di pertinenza contestuale e non parole chiave",
+    "Formulazione in linguaggio naturale per intercettare intenti specifici",
+    "Necessità di testare formulazioni ampie vs specifiche"
+   ]
+  },
+  {
+   "inizio": "9:15",
+   "fine": "10:10",
+   "titolo": "Creazione dell'annuncio: testo, limiti e immagine",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Titolo fino a 50 caratteri con troncamento consigliato oltre i 24",
+    "Descrizione fino a 100 caratteri con troncamento oltre i 48",
+    "Immagine quadrata"
+   ]
+  },
+  {
+   "inizio": "10:10",
+   "fine": "11:36",
+   "titolo": "Approvazione, ritardi nei report e tracciamento UTM",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Approvazione rapida ma ritardo nella comparsa dei dati",
+    "Importanza fondamentale dei parametri UTM per verificare il traffico"
+   ]
+  },
+  {
+   "inizio": "11:36",
+   "fine": "13:26",
+   "titolo": "Conclusioni e raccomandazioni",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Confronto tra la semplicità attuale di ChatGPT Ads e piattaforme mature come Meta",
+    "Per chi ha senso investire nella fase beta"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "4:23",
+   "dice": "Al momento ci sono solo gli obiettivi Reach o Clicks, mentre le conversioni arriveranno in futuro",
+   "verdetto": "superata",
+   "perche": "Come indicato nella tappa 3 della mappa, gli obiettivi disponibili sono Views, Clicks e Conversions (quest'ultimo introdotto successivamente alla registrazione del video)"
+  },
+  {
+   "minuto": "4:40",
+   "dice": "La piattaforma non supporta l'esclusione di specifiche località geografiche",
+   "verdetto": "giusta",
+   "perche": "La tappa 3 conferma che il paese va incluso esplicitamente e che escludere gli altri non basta"
+  },
+  {
+   "minuto": "5:01",
+   "dice": "Le uniche aree geografiche supportate sono Stati Uniti, Canada, Australia e Nuova Zelanda",
+   "verdetto": "superata",
+   "perche": "Il cambio recente del 31/08/2026 ha esteso la disponibilità self-service all'Europa, inclusa l'Italia"
+  },
+  {
+   "minuto": "5:22",
+   "dice": "La piattaforma consiglia un'offerta minima di 3 $ come Maximum CPC bid",
+   "verdetto": "superata",
+   "perche": "La tappa 5 ricorda che Max CPC consigliava 3-5 $, ma dal 09/11/2026 Target CPC sostituisce Max CPC nelle nuove campagne a clic e Max CPC si ritira definitivamente l'01/01/2027"
+  },
+  {
+   "minuto": "6:40",
+   "dice": "L'unica forma di targeting oltre a quella geografica sono i context hints",
+   "verdetto": "giusta",
+   "perche": "La tappa 1 e la tappa 3 confermano che non esistono parole chiave tradizionali e che il posizionamento si basa su contesto della conversazione, pagina di destinazione e context hints"
+  },
+  {
+   "minuto": "9:35",
+   "dice": "Il titolo supporta fino a 50 caratteri, ma può essere troncato se supera i 24 caratteri",
+   "verdetto": "giusta",
+   "perche": "La tappa 4 conferma: 'Titolo: consigliati 16-24 caratteri, massimo 50'"
+  },
+  {
+   "minuto": "9:47",
+   "dice": "La descrizione supporta fino a 100 caratteri e viene troncata oltre i 48 caratteri",
+   "verdetto": "giusta",
+   "perche": "La tappa 4 conferma: 'Testo: consigliati 32-48 caratteri, massimo 100' con troncamento consigliato a 32-48 caratteri"
+  },
+  {
+   "minuto": "10:01",
+   "dice": "L'immagine deve essere quadrata 256x256 pixel",
+   "verdetto": "giusta",
+   "perche": "L'interfaccia a schermo indica 'Square image (PNG or JPG), min 256 x 256 px, max 1200 x 1200 px' e la tappa 4 conferma immagine quadrata al massimo 1200 x 1200"
+  },
+  {
+   "minuto": "10:17",
+   "dice": "Possono volerci fino a 12 ore per vedere rendicontati dati di impressioni, clic, spesa e conversioni",
+   "verdetto": "sbagliata",
+   "perche": "La tappa 6 specifica che la spesa arriva con 7-8 ore di ritardo, mentre i dati di conversione compaiono dopo 24-48 ore, non 12 ore indistintamente"
+  }
+ ],
+ "per_chi_impara": "Nel video l'Italia non figura tra i paesi disponibili perché a maggio 2026 il self-service era limitato a USA, Canada, Australia e Nuova Zelanda; tuttavia dal 31/08/2026 l'Italia è inclusa e pienamente supportata. Chi fa pubblicità dall'Italia deve configurare valuta in EUR, con un budget giornaliero minimo di 15 € (nel video espresso in USD), ed evitare audience personalizzate (non ammesse in SEE e Svizzera). Inoltre dal 30/10/2026 sono attivi di default i creative enhancements (traduzioni e riscritture automatiche) non mostrati nel video.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Ottima panoramica visiva dell'Ads Manager reale registrata durante i primi mesi del self-service. Spiega molto bene la logica dei context hints e il funzionamento dei limiti di troncamento dei testi. Il punteggio riflette l'anzianità del video (maggio 2026), per cui mancano l'espansione geografica europea, i creative enhancements e le nuove strategie di offerta (Target CPC/CPA)."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "È un ottimo video per osservare da vicino la navigazione reale nell'interfaccia di Ads Manager e comprendere a fondo come impostare i context hints e i limiti di testo. Va però affiancato a note di aggiornamento sui cambi successivi: disponibilità in Italia (31/08/2026), creative enhancements attivi di base (30/10/2026) e passaggio a Target CPC/CPA (09/11/2026).",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "6:37",
+  "fine": "9:15"
+ },
+ "video": "nZWxomx8rW0",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:49:32+00:00"
+}

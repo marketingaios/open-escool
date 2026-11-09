@@ -1,0 +1,169 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Una guida passo passo a ChatGPT Ads che spiega come iscriversi alla piattaforma, impostare correttamente il tracciamento delle conversioni e del Pixel, e strutturare le campagne tra Gruppi di inserzioni e Creatività. Viene data particolare enfasi alla stesura dei Context Hints per il targeting e alla gestione delle offerte. Infine, vengono mostrate le limitazioni attuali dei report di Ads Manager.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:51",
+   "titolo": "Introduzione e panoramica del corso ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentazione del programma: account, Ad Manager, prime campagne e tracciamento",
+    "Panoramica della landing page ads.openai.com"
+   ]
+  },
+  {
+   "inizio": "0:52",
+   "fine": "2:26",
+   "titolo": "Creazione dell'account e verifica aziendale",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento dati aziendali (ragione sociale, sito web, favicon, settore)",
+    "Gestione account agenzia e limitazione sugli account clienti",
+    "Inserimento codice fiscale/EIN e processo di revisione dell'applicazione"
+   ]
+  },
+  {
+   "inizio": "2:27",
+   "fine": "5:41",
+   "titolo": "Esplorazione dell'Ads Manager e struttura delle campagne",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Panoramica dei menu: Ads Manager, Settings, Users, Conversions, Billing, Documentation",
+    "Gerarchia: Campagna -> Gruppo di annunci -> Annunci",
+    "Funzionamento dell'asta: Offerta Effettiva = Offerta + Rilevanza"
+   ]
+  },
+  {
+   "inizio": "5:42",
+   "fine": "10:42",
+   "titolo": "Configurazione del Pixel e degli eventi di conversione",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione della fonte dati (Data Source / Pixel)",
+    "Spiegazione dell'errore comune nel codice snippet generato da OpenAI (separare Pixel di base dall'evento)",
+    "Mappatura degli eventi standard (lead_created, appointment_scheduled)"
+   ]
+  },
+  {
+   "inizio": "10:43",
+   "fine": "12:46",
+   "titolo": "Creazione della prima campagna (Livello Campagna)",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Convenzione di nomenclatura per la campagna (Brand_Obiettivo_Geo_Data)",
+    "Scelta dell'obiettivo (Clic vs Reach/Conversione)",
+    "Impostazione di budget e date di avvio"
+   ]
+  },
+  {
+   "inizio": "12:47",
+   "fine": "17:19",
+   "titolo": "Configurazione del Gruppo di Annunci e Context Hints",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Impostazione dell'offerta CPC massima ($3-$5 suggeriti)",
+    "Integrazione dell'URL di destinazione",
+    "Strutturazione efficace dei Context Hints: TARGETING + KEYWORDS"
+   ]
+  },
+  {
+   "inizio": "17:20",
+   "fine": "20:01",
+   "titolo": "Creazione degli annunci e revisione della campagna",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Regole di lunghezza per Titolo (<30 caratteri) e Descrizione (15-19 parole)",
+    "Inserimento dell'offerta (lead magnet / chiamate gratuite)",
+    "Controllo riepilogo prima del lancio"
+   ]
+  },
+  {
+   "inizio": "20:02",
+   "fine": "22:40",
+   "titolo": "Analisi delle metriche e strumenti di ottimizzazione",
+   "tappe": [
+    1,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Limiti dei report nativi di Ads Manager",
+    "Importanza del testing continuo di creatività e messaggi"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:56",
+   "dice": "Gli annunci sono attualmente disponibili solo in USA, Australia, Nuova Zelanda e Canada.",
+   "verdetto": "superata",
+   "perche": "Nella mappa aggiornata a novembre 2026 il servizio self-service è disponibile anche in Italia e in Europa."
+  },
+  {
+   "minuto": "2:12",
+   "dice": "L'approvazione dell'applicazione richiede circa 3 giorni.",
+   "verdetto": "giusta",
+   "perche": "Coerente con i tempi della mappa, che indicano che la verifica dell'attività può richiedere fino a 7 giorni lavorativi."
+  },
+  {
+   "minuto": "5:26",
+   "dice": "L'offerta effettiva nell'asta è data dalla somma tra valore dell'offerta e rilevanza dell'annuncio.",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma che la scelta dell'annuncio avviene tramite un'asta di secondo prezzo pesata per la rilevanza del contesto."
+  },
+  {
+   "minuto": "13:30",
+   "dice": "Per il CPC massimo è consigliabile impostare una soglia tra 3$ e 5$.",
+   "verdetto": "superata",
+   "perche": "Dal 9/11/2026 le strategie Max Bid e Max CPC vengono sostituite da Target CPC e Target CPA nelle nuove campagne, per poi sparire completamente a inizio 2027."
+  },
+  {
+   "minuto": "18:42",
+   "dice": "Gli annunci richiedono un'immagine quadrata in formato PNG o JPG.",
+   "verdetto": "superata",
+   "perche": "Dal 26/10/2026 è disponibile anche il formato a più immagini (da 4 a 6 immagini quadrate)."
+  }
+ ],
+ "per_chi_impara": "Per un utente italiano il video fornisce un'ottima spiegazione concettuale sulla gerarchia delle campagne e sulla scrittura dei Context Hints. Tuttavia, occorre considerare che l'Italia è oggi pienamente supportata in self-service con budget minimo giornaliero di 15 €, che le strategie di offerta manuali (Max CPC) sono state superate da Target CPC/Target CPA e che i Creative Enhancements automatici sono ora attivi di default.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Spiegazione estremamente chiara, pratica e ricca di dettagli utili, come l'analisi dell'errore nello snippet del Pixel generato da OpenAI e la formula di strutturazione dei Context Hints."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Consigliato come risorsa integrativa per comprendere la logica di targeting e la struttura ideale delle campagne su ChatGPT Ads, ma da affiancare alla documentazione aggiornata per le regole di offerta (Target CPC/CPA) e per i mercati europei.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "15:06",
+  "fine": "17:19"
+ },
+ "video": "X7wF58b1t2o",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T09:43:53+00:00"
+}

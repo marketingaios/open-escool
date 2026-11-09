@@ -1,0 +1,100 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo explica de forma totalmente práctica cómo aislar y medir el tráfico procedente de herramientas de IA generativa (ChatGPT, Gemini, Perplexity, Claude, etc.) en Google Analytics 4. Enseña a configurar un grupo de canales personalizado con una expresión regular antes del canal Referral y a crear un informe específico con páginas de destino para añadirlo al menú de GA4. Es muy útil para cualquier profesional de marketing o SEO que necesite monitorizar el impacto de la IA en sus visitas.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:55",
+   "titolo": "Introducción: el tráfico de IA en GA4",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Las herramientas de IA envían tráfico que suele quedar oculto bajo la etiqueta Referral."
+   ]
+  },
+  {
+   "inizio": "0:55",
+   "fine": "1:32",
+   "titolo": "El problema en el informe estándar",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "En el grupo de canales predeterminado no se distingue la procedencia de la IA sin cambiar manualmente a fuente/medio."
+   ]
+  },
+  {
+   "inizio": "1:32",
+   "fine": "6:02",
+   "titolo": "Creación del canal personalizado para IA",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Configuración de un grupo de canales en Administración con regex",
+    "Reorganización de canales para colocar la regla de IA por encima de Referral"
+   ]
+  },
+  {
+   "inizio": "6:02",
+   "fine": "9:54",
+   "titolo": "Creación y publicación del informe personalizado",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Filtro de informe con regex para herramientas de IA",
+    "Añadir página de destino como dimensión secundaria",
+    "Publicación del informe en la barra lateral mediante la biblioteca"
+   ]
+  },
+  {
+   "inizio": "9:54",
+   "fine": "10:28",
+   "titolo": "Conclusión y recomendaciones",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Flexibilidad de GA4 para adaptar las métricas"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "5:06",
+   "dice": "Puedes tener hasta 25 canales por grupo de canales en GA4",
+   "verdetto": "non_verificabile",
+   "perche": "La limitación técnica interna de canales por grupo en GA4 no figura en los conceptos ni documentos de la mapa."
+  },
+  {
+   "minuto": "5:26",
+   "dice": "Solamente tienes la opción de crear dos grupos de canales personalizados adicionales en GA4",
+   "verdetto": "non_verificabile",
+   "perche": "El límite de creación de grupos de canales personalizados en GA4 no se detalla en la mapa oficial de referencia."
+  }
+ ],
+ "per_chi_impara": "Aplica exactamente igual en España y en cualquier país de Latinoamérica: la interfaz de Google Analytics 4 y la configuración técnica de expresiones regulares y canales personalizados son universales. Permite medir visitas locales de IA filtrando por dimensiones geográficas si se desea.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Explicación impecable, directa al grano, mostrando la pantalla en todo momento y resolviendo un problema práctico fundamental para la etapa de medición en analítica web."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "No cubre los conceptos teóricos de GEO ni el informe de IA de Google Search Console, pero es un recurso práctico complementario excelente para la etapa 3, ya que muestra paso a paso cómo medir el tráfico de motores generativos en Google Analytics 4.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "1:32",
+  "fine": "4:43"
+ },
+ "video": "WiXHepop730",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T15:55:58+00:00"
+}

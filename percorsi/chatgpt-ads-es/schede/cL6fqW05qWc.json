@@ -1,0 +1,202 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo analiza de forma metódica y prudente la gestión del presupuesto, la cobertura geográfica y las restricciones legales en ChatGPT Ads. A través de un caso de estudio ficticio ('Bicicletas Faro'), enseña a calcular la sostenibilidad económica de los clics antes de gastar y a interpretar los límites diarios y semanales. Está pensado para marketers y dueños de negocios que quieren planificar una campaña sin sorpresas en la facturación.",
+ "mostra_schermo": false,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:21",
+   "titolo": "Introducción con tres preguntas antes de gastar",
+   "tappe": [
+    1,
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Un presupuesto diario configurado no es un tope máximo infranqueable",
+    "Tres áreas que aclarar, dónde publicar, cómo funciona el presupuesto, qué medir",
+    "Enfoque basado en la documentación oficial y ejercicio sin una cuenta activa"
+   ]
+  },
+  {
+   "inizio": "0:21",
+   "fine": "1:31",
+   "titolo": "Disponibilidad geográfica e inventario publicitario",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Expansión a nuevos mercados y disponibilidad self-service",
+    "Requisito de la persona jurídica en el país admitido",
+    "Quién ve los anuncios, usuarios Free y Go mayores de edad",
+    "Ubicación debajo de la respuesta y separación de las respuestas de la IA"
+   ]
+  },
+  {
+   "inizio": "1:31",
+   "fine": "2:25",
+   "titolo": "Subastas, precios y reglas de gasto del presupuesto",
+   "tappe": [
+    5,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Funcionamiento por subasta y recomendación inicial de puja (3-5 USD)",
+    "Objetivo de conversiones con cobro por clic (oCPC)",
+    "Retraso de 7-8 horas en el reporte del gasto en el panel",
+    "Regla del presupuesto diario como media, hasta 2x al día y 7x en la semana de domingo a sábado"
+   ]
+  },
+  {
+   "inizio": "2:25",
+   "fine": "4:11",
+   "titolo": "Ejercicio práctico de cálculo de los límites y del margen sostenible",
+   "tappe": [
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Simulación de los máximos teóricos con presupuestos diarios estables",
+    "Cálculo del margen máximo por clic a partir de la tasa de conversión estimada",
+    "Impacto de otros costos variables en la sostenibilidad del gasto publicitario"
+   ]
+  },
+  {
+   "inizio": "4:11",
+   "fine": "4:56",
+   "titolo": "Preparación de la oferta y configuración de la medición",
+   "tappe": [
+    4,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Definición de la landing page con oferta, precio y reserva",
+    "Diferencia sustancial entre celdas vacías (no medido) y valor cero (medido, ningún evento)",
+    "Separación entre lead/reserva y venta efectiva"
+   ]
+  },
+  {
+   "inizio": "4:56",
+   "fine": "5:54",
+   "titolo": "Restricciones por sector e independencia de la IA",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Fuertes limitaciones para los sectores de salud, finanzas y legal fuera de EE. UU.",
+    "Importancia del destino real frente a la simple etiqueta de la empresa",
+    "Los anuncios no influyen en la respuesta del modelo ni acceden a los chats privados"
+   ]
+  },
+  {
+   "inizio": "5:54",
+   "fine": "6:38",
+   "titolo": "Lista de control final antes de publicar",
+   "tappe": [
+    5,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Revisar los números internos y los márgenes antes de asignar presupuesto",
+    "Necesidad de seguimiento y datos objetivos antes de valorar el canal"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:36",
+   "dice": "El self-service para España y la expansión europea se anunció a finales de agosto (31 de agosto de 2026)",
+   "verdetto": "giusta",
+   "perche": "El mapa lo confirma en los cambios recientes: '2026-08-31: Self-service desde Ads Manager en Europa, Italia incluida'"
+  },
+  {
+   "minuto": "0:54",
+   "dice": "Para el self-service, la entidad que se anuncia y recibe la factura debe estar establecida en un país admitido",
+   "verdetto": "giusta",
+   "perche": "El mapa lo confirma: 'la persona jurídica que hace publicidad y recibe la factura debe tener sede en un país de la lista (20001245-ads-manager-availability.md)'"
+  },
+  {
+   "minuto": "1:11",
+   "dice": "Los anuncios solo aparecen a los usuarios de los planes Free y Go",
+   "verdetto": "giusta",
+   "perche": "El mapa lo especifica en la etapa 1: 'Solo lo ven los usuarios de los planes Free y Go; Plus, Pro, Business, Enterprise y Edu no'"
+  },
+  {
+   "minuto": "1:20",
+   "dice": "Las directrices excluyen de los anuncios a las cuentas identificadas como de menores de 18 años",
+   "verdetto": "giusta",
+   "perche": "El mapa, en la etapa 1, indica: 'tampoco quien figura como menor de edad'"
+  },
+  {
+   "minuto": "1:24",
+   "dice": "El anuncio se coloca debajo de la respuesta de ChatGPT, separado de ella",
+   "verdetto": "giusta",
+   "perche": "El mapa, en la etapa 1, lo confirma: 'El anuncio aparece debajo de la respuesta, etiquetado como patrocinado y separado de la respuesta'"
+  },
+  {
+   "minuto": "1:37",
+   "dice": "OpenAI recomienda como puja máxima inicial para las campañas de clics entre 3 y 5 USD por clic",
+   "verdetto": "superata",
+   "perche": "El mapa, en la etapa 5, anota: 'todavía recomienda una puja máxima de 3-5 $ por clic: vale para el Max CPC que se retira, y está en dólares'; desde el 9/11/2026 entra en vigor Target CPC / Intelligent bidding y Max CPC desaparece del todo en enero de 2027"
+  },
+  {
+   "minuto": "1:45",
+   "dice": "Con la optimización para conversiones (oCPC) se paga por clic válido, no solo por venta realizada",
+   "verdetto": "giusta",
+   "perche": "El mapa, en la etapa 3, lo confirma: 'Con Conversions no se paga por conversión, sino por clic o por impresiones'"
+  },
+  {
+   "minuto": "1:54",
+   "dice": "Los datos de gasto en el panel pueden tener un retraso de 7-8 horas",
+   "verdetto": "giusta",
+   "perche": "El mapa, en la etapa 6, lo confirma: 'El gasto llega con 7-8 horas de retraso: un gasto en cero no quiere decir que no estés gastando'"
+  },
+  {
+   "minuto": "2:03",
+   "dice": "Con un presupuesto diario estable, el límite es de hasta 2 veces el importe diario en un día y hasta 7 veces en la semana, que va de domingo a sábado",
+   "verdetto": "giusta",
+   "perche": "El mapa, en la etapa 5, y el cambio del 30/10/2026 lo confirman: 'En un día se puede gastar hasta el doble del presupuesto diario. En la semana (domingo-sábado), como máximo 7 veces el presupuesto diario'"
+  },
+  {
+   "minuto": "2:41",
+   "dice": "Usa como ejemplo ficticio un presupuesto de 10 € al día",
+   "verdetto": "non_verificabile",
+   "perche": "Se presenta explícitamente como ejemplo hipotético, pero para una cuenta real facturada en EUR el mínimo oficial es de 15 €/día (avisos del mapa)"
+  },
+  {
+   "minuto": "5:00",
+   "dice": "Fuera de Estados Unidos, los servicios financieros y de salud tienen restricciones y los servicios jurídicos están prohibidos",
+   "verdetto": "giusta",
+   "perche": "El mapa lo confirma en los avisos: 'Sectores regulados: fuera de EE. UU. gran parte de las categorías de salud, muchas de finanzas y los servicios legales no están permitidos o están reservados a anunciantes aprobados'"
+  },
+  {
+   "minuto": "5:36",
+   "dice": "Los anuncios están separados de las respuestas y las conversaciones de los usuarios siguen siendo privadas, no visibles para los anunciantes",
+   "verdetto": "giusta",
+   "perche": "El mapa, en la etapa 1, lo confirma: 'Los anuncios no cambian las respuestas de ChatGPT: funcionan en sistemas separados' y 'El anunciante solo recibe datos agregados... nunca las conversaciones'"
+  }
+ ],
+ "per_chi_impara": "Muy relevante para entender las reglas europeas e internacionales: aclara las restricciones estrictas fuera de EE. UU. sobre salud, finanzas y legal, la disponibilidad en Europa (Italia incluida) y la gestión de la zona horaria y del calendario (semana de domingo a sábado). Atención solo a dos detalles concretos para Italia: el presupuesto diario mínimo real en EUR es de 15 € (y no 10 €) y el idioma hablado es el español.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Explicación conceptual impecable, basada rigurosamente en las guías oficiales de OpenAI. Excelentes la claridad gráfica y la prudencia financiera al enseñar cómo funciona el presupuesto flexible (hasta 2x al día). No llega a la nota máxima solo porque no muestra directamente la interfaz de Ads Manager y por el idioma español."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Es una guía conceptual excelente sobre presupuesto, subastas, métricas y políticas, perfecta para entender a fondo las reglas de gasto antes de empezar. Sin embargo, como no muestra las pantallas reales de Ads Manager (ads.openai.com) y está en español, funciona como apoyo teórico avanzado más que como tutorial práctico paso a paso.",
+ "tappa_migliore": 5,
+ "spezzone_migliore": {
+  "inizio": "1:58",
+  "fine": "3:18"
+ },
+ "video": "cL6fqW05qWc",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:08:27+00:00"
+}

@@ -1,0 +1,159 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video spiega cosa sono i ChatGPT Ads, come funzionano i formati pubblicitari (Sponsored Answer e Shopping Carousel) e illustra una strategia in 5 passaggi per lanciare la prima campagna. Evidenzia l'importanza dell'AEO (Answer Engine Optimization) per ottimizzare la presenza organica prima di spendere in advertising e mostra l'interfaccia di Ads Manager.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:28",
+   "titolo": "Introduzione e formati di ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Gli annunci appaiono sotto la risposta etichettati come Sponsored",
+    "Formati principali: Sponsored Answer e Shopping Carousel",
+    "Visibili solo agli utenti dei piani Free e Go (non Plus/Pro/Enterprise o minorenni)"
+   ]
+  },
+  {
+   "inizio": "1:29",
+   "fine": "3:42",
+   "titolo": "L'importanza dell'AEO prima di investire in Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Gli inserzionisti ricevono solo dati aggregati, non il contenuto delle chat",
+    "L'AEO (Answer Engine Optimization) garantisce che ChatGPT conosca già il tuo brand",
+    "Testare l'ottimizzazione organica prima di spendere budget pubblicitario"
+   ]
+  },
+  {
+   "inizio": "3:43",
+   "fine": "4:56",
+   "titolo": "Accesso a Ads Manager e configurazione iniziale",
+   "tappe": [
+    2,
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Accesso tramite Ads Manager self-serve su ads.openai.com",
+    "Nessun minimo di spesa sulla piattaforma self-service",
+    "Scelta delle opzioni di offerta a CPC o CPM"
+   ]
+  },
+  {
+   "inizio": "4:57",
+   "fine": "6:22",
+   "titolo": "Tracciamento Pixel e scrittura del copy",
+   "tappe": [
+    4,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Installazione del Pixel di conversione OpenAI e Conversions API",
+    "Scrittura mirata all'intenzione dell'utente anziché uso di parole chiave tradizionali",
+    "Generazione e revisione dei testi pubblicitari"
+   ]
+  },
+  {
+   "inizio": "6:23",
+   "fine": "8:04",
+   "titolo": "Strategia di offerta, ritardi nelle metriche e conclusioni",
+   "tappe": [
+    5,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Iniziare con CPC per facilitare il confronto con Google e Meta",
+    "Eseguire test di 2-3 settimane per raccogliere dati significativi",
+    "Effetto combinato di AEO (organico) e Ads (a pagamento) per massimizzare il ROI"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "1:10",
+   "dice": "Gli annunci vengono mostrati solo negli account Free e Go, mentre Plus e piani superiori non vedono annunci",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla mappa: gli annunci compaiono solo per gli utenti dei piani Free e Go."
+  },
+  {
+   "minuto": "1:22",
+   "dice": "Gli annunci non vengono mai mostrati a utenti che risultano minorenni",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla mappa: gli utenti minorenni sono esclusi dalla visualizzazione degli annunci."
+  },
+  {
+   "minuto": "1:25",
+   "dice": "Gli annunci non compaiono in conversazioni su salute, salute mentale o politica",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla mappa: gli annunci non compaiono vicino a temi sensibili."
+  },
+  {
+   "minuto": "1:37",
+   "dice": "Gli inserzionisti non vedono le chat degli utenti ma solo dati aggregati di visualizzazioni e clic",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla mappa: l'inserzionista riceve solo dati aggregati e mai le conversazioni private."
+  },
+  {
+   "minuto": "3:51",
+   "dice": "La piattaforma self-service si trova su ads.openai.com",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla mappa: l'iscrizione avviene su ads.openai.com."
+  },
+  {
+   "minuto": "4:02",
+   "dice": "Non c'è un minimo di spesa obbligatorio per l'account self-service",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla mappa: per l'account self-service non c'è un minimo di spesa di piattaforma."
+  },
+  {
+   "minuto": "4:06",
+   "dice": "Si può fare offerte sia a costo per clic (CPC) che a costo per mille impressioni (CPM)",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla mappa: le opzioni di addebito/offerta supportate includono Clicks (CPC) e Views (CPM)."
+  },
+  {
+   "minuto": "4:59",
+   "dice": "È possibile installare il Pixel di conversione e connettere la Conversions API di OpenAI",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla mappa: per misurare le conversioni si usa il Pixel di OpenAI, la Conversions API o entrambi."
+  },
+  {
+   "minuto": "5:12",
+   "dice": "Non si utilizzano le parole chiave tradizionali per il targeting degli annunci",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla mappa: il sistema si basa sul contesto della conversazione e sui context hints, non sulle parole chiave."
+  },
+  {
+   "minuto": "7:02",
+   "dice": "ChatGPT non ripete lo stesso annuncio due volte nella stessa sessione di un utente",
+   "verdetto": "non_verificabile",
+   "perche": "Dettaglio specifico sull'algoritmo di frequenza erogazione in sessione non esplicitato nelle fonti ufficiali della mappa."
+  }
+ ],
+ "per_chi_impara": "Per chi opera dall'Italia (Unione Europea):\n- Nell'ambito dello Spazio Economico Europeo (SEE) e Svizzera non è disponibile la personalizzazione degli annunci basata sui dati utente: gli annunci si orientano unicamente sulla conversazione in corso.\n- Evitare l'uso di pubblici personalizzati (liste clienti) per campagne rivolte al SEE.\n- Un nuovo account italiano può fare pubblicità inizialmente solo in Italia.\n- Impostare valuta EUR (budget giornaliero minimo 15 €) e fuso orario italiano al momento della creazione dell'account (non modificabili in seguito).\n- Inserire la Partita IVA nelle impostazioni di fatturazione (Billing → Settings).\n- Garantire la gestione dei consensi GDPR prima dell'invio dei dati del Pixel di conversione.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Spiegazione estremamente chiara e strategica. Il video enfatizza il corretto approccio metodologico (verificare la presenza organica AEO prima di investire in Ads) e mostra una panoramica concreta della piattaforma."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È una risorsa eccellente che spiega sia i concetti chiave della pubblicità su ChatGPT sia l'interdipendenza tra AEO organica e campagne a pagamento.",
+ "tappa_migliore": 1,
+ "spezzone_migliore": {
+  "inizio": "1:29",
+  "fine": "3:42"
+ },
+ "video": "o2HTIhH3RMw",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T08:54:06+00:00"
+}

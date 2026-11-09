@@ -1,0 +1,182 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo muestra una primera exploración en directo de la interfaz de ChatGPT Ads Manager hecha por un profesional colombiano. Se explica el flujo de alta con la creación asistida de un anuncio a partir del sitio web, la configuración de la cuenta publicitaria y los intentos de introducir el método de pago. Al final se muestra la configuración manual del Pixel de OpenAI y la creación de una campaña de conversiones sobre un embudo real.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:54",
+   "titolo": "Introducción y reflexiones sobre ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Contexto del lanzamiento de los anuncios en ChatGPT en América Latina",
+    "Diferencias teóricas respecto a Meta y Google basadas en el contexto conversacional"
+   ]
+  },
+  {
+   "inizio": "1:55",
+   "fine": "3:26",
+   "titolo": "Flujo de creación rápida a partir del sitio web",
+   "tappe": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Introducción de la URL de la empresa para generar un borrador automático",
+    "Elección del objetivo (Clics frente a Alcance) y del presupuesto mínimo en COP",
+    "Generación automática de textos y vista previa del anuncio"
+   ]
+  },
+  {
+   "inizio": "3:27",
+   "fine": "4:11",
+   "titolo": "Configuración de la cuenta publicitaria y bloqueo de los pagos",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Introducción de los datos de facturación y de la moneda",
+    "Dificultades y rechazo de las tarjetas de crédito extranjeras y locales"
+   ]
+  },
+  {
+   "inizio": "4:12",
+   "fine": "6:09",
+   "titolo": "Vista general del panel de Ads Manager",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Exploración del panel de campañas, grupos y anuncios",
+    "Menú lateral, conversiones, canales, público y configuración",
+    "Problema persistente con la verificación del método de pago"
+   ]
+  },
+  {
+   "inizio": "6:10",
+   "fine": "8:57",
+   "titolo": "Instalación del Pixel y de la Conversion API",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creación de una fuente de datos y copia del código base del script",
+    "Pegado del script en el head del embudo (GoHighLevel/constructor de embudos)",
+    "Configuración del evento de conversión personalizado (Order Created / Checkout Started)"
+   ]
+  },
+  {
+   "inizio": "8:58",
+   "fine": "11:11",
+   "titolo": "Configuración de la campaña de conversión y de los anuncios",
+   "tappe": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Configuración de la campaña con objetivo Conversions (Order Created)",
+    "Planificación de fechas, presupuesto diario y países objetivo (Colombia, México, Ecuador)",
+    "Activación de los Creative Enhancements («Mejora creativa»)",
+    "Personalización de las creatividades con imágenes, textos y parámetros UTM"
+   ]
+  },
+  {
+   "inizio": "11:12",
+   "fine": "12:02",
+   "titolo": "Conclusiones y próximos pasos",
+   "tappe": [
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Reflexiones sobre una experiencia de usuario todavía verde",
+    "Necesidad de resolver el bloqueo de la facturación para empezar la prueba de gasto"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "2:36",
+   "dice": "En el flujo guiado no está el objetivo de conversión, solo Clics o Alcance",
+   "verdetto": "non_verificabile",
+   "perche": "El mapa no especifica los detalles de la interfaz inicial de alta rápida frente a los objetivos completos disponibles en el Ads Manager estándar."
+  },
+  {
+   "minuto": "3:14",
+   "dice": "El presupuesto diario mínimo es de 10.000 COP",
+   "verdetto": "non_verificabile",
+   "perche": "El mapa solo incluye el mínimo en euros (15 € con facturación en EUR); los valores mínimos en pesos colombianos (COP) no se indican."
+  },
+  {
+   "minuto": "3:17",
+   "dice": "Las estrategias de puja disponibles son Autobid o puja manual",
+   "verdetto": "superata",
+   "perche": "Como indica el cambio del 2026-11-09, la estrategia automática pasa a llamarse «Intelligent bidding» y se introducen Target CPC/Target CPA, que dejan atrás el esquema anterior."
+  },
+  {
+   "minuto": "3:56",
+   "dice": "Para autorizar la tarjeta se aplica una retención temporal de 20.000 COP que vence en 8 días",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el mapa (Avisos y etapa 2): al añadir la tarjeta aparece un bloqueo temporal de importe variable según el país, que puede seguir visible en el banco 8 días o más y no es un gasto publicitario."
+  },
+  {
+   "minuto": "9:08",
+   "dice": "En la creación completa de la campaña el objetivo Conversions está disponible",
+   "verdetto": "giusta",
+   "perche": "Confirmado por la etapa 3: entre los objetivos que se pueden elegir en Ads Manager están Views, Clicks y Conversions."
+  },
+  {
+   "minuto": "9:09",
+   "dice": "La opción 'Mejora creativa' (Creative Enhancements) genera automáticamente versiones personalizadas y traducciones sin aprobación previa",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el cambio del 2026-10-30 y por la etapa 4: los creative enhancements pueden reescribir, traducir y redimensionar, y se publican sin aprobación previa."
+  },
+  {
+   "minuto": "9:31",
+   "dice": "Una cuenta nueva puede fijar como objetivo geográfico varios países extranjeros (p. ej., Colombia, México, Ecuador)",
+   "verdetto": "sbagliata",
+   "perche": "En la pantalla aparece el aviso de que la cuenta tiene restricciones, y el mapa (Avisos y etapa 3) aclara que una cuenta nueva al principio solo puede hacer publicidad en el país de origen hasta que completa la verificación y el gasto mínimo."
+  },
+  {
+   "minuto": "9:36",
+   "dice": "Las plataformas que se pueden elegir para la segmentación son Android app, Android web, Desktop web, iOS app, iOS web",
+   "verdetto": "giusta",
+   "perche": "Confirmado por la etapa 3: las plataformas que se pueden elegir son app y web de Android, web de escritorio, app y web de iOS."
+  },
+  {
+   "minuto": "10:14",
+   "dice": "El límite de caracteres del título es de 32 caracteres",
+   "verdetto": "sbagliata",
+   "perche": "La etapa 4 lo indica con claridad: 'Título: recomendados 16-24 caracteres, máximo 50' (en el vídeo la interfaz muestra un límite contado en el campo que no corresponde al máximo permitido según el mapa)."
+  }
+ ],
+ "per_chi_impara": "Este vídeo está grabado en español y configurado en una cuenta colombiana (moneda COP). Para quien aprende desde Italia, la moneda (EUR), la zona horaria y las restricciones geográficas son distintas (en Italia el mínimo es de 15 €/día). Además, el usuario intenta segmentar varios países de América Latina, algo prohibido para una cuenta recién creada (que debe empezar en el país de origen). Sin embargo, el procedimiento técnico que muestra para copiar el código del Pixel en el head del sitio y configurar la Conversion API es idéntico y útil para aprender.",
+ "qualita": {
+  "voto": 3,
+  "perche": "El vídeo ofrece una excelente visualización auténtica de la interfaz de Ads Manager y de la instalación del Pixel en un embudo real, pero está en español, se topa con varios problemas técnicos y bloqueos de facturación, y tiene algunas imprecisiones sobre los límites de segmentación para cuentas nuevas."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Se recomienda solo como recurso secundario para quien quiere ver cómo se instala en concreto el código de seguimiento de ChatGPT Ads y cómo se ve en directo la interfaz de gestión de campañas, pero no sirve como guía principal para el público italiano por el idioma, la moneda distinta y los problemas de facturación que muestra.",
+ "tappa_migliore": 6,
+ "spezzone_migliore": {
+  "inizio": "6:10",
+  "fine": "8:55"
+ },
+ "video": "o4PfloMKlRM",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-07T11:09:31+00:00"
+}

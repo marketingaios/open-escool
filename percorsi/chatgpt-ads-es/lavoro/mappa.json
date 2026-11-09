@@ -1,0 +1,984 @@
+{
+ "tema": "ChatGPT Ads, desde cero hasta la primera campaña",
+ "obiettivo": "Una persona que nunca ha hecho publicidad de pago llega a tener en Ads Manager una campaña completa (cuenta, campaña, grupo de anuncios con context hints, anuncios, presupuesto, estrategia de puja, seguimiento) lista pero no lanzada: en pausa, sin ningún gasto.",
+ "livello": "desde cero",
+ "lingua": "es",
+ "creata": "2026-11-06",
+ "avvisi_italia": [
+  "Self-service disponible: en la tabla oficial Italia figura como «Available»; la persona jurídica que hace publicidad y recibe la factura debe tener sede en un país de la lista (20001245-ads-manager-availability.md). La fecha de inicio en Europa, 31/8/2026, viene de chatgpt_ads.md (no oficial).",
+  "Ambigüedad en la misma página: también dice que los anunciantes de los «new European markets» por ahora empiezan a través del equipo de OpenAI Ads o de partners. Si el registro directo desde Italia se bloquea, la razón probable es esta (ver Dubbi en mappa.md).",
+  "Moneda y mínimos: con facturación en EUR el presupuesto diario mínimo es de 15 € (20001210-creating-campaigns-for-chatgpt-ads.md). El mínimo para el presupuesto total de la campaña no está escrito. Los ejemplos de umbral de pago están solo en dólares (25 $, luego 50 $, 100 $...): los importes en euros no están escritos (20001216-billing-payment.md).",
+  "País, moneda y zona horaria se eligen al crear la cuenta y luego no se cambian: revisa Italia, euro y zona horaria italiana antes de confirmar (20001213-ads-manager-account-setup.md). La tarjeta y la dirección de facturación deben corresponder al país del negocio (20001216-billing-payment.md).",
+  "Número de IVA (partita IVA): se añade en Billing → Settings y vale solo para las facturas siguientes (20001216-billing-payment.md).",
+  "Sin personalización en el Espacio Económico Europeo ni en Suiza: los anuncios se basan en la conversación en curso; las audiencias personalizadas (listas de clientes) para campañas dirigidas al EEE o a Suiza deben evitarse (20001047-ads-in-chatgpt.md, 20001210-creating-campaigns-for-chatgpt-ads.md, 20001346-set-up-custom-audiences-for-your-campaign.md).",
+  "Cuenta nueva: al principio solo puede hacer publicidad en el país de origen (Italia); los demás países se desbloquean tras la verificación de identidad aprobada y un gasto mínimo en el país de origen. Hay que incluir el país de forma explícita: excluir los demás no basta (20001210-creating-campaigns-for-chatgpt-ads.md).",
+  "Verificación del negocio: puede tardar hasta 7 días hábiles, y algunas cuentas pueden gastar antes de que termine. No es un freno: para no gastar, la campaña debe quedarse en pausa (20001534-troubleshooting-common-onboarding-and-policy-issues.md).",
+  "Sectores regulados: fuera de EE. UU. gran parte de las categorías de salud, muchas de finanzas y los servicios legales no están permitidos o están reservados a anunciantes aprobados (tabla en 20001534-troubleshooting-common-onboarding-and-policy-issues.md).",
+  "Idioma: un anuncio puede aparecer en un idioma distinto al de la conversación y desde el 30/10/2026 los creative enhancements pueden traducir el texto; quien escribe en italiano debe decidir si dejarlos activos (20001047-ads-in-chatgpt.md, 20001614-creative-enhancements-for-chatgpt-ads.md).",
+  "Herramientas limitadas: la app de Shopify hoy es solo para tiendas de EE. UU. (20001523-set-up-chatgpt-ads-for-shopify.md); la conexión con GA4 está en beta a través del account manager (20001562-connecting-google-analytics-4-to-openai-ads-manager.md); el límite de gasto diario de la cuenta no existe para las cuentas self-service pagadas con tarjeta (20001216-billing-payment.md).",
+  "Tarjeta: al añadirla puede aparecer un bloqueo temporal de importe variable según el país; no es un gasto publicitario y puede seguir visible en el banco 8 días o más (20001216-billing-payment.md).",
+  "Consentimiento: los datos de conversión se envían solo después de informar a los usuarios y recoger los consentimientos donde la ley los exige (20001409-conversion-measurement.md). Para un sitio italiano significa poner el Pixel detrás del banner de consentimiento: es una deducción, la página no nombra el GDPR."
+ ],
+ "cambi_recenti": [
+  {
+   "data": "2026-02-09",
+   "cosa": "Inicio de la prueba de anuncios en ChatGPT en EE. UU. Los vídeos anteriores solo cuentan anuncios (noticias) e hipótesis.",
+   "fonte": "20001047-ads-in-chatgpt.md"
+  },
+  {
+   "data": "2026-05-05",
+   "cosa": "Ads Manager beta en self-service y pujas por CPC (no oficial: la FAQ oficial solo dice «pilot from February through April», luego self-service).",
+   "fonte": "chatgpt_ads.md"
+  },
+  {
+   "data": "2026-08-31",
+   "cosa": "Self-service desde Ads Manager en Europa, Italia incluida (no oficial como fecha; la página oficial solo dice que hoy Italia figura como «Available»).",
+   "fonte": "chatgpt_ads.md"
+  },
+  {
+   "data": "2026-09-25",
+   "cosa": "El nombre de la cuenta, el nombre de la marca y la razón social se gestionan por separado; cambiar la marca o la razón social reinicia una revisión.",
+   "fonte": "20001213-ads-manager-account-setup.md"
+  },
+  {
+   "data": "2026-09-30",
+   "cosa": "Ventanas de atribución flexibles: clic 7, 14 o 30 días, visualización 0 o 1 día (no oficial como fecha; la función se describe en 20001214-measure-results.md sin fecha).",
+   "fonte": "chatgpt_ads.md"
+  },
+  {
+   "data": "2026-10-26",
+   "cosa": "Formato de varias imágenes (4-6 imágenes cuadradas, un solo enlace, un único botón «Learn more») en beta abierta en Ads Manager.",
+   "fonte": "20001212-creating-ads-for-chatgpt-ads.md"
+  },
+  {
+   "data": "2026-10-30",
+   "cosa": "Creative enhancements activos por defecto en campañas nuevas y existentes: el sistema puede reescribir títulos y textos, traducirlos, redimensionar imágenes y cambiar la URL de destino sin aprobación. chatgpt_ads.md dice 29/10, la página oficial dice viernes 30/10.",
+   "fonte": "20001614-creative-enhancements-for-chatgpt-ads.md"
+  },
+  {
+   "data": "2026-10-30",
+   "cosa": "Presupuesto diario tratado como media de 7 días (hasta 2 veces en un día, como máximo 7 veces en la semana). La página lo presenta como un cambio pero no escribe la fecha: el 30/10 es solo su última actualización.",
+   "fonte": "20001413-daily-budgets.md"
+  },
+  {
+   "data": "2026-11-09",
+   "cosa": "Target CPA sustituye a Max Bid en las nuevas campañas de conversión; Target CPC disponible en las nuevas campañas de clics; desde esta fecha se pueden pasar las campañas existentes. La estrategia automática ahora se llama «Intelligent bidding» (antes Maximize Results).",
+   "fonte": "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
+  },
+  {
+   "data": "2027-01-01",
+   "cosa": "Max Bid y Max CPC se retiran también en las campañas existentes.",
+   "fonte": "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
+  }
+ ],
+ "tappe": [
+  {
+   "n": 1,
+   "titolo": "Qué es ChatGPT Ads y cómo se ve un anuncio",
+   "obiettivo": "Sabes explicar dónde aparece un anuncio en ChatGPT, quién lo ve, de qué elementos está hecho y con qué señales el sistema elige cuál mostrar.",
+   "minuti_video": 20,
+   "concetti": [
+    {
+     "testo": "El anuncio aparece debajo de la respuesta, etiquetado como patrocinado y separado de la respuesta.",
+     "fonte": "20001047-ads-in-chatgpt.md",
+     "citazione": "Ads can appear below the end of a response. Ads are clearly labeled as sponsored and visually separated from ChatGPT’s response."
+    },
+    {
+     "testo": "Solo lo ven los usuarios de los planes Free y Go; Plus, Pro, Business, Enterprise y Edu no; tampoco quien figura como menor de edad.",
+     "fonte": "20001047-ads-in-chatgpt.md",
+     "citazione": "Ads may appear for users on the Free and Go plans. Plus, Pro, Business, Enterprise, and Edu accounts will not have ads."
+    },
+    {
+     "testo": "En los chats temporales no aparecen anuncios (ni en el navegador Atlas o cerca de temas sensibles).",
+     "fonte": "20001047-ads-in-chatgpt.md",
+     "citazione": "Temporary Chats will not show ads."
+    },
+    {
+     "testo": "Los anuncios no cambian las respuestas de ChatGPT: funcionan en sistemas separados.",
+     "fonte": "20001047-ads-in-chatgpt.md",
+     "citazione": "Ads do not influence ChatGPT’s answers."
+    },
+    {
+     "testo": "Un anuncio se compone de: nombre del anunciante, favicon (logo), título, texto, página de destino, imagen.",
+     "fonte": "20001207-ads-in-chatgpt-the-basics.md",
+     "citazione": "Ads appear below ChatGPT responses. Each ad includes:"
+    },
+    {
+     "testo": "La elección del anuncio usa el contexto de la conversación, la página de destino, el título, el texto y los context hints del anunciante: no palabras clave.",
+     "fonte": "20001207-ads-in-chatgpt-the-basics.md",
+     "citazione": "It considers multiple signals, including the context and intent of the current conversation, the ad’s landing page, title, copy, advertiser-provided context hints"
+    },
+    {
+     "testo": "Entre varios anuncios elegibles decide una subasta de segundo precio ponderada por la relevancia.",
+     "fonte": "20001207-ads-in-chatgpt-the-basics.md",
+     "citazione": "We use a relevance-weighted, second-price auction to select among eligible ads."
+    },
+    {
+     "testo": "El anunciante solo recibe datos agregados (visualizaciones, clics), nunca las conversaciones.",
+     "fonte": "20001047-ads-in-chatgpt.md",
+     "citazione": "Advertisers only receive aggregated, non-identifying information about how their ads perform, such as total views or clicks."
+    },
+    {
+     "testo": "En el EEE y Suiza no hay anuncios personalizados, por ahora: cuenta la conversación en curso.",
+     "fonte": "20001047-ads-in-chatgpt.md",
+     "citazione": "Personalized ads are not initially available in the European Economic Area (EEA) or Switzerland."
+    },
+    {
+     "testo": "Es una plataforma en beta, sin parámetros de referencia sobre los resultados: desconfía de quien promete cifras.",
+     "fonte": "20001220-frequently-asked-questions.md",
+     "citazione": "As an early platform, ChatGPT Ads does not yet have performance benchmarks across advertisers, industries, or campaign types."
+    }
+   ],
+   "valido_da": "2026-02-09",
+   "perche_data": "La prueba de anuncios empieza el 9/2/2026 (oficial): antes solo hay rumores. El concepto (dónde aparece, quién lo ve, separación de las respuestas) no ha cambiado desde entonces. Aviso para los vídeos anteriores al 31/8 (fecha no oficial): hablan solo de EE. UU. y no dicen que en Europa no hay personalización. El formato de varias imágenes (26/10) se ve en la etapa 4.",
+   "ricerche_youtube": {
+    "it": [
+     "chatgpt ads cosa sono e come funzionano",
+     "pubblicità su chatgpt spiegata",
+     "come appaiono gli annunci su chatgpt"
+    ],
+    "es": [
+     "chatgpt ads qué son y cómo funcionan",
+     "publicidad en chatgpt explicada",
+     "cómo se ven los anuncios en chatgpt"
+    ],
+    "en": [
+     "chatgpt ads explained for advertisers",
+     "how do chatgpt ads work",
+     "what chatgpt ads look like"
+    ]
+   },
+   "cosa_deve_mostrare_il_video": [
+    "Un anuncio real debajo de una respuesta de ChatGPT, con la etiqueta de patrocinado y sus elementos (nombre, logo, título, texto, imagen).",
+    "Quién ve los anuncios (Free y Go) y dónde no aparecen (planes de pago, chats temporales, temas sensibles).",
+    "Que la elección depende del contexto de la conversación y de los context hints, no de palabras clave compradas.",
+    "Que el anuncio está separado de la respuesta y no influye en ella.",
+    "Mejor si menciona la situación europea (sin personalización)."
+   ],
+   "errori_tipici_da_scartare": [
+    "«Las empresas pagan para aparecer dentro de la respuesta de ChatGPT» o «los anuncios influyen en las respuestas».",
+    "«Se compran palabras clave como en Google Ads».",
+    "«Los anuncios los ve todo el mundo, también los usuarios Plus o Pro».",
+    "«Los anunciantes ven los chats de los usuarios».",
+    "Promesas de CTR, CPC o ROAS «medios» presentadas como datos oficiales: OpenAI dice que todavía no hay parámetros de referencia.",
+    "«En Italia no se puede hacer publicidad en ChatGPT» (superado: hoy Italia está disponible en self-service).",
+    "Vídeos anteriores al 9/2/2026 basados en rumores."
+   ],
+   "letture_ufficiali": [
+    {
+     "titolo": "Ads in ChatGPT",
+     "url": "https://help.openai.com/en/articles/20001047-ads-in-chatgpt"
+    },
+    {
+     "titolo": "Ads in ChatGPT: The Basics",
+     "url": "https://help.openai.com/en/articles/20001207-ads-in-chatgpt-the-basics"
+    },
+    {
+     "titolo": "Ads Manager Beta Overview",
+     "url": "https://help.openai.com/en/articles/20001206-ads-manager-beta-overview"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titolo": "Abrir la cuenta de Ads Manager desde Italia sin lanzar nada",
+   "obiettivo": "Tienes una cuenta de anunciante italiana en Ads Manager con nombres, logo, facturación y verificación iniciada, sin ningún anuncio que pueda empezar a publicarse.",
+   "minuti_video": 25,
+   "concetti": [
+    {
+     "testo": "Italia está disponible en self-service; quien hace publicidad y recibe la factura debe tener sede en un país de la lista.",
+     "fonte": "20001245-ads-manager-availability.md",
+     "citazione": "Italy | Available"
+    },
+    {
+     "testo": "La persona jurídica que publica y paga debe tener sede en un país disponible.",
+     "fonte": "20001245-ads-manager-availability.md",
+     "citazione": "the legal entity that will advertise and be billed must be based in a country listed as available below."
+    },
+    {
+     "testo": "Te registras en ads.openai.com con la misma cuenta de OpenAI de ChatGPT, o creas una.",
+     "fonte": "20001213-ads-manager-account-setup.md",
+     "citazione": "Sign in with the OpenAI account you use for ChatGPT, or create an account if you do not already have one."
+    },
+    {
+     "testo": "Dos caminos: crear enseguida un anuncio desde tu web o saltar ese paso. Con el primero el anuncio puede publicarse tras la revisión y empezar a gastar: por eso en esta ruta conviene saltarlo.",
+     "fonte": "20001213-ads-manager-account-setup.md",
+     "citazione": "Your submitted ads can begin running after approval when billing, account readiness and campaign settings allow delivery. Advertising spend can then accrue."
+    },
+    {
+     "testo": "El camino que se usa aquí: saltar la creación del anuncio e ir a Ads Manager.",
+     "fonte": "20001213-ads-manager-account-setup.md",
+     "citazione": "When prompted to enter your website URL, choose the option to skip this step and continue to Ads Manager."
+    },
+    {
+     "testo": "País, moneda y zona horaria no se cambian después de crear la cuenta.",
+     "fonte": "20001213-ads-manager-account-setup.md",
+     "citazione": "These three settings cannot be changed after account creation."
+    },
+    {
+     "testo": "Desde el 25/9/2026 el nombre de la cuenta, el nombre de la marca (el que se muestra en los anuncios) y la razón social están separados, en Settings → General.",
+     "fonte": "20001213-ads-manager-account-setup.md",
+     "citazione": "As of Sep 25, 2026, you can manage Account Name, Brand Name, and Legal Name separately in Ads Manager."
+    },
+    {
+     "testo": "Sin facturación (perfil + tarjeta) las campañas no pueden publicarse.",
+     "fonte": "20001213-ads-manager-account-setup.md",
+     "citazione": "Billing must be set up before your campaigns can deliver."
+    },
+    {
+     "testo": "El bloqueo en la tarjeta al añadirla no es un cargo publicitario.",
+     "fonte": "20001216-billing-payment.md",
+     "citazione": "A temporary authorization hold is not a completed advertising charge."
+    },
+    {
+     "testo": "Se paga después: el cargo a la tarjeta llega cuando el gasto alcanza el umbral de pago o a fin de mes.",
+     "fonte": "20001216-billing-payment.md",
+     "citazione": "ChatGPT Ads currently uses a postpay billing model that charges advertisers after ads have been delivered."
+    },
+    {
+     "testo": "La tarjeta y los datos de facturación deben corresponder al país del negocio elegido al registrarte.",
+     "fonte": "20001216-billing-payment.md",
+     "citazione": "Your billing information and payment method should match the business entity and country or region used when your Ads Manager account was created."
+    },
+    {
+     "testo": "El número de IVA (partita IVA) se introduce en Ads Manager (Billing → Settings).",
+     "fonte": "20001216-billing-payment.md",
+     "citazione": "You can add or update supported VAT and tax IDs directly in Ads Manager."
+    },
+    {
+     "testo": "La verificación de la cuenta, la aprobación, la revisión de los anuncios y la publicación son controles separados.",
+     "fonte": "20001534-troubleshooting-common-onboarding-and-policy-issues.md",
+     "citazione": "Account verification, account approval, ad review, and ad delivery are separate checks."
+    },
+    {
+     "testo": "La verificación del negocio puede durar hasta 7 días hábiles: conviene iniciarla enseguida.",
+     "fonte": "20001534-troubleshooting-common-onboarding-and-policy-issues.md",
+     "citazione": "The review may take up to 7 Business days to complete"
+    },
+    {
+     "testo": "Una verificación incompleta no impide gastar: para no gastar se pone en pausa.",
+     "fonte": "20001534-troubleshooting-common-onboarding-and-policy-issues.md",
+     "citazione": "Do not rely on an incomplete verification step to keep a campaign paused or prevent spending."
+    },
+    {
+     "testo": "Algunas categorías (salud, finanzas, legal) están prohibidas o reservadas fuera de EE. UU.: revísalo antes de empezar.",
+     "fonte": "20001534-troubleshooting-common-onboarding-and-policy-issues.md",
+     "citazione": "Certain categories are restricted to select approved advertisers only."
+    }
+   ],
+   "valido_da": "2026-08-31",
+   "perche_data": "El self-service en Europa y en Italia empieza el 31/8/2026 (fecha de chatgpt_ads.md, no oficial; la página oficial solo dice que hoy Italia figura como «Available»). Los vídeos anteriores muestran cuentas de EE. UU. en dólares o la lista de espera. Desde el 25/9/2026 (oficial) los tres nombres están separados: un vídeo entre el 31/8 y el 25/9 sirve, con un aviso sobre Settings → General.",
+   "ricerche_youtube": {
+    "it": [
+     "come creare account chatgpt ads manager",
+     "chatgpt ads italia come iniziare",
+     "ads.openai.com registrazione tutorial"
+    ],
+    "es": [
+     "cómo crear cuenta en chatgpt ads manager",
+     "chatgpt ads españa cómo empezar",
+     "configurar facturación chatgpt ads"
+    ],
+    "en": [
+     "chatgpt ads manager account setup",
+     "how to sign up for chatgpt ads",
+     "openai ads manager billing setup"
+    ]
+   },
+   "cosa_deve_mostrare_il_video": [
+    "La pantalla de ads.openai.com desde el registro hasta la entrada en Ads Manager.",
+    "La elección entre crear el primer anuncio desde el sitio o saltar el paso, y lo que implica la primera opción.",
+    "Los campos país, moneda y zona horaria en el momento de la creación, con el aviso de que no se cambian.",
+    "Settings → General con el nombre de la cuenta, el nombre de la marca, la razón social y el logo.",
+    "Billing: perfil de facturación, tarjeta, bloqueo temporal; mejor si es con una cuenta europea en euros.",
+    "Dónde aparece la solicitud de verificación del negocio y su estado."
+   ],
+   "errori_tipici_da_scartare": [
+    "«Desde Italia hace falta una agencia o la lista de espera» (superado para el self-service, pero ver la duda sobre la misma página).",
+    "«La moneda y el país se cambian después en la configuración».",
+    "«El bloqueo en la tarjeta es un costo» o «se paga por adelantado con una recarga» (el modelo es a posteriori).",
+    "«Puedes poner un tope de gasto diario en la cuenta» (no en las cuentas self-service con tarjeta).",
+    "«Mientras la verificación no termine no gastas nada».",
+    "«Introducir el sitio al registrarte solo crea una vista previa» (el anuncio puede publicarse después de la revisión).",
+    "«La cuenta, la marca y la razón social tienen un solo nombre» (superado desde el 25/9/2026).",
+    "«Cualquier sector puede hacer publicidad» (salud, finanzas y legal tienen fuertes límites fuera de EE. UU.)."
+   ],
+   "letture_ufficiali": [
+    {
+     "titolo": "Ads Manager Account Setup",
+     "url": "https://help.openai.com/en/articles/20001213-ads-manager-account-setup"
+    },
+    {
+     "titolo": "Ads Manager Availability",
+     "url": "https://help.openai.com/en/articles/20001245-ads-manager-availability"
+    },
+    {
+     "titolo": "Billing & Payment",
+     "url": "https://help.openai.com/en/articles/20001216-billing-payment"
+    },
+    {
+     "titolo": "Troubleshooting Common Onboarding and Policy Issues",
+     "url": "https://help.openai.com/en/articles/20001534-troubleshooting-common-onboarding-and-policy-issues"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titolo": "La estructura de campaña, grupo de anuncios y context hints",
+   "obiettivo": "Sabes crear en Ads Manager una campaña con el objetivo, el país y las plataformas correctos y un grupo de anuncios con context hints escritos como frases claras.",
+   "minuti_video": 30,
+   "concetti": [
+    {
+     "testo": "Tres niveles: la campaña (objetivo, presupuesto, fechas, países), el grupo de anuncios (un tema o una intención, con los context hints), el anuncio.",
+     "fonte": "20001224-quickstart-launch-your-first-campaign.md",
+     "citazione": "Campaign: defines your objective, budget, dates, and targeting"
+    },
+    {
+     "testo": "El grupo reúne anuncios en torno a un tema o una intención.",
+     "fonte": "20001224-quickstart-launch-your-first-campaign.md",
+     "citazione": "Ad Group: a collection of ads organized around a specific theme or intent area."
+    },
+    {
+     "testo": "Creación guiada: Create → Create campaign.",
+     "fonte": "20001209-launch-campaigns.md",
+     "citazione": "In Ads Manager Beta, click ‘Create’, then ‘Create campaign’"
+    },
+    {
+     "testo": "Objetivo: Views (pagas por mil impresiones), Clicks (pagas por clic), Conversions.",
+     "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
+     "citazione": "Choose Views (CPM), Clicks (CPC), or Conversions."
+    },
+    {
+     "testo": "Con Conversions no se paga por conversión, sino por clic o por impresiones.",
+     "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
+     "citazione": "You do not pay per conversion."
+    },
+    {
+     "testo": "Conversions requiere el seguimiento activo y un evento estándar: para una primera campaña sin Pixel el objetivo sensato es Clicks.",
+     "fonte": "20001412-conversion-optimized-campaigns.md",
+     "citazione": "Custom conversion events are not currently supported for the Conversion optimization objective."
+    },
+    {
+     "testo": "El objetivo no se cambia después: hace falta una campaña nueva.",
+     "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
+     "citazione": "If you need a different objective, create a new campaign with the objective you want instead of editing an existing campaign into a different objective."
+    },
+    {
+     "testo": "Una cuenta nueva al principio solo puede hacer publicidad en el país de origen.",
+     "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
+     "citazione": "Some new self-serve ad accounts can initially advertise only in their home country—the country associated with the ad account."
+    },
+    {
+     "testo": "El país hay que incluirlo de forma explícita: excluir los demás no basta (el ejemplo oficial es sobre EE. UU., vale para Italia).",
+     "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
+     "citazione": "Excluding other countries alone does not restrict delivery to the United States."
+    },
+    {
+     "testo": "Plataformas que se pueden elegir: app y web de Android, web de escritorio, app y web de iOS.",
+     "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
+     "citazione": "select one or more supported platforms: Android app, Android web, Desktop web, iOS app, or iOS web."
+    },
+    {
+     "testo": "Hacia el EEE y Suiza, nada de audiencias personalizadas.",
+     "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
+     "citazione": "For campaigns targeting the EEA or Switzerland, avoid custom audiences while ads personalization is unavailable there."
+    },
+    {
+     "testo": "Grupos separados cuando hacen falta mensajes o páginas de destino distintos.",
+     "fonte": "20001211-create-ad-groups-for-chatgpt-ads.md",
+     "citazione": "Create separate ad groups when they require different messaging or landing pages."
+    },
+    {
+     "testo": "Los context hints no son palabras clave ni reglas de segmentación y no garantizan que el anuncio aparezca.",
+     "fonte": "20001211-create-ad-groups-for-chatgpt-ads.md",
+     "citazione": "They are not exact-match keywords or targeting rules, and they do not guarantee delivery for particular conversations or audiences."
+    },
+    {
+     "testo": "Para escribirlos: qué ofreces, a quién le sirve, cuándo es útil.",
+     "fonte": "20001521-writing-context-hints-for-chatgpt-ads.md",
+     "citazione": "Ask yourself: What else should we know about your product, who it helps, and when it’s useful?"
+    },
+    {
+     "testo": "Una frase natural para una sola idea, no una lista de palabras.",
+     "fonte": "20001521-writing-context-hints-for-chatgpt-ads.md",
+     "citazione": "Write a clear, natural phrase focused on one idea rather than a list of disconnected keywords."
+    },
+    {
+     "testo": "Ejemplo oficial de hint bueno (frente al genérico «running shoes»).",
+     "fonte": "20001521-writing-context-hints-for-chatgpt-ads.md",
+     "citazione": "Cushioned everyday running shoes for beginners training for their first 5K"
+    },
+    {
+     "testo": "Los hints no son instrucciones («muéstralo solo a quien está en Milán» no funciona): para los límites se usan los controles de la campaña.",
+     "fonte": "20001521-writing-context-hints-for-chatgpt-ads.md",
+     "citazione": "Hints are not targeting rules or delivery instructions."
+    },
+    {
+     "testo": "Las frases negativas (Negative Phrases) existen solo para anunciantes cualificados, no para todos.",
+     "fonte": "20001207-ads-in-chatgpt-the-basics.md",
+     "citazione": "Qualifying advertisers can use Negative Phrases for narrow placement requirements specific to their brand’s own policies."
+    }
+   ],
+   "valido_da": "2026-05-05",
+   "perche_data": "La creación guiada en Ads Manager y el objetivo Clicks por CPC llegan con el Ads Manager beta del 5/5/2026 (fecha de chatgpt_ads.md, no oficial; la FAQ oficial solo dice que después del piloto de febrero-abril empezó el self-service). Antes estaba el piloto gestionado por OpenAI. La estructura y los context hints no parecen haber cambiado después; el objetivo Conversions por impresiones y la segmentación por plataforma no tienen fecha: un vídeo de mayo-agosto sirve con aviso si no los muestra.",
+   "ricerche_youtube": {
+    "it": [
+     "chatgpt ads creare campagna tutorial",
+     "context hints chatgpt ads come scriverli",
+     "chatgpt ads manager gruppo di annunci"
+    ],
+    "es": [
+     "crear campaña en chatgpt ads paso a paso",
+     "context hints chatgpt ads",
+     "chatgpt ads manager tutorial español"
+    ],
+    "en": [
+     "chatgpt ads manager campaign setup tutorial",
+     "chatgpt ads context hints",
+     "how to create an ad group in chatgpt ads manager"
+    ]
+   },
+   "cosa_deve_mostrare_il_video": [
+    "Create → Create campaign en la pantalla de Ads Manager, campo por campo.",
+    "La elección del objetivo (Views, Clicks, Conversions) con lo que se paga en cada uno.",
+    "La selección del país incluido (no solo exclusiones) y de las plataformas.",
+    "La creación del grupo de anuncios con context hints escritos como frases completas.",
+    "La explicación de que los context hints no son palabras clave."
+   ],
+   "errori_tipici_da_scartare": [
+    "«Los context hints son palabras clave de concordancia exacta: pon muchas, una palabra cada una».",
+    "«Escribe en los hints a quién mostrarlo o dónde» (son descripciones, no instrucciones).",
+    "«El objetivo se cambia después» o «con Conversions pagas solo las conversiones».",
+    "«Haz retargeting en Italia con las listas de clientes» (audiencias personalizadas que deben evitarse hacia el EEE y Suiza).",
+    "«Para quedarte en un país basta con excluir los demás».",
+    "«Añade palabras clave negativas» presentado como una función para todos (Negative Phrases solo para anunciantes cualificados).",
+    "«Solo existe el objetivo por impresiones/CPM» (vídeos del piloto, antes de mayo de 2026)."
+   ],
+   "letture_ufficiali": [
+    {
+     "titolo": "Creating campaigns for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001210-creating-campaigns-for-chatgpt-ads"
+    },
+    {
+     "titolo": "Create Ad Groups for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001211-create-ad-groups-for-chatgpt-ads"
+    },
+    {
+     "titolo": "Writing context hints for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001521-writing-context-hints-for-chatgpt-ads"
+    },
+    {
+     "titolo": "Launch Campaigns",
+     "url": "https://help.openai.com/en/articles/20001209-launch-campaigns"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titolo": "Escribir el anuncio con título, texto, imagen y página de destino",
+   "obiettivo": "Sabes preparar 2-3 anuncios válidos (imagen única o varias imágenes) con una página de destino accesible para los rastreadores de OpenAI, y decides si dejar activos los creative enhancements.",
+   "minuti_video": 25,
+   "concetti": [
+    {
+     "testo": "Título: recomendados 16-24 caracteres, máximo 50.",
+     "fonte": "20001218-bulk-upload-campaign-schema-checklist.md",
+     "citazione": "Ad titles are within character limits (16-24 characters recommended; 50 characters maximum)."
+    },
+    {
+     "testo": "Texto: recomendados 32-48 caracteres, máximo 100.",
+     "fonte": "20001218-bulk-upload-campaign-schema-checklist.md",
+     "citazione": "Ad copy is within character limits (32-48 characters recommended; 100 characters maximum)."
+    },
+    {
+     "testo": "Imagen PNG o JPG, cuadrada, de 1200 x 1200 como máximo.",
+     "fonte": "20001217-troubleshooting-common-issues.md",
+     "citazione": "Confirm that images are PNG or JPG, square, no larger than 1200 x 1200."
+    },
+    {
+     "testo": "Desde el 26/10/2026 existe el formato de varias imágenes, en beta abierta.",
+     "fonte": "20001212-creating-ads-for-chatgpt-ads.md",
+     "citazione": "Starting Monday, October 26, 2026, we’re introducing the multi-image ad format in Ads Manager as an open beta."
+    },
+    {
+     "testo": "Una imagen para el anuncio único, 4-6 imágenes cuadradas para el múltiple.",
+     "fonte": "20001212-creating-ads-for-chatgpt-ads.md",
+     "citazione": "upload one image for a single-image ad, or 4–6 square images, each with a 1:1 aspect ratio, for a multi-image ad."
+    },
+    {
+     "testo": "En el múltiple, un solo enlace para todas las imágenes y un solo botón, «Learn more».",
+     "fonte": "20001212-creating-ads-for-chatgpt-ads.md",
+     "citazione": "For multi-image ads, Learn more is currently the only call-to-action (CTA) option."
+    },
+    {
+     "testo": "Texto orientado al beneficio: qué ofreces, para quién, cuándo sirve; no eslóganes.",
+     "fonte": "20001212-creating-ads-for-chatgpt-ads.md",
+     "citazione": "Benefit-focused copy explains the practical value of what you offer, who it is for, and when it may be helpful, rather than relying on a catchy line or generic call to action."
+    },
+    {
+     "testo": "Varias variantes distintas de título y texto para la misma oferta le dan al sistema más oportunidades.",
+     "fonte": "20001212-creating-ads-for-chatgpt-ads.md",
+     "citazione": "a high volume and diverse set of ads (multiple title/copy variations per offering) allows the system to identify more opportunities where your ads may be relevant to users"
+    },
+    {
+     "testo": "Página de destino específica (producto, categoría, contenido), no la página de inicio.",
+     "fonte": "20001212-creating-ads-for-chatgpt-ads.md",
+     "citazione": "use product pages, collections, or content pages rather than defaulting to a generic homepage"
+    },
+    {
+     "testo": "La página debe dejar pasar a OAI-AdsBot (obligatorio); OAI-SearchBot es recomendable.",
+     "fonte": "20001243-advertiser-guidance-for-allowing-openai-web-crawlers.md",
+     "citazione": "You must allow OAI-AdsBot. We recommend allowing both OAI-AdsBot and OAI-SearchBot."
+    },
+    {
+     "testo": "Hay que probar el enlace exacto del anuncio, con los parámetros: que la página de inicio funcione no basta.",
+     "fonte": "20001243-advertiser-guidance-for-allowing-openai-web-crawlers.md",
+     "citazione": "A working homepage does not confirm that the link in your ad works."
+    },
+    {
+     "testo": "Los anuncios engañosos o incoherentes con la página se rechazan (reglas: Ads Policies).",
+     "fonte": "20001212-creating-ads-for-chatgpt-ads.md",
+     "citazione": "Ads may be rejected if they are misleading, inconsistent, or include disallowed content"
+    },
+    {
+     "testo": "Desde el 30/10/2026 los creative enhancements están activos por defecto, también en las campañas existentes.",
+     "fonte": "20001614-creative-enhancements-for-chatgpt-ads.md",
+     "citazione": "Starting Friday, October 30, 2026, creative enhancements will be enabled automatically for new and existing campaigns."
+    },
+    {
+     "testo": "Pueden cambiar títulos y textos, redimensionar imágenes, cambiar la URL de destino y traducir.",
+     "fonte": "20001614-creative-enhancements-for-chatgpt-ads.md",
+     "citazione": "Enhancements can include new or updated headlines and descriptions, image resizing, destination-URL optimization, and translation into other languages."
+    },
+    {
+     "testo": "No hay una vista previa de cada variante: se publican sin aprobación.",
+     "fonte": "20001614-creative-enhancements-for-chatgpt-ads.md",
+     "citazione": "The experience does not provide a preview of every variation."
+    },
+    {
+     "testo": "Se gestionan desde «Manage settings»; la configuración de la campaña prevalece sobre la de la cuenta.",
+     "fonte": "20001614-creative-enhancements-for-chatgpt-ads.md",
+     "citazione": "Campaign-specific settings take priority over your account default."
+    },
+    {
+     "testo": "Los «borradores sugeridos» (Add new ad) usan los datos del sitio, no la inteligencia artificial.",
+     "fonte": "20001212-creating-ads-for-chatgpt-ads.md",
+     "citazione": "It does not generate new copy or imagery with AI."
+    }
+   ],
+   "valido_da": "2026-10-30",
+   "perche_data": "Desde el 30/10/2026 (oficial) los creative enhancements están activos por defecto: el sistema puede reescribir, traducir y cambiar la página de destino sin aprobación. Un vídeo anterior hace creer que el anuncio sale tal como se escribe. Desde el 26/10 existe también el formato de varias imágenes. Vídeos del 5/5 al 29/10: se pueden usar para los límites de caracteres, la imagen y la página de destino solo con un aviso sobre estos dos cambios. chatgpt_ads.md da el 29/10, la página oficial el viernes 30/10.",
+   "ricerche_youtube": {
+    "it": [
+     "chatgpt ads come scrivere un annuncio",
+     "chatgpt ads creare annuncio immagine titolo",
+     "creative enhancements chatgpt ads"
+    ],
+    "es": [
+     "cómo crear anuncios en chatgpt ads",
+     "chatgpt ads anuncio con varias imágenes",
+     "creative enhancements chatgpt ads qué son"
+    ],
+    "en": [
+     "chatgpt ads creative best practices",
+     "chatgpt ads multi image ad format",
+     "chatgpt ads creative enhancements opt out"
+    ]
+   },
+   "cosa_deve_mostrare_il_video": [
+    "La creación de un anuncio en Ads Manager con la elección Single image / Multiple images.",
+    "Los campos de título y texto con el recuento de caracteres.",
+    "La carga de la imagen cuadrada y qué pasa si no es válida.",
+    "Una página de destino específica (no la página de inicio), mejor si es con parámetros UTM.",
+    "Dónde está la configuración de los creative enhancements (Manage settings) y qué cambian.",
+    "El estado del anuncio después de guardarlo (en revisión, rechazado con el motivo)."
+   ],
+   "errori_tipici_da_scartare": [
+    "«El anuncio sale siempre exactamente como lo escribes» (falso desde el 30/10/2026 si los creative enhancements siguen activos).",
+    "«Los creative enhancements se activan a mano» o «son de pago».",
+    "«Los borradores sugeridos los escribe la IA» (usan los datos del sitio).",
+    "«Sirve una imagen horizontal o cualquier formato» (cuadrada, de 1200 x 1200 como máximo).",
+    "«El título puede llegar a 100 caracteres» (100 es el texto; el título llega a 50).",
+    "«Solo existe la imagen única» (superado desde el 26/10/2026).",
+    "«En el carrusel cada imagen lleva a una página distinta» o «eliges el botón que quieras».",
+    "«Basta con que la página de inicio del sitio funcione» o consejos de bloquear los bots sin una excepción para OAI-AdsBot."
+   ],
+   "letture_ufficiali": [
+    {
+     "titolo": "Creating ads for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001212-creating-ads-for-chatgpt-ads"
+    },
+    {
+     "titolo": "Creative enhancements for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001614-creative-enhancements-for-chatgpt-ads"
+    },
+    {
+     "titolo": "Advertiser Guidance for Allowing OpenAI Web Crawlers",
+     "url": "https://help.openai.com/en/articles/20001243-advertiser-guidance-for-allowing-openai-web-crawlers"
+    },
+    {
+     "titolo": "Bulk Upload Campaign Schema Checklist",
+     "url": "https://help.openai.com/en/articles/20001218-bulk-upload-campaign-schema-checklist"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titolo": "Presupuesto y pujas: cuánto puedes gastar de verdad",
+   "obiettivo": "Sabes configurar un presupuesto diario en euros, sabes cuánto puede gastar como máximo la campaña en un día y en una semana, y eliges la estrategia de puja adecuada para una primera campaña.",
+   "minuti_video": 30,
+   "concetti": [
+    {
+     "testo": "Dos tipos de presupuesto: total de la campaña o diario.",
+     "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
+     "citazione": "When creating a campaign, choose either a campaign-total budget or a daily budget."
+    },
+    {
+     "testo": "El presupuesto diario es una media de 7 días, no un tope del día.",
+     "fonte": "20001413-daily-budgets.md",
+     "citazione": "A daily budget is the average amount you want your campaign to spend per day over a 7-day period."
+    },
+    {
+     "testo": "En un día se puede gastar hasta el doble del presupuesto diario.",
+     "fonte": "20001413-daily-budgets.md",
+     "citazione": "Your maximum daily spend is twice your daily budget."
+    },
+    {
+     "testo": "En la semana (domingo-sábado), como máximo 7 veces el presupuesto diario.",
+     "fonte": "20001413-daily-budgets.md",
+     "citazione": "Your maximum 7-day spend is seven times your daily budget."
+    },
+    {
+     "testo": "En euros el presupuesto diario mínimo es de 15 €.",
+     "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
+     "citazione": "EUR | 15 EUR"
+    },
+    {
+     "testo": "A quien empieza, OpenAI le recomienda el presupuesto diario.",
+     "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
+     "citazione": "If you are new to the platform, we recommend starting with a daily budget"
+    },
+    {
+     "testo": "Se puede pasar de total a diario, pero no se puede volver atrás.",
+     "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
+     "citazione": "if you change a campaign-total budget to a daily budget, you can't change that campaign back to a campaign-total budget."
+    },
+    {
+     "testo": "El ritmo de gasto no garantiza un gasto uniforme ni completo.",
+     "fonte": "20001515-budget-pacing.md",
+     "citazione": "Pacing does not guarantee equal spending or that your campaign will spend its full budget."
+    },
+    {
+     "testo": "El umbral de pago decide cuándo se carga la tarjeta: no es el presupuesto ni un tope.",
+     "fonte": "20001216-billing-payment.md",
+     "citazione": "This is not the same as a campaign budget and is not an account spend cap."
+    },
+    {
+     "testo": "Con Clicks se paga por clic, con Views por mil impresiones.",
+     "fonte": "20001216-billing-payment.md",
+     "citazione": "Select a Clicks objective to buy on a cost per click basis (CPC) and optimize for traffic."
+    },
+    {
+     "testo": "En los grupos nuevos que cumplen los requisitos la estrategia automática ya viene seleccionada.",
+     "fonte": "20001425-maximize-results-bid-strategy.md",
+     "citazione": "For eligible new ad groups, maximize results is selected by default."
+    },
+    {
+     "testo": "La estrategia automática ahora se llama Intelligent bidding (antes Maximize Results).",
+     "fonte": "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md",
+     "citazione": "Intelligent bidding, formerly Maximize Results (Autobid), automatically adjusts bids and ad delivery to help drive your desired business outcome within your budget."
+    },
+    {
+     "testo": "Desde el 9/11/2026, en las nuevas campañas de clics está Target CPC.",
+     "fonte": "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md",
+     "citazione": "Starting Monday, November 9, Target CPC is available for new click campaigns."
+    },
+    {
+     "testo": "Desde el 9/11/2026, en las nuevas campañas de conversión Target CPA sustituye a Max Bid.",
+     "fonte": "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md",
+     "citazione": "Starting Monday, November 9, Target CPA replaces Max Bid as the bidding option for advertisers creating new conversion campaigns"
+    },
+    {
+     "testo": "Max Bid y Max CPC desaparecen el 1/1/2027 también de las campañas existentes.",
+     "fonte": "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md",
+     "citazione": "Max Bid and Max CPC will retire on January 1, 2027 for existing campaigns."
+    },
+    {
+     "testo": "Target CPA y Target CPC son medias, no precios máximos garantizados.",
+     "fonte": "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md",
+     "citazione": "Target CPA and Target CPC are average-cost goals."
+    },
+    {
+     "testo": "La página básica todavía recomienda una puja máxima de 3-5 $ por clic: vale para el Max CPC que se retira, y está en dólares.",
+     "fonte": "20001207-ads-in-chatgpt-the-basics.md",
+     "citazione": "For CPC campaigns, we recommend starting with a maximum bid of $3–$5 USD per click."
+    }
+   ],
+   "valido_da": "2026-11-09",
+   "perche_data": "Desde el 9/11/2026 (oficial, dentro de 3 días) llegan Target CPC y Target CPA a las campañas nuevas y la estrategia automática cambia de nombre a Intelligent bidding; Max Bid y Max CPC se retiran el 1/1/2027. Hoy ningún vídeo puede mostrar la pantalla nueva: por ahora se acepta un vídeo reciente sobre presupuesto y estrategia automática con aviso, y la búsqueda se repite después del 9/11. El presupuesto diario como media de 7 días (hasta 2 veces al día, 7 veces a la semana) es un cambio sin fecha escrita: un vídeo que lo llama tope diario está equivocado sea cual sea la fecha.",
+   "ricerche_youtube": {
+    "it": [
+     "chatgpt ads budget giornaliero e offerta",
+     "quanto costa fare pubblicità su chatgpt",
+     "chatgpt ads target cpc"
+    ],
+    "es": [
+     "chatgpt ads presupuesto diario y puja",
+     "cuánto cuesta anunciarse en chatgpt",
+     "chatgpt ads estrategia de puja target cpc"
+    ],
+    "en": [
+     "chatgpt ads bidding strategies target cpc",
+     "chatgpt ads budget and bidding explained",
+     "chatgpt ads intelligent bidding"
+    ]
+   },
+   "cosa_deve_mostrare_il_video": [
+    "El campo del presupuesto de la campaña con la elección diario/total y los importes máximos (día y 7 días) que muestra Ads Manager.",
+    "La sección Bid strategy del grupo de anuncios, con la estrategia automática seleccionada por defecto.",
+    "Después del 9/11: Target CPC o Target CPA y la explicación de que son medias.",
+    "La diferencia entre lo que se paga (impresiones o clics) y lo que se optimiza.",
+    "Mejor si es con una cuenta en euros (mínimo 15 € al día)."
+   ],
+   "errori_tipici_da_scartare": [
+    "«El presupuesto diario es un tope: nunca gastas más de X al día» (se puede llegar al doble en un día).",
+    "«El mínimo es de 25 $ al día» dicho a un italiano (en euros son 15 €).",
+    "«Target CPC o Target CPA es el precio máximo que pagas» (son medias).",
+    "«Con el objetivo Conversions pagas solo las conversiones».",
+    "«Configura Max CPC en 3-5 $» presentado como la opción de hoy para las campañas nuevas (opción que se retira: avisar después del 9/11/2026).",
+    "«La puja manual es la única opción» (vídeos viejos: la estrategia automática viene seleccionada por defecto).",
+    "«El umbral de pago es tu presupuesto» o «puedes fijar un tope de gasto en la cuenta»."
+   ],
+   "letture_ufficiali": [
+    {
+     "titolo": "Bidding strategies and how pricing works in ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads"
+    },
+    {
+     "titolo": "Daily budgets",
+     "url": "https://help.openai.com/en/articles/20001413-daily-budgets"
+    },
+    {
+     "titolo": "Budget pacing",
+     "url": "https://help.openai.com/en/articles/20001515-budget-pacing"
+    },
+    {
+     "titolo": "Maximize results bid strategy",
+     "url": "https://help.openai.com/en/articles/20001425-maximize-results-bid-strategy"
+    },
+    {
+     "titolo": "Creating campaigns for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001210-creating-campaigns-for-chatgpt-ads"
+    }
+   ],
+   "valido_da_ricerca": "2026-08-31",
+   "video_su": "solo presupuesto (diario, total, ritmo de gasto, mínimo en euros): las pujas cambian el 9/11",
+   "ricontrolla_dopo": "2026-11-09",
+   "nota_offerte": "Las estrategias de puja (Target CPC, Target CPA, Intelligent bidding) se estudian en la página oficial: los vídeos de hoy todavía explican Max CPC y Max Bid, que se retiran el 1/1/2027.",
+   "nota_letture": "Las estrategias de puja (Target CPC, Target CPA, Intelligent bidding) se estudian en la página oficial: los vídeos de hoy todavía explican Max CPC y Max Bid, que se retiran el 1/1/2027.",
+   "nota_ricontrollo": "Desde el 9/11 llegan Target CPC y Target CPA: hay que buscar un vídeo nuevo sobre las pujas."
+  },
+  {
+   "n": 6,
+   "titolo": "Medición y lista de control, con la campaña lista pero en pausa",
+   "obiettivo": "Sabes preparar el seguimiento (UTM y, si hace falta, Pixel), sabes dónde leerás los resultados y con qué retrasos, y cierras la campaña completa pero no activa, con la lista de control marcada.",
+   "minuti_video": 30,
+   "concetti": [
+    {
+     "testo": "La forma más sencilla de medir: parámetros UTM en la URL de la página de destino.",
+     "fonte": "20001207-ads-in-chatgpt-the-basics.md",
+     "citazione": "Advertisers can also track traffic from ChatGPT Ads by adding static tracking parameters (e.g. UTM parameters) to landing page URLs."
+    },
+    {
+     "testo": "También existen parámetros dinámicos (id de campaña, grupo, anuncio).",
+     "fonte": "20001214-measure-results.md",
+     "citazione": "Dynamic URL parameters are available in Ads Manager Beta."
+    },
+    {
+     "testo": "Métricas disponibles: impresiones, clics, gasto, CTR, CPC medio, CPM medio, conversiones.",
+     "fonte": "20001207-ads-in-chatgpt-the-basics.md",
+     "citazione": "Ads Manager Beta reporting currently includes impressions, clicks, spend, click-through rate (CTR), average CPC, average CPM, and conversions."
+    },
+    {
+     "testo": "El gasto llega con 7-8 horas de retraso: un gasto en cero no quiere decir que no estés gastando.",
+     "fonte": "20001214-measure-results.md",
+     "citazione": "Spend insights are delayed by approximately 7–8 hours, so recent impressions and clicks may appear before the corresponding spend."
+    },
+    {
+     "testo": "Las conversiones aparecen después de 24-48 horas.",
+     "fonte": "20001214-measure-results.md",
+     "citazione": "Please allow 24–48 hours for attributed conversions to be included in reporting."
+    },
+    {
+     "testo": "Para las conversiones hace falta una fuente de datos en Ads Manager y el Pixel de OpenAI, la Conversions API o ambos.",
+     "fonte": "20001409-conversion-measurement.md",
+     "citazione": "To measure conversions, create a data source in Ads Manager and send conversion events using the OpenAI Pixel, the Conversions API, or both."
+    },
+    {
+     "testo": "OpenAI añade a la URL la referencia del clic «oppref»: las redirecciones y la navegación no deben perderla.",
+     "fonte": "20001409-conversion-measurement.md",
+     "citazione": "The OpenAI click reference, called oppref, is appended to the end of the landing page URL"
+    },
+    {
+     "testo": "Pixel cargado no quiere decir evento enviado.",
+     "fonte": "20001604-troubleshooting-conversion-tracking-for-chatgpt-ads.md",
+     "citazione": "The Pixel can load without sending the purchase or lead event you need."
+    },
+    {
+     "testo": "Ventanas de atribución elegidas en los informes: clic 7, 14 o 30 días; visualización 0 o 1 día.",
+     "fonte": "20001214-measure-results.md",
+     "citazione": "Ads Manager lets advertisers choose a 7-, 14-, or 30-day click-through reporting window and either 0 Day (disabled) or a 1-day view-through reporting window."
+    },
+    {
+     "testo": "La atribución es al último contacto, no multi-touch.",
+     "fonte": "20001214-measure-results.md",
+     "citazione": "The feature uses OpenAI’s existing last-touch attribution logic and is not multi-touch attribution."
+    },
+    {
+     "testo": "Datos de conversión solo con aviso de privacidad y consentimientos donde la ley los exige.",
+     "fonte": "20001409-conversion-measurement.md",
+     "citazione": "obtaining all necessary consents where required by law."
+    },
+    {
+     "testo": "Primera campaña: las fechas pueden no aparecer antes de la publicación; no publiques solo para verlas.",
+     "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
+     "citazione": "If you need your ads to start on a specific date, don’t publish the campaign just to access these settings."
+    },
+    {
+     "testo": "Si no estás listo, pon la campaña en pausa y revisa el estado.",
+     "fonte": "20001213-ads-manager-account-setup.md",
+     "citazione": "If you are not ready to advertise, pause the campaign and confirm its status."
+    },
+    {
+     "testo": "El lanzamiento de verdad es pasar las campañas a Active: es el paso que esta ruta NO da.",
+     "fonte": "20001209-launch-campaigns.md",
+     "citazione": "Ensure campaigns are turned to status ‘Active’"
+    },
+    {
+     "testo": "Los anuncios pasan una revisión antes de publicarse.",
+     "fonte": "20001220-frequently-asked-questions.md",
+     "citazione": "ads must be reviewed before they can serve."
+    },
+    {
+     "testo": "Después de la pausa los anuncios todavía pueden aparecer hasta 24 horas, y ese gasto se paga.",
+     "fonte": "20001216-billing-payment.md",
+     "citazione": "In some cases, ads may continue to appear for up to 24 hours."
+    },
+    {
+     "testo": "El gasto ya realizado en general no se reembolsa.",
+     "fonte": "20001216-billing-payment.md",
+     "citazione": "Valid advertising spend that has already been delivered is generally not eligible for a refund."
+    }
+   ],
+   "valido_da": "2026-09-30",
+   "perche_data": "Las ventanas de atribución flexibles (clic 7-14-30 días, visualización 0-1 día) llegan el 30/9/2026 (fecha de chatgpt_ads.md, no oficial; la función se describe en la página oficial sin fecha). Antes, los vídeos explican una atribución distinta. La lista de control debe incluir también los creative enhancements (30/10) y las nuevas pujas (9/11): esa parte hay que tomarla de este mapa, no del vídeo.",
+   "ricerche_youtube": {
+    "it": [
+     "chatgpt ads pixel conversioni",
+     "chatgpt ads utm tracciamento",
+     "chatgpt ads manager report metriche"
+    ],
+    "es": [
+     "chatgpt ads píxel de conversión",
+     "medir conversiones en chatgpt ads",
+     "chatgpt ads checklist antes de lanzar"
+    ],
+    "en": [
+     "openai pixel chatgpt ads conversion tracking",
+     "chatgpt ads manager reporting",
+     "chatgpt ads launch checklist"
+    ]
+   },
+   "cosa_deve_mostrare_il_video": [
+    "Una URL de página de destino con UTM, o bien los Landing page query parameters en Ads Manager.",
+    "Conversions → Data sources, el ID del Pixel y la prueba de un evento (debug).",
+    "La tabla de campañas con las columnas de métricas, Edit columns y las ventanas de atribución.",
+    "El estado de la campaña, el grupo y el anuncio (en pausa, activo, Not serving con el motivo) y dónde se pone en pausa.",
+    "Mejor si cierra con una lista de control antes de la activación."
+   ],
+   "errori_tipici_da_scartare": [
+    "«Pixel instalado = conversiones medidas».",
+    "«Gasto en cero = no has gastado nada» (retraso de 7-8 horas).",
+    "«Las conversiones se ven en tiempo real» (24-48 horas).",
+    "«Pones la campaña en pausa y el gasto se detiene enseguida» (hasta 24 horas).",
+    "«Si no tienes resultados, pide el reembolso».",
+    "«Publica la primera campaña para ver las fechas y luego la pones en pausa» (la página oficial dice que no lo hagas).",
+    "«Atribución multi-touch» (es al último contacto).",
+    "«Envía los eventos sin banner de consentimiento» o datos personales sin cifrar."
+   ],
+   "letture_ufficiali": [
+    {
+     "titolo": "Measure Results",
+     "url": "https://help.openai.com/en/articles/20001214-measure-results"
+    },
+    {
+     "titolo": "Conversion Measurement",
+     "url": "https://help.openai.com/en/articles/20001409-conversion-measurement"
+    },
+    {
+     "titolo": "Troubleshooting conversion tracking for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001604-troubleshooting-conversion-tracking-for-chatgpt-ads"
+    },
+    {
+     "titolo": "Launch Campaigns",
+     "url": "https://help.openai.com/en/articles/20001209-launch-campaigns"
+    },
+    {
+     "titolo": "Quickstart: Launch your first campaign",
+     "url": "https://help.openai.com/en/articles/20001224-quickstart-launch-your-first-campaign"
+    }
+   ]
+  }
+ ],
+ "fuori_percorso": [
+  "Campañas a partir de un feed de productos (20001268): para tiendas con un catálogo amplio; configuración aparte (feed, filtros, plantilla del anuncio) y no se crean con la carga CSV.",
+  "App de Shopify (20001523) y conexión con HubSpot (20001522): integraciones cómodas pero no necesarias; Shopify hoy es solo para tiendas de EE. UU.",
+  "Sponsored Agents (20001524): alpha limitada a anunciantes seleccionados; OpenAI no acepta solicitudes de acceso.",
+  "Partners de medición y MMP (20001416: Fospha, Northbeam, Triple Whale...): para quien ya tiene volumen y un análisis multicanal.",
+  "Conexión con GA4 (20001562): en beta a través del account manager; los totales importados no son conversiones de la campaña.",
+  "Audiencias personalizadas y multiplicadores de puja por audiencia (20001346, 20001634): hacen falta al menos 25.000 usuarios coincidentes para incluir o ajustar la puja, y deben evitarse hacia el EEE y Suiza.",
+  "Carga masiva con la plantilla CSV y cambios masivos (20001218, 20001215): útiles con muchas campañas, no para la primera.",
+  "Conversions API, Event Quality Score, advanced matching (20001409, 20001513): trabajo de desarrollador; para la primera campaña bastan las UTM y, si acaso, el Pixel.",
+  "Campañas optimizadas para conversión con facturación por impresiones (20001412): hacen falta eventos estándar que lleguen de verdad; después de la primera campaña.",
+  "Accesos de empresa SSO, SCIM, varias cuentas de anunciante (20001273, 20001213): gestión de TI de empresas grandes.",
+  "Plugin de Ads Manager para ChatGPT y Codex (20001558): útil después de entender la interfaz; crea recursos solo con confirmación, pero con el estado que confirmes, así que también activos.",
+  "Advertiser API y nuevos campos Target CPA/CPC de la API desde el 18/11/2026 (20001634): para desarrolladores y partners.",
+  "Negative Phrases (20001207): solo para anunciantes cualificados.",
+  "Anuncios durante la generación de imágenes: los cita solo una fuente secundaria en chatgpt_ads.md (no oficial); ninguna página del centro de ayuda habla de ello."
+ ],
+ "approvata": "2026-11-06",
+ "titolo_percorso": "ChatGPT Ads, desde cero hasta la primera campaña",
+ "sottotitolo": "De la primera idea a una campaña lista en Ads Manager, en pausa y nunca activada.",
+ "strumento": "Ads Manager de ChatGPT (ads.openai.com)",
+ "paese": "Italia (Unión Europea)",
+ "fonti_descrizione": "37 páginas del centro de ayuda de OpenAI, descargadas el 6/11/2026",
+ "parole_titolo": [
+  [
+   "chatgpt",
+   "openai",
+   "chat gpt"
+  ],
+  [
+   "ads",
+   "pubblicit",
+   "annunc",
+   "publicidad",
+   "anuncio",
+   "advertis",
+   "campa",
+   "campaign",
+   "ads manager"
+  ]
+ ],
+ "lingue_video": [
+  "it",
+  "es",
+  "en"
+ ],
+ "durata_video_min": [
+  5,
+  50
+ ],
+ "lingua_video": "es",
+ "da": "chatgpt-ads",
+ "copiata": "2026-11-06"
+}

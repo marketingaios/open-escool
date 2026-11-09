@@ -1,0 +1,149 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "La lección enseña tres métodos complementarios para medir y monitorizar la visibilidad y el impacto del tráfico procedente de motores de búsqueda y asistentes de IA. Explica cómo configurar Google Analytics (GA4) o herramientas alternativas para aislar visitas de IA, cómo rastrear la actividad de bots rastreadores (entrenamiento vs. citación/búsqueda) y cómo implementar encuestas de atribución autorreportada. Es un recurso muy útil para profesionales de marketing y SEO que necesitan justificar el retorno de inversión de sus esfuerzos de optimización para IA.",
+ "mostra_schermo": true,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:03",
+   "titolo": "Introducción y retos de la medición en IA",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentación del módulo sobre monitorización de visibilidad en IA",
+    "Dificultades de atribución frente al SEO tradicional",
+    "Presentación de los tres pilares de seguimiento"
+   ]
+  },
+  {
+   "inizio": "1:03",
+   "fine": "4:48",
+   "titolo": "Pilar 1: Tráfico de referencia de IA",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Definición y limitaciones del tráfico de referencia desde chats y buscadores con IA",
+    "Comportamiento del referrer según la plataforma (ChatGPT, Claude, Perplexity, Copilot, Grok)",
+    "Configuración paso a paso de un grupo de canales personalizado con regex en Google Analytics 4",
+    "Alternativa con Ahrefs Web Analytics para separar tráfico IA y directo",
+    "Análisis de páginas con y sin tráfico IA para detectar oportunidades de optimización"
+   ]
+  },
+  {
+   "inizio": "4:48",
+   "fine": "6:39",
+   "titolo": "Pilar 2: Actividad de bots de IA",
+   "tappe": [
+    2,
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Diferencia entre bots de entrenamiento (GPTBot, Google-Extended) y bots de búsqueda/citación en tiempo real (OAI-SearchBot, ChatGPT-User)",
+    "Importancia de la frecuencia de rastreo para predecir citaciones",
+    "Monitorización mediante logs o Ahrefs Bot Analytics integrado con Cloudflare",
+    "Detección de URLs críticas no rastreadas por bots de IA"
+   ]
+  },
+  {
+   "inizio": "6:39",
+   "fine": "8:16",
+   "titolo": "Pilar 3: Atribución autorreportada",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "El problema del 'tráfico oscuro' de usuarios que descubren la marca en IA y entran directo o por búsqueda de marca",
+    "Cómo incluir la pregunta '¿Cómo nos conociste?' en formularios de registro o encuestas post-venta",
+    "Caso de estudio interno de Ahrefs: 3 % de conversiones provienen de IA y convierten 23 veces más"
+   ]
+  },
+  {
+   "inizio": "8:16",
+   "fine": "10:52",
+   "titolo": "Seguimiento con Brand Radar y prompts personalizados",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Resumen y combinación de los 3 pilares para una visión global",
+    "Uso de Brand Radar para medir el índice de presencia en IA",
+    "Configuración y monitorización de prompts personalizados rastreados por frecuencia y competidores",
+    "Generación automática de prompts de seguimiento con IA"
+   ]
+  },
+  {
+   "inizio": "10:52",
+   "fine": "11:12",
+   "titolo": "Cierre y próximos pasos",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Preguntas estratégicas sobre ROI del AEO",
+    "Avance de la lección 4.2 sobre checklist y plan de acción"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:39",
+   "dice": "Con el SEO tienes Google Search Console con sus impresiones, clics y posiciones. Con la búsqueda en IA, gran parte de esos datos no existen o no los puedes ver",
+   "verdetto": "superata",
+   "perche": "Desde el 3/6/2026 (en fase beta) y de forma global desde el 31/8/2026, Google Search Console dispone del informe de rendimiento específico de IA generativa (AI Overviews y AI Mode) con impresiones, clics y desglose por páginas y países (support-google-com-webmasters-answer-16984139.md)"
+  },
+  {
+   "minuto": "1:56",
+   "dice": "Los enlaces de fuentes y los resultados de búsqueda de ChatGPT pasan los datos de referencia correctamente, pero los enlaces dentro del contenido en cuentas de pago usan noreferrer",
+   "verdetto": "non_verificabile",
+   "perche": "La documentación de la mapa no detalla las reglas específicas del atributo rel=noreferrer en enlaces generados dentro de respuestas para cuentas de pago en ChatGPT"
+  },
+  {
+   "minuto": "2:06",
+   "dice": "Claude registra bien los datos; Perplexity en web pero no en app; Copilot en web pero no en Windows; Grok nunca pasa datos de referrer",
+   "verdetto": "non_verificabile",
+   "perche": "El comportamiento técnico específico de traspaso de referrer por plataforma cliente (Copilot Windows, app de Perplexity o Grok) no se describe en la mapa oficial"
+  },
+  {
+   "minuto": "5:25",
+   "dice": "Los primeros son los bots de entrenamiento como GPTBot y Google-Extended: cogen tu contenido y lo usan para entrenar modelos de IA",
+   "verdetto": "giusta",
+   "perche": "Coincide con la etapa 2: GPTBot se dedica al entrenamiento y Google-Extended controla el entrenamiento y grounding de modelos Gemini sin afectar al rastreo de búsqueda"
+  },
+  {
+   "minuto": "5:36",
+   "dice": "Los segundos son los bots de búsqueda y citación como ChatGPT-User y OAI-SearchBot. Descargan tus páginas en tiempo real cuando un usuario hace una pregunta y son los que realmente pueden generarte tráfico de referencia",
+   "verdetto": "giusta",
+   "perche": "Coincide con la etapa 2: OAI-SearchBot es el rastreador de búsqueda para ChatGPT independiente de GPTBot y necesario para aparecer en las respuestas y generar citas"
+  },
+  {
+   "minuto": "7:42",
+   "dice": "En Ahrefs alrededor del 3 % de nuestras conversiones vinieron de IA durante el último año según datos autorreportados, y convierten 23 veces más que las de búsqueda orgánica",
+   "verdetto": "non_verificabile",
+   "perche": "Son métricas internas del negocio de Ahrefs citadas a modo de ejemplo que no forman parte de los estándares generales ni de la documentación oficial de la mapa"
+  }
+ ],
+ "per_chi_impara": "Totalmente aplicable en España y Latinoamérica: tanto la configuración de GA4 con expresiones regulares como la implementación de preguntas de atribución autorreportada son universales. La mención a que Google no ofrece datos de búsqueda con IA está superada (Search Console ya incluye el informe de IA generativa a nivel global desde agosto de 2026).",
+ "qualita": {
+  "voto": 4,
+  "perche": "Excelente estructura pedagógica y muy práctico al mostrar la configuración técnica paso a paso en GA4 y el análisis de bots. Aunque promociona herramientas de su suite (Ahrefs), los conceptos de medición son fundamentales. Pierde un punto porque omite por completo la existencia del informe de IA generativa de Search Console, ya disponible a nivel global."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Ofrece una de las explicaciones más claras y aplicables en español sobre cómo solucionar la pérdida de atribución analítica en IA mediante GA4, cómo entender los distintos tipos de bots de IA y la vital importancia de las encuestas autorreportadas.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "2:37",
+  "fine": "4:48"
+ },
+ "video": "GovwpXxfUt0",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T15:55:05+00:00"
+}

@@ -1,0 +1,36 @@
+{
+ "filtros": {
+  "busquedas": 54,
+  "encontrados": 704,
+  "pertinentes": 178,
+  "vistos": 19,
+  "en_la_ruta": 18,
+  "minutos": 35
+ },
+ "rutas": [
+  {
+   "ruta": "chatgpt-ads",
+   "nombre": "ChatGPT Ads · italiano",
+   "etapas": 6,
+   "minutos": 35
+  },
+  {
+   "ruta": "chatgpt-ads-es",
+   "nombre": "ChatGPT Ads · español",
+   "etapas": 6,
+   "minutos": 28
+  },
+  {
+   "ruta": "chatgpt-ads-en",
+   "nombre": "ChatGPT Ads · inglés",
+   "etapas": 6,
+   "minutos": 45
+  },
+  {
+   "ruta": "geo",
+   "nombre": "GEO · español",
+   "etapas": 3,
+   "minutos": 18
+  }
+ ]
+}

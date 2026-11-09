@@ -1,0 +1,23 @@
+# Reglas de gitleaks para Open Escool (las usa .githooks/pre-commit): las de serie más las claves de los servicios que usa.
+title = "Open Escool"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "google-api-key"
+description = "Clave de Google (YouTube Data API, Gemini)"
+regex = '''\bAIza[0-9A-Za-z_\-]{35}\b'''
+keywords = ["AIza"]
+
+[[rules]]
+id = "tavily-api-key"
+description = "Clave de Tavily"
+regex = '''\btvly-[A-Za-z0-9_\-]{20,}\b'''
+keywords = ["tvly-"]
+
+[[rules]]
+id = "elevenlabs-api-key"
+description = "Clave de ElevenLabs"
+regex = '''\bsk_[a-f0-9]{40,64}\b'''
+keywords = ["sk_"]

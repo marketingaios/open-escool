@@ -1,0 +1,133 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video mostra passo passo come configurare il tracciamento delle conversioni su ChatGPT Ads (OpenAI Ads Manager) tramite Google Tag Manager. Spiega come creare la sorgente dati, installare il codice base del Pixel, definire l'evento di conversione standard (page_view) e impostare il tag sequencing per garantire il corretto invio dei dati. È una guida tecnica pratica rivolta a chi vuole misurare i risultati delle proprie campagne oltre il semplice clic.",
+ "mostra_schermo": true,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:06",
+   "titolo": "Introduzione e riepilogo della campagna",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Presentazione del tema: tracciamento conversioni per ChatGPT Ads",
+    "Riepilogo veloce della campagna creata in precedenza (traffico su landing page con CPC massimo a 4 $ e budget giornaliero a 25 $)"
+   ]
+  },
+  {
+   "inizio": "1:06",
+   "fine": "2:34",
+   "titolo": "Creazione della sorgente dati e del Pixel in Ads Manager",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Accesso a Tools -> Conversions in OpenAI Ads Manager",
+    "Creazione del Data Source e assegnazione del nome (ChatGPT Ads Pixel)",
+    "Spiegazione del Pixel ID e dello snippet script HTML base (avviso sul non duplicare l'ID)"
+   ]
+  },
+  {
+   "inizio": "2:34",
+   "fine": "4:22",
+   "titolo": "Installazione e test del Pixel base su Google Tag Manager",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione di un Custom HTML Tag in GTM con lo script base del Pixel",
+    "Impostazione del trigger su All Pages e pubblicazione del contenitore",
+    "Verifica con Google Tag Assistant del corretto caricamento del Pixel"
+   ]
+  },
+  {
+   "inizio": "4:22",
+   "fine": "5:49",
+   "titolo": "Creazione dell'evento di conversione in Ads Manager",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Selezione del Base event (Page viewed, Lead created, Subscription created, ecc.)",
+    "Impostazione delle finestre di attribuzione (30 giorni per clic, 1 giorno per visualizzazione)",
+    "Generazione del codice dell'evento (oaiq measure)"
+   ]
+  },
+  {
+   "inizio": "5:49",
+   "fine": "7:26",
+   "titolo": "Configurazione dell'evento in GTM e Tag Sequencing",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione del Custom HTML tag con l'evento racchiuso nel tag <script>",
+    "Configurazione del Tag Sequencing: forzare l'esecuzione del Pixel base prima dell'evento di conversione",
+    "Trigger su All Pages e pubblicazione della nuova versione del contenitore"
+   ]
+  },
+  {
+   "inizio": "7:26",
+   "fine": "8:54",
+   "titolo": "Verifica finale ed Event Stream",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Debug con Tag Assistant: controllo che entrambi i tag si attivino una sola volta senza duplicati",
+    "Navigazione su altre pagine per verificare la coerenza del tracciamento",
+    "Controllo dell'Event Stream in Ads Manager con polling e avviso sui ritardi di 24-48 ore per i report"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:34",
+   "dice": "Imposta un'offerta Max CPC a 4 $",
+   "verdetto": "superata",
+   "perche": "Dal 9/11/2026 nelle nuove campagne a clic entra Target CPC e dal 1/1/2027 Max CPC viene completamente ritirato (20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md)."
+  },
+  {
+   "minuto": "0:52",
+   "dice": "Imposta un budget giornaliero di 25 $",
+   "verdetto": "giusta",
+   "perche": "L'esempio ufficiale è in dollari (25 $); in euro il budget giornaliero minimo è 15 € (20001210-creating-campaigns-for-chatgpt-ads.md)."
+  },
+  {
+   "minuto": "5:21",
+   "dice": "Finestre di attribuzione predefinite a 30 giorni per click-through e 1 giorno per view-through",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma le finestre di attribuzione disponibili (clic 7, 14 o 30 giorni; visualizzazione 0 o 1 giorno) descritte in 20001214-measure-results.md."
+  },
+  {
+   "minuto": "8:38",
+   "dice": "Le conversioni attribuite richiedono dalle 24 alle 48 ore per comparire nei report",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma espressamente: «Le conversioni compaiono dopo 24-48 ore» (20001214-measure-results.md)."
+  }
+ ],
+ "per_chi_impara": "La procedura tecnica di implementazione di GTM e Pixel è valida anche per l'Italia. Tuttavia, per un inserzionista italiano / europeo operante in ambito GDPR, il video tralascia un aspetto obbligatorio: il Pixel e i tag di tracciamento non possono essere sparati incondizionatamente su 'All Pages', ma devono essere subordinati al preventivo consenso dell'utente (tramite cookie banner / CMP), come indicato nelle policy ufficiali di conversione (20001409-conversion-measurement.md).",
+ "qualita": {
+  "voto": 5,
+  "perche": "Video estremamente chiaro, pratico e dettagliato. Mostra esattamente l'interfaccia di Ads Manager e GTM, evidenzia errori comuni (come la duplicazione dell'ID e il mancato tag sequencing) e documenta il corretto debug e i tempi di elaborazione dei dati."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È il miglior tutorial pratico per la Tappa 6 sull'implementazione tecnica del tracciamento conversioni tramite Google Tag Manager su ChatGPT Ads. Va solo integrato con l'avvertenza sul consenso GDPR.",
+ "tappa_migliore": 6,
+ "spezzone_migliore": {
+  "inizio": "5:49",
+  "fine": "7:45"
+ },
+ "video": "NEiKYXcVgag",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:33:16+00:00"
+}

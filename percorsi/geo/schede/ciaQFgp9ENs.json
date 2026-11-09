@@ -1,0 +1,157 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "Este video explica las 6 tendencias clave sobre la optimización para motores de respuesta (AEO/GEO) basadas en el informe de HubSpot. La instructora aborda la diferencia entre SEO y AEO, muestra qué formatos de contenido citan más los motores de IA y ofrece estrategias paso a paso utilizando la herramienta AEO Grader y prompts para asistentes virtuales.",
+ "mostra_schermo": false,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "01:27",
+   "titolo": "Introducción: SEO vs AEO",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "El SEO y el AEO no son lo mismo.",
+    "AEO se enfoca en optimizar el contenido para ser citado por motores de IA y de respuesta.",
+    "Presentación del informe de HubSpot sobre el Estado del AEO."
+   ]
+  },
+  {
+   "inizio": "01:27",
+   "fine": "04:14",
+   "titolo": "Tendencia 1: Las respuestas de la IA influyen en decisiones de compra",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Las recomendaciones de IA generan confianza previa a la visita al sitio web.",
+    "Diferencia: SEO te ayuda a aparecer, AEO hace que la IA te recomiende.",
+    "Uso de AEO Grader para evaluar la presencia en ChatGPT, Perplexity y Gemini."
+   ]
+  },
+  {
+   "inizio": "04:14",
+   "fine": "05:56",
+   "titolo": "Tendencia 2: Muchos intentan AEO, pero pocos miden sus resultados",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "El principal obstáculo de las marcas es la falta de métricas claras.",
+    "Establecimiento de una línea base con cuota de participación y calidad de presencia."
+   ]
+  },
+  {
+   "inizio": "05:56",
+   "fine": "07:53",
+   "titolo": "Tendencia 3: Creación de contenido equivocado",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Confiar únicamente en artículos de blog informativos no es suficiente para la IA.",
+    "Formatos como comparativas, listas de productos y listicles tienen tasas de citación más altas en ChatGPT y otros motores."
+   ]
+  },
+  {
+   "inizio": "07:53",
+   "fine": "09:57",
+   "titolo": "Tendencia 4: La estructura de la página afecta las citaciones",
+   "tappe": [
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "La IA prefiere páginas estructuradas como hojas de respuesta (resúmenes cortos al inicio, secciones de FAQ y fechas actualizadas).",
+    "Diferencias entre cómo escanean los motores de IA frente al comportamiento de lectura humano."
+   ]
+  },
+  {
+   "inizio": "09:57",
+   "fine": "11:35",
+   "titolo": "Tendencia 5: Tu estrategia de AEO no debe limitarse a tu sitio web",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Los motores de IA citan ampliamente fuentes de terceros y comunidades como Reddit, LinkedIn y YouTube.",
+    "Participación genuina en comunidades de usuarios para alimentar las señales de citación."
+   ]
+  },
+  {
+   "inizio": "11:35",
+   "fine": "14:31",
+   "titolo": "Tendencia 6: El SEO y el AEO son complementarios",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Las páginas bien posicionadas en Google tienen mayor probabilidad de ser citadas por la IA.",
+    "Plan de acción de 30 días para reutilizar la autoridad SEO existente en victorias de AEO."
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "01:38",
+   "dice": "El 44% de los profesionales del marketing ha realizado una compra empresarial basándose en marcas descubiertas a través de las respuestas de la IA.",
+   "verdetto": "non_verificabile",
+   "perche": "Es un dato estadístico proveniente del informe corporativo interno de HubSpot 2026 no incluido en la mapa de referencia."
+  },
+  {
+   "minuto": "01:56",
+   "dice": "La tasa de conversión desde referencias de IA es del 11,4% frente al 5,3% de la búsqueda orgánica según Similarweb (septiembre 2025).",
+   "verdetto": "non_verificabile",
+   "perche": "Dato específico de la fuente de Similarweb presentado por HubSpot que no figura en la mapa de referencia."
+  },
+  {
+   "minuto": "04:26",
+   "dice": "El 58% de los profesionales del marketing afirma que su empresa optimiza contenido para motores de respuesta.",
+   "verdetto": "non_verificabile",
+   "perche": "Dato estadístico de la encuesta propia de HubSpot."
+  },
+  {
+   "minuto": "06:18",
+   "dice": "En ChatGPT, el contenido comparativo se cita en el 95% de los casos.",
+   "verdetto": "non_verificabile",
+   "perche": "Métrica basada en el estudio interno sobre tasas de citación de HubSpot."
+  },
+  {
+   "minuto": "10:14",
+   "dice": "Reddit recibió casi 300.000 citaciones en los principales motores de IA en solo tres meses.",
+   "verdetto": "non_verificabile",
+   "perche": "Dato del estudio B2B Marketer's Guide to Reddit de HubSpot no detallado en la mapa."
+  },
+  {
+   "minuto": "11:56",
+   "dice": "Las páginas que se posicionan entre los primeros resultados de Google tienen una predisposición mucho mayor a ser citadas por la IA.",
+   "verdetto": "giusta",
+   "perche": "Coincide con el concepto de la Tappa 1 y Tappa 3: en Google, AI Overviews y AI Mode se apoyan en los mismos sistemas de ranking y calidad de la búsqueda tradicional."
+  }
+ ],
+ "per_chi_impara": "Útil para profesionales de marketing que deseen entender la estrategia conceptual de AEO (GEO) y cómo utilizar herramientas de diagnóstico de marca como AEO Grader y asistentes de IA. No muestra la interfaz de Google Search Console ni la configuración técnica de robots.txt.",
+ "qualita": {
+  "voto": 4,
+  "perche": "La presentación es muy clara, estructurada y dinámica. Sin embargo, está centrada en la metodología e informes comerciales de HubSpot sin mostrar la consola oficial de búsqueda de Google ni análisis técnicos directos de rastreadores."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Es un excelente complemento estratégico y de contenido para entender la importancia de los formatos comparativos, la estructura de respuesta rápida y las menciones de marca, aunque se recomienda complementar con tutoriales técnicos sobre Search Console y robots.txt.",
+ "tappa_migliore": 1,
+ "spezzone_migliore": {
+  "inizio": "07:53",
+  "fine": "09:57"
+ },
+ "video": "ciaQFgp9ENs",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T15:31:12+00:00"
+}

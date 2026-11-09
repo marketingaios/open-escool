@@ -1,0 +1,149 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo acompaña al usuario a descubrir ChatGPT Ads Manager (versión beta, grabado en agosto de 2026). Andrea Petit muestra cómo entrar en ads.openai.com, configurar la cuenta de anunciante y estructurar la primera campaña en sus tres niveles (campaña, grupo de anuncios con context hints y creación del anuncio). También ofrece una vista general de las métricas disponibles y de las diferencias con Meta y Google Ads.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:45",
+   "titolo": "Introducción a ChatGPT Ads y a la lógica de la plataforma",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Diferencia de contexto y de intención del usuario entre ChatGPT Ads y las redes sociales o la búsqueda.",
+    "Estado de la versión beta de Ads Manager."
+   ]
+  },
+  {
+   "inizio": "1:45",
+   "fine": "6:11",
+   "titolo": "Acceso y registro en Ads Manager",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Acceso desde ads.openai.com y consideraciones sobre el país y la VPN.",
+    "Configuración del perfil de la empresa, país, moneda y tipo de cuenta."
+   ]
+  },
+  {
+   "inizio": "6:11",
+   "fine": "10:15",
+   "titolo": "Creación de la campaña, objetivos y presupuesto",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Estructura en tres niveles: Campaña, Grupo de anuncios, Anuncio.",
+    "Objetivos de campaña (Alcance, Clics, Conversiones).",
+    "Selección de los países objetivo y umbral del presupuesto diario mínimo en USD ($25)."
+   ]
+  },
+  {
+   "inizio": "10:15",
+   "fine": "13:35",
+   "titolo": "Grupo de anuncios, pujas de CPC y Pistas de Contexto",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Configuración de la puja máxima por clic (Max CPC).",
+    "Uso de las pistas de contexto (context hints) para orientar al algoritmo con frases descriptivas."
+   ]
+  },
+  {
+   "inizio": "13:35",
+   "fine": "15:30",
+   "titolo": "Redacción del anuncio y formato creativo",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Límites del título (50 caracteres) y de la descripción (100 caracteres).",
+    "Formato de imagen única cuadrada."
+   ]
+  },
+  {
+   "inizio": "15:30",
+   "fine": "18:17",
+   "titolo": "Revisión de la campaña, verificación y métricas disponibles",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Paso de verificación del negocio que pide OpenAI.",
+    "Panel de informes y métricas (Impresiones, Clics, Gasto, CTR, CPC, CPM).",
+    "Límites actuales de las métricas y conclusiones."
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "07:53",
+   "dice": "Los objetivos disponibles para la campaña son tres: alcance (reach/views), clics y conversiones.",
+   "verdetto": "giusta",
+   "perche": "Conforme al mapa (etapa 3: los objetivos disponibles en Ads Manager son Views, Clicks y Conversions)."
+  },
+  {
+   "minuto": "09:30",
+   "dice": "El presupuesto diario mínimo que pide Ads Manager es de 25 $.",
+   "verdetto": "giusta",
+   "perche": "Conforme a los parámetros de la interfaz en USD que se ve en pantalla. Nota para Italia: con la cuenta configurada en EUR el presupuesto diario mínimo es de 15 € (etapa 5)."
+  },
+  {
+   "minuto": "10:30",
+   "dice": "En el grupo de anuncios se configura la oferta máxima de CPC (Max CPC) para controlar el costo por clic.",
+   "verdetto": "superata",
+   "perche": "Desde el 9/11/2026 las nuevas campañas usan Target CPC (Intelligent bidding) y las estrategias de Max CPC/Max Bid se retiran definitivamente el 1/1/2027 (cambios recientes 2026-11-09 y 2027-01-01)."
+  },
+  {
+   "minuto": "11:55",
+   "dice": "Las pistas de contexto (context hints) no son reglas de segmentación de concordancia exacta ni palabras clave tradicionales.",
+   "verdetto": "giusta",
+   "perche": "Conforme al mapa (etapa 3: los context hints describen el contexto de la oferta en una frase natural y no funcionan como palabras clave ni como límites rígidos)."
+  },
+  {
+   "minuto": "14:20",
+   "dice": "Por ahora no se pueden usar vídeos ni carruseles, solo una imagen única.",
+   "verdetto": "superata",
+   "perche": "Desde el 26/10/2026 OpenAI lanzó en beta abierta el formato de varias imágenes (4-6 imágenes cuadradas con un enlace y un botón únicos)."
+  },
+  {
+   "minuto": "14:36",
+   "dice": "El título tiene un límite máximo de 50 caracteres y la descripción de 100 caracteres.",
+   "verdetto": "giusta",
+   "perche": "Conforme al mapa (etapa 4: título de 50 caracteres como máximo, texto/descripción de 100 caracteres como máximo)."
+  },
+  {
+   "minuto": "16:44",
+   "dice": "Las métricas del panel de informes son impresiones, clics, conversiones, gasto, CTR, CPC medio y CPM medio.",
+   "verdetto": "giusta",
+   "perche": "Conforme al mapa (etapa 6: métricas disponibles en el informe de Ads Manager)."
+  }
+ ],
+ "per_chi_impara": "Para quien trabaja desde Italia: Italia está plenamente disponible para el self-service en Ads Manager. Al abrir la cuenta es importante elegir Italia, moneda euro (EUR, con un presupuesto mínimo de 15 €/día) y zona horaria italiana. Recuerda que en las campañas dirigidas a Italia/EEE las audiencias personalizadas (listas de clientes) no deben usarse y los anuncios se basan solo en el contexto de la conversación en curso.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Tutorial claro, con buen ritmo y con la pantalla grabada completa. Refleja el estado de la plataforma en agosto de 2026, así que hay que sumarle las actualizaciones posteriores (Target CPC, formato de varias imágenes y creative enhancements)."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Ofrece una demostración práctica completa y bien estructurada de cómo se navega por el panel y cómo se crea una campaña desde cero.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "11:50",
+  "fine": "13:15"
+ },
+ "video": "sX-27NILQvY",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T09:16:13+00:00"
+}

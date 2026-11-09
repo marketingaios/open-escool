@@ -1,0 +1,257 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo acompaña a los anunciantes a descubrir ChatGPT Ads: explica cómo monetiza OpenAI, la estructura de las campañas en Ads Manager, el uso de los Context Hints en lugar de las palabras clave y las políticas de privacidad y de contenidos prohibidos. También se analizan los primeros casos de estudio y los problemas de medición de los clics durante la fase beta.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "3:36",
+   "titolo": "Contexto e historia de la llegada de los anuncios a ChatGPT",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Evolución de la postura de OpenAI sobre la publicidad de 2024 a 2026",
+    "Necesidad de monetizar por los costos de infraestructura"
+   ]
+  },
+  {
+   "inizio": "3:37",
+   "fine": "5:49",
+   "titolo": "Formato del anuncio y público destinatario",
+   "tappe": [
+    1,
+    4
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Los anuncios solo aparecen en las cuentas Free y Go",
+    "Exclusión de los usuarios Plus, Pro, Business, Enterprise, Edu y de los menores de edad",
+    "Anatomía del anuncio con favicon, título, texto, imagen y enlace"
+   ]
+  },
+  {
+   "inizio": "5:50",
+   "fine": "6:47",
+   "titolo": "Procedimiento de registro como anunciante",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Registro en ads.openai.com con un correo de empresa",
+    "Verificación del dominio y aprobación de la cuenta",
+    "Sin presupuesto mínimo de entrada con el self-service"
+   ]
+  },
+  {
+   "inizio": "6:48",
+   "fine": "8:23",
+   "titolo": "Estructura de la campaña y Context Hints",
+   "tappe": [
+    3,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Organización en tres niveles, Campaña, Grupo de anuncios y Anuncio",
+    "Selección de los objetivos (Reach frente a Clicks) y de las plataformas",
+    "Uso de los Context Hints en lenguaje natural en lugar de las palabras clave"
+   ]
+  },
+  {
+   "inizio": "8:24",
+   "fine": "9:07",
+   "titolo": "Modelos de pago y costos por CPM y CPC",
+   "tappe": [
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Pago por CPM para el objetivo Reach y por CPC para el objetivo Clicks",
+    "Facturación a posteriori (post-pay)"
+   ]
+  },
+  {
+   "inizio": "9:08",
+   "fine": "10:31",
+   "titolo": "Algoritmo de ubicación y protección de la privacidad",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Asignación de los anuncios mediante subasta de segundo precio y relevancia",
+    "Los anunciantes solo reciben datos agregados y nunca los chats privados de los usuarios"
+   ]
+  },
+  {
+   "inizio": "10:32",
+   "fine": "12:10",
+   "titolo": "Sectores prohibidos y contextos sensibles del usuario",
+   "tappe": [
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Categorías prohibidas, adultos, apuestas, alcohol, tabaco, criptomonedas, política, servicios legales",
+    "Restricciones sobre salud y finanzas en contextos personales sensibles"
+   ]
+  },
+  {
+   "inizio": "12:11",
+   "fine": "15:11",
+   "titolo": "Resultados de las primeras pruebas y discrepancias de seguimiento",
+   "tappe": [
+    1,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Informes de CTR más bajos que en la búsqueda tradicional de Google",
+    "Discrepancias entre los clics que reporta OpenAI y los datos de Google Analytics"
+   ]
+  },
+  {
+   "inizio": "15:12",
+   "fine": "16:18",
+   "titolo": "Lista de control de arranque para campañas nuevas",
+   "tappe": [
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Revisión de la categoría de la marca y creación de landing pages dedicadas",
+    "Instalación del Pixel de OpenAI y comienzo con el objetivo Clicks y un presupuesto reducido"
+   ]
+  },
+  {
+   "inizio": "16:19",
+   "fine": "18:36",
+   "titolo": "Seguimiento de la competencia con GEO Metrics",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Análisis de la presencia publicitaria de los competidores en las respuestas de la IA",
+    "Seguimiento diario de los prompts de la categoría"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "00:10",
+   "dice": "Hoy en 2026, ChatGPT tiene más de 600 anunciantes pagando por aparecer en tus conversaciones.",
+   "verdetto": "non_verificabile",
+   "perche": "El mapa oficial no da cifras sobre el número total de anunciantes activos."
+  },
+  {
+   "minuto": "03:57",
+   "dice": "Los anuncios van a aparecer en las versiones Free y Go de ChatGPT.",
+   "verdetto": "giusta",
+   "perche": "La etapa 1 del mapa confirma que los anuncios solo son visibles para los usuarios de los planes Free y Go."
+  },
+  {
+   "minuto": "04:01",
+   "dice": "No les aparecen a los que pagan a partir de Plus: Plus, Pro, Business, Enterprise, Edu.",
+   "verdetto": "giusta",
+   "perche": "La etapa 1 del mapa especifica que los usuarios de los planes Plus, Pro, Business, Enterprise y Edu no ven publicidad."
+  },
+  {
+   "minuto": "04:13",
+   "dice": "A personas menores de 18 años tampoco se les va a mostrar.",
+   "verdetto": "giusta",
+   "perche": "La etapa 1 del mapa indica explícitamente que los anuncios no aparecen a quien figura como menor de edad."
+  },
+  {
+   "minuto": "04:18",
+   "dice": "Tampoco lo hará en temporary chats.",
+   "verdetto": "giusta",
+   "perche": "La etapa 1 del mapa confirma que en los chats temporales no se muestran anuncios."
+  },
+  {
+   "minuto": "04:46",
+   "dice": "Un título de hasta 40 caracteres y una descripción de hasta 150 caracteres.",
+   "verdetto": "sbagliata",
+   "perche": "La etapa 4 del mapa precisa que el límite máximo del título es de 50 caracteres (recomendados 16-24) y el del texto/descripción de 100 caracteres (recomendados 32-48)."
+  },
+  {
+   "minuto": "06:35",
+   "dice": "Desde mayo de 2026 no hay inversión mínima para anunciarse.",
+   "verdetto": "giusta",
+   "perche": "La etapa 5 y los cambios recientes confirman la apertura del servicio self-service sin la obligación de presupuestos mínimos elevados a través de una agencia."
+  },
+  {
+   "minuto": "06:55",
+   "dice": "Al crear una campaña te encuentras con 3 niveles: Campaña, Ad Group y Anuncio.",
+   "verdetto": "giusta",
+   "perche": "La etapa 3 del mapa describe la estructura en tres niveles de Ads Manager."
+  },
+  {
+   "minuto": "06:59",
+   "dice": "Deberás elegir el objetivo: tienes Reach (Views) o Clicks.",
+   "verdetto": "giusta",
+   "perche": "La etapa 3 del mapa incluye Views y Clicks entre los objetivos que se pueden configurar."
+  },
+  {
+   "minuto": "07:05",
+   "dice": "Plataformas: si iOS, Android o Web.",
+   "verdetto": "giusta",
+   "perche": "La etapa 3 del mapa incluye entre las plataformas que se pueden elegir Android app/web, desktop web e iOS app/web."
+  },
+  {
+   "minuto": "07:18",
+   "dice": "En vez de keywords vas a tener lo que se llaman Context Hints, una descripción en lenguaje natural.",
+   "verdetto": "giusta",
+   "perche": "Las etapas 1 y 3 confirman que la segmentación se basa en los Context Hints escritos como frases naturales en lugar de en palabras clave tradicionales."
+  },
+  {
+   "minuto": "07:54",
+   "dice": "Permite incluir hasta 25 negative keywords para excluir de la conversación.",
+   "verdetto": "superata",
+   "perche": "La etapa 3 especifica que la función de las frases negativas (Negative Phrases) está reservada solo a los anunciantes cualificados y no está disponible para todas las cuentas estándar."
+  },
+  {
+   "minuto": "08:40",
+   "dice": "Por el lado de Clicks vas a pagar por CPC, y OpenAI recomienda arrancar entre 3 y 5 dólares por clic.",
+   "verdetto": "superata",
+   "perche": "La etapa 5 y los cambios recientes (en marcha desde el 9/11/2026) indican que las pujas manuales de Max CPC/Max Bid de 3-5$ se están retirando en favor de Target CPC e Intelligent Bidding."
+  },
+  {
+   "minuto": "10:33",
+   "dice": "Los anunciantes NUNCA reciben tus chats, tu historial, tu nombre, tu email, tu ubicación precisa ni tu IP.",
+   "verdetto": "giusta",
+   "perche": "Las etapas 1 y 2 confirman que el anunciante solo recibe métricas agregadas y nunca las conversaciones ni los datos personales de los usuarios."
+  },
+  {
+   "minuto": "12:29",
+   "dice": "Es prohibido sin excepción el contenido para adultos/dating, apuestas, alcohol, tabaco, drogas ilegales, criptomonedas, reparación de crédito, contenido político y servicios legales.",
+   "verdetto": "giusta",
+   "perche": "La etapa 2 del mapa indica que fuera de EE. UU. muchas categorías reguladas (entre ellas salud, finanzas, criptomonedas y legal) están estrictamente prohibidas o reservadas a una aprobación especial."
+  },
+  {
+   "minuto": "13:48",
+   "dice": "Hay datos de mercado que hablan de un CTR medio de 0,91% en ChatGPT Ads frente a 6,4% de Google Search.",
+   "verdetto": "sbagliata",
+   "perche": "La etapa 1 del mapa advierte que hay que desconfiar de quien da porcentajes de CTR o CPC 'medios', porque OpenAI precisa que la plataforma está en beta y todavía no existen benchmarks ni métricas de referencia oficiales."
+  }
+ ],
+ "per_chi_impara": "Para quien trabaja desde Italia (Unión Europea), el servicio Ads Manager está activo en self-service con la moneda configurable en euros (presupuesto diario mínimo de 15 €). Es fundamental recordar que en el Espacio Económico Europeo no se permite la personalización de los anuncios basada en el historial de chats del usuario (los anuncios solo usan el contexto de la conversación en curso) y que las audiencias personalizadas basadas en listas de clientes no deben usarse.",
+ "qualita": {
+  "voto": 4,
+  "perche": "El vídeo muestra con claridad la estructura de las campañas y los pasos prácticos en Ads Manager, con una explicación intuitiva de los Context Hints. Sin embargo, es impreciso sobre los límites de caracteres del anuncio, cita benchmarks de CTR no reconocidos oficialmente y sugiere estrategias de puja manual que hoy están quedando superadas."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Es una buena introducción visual y explicativa para quien empieza desde cero y quiere entender la arquitectura de las campañas en ChatGPT Ads y la lógica de los Context Hints.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "06:48",
+  "fine": "08:23"
+ },
+ "video": "UpQpiZra9NM",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T10:12:27+00:00"
+}

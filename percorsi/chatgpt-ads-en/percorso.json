@@ -1,0 +1,841 @@
+{
+ "slug": "chatgpt-ads-en",
+ "titolo": "ChatGPT Ads, da zero alla prima campagna",
+ "sottotitolo": "Dalla prima idea a una campagna pronta in Ads Manager, in pausa e mai attivata.",
+ "arrivo": "Una persona italiana che non ha mai fatto pubblicità a pagamento arriva ad avere in Ads Manager una campagna completa (account, campagna, gruppo di annunci con context hints, annunci, budget, strategia d'offerta, tracciamento) pronta ma non lanciata: in pausa, nessuna spesa.",
+ "lingua": "it",
+ "lingua_video": "en",
+ "da": "chatgpt-ads",
+ "tema": "ChatGPT Ads, da zero alla prima campagna",
+ "copertina": null,
+ "categoria": null,
+ "creato": "2026-11-06",
+ "controllato": "2026-11-09",
+ "stato": "pronto",
+ "schede_mancanti": 0,
+ "fonti": "37 pagine del centro assistenza OpenAI, scaricate il 6/11/2026",
+ "avvisi": [
+  "Self-service disponibile: nella tabella ufficiale l'Italia è «Available»; la persona giuridica che fa pubblicità e viene fatturata deve avere sede in un paese della lista (20001245-ads-manager-availability.md). La data di partenza in Europa, 31/8/2026, viene da chatgpt_ads.md (non ufficiale).",
+  "Ambiguità sulla stessa pagina: dice anche che gli inserzionisti dei «new European markets» per ora partono tramite il team OpenAI Ads o partner. Se l'iscrizione diretta dall'Italia si blocca, la ragione probabile è questa (vedi Dubbi in mappa.md).",
+  "Valuta e minimi: con fatturazione in EUR il budget giornaliero minimo è 15 € (20001210-creating-campaigns-for-chatgpt-ads.md). Il minimo per il budget totale di campagna non è scritto. Gli esempi di soglia di pagamento sono solo in dollari (25 $, poi 50 $, 100 $...): gli importi in euro non sono scritti (20001216-billing-payment.md).",
+  "Paese, valuta e fuso orario si scelgono alla creazione dell'account e poi non si cambiano: controllare Italia, euro e fuso italiano prima di confermare (20001213-ads-manager-account-setup.md). Carta e indirizzo di fatturazione devono corrispondere al paese dell'attività (20001216-billing-payment.md).",
+  "Partita IVA: si aggiunge in Billing → Settings e vale solo per le fatture successive (20001216-billing-payment.md).",
+  "Niente personalizzazione nello Spazio economico europeo e in Svizzera: gli annunci si basano sulla conversazione in corso; i pubblici personalizzati (liste clienti) per campagne verso SEE o Svizzera vanno evitati (20001047-ads-in-chatgpt.md, 20001210-creating-campaigns-for-chatgpt-ads.md, 20001346-set-up-custom-audiences-for-your-campaign.md).",
+  "Account nuovo: all'inizio può fare pubblicità solo nel paese di casa (l'Italia); gli altri paesi si sbloccano dopo la verifica d'identità approvata e una spesa minima nel paese di casa. Va incluso esplicitamente il paese: escludere gli altri non basta (20001210-creating-campaigns-for-chatgpt-ads.md).",
+  "Verifica dell'attività: può richiedere fino a 7 giorni lavorativi, e alcuni account possono spendere prima che sia finita. Non è un freno: per non spendere la campagna va tenuta in pausa (20001534-troubleshooting-common-onboarding-and-policy-issues.md).",
+  "Settori regolamentati: fuori dagli USA gran parte delle categorie di salute, molte di finanza e i servizi legali non sono ammessi o sono riservati a inserzionisti approvati (tabella in 20001534-troubleshooting-common-onboarding-and-policy-issues.md).",
+  "Lingua: un annuncio può comparire in una lingua diversa da quella della conversazione e dal 30/10/2026 i creative enhancements possono tradurre il testo; chi scrive in italiano deve decidere se lasciarli attivi (20001047-ads-in-chatgpt.md, 20001614-creative-enhancements-for-chatgpt-ads.md).",
+  "Strumenti limitati: l'app Shopify oggi è solo per i negozi USA (20001523-set-up-chatgpt-ads-for-shopify.md); il collegamento GA4 è in beta tramite account manager (20001562-connecting-google-analytics-4-to-openai-ads-manager.md); il limite di spesa giornaliero dell'account non esiste per gli account self-service pagati con carta (20001216-billing-payment.md).",
+  "Carta: quando la si aggiunge può comparire un blocco temporaneo di importo variabile per paese; non è una spesa pubblicitaria e può restare visibile in banca 8 giorni o più (20001216-billing-payment.md).",
+  "Consenso: i dati di conversione si inviano solo dopo aver informato gli utenti e raccolto i consensi dove la legge li chiede (20001409-conversion-measurement.md). Per un sito italiano vuol dire Pixel dietro il banner dei consensi: è una deduzione, la pagina non nomina il GDPR."
+ ],
+ "cambi_recenti": [
+  {
+   "data": "2026-02-09",
+   "cosa": "Inizio del test degli annunci in ChatGPT negli USA. I video precedenti sono annunci e ipotesi.",
+   "fonte": "20001047-ads-in-chatgpt.md"
+  },
+  {
+   "data": "2026-05-05",
+   "cosa": "Ads Manager beta in self-service e offerte a CPC (non ufficiale: la FAQ ufficiale dice solo «pilot from February through April», poi self-service).",
+   "fonte": "chatgpt_ads.md"
+  },
+  {
+   "data": "2026-08-31",
+   "cosa": "Self-service da Ads Manager in Europa, Italia compresa (non ufficiale come data; la pagina ufficiale dice solo che oggi l'Italia è «Available»).",
+   "fonte": "chatgpt_ads.md"
+  },
+  {
+   "data": "2026-09-25",
+   "cosa": "Nome dell'account, nome del brand e ragione sociale si gestiscono separatamente; cambiare brand o ragione sociale fa ripartire una revisione.",
+   "fonte": "20001213-ads-manager-account-setup.md"
+  },
+  {
+   "data": "2026-09-30",
+   "cosa": "Finestre di attribuzione flessibili: clic 7, 14 o 30 giorni, visualizzazione 0 o 1 giorno (non ufficiale come data; la funzione è descritta in 20001214-measure-results.md senza data).",
+   "fonte": "chatgpt_ads.md"
+  },
+  {
+   "data": "2026-10-26",
+   "cosa": "Formato a più immagini (4-6 immagini quadrate, un solo link, unico pulsante «Learn more») in beta aperta in Ads Manager.",
+   "fonte": "20001212-creating-ads-for-chatgpt-ads.md"
+  },
+  {
+   "data": "2026-10-30",
+   "cosa": "Creative enhancements attivi di base per campagne nuove ed esistenti: il sistema può riscrivere titoli e testi, tradurli, ridimensionare immagini e cambiare l'URL di destinazione senza approvazione. chatgpt_ads.md dice 29/10, la pagina ufficiale dice venerdì 30/10.",
+   "fonte": "20001614-creative-enhancements-for-chatgpt-ads.md"
+  },
+  {
+   "data": "2026-10-30",
+   "cosa": "Budget giornaliero trattato come media su 7 giorni (fino a 2 volte in un giorno, al massimo 7 volte nella settimana). La pagina lo presenta come cambio ma non ne scrive la data: 30/10 è solo il suo ultimo aggiornamento.",
+   "fonte": "20001413-daily-budgets.md"
+  },
+  {
+   "data": "2026-11-09",
+   "cosa": "Target CPA sostituisce Max Bid nelle nuove campagne a conversione; Target CPC disponibile nelle nuove campagne a clic; da questa data si possono spostare le campagne esistenti. La strategia automatica si chiama ora «Intelligent bidding» (prima Maximize Results).",
+   "fonte": "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
+  },
+  {
+   "data": "2027-01-01",
+   "cosa": "Max Bid e Max CPC si ritirano anche per le campagne esistenti.",
+   "fonte": "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
+  }
+ ],
+ "durata_min": 45,
+ "tappe": [
+  {
+   "n": 1,
+   "titolo": "Cos'è ChatGPT Ads e come appare un annuncio",
+   "obiettivo": "Sai spiegare dove compare un annuncio in ChatGPT, chi lo vede, da quali elementi è fatto e con quali segnali il sistema sceglie quale mostrare.",
+   "minuti_video": 4,
+   "valido_da": "2026-02-09",
+   "ricontrolla_dopo": null,
+   "nota_ricontrollo": null,
+   "concetti": [
+    "L'annuncio compare sotto la risposta, etichettato come sponsorizzato e separato dalla risposta.",
+    "Lo vedono solo gli utenti dei piani Free e Go; Plus, Pro, Business, Enterprise ed Edu no; nemmeno chi risulta minorenne.",
+    "Nelle chat temporanee non compaiono annunci (e nemmeno nel browser Atlas o vicino a temi sensibili).",
+    "Gli annunci non cambiano le risposte di ChatGPT: girano su sistemi separati.",
+    "Un annuncio è fatto di: nome dell'inserzionista, favicon (logo), titolo, testo, pagina di arrivo, immagine.",
+    "La scelta dell'annuncio usa il contesto della conversazione, la pagina di arrivo, titolo, testo e i context hints dell'inserzionista: non parole chiave.",
+    "Fra più annunci idonei decide un'asta di secondo prezzo pesata per la rilevanza.",
+    "L'inserzionista riceve solo dati aggregati (visualizzazioni, clic), mai le conversazioni.",
+    "In SEE e Svizzera gli annunci personalizzati non ci sono, per ora: conta la conversazione in corso.",
+    "È una piattaforma in beta, senza parametri di riferimento sui risultati: diffidare di chi promette numeri."
+   ],
+   "letture": [
+    {
+     "titolo": "Ads in ChatGPT",
+     "url": "https://help.openai.com/en/articles/20001047-ads-in-chatgpt"
+    },
+    {
+     "titolo": "Ads in ChatGPT: The Basics",
+     "url": "https://help.openai.com/en/articles/20001207-ads-in-chatgpt-the-basics"
+    },
+    {
+     "titolo": "Ads Manager Beta Overview",
+     "url": "https://help.openai.com/en/articles/20001206-ads-manager-beta-overview"
+    }
+   ],
+   "nota_letture": null,
+   "buco": null,
+   "video": [
+    {
+     "id": "o2HTIhH3RMw",
+     "ruolo": "principale",
+     "lingua": "en",
+     "inizio": "0:00",
+     "fine": "3:42",
+     "riassunto": "Il video spiega cosa sono i ChatGPT Ads, come funzionano i formati pubblicitari (Sponsored Answer e Shopping Carousel) e illustra una strategia in 5 passaggi per lanciare la prima campagna. Evidenzia l'importanza dell'AEO (Answer Engine Optimization) per ottimizzare la presenza organica prima di spendere in advertising e mostra l'interfaccia di Ads Manager.",
+     "punti": [
+      {
+       "minuto": "0:00",
+       "testo": "Introduzione e formati di ChatGPT Ads: Gli annunci appaiono sotto la risposta etichettati come Sponsored; Formati principali: Sponsored Answer e Shopping Carousel; Visibili solo agli utenti dei piani Free e Go (non Plus/Pro/Enterprise o minorenni)"
+      },
+      {
+       "minuto": "1:29",
+       "testo": "L'importanza dell'AEO prima di investire in Ads: Gli inserzionisti ricevono solo dati aggregati, non il contenuto delle chat; L'AEO (Answer Engine Optimization) garantisce che ChatGPT conosca già il tuo brand; Testare l'ottimizzazione organica prima di spendere budget pubblicitario"
+      }
+     ],
+     "attenzione": [],
+     "perche": "È una risorsa eccellente che spiega sia i concetti chiave della pubblicità su ChatGPT sia l'interdipendenza tra AEO organica e campagne a pagamento.",
+     "punteggio": 9.0
+    },
+    {
+     "id": "sFFhcOs3c5Y",
+     "ruolo": "alternativo",
+     "lingua": "en",
+     "inizio": "3:24",
+     "fine": "4:34",
+     "riassunto": "Il video mostra una guida dettagliata e passo dopo passo alla creazione della prima campagna pubblicitaria all'interno di ChatGPT Ads Manager. Il creatore illustra l'accesso alla piattaforma, la configurazione preventiva del pixel di conversione e la strutturazione completa di una campagna con obiettivo clic. È rivolto a marketer e imprenditori che vogliono sfruttare per primi la nuova piattaforma pubblicitaria di OpenAI.",
+     "punti": [
+      {
+       "minuto": "3:24",
+       "testo": "Come appaiono gli annunci in ChatGPT: Gli annunci compaiono al termine delle risposte dell'assistente; Elementi dell'annuncio: raccomandazione contestuale, immagine e link al sito; Differenza rispetto alla ricerca tradizionale e ai social network"
+      }
+     ],
+     "attenzione": [],
+     "perche": "È uno dei walkthrough più completi e fedeli dell'interfaccia originale di Ads Manager. Nonostante sia precedente alle novità autunnali del 2026 (come Target CPC e Creative Enhancements), fornisce una comprensione visuale e pratica perfetta per chi parte da zero.",
+     "punteggio": 8.0
+    },
+    {
+     "id": "N_oQoB5gvXg",
+     "ruolo": "alternativo",
+     "lingua": "en",
+     "inizio": "0:00",
+     "fine": "1:56",
+     "riassunto": "Silvio Perez di AdConversion illustra il funzionamento di ChatGPT Ads partendo dai formati dell'annuncio e dalla struttura dell'Ads Manager, condividendo i dati reali di 25.000 $ di spesa della sua agenzia. Spiega come ideare la strategia per intercettare le conversazioni degli utenti (brand, competitor, soluzioni, pain point) e come redigere i context hints. Infine, guida passo dopo passo l'installazione tecnica del Pixel di OpenAI e degli eventi di conversione tramite Google Tag Manager.",
+     "punti": [
+      {
+       "minuto": "0:00",
+       "testo": "Introduzione e panoramica del percorso: Presentazione degli argomenti: formati annuncio, dati di spesa reale, lancio della prima campagna; Esperienza dell'agenzia su oltre 40 milioni di dollari/anno di spesa pubblicitaria B2B"
+      },
+      {
+       "minuto": "0:53",
+       "testo": "Cosa sono e come appaiono gli annunci su ChatGPT: Posizionamento testuale e contestuale con etichetta 'Sponsored' in fondo alla chat; Separazione visiva tra risposta organica e annuncio; Studio di Wired: circa 1 prompt su 5 mostra un annuncio sponsorizzato"
+      }
+     ],
+     "attenzione": [],
+     "perche": "È una delle guide pratiche più complete e approfondite disponibili su ChatGPT Ads. Mostra esattamente l'Ads Manager reale, insegna a impostare i context hints e illustra l'intero setup di tracciamento su GTM; basta integrare le specificità normative per l'Italia (niente liste clienti, valuta EUR, banner consensi).",
+     "punteggio": 7.0
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titolo": "Aprire l'account Ads Manager dall'Italia senza far partire nulla",
+   "obiettivo": "Hai un account inserzionista italiano in Ads Manager con nomi, logo, fatturazione e verifica avviata, senza nessun annuncio che possa partire.",
+   "minuti_video": 13,
+   "valido_da": "2026-08-31",
+   "ricontrolla_dopo": null,
+   "nota_ricontrollo": null,
+   "concetti": [
+    "L'Italia è disponibile in self-service; chi fa pubblicità e viene fatturato deve avere sede in un paese della lista.",
+    "La persona giuridica che pubblica e paga deve avere sede in un paese disponibile.",
+    "Ci si iscrive su ads.openai.com con lo stesso account OpenAI di ChatGPT, o se ne crea uno.",
+    "Due strade: creare subito un annuncio dal proprio sito oppure saltare. Con la prima l'annuncio può partire dopo la revisione e iniziare a spendere: per questo percorso conviene saltare.",
+    "La strada da usare qui: saltare la creazione dell'annuncio e andare in Ads Manager.",
+    "Paese, valuta e fuso orario non si cambiano dopo la creazione dell'account.",
+    "Dal 25/9/2026 nome dell'account, nome del brand (quello mostrato negli annunci) e ragione sociale sono separati, in Settings → General.",
+    "Senza fatturazione (profilo + carta) le campagne non possono andare in onda.",
+    "Il blocco sulla carta quando la si aggiunge non è un addebito pubblicitario.",
+    "Si paga dopo: la carta viene addebitata quando la spesa raggiunge la soglia di pagamento o a fine mese.",
+    "Carta e dati di fatturazione devono corrispondere al paese dell'attività scelto all'iscrizione.",
+    "La partita IVA si inserisce in Ads Manager (Billing → Settings).",
+    "Verifica dell'account, approvazione, revisione degli annunci e messa in onda sono controlli separati.",
+    "La verifica dell'attività può durare fino a 7 giorni lavorativi: conviene avviarla subito.",
+    "Una verifica incompleta non impedisce di spendere: per non spendere si mette in pausa.",
+    "Alcune categorie (salute, finanza, legale) sono vietate o riservate fuori dagli USA: controllare prima di iniziare."
+   ],
+   "letture": [
+    {
+     "titolo": "Ads Manager Account Setup",
+     "url": "https://help.openai.com/en/articles/20001213-ads-manager-account-setup"
+    },
+    {
+     "titolo": "Ads Manager Availability",
+     "url": "https://help.openai.com/en/articles/20001245-ads-manager-availability"
+    },
+    {
+     "titolo": "Billing & Payment",
+     "url": "https://help.openai.com/en/articles/20001216-billing-payment"
+    },
+    {
+     "titolo": "Troubleshooting Common Onboarding and Policy Issues",
+     "url": "https://help.openai.com/en/articles/20001534-troubleshooting-common-onboarding-and-policy-issues"
+    }
+   ],
+   "nota_letture": null,
+   "buco": null,
+   "video": [
+    {
+     "id": "W2tD1GB1ZhI",
+     "ruolo": "principale",
+     "lingua": "en",
+     "inizio": "0:00",
+     "fine": "12:40",
+     "riassunto": "Il video guida l'utente passo-passo nell'apertura e configurazione di un account Ads Manager su OpenAI (ads.openai.com) e nella creazione di una prima campagna pubblicitaria per ChatGPT. Mostra come impostare dettagli aziendali, valuta, fuso orario, logo, inviti al team e preferenze di billing. Successivamente illustra la struttura in 3 livelli (campagna, gruppo annunci, annuncio) inserendo budget, targeting geografico, opzioni di offerta e creatività.",
+     "punti": [
+      {
+       "minuto": "0:00",
+       "testo": "Introduzione e accesso ad Ads Manager: Navigazione verso ads.openai.com; Autenticazione tramite l'account OpenAI esistente"
+      },
+      {
+       "minuto": "1:21",
+       "testo": "Creazione e configurazione dell'account inserzionista: Inserimento del sito aziendale per l'anteprima iniziale; Scelta di ragione sociale, settore, paese, valuta e fuso orario; Attenzione all'impossibilità di modificare paese e valuta in seguito"
+      },
+      {
+       "minuto": "4:44",
+       "testo": "Impostazione di logo e dati di fatturazione: Inserimento di una carta di credito/debito o rinvio dell'operazione; Caricamento del logo aziendale per il profilo inserzionista"
+      },
+      {
+       "minuto": "7:22",
+       "testo": "Panoramica interfaccia e gestione dei membri del team: Esplorazione delle sezioni Overview, Campaigns, Conversions, Tools e Settings; Invito di un utente aggiuntivo con ruolo Admin tramite email e accettazione dell'invito"
+      }
+     ],
+     "attenzione": [],
+     "perche": "Fornisce una panoramica visiva completa ed esaustiva dell'interfaccia Ads Manager, utilissima per chi parte da zero per capire l'esatta struttura dei menu e dei campi richiesti.",
+     "punteggio": 7.88
+    },
+    {
+     "id": "o2HTIhH3RMw",
+     "ruolo": "alternativo",
+     "lingua": "en",
+     "inizio": "3:43",
+     "fine": "4:56",
+     "riassunto": "Il video spiega cosa sono i ChatGPT Ads, come funzionano i formati pubblicitari (Sponsored Answer e Shopping Carousel) e illustra una strategia in 5 passaggi per lanciare la prima campagna. Evidenzia l'importanza dell'AEO (Answer Engine Optimization) per ottimizzare la presenza organica prima di spendere in advertising e mostra l'interfaccia di Ads Manager.",
+     "punti": [
+      {
+       "minuto": "3:43",
+       "testo": "Accesso a Ads Manager e configurazione iniziale: Accesso tramite Ads Manager self-serve su ads.openai.com; Nessun minimo di spesa sulla piattaforma self-service; Scelta delle opzioni di offerta a CPC o CPM"
+      }
+     ],
+     "attenzione": [],
+     "perche": "È una risorsa eccellente che spiega sia i concetti chiave della pubblicità su ChatGPT sia l'interdipendenza tra AEO organica e campagne a pagamento.",
+     "punteggio": 7.33
+    },
+    {
+     "id": "N_oQoB5gvXg",
+     "ruolo": "alternativo",
+     "lingua": "en",
+     "inizio": "1:56",
+     "fine": "5:35",
+     "riassunto": "Silvio Perez di AdConversion illustra il funzionamento di ChatGPT Ads partendo dai formati dell'annuncio e dalla struttura dell'Ads Manager, condividendo i dati reali di 25.000 $ di spesa della sua agenzia. Spiega come ideare la strategia per intercettare le conversazioni degli utenti (brand, competitor, soluzioni, pain point) e come redigere i context hints. Infine, guida passo dopo passo l'installazione tecnica del Pixel di OpenAI e degli eventi di conversione tramite Google Tag Manager.",
+     "punti": [
+      {
+       "minuto": "1:56",
+       "testo": "Panoramica interfaccia Ads Manager (ads.openai.com): Accesso e creazione account su ads.openai.com; Gerarchia di account: Campagne, Ad Groups e Annunci; Impostazione di Max CPC e Context Hints a livello di Ad Group"
+      }
+     ],
+     "attenzione": [
+      {
+       "minuto": "3:03",
+       "dice": "A livello di Ad Group si imposta l'offerta Maximum CPC bid",
+       "verdetto": "superata",
+       "perche": "Come da cambio del 9/11/2026 (20001634), Target CPC sostituisce Max CPC nelle nuove campagne a clic e Target CPA sostituisce Max Bid in quelle a conversione, mentre Max Bid/Max CPC vanno in pensione definitiva il 1/1/2027."
+      }
+     ],
+     "perche": "È una delle guide pratiche più complete e approfondite disponibili su ChatGPT Ads. Mostra esattamente l'Ads Manager reale, insegna a impostare i context hints e illustra l'intero setup di tracciamento su GTM; basta integrare le specificità normative per l'Italia (niente liste clienti, valuta EUR, banner consensi).",
+     "punteggio": 6.83
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titolo": "La struttura: campagna, gruppo di annunci e context hints",
+   "obiettivo": "Sai creare in Ads Manager una campagna con obiettivo, paese e piattaforme giusti e un gruppo di annunci con context hints scritti come frasi chiare.",
+   "minuti_video": 11,
+   "valido_da": "2026-05-05",
+   "ricontrolla_dopo": null,
+   "nota_ricontrollo": null,
+   "concetti": [
+    "Tre livelli: la campagna (obiettivo, budget, date, paesi), il gruppo di annunci (un tema o un'intenzione, con i context hints), l'annuncio.",
+    "Il gruppo raccoglie annunci attorno a un tema o a un'intenzione.",
+    "Creazione guidata: Create → Create campaign.",
+    "Obiettivo: Views (paghi a mille impressioni), Clicks (paghi a clic), Conversions.",
+    "Con Conversions non si paga a conversione, ma a clic o a impressioni.",
+    "Conversions richiede il tracciamento attivo e un evento standard: per una prima campagna senza Pixel l'obiettivo sensato è Clicks.",
+    "L'obiettivo non si cambia dopo: serve una campagna nuova.",
+    "Un account nuovo all'inizio può fare pubblicità solo nel paese di casa.",
+    "Il paese va incluso esplicitamente: escludere gli altri non basta (l'esempio ufficiale è sugli USA, vale per l'Italia).",
+    "Piattaforme selezionabili: app e web Android, web desktop, app e web iOS.",
+    "Verso SEE e Svizzera niente pubblici personalizzati.",
+    "Gruppi separati quando servono messaggi o pagine di arrivo diversi.",
+    "I context hints non sono parole chiave né regole di targeting e non garantiscono la comparsa.",
+    "Per scriverli: cosa offri, a chi serve, quando è utile.",
+    "Una frase naturale per un'idea sola, non un elenco di parole.",
+    "Esempio ufficiale di hint buono (contro il generico «running shoes»).",
+    "Gli hints non sono istruzioni («mostra solo a chi è a Milano» non funziona): per i limiti si usano i controlli della campagna.",
+    "Le frasi negative (Negative Phrases) esistono solo per inserzionisti qualificati, non per tutti."
+   ],
+   "letture": [
+    {
+     "titolo": "Creating campaigns for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001210-creating-campaigns-for-chatgpt-ads"
+    },
+    {
+     "titolo": "Create Ad Groups for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001211-create-ad-groups-for-chatgpt-ads"
+    },
+    {
+     "titolo": "Writing context hints for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001521-writing-context-hints-for-chatgpt-ads"
+    },
+    {
+     "titolo": "Launch Campaigns",
+     "url": "https://help.openai.com/en/articles/20001209-launch-campaigns"
+    }
+   ],
+   "nota_letture": null,
+   "buco": null,
+   "video": [
+    {
+     "id": "sFFhcOs3c5Y",
+     "ruolo": "principale",
+     "lingua": "en",
+     "inizio": "4:34",
+     "fine": "15:30",
+     "riassunto": "Il video mostra una guida dettagliata e passo dopo passo alla creazione della prima campagna pubblicitaria all'interno di ChatGPT Ads Manager. Il creatore illustra l'accesso alla piattaforma, la configurazione preventiva del pixel di conversione e la strutturazione completa di una campagna con obiettivo clic. È rivolto a marketer e imprenditori che vogliono sfruttare per primi la nuova piattaforma pubblicitaria di OpenAI.",
+     "punti": [
+      {
+       "minuto": "4:34",
+       "testo": "Creazione della campagna: obiettivo, paesi e budget: Denominazione della campagna e scelta dell'obiettivo (Clicks vs Conversions in arrivo); Selezione delle aree geografiche; Budget giornaliero con soglia minima di 25 $ al giorno"
+      },
+      {
+       "minuto": "9:25",
+       "testo": "Gruppo di annunci, CPC massimo e Context Hints: Impostazione dell'offerta Maximum CPC (soglia minima suggerita di circa 3,00 - 3,50 $); URL di destinazione con parametri di tracciamento UTM; Uso del linguaggio naturale nei Context Hints per guidare l'AI"
+      }
+     ],
+     "attenzione": [
+      {
+       "minuto": "10:14",
+       "dice": "L'offerta viene impostata come Maximum CPC (offerta massima a clic)",
+       "verdetto": "superata",
+       "perche": "Dal 9/11/2026 Target CPC sostituisce la logica Max CPC per le nuove campagne a clic e Max CPC viene ritirato l'1/1/2027 (cambi recenti)."
+      }
+     ],
+     "perche": "È uno dei walkthrough più completi e fedeli dell'interfaccia originale di Ads Manager. Nonostante sia precedente alle novità autunnali del 2026 (come Target CPC e Creative Enhancements), fornisce una comprensione visuale e pratica perfetta per chi parte da zero.",
+     "punteggio": 8.0
+    },
+    {
+     "id": "nZWxomx8rW0",
+     "ruolo": "alternativo",
+     "lingua": "en",
+     "inizio": "6:37",
+     "fine": "9:15",
+     "riassunto": "Il video mostra una prima esplorazione pratica dell'interfaccia di ChatGPT Ads Manager durante la fase beta self-service di maggio 2026. L'autore illustra la configurazione completa di una campagna: selezione degli obiettivi, aree geografiche disponibili, impostazione dell'offerta CPC, scrittura dei context hints e creazione dell'annuncio (titolo, testo, immagine). È utile per chi parte da zero e vuole vedere il flusso reale di creazione all'interno della piattaforma, pur tenendo conto che diverse funzioni si sono evolute successivamente.",
+     "punti": [
+      {
+       "minuto": "6:37",
+       "testo": "Targeting tramite context hints: I context hints come descrizioni di pertinenza contestuale e non parole chiave; Formulazione in linguaggio naturale per intercettare intenti specifici; Necessità di testare formulazioni ampie vs specifiche"
+      }
+     ],
+     "attenzione": [],
+     "perche": "È un ottimo video per osservare da vicino la navigazione reale nell'interfaccia di Ads Manager e comprendere a fondo come impostare i context hints e i limiti di testo. Va però affiancato a note di aggiornamento sui cambi successivi: disponibilità in Italia (31/08/2026), creative enhancements attivi di base (30/10/2026) e passaggio a Target CPC/CPA (09/11/2026).",
+     "punteggio": 7.5
+    },
+    {
+     "id": "qHv38kdd4UE",
+     "ruolo": "alternativo",
+     "lingua": "en",
+     "inizio": "4:04",
+     "fine": "7:35",
+     "riassunto": "Il video guida passo passo alla creazione di una prima campagna pubblicitaria su ChatGPT Ads Manager, illustrando l'interfaccia della piattaforma e la struttura delle campagne. Mostra come impostare gli eventi di conversione, integrare il Pixel nel proprio sito e scrivere i Context Hints guidati dall'AI. È rivolto a marketer e imprenditori che vogliono sperimentare la pubblicità su ChatGPT prima dei concorrenti.",
+     "punti": [
+      {
+       "minuto": "4:04",
+       "testo": "Creazione della Campagna e scelta dell'Obiettivo: Nomenclatura standard per tracciare le campagne; Differenza tra Clic e Conversioni; Necessità del tracciamento per le campagne a conversione"
+      }
+     ],
+     "attenzione": [],
+     "perche": "È un'ottima guida pratica per comprendere l'interfaccia e la logica operativa di ChatGPT Ads, ma richiede integrazione con la documentazione aggiornata relativa ai cambi delle strategie d'offerta (Target CPA/CPC) e ai nuovi formati multi-immagine.",
+     "punteggio": 7.5
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "titolo": "Scrivere l'annuncio: titolo, testo, immagine e pagina di arrivo",
+   "obiettivo": "Sai preparare 2-3 annunci validi (immagine singola o più immagini) con una pagina di arrivo raggiungibile dai crawler di OpenAI, e decidi se lasciare attivi i creative enhancements.",
+   "minuti_video": 6,
+   "valido_da": "2026-10-30",
+   "ricontrolla_dopo": null,
+   "nota_ricontrollo": null,
+   "concetti": [
+    "Titolo: consigliati 16-24 caratteri, massimo 50.",
+    "Testo: consigliati 32-48 caratteri, massimo 100.",
+    "Immagine PNG o JPG, quadrata, al massimo 1200 x 1200.",
+    "Dal 26/10/2026 c'è il formato a più immagini, in beta aperta.",
+    "Una immagine per l'annuncio singolo, 4-6 immagini quadrate per quello multiplo.",
+    "Nel multiplo un solo link per tutte le immagini e un solo pulsante, «Learn more».",
+    "Testo orientato al beneficio: cosa offri, per chi, quando serve; non slogan.",
+    "Più varianti diverse di titolo e testo per la stessa offerta danno al sistema più occasioni.",
+    "Pagina di arrivo specifica (prodotto, categoria, contenuto), non la home.",
+    "La pagina deve lasciar passare OAI-AdsBot (obbligatorio); OAI-SearchBot è consigliato.",
+    "Va provato il link esatto dell'annuncio, con i parametri: la home che funziona non basta.",
+    "Annunci ingannevoli o incoerenti con la pagina vengono rifiutati (regole: Ads Policies).",
+    "Dal 30/10/2026 i creative enhancements sono attivi di base, anche sulle campagne esistenti.",
+    "Possono cambiare titoli e testi, ridimensionare immagini, cambiare l'URL di destinazione e tradurre.",
+    "Non c'è un'anteprima di ogni variante: girano senza approvazione.",
+    "Si gestiscono da «Manage settings»; l'impostazione della campagna prevale su quella dell'account.",
+    "Le «bozze suggerite» (Add new ad) usano i dati del sito, non l'intelligenza artificiale."
+   ],
+   "letture": [
+    {
+     "titolo": "Creating ads for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001212-creating-ads-for-chatgpt-ads"
+    },
+    {
+     "titolo": "Creative enhancements for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001614-creative-enhancements-for-chatgpt-ads"
+    },
+    {
+     "titolo": "Advertiser Guidance for Allowing OpenAI Web Crawlers",
+     "url": "https://help.openai.com/en/articles/20001243-advertiser-guidance-for-allowing-openai-web-crawlers"
+    },
+    {
+     "titolo": "Bulk Upload Campaign Schema Checklist",
+     "url": "https://help.openai.com/en/articles/20001218-bulk-upload-campaign-schema-checklist"
+    }
+   ],
+   "nota_letture": null,
+   "buco": null,
+   "video": [
+    {
+     "id": "sFFhcOs3c5Y",
+     "ruolo": "principale",
+     "lingua": "en",
+     "inizio": "15:30",
+     "fine": "21:18",
+     "riassunto": "Il video mostra una guida dettagliata e passo dopo passo alla creazione della prima campagna pubblicitaria all'interno di ChatGPT Ads Manager. Il creatore illustra l'accesso alla piattaforma, la configurazione preventiva del pixel di conversione e la strutturazione completa di una campagna con obiettivo clic. È rivolto a marketer e imprenditori che vogliono sfruttare per primi la nuova piattaforma pubblicitaria di OpenAI.",
+     "punti": [
+      {
+       "minuto": "15:30",
+       "testo": "Creazione della creatività: testo, limiti e immagine quadrata: Headline (fino a 50 caratteri, rischio troncamento dopo 25); Description (fino a 100 caratteri); Caricamento dell'immagine quadrata (minimo 256x256 px)"
+      },
+      {
+       "minuto": "19:16",
+       "testo": "Revisione, duplicazione varianti e pubblicazione della campagna: Duplicazione degli annunci per testare diverse immagini e copy; Riepilogo delle impostazioni della campagna; Pubblicazione e stato di revisione iniziale (Not serving / In review)"
+      }
+     ],
+     "attenzione": [
+      {
+       "minuto": "15:30",
+       "dice": "Video del 2026-06-08, prima del cambio del 2026-10-30",
+       "verdetto": "superata",
+       "perche": "Dal 30/10/2026 (ufficiale) i creative enhancements sono attivi di base: il sistema può riscrivere, tradurre e cambiare la pagina di destinazione senza approvazione"
+      }
+     ],
+     "perche": "È uno dei walkthrough più completi e fedeli dell'interfaccia originale di Ads Manager. Nonostante sia precedente alle novità autunnali del 2026 (come Target CPC e Creative Enhancements), fornisce una comprensione visuale e pratica perfetta per chi parte da zero.",
+     "punteggio": 6.25
+    },
+    {
+     "id": "o2HTIhH3RMw",
+     "ruolo": "alternativo",
+     "lingua": "en",
+     "inizio": "4:57",
+     "fine": "6:22",
+     "riassunto": "Il video spiega cosa sono i ChatGPT Ads, come funzionano i formati pubblicitari (Sponsored Answer e Shopping Carousel) e illustra una strategia in 5 passaggi per lanciare la prima campagna. Evidenzia l'importanza dell'AEO (Answer Engine Optimization) per ottimizzare la presenza organica prima di spendere in advertising e mostra l'interfaccia di Ads Manager.",
+     "punti": [
+      {
+       "minuto": "4:57",
+       "testo": "Tracciamento Pixel e scrittura del copy: Installazione del Pixel di conversione OpenAI e Conversions API; Scrittura mirata all'intenzione dell'utente anziché uso di parole chiave tradizionali; Generazione e revisione dei testi pubblicitari"
+      }
+     ],
+     "attenzione": [
+      {
+       "minuto": "4:57",
+       "dice": "Video del 2026-10-07, prima del cambio del 2026-10-30",
+       "verdetto": "superata",
+       "perche": "Dal 30/10/2026 (ufficiale) i creative enhancements sono attivi di base: il sistema può riscrivere, tradurre e cambiare la pagina di destinazione senza approvazione"
+      }
+     ],
+     "perche": "È una risorsa eccellente che spiega sia i concetti chiave della pubblicità su ChatGPT sia l'interdipendenza tra AEO organica e campagne a pagamento.",
+     "punteggio": 6.0
+    },
+    {
+     "id": "N_oQoB5gvXg",
+     "ruolo": "alternativo",
+     "lingua": "en",
+     "inizio": "8:34",
+     "fine": "19:05",
+     "riassunto": "Silvio Perez di AdConversion illustra il funzionamento di ChatGPT Ads partendo dai formati dell'annuncio e dalla struttura dell'Ads Manager, condividendo i dati reali di 25.000 $ di spesa della sua agenzia. Spiega come ideare la strategia per intercettare le conversazioni degli utenti (brand, competitor, soluzioni, pain point) e come redigere i context hints. Infine, guida passo dopo passo l'installazione tecnica del Pixel di OpenAI e degli eventi di conversione tramite Google Tag Manager.",
+     "punti": [
+      {
+       "minuto": "8:34",
+       "testo": "Strategia: dal funnel a clic al 'funnel di conversazione': Differenza tra ricerca classica e dialogo con l'AI; L'annuncio deve apparire come la naturale continuazione della risoluzione del problema discusso nella chat; Importanza dell'intento e del tempismo contestuale"
+      },
+      {
+       "minuto": "13:03",
+       "testo": "Pianificazione di campagne, context hints e creatività: Modello su foglio di calcolo per mappare campagne, gruppi e context hints; I quattro cluster tematici: Brand, Competitor, Funzionalità/Soluzioni, Pain Point; Regole per la scrittura dei context hints e abbinamento con copy e immagini pertinenti"
+      }
+     ],
+     "attenzione": [
+      {
+       "minuto": "8:34",
+       "dice": "Video del 2026-09-28, prima del cambio del 2026-10-30",
+       "verdetto": "superata",
+       "perche": "Dal 30/10/2026 (ufficiale) i creative enhancements sono attivi di base: il sistema può riscrivere, tradurre e cambiare la pagina di destinazione senza approvazione"
+      }
+     ],
+     "perche": "È una delle guide pratiche più complete e approfondite disponibili su ChatGPT Ads. Mostra esattamente l'Ads Manager reale, insegna a impostare i context hints e illustra l'intero setup di tracciamento su GTM; basta integrare le specificità normative per l'Italia (niente liste clienti, valuta EUR, banner consensi).",
+     "punteggio": 5.92
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titolo": "Budget e offerte: quanto puoi spendere davvero",
+   "obiettivo": "Sai impostare un budget giornaliero in euro, sai quanto può spendere al massimo la campagna in un giorno e in una settimana, e scegli la strategia d'offerta adatta a una prima campagna.",
+   "minuti_video": 3,
+   "valido_da": "2026-11-09",
+   "ricontrolla_dopo": "2026-11-09",
+   "nota_ricontrollo": "Dal 9/11 arrivano Target CPC e Target CPA: va cercato un video nuovo sulle offerte.",
+   "concetti": [
+    "Due tipi di budget: totale della campagna o giornaliero.",
+    "Il budget giornaliero è una media su 7 giorni, non un tetto del giorno.",
+    "In un giorno si può spendere fino al doppio del budget giornaliero.",
+    "Nella settimana (domenica-sabato) al massimo 7 volte il budget giornaliero.",
+    "In euro il budget giornaliero minimo è 15 €.",
+    "A chi inizia OpenAI consiglia il budget giornaliero.",
+    "Da totale a giornaliero si può passare, ma non si torna indietro.",
+    "Il ritmo di spesa non garantisce una spesa uniforme né completa.",
+    "La soglia di pagamento decide quando si addebita la carta: non è il budget né un tetto.",
+    "Con Clicks si paga a clic, con Views a mille impressioni.",
+    "Nei gruppi nuovi idonei la strategia automatica è già selezionata.",
+    "La strategia automatica ora si chiama Intelligent bidding (prima Maximize Results).",
+    "Dal 9/11/2026 nelle nuove campagne a clic c'è Target CPC.",
+    "Dal 9/11/2026 nelle nuove campagne a conversione Target CPA sostituisce Max Bid.",
+    "Max Bid e Max CPC spariscono il 1/1/2027 anche dalle campagne esistenti.",
+    "Target CPA e Target CPC sono medie, non prezzi massimi garantiti.",
+    "La pagina di base consiglia ancora un'offerta massima di 3-5 $ a clic: vale per il Max CPC che si ritira, ed è in dollari."
+   ],
+   "letture": [
+    {
+     "titolo": "Bidding strategies and how pricing works in ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads"
+    },
+    {
+     "titolo": "Daily budgets",
+     "url": "https://help.openai.com/en/articles/20001413-daily-budgets"
+    },
+    {
+     "titolo": "Budget pacing",
+     "url": "https://help.openai.com/en/articles/20001515-budget-pacing"
+    },
+    {
+     "titolo": "Maximize results bid strategy",
+     "url": "https://help.openai.com/en/articles/20001425-maximize-results-bid-strategy"
+    },
+    {
+     "titolo": "Creating campaigns for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001210-creating-campaigns-for-chatgpt-ads"
+    }
+   ],
+   "nota_letture": "Le strategie d'offerta (Target CPC, Target CPA, Intelligent bidding) si studiano sulla pagina ufficiale: i video di oggi spiegano ancora Max CPC e Max Bid, che si ritirano il 1/1/2027.",
+   "buco": null,
+   "video": [
+    {
+     "id": "h3aDJrLt_aE",
+     "ruolo": "principale",
+     "lingua": "en",
+     "inizio": "5:03",
+     "fine": "8:24",
+     "riassunto": "Il video offre una guida dettagliata e pratica passo-passo per la creazione di una campagna pubblicitaria su ChatGPT Ads Manager. Spiega la configurazione dell'account inserzionista, l'impostazione degli obiettivi della campagna, il targeting geografico, la scelta dei posizionamenti sulle piattaforme, la gestione del budget e delle offerte, la creazione di pubblici personalizzati, l'inserimento dei parametri di tracciamento UTM e la stesura delle inserzioni con verifica finale. È rivolto a marketer e imprenditori che desiderano esplorare la pubblicità su ChatGPT.",
+     "punti": [
+      {
+       "minuto": "05:03",
+       "testo": "Scelta dei posizionamenti e budget giornaliero: Piattaforme e dispositivi disponibili (Desktop web, iOS app, iOS web, Android web, Android app).; Definizione del budget giornaliero e limitazioni sul minimo impostabile.; Disattivazione della personalizzazione automatica del testo se si richiede controllo stretto sul brand."
+      },
+      {
+       "minuto": "06:47",
+       "testo": "Configurazione ad group e strategie di offerta: Creazione del gruppo di annunci e scelta della strategia di bidding (Maximize Results vs Max CPC).; Funzionamento dell'algoritmo di asta e indicatore della stima di erogazione."
+      }
+     ],
+     "attenzione": [
+      {
+       "minuto": "07:10",
+       "dice": "You can choose between Maximize results and Maximum CPC for bidding strategy.",
+       "verdetto": "superata",
+       "perche": "Come specificato nei cambi recenti della mappa, la strategia Maximize Results è stata rinominata 'Intelligent bidding' dal 09/11/2026 e la strategia CPC è stata sostituita da Target CPC, con ritirata definitiva di Max CPC dal 01/01/2027."
+      },
+      {
+       "minuto": "5:03",
+       "dice": "Video del 2026-09-24, prima del cambio del 2026-11-09",
+       "verdetto": "superata",
+       "perche": "Dal 9/11/2026 (ufficiale, fra 3 giorni) arrivano Target CPC e Target CPA nelle campagne nuove e la strategia automatica cambia nome in Intelligent bidding; Max Bid e Max CPC si ritirano il 1/1/2027"
+      }
+     ],
+     "perche": "È una delle guide pratiche più complete e visive sulla piattaforma pubblicitaria di OpenAI, ottima per comprendere la struttura delle campagne e la logica operativa dell'Ads Manager.",
+     "punteggio": "a mano"
+    },
+    {
+     "id": "W2tD1GB1ZhI",
+     "ruolo": "alternativo",
+     "lingua": "en",
+     "inizio": "12:41",
+     "fine": "17:49",
+     "riassunto": "Il video guida l'utente passo-passo nell'apertura e configurazione di un account Ads Manager su OpenAI (ads.openai.com) e nella creazione di una prima campagna pubblicitaria per ChatGPT. Mostra come impostare dettagli aziendali, valuta, fuso orario, logo, inviti al team e preferenze di billing. Successivamente illustra la struttura in 3 livelli (campagna, gruppo annunci, annuncio) inserendo budget, targeting geografico, opzioni di offerta e creatività.",
+     "punti": [
+      {
+       "minuto": "12:41",
+       "testo": "Configurazione livello Campagna: obiettivo, targeting e budget: Scelta dell'obiettivo Clicks; Targeting geografico con inclusione di citta e esclusione di regioni; Definizione del budget giornaliero e disattivazione dei Creative Enhancements"
+      }
+     ],
+     "attenzione": [
+      {
+       "minuto": "12:41",
+       "dice": "Video del 2026-10-25, prima del cambio del 2026-11-09",
+       "verdetto": "superata",
+       "perche": "Dal 9/11/2026 (ufficiale, fra 3 giorni) arrivano Target CPC e Target CPA nelle campagne nuove e la strategia automatica cambia nome in Intelligent bidding; Max Bid e Max CPC si ritirano il 1/1/2027"
+      }
+     ],
+     "perche": "Fornisce una panoramica visiva completa ed esaustiva dell'interfaccia Ads Manager, utilissima per chi parte da zero per capire l'esatta struttura dei menu e dei campi richiesti.",
+     "punteggio": "a mano"
+    },
+    {
+     "id": "14QXEYT-wSE",
+     "ruolo": "alternativo",
+     "lingua": "en",
+     "inizio": "17:59",
+     "fine": "20:57",
+     "riassunto": "Il video presenta un'introduzione all'advertising su ChatGPT Ads, spiegando come funzionano gli annunci sotto le risposte e il cambio di paradigma rispetto a Google Ads (descrivere persone e contesti anziché comprare parole chiave). Spiega la struttura in quattro mosse per creare il primo annuncio (Customer Sketch con Context Hint, scrittura dell'annuncio, budget e metriche di redditività). È un webinar introduttivo pensato per imprenditori e marketer che vogliono capire le basi strategiche della piattaforma, sebbene mostri la landing page promozionale invece dell'interfaccia operativa di Ads Manager.",
+     "punti": [
+      {
+       "minuto": "17:59",
+       "testo": "Step 2 e 3: Scrittura, Budget e Pubblicazione: Specifiche dell'annuncio: titolo (max 50 car.), descrizione (max 100 car.), immagine quadrata; Impostazione di budget (es. 25 $/giorno min USA / 15 €) e offerta (bid iniziale 3-5 $); Processo di pubblicazione: verifica fino a 7 giorni, ritardi nelle metriche di spesa e risultati"
+      },
+      {
+       "minuto": "19:07",
+       "testo": "Creative enhancements e calcolo del costo sostenibile (Judge): Funzione di riscrittura automatica (Creative enhancements) attiva di default; Formula per calcolare il CPC massimo sostenibile; Importanza della landing page nella conversione"
+      }
+     ],
+     "attenzione": [
+      {
+       "minuto": "18:41",
+       "dice": "Bid: start at $3 to $5 a click, OpenAI's starting point, not an average price",
+       "verdetto": "superata",
+       "perche": "La mappa in Tappa 5 indica che l'offerta massima di 3-5 $ a clic vale per il Max CPC, ritirato e sostituito da Target CPC/Target CPA dal 9/11/2026."
+      },
+      {
+       "minuto": "17:59",
+       "dice": "Video del 2026-10-25, prima del cambio del 2026-11-09",
+       "verdetto": "superata",
+       "perche": "Dal 9/11/2026 (ufficiale, fra 3 giorni) arrivano Target CPC e Target CPA nelle campagne nuove e la strategia automatica cambia nome in Intelligent bidding; Max Bid e Max CPC si ritirano il 1/1/2027"
+      }
+     ],
+     "perche": "Ideale come introduzione concettuale e per capire come impostare i context hints e il copywriting per ChatGPT Ads prima di passare a un tutorial pratico che mostri la configurazione passo-passo dentro Ads Manager.",
+     "punteggio": "a mano"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "titolo": "Misurazione e lista di controllo: campagna pronta, ma in pausa",
+   "obiettivo": "Sai preparare il tracciamento (UTM e, se serve, Pixel), sai dove leggerai i risultati e con quali ritardi, e chiudi la campagna completa ma non attiva, con la lista di controllo spuntata.",
+   "minuti_video": 8,
+   "valido_da": "2026-09-30",
+   "ricontrolla_dopo": null,
+   "nota_ricontrollo": null,
+   "concetti": [
+    "Il modo più semplice di misurare: parametri UTM nell'URL della pagina di arrivo.",
+    "Esistono anche parametri dinamici (id di campagna, gruppo, annuncio).",
+    "Metriche disponibili: impressioni, clic, spesa, CTR, CPC medio, CPM medio, conversioni.",
+    "La spesa arriva con 7-8 ore di ritardo: una spesa a zero non vuol dire che non stai spendendo.",
+    "Le conversioni compaiono dopo 24-48 ore.",
+    "Per le conversioni serve una fonte dati in Ads Manager e il Pixel di OpenAI, la Conversions API o entrambi.",
+    "OpenAI aggiunge all'URL il riferimento del clic «oppref»: redirect e navigazione non devono perderlo.",
+    "Pixel caricato non vuol dire evento inviato.",
+    "Finestre di attribuzione scelte nei report: clic 7, 14 o 30 giorni; visualizzazione 0 o 1 giorno.",
+    "L'attribuzione è all'ultimo contatto, non multi-touch.",
+    "Dati di conversione solo con informativa e consensi dove la legge li chiede.",
+    "Prima campagna: le date possono non comparire prima della pubblicazione; non pubblicare solo per vederle.",
+    "Se non sei pronto, metti in pausa e controlla lo stato.",
+    "Il lancio vero è portare le campagne su Active: è il passo che questo percorso NON fa.",
+    "Gli annunci passano una revisione prima di andare in onda.",
+    "Dopo la pausa gli annunci possono ancora comparire fino a 24 ore, e quella spesa si paga.",
+    "La spesa già erogata in genere non si rimborsa."
+   ],
+   "letture": [
+    {
+     "titolo": "Measure Results",
+     "url": "https://help.openai.com/en/articles/20001214-measure-results"
+    },
+    {
+     "titolo": "Conversion Measurement",
+     "url": "https://help.openai.com/en/articles/20001409-conversion-measurement"
+    },
+    {
+     "titolo": "Troubleshooting conversion tracking for ChatGPT Ads",
+     "url": "https://help.openai.com/en/articles/20001604-troubleshooting-conversion-tracking-for-chatgpt-ads"
+    },
+    {
+     "titolo": "Launch Campaigns",
+     "url": "https://help.openai.com/en/articles/20001209-launch-campaigns"
+    },
+    {
+     "titolo": "Quickstart: Launch your first campaign",
+     "url": "https://help.openai.com/en/articles/20001224-quickstart-launch-your-first-campaign"
+    }
+   ],
+   "nota_letture": null,
+   "buco": null,
+   "video": [
+    {
+     "id": "NEiKYXcVgag",
+     "ruolo": "principale",
+     "lingua": "en",
+     "inizio": "1:06",
+     "fine": "8:54",
+     "riassunto": "Il video mostra passo passo come configurare il tracciamento delle conversioni su ChatGPT Ads (OpenAI Ads Manager) tramite Google Tag Manager. Spiega come creare la sorgente dati, installare il codice base del Pixel, definire l'evento di conversione standard (page_view) e impostare il tag sequencing per garantire il corretto invio dei dati. È una guida tecnica pratica rivolta a chi vuole misurare i risultati delle proprie campagne oltre il semplice clic.",
+     "punti": [
+      {
+       "minuto": "1:06",
+       "testo": "Creazione della sorgente dati e del Pixel in Ads Manager: Accesso a Tools -> Conversions in OpenAI Ads Manager; Creazione del Data Source e assegnazione del nome (ChatGPT Ads Pixel); Spiegazione del Pixel ID e dello snippet script HTML base (avviso sul non duplicare l'ID)"
+      },
+      {
+       "minuto": "2:34",
+       "testo": "Installazione e test del Pixel base su Google Tag Manager: Creazione di un Custom HTML Tag in GTM con lo script base del Pixel; Impostazione del trigger su All Pages e pubblicazione del contenitore; Verifica con Google Tag Assistant del corretto caricamento del Pixel"
+      },
+      {
+       "minuto": "4:22",
+       "testo": "Creazione dell'evento di conversione in Ads Manager: Selezione del Base event (Page viewed, Lead created, Subscription created, ecc.); Impostazione delle finestre di attribuzione (30 giorni per clic, 1 giorno per visualizzazione); Generazione del codice dell'evento (oaiq measure)"
+      },
+      {
+       "minuto": "5:49",
+       "testo": "Configurazione dell'evento in GTM e Tag Sequencing: Creazione del Custom HTML tag con l'evento racchiuso nel tag <script>; Configurazione del Tag Sequencing: forzare l'esecuzione del Pixel base prima dell'evento di conversione; Trigger su All Pages e pubblicazione della nuova versione del contenitore"
+      },
+      {
+       "minuto": "7:26",
+       "testo": "Verifica finale ed Event Stream: Debug con Tag Assistant: controllo che entrambi i tag si attivino una sola volta senza duplicati; Navigazione su altre pagine per verificare la coerenza del tracciamento; Controllo dell'Event Stream in Ads Manager con polling e avviso sui ritardi di 24-48 ore per i report"
+      }
+     ],
+     "attenzione": [],
+     "perche": "È il miglior tutorial pratico per la Tappa 6 sull'implementazione tecnica del tracciamento conversioni tramite Google Tag Manager su ChatGPT Ads. Va solo integrato con l'avvertenza sul consenso GDPR.",
+     "punteggio": 9.0
+    },
+    {
+     "id": "3-Xc9pn-UsA",
+     "ruolo": "alternativo",
+     "lingua": "en",
+     "inizio": "0:00",
+     "fine": "6:53",
+     "riassunto": "Questo video guida passo passo nell'impostazione del tracciamento delle conversioni per ChatGPT Ads tramite Google Tag Manager (GTM). Mostra come creare una fonte dati in OpenAI Ads Manager per ottenere il Pixel ID, come importare il modello ufficiale 'OpenAI Ads Measurement Pixel' dalla Community Template Gallery di GTM e come configurare sia il tag base di Page View che i tag di evento di conversione (es. Lead Created).",
+     "punti": [
+      {
+       "minuto": "0:00",
+       "testo": "Introduzione al tracciamento conversioni ChatGPT Ads con GTM: Presentazione della nuova funzionalità: il modello ufficiale OpenAI per Google Tag Manager."
+      },
+      {
+       "minuto": "0:16",
+       "testo": "Creazione della Data Source e del Pixel ID in Ads Manager: Navigazione in Tools → Conversions → Data Source in OpenAI Ads Manager.; Creazione della fonte dati e copia del Pixel ID generato."
+      },
+      {
+       "minuto": "0:54",
+       "testo": "Installazione del template OpenAI in GTM e setup Pixel base: Ricerca del modello 'OpenAI Ads Measurement Pixel' nella Community Template Gallery.; Inserimento del Pixel ID e configurazione dell'evento predefinito 'Page viewed'.; Impostazione del trigger di attivazione (Consent Initialization / All Pages)."
+      },
+      {
+       "minuto": "2:44",
+       "testo": "Configurazione di un evento di conversione (Lead Form Submit): Creazione di un nuovo tag di conversione specifico.; Selezione dell'evento standard (es. 'Lead created').; Collegamento al trigger del modulo di contatto o pagina di ringraziamento."
+      },
+      {
+       "minuto": "4:35",
+       "testo": "Panoramica sugli altri tipi di eventi e verifica nello Stream Eventi: Eventi predefiniti disponibili (Order created, Checkout started, Custom event, ecc.).; Verifica della ricezione degli eventi tramite il tab Event Stream (polling)."
+      },
+      {
+       "minuto": "5:36",
+       "testo": "Risorse correlate e conclusione: Panoramica dei tutorial su Shopping Ads, Audience e Ads Manager.; Anticipazione del prossimo video sui Context Hints."
+      }
+     ],
+     "attenzione": [
+      {
+       "minuto": "0:00",
+       "dice": "Video del 2026-09-09, prima del cambio del 2026-09-30",
+       "verdetto": "superata",
+       "perche": "Le finestre di attribuzione flessibili (clic 7-14-30 giorni, visualizzazione 0-1 giorno) arrivano il 30/9/2026 (data da chatgpt_ads.md, non ufficiale; la funzione è descritta nella pagina ufficiale senza data)"
+      }
+     ],
+     "perche": "È la guida di riferimento perfetta per la Tappa 6 del percorso di apprendimento, spiegando in modo dettagliato come configurare il Pixel e gli eventi di conversione tramite Google Tag Manager.",
+     "punteggio": 7.5
+    },
+    {
+     "id": "2ejNV87vaSI",
+     "ruolo": "alternativo",
+     "lingua": "en",
+     "inizio": "6:56",
+     "fine": "8:10",
+     "riassunto": "Il video offre una guida completa e visiva su come creare e gestire campagne pubblicitarie su ChatGPT Ads Manager. Spiega il posizionamento degli annunci contestuali, la distinzione tra utenti che vedono la pubblicità e quelli esenti, e mostra passo dopo passo l'impostazione di campagne, tracciamento pixel, context hints, cataloghi prodotti in bulk e analisi dei risultati.",
+     "punti": [
+      {
+       "minuto": "06:56",
+       "testo": "Analisi dei risultati e metriche di campagna: Monitoraggio di impressioni, clic e costi nel tempo; Segmentazione dei report per dispositivo, posizione e piattaforma"
+      }
+     ],
+     "attenzione": [],
+     "perche": "Offre una dimostrazione pratica completa e chiara della piattaforma pubblicitaria, risultando ideale per capire il flusso di lavoro dalla configurazione iniziale alla creazione di annunci e context hints.",
+     "punteggio": 6.5
+    }
+   ]
+  }
+ ]
+}

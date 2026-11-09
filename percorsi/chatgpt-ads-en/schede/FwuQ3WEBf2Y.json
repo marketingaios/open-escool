@@ -1,0 +1,197 @@
+{
+ "lingua_parlata": "hi",
+ "riassunto": "Guida pratica passo-passo che mostra la creazione da zero di un account inserzionista e della prima campagna pubblicitaria su Ads Manager di ChatGPT (ads.openai.com). Il docente illustra a schermo l'interfaccia reale: scelta dell'obiettivo, targeting geografico, budget, context hints, creazione dell'annuncio con immagine quadrata, configurazione del Pixel e dati di fatturazione. Serve a marketer e imprenditori che vogliono vedere concretamente come funziona la dashboard pubblicitaria di OpenAI.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:37",
+   "titolo": "Introduzione e roadmap di ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Lancio di ChatGPT Ads in India",
+    "Differenze rispetto a Meta e Google Ads",
+    "Panoramica dei passaggi pratici"
+   ]
+  },
+  {
+   "inizio": "1:38",
+   "fine": "2:49",
+   "titolo": "Come appaiono gli annunci dentro ChatGPT",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Esempio di ricerca per istituto di digital marketing",
+    "Annuncio sponsorizzato posizionato sotto la risposta di ChatGPT",
+    "Separazione tra risposta organica e inserzione"
+   ]
+  },
+  {
+   "inizio": "2:50",
+   "fine": "5:21",
+   "titolo": "Registrazione e apertura account su ads.openai.com",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Accesso a ads.openai.com",
+    "Inserimento URL del sito e anteprima generata",
+    "Salto ad Ads Manager e compilazione dati aziendali (paese, valuta, fuso)"
+   ]
+  },
+  {
+   "inizio": "5:22",
+   "fine": "6:18",
+   "titolo": "Panoramica della dashboard di Ads Manager",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Versione beta",
+    "Sezioni Overview, Campaigns, Tools e Billing",
+    "Funzionalità Conversioni e liste clienti in Audiences"
+   ]
+  },
+  {
+   "inizio": "6:19",
+   "fine": "8:28",
+   "titolo": "Creazione campagna: obiettivo, località e budget",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Obiettivi Clicks, Reach e Conversions",
+    "Targeting per città e CAP",
+    "Piattaforme (iOS, Android, Web)",
+    "Budget giornaliero e opzione Text Customization"
+   ]
+  },
+  {
+   "inizio": "8:29",
+   "fine": "10:57",
+   "titolo": "Configurazione gruppo di annunci, offerte e context hints",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Bidding: Maximize Results vs Manual Max CPC",
+    "Parametri dinamici URL di tracciamento",
+    "Context hints: descrizioni tematiche non a corrispondenza esatta"
+   ]
+  },
+  {
+   "inizio": "10:58",
+   "fine": "13:42",
+   "titolo": "Creazione dell'annuncio e pubblicazione",
+   "tappe": [
+    4,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Limiti caratteri per titolo (50) e testo (100)",
+    "Caricamento e ritaglio immagine quadrata",
+    "Riepilogo e invio campagna"
+   ]
+  },
+  {
+   "inizio": "13:43",
+   "fine": "15:42",
+   "titolo": "Pixel di conversione, pubblici e fatturazione",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Installazione script Pixel nel tag head",
+    "Creazione eventi personalizzati",
+    "Inserimento dati carta di credito"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "6:38",
+   "dice": "Gli obiettivi disponibili sono tre: Reach, Clicks e Conversions.",
+   "verdetto": "giusta",
+   "perche": "La mappa al punto 3 conferma che gli obiettivi sono Views (nel video mostrato come Reach nell'interfaccia beta indiana), Clicks e Conversions."
+  },
+  {
+   "minuto": "7:48",
+   "dice": "Il budget giornaliero minimo è di almeno 725 INR al giorno.",
+   "verdetto": "non_verificabile",
+   "perche": "La mappa indica il minimo per la fatturazione in euro (15 € al giorno), ma non riporta la soglia minima specifica per la rupia indiana (INR)."
+  },
+  {
+   "minuto": "8:36",
+   "dice": "Come strategia di offerta si può scegliere tra Maximize results e Manual Max CPC.",
+   "verdetto": "superata",
+   "perche": "Dal 9/11/2026 la strategia automatica è stata rinominata 'Intelligent bidding' e sono state introdotte Target CPC e Target CPA al posto di Max CPC e Max Bid, che verranno ritirati del tutto il 1/1/2027."
+  },
+  {
+   "minuto": "9:33",
+   "dice": "È possibile usare parametri URL dinamici come campaign_id, ad_group_id e ad_id per il tracciamento.",
+   "verdetto": "giusta",
+   "perche": "Confermato al punto 6 della mappa (parametri dinamici di campagna, gruppo e annuncio)."
+  },
+  {
+   "minuto": "10:00",
+   "dice": "I context hints servono a guidare il matching ma non sono regole di targeting a corrispondenza esatta.",
+   "verdetto": "giusta",
+   "perche": "Confermato al punto 3 della mappa: i context hints descrivono il contesto e non sono parole chiave a corrispondenza esatta."
+  },
+  {
+   "minuto": "11:00",
+   "dice": "Il titolo dell'annuncio ha un limite massimo di 50 caratteri e la descrizione di 100 caratteri.",
+   "verdetto": "giusta",
+   "perche": "Confermato al punto 4 della mappa (titolo massimo 50 caratteri, testo massimo 100)."
+  },
+  {
+   "minuto": "13:10",
+   "dice": "L'immagine dell'annuncio deve essere ritagliata in formato quadrato.",
+   "verdetto": "giusta",
+   "perche": "Confermato al punto 4 della mappa (immagine PNG o JPG quadrata, massimo 1200x1200)."
+  },
+  {
+   "minuto": "14:33",
+   "dice": "In Audiences è possibile caricare liste clienti con email o numeri di telefono.",
+   "verdetto": "giusta",
+   "perche": "L'interfaccia supporta le customer list, ma la mappa avverte che nello Spazio Economico Europeo e in Svizzera i pubblici personalizzati da liste clienti vanno evitati."
+  },
+  {
+   "minuto": "14:49",
+   "dice": "Per i pagamenti è supportata solo la carta di credito/debito e non ci sono altri metodi come UPI.",
+   "verdetto": "giusta",
+   "perche": "La mappa al punto 2 e negli avvisi conferma che gli account self-service pagano tramite carta registrata."
+  }
+ ],
+ "per_chi_impara": "Il video è registrato in lingua hindi ed è impostato sul mercato indiano (valuta INR, fuso orario di Calcutta, targeting geografico su città indiane). Per chi opera dall'Italia (UE): 1) Il budget minimo in euro è di 15 €/giorno (non 725 INR); 2) Nello Spazio Economico Europeo la personalizzazione tramite liste clienti (Audiences) va evitata; 3) Paese, valuta (EUR) e fuso orario vanno selezionati subito con attenzione poiché non sono modificabili; 4) L'installazione del Pixel richiede la raccolta preventiva del consenso (banner GDPR).",
+ "qualita": {
+  "voto": 4,
+  "perche": "Mostra chiaramente l'interfaccia autentica di Ads Manager di OpenAI e guida passo dopo passo attraverso l'intero flusso operativo (campagna, gruppo, annuncio, pixel, fatturazione). È penalizzato per un pubblico italiano dalla lingua hindi, dall'interruzione promozionale a metà video e dalle strategie di offerta mostrate che sono state aggiornate a novembre 2026."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "È un ottimo riferimento visivo per vedere esattamente i menu e i campi della piattaforma OpenAI Ads Manager reale prima di iniziare, ma per chi impara da zero in lingua italiana richiede lo sforzo di seguire l'audio in hindi o i sottotitoli e di adattare valute e normative al contesto europeo.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "6:19",
+  "fine": "10:57"
+ },
+ "video": "FwuQ3WEBf2Y",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:28:24+00:00"
+}

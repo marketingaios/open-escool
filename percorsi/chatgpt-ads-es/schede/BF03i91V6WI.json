@@ -1,0 +1,254 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo guía al usuario paso a paso en la creación de una primera campaña publicitaria en OpenAI Ads Manager (ChatGPT Ads). Alan Valdez muestra el registro de la cuenta, la configuración de la campaña y de los grupos de anuncios con los Context Hints, la creación de la imagen y del texto publicitario, hasta el seguimiento de las conversiones con Google Tag Manager. Es un tutorial práctico dirigido a marketers y emprendedores que quieren probar la plataforma publicitaria de ChatGPT.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "3:10",
+   "titolo": "Introducción a ChatGPT Ads y a la ubicación de los anuncios",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Explicación de dónde aparecen los anuncios dentro de la interfaz de ChatGPT",
+    "Los anuncios se muestran solo a los usuarios de las versiones gratuitas (Free y Go)",
+    "Funcionamiento basado en el contexto de la conversación y no en palabras clave tradicionales"
+   ]
+  },
+  {
+   "inizio": "3:10",
+   "fine": "6:16",
+   "titolo": "Registro de la cuenta y configuración del perfil de la empresa",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Procedimiento de registro en ads.openai.com con correo electrónico y código de verificación",
+    "Introducción de los datos de la empresa, la URL del sitio y el sector comercial",
+    "Selección del país (México) y de la moneda (MXN); no se puede crear una cuenta única de agencia"
+   ]
+  },
+  {
+   "inizio": "6:16",
+   "fine": "9:08",
+   "titolo": "Configuración de la campaña, la segmentación y el presupuesto",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Definición del nombre de la campaña y elección del objetivo (Clics frente a Conversiones)",
+    "Segmentación geográfica por estado o región y exclusión de países",
+    "Configuración del presupuesto diario (mínimo 150 MXN) y explicación del límite máximo diario (hasta el doble)"
+   ]
+  },
+  {
+   "inizio": "9:08",
+   "fine": "14:41",
+   "titolo": "Grupo de anuncios, pujas y Context Hints",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Selección de la estrategia de puja (Maximizar resultados frente a CPC máximo manual)",
+    "Configuración de los parámetros UTM para el seguimiento externo",
+    "Redacción de los Context Hints, descripciones en lenguaje natural de los servicios y de los clientes objetivo"
+   ]
+  },
+  {
+   "inizio": "14:41",
+   "fine": "16:57",
+   "titolo": "Creación del anuncio con título, texto e imagen",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Introducción del título (máx. 50 caracteres) y de la descripción (máx. 100 caracteres)",
+    "Carga de la imagen cuadrada de la marca",
+    "Vista previa del formato final del anuncio"
+   ]
+  },
+  {
+   "inizio": "16:57",
+   "fine": "20:08",
+   "titolo": "Resumen de la campaña, facturación y vista general de Ads Manager",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Revisión de la ficha de resumen antes de enviarla a revisión",
+    "Introducción de los datos de facturación (tarjeta de crédito y RFC/identificación fiscal)",
+    "Navegación por las secciones de Ads Manager: Campañas, Públicos y Feeds"
+   ]
+  },
+  {
+   "inizio": "20:08",
+   "fine": "23:22",
+   "titolo": "Creación de la fuente de datos del Pixel y de los eventos de conversión",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creación de la fuente de datos (ChatGPT Ads Pixel) en Herramientas → Conversiones",
+    "Generación del código general del Pixel y del evento de conversión ('Lead creado')",
+    "Explicación de la ventana de atribución de 30 días"
+   ]
+  },
+  {
+   "inizio": "23:22",
+   "fine": "26:05",
+   "titolo": "Implementación del Pixel con Google Tag Manager",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creación de la etiqueta HTML personalizada para el Pixel base, que se activa en todas las páginas",
+    "Creación de la etiqueta para el evento de conversión entre las etiquetas <script>",
+    "Configuración del activador en la página de agradecimiento (Thank you page)"
+   ]
+  },
+  {
+   "inizio": "26:05",
+   "fine": "28:23",
+   "titolo": "Creación de una nueva campaña con objetivo Conversiones",
+   "tappe": [
+    3,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Selección del objetivo 'Conversiones' ahora que el evento está creado",
+    "Asociación del evento de conversión 'Lead creado' a la nueva campaña",
+    "Diferencias en el flujo de creación respecto al objetivo Clics"
+   ]
+  },
+  {
+   "inizio": "28:23",
+   "fine": "31:34",
+   "titolo": "Valoraciones finales, consejos sobre el presupuesto y ROI",
+   "tappe": [
+    1,
+    5,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Análisis de las oportunidades de la fase beta (poca competencia, CPC potencialmente más bajos)",
+    "Reflexión sobre el público B2B frente al B2C (usuarios Free frente a usuarios Plus/Pro)",
+    "Consejo de probar con un presupuesto contenido y hacer un seguimiento cuidadoso con UTM y GA4"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:52",
+   "dice": "ChatGPT Ads actualmente solo está disponible en Estados Unidos, y en América Latina en México y Brasil.",
+   "verdetto": "superata",
+   "perche": "Italia y varios países europeos están disponibles en self-service desde el 31/08/2026."
+  },
+  {
+   "minuto": "1:48",
+   "dice": "Los anuncios solo aparecen a los usuarios de la cuenta gratuita (Free y Go), y no a los usuarios de planes de pago como Plus o Pro.",
+   "verdetto": "giusta",
+   "perche": "La etapa 1 del mapa confirma que los anuncios solo son visibles para los usuarios de los planes Free y Go."
+  },
+  {
+   "minuto": "5:03",
+   "dice": "El tipo de anunciante 'Particular' (persona física) no está disponible por ahora; solo se puede elegir 'Empresa'.",
+   "verdetto": "giusta",
+   "perche": "La etapa 2 del mapa especifica que la persona jurídica que publica y paga debe ser una empresa constituida."
+  },
+  {
+   "minuto": "5:58",
+   "dice": "No existe una cuenta administradora para agencias (MCC); cada cliente debe crear su propia cuenta y luego dar acceso.",
+   "verdetto": "giusta",
+   "perche": "La etapa 2 del mapa confirma que cada empresa debe tener su propia cuenta de facturación."
+  },
+  {
+   "minuto": "9:34",
+   "dice": "El costo diario máximo puede llegar hasta el doble del presupuesto diario medio configurado.",
+   "verdetto": "giusta",
+   "perche": "La etapa 5 y la actualización del 30/10/2026 confirman que el gasto en un solo día puede llegar hasta 2 veces el presupuesto diario."
+  },
+  {
+   "minuto": "10:02",
+   "dice": "El presupuesto diario mínimo en México es de 150 MXN.",
+   "verdetto": "giusta",
+   "perche": "La etapa 5 indica que el mínimo en EUR es de 15 €, que corresponde al umbral local equivalente de 150 MXN que se ve en la interfaz."
+  },
+  {
+   "minuto": "10:33",
+   "dice": "Las estrategias de puja disponibles son 'Maximizar resultados' y 'CPC máximo manual'.",
+   "verdetto": "superata",
+   "perche": "Desde el 09/11/2026 la estrategia automática se llama 'Intelligent bidding' y las pujas se basan en Target CPC / Target CPA, mientras que Max CPC se retiró."
+  },
+  {
+   "minuto": "13:40",
+   "dice": "Los Context Hints (pistas de contexto) sirven de guía para el algoritmo, pero no son palabras clave ni reglas rígidas de segmentación.",
+   "verdetto": "giusta",
+   "perche": "La etapa 3 del mapa confirma que los context hints no son palabras clave ni reglas de segmentación, sino frases descriptivas en lenguaje natural."
+  },
+  {
+   "minuto": "15:39",
+   "dice": "El título del anuncio admite hasta 50 caracteres y la descripción hasta 100 caracteres.",
+   "verdetto": "giusta",
+   "perche": "La etapa 4 del mapa indica exactamente que el título tiene un máximo de 50 caracteres y el texto/descripción un máximo de 100 caracteres."
+  },
+  {
+   "minuto": "16:32",
+   "dice": "La imagen del anuncio debe ser cuadrada (al menos 256x256 px).",
+   "verdetto": "giusta",
+   "perche": "La etapa 4 del mapa especifica que la imagen debe ser PNG o JPG, cuadrada, de un máximo de 1200x1200px."
+  },
+  {
+   "minuto": "17:53",
+   "dice": "Cuando se añade la tarjeta de crédito se hace un bloqueo temporal de autorización que se libera en un plazo de 3 días.",
+   "verdetto": "giusta",
+   "perche": "Los avisos del mapa explican que añadir la tarjeta implica un bloqueo temporal de verificación que luego se libera."
+  },
+  {
+   "minuto": "22:23",
+   "dice": "La ventana de atribución por clic es fija, de 30 días.",
+   "verdetto": "superata",
+   "perche": "Desde el 30/09/2026 hay ventanas de atribución flexibles en los informes (clic a 7, 14 o 30 días; visualización a 0 o 1 día)."
+  },
+  {
+   "minuto": "25:07",
+   "dice": "En Google Tag Manager, el código del evento de conversión que se pone en una etiqueta HTML personalizada debe ir entre las etiquetas <script> y </script>.",
+   "verdetto": "giusta",
+   "perche": "Es la sintaxis técnica correcta que pide GTM para ejecutar código JavaScript dentro de una etiqueta HTML personalizada."
+  },
+  {
+   "minuto": "26:20",
+   "dice": "Para cargar una audiencia personalizada con una lista de clientes hacen falta al menos 25.000 contactos.",
+   "verdetto": "non_verificabile",
+   "perche": "El mapa oficial no especifica un número mínimo exacto de contactos para las listas de clientes."
+  }
+ ],
+ "per_chi_impara": "Para quien trabaja desde Italia (Unión Europea), el procedimiento general de Ads Manager es idéntico, pero hay que prestar atención a algunas diferencias normativas y operativas: 1) Italia está plenamente disponible en self-service desde el 31/08/2026. 2) El presupuesto diario mínimo en euros es de 15 €. 3) Por la normativa GDPR, el Pixel de OpenAI debe activarse solo después de recoger el consentimiento del usuario con el banner de cookies. 4) Las audiencias personalizadas (listas de clientes) no deben usarse en campañas dirigidas al EEE/Suiza. 5) Desde el 30/10/2026 los 'Creative Enhancements' están activos por defecto y pueden modificar o traducir automáticamente anuncios y títulos si no se desactivan en la configuración.",
+ "qualita": {
+  "voto": 5,
+  "perche": "El vídeo ofrece un recorrido completo, claro y práctico por todas las fases de creación de la campaña en ChatGPT Ads, incluida la parte compleja del seguimiento con el Pixel y Google Tag Manager. Aunque se grabó antes de los cambios en las pujas de noviembre de 2026 y de la ampliación a Europa, la explicación de los principios básicos y de la estructura de la cuenta es excelente."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Es una guía práctica «de principio a fin» muy clara y detallada para quien se acerca a Ads Manager por primera vez. Muestra la interfaz real, la lógica de los Context Hints y la integración técnica con GTM.",
+ "tappa_migliore": 6,
+ "spezzone_migliore": {
+  "inizio": "20:08",
+  "fine": "26:05"
+ },
+ "video": "BF03i91V6WI",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T10:11:07+00:00"
+}

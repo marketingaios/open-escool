@@ -1,0 +1,153 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo ofrece una visión completa de ChatGPT Ads: explica cómo funciona el sistema publicitario basado en el contexto de las conversaciones, quién puede anunciarse, y muestra una demostración práctica paso a paso en el Ads Manager de OpenAI para crear una campaña.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "01:22",
+   "titolo": "Introducción y qué es ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Definición del sistema publicitario de OpenAI dentro de ChatGPT",
+    "Formato del anuncio con nombre de marca, título, descripción, imagen y enlace",
+    "Exclusión de los planes de pago (Plus, Pro, Business) y de los menores de edad de la segmentación"
+   ]
+  },
+  {
+   "inizio": "01:23",
+   "fine": "02:49",
+   "titolo": "Segmentación y contexto de las conversaciones",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Diferencia entre Google Ads (búsqueda), las redes sociales (público) y ChatGPT (contexto)",
+    "Uso de los Context Hints (indicaciones de contexto) por parte de los anunciantes",
+    "Factores que determinan si el anuncio es elegible en la subasta"
+   ]
+  },
+  {
+   "inizio": "02:50",
+   "fine": "03:33",
+   "titolo": "Formatos y objetivos disponibles",
+   "tappe": [
+    1,
+    3,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Anuncio nativo estándar e integración con el catálogo de productos",
+    "Objetivos de campaña, cobertura (Alcance), clics (Clics), conversiones (Conversiones)",
+    "Estructura en tres niveles, campaña, grupo de anuncios, anuncio"
+   ]
+  },
+  {
+   "inizio": "03:34",
+   "fine": "04:33",
+   "titolo": "Requisitos para anunciarse y políticas",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Disponibilidad self-service en los países admitidos (España incluida)",
+    "Sectores permitidos (bienes de consumo, viajes, e-commerce) y categorías restringidas o prohibidas"
+   ]
+  },
+  {
+   "inizio": "04:34",
+   "fine": "11:43",
+   "titolo": "Tutorial práctico en Ads Manager",
+   "tappe": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creación de una campaña estándar o a partir de un feed de productos",
+    "Configuración de objetivos, geolocalización (inclusión y exclusión) y presupuesto",
+    "Configuración de las pujas (Max Bid / Intelligent bidding) y de los Context Hints",
+    "Creación del anuncio con título, descripción e imagen cuadrada"
+   ]
+  },
+  {
+   "inizio": "11:44",
+   "fine": "13:53",
+   "titolo": "Consejos estratégicos y seguimiento",
+   "tappe": [
+    3,
+    4,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Definir la utilidad de la marca en las conversaciones",
+    "Separar los grupos de anuncios por cada intención o producto",
+    "Configurar el Pixel y la Conversions API antes del lanzamiento"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "00:05",
+   "dice": "OpenAI ha abierto Ads Manager Beta en España y otros mercados",
+   "verdetto": "giusta",
+   "perche": "El mapa confirma que Ads Manager self-service está disponible en España e Italia (tabla oficial de países, 'Available')."
+  },
+  {
+   "minuto": "00:53",
+   "dice": "Las cuentas Plus, Pro y los planes Business quedan fuera, igual que las cuentas de menores de 18 años",
+   "verdetto": "giusta",
+   "perche": "Conforme a la etapa 1 del mapa: los usuarios de los planes Plus, Pro, Business y Edu, así como los menores de edad, no ven anuncios."
+  },
+  {
+   "minuto": "01:05",
+   "dice": "Las conversaciones privadas y los datos personales quedan fuera de su alcance",
+   "verdetto": "giusta",
+   "perche": "La etapa 1 del mapa confirma que el anunciante solo recibe datos agregados y nunca tiene acceso a los chats."
+  },
+  {
+   "minuto": "02:41",
+   "dice": "OpenAI recomienda empezar con una puja máxima entre 3 y 5 dólares por clic",
+   "verdetto": "superata",
+   "perche": "El 09/11/2026 las estrategias de puja Max Bid/Max CPC se sustituyen por Target CPA y Target CPC (Intelligent Bidding). Además, el mapa precisa que el consejo histórico de los 3-5$ valía para el Max CPC que se retira."
+  },
+  {
+   "minuto": "07:44",
+   "dice": "Podemos trabajar con un presupuesto total para toda la campaña o con un presupuesto diario",
+   "verdetto": "giusta",
+   "perche": "La etapa 5 del mapa especifica que hay dos opciones de presupuesto: total de la campaña o diario."
+  },
+  {
+   "minuto": "11:21",
+   "dice": "Recomendamos que cada grupo de anuncios contenga al menos entre 4 y 5 anuncios",
+   "verdetto": "non_verificabile",
+   "perche": "Es un buen consejo práctico de la autora, pero el mapa no fija un número mínimo obligatorio de variantes por grupo de anuncios."
+  }
+ ],
+ "per_chi_impara": "Muy relevante para Italia (EEE): la interfaz de Ads Manager es idéntica a la italiana y europea. Sin embargo, el usuario italiano debe tener presente que en el Espacio Económico Europeo y en Suiza no se permite el uso de audiencias personalizadas (listas de clientes), que el presupuesto diario mínimo en euros es de 15 € y que es obligatorio poner el Pixel detrás del banner de consentimiento para cumplir las normas vigentes.",
+ "qualita": {
+  "voto": 4,
+  "perche": "El vídeo es muy claro, está bien estructurado y muestra la interfaz real de Ads Manager en español, con una explicación detallada tanto de la teoría del contexto como de la práctica de creación de la campaña. Algunos detalles sobre las pujas de CPC manuales cambiaron después del lanzamiento de Intelligent Bidding en noviembre de 2026."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Es uno de los mejores tutoriales prácticos desde cero para entender tanto el concepto de segmentación contextual como el procedimiento paso a paso para crear una campaña en Ads Manager.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "04:34",
+  "fine": "10:14"
+ },
+ "video": "iCL0ZWFxlTc",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T08:27:46+00:00"
+}

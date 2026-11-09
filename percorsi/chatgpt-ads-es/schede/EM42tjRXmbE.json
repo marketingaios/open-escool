@@ -1,0 +1,170 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "Tutorial práctico que guía paso a paso en la creación de la primera campaña publicitaria en ChatGPT Ads Manager. Los ponentes muestran cómo registrar la cuenta, configurar los objetivos de campaña, definir el presupuesto y la segmentación geográfica, usar ChatGPT para generar context hints (sugerencias de contexto) y crear los textos y elementos visuales del anuncio con seguimiento UTM.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "00:53",
+   "titolo": "Introducción a ChatGPT Ads y oportunidades en fase beta",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Lanzamiento de la plataforma publicitaria de ChatGPT en fase beta.",
+    "Ventajas de llegar primero (early-mover advantage) frente a Meta y TikTok Ads."
+   ]
+  },
+  {
+   "inizio": "00:54",
+   "fine": "01:44",
+   "titolo": "Presentación del embudo y de la landing page de destino",
+   "tappe": [
+    1,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Definición de la oferta, un curso gratuito como Lead Magnet sobre Facebook Ads.",
+    "Estrategia de captación de leads con tráfico cualificado desde ChatGPT."
+   ]
+  },
+  {
+   "inizio": "01:45",
+   "fine": "03:40",
+   "titolo": "Registro de la cuenta y vista general del panel de Ads Manager",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Acceso por ads.openai.com y procedimiento de registro.",
+    "Exploración de los menús: Resumen, Campañas, Grupos de anuncios, Anuncios."
+   ]
+  },
+  {
+   "inizio": "03:41",
+   "fine": "06:12",
+   "titolo": "Configuración de la campaña con objetivos, presupuesto diario y país",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Elección del objetivo (Clics frente a Conversiones frente a Alcance).",
+    "Configuración del presupuesto diario (100 AED ~ 25€/día).",
+    "Segmentación geográfica configurada en España y selección de las plataformas."
+   ]
+  },
+  {
+   "inizio": "06:13",
+   "fine": "08:43",
+   "titolo": "Pujas y generación de los context hints con ayuda de ChatGPT",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Estrategia de puja para maximizar los resultados.",
+    "Generación de frases de contexto (Sugerencias de contexto) pidiendo ayuda directamente a ChatGPT con un prompt y capturas de pantalla de la landing page."
+   ]
+  },
+  {
+   "inizio": "08:44",
+   "fine": "12:04",
+   "titolo": "Seguimiento UTM y creación de la imagen del anuncio",
+   "tappe": [
+    4,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Introducción de los parámetros de seguimiento UTM y de la URL de destino.",
+    "Generación del copy (título máx. 50 caracteres, descripción máx. 100) con ChatGPT y carga de la imagen de la marca."
+   ]
+  },
+  {
+   "inizio": "12:05",
+   "fine": "14:56",
+   "titolo": "Verificación de la empresa, guardado del borrador y consideraciones finales",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Solución del error de publicación guardando como borrador mientras se espera la verificación de la empresa (Business Verification) y la facturación.",
+    "Valoración del potencial de ROI para quien empieza a anunciarse antes que la competencia."
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "00:25",
+   "dice": "ChatGPT Ads está actualmente en beta y permite ser de los primeros en probar la plataforma",
+   "verdetto": "giusta",
+   "perche": "El MAPA confirma que ChatGPT Ads y Ads Manager se lanzaron en fase beta/piloto self-service."
+  },
+  {
+   "minuto": "05:08",
+   "dice": "El mínimo de gasto diario son unos 15€ actualmente en ChatGPT Ads",
+   "verdetto": "giusta",
+   "perche": "El MAPA confirma expresamente que con facturación en EUR el presupuesto diario mínimo es de 15 €."
+  },
+  {
+   "minuto": "05:18",
+   "dice": "100 AED equivalen a unos 25€ diarios para empezar a probar",
+   "verdetto": "giusta",
+   "perche": "Conversión de moneda correcta, muy por encima del límite mínimo diario exigido."
+  },
+  {
+   "minuto": "05:30",
+   "dice": "En la segmentación elegimos dirigir la campaña a España",
+   "verdetto": "giusta",
+   "perche": "El MAPA confirma que en la configuración de segmentación de la campaña hay que incluir de forma explícita el país objetivo."
+  },
+  {
+   "minuto": "06:23",
+   "dice": "La estrategia de puja permite elegir entre Maximizar resultados o CPC máximo",
+   "verdetto": "giusta",
+   "perche": "En las primeras versiones de Ads Manager (antes del cambio a Intelligent Bidding y Target CPC en noviembre de 2026), Maximizar resultados era la opción automática predeterminada."
+  },
+  {
+   "minuto": "06:53",
+   "dice": "Las sugerencias de contexto le dicen a ChatGPT cuándo mostrar los anuncios según lo que busca el usuario",
+   "verdetto": "giusta",
+   "perche": "El MAPA aclara que los context hints sirven para describir la oferta y las intenciones de uso de forma natural, para orientar al algoritmo de coincidencia."
+  },
+  {
+   "minuto": "11:13",
+   "dice": "En el apartado de descripción tenemos un límite de 100 caracteres",
+   "verdetto": "giusta",
+   "perche": "El MAPA especifica que para el texto/descripción del anuncio el límite máximo es de 100 caracteres."
+  },
+  {
+   "minuto": "13:02",
+   "dice": "La verificación de la cuenta debe aprobarse antes de poder publicar y usar la URL en el anuncio",
+   "verdetto": "giusta",
+   "perche": "El MAPA indica que la verificación del negocio de la cuenta y del dominio es un requisito bloqueante antes de que las campañas puedan publicarse."
+  }
+ ],
+ "per_chi_impara": "Los usuarios italianos pueden seguir paso a paso este tutorial, porque la interfaz de Ads Manager en ads.openai.com es idéntica en toda Europa, el presupuesto diario mínimo en euros es de 15 € y la lógica de perfilado con context hints y parámetros UTM se aplica exactamente igual en el mercado italiano.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Explicación fluida, completa y muy práctica. Muestra sin filtros la plataforma real de gestión de anuncios y propone un flujo de trabajo creativo original que usa el propio ChatGPT para optimizar contextos y textos."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Es un tutorial claro y completo que guía al usuario desde el registro hasta el envío a revisión, y explica conceptos clave como los context hints y la integración de los parámetros UTM de forma muy fácil de seguir.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "06:13",
+  "fine": "08:43"
+ },
+ "video": "EM42tjRXmbE",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-07T10:58:09+00:00"
+}

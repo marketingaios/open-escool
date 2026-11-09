@@ -1,0 +1,44 @@
+#!/bin/bash
+# Antes de cada commit: ninguna clave ni dato personal entra en git, y el autor no publica su correo.
+# Se activa una vez con: git config core.hooksPath .githooks
+# 1) archivos locales prohibidos, aunque se añadan con git add -f;
+# 2) correo del autor: solo el de GitHub que no se ve (…@users.noreply.github.com);
+# 3) gitleaks revisa lo que entra (brew install gitleaks / winget install gitleaks); sin gitleaks, un control de patrones.
+# Para saltarlo en un falso positivo comprobado: git commit --no-verify.
+set -uo pipefail
+
+prohibidos="$(git diff --cached --name-only --diff-filter=ACMR | grep -E '(^|/)(\.env(\..*)?|config\.json|chiamate\.jsonl|incolla-[^/]*\.txt)$|^utente/|^diagnosi/|/lavoro/youtube/|/lavoro/fonti/|/\.contesto/' | grep -v '\.env\.example$' || true)"
+if [ -n "$prohibidos" ]; then
+  echo "commit bloqueado: estos archivos son locales o personales y no van a git:" >&2
+  echo "$prohibidos" | sed 's/^/  /' >&2
+  echo "quítalos con: git restore --staged <archivo>" >&2
+  exit 1
+fi
+
+correo="$(git var GIT_AUTHOR_IDENT | sed -E 's/.*<([^>]*)>.*/\1/')"
+case "$correo" in
+  *@users.noreply.github.com) ;;
+  *)
+    echo "commit bloqueado: el correo del autor ($correo) sería público en el historial." >&2
+    echo "usa el de GitHub que no se ve: git config user.email <id>+<usuario>@users.noreply.github.com" >&2
+    echo "(GitHub → Settings → Emails → «Keep my email addresses private»)" >&2
+    exit 1
+    ;;
+esac
+
+if command -v gitleaks >/dev/null; then
+  gitleaks git --pre-commit --staged --redact --no-banner --log-level warn -v || {
+    echo "commit bloqueado: gitleaks ha encontrado una posible clave (arriba, con el valor tapado)" >&2
+    exit 1
+  }
+  exit 0
+fi
+
+# Sin gitleaks: claves de Google (YouTube, Gemini), Tavily, ElevenLabs, GitHub, AWS y bloques PEM.
+patron='AIza[0-9A-Za-z_-]{35}|tvly-[A-Za-z0-9_-]{20,}|sk_[a-f0-9]{40,}|gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}|AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----'
+if git diff --cached -U0 --diff-filter=ACMR | grep -E '^\+' | grep -qE "$patron"; then
+  echo "commit bloqueado: una línea añadida parece una clave de API (instala gitleaks para ver cuál)" >&2
+  exit 1
+fi
+echo "pre-commit: gitleaks no está instalado, hecho solo el control de patrones" >&2
+exit 0

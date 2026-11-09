@@ -1,0 +1,145 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video spiega come impostare il targeting nelle campagne ChatGPT Ads utilizzando i Context Hints. L'autore propone una struttura in due parti per scrivere gli hint (descrizione dell'ICP + lista delle parole chiave cercate) e mostra come trovare le parole chiave rilevanti usando estensioni web e il suo tool dedicato.",
+ "mostra_schermo": true,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:27",
+   "titolo": "Introduzione a ChatGPT Ads e ai Context Hints",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Presentazione dell'opportunità di ChatGPT Ads.",
+    "Introduzione della domanda fondamentale: come funziona il targeting e cosa sono i Context Hints."
+   ]
+  },
+  {
+   "inizio": "0:27",
+   "fine": "0:51",
+   "titolo": "Panoramica sulla creazione di campagne e gruppi di annunci",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Differenza tra livello Campagna (obiettivi, budget, conversioni) e livello Gruppo di annunci.",
+    "I gruppi di annunci sono la sede in cui risiedono le creative e le impostazioni di targeting."
+   ]
+  },
+  {
+   "inizio": "0:51",
+   "fine": "2:31",
+   "titolo": "Cosa sono i Context Hints e perché integrano Intento e Targeting",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Definizione di Context Hints fornita dall'interfaccia di Ads Manager.",
+    "Confronto tra Google (Intento), Meta (Targeting) e ChatGPT Ads (combinazione di Targeting + Intento)."
+   ]
+  },
+  {
+   "inizio": "2:31",
+   "fine": "3:39",
+   "titolo": "Formattazione ideale dei Context Hints (ICP + Parole chiave)",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Primo blocco: descrivere il profilo cliente ideale (ICP), i suoi problemi e obiettivi.",
+    "Secondo blocco: elencare i termini di ricerca e i prompt ad alto intento."
+   ]
+  },
+  {
+   "inizio": "3:39",
+   "fine": "5:21",
+   "titolo": "Ricerca dei volumi e delle parole chiave correlate",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "ChatGPT Ads non fornisce dati sui volumi di ricerca dei prompt.",
+    "Uso dell'estensione Keywords Everywhere su Google per stimare i volumi e trovare correlati da inserire negli hints."
+   ]
+  },
+  {
+   "inizio": "5:21",
+   "fine": "6:02",
+   "titolo": "Generazione automatica degli hint tramite tool proprietario",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Presentazione del generatore di Context Hints (Focal).",
+    "Estrazione di ICP e termini di ricerca a partire dall'URL e dalla descrizione del sito."
+   ]
+  },
+  {
+   "inizio": "6:02",
+   "fine": "7:58",
+   "titolo": "Allineamento tra Copy dell'annuncio e Asta d'offerta",
+   "tappe": [
+    1,
+    4,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "La rilevanza del copy rispetto ai context hints influisce sull'asta d'offerta.",
+    "Offerta efficace = Offerta (Bid) + Rilevanza.",
+    "Importanza di includere i concetti chiave degli hint nel testo pubblicitario."
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:56",
+   "dice": "Context hints: Describe the conversations, topics, or keywords where your products or services may be relevant, but aren't exact-match targeting rules.",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla mappa (Tappa 3): i context hints guidano il matching ma non sono regole di targeting o parole chiave a corrispondenza esatta."
+  },
+  {
+   "minuto": "3:40",
+   "dice": "ChatGPT doesn't provide search volume data for prompts or keywords.",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla mappa (Tappa 1): la piattaforma limita i dati condivisi a informazioni aggregate e non fornisce keyword planner ufficiali."
+  },
+  {
+   "minuto": "6:50",
+   "dice": "ChatGPT ads use a bidding system where the highest bid wins.",
+   "verdetto": "sbagliata",
+   "perche": "La mappa (Tappa 1) specifica che fra più annunci idonei decide un'asta di secondo prezzo pesata per la rilevanza, non semplicemente il bid più alto."
+  },
+  {
+   "minuto": "7:09",
+   "dice": "Effective Bid = Bid + Relevance",
+   "verdetto": "non_verificabile",
+   "perche": "L'equazione esatta 'Effective Bid = Bid + Relevance' è una semplificazione concettuale dell'autore e non una formula espressa nella documentazione ufficiale della mappa."
+  }
+ ],
+ "per_chi_impara": "Per chi opera dall'Italia (Unione Europea), occorre ricordare che nelle regioni SEE e Svizzera il targeting si basa sulla conversazione in corso e che non sono disponibili i pubblici personalizzati. Inoltre, l'uso di keyword esterne da Google dà solo un'indicazione di massima, in quanto le ricerche su ChatGPT differiscono dalla ricerca classica.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Offre una spiegazione tattica molto chiara e strutturata su come compilare il campo Context Hints, illustrando bene il concetto di intento combinato al contesto."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "È un ottimo approfondimento verticale sulla stesura dei Context Hints e sulla concettualizzazione del targeting, ma non copre la configurazione completa dell'account Ads Manager da zero per l'Europa.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "2:31",
+  "fine": "3:39"
+ },
+ "video": "mWmpkaR7ns0",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T09:06:26+00:00"
+}

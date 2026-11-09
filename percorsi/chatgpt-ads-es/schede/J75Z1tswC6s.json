@@ -1,0 +1,124 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo muestra paso a paso cómo crear y configurar la primera campaña publicitaria en ChatGPT Ads (ads.openai.com). El autor explica el registro a partir de su propio sitio web, la creación automática del borrador del anuncio, la gestión de las pujas, el cambio del presupuesto diario y cómo desactivar la campaña para evitar cargos no deseados.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:20",
+   "titolo": "Introducción y acceso a Ads Manager",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Registro con Google en ads.openai.com",
+    "Visión general de la oportunidad de anunciarse en ChatGPT"
+   ]
+  },
+  {
+   "inizio": "1:20",
+   "fine": "2:42",
+   "titolo": "Generación automática del anuncio a partir de la URL",
+   "tappe": [
+    2,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Introducción del sitio web del negocio",
+    "Creación automática del texto y del público objetivo del anuncio",
+    "Explicación de cómo funciona la estrategia de puja automática"
+   ]
+  },
+  {
+   "inizio": "2:42",
+   "fine": "4:08",
+   "titolo": "Configuración de detalles, presupuesto y facturación",
+   "tappe": [
+    4,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Cambio de los textos del anuncio (título y subtítulo)",
+    "Configuración de país, moneda y zona horaria de la cuenta"
+   ]
+  },
+  {
+   "inizio": "4:08",
+   "fine": "5:46",
+   "titolo": "Gestión de la campaña y reducción del presupuesto en Ads Manager",
+   "tappe": [
+    5,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Cambio del presupuesto diario a 20 €",
+    "Desactivación o pausa de la campaña con el interruptor"
+   ]
+  },
+  {
+   "inizio": "5:46",
+   "fine": "7:06",
+   "titolo": "Verificación de la cuenta y métodos de pago",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Introducción de los datos de la tarjeta de crédito",
+    "Selección del tipo de cuenta (Business frente a Individual)"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:31",
+   "dice": "Para anunciarse en ChatGPT hay que entrar por ads.openai.com",
+   "verdetto": "giusta",
+   "perche": "Confirmado por la etapa 2: el acceso a la plataforma self-service es en ads.openai.com."
+  },
+  {
+   "minuto": "1:35",
+   "dice": "Al introducir la URL de tu sitio web, el sistema analiza la página y genera automáticamente el borrador del anuncio",
+   "verdetto": "giusta",
+   "perche": "Confirmado por la etapa 4: los borradores sugeridos al registrarte usan directamente los datos del sitio introducido."
+  },
+  {
+   "minuto": "2:10",
+   "dice": "La estrategia de puja automática hace pagar la cifra mínima necesaria para superar a los demás competidores en la subasta",
+   "verdetto": "giusta",
+   "perche": "Confirmado por las etapas 1 y 5: la plataforma usa una subasta de segundo precio ponderada por la relevancia."
+  },
+  {
+   "minuto": "4:48",
+   "dice": "Se puede cambiar el presupuesto diario de la campaña y fijarlo, por ejemplo, en 20 €",
+   "verdetto": "giusta",
+   "perche": "Confirmado por la etapa 5: en las cuentas con facturación en EUR el presupuesto diario mínimo es de 15 €, así que 20 € es un valor válido."
+  },
+  {
+   "minuto": "5:18",
+   "dice": "La campaña se puede desactivar o poner en pausa en cualquier momento con el interruptor de estado",
+   "verdetto": "giusta",
+   "perche": "Confirmado por la etapa 6: para evitar cargos o una publicación no deseada hay que poner la campaña en pausa o desactivarla."
+  }
+ ],
+ "per_chi_impara": "El vídeo está grabado en español, pero muestra completa la pantalla real de Ads Manager. Las indicaciones son totalmente válidas también para Italia, donde la plataforma está activa en self-service con moneda euro (EUR) y un presupuesto diario mínimo de 15 €.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Demostración muy práctica a pantalla completa. Muestra claramente el procedimiento completo de alta, el cambio del presupuesto y cómo detener la campaña para no gastar dinero por error."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Ofrece una guía visual inmediata y transparente sobre cómo acceder a la plataforma, ajustar los costos y mantener el control total del estado de la campaña.",
+ "tappa_migliore": 2,
+ "spezzone_migliore": {
+  "inizio": "01:20",
+  "fine": "03:56"
+ },
+ "video": "J75Z1tswC6s",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-07T11:33:04+00:00"
+}

@@ -1,0 +1,213 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video mostra una guida dettagliata e passo dopo passo alla creazione della prima campagna pubblicitaria all'interno di ChatGPT Ads Manager. Il creatore illustra l'accesso alla piattaforma, la configurazione preventiva del pixel di conversione e la strutturazione completa di una campagna con obiettivo clic. È rivolto a marketer e imprenditori che vogliono sfruttare per primi la nuova piattaforma pubblicitaria di OpenAI.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:25",
+   "titolo": "Introduzione a ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Arrivo imminente e accesso anticipato a ChatGPT Ads",
+    "Opportunità di essere tra i primi inserzionisti sulla piattaforma"
+   ]
+  },
+  {
+   "inizio": "0:25",
+   "fine": "1:26",
+   "titolo": "Come accedere ad Ads Manager",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Accesso tramite ads.openai.com",
+    "Procedura di verifica iniziale dell'account",
+    "Panoramica della dashboard di Ads Manager"
+   ]
+  },
+  {
+   "inizio": "1:26",
+   "fine": "3:24",
+   "titolo": "Impostazione del Pixel e degli eventi di conversione",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione di una nuova data source (Web Pixel)",
+    "Configurazione degli eventi di conversione (es. appuntamenti, lead, registrazioni)",
+    "Installazione del codice pixel sul sito (pagina di ringraziamento)"
+   ]
+  },
+  {
+   "inizio": "3:24",
+   "fine": "4:34",
+   "titolo": "Come appaiono gli annunci in ChatGPT",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Gli annunci compaiono al termine delle risposte dell'assistente",
+    "Elementi dell'annuncio: raccomandazione contestuale, immagine e link al sito",
+    "Differenza rispetto alla ricerca tradizionale e ai social network"
+   ]
+  },
+  {
+   "inizio": "4:34",
+   "fine": "9:25",
+   "titolo": "Creazione della campagna: obiettivo, paesi e budget",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Denominazione della campagna e scelta dell'obiettivo (Clicks vs Conversions in arrivo)",
+    "Selezione delle aree geografiche",
+    "Budget giornaliero con soglia minima di 25 $ al giorno"
+   ]
+  },
+  {
+   "inizio": "9:25",
+   "fine": "15:30",
+   "titolo": "Gruppo di annunci, CPC massimo e Context Hints",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Impostazione dell'offerta Maximum CPC (soglia minima suggerita di circa 3,00 - 3,50 $)",
+    "URL di destinazione con parametri di tracciamento UTM",
+    "Uso del linguaggio naturale nei Context Hints per guidare l'AI"
+   ]
+  },
+  {
+   "inizio": "15:30",
+   "fine": "19:16",
+   "titolo": "Creazione della creatività: testo, limiti e immagine quadrata",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Headline (fino a 50 caratteri, rischio troncamento dopo 25)",
+    "Description (fino a 100 caratteri)",
+    "Caricamento dell'immagine quadrata (minimo 256x256 px)",
+    "Generazione rapida di varianti immagine tramite tool AI esterni"
+   ]
+  },
+  {
+   "inizio": "19:16",
+   "fine": "21:18",
+   "titolo": "Revisione, duplicazione varianti e pubblicazione della campagna",
+   "tappe": [
+    4,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Duplicazione degli annunci per testare diverse immagini e copy",
+    "Riepilogo delle impostazioni della campagna",
+    "Pubblicazione e stato di revisione iniziale (Not serving / In review)"
+   ]
+  },
+  {
+   "inizio": "21:18",
+   "fine": "23:12",
+   "titolo": "Conclusioni e invito alla formazione approfondita",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Importanza del vantaggio da 'first mover'",
+    "Invito al webinar live di approfondimento"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:50",
+   "dice": "Per richiedere l'accesso o iniziare bisogna andare su ads.openai.com",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla tappa 2: ci si iscrive su ads.openai.com."
+  },
+  {
+   "minuto": "3:53",
+   "dice": "L'annuncio compare in fondo alla risposta fornita da ChatGPT con un link sponsorizzato e un'immagine",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla tappa 1: l'annuncio compare sotto la risposta, etichettato come sponsorizzato e separato dalla risposta."
+  },
+  {
+   "minuto": "5:29",
+   "dice": "Gli obiettivi attualmente selezionabili sono Clicks o Reach, mentre Conversions arriverà a breve",
+   "verdetto": "giusta",
+   "perche": "All'epoca del video (giugno 2026) Conversions era in fase di roll-out; la mappa conferma in tappa 3 che gli obiettivi base sono Views, Clicks e Conversions."
+  },
+  {
+   "minuto": "8:18",
+   "dice": "Il budget giornaliero minimo impostabile per una campagna è di 25 $",
+   "verdetto": "giusta",
+   "perche": "Confermato per la fatturazione in dollari; in mappa (avvisi e tappa 5) si specifica che in euro il minimo è 15 €, mentre in dollari l'errore tipico riguarda l'applicazione di 25 $ a utenti europei."
+  },
+  {
+   "minuto": "10:14",
+   "dice": "L'offerta viene impostata come Maximum CPC (offerta massima a clic)",
+   "verdetto": "superata",
+   "perche": "Dal 9/11/2026 Target CPC sostituisce la logica Max CPC per le nuove campagne a clic e Max CPC viene ritirato l'1/1/2027 (cambi recenti)."
+  },
+  {
+   "minuto": "10:31",
+   "dice": "Se imposti un'offerta Max CPC inferiore a 3 $, il sistema avvisa che potrebbe non erogare (may not deliver)",
+   "verdetto": "non_verificabile",
+   "perche": "La mappa cita il consiglio base di un'offerta massima di 3-5 $ a clic (tappa 5), ma non riporta espressamente il messaggio di sistema 'may not deliver' sotto i 3 $."
+  },
+  {
+   "minuto": "13:16",
+   "dice": "Nei Context Hints non si usano parole chiave classiche ma frasi in linguaggio naturale per descrivere gli argomenti d'interesse",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla tappa 3: i context hints sono descrizioni in linguaggio naturale, non parole chiave."
+  },
+  {
+   "minuto": "17:15",
+   "dice": "La headline può contenere fino a 50 caratteri, ma dopo 25 caratteri potrebbe venire troncata",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla tappa 4: massimo 50 caratteri per il titolo (consigliati 16-24)."
+  },
+  {
+   "minuto": "17:44",
+   "dice": "La descrizione dell'annuncio ha un limite massimo di 100 caratteri",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla tappa 4: il testo/descrizione arriva a un massimo di 100 caratteri."
+  },
+  {
+   "minuto": "17:00",
+   "dice": "L'immagine dell'annuncio deve essere quadrata con risoluzione minima di 256x256 pixel",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla tappa 4: l'immagine deve essere quadrata PNG o JPG (al massimo 1200x1200)."
+  }
+ ],
+ "per_chi_impara": "Per chi impara dall'Italia ci sono alcune differenze cruciali rispetto al video: il budget minimo giornaliero in euro è 15 € (non 25 $), l'impostazione geografica iniziale è limitata all'Italia (paese di residenza dell'account) e non è possibile utilizzare pubblici personalizzati né fare profilazione complessa per via delle tutele vigenti nello Spazio Economico Europeo. Inoltre, a partire da fine 2026 le offerte Max CPC mostrate nel video sono superate da Target CPC e Intelligent Bidding.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Guida pratica eccezionale: mostra passo dopo passo l'intera interfaccia reale di Ads Manager, dalla configurazione del pixel alla pubblicazione dell'annuncio, spiegando in modo cristallino concetti nuovi come i Context Hints."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È uno dei walkthrough più completi e fedeli dell'interfaccia originale di Ads Manager. Nonostante sia precedente alle novità autunnali del 2026 (come Target CPC e Creative Enhancements), fornisce una comprensione visuale e pratica perfetta per chi parte da zero.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "11:45",
+  "fine": "15:25"
+ },
+ "video": "sFFhcOs3c5Y",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:34:37+00:00"
+}

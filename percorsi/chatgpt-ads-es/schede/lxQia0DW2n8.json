@@ -1,0 +1,175 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo analiza los resultados reales de una prueba de 500$ hecha en ChatGPT Ads para una agencia B2B. El autor muestra la comparación entre campañas de Clics y de Conversión, analiza las discrepancias entre las métricas de Ads Manager y GA4, y valora la calidad de los leads generados por el público con plan gratuito de ChatGPT.",
+ "mostra_schermo": true,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:43",
+   "titolo": "Introducción a la prueba de 500$ y embudo de captación",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Presentación de la prueba de inversión en ChatGPT Ads en México",
+    "Estructura de la landing page de destino y del formulario de solicitud para leads",
+    "Objetivo, atraer empresas interesadas en los servicios de gestión de Google Ads"
+   ]
+  },
+  {
+   "inizio": "1:43",
+   "fine": "3:07",
+   "titolo": "Vista general de las métricas y del gasto en Ads Manager",
+   "tappe": [
+    1,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Gasto total de 377.58$ en la campaña de Clics y de 121.78$ en la de Conversiones",
+    "Recuento inicial de 17 conversiones dentro del panel de Ads Manager",
+    "Personalización de las columnas para mostrar el costo por conversión"
+   ]
+  },
+  {
+   "inizio": "3:07",
+   "fine": "5:24",
+   "titolo": "Configuración de la campaña de Clics y prueba con la puja de Max CPC",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Segmentación en todas las plataformas y presupuesto diario de 25 USD",
+    "Bajada del CPC máximo de 3.00$ hasta 0.20$ USD",
+    "Efecto de la reducción de la puja en la caída de las impresiones y de los clics"
+   ]
+  },
+  {
+   "inizio": "5:24",
+   "fine": "7:45",
+   "titolo": "Campaña de Conversión frente a Clics y estrategias de puja",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Duplicado de la campaña para configurar el objetivo Conversiones con un CPA objetivo de 25 USD",
+    "Resultado inesperado, CPC más bajo (0.17$ frente a 0.61$) en la campaña de conversión",
+    "Análisis de la configuración a nivel de grupo de anuncios y de los criterios de optimización"
+   ]
+  },
+  {
+   "inizio": "7:45",
+   "fine": "9:14",
+   "titolo": "Parámetros UTM y sección Conversiones en Ads Manager",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Configuración de los parámetros UTM dinámicos para saber de dónde vienen los leads",
+    "Límites de la sección Conversiones en la interfaz beta de Ads Manager",
+    "Necesidad de comprobar los datos con herramientas externas"
+   ]
+  },
+  {
+   "inizio": "9:14",
+   "fine": "13:28",
+   "titolo": "Análisis de las discrepancias en GA4 y costo real por lead",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Filtro del tráfico `chatgpt / cpc` en Google Analytics 4",
+    "Recuento real de 10 leads en GA4 frente a los 17 que reporta Ads Manager",
+    "Cálculo del costo real por lead: 500$ / 10 = 50$ USD por solicitud",
+    "Resultados por campaña invertidos entre Ads Manager y GA4"
+   ]
+  },
+  {
+   "inizio": "13:28",
+   "fine": "14:58",
+   "titolo": "Tasa de conversión de la landing page y aviso de verificación",
+   "tappe": [
+    2,
+    4,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Tasa de conversión de alrededor del 4% en la página de destino",
+    "Valoración del margen de mejora del formulario de contacto",
+    "Aviso de verificación de la cuenta («Completa la verificación») y pausa de las campañas"
+   ]
+  },
+  {
+   "inizio": "14:58",
+   "fine": "18:24",
+   "titolo": "Vista previa del anuncio y valoración de la calidad de los leads B2B frente a B2C",
+   "tappe": [
+    1,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Visualización del formato de anuncio patrocinado en las respuestas de ChatGPT",
+    "Los anuncios en ChatGPT se muestran a los usuarios de los planes gratuitos",
+    "Valoración del perfil de usuario B2B, leads con presupuestos ajustados o sin sitio web",
+    "Conclusiones sobre por qué la plataforma encaja mejor en el sector B2C/masivo"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:14",
+   "dice": "A inicios de agosto está abierta en México y Brasil, y el próximo mes va a estar en Europa incluyendo España.",
+   "verdetto": "superata",
+   "perche": "El vídeo se grabó en agosto de 2026 durante la fase inicial del despliegue; el mapa indica que Italia y los países europeos están oficialmente disponibles en self-service en la lista oficial de Ads Manager."
+  },
+  {
+   "minuto": "3:38",
+   "dice": "Iniciamos con un presupuesto diario de 25 dólares que es como el mínimo que me permite.",
+   "verdetto": "giusta",
+   "perche": "En las cuentas en dólares el umbral o mínimo de entrada fijado en el sistema para la campaña diaria es de 25$ USD, mientras que en las cuentas en euros el mínimo diario es de 15 € (20001210-creating-campaigns-for-chatgpt-ads.md)."
+  },
+  {
+   "minuto": "4:14",
+   "dice": "Oferta máxima de CPC: $0.20 USD por clic... empecé con 3 USD.",
+   "verdetto": "superata",
+   "perche": "En la época del vídeo (agosto de 2026) la puja manual Max CPC estaba disponible. Desde el 09/11/2026 la sustituyó la estrategia Target CPC en las nuevas campañas de clics y desde el 01/01/2027 las estrategias Max CPC y Max Bid se retiraron definitivamente (20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md)."
+  },
+  {
+   "minuto": "8:50",
+   "dice": "La herramienta sigue en beta.",
+   "verdetto": "giusta",
+   "perche": "La interfaz de Ads Manager lleva la palabra Beta en la cabecera de la plataforma."
+  },
+  {
+   "minuto": "17:05",
+   "dice": "Los anuncios ahorita como salen solamente salen a las versiones gratuitas o de muy bajo costo.",
+   "verdetto": "giusta",
+   "perche": "Como confirma el punto 1 del mapa, los anuncios solo se muestran a los usuarios de los planes Free y Go, y no aparecen a los usuarios de los planes Plus, Pro, Business, Enterprise y Edu."
+  }
+ ],
+ "per_chi_impara": "El vídeo ofrece una excelente demostración práctica del uso de GA4 y de los parámetros UTM para hacer el seguimiento de las campañas en ChatGPT Ads. Para los anunciantes italianos (UE), hay que recordar que el presupuesto diario mínimo para cuentas en EUR es de 15 € (no 25 $) y que las listas de clientes/retargeting no se pueden aplicar hacia el EEE por restricciones de privacidad.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Excelente caso de estudio real, con un análisis transparente de los costos, comparación directa entre Ads Manager y GA4, y reflexiones críticas y concretas sobre la calidad de los leads B2B."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Es uno de los análisis prácticos más lúcidos y completos que hay para entender cómo funcionan las subastas, las discrepancias de seguimiento y el comportamiento del público en ChatGPT Ads.",
+ "tappa_migliore": 6,
+ "spezzone_migliore": {
+  "inizio": "9:14",
+  "fine": "13:28"
+ },
+ "video": "lxQia0DW2n8",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T10:14:43+00:00"
+}

@@ -1,0 +1,199 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video mostra l'interfaccia di ChatGPT Ads Manager poco dopo l'apertura del self-service negli Stati Uniti. Spiega dove compaiono gli annunci, chi li visualizza e illustra la creazione passo-passo di una prima campagna: pixel di tracciamento, budget, context hints e creatività con immagine singola. È utile per comprendere il funzionamento iniziale della piattaforma e la logica dei context hints generati con l'aiuto dell'AI.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:27",
+   "titolo": "Introduzione a ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Arrivo ufficiale della pubblicità su ChatGPT",
+    "Panoramica dei temi trattati nel tutorial"
+   ]
+  },
+  {
+   "inizio": "0:27",
+   "fine": "1:25",
+   "titolo": "Posizionamento ed idoneità degli utenti",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Gli annunci compaiono solo per gli utenti con piano gratuito",
+    "Posizionamento in fondo alle risposte con etichetta 'Sponsored'",
+    "Differenza tra risultati organici e annunci a pagamento"
+   ]
+  },
+  {
+   "inizio": "1:25",
+   "fine": "2:04",
+   "titolo": "Registrazione su Ads Manager",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Iscrizione su ads.openai.com",
+    "Questionario aziendale e tempi di verifica (circa 2 giorni lavorativi)"
+   ]
+  },
+  {
+   "inizio": "2:04",
+   "fine": "3:58",
+   "titolo": "Panoramica interfaccia e setup del Pixel",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Struttura dell'Ads Manager (Campagne, Gruppi, Annunci, Strumenti)",
+    "Creazione data source Web e installazione del codice base",
+    "Configurazione evento di conversione"
+   ]
+  },
+  {
+   "inizio": "3:58",
+   "fine": "5:35",
+   "titolo": "Creazione campagna e impostazioni di budget",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta dell'obiettivo (Clicks o Reach)",
+    "Paesi selezionabili",
+    "Impostazione del budget giornaliero e data di inizio"
+   ]
+  },
+  {
+   "inizio": "5:35",
+   "fine": "7:08",
+   "titolo": "Ad Group, offerta CPC e Context Hints",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Offerta Max CPC a 3 $",
+    "Cosa sono i Context Hints e differenze con le parole chiave",
+    "Uso di ChatGPT per generare context hints descrittivi"
+   ]
+  },
+  {
+   "inizio": "7:08",
+   "fine": "7:48",
+   "titolo": "Creazione dell'annuncio",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Limiti di caratteri: titolo (max 50) e descrizione (max 100)",
+    "Caricamento logo/immagine quadrata",
+    "Inserimento URL di destinazione e anteprima"
+   ]
+  },
+  {
+   "inizio": "7:48",
+   "fine": "8:47",
+   "titolo": "Fatturazione e monitoraggio",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento carta di credito e logo per avviare l'account",
+    "Metriche disponibili (impressioni, clic, spesa, CTR, CPC medio)",
+    "Conclusioni"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:30",
+   "dice": "Gli annunci vengono mostrati solo agli utenti che utilizzano un account gratuito (Free), non agli abbonati Plus da 20 $/mese.",
+   "verdetto": "giusta",
+   "perche": "Confermato da Tappa 1: gli annunci compaiono solo per i piani Free e Go; gli abbonati a pagamento non vedono pubblicità."
+  },
+  {
+   "minuto": "1:00",
+   "dice": "L'annuncio compare in fondo alla risposta con la dicitura 'Sponsored'.",
+   "verdetto": "giusta",
+   "perche": "Confermato da Tappa 1: l'annuncio compare sotto la risposta, chiaramente etichettato come sponsorizzato e separato da essa."
+  },
+  {
+   "minuto": "1:26",
+   "dice": "Per iscriversi bisogna andare su ads.openai.com.",
+   "verdetto": "giusta",
+   "perche": "Confermato da Tappa 2: la registrazione self-service avviene su ads.openai.com."
+  },
+  {
+   "minuto": "4:09",
+   "dice": "Al momento si può ottimizzare solo per Reach e Clicks; l'obiettivo Conversions arriverà presto.",
+   "verdetto": "superata",
+   "perche": "Come indicato nella Tappa 3, l'obiettivo Conversions è ora disponibile (anche se richiede tracciamento attivo ed evento standard)."
+  },
+  {
+   "minuto": "4:30",
+   "dice": "I paesi selezionabili per la campagna sono solo Stati Uniti, Canada, Australia e Nuova Zelanda.",
+   "verdetto": "superata",
+   "perche": "Dal 31/08/2026 il self-service è disponibile anche in Europa, Italia compresa (cambi_recenti e avvisi mappa)."
+  },
+  {
+   "minuto": "4:52",
+   "dice": "Non c'è un vero budget minimo, si può spendere anche solo 1 $ o 2 $ al giorno.",
+   "verdetto": "sbagliata",
+   "perche": "La mappa (avvisi e Tappa 5) specifica che con fatturazione in EUR il budget giornaliero minimo è di 15 €."
+  },
+  {
+   "minuto": "5:47",
+   "dice": "Il sistema richiede o consiglia una Max CPC bid di almeno 3 $ per garantire l'erogazione.",
+   "verdetto": "superata",
+   "perche": "Dal 09/11/2026 la strategia Max CPC viene sostituita da Target CPC e Intelligent Bidding nelle nuove campagne, per poi essere ritirata definitivamente il 01/01/2027 (cambi_recenti e Tappa 5)."
+  },
+  {
+   "minuto": "6:15",
+   "dice": "I Context Hints non sono parole chiave né pubblico target, ma frasi/temi descrittivi che guidano l'algoritmo.",
+   "verdetto": "giusta",
+   "perche": "Confermato da Tappa 3: i context hints descrivono contesto, prodotto e utilità in linguaggio naturale e non fungono da parole chiave esatte."
+  },
+  {
+   "minuto": "7:29",
+   "dice": "Il titolo ha un massimo di 50 caratteri e la descrizione un massimo di 100 caratteri.",
+   "verdetto": "giusta",
+   "perche": "Confermato da Tappa 4: titolo massimo 50 caratteri, testo massimo 100 caratteri."
+  },
+  {
+   "minuto": "7:38",
+   "dice": "L'unico elemento visivo caricabile è un'immagine/logo quadrata per l'annuncio singolo.",
+   "verdetto": "superata",
+   "perche": "Dal 26/10/2026 è disponibile anche il formato a più immagini (4-6 immagini quadrate) in beta aperta (cambi_recenti e Tappa 4)."
+  }
+ ],
+ "per_chi_impara": "Nel video l'Italia non compare tra i paesi targettizzabili (era limitato a USA, CA, AU, NZ a giugno 2026), ma oggi l'Italia è disponibile in self-service. Attenzione al budget: il relatore imposta 1 $ al giorno, mentre per account in euro il minimo obbligatorio è 15 €/giorno. Inoltre, per inserzionisti che operano in Italia/SEE i pubblici personalizzati vanno evitati e il Pixel va installato nel rispetto del consenso/GDPR.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Ottima panoramica pratica a schermo intero dell'Ads Manager, spiegata con chiarezza e ritmo fluido. Il suggerimento di usare ChatGPT per scrivere i context hints è molto utile. Risulta parzialmente datato rispetto agli sviluppi autunnali del 2026 (apertura Europa, formati carosello, creative enhancements, minimi di budget in euro)."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "È un ottimo video per vedere da vicino il flusso reale della piattaforma e la compilazione dei campi, ma va integrato con le novità successive per l'Italia (disponibilità europea, minimo 15 €/giorno, creative enhancements e offerta automatica Intelligent Bidding).",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "6:13",
+  "fine": "7:08"
+ },
+ "video": "UMofZiTBQE0",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:38:26+00:00"
+}

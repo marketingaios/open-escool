@@ -1,0 +1,140 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "Il video guida l'utente passo dopo passo nell'interfaccia di ChatGPT Ads Manager, mostrando come impostare una prima campagna da zero. Viene spiegata la differenza tra i vari livelli (campagna, gruppo di annunci, inserzioni) e come inserire i context hints. Infine mostra come configurare i testi con l'aiuto di un assistente IA e predisporre il tracciamento dei Pixel.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:30",
+   "titolo": "Introduzione a ChatGPT Ads e panoramica del pannello",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Presentazione del gestore annunci in fase beta",
+    "Panoramica della dashboard principali e metriche di base"
+   ]
+  },
+  {
+   "inizio": "1:30",
+   "fine": "3:35",
+   "titolo": "Sezioni di Ads Manager: conversioni, strumenti e pubblici",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Spiegazione delle sezioni conversioni, catalogo prodotti e pubblico",
+    "Generazione delle chiavi API per la gestione esterna"
+   ]
+  },
+  {
+   "inizio": "3:35",
+   "fine": "5:39",
+   "titolo": "Creazione della campagna: obiettivo, paesi e budget",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Selezione dell'obiettivo (Clic vs Conversioni)",
+    "Inclusione/esclusione delle posizioni geografiche",
+    "Impostazione del budget giornaliero e attivazione dei creative enhancements"
+   ]
+  },
+  {
+   "inizio": "5:39",
+   "fine": "8:32",
+   "titolo": "Gruppo di annunci, strategie di offerta e context hints",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Selezione della strategia di offerta",
+    "Scrittura dei context hints come frasi descrittive del contesto",
+    "Spiegazione di come l'IA usa i segnali senza creare un targeting rigido"
+   ]
+  },
+  {
+   "inizio": "8:32",
+   "fine": "10:35",
+   "titolo": "Creazione dell'annuncio e test delle varianti",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Impostazione di titolo (max 50 caratteri) e descrizione (max 100 caratteri)",
+    "Uso dell'IA per generare copy efficaci",
+    "A/B testing con varianti di titolo"
+   ]
+  },
+  {
+   "inizio": "10:35",
+   "fine": "12:31",
+   "titolo": "Configurazione del Pixel di tracciamento e conclusione",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione dell'evento di conversione e della fonte dati",
+    "Inserimento del codice di tracciamento sul sito",
+    "Salvataggio della campagna come bozza"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "2:20",
+   "dice": "Subiendo una base de datos con mails o teléfonos podés salir a buscar a esas personas para remarketing (audiencias personalizadas)",
+   "verdetto": "sbagliata",
+   "perche": "Nello Spazio Economico Europeo (SEE) e in Svizzera i pubblici personalizzati da liste clienti non sono disponibili e vanno evitati."
+  },
+  {
+   "minuto": "5:10",
+   "dice": "El presupuesto diario tiene un mínimo de 25 USD",
+   "verdetto": "giusta",
+   "perche": "Sull'interfaccia con fatturazione in USD il minimo giornaliero è 25 $. In EUR il minimo equivale invece a 15 €."
+  },
+  {
+   "minuto": "5:20",
+   "dice": "La mejora creativa (creative enhancements) genera variaciones automáticas de títulos e imágenes sin revisión previa",
+   "verdetto": "giusta",
+   "perche": "Come specificato nella mappa, i creative enhancements dal 30/10/2026 modificano o tradicono testi e immagini senza richiedere approvazione manuale."
+  },
+  {
+   "minuto": "6:12",
+   "dice": "Podés configurar un CPC máximo como estrategia de puja",
+   "verdetto": "superata",
+   "perche": "Dal 09/11/2026 la strategia Target CPC sostituisce il CPC massimo (Max CPC), che verrà ritirato definitivamente il 01/01/2027."
+  },
+  {
+   "minuto": "8:00",
+   "dice": "Las sugerencias de contexto orientan la coincidencia pero no son reglas de segmentación",
+   "verdetto": "giusta",
+   "perche": "I context hints servono a descrivere l'offerta e l'intenzione, non costituiscono parole chiave o regole rigide di targeting."
+  }
+ ],
+ "per_chi_impara": "Per chi opera dall'Italia bisogna adattare due aspetti fondamentali: il budget minimo giornaliero in Euro è di 15 € (e non 25 USD) e la funzione di retargeting tramite liste clienti (Audiencias) non è consentita per campagne rivolte agli utenti nello Spazio Economico Europeo e in Svizzera. Inoltre, fuso orario, paese e valuta devono essere impostati correttamente su Italia ed EUR alla prima configurazione dell'account.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Spiegazione pratica, chiara e molto visiva dell'interfaccia reale. Ottima per comprendere come muoversi all'interno di Ads Manager e come impostare i campi di testo e di contesto."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Consente di vedere esattamente il funzionamento pratico di ChatGPT Ads Manager a schermo, mostrando in modo chiaro sia la struttura della campagna sia l'inserimento dei context hints.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "3:41",
+  "fine": "5:34"
+ },
+ "video": "iTbBh7m6H6g",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T08:14:05+00:00"
+}

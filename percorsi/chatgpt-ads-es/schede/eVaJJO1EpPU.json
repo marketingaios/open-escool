@@ -1,0 +1,184 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "Un tutorial en vídeo detallado en español que muestra paso a paso cómo crear y configurar una cuenta de anunciante y lanzar campañas en ChatGPT Ads Manager. El ponente explica la estructura de las campañas, los objetivos disponibles, el uso de los context hints (pistas de contexto), la creación de anuncios persuasivos con ayuda de ChatGPT y las restricciones por sector. Está dirigido a emprendedores y marketers que quieren aprovechar la publicidad contextual en ChatGPT.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "4:36",
+   "titolo": "Introducción a ChatGPT Ads y contexto de la plataforma",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Explicación de cómo aparecen los anuncios debajo de las respuestas de ChatGPT",
+    "Diferencia entre la búsqueda tradicional en Google y la exploración conversacional en los LLM",
+    "Valor del contexto y de la intención de compra del usuario"
+   ]
+  },
+  {
+   "inizio": "4:37",
+   "fine": "8:38",
+   "titolo": "Creación de la cuenta de anunciante en ads.openai.com",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Registro y configuración del perfil de la empresa",
+    "Selección del país, la moneda y la zona horaria",
+    "Vista general de la interfaz de Ads Manager"
+   ]
+  },
+  {
+   "inizio": "8:39",
+   "fine": "14:15",
+   "titolo": "Configuración de la campaña con objetivos, ubicación y presupuesto",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Elección del objetivo (Alcance/Views, Clics, Conversiones)",
+    "Segmentación geográfica por regiones y códigos postales",
+    "Configuración del presupuesto diario y de las plataformas de destino"
+   ]
+  },
+  {
+   "inizio": "14:16",
+   "fine": "18:15",
+   "titolo": "Grupo de anuncios, URL de destino y Pistas de contexto",
+   "tappe": [
+    3,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Introducción de la URL de destino",
+    "Uso de las Pistas de contexto (context hints) como guía para el algoritmo",
+    "Límites de caracteres, Título (50) y Descripción (100)",
+    "Formato de la imagen cuadrada (1080x1080)"
+   ]
+  },
+  {
+   "inizio": "18:16",
+   "fine": "22:45",
+   "titolo": "Creación de los copys publicitarios con ChatGPT",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Prompts para generar títulos en forma de pregunta y descripciones con prueba social",
+    "Integración de los textos creados en Ads Manager",
+    "Consejos para aumentar el CTR"
+   ]
+  },
+  {
+   "inizio": "22:46",
+   "fine": "28:35",
+   "titolo": "Estrategias de campaña para marca y competidores",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creación de campañas de marca para captar búsquedas sobre los competidores",
+    "Estrategias de puja (CPC máximo frente a puja automática)"
+   ]
+  },
+  {
+   "inizio": "28:36",
+   "fine": "33:53",
+   "titolo": "Optimización de la landing page y seguimiento de conversiones",
+   "tappe": [
+    4,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Importancia de la coherencia entre la pista de contexto y la página de destino",
+    "Configuración del Pixel de OpenAI y de Google Tag Manager",
+    "Ejemplos de constructores de landing pages (Lovable.dev)"
+   ]
+  },
+  {
+   "inizio": "33:54",
+   "fine": "38:01",
+   "titolo": "Restricciones por sector, gestión de cuentas y costos medios",
+   "tappe": [
+    2,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Tabla de las restricciones de las políticas para Salud, Finanzas y Servicios Legales fuera de EE. UU.",
+    "Gestión de varias cuentas y roles de usuario",
+    "Vista general de los costos medios por clic (CPC)"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:48",
+   "dice": "Los anuncios aparecen en la parte inferior de la interfaz, después de la respuesta de ChatGPT.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el mapa (etapa 1): el anuncio aparece debajo de la respuesta, etiquetado como patrocinado."
+  },
+  {
+   "minuto": "8:51",
+   "dice": "Hay tres objetivos disponibles para las campañas: Alcance, Clics y Conversiones.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el mapa (etapa 3): los objetivos son Views (pagas por mil impresiones), Clicks (pagas por clic) y Conversions."
+  },
+  {
+   "minuto": "14:18",
+   "dice": "Las Pistas de contexto no son palabras clave de concordancia exacta, sino indicaciones contextuales opcionales.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el mapa (etapa 3): los context hints no son palabras clave ni reglas de segmentación."
+  },
+  {
+   "minuto": "17:33",
+   "dice": "El título del anuncio tiene un límite máximo de 50 caracteres y la descripción de 100 caracteres.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el mapa (etapa 4): título de 50 caracteres como máximo, texto de 100 caracteres como máximo."
+  },
+  {
+   "minuto": "17:42",
+   "dice": "La imagen publicitaria debe ser cuadrada, en formato PNG o JPG.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el mapa (etapa 4): imagen PNG o JPG, cuadrada."
+  },
+  {
+   "minuto": "25:52",
+   "dice": "En Ads Manager se puede fijar un límite de CPC máximo para el grupo de anuncios.",
+   "verdetto": "superata",
+   "perche": "En el vídeo, grabado el 26/10/2026, la función estaba activa, pero desde el 9/11/2026 la estrategia se llama Target CPC y a más tardar el 1/1/2027 se retira el Max CPC (ver los cambios recientes en el mapa)."
+  },
+  {
+   "minuto": "34:10",
+   "dice": "Los sectores de salud, finanzas y servicios legales tienen fuertes restricciones o prohibiciones fuera de Estados Unidos.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el mapa (etapas 2 y 3): fuera de EE. UU. gran parte de las categorías de salud, finanzas y servicios legales no están permitidas."
+  }
+ ],
+ "per_chi_impara": "Para quien trabaja desde Italia y la Unión Europea hay que tener en cuenta que el presupuesto diario mínimo en euros es de 15 € (no 10.000 COP / 3 $ como se muestra para Colombia). Además, en el Espacio Económico Europeo no se pueden usar las audiencias personalizadas (listas de clientes) por motivos de privacidad (GDPR), y hay que asegurarse de que el Pixel de seguimiento esté integrado respetando el consentimiento del usuario (banner de cookies).",
+ "qualita": {
+  "voto": 5,
+  "perche": "El vídeo ofrece una explicación clara, práctica y completa de todo el flujo de creación de campañas en ChatGPT Ads, y muestra directamente el panel de Ads Manager, la redacción de los copys y la configuración del seguimiento."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Es un recurso excelente para entender la lógica de la publicidad contextual en ChatGPT Ads, desde la creación de la cuenta hasta la redacción del anuncio y el análisis de las restricciones por sector.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "14:16",
+  "fine": "18:15"
+ },
+ "video": "eVaJJO1EpPU",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-07T10:59:42+00:00"
+}

@@ -1,0 +1,120 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "En este vídeo el autor muestra cómo configurar el seguimiento de conversiones (Pixel de OpenAI) en ChatGPT Ads Manager para un sitio web. Explica la creación de la fuente de datos, la asociación del evento personalizado 'lead_created' vinculado al botón de WhatsApp y la prueba en tiempo real del flujo de eventos. Al final revisa la sección de diagnóstico e intenta vincular el evento de conversión a la campaña existente.",
+ "mostra_schermo": true,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "02:15",
+   "titolo": "Introducción a las conversiones y los eventos en ChatGPT Ads",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Concepto de conversión y de evento (envío de formulario, clic en WhatsApp, compra)",
+    "Por qué hacer el seguimiento de las conversiones para optimizar las campañas"
+   ]
+  },
+  {
+   "inizio": "02:15",
+   "fine": "07:00",
+   "titolo": "Creación de la fuente de datos del Pixel y elección del evento",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creación del Pixel en Ads Manager ('Mi primer pixel')",
+    "Consulta a ChatGPT para elegir el evento base ('lead_created')",
+    "Explicación de cómo instalar el código en el HTML del sitio"
+   ]
+  },
+  {
+   "inizio": "07:00",
+   "fine": "13:30",
+   "titolo": "Instalación y prueba del seguimiento en el sitio, y revisión en el flujo de eventos",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Simulación de un usuario que hace clic en el botón de WhatsApp del sitio web",
+    "Comprobación de la recepción del evento 'lead_created' en Ads Manager",
+    "Revisión del registro y de los detalles del evento detectado"
+   ]
+  },
+  {
+   "inizio": "13:30",
+   "fine": "17:15",
+   "titolo": "Intento de cambiar el objetivo y asociación con la campaña",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "No se puede cambiar el objetivo de Clics a Conversiones en una campaña existente",
+    "Explicación de los métodos de facturación de las campañas Conversions (CPC o CPM)",
+    "Vinculación del evento de conversión con la campaña activa"
+   ]
+  },
+  {
+   "inizio": "17:15",
+   "fine": "22:48",
+   "titolo": "Análisis de diagnóstico y métricas finales",
+   "tappe": [
+    5,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Análisis del aviso de Diagnóstico sobre la falta de eventos CAPI (Server-to-Server)",
+    "Seguimiento del CPC actual y resumen de los resultados",
+    "Próximos pasos para crear una nueva campaña dedicada a las conversiones"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "02:30",
+   "dice": "Para medir las conversiones hay que crear una fuente de datos e instalar el código del Pixel de OpenAI en el sitio web.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el mapa (etapa 6): para las conversiones hace falta una fuente de datos en Ads Manager y el Pixel de OpenAI o CAPI."
+  },
+  {
+   "minuto": "13:45",
+   "dice": "No se puede cambiar directamente el objetivo de una campaña existente; para cambiar de objetivo hace falta una nueva campaña.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el mapa (etapa 3): «El objetivo no se cambia después: hace falta una campaña nueva»."
+  },
+  {
+   "minuto": "16:15",
+   "dice": "En las campañas con objetivo Conversions no se paga directamente por cada conversión, sino por clic (CPC) o por impresiones (CPM).",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el mapa (etapas 3 y 5): «Con Conversions no se paga por conversión, sino por clic o por impresiones»."
+  },
+  {
+   "minuto": "20:15",
+   "dice": "La API de conversiones (CAPI) envía eventos desde el servidor, pero si el Pixel del navegador funciona no es obligatorio implementarla enseguida para probar la campaña.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el mapa (etapa 6): se puede usar el Pixel de OpenAI, la Conversions API o ambos."
+  }
+ ],
+ "per_chi_impara": "Muy útil para entender la parte técnica del seguimiento de eventos y la prueba del Pixel. Los usuarios italianos deben tener en cuenta que los importes que se muestran están en pesos chilenos (CLP) y que en Italia/UE el envío de datos de conversión mediante el Pixel exige cumplir las normas del GDPR (recoger el consentimiento de los usuarios con un banner de cookies antes de activar el seguimiento).",
+ "qualita": {
+  "voto": 4,
+  "perche": "Explicación práctica y transparente del procedimiento de configuración y prueba del Pixel en ChatGPT Ads Manager, con un caso de estudio real paso a paso."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Es una excelente guía práctica para entender cómo funciona la sección Conversiones de Ads Manager y cómo comprobar que los clics en el sitio activan los eventos correctos.",
+ "tappa_migliore": 6,
+ "spezzone_migliore": {
+  "inizio": "07:00",
+  "fine": "11:00"
+ },
+ "video": "6AgsWhACvLY",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-07T11:32:29+00:00"
+}

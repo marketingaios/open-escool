@@ -1,0 +1,197 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo presenta cómo funciona ChatGPT Ads y guía paso a paso en la configuración práctica de una campaña dentro de OpenAI Ads Manager. Muestra cómo configurar objetivos, países, plataformas, presupuesto, context hints y creatividades del anuncio, además de la configuración técnica del Pixel de seguimiento y de los eventos de conversión. Está pensado para anunciantes y freelancers que quieren entender la lógica publicitaria conversacional y preparar su primera campaña.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "4:15",
+   "titolo": "Introducción a ChatGPT Ads y a la lógica conversacional",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Los anuncios aparecen debajo de las respuestas de ChatGPT con la etiqueta de patrocinado",
+    "Segmentación basada en el contexto de la conversación en lugar de solo palabras clave tradicionales",
+    "Diferencias entre la búsqueda tradicional y la intención de compra en el chat"
+   ]
+  },
+  {
+   "inizio": "4:15",
+   "fine": "10:08",
+   "titolo": "Creación de la campaña en Ads Manager con objetivo, geolocalización y presupuesto",
+   "tappe": [
+    2,
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Acceso a Ads Manager y creación guiada de una nueva campaña",
+    "Elección del objetivo (Alcance/Views, Clics, Conversiones)",
+    "Selección de las zonas geográficas y de las plataformas (iOS, Android, Web)",
+    "Configuración del presupuesto diario"
+   ]
+  },
+  {
+   "inizio": "10:08",
+   "fine": "12:08",
+   "titolo": "Grupo de anuncios, puja y context hints",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Configuración del grupo de anuncios y puja máxima de CPM",
+    "Introducción de la URL de destino",
+    "Uso de las 'pautas de contexto' (context hints) como descripción del contexto ideal para mostrar el anuncio"
+   ]
+  },
+  {
+   "inizio": "12:08",
+   "fine": "13:50",
+   "titolo": "Creación del anuncio y vista previa",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Redacción del título y del texto descriptivo, y carga de la imagen",
+    "Revisión de la vista previa del anuncio en el panel lateral",
+    "Aviso de que hace falta el método de pago antes de la publicación"
+   ]
+  },
+  {
+   "inizio": "13:50",
+   "fine": "17:00",
+   "titolo": "Seguimiento de conversiones, Pixel y eventos",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creación y obtención del código del Pixel para el sitio web",
+    "Configuración de eventos estándar (lead, compra, pedido)",
+    "Sección Audiencias para cargar listas de clientes mediante archivo"
+   ]
+  },
+  {
+   "inizio": "17:00",
+   "fine": "18:20",
+   "titolo": "Ejemplo real de anuncio aparecido en ChatGPT",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Ejemplo práctico de conversación sobre viajes a Puerto Rico",
+    "Visualización del bloque patrocinado (Booking.com) debajo de la respuesta de texto"
+   ]
+  },
+  {
+   "inizio": "18:20",
+   "fine": "20:07",
+   "titolo": "Reflexión final sobre la ventaja de quien llega primero (early adopter)",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Importancia de probar la plataforma antes de la saturación del mercado",
+    "Evolución del comportamiento de búsqueda y consideraciones estratégicas"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:44",
+   "dice": "Los anuncios aparecen dentro de ChatGPT debajo de las respuestas, claramente identificados como publicidad",
+   "verdetto": "giusta",
+   "perche": "Conforme a la etapa 1: el anuncio aparece debajo de la respuesta, etiquetado como patrocinado y separado de la respuesta."
+  },
+  {
+   "minuto": "1:05",
+   "dice": "Usa el ejemplo de una persona que busca asesoría legal o fiscal para mostrar cómo funcionan los anuncios de servicios legales",
+   "verdetto": "sbagliata",
+   "perche": "En contraste con el mapa (aviso «Sectores regulados»): fuera de EE. UU. los servicios legales no están permitidos o están reservados a anunciantes aprobados."
+  },
+  {
+   "minuto": "2:54",
+   "dice": "ChatGPT supera los 1.000 millones de usuarios activos mensuales y tiene más de 900 millones de usuarios activos semanales",
+   "verdetto": "non_verificabile",
+   "perche": "El mapa no incluye las estadísticas sobre el total de usuarios mensuales o semanales de ChatGPT."
+  },
+  {
+   "minuto": "5:31",
+   "dice": "Como tipo de campaña se puede elegir estándar o feed de productos",
+   "verdetto": "non_verificabile",
+   "perche": "El mapa describe la estructura campaña/grupo/anuncios y solo cita la app de Shopify para los feeds de EE. UU., sin especificar el campo del tipo feed en la campaña estándar."
+  },
+  {
+   "minuto": "5:50",
+   "dice": "Los objetivos de campaña que se pueden elegir son Alcance (Views), Clics y Conversiones",
+   "verdetto": "giusta",
+   "perche": "Conforme a la etapa 3: «Objetivo: Views (pagas por mil impresiones), Clicks (pagas por clic), Conversions»."
+  },
+  {
+   "minuto": "7:40",
+   "dice": "Las plataformas que se pueden elegir para mostrar los anuncios son iOS app, Android app y Web",
+   "verdetto": "giusta",
+   "perche": "Conforme a la etapa 3: «Plataformas que se pueden elegir: app y web de Android, web de escritorio, app y web de iOS»."
+  },
+  {
+   "minuto": "8:25",
+   "dice": "Se pueden crear 'Audiencias personalizadas' cargando listas de clientes en formato CSV para perfilar al público",
+   "verdetto": "sbagliata",
+   "perche": "Aunque la interfaz global muestra la opción, para Europa (EEE y Suiza) el aviso oficial especifica «Sin personalización en el Espacio Económico Europeo ni en Suiza: las audiencias personalizadas deben evitarse»."
+  },
+  {
+   "minuto": "10:19",
+   "dice": "Configura la estrategia de puja máxima por mil impresiones (Oferta máxima de CPM / Max Bid)",
+   "verdetto": "superata",
+   "perche": "Era el procedimiento estándar en agosto de 2026, pero desde el 9/11/2026 las estrategias automáticas y Target CPA/Target CPC sustituyen a Max Bid, que se retira definitivamente a más tardar el 1/1/2027."
+  },
+  {
+   "minuto": "11:42",
+   "dice": "Las 'pautas de contexto' (context hints) sirven para explicarle a ChatGPT qué hace la empresa y en qué contexto debe aparecer el anuncio",
+   "verdetto": "giusta",
+   "perche": "Conforme a la etapa 3: los context hints son frases naturales que describen qué ofreces, a quién le sirve y cuándo es útil, no palabras clave."
+  },
+  {
+   "minuto": "12:15",
+   "dice": "El anuncio requiere título, descripción, URL de destino e imagen",
+   "verdetto": "giusta",
+   "perche": "Conforme a las etapas 1 y 4: el anuncio se compone de favicon/logo, nombre, título, texto, página de destino e imagen."
+  },
+  {
+   "minuto": "14:30",
+   "dice": "El Pixel de OpenAI genera un código script que se instala en el sitio o en la app para hacer el seguimiento de las conversiones",
+   "verdetto": "giusta",
+   "perche": "Conforme a la etapa 6: para las conversiones hace falta una fuente de datos en Ads Manager y el Pixel de OpenAI."
+  },
+  {
+   "minuto": "14:58",
+   "dice": "Los eventos de conversión configurables incluyen Lead creado, Pedido creado, Compra, Contenido visto, Instalación de app",
+   "verdetto": "giusta",
+   "perche": "Conforme a la etapa 6: requiere un evento estándar asociado a la fuente de datos."
+  }
+ ],
+ "per_chi_impara": "Para quien trabaja en Italia (Unión Europea) hay tres diferencias fundamentales con lo que se muestra en el vídeo: 1) en el Espacio Económico Europeo no existe la personalización de los anuncios, así que las listas de clientes (Audiencias personalizadas) que se ven en el vídeo no deben usarse para campañas dirigidas a usuarios europeos; 2) el mínimo del presupuesto diario en Italia es de 15 € (y la tarjeta debe corresponder al país del negocio, con el número de IVA introducido en Billing); 3) los servicios legales citados al inicio del vídeo como ejemplo de búsqueda no están permitidos fuera de EE. UU. Además, el vídeo se grabó antes del lanzamiento europeo (31/08/2026) y de los cambios de otoño en las pujas (Target CPA/CPC) y en los creative enhancements.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Explicación muy clara, excelente demostración en pantalla del Ads Manager real y de la vista previa de los anuncios en el chat. El ritmo es ágil y completo en las nociones básicas (campaña, grupo, context hints, pixel); solo lo penaliza ser anterior a las actualizaciones de finales de 2026 y no incluir las restricciones normativas europeas."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Es un excelente tutorial práctico y visual para quien quiere ver la interfaz real de Ads Manager y la configuración del Pixel desde cero. Sin embargo, está en español, es de agosto de 2026 (antes de la habilitación oficial en Europa y de los cambios de pujas de noviembre de 2026) y no menciona las restricciones GDPR/EEE sobre las audiencias personalizadas.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "10:08",
+  "fine": "12:08"
+ },
+ "video": "5lA_tIPkiuY",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-07T11:12:04+00:00"
+}

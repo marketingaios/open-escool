@@ -1,0 +1,194 @@
+{
+ "lingua_parlata": "it",
+ "riassunto": "Il video documenta una prima esplorazione pratica e in diretta della piattaforma ChatGPT Ads Manager da parte di un utente italiano. Mostra passo dopo passo la creazione dell'account, l'inserimento della fatturazione e della partita IVA, l'avvio della verifica aziendale, la configurazione e il test del Pixel di OpenAI e la creazione guidata di una prima campagna con obiettivo conversioni. È molto utile per inserzionisti e professionisti italiani che vogliono vedere il funzionamento reale dell'interfaccia Ads Manager.",
+ "mostra_ads_manager": true,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "3:11",
+   "titolo": "Introduzione e ricerca di ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Verifica della disponibilità del servizio per l'Italia",
+    "Consultazione della documentazione e delle FAQ di OpenAI Ads"
+   ]
+  },
+  {
+   "inizio": "3:12",
+   "fine": "5:03",
+   "titolo": "Registrazione e primo accesso a Ads Manager",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Configurazione iniziale con dati aziendali, valuta EUR e fuso orario",
+    "Salto della bozza automatica per entrare direttamente in Ads Manager Beta"
+   ]
+  },
+  {
+   "inizio": "5:04",
+   "fine": "8:35",
+   "titolo": "Panoramica interfaccia e impostazioni di fatturazione",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Esplorazione delle voci di menu di Ads Manager",
+    "Inserimento del metodo di pagamento (carta) e dati fiscali/Partita IVA italiana"
+   ]
+  },
+  {
+   "inizio": "8:36",
+   "fine": "10:10",
+   "titolo": "Avvio della verifica aziendale",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento dei dati societari (REA, Partita IVA, indirizzo legale)",
+    "Invio della richiesta di verifica tramite procedura guidata Persona"
+   ]
+  },
+  {
+   "inizio": "10:11",
+   "fine": "13:30",
+   "titolo": "Creazione delle fonti dati (Pixel) ed eventi di conversione",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Generazione di un Pixel OpenAI per il tracciamento web",
+    "Creazione di un evento di conversione personalizzato (Lead)"
+   ]
+  },
+  {
+   "inizio": "13:31",
+   "fine": "17:30",
+   "titolo": "Installazione del Pixel e dell'evento sul sito web",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Integrazione del codice base del Pixel nell'header del sito",
+    "Aggiunta dello snippet di tracciamento evento nella Thank You Page"
+   ]
+  },
+  {
+   "inizio": "17:31",
+   "fine": "21:35",
+   "titolo": "Test e verifica ricezione eventi (Polling)",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Utilizzo dello strumento di polling integrato nel pannello conversioni",
+    "Convalida in tempo reale della ricezione dell'evento 'lead_created'"
+   ]
+  },
+  {
+   "inizio": "21:36",
+   "fine": "23:05",
+   "titolo": "Esplorazione segmenti di pubblico",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Verifica delle opzioni per creare pubblici da file clienti (CSV/TXT)"
+   ]
+  },
+  {
+   "inizio": "23:06",
+   "fine": "27:50",
+   "titolo": "Creazione della prima campagna, gruppo e annuncio",
+   "tappe": [
+    3,
+    4,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Impostazione obiettivo Conversioni e budget giornaliero minimo a 15 €",
+    "Targeting geografico a livello di regioni italiane (Liguria, Piemonte, Lombardia)",
+    "Disattivazione dei testi automatici generati dall'AI",
+    "Composizione del copy dell'annuncio rispettando i limiti di 50 caratteri (titolo) e 100 caratteri (descrizione)"
+   ]
+  },
+  {
+   "inizio": "27:51",
+   "fine": "29:15",
+   "titolo": "Pubblicazione della campagna e conclusioni",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Pubblicazione della campagna live",
+    "Stato iniziale 'Non in erogazione' per revisione brand/account in corso"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "4:26",
+   "dice": "Il budget giornaliero minimo è 15 euro con fatturazione in euro",
+   "verdetto": "giusta",
+   "perche": "Come confermato nella documentazione ufficiale (20001210-creating-campaigns-for-chatgpt-ads.md), con fatturazione in EUR il budget giornaliero minimo è esattamente 15 €."
+  },
+  {
+   "minuto": "4:12",
+   "dice": "Se provi a mettere 2 euro come budget giornaliero viene rifiutato e impone 15 euro",
+   "verdetto": "giusta",
+   "perche": "In linea con i minimi stabiliti da OpenAI per la valuta EUR."
+  },
+  {
+   "minuto": "22:15",
+   "dice": "Puoi creare un pubblico caricando una lista di email o numeri di telefono (file clienti)",
+   "verdetto": "giusta",
+   "perche": "La funzione di upload liste clienti esiste tecnicamente in piattaforma (20001346-set-up-custom-audiences-for-your-campaign.md), sebbene nel SEE e Svizzera sia vietato/da evitare per il targeting personalizzato."
+  },
+  {
+   "minuto": "26:01",
+   "dice": "Il titolo dell'annuncio deve avere al massimo 50 caratteri",
+   "verdetto": "giusta",
+   "perche": "La guida ufficiale per la creazione degli annunci (20001212-creating-ads-for-chatgpt-ads.md) specifica un massimo di 50 caratteri per il titolo."
+  },
+  {
+   "minuto": "27:12",
+   "dice": "La descrizione dell'annuncio deve contenere al massimo 100 caratteri",
+   "verdetto": "giusta",
+   "perche": "La guida ufficiale (20001212-creating-ads-for-chatgpt-ads.md) fissa il limite massimo del testo dell'annuncio a 100 caratteri."
+  },
+  {
+   "minuto": "27:52",
+   "dice": "Strategia di offerta impostata su 'Massimizza i risultati' (Maximize Results)",
+   "verdetto": "superata",
+   "perche": "Al momento del video (08/09/2026) era corretto, ma dal 09/11/2026 la strategia automatica è stata rinominata 'Intelligent bidding' e sono state introdotte le offerte Target CPA / Target CPC."
+  }
+ ],
+ "per_italia": "L'autore imposta correttamente il fuso orario di Roma, la valuta Euro (€) e inserisce la Partita IVA italiana. Imposta il budget minimo a 15 €/giorno. Tuttavia esplora i segmenti di pubblico da file (Custom Audiences) senza avvisare che nell'Area Economica Europea (SEE) e Svizzera la personalizzazione tramite liste clienti non è ammessa/va evitata. Inoltre l'autore decide di lanciare subito la campagna anziché lasciarla in pausa in attesa del completamento della verifica dell'account.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Ottima sessione pratica 'sul campo' che mostra interamente l'onboarding, l'interfaccia di Ads Manager, la configurazione tecnica del Pixel con test live e la pubblicazione di un annuncio. Il ritmo è un po' dispersivo per via dell'approccio esplorativo live, ma eccellente per concretezza."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È una delle primissime e più complete dimostrazioni reali 'da zero a pubblicazione' registrate in lingua italiana sull'Ads Manager ufficiale di OpenAI, mostrando sia la parte burocratica (fatturazione e verifica) sia quella tecnica (installazione pixel e testing eventi).",
+ "tappa_migliore": 6,
+ "spezzone_migliore": {
+  "inizio": "17:31",
+  "fine": "21:35"
+ },
+ "video": "jGEWozbgr4I",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-06T03:36:11+00:00"
+}

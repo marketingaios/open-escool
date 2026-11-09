@@ -1,0 +1,345 @@
+{
+ "tappa": 5,
+ "lingua": "es",
+ "titolo": "Presupuesto y pujas: cuánto puedes gastar de verdad",
+ "percorso": "ChatGPT Ads, de cero a la primera campaña",
+ "controllata": "2026-11-06",
+ "nota": "Traduzione di copione.it.json: stesse scene, stessi segnaposto, stesse fonti.",
+ "passi": [
+  "Presupuestos",
+  "Media de 7 días",
+  "Qué pagas",
+  "Pujas desde el 9/11",
+  "Primera campaña"
+ ],
+ "pronuncia": {
+  "ChatGPT": "Chat GPT"
+ },
+ "scene": [
+  {
+   "id": "apertura",
+   "passo": 0,
+   "tipo": "apertura",
+   "fonti": [],
+   "voce": "{{titolo}}En esta lección vemos cuánto puede gastar de verdad una campaña de ChatGPT Ads, y qué puja elegir para la primera. {{fonti}}Todo lo que escuchas viene de las páginas oficiales de OpenAI, leídas el seis de noviembre de dos mil veintiséis.",
+   "schermo": {
+    "sopra": "Etapa 5 · ChatGPT Ads",
+    "titolo": "Presupuesto y pujas",
+    "sotto": "Cuánto puedes gastar de verdad",
+    "fonti": "Fuentes: centro de ayuda de OpenAI · leídas el 6/11/2026"
+   }
+  },
+  {
+   "id": "tipi",
+   "passo": 0,
+   "tipo": "confronto",
+   "fonti": [
+    "20001210-creating-campaigns-for-chatgpt-ads.md"
+   ],
+   "voce": "Cuando creas una campaña eliges entre dos tipos de presupuesto. {{totale}}El presupuesto total es la cantidad que se gasta durante toda la campaña: es el control más estricto del gasto total. {{giornaliero}}El presupuesto diario es lo que quieres gastar de media cada día. {{consiglio}}A quien empieza en la plataforma, OpenAI le recomienda el diario, para ver cómo funciona antes de comprometer un total. {{attenzione}}Cuidado: de total se puede pasar a diario, pero luego no se puede volver atrás. Si te equivocas de tipo, tienes que crear una campaña nueva.",
+   "schermo": {
+    "titolo": "Dos tipos de presupuesto",
+    "colonne": [
+     {
+      "cue": "totale",
+      "nome": "Presupuesto total",
+      "righe": [
+       "Una cantidad para toda la campaña",
+       "El control más estricto del gasto"
+      ]
+     },
+     {
+      "cue": "giornaliero",
+      "nome": "Presupuesto diario",
+      "righe": [
+       "Cuánto gastar de media al día",
+       "Mínimo en euros: 15 € al día"
+      ],
+      "pillola": {
+       "cue": "consiglio",
+       "testo": "Recomendado para empezar"
+      }
+     }
+    ],
+    "nota": {
+     "cue": "attenzione",
+     "testo": "Total → diario sí. Diario → total no: hace falta una campaña nueva.",
+     "avviso": true
+    }
+   }
+  },
+  {
+   "id": "settimana",
+   "passo": 1,
+   "tipo": "settimana",
+   "fonti": [
+    "20001413-daily-budgets.md",
+    "20001210-creating-campaigns-for-chatgpt-ads.md"
+   ],
+   "voce": "Y aquí está lo que muchos vídeos explican mal. {{media}}El presupuesto diario no es un tope del día: es una media de siete días. La semana va de domingo a sábado, en la zona horaria de tu cuenta. {{barre}}Pongamos quince euros al día, que en euros también es el mínimo. {{doppio}}En un solo día la campaña puede gastar hasta el doble, es decir, treinta euros. {{settimana}}Pero en toda la semana no pasa de siete veces el presupuesto: ciento cinco euros. Los días en que gasta menos dejan margen para los días siguientes. {{manager}}Cuando creas o editas la campaña, Ads Manager te muestra justo estos dos máximos.",
+   "schermo": {
+    "titolo": "El diario es una media de 7 días",
+    "media": {
+     "cue": "media",
+     "testo": "No es un tope del día"
+    },
+    "budget": 15,
+    "valuta": "€",
+    "giorni": [
+     "Dom",
+     "Lun",
+     "Mar",
+     "Mié",
+     "Jue",
+     "Vie",
+     "Sáb"
+    ],
+    "spesa": [
+     10,
+     22,
+     30,
+     9,
+     14,
+     12,
+     8
+    ],
+    "cue_barre": "barre",
+    "doppio": {
+     "cue": "doppio",
+     "testo": "Máximo en un día: 2 × 15 = 30 €"
+    },
+    "settimana": {
+     "cue": "settimana",
+     "testo": "Máximo en la semana: 7 × 15 = 105 €"
+    },
+    "manager": {
+     "cue": "manager",
+     "testo": "Ads Manager muestra los dos máximos al fijar el presupuesto"
+    }
+   }
+  },
+  {
+   "id": "addebiti",
+   "passo": 1,
+   "tipo": "punti",
+   "fonti": [
+    "20001515-budget-pacing.md",
+    "20001216-billing-payment.md"
+   ],
+   "voce": "Dos cosas que no hay que confundir. {{ritmo}}El ritmo de gasto reparte el presupuesto en el tiempo, pero no garantiza ni un gasto igual cada día, ni que se gaste todo el presupuesto. {{soglia}}Luego está el umbral de pago: es el momento en que se cobra la tarjeta. No es el presupuesto de la campaña, y no es un límite de gasto. {{ritardo}}Y recuerda que los datos de gasto pueden llegar con siete u ocho horas de retraso: un gasto a cero no significa que no estés gastando.",
+   "schermo": {
+    "titolo": "Que no se confundan",
+    "righe": [
+     {
+      "cue": "ritmo",
+      "testo": "Ritmo de gasto: no garantiza un gasto igual, ni completo",
+      "icona": "info"
+     },
+     {
+      "cue": "soglia",
+      "testo": "Umbral de pago: cuándo se cobra la tarjeta. No es un presupuesto",
+      "icona": "info"
+     },
+     {
+      "cue": "ritardo",
+      "testo": "Datos de gasto con 7-8 horas de retraso: cero no significa cero",
+      "icona": "avviso"
+     }
+    ]
+   }
+  },
+  {
+   "id": "paghi",
+   "passo": 2,
+   "tipo": "tabella",
+   "fonti": [
+    "20001216-billing-payment.md",
+    "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
+   ],
+   "voce": "Ahora, qué pagas. Depende del objetivo de la campaña. {{views}}Con Views pagas las impresiones, a coste por mil: es el CPM. {{clicks}}Con Clicks pagas cada clic: es el CPC. {{conversions}}Con Conversions el sistema busca conversiones, pero pagas igualmente por clic o por impresiones, según la opción elegida. {{mai}}En ningún caso pagas por conversión: lo que optimizas y lo que pagas son dos ajustes distintos.",
+   "schermo": {
+    "titolo": "Qué optimizas y qué pagas",
+    "intestazione": [
+     "Objetivo",
+     "Busca",
+     "Pagas"
+    ],
+    "righe": [
+     {
+      "cue": "views",
+      "celle": [
+       "Views",
+       "Llegar a más personas",
+       "Impresiones (CPM)"
+      ]
+     },
+     {
+      "cue": "clicks",
+      "celle": [
+       "Clicks",
+       "Tráfico",
+       "Cada clic (CPC)"
+      ]
+     },
+     {
+      "cue": "conversions",
+      "celle": [
+       "Conversions",
+       "Conversiones",
+       "Clics o impresiones"
+      ]
+     }
+    ],
+    "nota": {
+     "cue": "mai",
+     "testo": "Nunca por conversión: optimización y cobro van por separado",
+     "avviso": true
+    }
+   }
+  },
+  {
+   "id": "date",
+   "passo": 3,
+   "tipo": "tempo",
+   "fonti": [
+    "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md",
+    "20001425-maximize-results-bid-strategy.md",
+    "20001207-ads-in-chatgpt-the-basics.md"
+   ],
+   "voce": "Las pujas están cambiando justo estos días. {{nome}}La estrategia automática, que se llamaba Maximize Results, ahora se llama Intelligent bidding: ajusta sola las pujas para conseguir más resultados dentro del presupuesto, y ya viene seleccionada por defecto en los grupos de anuncios nuevos. {{nove}}Desde el lunes nueve de noviembre, en las campañas nuevas llegan Target CPC para los clics, y Target CPA para las conversiones, que sustituye a Max Bid. {{gennaio}}El uno de enero de dos mil veintisiete, Max Bid y Max CPC se retiran también de las campañas que ya existen. {{vecchi}}Por eso, si un vídeo o una página antigua recomienda un Max CPC de tres a cinco dólares, está hablando de una opción que se va.",
+   "schermo": {
+    "titolo": "Las pujas cambian",
+    "eventi": [
+     {
+      "cue": "nome",
+      "data": "Hoy",
+      "testo": "Intelligent bidding (antes Maximize Results), seleccionada por defecto",
+      "oggi": true
+     },
+     {
+      "cue": "nove",
+      "data": "9/11/2026",
+      "testo": "Campañas nuevas: Target CPC (clics) y Target CPA (conversiones, en lugar de Max Bid)"
+     },
+     {
+      "cue": "gennaio",
+      "data": "1/1/2027",
+      "testo": "Max Bid y Max CPC se retiran también de las campañas existentes"
+     }
+    ],
+    "nota": {
+     "cue": "vecchi",
+     "testo": "«Max CPC de 3-5 $»: consejo de una opción que se va",
+     "avviso": true
+    }
+   }
+  },
+  {
+   "id": "media",
+   "passo": 3,
+   "tipo": "media",
+   "fonti": [
+    "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
+   ],
+   "voce": "Y aquí está el error más común. {{target}}Target CPC y Target CPA no son precios máximos: son medias. {{punti}}Si pides, por ejemplo, un coste medio de cincuenta euros por conversión, algunas conversiones costarán más y otras menos, {{risultato}}y también la media final puede salir más alta o más baja que tu objetivo.",
+   "schermo": {
+    "titolo": "Target CPA y Target CPC son medias",
+    "target": {
+     "cue": "target",
+     "valore": 50,
+     "testo": "Objetivo: 50 € de media"
+    },
+    "valuta": "€",
+    "punti": [
+     62,
+     41,
+     55,
+     38,
+     80,
+     47,
+     43,
+     58,
+     44,
+     66,
+     39,
+     52
+    ],
+    "cue_punti": "punti",
+    "risultato": {
+     "cue": "risultato",
+     "testo": "No es un precio máximo: también la media puede pasarse",
+     "etichetta": "Media real"
+    }
+   }
+  },
+  {
+   "id": "realistico",
+   "passo": 3,
+   "tipo": "calcolo",
+   "fonti": [
+    "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
+   ],
+   "voce": "¿Cómo eliges un objetivo realista? {{spesa}}Mira los resultados recientes: si has gastado cuatrocientos euros y has conseguido diez compras, {{cpa}}tu coste real por compra es de cuarenta euros. {{venti}}Poner un objetivo de veinte no hará que pagues la mitad: un objetivo por debajo de los resultados reales puede frenar la entrega de los anuncios.",
+   "schermo": {
+    "titolo": "Un objetivo realista",
+    "righe": [
+     {
+      "cue": "spesa",
+      "etichetta": "Gasto reciente",
+      "valore": "400 €"
+     },
+     {
+      "cue": "spesa",
+      "etichetta": "Compras",
+      "valore": "10"
+     },
+     {
+      "cue": "cpa",
+      "etichetta": "Coste real por compra",
+      "valore": "40 €",
+      "evidenzia": true
+     }
+    ],
+    "nota": {
+     "cue": "venti",
+     "testo": "Objetivo de 20 € ≠ compras a mitad de precio: puede frenar la entrega",
+     "avviso": true
+    }
+   }
+  },
+  {
+   "id": "prima",
+   "passo": 4,
+   "tipo": "riepilogo",
+   "fonti": [
+    "20001210-creating-campaigns-for-chatgpt-ads.md",
+    "20001413-daily-budgets.md",
+    "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
+   ],
+   "consiglio": true,
+   "voce": "Así que este es nuestro consejo para tu primera campaña. {{u1}}Presupuesto diario, al menos quince euros, sabiendo que un día puede llegar a treinta. {{u2}}Intelligent bidding, sin objetivo de coste: al principio todavía no tienes datos propios de los que partir. {{u3}}Los objetivos de coste los añades después, cuando tengas un coste real que mirar. {{u4}}Y en este recorrido la campaña se queda en pausa: la preparas, pero no gastas nada. En la siguiente etapa vemos cómo medir los resultados.",
+   "schermo": {
+    "titolo": "Tu primera campaña",
+    "righe": [
+     {
+      "cue": "u1",
+      "testo": "Presupuesto diario de 15 € (un día hasta 30 €)"
+     },
+     {
+      "cue": "u2",
+      "testo": "Intelligent bidding, sin objetivo de coste"
+     },
+     {
+      "cue": "u3",
+      "testo": "Target CPC o CPA solo con un coste real"
+     },
+     {
+      "cue": "u4",
+      "testo": "Campaña en pausa: lista, sin gasto"
+     }
+    ],
+    "sotto": "Siguiente etapa: medir los resultados"
+   }
+  }
+ ]
+}

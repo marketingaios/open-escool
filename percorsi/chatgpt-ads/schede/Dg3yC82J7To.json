@@ -1,0 +1,181 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video guida gli inserzionisti alla scoperta di ChatGPT Ads, spiegando il funzionamento degli annunci contestuali, i 4 principi differenzianti rispetto a Google Ads, l'integrazione con la presenza organica (AEO) e i 5 passaggi per impostare la prima campagna. È molto utile per comprendere le logiche strategiche della pubblicità conversazionale.",
+ "mostra_ads_manager": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "02:38",
+   "titolo": "Introduzione e storia delle piattaforme pubblicitarie",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Inquadramento storico (Google 2003, Facebook 2010, TikTok 2020, ChatGPT 2026)",
+    "Dati del pilota OpenAI negli USA e crescita del fatturato pubblicitario",
+    "Lancio dell'Ads Manager self-service"
+   ]
+  },
+  {
+   "inizio": "02:39",
+   "fine": "03:44",
+   "titolo": "Come funzionano i ChatGPT Ads e i formati disponibili",
+   "tappe": [
+    1,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Annunci posizionati sotto la risposta AI e chiaramente etichettati come sponsorizzati",
+    "Esclusione dei temi sensibili (salute, politica, salute mentale) e utenti under 18",
+    "Formati: Sponsored Answer Placement, Shopping Carousel e CTA Ads"
+   ]
+  },
+  {
+   "inizio": "03:45",
+   "fine": "04:37",
+   "titolo": "Targeting contestuale e controllo utente",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Nessun elenco di parole chiave o caricamento di pubblici",
+    "Targeting basato sulla conversazione in corso e sull'intenzione dell'utente",
+    "Controlli sulla privacy: l'utente può nascondere annunci o disattivare la personalizzazione"
+   ]
+  },
+  {
+   "inizio": "04:38",
+   "fine": "06:42",
+   "titolo": "AEO (Answer Engine Optimization) e sinergia organico/paid",
+   "tappe": [
+    1
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Gli annunci a pagamento funzionano meglio se il brand è già citato organicamente dall'AI",
+    "Presentazione dello strumento AEO Grader di HubSpot e delle sue 5 dimensioni",
+    "Importanza di costruire prima una base di posizionamento organico"
+   ]
+  },
+  {
+   "inizio": "06:43",
+   "fine": "08:22",
+   "titolo": "ChatGPT Ads vs Google Ads: I 4 principi guida",
+   "tappe": [
+    1,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Principio 1: Answer Independence (le risposte organiche non si comprano)",
+    "Principio 2: Conversation Privacy (gli inserzionisti non vedono i dati delle chat)",
+    "Principio 3: Choice and Control (l'utente ha pieno controllo sull'esperienza ad)",
+    "Principio 4: Long-term Value (annunci mostrati con parsimonia, meno del 20% degli utenti li vede al giorno)"
+   ]
+  },
+  {
+   "inizio": "08:23",
+   "fine": "09:25",
+   "titolo": "I 3 canali per acquistare annunci in ChatGPT",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Percorso 1: Self-Serve Ads Manager (per PMI e team in-house)",
+    "Percorso 2: Partner di agenzia (per grandi enterprise)",
+    "Percorso 3: Piattaforme AdTech programmatiche (Adobe, Criteo, StackAdapt, ecc.)"
+   ]
+  },
+  {
+   "inizio": "09:26",
+   "fine": "12:21",
+   "titolo": "Guida pratica in 5 passi per lanciare la prima campagna",
+   "tappe": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Step 1: Verificare la baseline AEO",
+    "Step 2: Ottimizzare il feed prodotti (Shopify/Etsy)",
+    "Step 3: Configurare Ads Manager e installare il Pixel/Conversions API",
+    "Step 4: Scrivere ad copy mirati sulle intenzioni d'acquisto",
+    "Step 5: Partire con offerte a CPC su piccoli budget di test"
+   ]
+  },
+  {
+   "inizio": "12:22",
+   "fine": "14:15",
+   "titolo": "Conclusioni e metriche sul traffico AI",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Il traffico generato da AI converte il 42% meglio rispetto a quello tradizionale",
+    "L'importanza di ottimizzare la strategia prima di incrementare la spesa"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "02:02",
+   "dice": "L'Ads Manager self-service è disponibile solo per le aziende negli Stati Uniti.",
+   "verdetto": "superata",
+   "perche": "L'Italia e i principali paesi europei sono ora inclusi tra i paesi in cui il self-service è ufficialmente disponibile."
+  },
+  {
+   "minuto": "02:05",
+   "dice": "Nessun minimo di spesa richiesto (no minimum spend).",
+   "verdetto": "superata",
+   "perche": "Per gli account fatturati in euro (EUR), è previsto un budget giornaliero minimo di 15 € per campagna."
+  },
+  {
+   "minuto": "03:02",
+   "dice": "Gli annunci non appaiono in conversazioni su salute, politica o salute mentale e non sono mostrati ai minori di 18 anni.",
+   "verdetto": "giusta",
+   "perche": "Corrisponde esattamente alle regole ufficiali di tutela della privacy e dei contenuti sensibili per ChatGPT Ads."
+  },
+  {
+   "minuto": "03:49",
+   "dice": "Nessuna lista di parole chiave né caricamento di pubblici personalizzati.",
+   "verdetto": "giusta",
+   "perche": "Il targeting avviene tramite il contesto della conversazione; inoltre nell'Unione Europea (SEE) i pubblici personalizzati da liste clienti non sono consentiti."
+  },
+  {
+   "minuto": "08:44",
+   "dice": "Sono disponibili opzioni di offerta a CPC e CPM.",
+   "verdetto": "superata",
+   "perche": "Il sistema di offerte è stato aggiornato con la strategia automatica Intelligent Bidding (Target CPC e Target CPA) in sostituzione di Max CPC e Max Bid."
+  },
+  {
+   "minuto": "11:35",
+   "dice": "Il titolo dell'annuncio ha 16 caratteri e la descrizione 32 caratteri.",
+   "verdetto": "sbagliata",
+   "perche": "I limiti ufficiali consentono fino a 50 caratteri per il titolo (con 16-24 consigliati) e fino a 100 caratteri per il testo (con 32-48 consigliati)."
+  }
+ ],
+ "per_italia": "Per un inserzionista italiano: 1) L'Ads Manager self-service è ora accessibile direttamente dall'Italia senza dover passare necessariamente da un'agenzia. 2) Il budget giornaliero minimo in Italia è di 15 €. 3) Nel SEE e in Svizzera non è possibile utilizzare i pubblici personalizzati (liste clienti). 4) Paese (Italia), valuta (EUR) e fuso orario vanno selezionati correttamente all'apertura dell'account perché non modificabili successivamente.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Spiegazione concettuale impeccabile dei principi di ChatGPT Ads, della differenza rispetto a Google Ads e del valore strategico dell'AEO. Presenta tuttavia dettagli operativi datati al momento della registrazione (self-service limitato agli USA, assenza di riferimenti ai minimi in euro e aggiornamenti delle offerte)."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Consigliato come introduzione teorica di alto livello per comprendere il cambio di paradigma pubblicitario portato da ChatGPT. Da integrare con la documentazione aggiornata per le impostazioni pratiche in Italia (budget in euro, vincoli privacy UE e nuove strategie d'offerta).",
+ "tappa_migliore": 1,
+ "spezzone_migliore": {
+  "inizio": "06:43",
+  "fine": "08:22"
+ },
+ "video": "Dg3yC82J7To",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T03:49:47+00:00"
+}

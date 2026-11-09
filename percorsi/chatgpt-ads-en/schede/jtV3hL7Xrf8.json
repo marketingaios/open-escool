@@ -1,0 +1,233 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video mostra passo passo come iscriversi ad Ads Manager di ChatGPT (ads.openai.com) e configurare da zero la prima campagna pubblicitaria. Spiega come installare il pixel di tracciamento tramite Google Tag Manager o codice del sito, impostare la fatturazione, definire budget e offerte CPC, generare context hints efficaci con l'AI e caricare le creatività. È rivolto a marketer e titolari d'azienda che vogliono sfruttare per primi la piattaforma pubblicitaria di OpenAI.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "0:39",
+   "titolo": "Introduzione a ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Opportunità storica rispetto agli inizi di Google Ads e Facebook Ads",
+    "Panoramica degli argomenti del video"
+   ]
+  },
+  {
+   "inizio": "0:39",
+   "fine": "1:44",
+   "titolo": "Accesso ad Ads Manager e lista d'attesa",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Richiesta di accesso su ads.openai.com",
+    "Email di benvenuto Welcome to Ads Manager Beta",
+    "Autenticazione a due fattori su app mobile"
+   ]
+  },
+  {
+   "inizio": "1:44",
+   "fine": "2:42",
+   "titolo": "Panoramica interfaccia e impostazioni account",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Sezioni Campagne, Strumenti, Fatturazione e Impostazioni",
+    "Gestione utenti e restrizioni sui domini aziendali per i team"
+   ]
+  },
+  {
+   "inizio": "2:42",
+   "fine": "5:30",
+   "titolo": "Configurazione sorgente dati, Pixel ed eventi di conversione",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione sorgente dati web in Ads Manager",
+    "Inserimento codice pixel su CMS Duda e Google Tag Manager",
+    "Creazione evento di conversione standard (Lead Created / Lead Form)"
+   ]
+  },
+  {
+   "inizio": "5:30",
+   "fine": "5:53",
+   "titolo": "Impostazione del profilo di fatturazione",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento carta di credito e indirizzo di fatturazione"
+   ]
+  },
+  {
+   "inizio": "5:53",
+   "fine": "7:05",
+   "titolo": "Creazione campagna, obiettivo e budget",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta dell'obiettivo Clicks",
+    "Impostazione del budget giornaliero a 5 $",
+    "Associazione dell'evento di conversione e date di inizio"
+   ]
+  },
+  {
+   "inizio": "7:05",
+   "fine": "8:46",
+   "titolo": "Gruppo di annunci, offerta Max CPC e context hints",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Impostazione offerta massima CPC consigliata (3 $)",
+    "Comprensione del ruolo dei context hints come guida tematica e non parole chiave",
+    "Uso di prompt in ChatGPT per formulare i context hints ideali"
+   ]
+  },
+  {
+   "inizio": "8:46",
+   "fine": "10:52",
+   "titolo": "Creazione dell'annuncio: testi, link e immagine",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scrittura di titolo (max 50 caratteri) e descrizione (max 100 caratteri)",
+    "Inserimento URL landing page specifica",
+    "Requisiti immagine quadrata (minimo 256x256 px)"
+   ]
+  },
+  {
+   "inizio": "10:52",
+   "fine": "11:12",
+   "titolo": "Revisione e pubblicazione della campagna",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Riepilogo parametri impostati",
+    "Invio per revisione e stato Not Serving / In Review"
+   ]
+  },
+  {
+   "inizio": "11:12",
+   "fine": "12:20",
+   "titolo": "Metriche, colonne e reportistica",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Colonne disponibili: impressioni, clic, spesa, CTR, CPC, CPM",
+    "Filtri per data, dispositivo e paese"
+   ]
+  },
+  {
+   "inizio": "12:20",
+   "fine": "13:04",
+   "titolo": "Conclusioni e riepilogo",
+   "tappe": [
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Invito all'iscrizione e riepilogo dei 4 passaggi chiave"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:47",
+   "dice": "È necessario iscriversi a una lista d'attesa su ads.openai.com e aspettare una o più settimane per l'accesso",
+   "verdetto": "superata",
+   "perche": "Dal 31/08/2026 Ads Manager è disponibile in self-service per l'Italia e vari mercati europei, senza lista d'attesa preliminare per gli account standard."
+  },
+  {
+   "minuto": "5:17",
+   "dice": "La piattaforma non consente di modificare la finestra di conversione, lasciandola fissa a 30 giorni",
+   "verdetto": "superata",
+   "perche": "Dal 30/09/2026 sono state introdotte le finestre di attribuzione flessibili nei report: clic a 7, 14 o 30 giorni e visualizzazione a 0 o 1 giorno."
+  },
+  {
+   "minuto": "6:19",
+   "dice": "L'obiettivo conversioni non è ancora selezionabile (Coming soon) ed è possibile scegliere solo Reach o Clicks",
+   "verdetto": "superata",
+   "perche": "L'obiettivo Conversions è pienamente supportato una volta configurato il pixel di tracciamento e un evento standard, come descritto nella tappa 3 della mappa."
+  },
+  {
+   "minuto": "6:45",
+   "dice": "Non c'è un budget giornaliero minimo obbligatorio e imposta 5 $",
+   "verdetto": "sbagliata",
+   "perche": "La documentazione ufficiale stabilisce che con fatturazione in EUR il budget giornaliero minimo è di 15 € (20001210-creating-campaigns-for-chatgpt-ads.md)."
+  },
+  {
+   "minuto": "6:50",
+   "dice": "Il tipo di budget (giornaliero o totale) viene impostato alla creazione e non può più essere modificato",
+   "verdetto": "superata",
+   "perche": "La mappa precisa che da budget totale a giornaliero si può passare anche successivamente, mentre non si torna indietro (tappa 5)."
+  },
+  {
+   "minuto": "7:26",
+   "dice": "L'offerta per l'asta si basa su un'offerta massima a CPC (Maximum CPC bid) con valore suggerito di 3 $",
+   "verdetto": "superata",
+   "perche": "Dal 09/11/2026 Target CPC sostituisce Max CPC nelle nuove campagne a clic e dal 01/01/2027 Max Bid e Max CPC vengono ritirati definitivamente; la strategia automatica di default è Intelligent Bidding."
+  },
+  {
+   "minuto": "7:58",
+   "dice": "I context hints servono a descrivere conversazioni, argomenti o temi rilevanti per guidare il matching, ma non sono regole di targeting né parole chiave a corrispondenza esatta",
+   "verdetto": "giusta",
+   "perche": "Conforme alla tappa 3: i context hints non sono parole chiave né regole di targeting, ma frasi naturali descrittive di cosa si offre e a chi serve."
+  },
+  {
+   "minuto": "9:28",
+   "dice": "L'annuncio prevede un titolo fino a 50 caratteri e una descrizione fino a 100 caratteri",
+   "verdetto": "giusta",
+   "perche": "Conforme alla tappa 4: il titolo accetta un massimo di 50 caratteri (consigliati 16-24) e il testo/descrizione un massimo di 100 caratteri (consigliati 32-48)."
+  },
+  {
+   "minuto": "10:24",
+   "dice": "L'immagine deve essere quadrata, in formato PNG o JPG, con dimensione minima di 256x256 pixel",
+   "verdetto": "giusta",
+   "perche": "Conforme alle specifiche creative della tappa 4 (immagine quadrata PNG o JPG fino a 1200x1200 px)."
+  },
+  {
+   "minuto": "12:15",
+   "dice": "Al momento la piattaforma non consente di fare retargeting sui visitatori",
+   "verdetto": "giusta",
+   "perche": "Conforme alle norme della mappa: i pubblici personalizzati e la personalizzazione sono disabilitati/da evitare nello Spazio Economico Europeo e Svizzera, e gli annunci si basano sul contesto della conversazione in corso."
+  }
+ ],
+ "per_chi_impara": "Per chi opera in Italia (Unione Europea) l'accesso self-service è già attivo senza lista d'attesa. Tuttavia, il budget minimo giornaliero in euro è di 15 € (e non 5 $ come nel video). Inoltre, nel SEE non è permessa la profilazione con pubblici personalizzati/retargeting, e dal 30/10/2026 i creative enhancements sono attivi di default (modificando testi/traduzioni) a meno di disattivarli manualmente in Manage Settings.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Tutorial pratico, chiaro e completo che mostra realmente a schermo l'intera procedura di configurazione su Ads Manager, dall'installazione tecnica del pixel all'ad creation. Risente solo del periodo di registrazione (maggio 2026), antecedente all'introduzione di Intelligent Bidding, Target CPC e del self-service europeo."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È uno dei pochissimi video che mostra da zero l'interfaccia reale di ChatGPT Ads Manager e include la configurazione pratica del Pixel tramite Google Tag Manager e Duda, guidando lo studente passo passo.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "7:50",
+  "fine": "8:45"
+ },
+ "video": "jtV3hL7Xrf8",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-08T09:37:07+00:00"
+}

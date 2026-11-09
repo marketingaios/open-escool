@@ -1,0 +1,165 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video guida l'utente passo-passo nell'apertura e configurazione di un account Ads Manager su OpenAI (ads.openai.com) e nella creazione di una prima campagna pubblicitaria per ChatGPT. Mostra come impostare dettagli aziendali, valuta, fuso orario, logo, inviti al team e preferenze di billing. Successivamente illustra la struttura in 3 livelli (campagna, gruppo annunci, annuncio) inserendo budget, targeting geografico, opzioni di offerta e creatività.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:20",
+   "titolo": "Introduzione e accesso ad Ads Manager",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Navigazione verso ads.openai.com",
+    "Autenticazione tramite l'account OpenAI esistente"
+   ]
+  },
+  {
+   "inizio": "1:21",
+   "fine": "4:43",
+   "titolo": "Creazione e configurazione dell'account inserzionista",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento del sito aziendale per l'anteprima iniziale",
+    "Scelta di ragione sociale, settore, paese, valuta e fuso orario",
+    "Attenzione all'impossibilità di modificare paese e valuta in seguito"
+   ]
+  },
+  {
+   "inizio": "4:44",
+   "fine": "7:21",
+   "titolo": "Impostazione di logo e dati di fatturazione",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento di una carta di credito/debito o rinvio dell'operazione",
+    "Caricamento del logo aziendale per il profilo inserzionista"
+   ]
+  },
+  {
+   "inizio": "7:22",
+   "fine": "12:40",
+   "titolo": "Panoramica interfaccia e gestione dei membri del team",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Esplorazione delle sezioni Overview, Campaigns, Conversions, Tools e Settings",
+    "Invito di un utente aggiuntivo con ruolo Admin tramite email e accettazione dell'invito"
+   ]
+  },
+  {
+   "inizio": "12:41",
+   "fine": "17:49",
+   "titolo": "Configurazione livello Campagna: obiettivo, targeting e budget",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta dell'obiettivo Clicks",
+    "Targeting geografico con inclusione di citta e esclusione di regioni",
+    "Definizione del budget giornaliero e disattivazione dei Creative Enhancements"
+   ]
+  },
+  {
+   "inizio": "17:50",
+   "fine": "20:18",
+   "titolo": "Configurazione livello Gruppo di Annunci: strategie di offerta e URL",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Differenza tra Autobid e Maximum CPC",
+    "Inserimento dell'URL di destinazione predefinito"
+   ]
+  },
+  {
+   "inizio": "20:19",
+   "fine": "24:46",
+   "titolo": "Creazione dell'annuncio e duplicazione degli elementi",
+   "tappe": [
+    4,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento di titolo (max 50 caratteri) e descrizione (max 100 caratteri)",
+    "Caricamento di un'immagine quadrata",
+    "Duplicazione di gruppi annunci e annunci individuali"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "01:05",
+   "dice": "È possibile effettuare l'accesso ad Ads Manager tramite l'account ChatGPT esistente",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma che ci si iscrive su ads.openai.com usando lo stesso account OpenAI di ChatGPT."
+  },
+  {
+   "minuto": "05:13",
+   "dice": "Verrà addebitato e subito rimborsato un importo di verifica di circa 50$ sulla carta quando la si inserisce",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma che quando si aggiunge la carta può comparire un blocco temporaneo di autorizzazione di importo variabile."
+  },
+  {
+   "minuto": "13:32",
+   "dice": "Gli obiettivi di campagna disponibili sono Reach, Clicks e Conversions",
+   "verdetto": "giusta",
+   "perche": "La mappa indica gli obiettivi Views, Clicks e Conversions; l'interfaccia nel video mostra 'Reach' (poi denominato Views)."
+  },
+  {
+   "minuto": "16:21",
+   "dice": "Il budget giornaliero minimo per l'account in NGN è di 3250 NGN",
+   "verdetto": "non_verificabile",
+   "perche": "La mappa riporta solo il minimo in euro (15 €) e non la tabella di conversione ufficiale in Naria nigeriana."
+  },
+  {
+   "minuto": "18:18",
+   "dice": "Le strategie di offerta disponibili nel gruppo annunci sono Autobid e Maximum CPC",
+   "verdetto": "superata",
+   "perche": "Dal 09/11/2026 le opzioni di bidding sono state aggiornate con Intelligent Bidding, Target CPC e Target CPA, e dal 01/01/2027 Max CPC è disattivato."
+  },
+  {
+   "minuto": "20:45",
+   "dice": "Il limite per il titolo dell'annuncio è di 50 caratteri e per la descrizione è di 100 caratteri",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma che il titolo ha un massimo di 50 caratteri e il testo/descrizione un massimo di 100 caratteri."
+  },
+  {
+   "minuto": "21:43",
+   "dice": "L'immagine pubblicitaria deve avere un formato quadrato",
+   "verdetto": "giusta",
+   "perche": "La mappa specifica che le immagini devono essere PNG o JPG, quadrate, fino a 1200 x 1200."
+  }
+ ],
+ "per_chi_impara": "In Italia e nell'Unione Europea l'interfaccia self-service di Ads Manager è disponibile. Gli utenti italiani devono selezionare 'Italia' come paese, 'EUR' come valuta e il fuso orario di Roma durante la creazione dell'account, tenendo presente che il budget giornaliero minimo è di 15 €. Inoltre, nel SEE/Svizzera non sono disponibili i pubblici personalizzati per retargeting.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Il video è una guida pratica e dettagliata che mostra l'intera interfaccia reale di Ads Manager, dalla creazione dell'account alla configurazione della campagna, compresi gli inviti al team e la duplicazione degli ad group. Unica limitazione è che risale ad ottobre 2026, quindi mostra le nomenclature delle offerte (Autobid/Max CPC) antecedenti all'aggiornamento del 9 novembre 2026."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Fornisce una panoramica visiva completa ed esaustiva dell'interfaccia Ads Manager, utilissima per chi parte da zero per capire l'esatta struttura dei menu e dei campi richiesti.",
+ "tappa_migliore": 2,
+ "spezzone_migliore": {
+  "inizio": "12:41",
+  "fine": "22:30"
+ },
+ "video": "W2tD1GB1ZhI",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T09:52:57+00:00"
+}

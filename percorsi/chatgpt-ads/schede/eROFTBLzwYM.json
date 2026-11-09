@@ -1,0 +1,228 @@
+{
+ "lingua_parlata": "it",
+ "riassunto": "Il video è una guida pratica e dettagliata all'uso di ChatGPT Ads Manager per il mercato italiano. Vincenzo Cosenza spiega la logica degli annunci contestuali su ChatGPT e guida l'utente passo dopo passo dall'onboarding alla configurazione completa di una campagna. Vengono inoltre illustrati l'installazione del Pixel di tracciamento e l'analisi delle metriche di rendimento, anche tramite apposito plugin.",
+ "mostra_ads_manager": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:19",
+   "titolo": "Introduzione: la pubblicità su ChatGPT arriva in Italia",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Disponibilità della pubblicità su ChatGPT in Italia",
+    "Posizionamento degli annunci sotto le risposte contestuali",
+    "Impatto sul customer journey e funnel decisionale"
+   ]
+  },
+  {
+   "inizio": "1:19",
+   "fine": "3:54",
+   "titolo": "Accesso, onboarding e impostazioni di fatturazione",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Accesso a ads.openai.com tramite account OpenAI",
+    "Configurazione di paese (Italia), valuta (EUR), fuso orario e favicon/logo",
+    "Inserimento metodo di pagamento, dati fiscali e partita IVA in Billing"
+   ]
+  },
+  {
+   "inizio": "3:54",
+   "fine": "10:12",
+   "titolo": "Creazione della campagna: obiettivo, geolocalizzazione e budget",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scelta dell'obiettivo (Reach, Clicks, Conversions)",
+    "Selezione del paese (Italia) ed esclusione di altre aree",
+    "Avviso sull'assenza di pubblici personalizzati nel SEE/Svizzera",
+    "Scelta delle piattaforme (web desktop, app e web iOS/Android)",
+    "Impostazione del budget giornaliero e date di programmazione"
+   ]
+  },
+  {
+   "inizio": "10:12",
+   "fine": "13:30",
+   "titolo": "Configurazione del gruppo di annunci e context hints",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Strategie di offerta (massimizzazione risultati vs CPC massimo)",
+    "Inserimento della URL di destinazione predefinita",
+    "Scrittura dei context hints in linguaggio naturale al posto delle keyword"
+   ]
+  },
+  {
+   "inizio": "13:30",
+   "fine": "15:45",
+   "titolo": "Creazione della creatività (annuncio)",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Limiti di caratteri: titolo (max 50) e descrizione (max 100)",
+    "Caricamento dell'immagine quadrata (minimo 256x256 px)",
+    "Anteprima dell'annuncio sponsorizzato ed etichettatura",
+    "Riepilogo finale della campagna prima della pubblicazione"
+   ]
+  },
+  {
+   "inizio": "15:45",
+   "fine": "16:55",
+   "titolo": "Revisione, stato della campagna e messa in pausa",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Fase di revisione ('In review / Not serving') da parte di OpenAI",
+    "Possibilità di aggiungere ulteriori creatività",
+    "Messa in pausa per evitare spese premature"
+   ]
+  },
+  {
+   "inizio": "16:55",
+   "fine": "19:48",
+   "titolo": "Tracciamento conversioni e configurazione Pixel",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione della Data Source e generazione del Pixel ID",
+    "Inserimento dello script di base nell'head del sito",
+    "Creazione di eventi personalizzati (es. page_viewed) e codice evento",
+    "Verifica tramite Event Stream"
+   ]
+  },
+  {
+   "inizio": "19:48",
+   "fine": "21:48",
+   "titolo": "Dashboard e analisi delle metriche reali",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Lettura di metriche chiave: impressioni, clic, CTR, CPC medio, CPM medio, spesa",
+    "Grafici di andamento temporale nella dashboard Overview"
+   ]
+  },
+  {
+   "inizio": "21:48",
+   "fine": "24:35",
+   "titolo": "Gestione e reporting tramite Plugin ChatGPT Ads Manager",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Installazione del plugin Ads Manager dentro ChatGPT",
+    "Interrogazione dello stato dell'account e delle metriche in linguaggio naturale"
+   ]
+  },
+  {
+   "inizio": "24:35",
+   "fine": "26:41",
+   "titolo": "Pubblico di destinazione e considerazioni finali",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Target che visualizza gli annunci: utenti Free e Go (non Plus o Pro)",
+    "Prospettive future per l'advertising conversazionale"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:12",
+   "dice": "Gli annunci compaiono alla fine di una risposta di ChatGPT, in modo contestuale alla richiesta dell'utente.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 1: l'annuncio compare sotto la risposta, chiaramente etichettato come sponsorizzato e separato dalla risposta."
+  },
+  {
+   "minuto": "2:29",
+   "dice": "In fase di onboarding si scelgono nome account, paese (Italia), valuta (EUR) e fuso orario.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 2: paese, valuta e fuso orario vanno selezionati alla creazione e sono vincolanti per la fatturazione."
+  },
+  {
+   "minuto": "8:47",
+   "dice": "Le Custom Audiences non sono ancora disponibili nel nostro paese (SEE e Svizzera).",
+   "verdetto": "giusta",
+   "perche": "Conforme agli Avvisi Italia e Tappa 3: i pubblici personalizzati da liste clienti non sono supportati per target in SEE/Svizzera."
+  },
+  {
+   "minuto": "9:30",
+   "dice": "Il budget giornaliero può essere impostato a piacere, ad esempio abbassato a 25 € al giorno.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 5: il minimo in euro è 15 € al giorno, quindi 25 € è una cifra valida."
+  },
+  {
+   "minuto": "10:30",
+   "dice": "È possibile scegliere la strategia di offerta tra 'Maximize results' e 'Maximum CPC' impostando un'offerta massima.",
+   "verdetto": "superata",
+   "perche": "Al momento della registrazione (settembre 2026) era valida, ma dal 9/11/2026 'Maximize Results' è diventata 'Intelligent bidding' e sono stati introdotti Target CPC e Target CPA in sostituzione di Max CPC / Max Bid."
+  },
+  {
+   "minuto": "11:42",
+   "dice": "I Context Hints non sono parole chiave, ma frasi descrittive in linguaggio naturale sul prodotto, a chi serve e in quale contesto.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 3: descrive perfettamente cosa sono e come si compilano i context hints."
+  },
+  {
+   "minuto": "14:14",
+   "dice": "Il titolo ha un limite massimo di 50 caratteri e la descrizione di 100 caratteri.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 4: titolo massimo 50 caratteri (consigliati 16-24) e testo/descrizione massimo 100 caratteri."
+  },
+  {
+   "minuto": "14:55",
+   "dice": "Si carica una singola immagine quadrata PNG o JPEG di almeno 256x256 pixel.",
+   "verdetto": "superata",
+   "perche": "Al 15/09/2026 era disponibile solo il formato a immagine singola; dal 26/10/2026 è stato introdotto anche il formato a più immagini (4-6 immagini quadrate) in beta aperta."
+  },
+  {
+   "minuto": "17:21",
+   "dice": "Per tracciare le conversioni si crea una Data Source, si copia il Pixel ID e lo snippet script HTML da inserire nell'head del sito.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 6: procedura esatta per configurare il Pixel di OpenAI e monitorare gli eventi."
+  },
+  {
+   "minuto": "21:32",
+   "dice": "Gli annunci vengono visti solo dagli utenti dei piani Free e Go (da 8$/mese), mentre gli abbonati Plus e superiori non vedono pubblicità.",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 1: gli annunci sono mostrati unicamente a utenti Free e Go."
+  }
+ ],
+ "per_italia": "Il video è registrato da un account italiano ed evidenzia specificamente i vincoli vigenti in Italia e nell'Unione Europea: valuta impostata in EUR, corretta gestione del fuso orario di Roma, inserimento dei dati fiscali e della partita IVA in fatturazione, nonché il blocco delle Custom Audiences conformemente alle normative europee sulla privacy.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Video estremamente chiaro, pratico e rigoroso. Mostra direttamente a schermo l'intera interfaccia di Ads Manager, crea una campagna reale, affronta la configurazione tecnica del Pixel e analizza i dati di spesa effettivi senza fare false promesse di rendimento."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È il tutorial di riferimento in lingua italiana per partire da zero: copre quasi tutte le tappe della mappa (dall'account alla campagna, creatività, pixel e reporting) mostrando la piattaforma reale e spiegando chiaramente le peculiarità del mercato italiano ed europeo.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "11:30",
+  "fine": "13:30"
+ },
+ "video": "eROFTBLzwYM",
+ "modello": "gemini-3.8-flash",
+ "creata": "2026-11-06T03:14:48+00:00"
+}

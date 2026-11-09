@@ -1,0 +1,153 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "Il video offre una panoramica completa di ChatGPT Ads: spiega il funzionamento del sistema pubblicitario basato sul contesto delle conversazioni, illustra chi può annunciarsi e mostra una dimostrazione pratica passo passo nell'Ads Manager di OpenAI per la creazione di una campagna.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "01:22",
+   "titolo": "Introduzione e cos'è ChatGPT Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Definizione del sistema pubblicitario di OpenAI dentro ChatGPT",
+    "Formato dell'annuncio: nome brand, titolo, descrizione, immagine e link",
+    "Esclusione dei piani a pagamento (Plus, Pro, Business) e dei minorenni dal targeting"
+   ]
+  },
+  {
+   "inizio": "01:23",
+   "fine": "02:49",
+   "titolo": "Segmentazione e contesto delle conversazioni",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Differenza tra Google Ads (ricerca), Social (pubblico) e ChatGPT (contesto)",
+    "Utilizzo dei Context Hints (indicazioni di contesto) da parte degli inserzionisti",
+    "Fattori che determinano l'idoneità dell'annuncio nell'asta"
+   ]
+  },
+  {
+   "inizio": "02:50",
+   "fine": "03:33",
+   "titolo": "Formati e obiettivi disponibili",
+   "tappe": [
+    1,
+    3,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Annuncio nativo standard e integrazione con catalogo prodotti",
+    "Obiettivi di campagna: copertura (Alcance), clic (Clics), conversioni (Conversiones)",
+    "Struttura a tre livelli: campagna, gruppo di annunci, inserzione"
+   ]
+  },
+  {
+   "inizio": "03:34",
+   "fine": "04:33",
+   "titolo": "Requisiti per annunciarsi e politiche",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Disponibilità self-service nei paesi supportati (inclusa la Spagna)",
+    "Settori ammessi (beni di consumo, viaggi, e-commerce) e categorie ristrette/vietate"
+   ]
+  },
+  {
+   "inizio": "04:34",
+   "fine": "11:43",
+   "titolo": "Tutorial pratico nell'Ads Manager",
+   "tappe": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione di una campagna standard o da feed prodotti",
+    "Impostazione di obiettivi, geolocalizzazione (inclusione ed esclusione) e budget",
+    "Configurazione delle offerte (Max Bid / Intelligent bidding) e dei Context Hints",
+    "Creazione dell'annuncio con titolo, descrizione e immagine quadrata"
+   ]
+  },
+  {
+   "inizio": "11:44",
+   "fine": "13:53",
+   "titolo": "Consigli strategici e tracciamento",
+   "tappe": [
+    3,
+    4,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Definire l'utilità del brand nelle conversazioni",
+    "Separare i gruppi di annunci per ogni intenzione o prodotto",
+    "Configurare Pixel e Conversions API prima del lancio"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "00:05",
+   "dice": "OpenAI ha abierto Ads Manager Beta en España y otros mercados",
+   "verdetto": "giusta",
+   "perche": "La mappa conferma che Ads Manager self-service è disponibile in Spagna e Italia (tabella ufficiale paesi 'Available')."
+  },
+  {
+   "minuto": "00:53",
+   "dice": "Las cuentas Plus, Pro y los planes Business quedan fuera, igual que las cuentas de menores de 18 años",
+   "verdetto": "giusta",
+   "perche": "Conforme alla Tappa 1 della mappa: gli utenti dei piani Plus, Pro, Business ed Edu, così come i minorenni, non vedono annunci."
+  },
+  {
+   "minuto": "01:05",
+   "dice": "Las conversaciones privadas y los datos personales quedan fuera de su alcance",
+   "verdetto": "giusta",
+   "perche": "La Tappa 1 della mappa conferma che l'inserzionista riceve solo dati aggregati e non ha mai accesso alle chat."
+  },
+  {
+   "minuto": "02:41",
+   "dice": "OpenAI recomienda empezar con una puja máxima entre 3 y 5 dólares por clic",
+   "verdetto": "superata",
+   "perche": "Il 09/11/2026 le strategie di offerta Max Bid/Max CPC vengono sostituite da Target CPA e Target CPC (Intelligent Bidding). Inoltre la mappa precisa che il consiglio storico dei 3-5$ valeva per Max CPC in uscita."
+  },
+  {
+   "minuto": "07:44",
+   "dice": "Podemos trabajar con un presupuesto total para toda la campaña o con un presupuesto diario",
+   "verdetto": "giusta",
+   "perche": "La Tappa 5 della mappa specifica che sono disponibili due opzioni di budget: totale della campagna o giornaliero."
+  },
+  {
+   "minuto": "11:21",
+   "dice": "Recomendamos que cada grupo de anuncios contenga al menos entre 4 y 5 anuncios",
+   "verdetto": "non_verificabile",
+   "perche": "È un buon consiglio pratico dell'autrice, ma la mappa non fissa un numero minimo obbligatorio di varianti per gruppo di annunci."
+  }
+ ],
+ "per_chi_impara": "Molto rilevante per l'Italia (SEE): l'interfaccia dell'Ads Manager è identica a quella italiana ed europea. Tuttavia, l'utente italiano deve tenere presente che nello Spazio Economico Europeo e in Svizzera non è consentito l'uso di pubblici personalizzati (liste clienti), il budget minimo giornaliero in euro è 15 €, ed è obbligatorio posizionare il Pixel dietro il banner dei consensi per rispettare le normative vigenti.",
+ "qualita": {
+  "voto": 4,
+  "perche": "Il video è estremamente chiaro, ben strutturato e mostra l'interfaccia reale dell'Ads Manager in lingua spagnola, spiegando in modo dettagliato sia la teoria del contesto sia la pratica della creazione della campagna. Alcuni dettagli sulle offerte CPC manuali sono stati aggiornati dopo il lancio di Intelligent Bidding nel novembre 2026."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "È uno dei migliori tutorial pratici da zero per comprendere sia il concetto di segmentazione contestuale sia la procedura passo-passo di creazione di una campagna nell'Ads Manager.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "04:34",
+  "fine": "10:14"
+ },
+ "video": "iCL0ZWFxlTc",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-06T08:27:46+00:00"
+}

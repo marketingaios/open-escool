@@ -1,0 +1,47 @@
+name: Problema
+description: Algo no funciona como dice la documentación
+labels: ["problema"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Esta incidencia es pública.** No pegues claves, el archivo `.env`, el diagnóstico completo de `diagnosi/`, tus notas ni tu chat.
+        Para un problema de seguridad usa el aviso privado (pestaña Security), no esta plantilla.
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué ha pasado
+      description: Qué esperabas y qué ha pasado en cambio.
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducirlo
+      placeholder: |
+        1. /escool create "…"
+        2. …
+    validations:
+      required: true
+  - type: dropdown
+    id: asistente
+    attributes:
+      label: Asistente
+      options: ["Claude Code", "Codex", "Los dos", "Ninguno (solo la plataforma)"]
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostico
+    attributes:
+      label: Diagnóstico para compartir
+      description: "Salida de `python strumenti/diagnosi.py --condividi` (en Windows `py`). Léela antes de pegarla."
+      render: markdown
+    validations:
+      required: true
+  - type: checkboxes
+    id: revisado
+    attributes:
+      label: Antes de enviar
+      options:
+        - label: He revisado lo que pego y no contiene claves ni datos personales.
+          required: true

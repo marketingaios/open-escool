@@ -1,0 +1,110 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "En el vídeo dos profesionales del marketing responden preguntas frecuentes sobre ChatGPT Ads en formato 'Dosis Express' mientras arreglan el estudio de grabación. Explican a qué usuarios les aparecen los anuncios, la comparación con Google Ads, la segmentación contextual y si vale la pena probar el canal.",
+ "mostra_schermo": false,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:40",
+   "titolo": "Usuarios objetivo de ChatGPT Ads y estimaciones de costo",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Los anuncios se muestran a los usuarios de los planes gratuitos y básicos.",
+    "Comparación informal de los costos orientativos por lead frente a Google Ads."
+   ]
+  },
+  {
+   "inizio": "1:41",
+   "fine": "3:43",
+   "titolo": "Inversión mínima y diferencias de segmentación con Google Ads",
+   "tappe": [
+    1,
+    3,
+    5
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Charla sobre el presupuesto diario mínimo.",
+    "Google trabaja con palabras clave, ChatGPT se basa en el contexto del chat y en el perfil del usuario."
+   ]
+  },
+  {
+   "inizio": "3:44",
+   "fine": "5:53",
+   "titolo": "Uso del contexto de las conversaciones y requisitos para las empresas",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Explicación de cómo ChatGPT aprovecha el texto de los chats para seleccionar los anuncios.",
+    "Tipos de empresas o cuentas admitidas en la plataforma publicitaria."
+   ]
+  },
+  {
+   "inizio": "5:54",
+   "fine": "7:15",
+   "titolo": "¿ChatGPT Ads sustituye a Google Ads?",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "ChatGPT Ads se ve como un canal complementario y no como un sustituto de Google.",
+    "Recomendaciones generales sobre probar la plataforma."
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:36",
+   "dice": "En ChatGPT le llega la publicidad principalmente a las personas que no pagan el plan (gratis) y el plan básico de 8 a 10 dólares",
+   "verdetto": "giusta",
+   "perche": "Mapa, etapa 1: los anuncios solo son visibles para los usuarios de los planes Free y Go; los planes superiores (Plus, Pro, Business, Enterprise) no ven publicidad."
+  },
+  {
+   "minuto": "1:18",
+   "dice": "Tiene un precio accesible de 0.50 USD y en Google está en 5 USD",
+   "verdetto": "sbagliata",
+   "perche": "Mapa, etapa 1: es una plataforma en beta sin parámetros de referencia oficiales sobre costos, CPC o ROAS medios; desconfía de quien da cifras fijas."
+  },
+  {
+   "minuto": "2:08",
+   "dice": "La inversión mínima es de 150 pesos diarios en México y 25 dólares diarios en EE. UU.",
+   "verdetto": "non_verificabile",
+   "perche": "El mapa indica el presupuesto diario mínimo oficial en euros (15 €), mientras que las cifras en pesos mexicanos o dólares estadounidenses no se especifican."
+  },
+  {
+   "minuto": "3:18",
+   "dice": "Google es a través de palabras clave exactas o parecidas y ChatGPT es por perfil del consumidor",
+   "verdetto": "giusta",
+   "perche": "Mapa, etapa 1: ChatGPT Ads no usa palabras clave sino el contexto de la conversación, la página de destino y los context hints."
+  },
+  {
+   "minuto": "4:33",
+   "dice": "Empezó el 6 de agosto para México y Brasil principalmente",
+   "verdetto": "non_verificabile",
+   "perche": "La fecha concreta del 6 de agosto para México y Brasil no aparece en la documentación del mapa."
+  }
+ ],
+ "per_chi_impara": "El vídeo está en español y es un ida y vuelta informal sin capturas del software. Para quien estudia en Italia (UE) no ofrece valor práctico: faltan las indicaciones sobre la moneda en euros (mínimo 15 €/día), sobre las normas GDPR/EEE respecto a la ausencia de retargeting y sobre el procedimiento paso a paso de configuración en ads.openai.com.",
+ "qualita": {
+  "voto": 2,
+  "perche": "Vídeo de charla sin ninguna demostración práctica de la interfaz de Ads Manager. Los ponentes hablan mientras mueven muebles y montan la sala."
+ },
+ "consiglio": "scarta",
+ "consiglio_perche": "No muestra la interfaz de Ads Manager ni guía en la creación práctica de las campañas: se limita a una charla genérica sobre estimaciones de costo y conceptos básicos.",
+ "tappa_migliore": 1,
+ "spezzone_migliore": {
+  "inizio": "2:40",
+  "fine": "3:40"
+ },
+ "video": "3PmlzIIzioo",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-07T11:07:48+00:00"
+}

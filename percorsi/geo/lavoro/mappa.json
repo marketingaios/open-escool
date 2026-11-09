@@ -1,0 +1,603 @@
+{
+ "tema": "GEO (Generative Engine Optimization)",
+ "titolo_percorso": "GEO: que la IA encuentre y cite tu web",
+ "sottotitolo": "Cómo eligen sus fuentes AI Overviews, AI Mode, ChatGPT y Perplexity, qué revisar en tu web y cómo medirlo.",
+ "obiettivo": "Quien ya hace marketing digital sale con un diagnóstico de cómo aparece su marca en AI Overviews y AI Mode de Google, en la búsqueda de ChatGPT y en Perplexity; con su web revisada según las guías oficiales (rastreadores, indexación, contenido) y con un plan de acciones priorizadas y una forma de medirlas.",
+ "livello": "sabe marketing digital y SEO básico; empieza con el GEO",
+ "lingua": "es",
+ "paese": "España y Latinoamérica",
+ "strumento": "Google Search Console (informe y control de IA generativa), robots.txt, Google Analytics, y las respuestas de AI Overviews/AI Mode, ChatGPT y Perplexity",
+ "creata": "2026-11-08",
+ "fonti_descrizione": "9 páginas oficiales de Google, OpenAI y Perplexity, el estudio GEO (KDD 2024), un estudio de 2025 sobre fuentes en buscadores con IA y el estudio de Pew Research (2025), leídos el 8/11/2026",
+ "lingua_video": "es",
+ "durata_video_min": [
+  5,
+  40
+ ],
+ "copertina": {
+  "icona": "lente"
+ },
+ "parole_titolo": [
+  [
+   "geo",
+   "generative engine",
+   "chatgpt",
+   "chat gpt",
+   "perplexity",
+   "ai overview",
+   "ai mode",
+   "modo ia",
+   "modo ai",
+   "inteligencia artificial",
+   "llm",
+   "aeo",
+   "ia generativa",
+   "gemini",
+   "con ia",
+   "de ia",
+   "en ia",
+   "la ia",
+   "ias"
+  ],
+  [
+   "seo",
+   "geo",
+   "posicion",
+   "visibilidad",
+   "search console",
+   "analytics",
+   "ga4",
+   "trafico",
+   "busqueda",
+   "buscador",
+   "optimiz",
+   "rank",
+   "aeo",
+   "citen",
+   "cite",
+   "aparecer"
+  ]
+ ],
+ "avvisi": [
+  "Google: el control «Search generative AI» de Search Console y el informe de rendimiento de IA generativa están disponibles para todas las webs del mundo desde el 31/8/2026, también en España y Latinoamérica (support-google-com-webmasters-answer-16984139.md, blog-google-...-new-controls-website-owners.md).",
+  "AI Mode en español: llegó a Latinoamérica el 23/9/2025 y a España en octubre de 2025 según la prensa (no oficial: Google no lo dice en las páginas guardadas). Los vídeos anteriores hablan de AI Mode como algo «solo de EE. UU.».",
+  "Los datos de clics de Pew Research son de adultos de EE. UU. en marzo de 2025: sirven como tendencia, no como cifra para España o Latinoamérica.",
+  "ChatGPT puede usar proveedores de búsqueda externos (la página oficial enlaza la política de privacidad de Microsoft y de Shopify): que tu web esté bien indexada fuera de Google también cuenta (deducción, ver Dubbi).",
+  "La FAQ oficial de OpenAI para editores (help.openai.com/en/articles/12627856), donde decía que ChatGPT añade utm_source=chatgpt.com a los enlaces, hoy abre otra página. Y la prensa especializada informa de un fallo en octubre de 2026 en que la UTM dejó de añadirse: en GA4 parte de ese tráfico puede aparecer como directo."
+ ],
+ "cambi_recenti": [
+  {
+   "data": "2023-11-16",
+   "cosa": "Primera versión del estudio que bautiza el GEO (Aggarwal y otros, Princeton); publicado en KDD 2024.",
+   "fonte": "arxiv-org-html-2311-09735v3.md"
+  },
+  {
+   "data": "2025-07-22",
+   "cosa": "Pew Research: con resumen de IA en Google se hace clic en un resultado en el 8 % de las visitas, frente al 15 % sin resumen (datos de EE. UU., marzo 2025).",
+   "fonte": "2-google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results.md"
+  },
+  {
+   "data": "2025-09-10",
+   "cosa": "Estudio de Chen, Wang, Chen y Koudas (preprint en arXiv): los buscadores con IA prefieren fuentes de terceros («earned media») a las de la marca y a las redes sociales.",
+   "fonte": "arxiv-org-html-2509-08919v1.md"
+  },
+  {
+   "data": "2026-06-03",
+   "cosa": "Google lanza en prueba el informe de rendimiento de IA generativa y el control para excluir la web de AI Overviews, AI Mode y Discover, y publica la guía oficial de optimización para IA generativa.",
+   "fonte": "blog-google-products-and-platforms-products-search-new-controls-website-owners.md"
+  },
+  {
+   "data": "2026-07-10",
+   "cosa": "Última actualización de la guía de Google para IA generativa (mitos: llms.txt, «chunking», menciones inauténticas, schema especial).",
+   "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md"
+  },
+  {
+   "data": "2026-08-31",
+   "cosa": "Informe y control de IA generativa en Search Console para todas las webs del mundo.",
+   "fonte": "support-google-com-webmasters-answer-16984139.md"
+  },
+  {
+   "data": "2026-10-15",
+   "cosa": "Google añade más enlaces en línea en AI Mode y AI Overviews, prueba una sección de webs oficiales arriba de la respuesta y carruseles de noticias en más países e idiomas.",
+   "fonte": "blog-google-products-and-platforms-products-search-updates-ai-mode-overviews-explore-web.md"
+  },
+  {
+   "data": "2026-10-29",
+   "cosa": "Última modificación de la página oficial de rastreadores de Perplexity (PerplexityBot y Perplexity-User).",
+   "fonte": "docs-perplexity-ai-docs-resources-perplexity-crawlers.md"
+  }
+ ],
+ "fuori_percorso": [
+  {
+   "cosa": "Publicidad en asistentes y buscadores con IA (ChatGPT Ads, anuncios en AI Overviews)",
+   "perche": "Elegido así: la ruta es de visibilidad orgánica. Hay una ruta aparte de ChatGPT Ads."
+  },
+  {
+   "cosa": "Datos estructurados a fondo (código JSON-LD)",
+   "perche": "Google dice que no hacen falta para la IA generativa; se nombran, no se programan."
+  },
+  {
+   "cosa": "Configurar el WAF o el CDN para los rastreadores (reglas de Cloudflare, AWS, listas de IP)",
+   "perche": "Trabajo de desarrollador: en la ruta solo se comprueba que no estén bloqueados."
+  },
+  {
+   "cosa": "Agentes de IA y protocolos como UCP",
+   "perche": "Google lo presenta como algo emergente y opcional («si tienes tiempo»)."
+  },
+  {
+   "cosa": "Herramientas de pago de seguimiento de prompts y APIs",
+   "perche": "Se nombran; el diagnóstico se hace gratis con Search Console, Analytics y pruebas a mano."
+  },
+  {
+   "cosa": "Bing/Copilot, app de Gemini y Claude",
+   "perche": "Elegido así: Google, ChatGPT y Perplexity."
+  },
+  {
+   "cosa": "Merchant Center y Perfil de Empresa en detalle",
+   "perche": "Se recuerda tenerlos al día; su configuración es otra ruta."
+  }
+ ],
+ "tappe": [
+  {
+   "n": 1,
+   "titolo": "Cómo eligen sus fuentes los buscadores con IA",
+   "obiettivo": "Sabes explicar qué es el GEO y en qué se parece y se diferencia del SEO, cómo buscan y citan fuentes AI Overviews, AI Mode, ChatGPT y Perplexity (búsqueda en el índice, «query fan-out», reescritura de la consulta) y qué dicen los estudios sobre clics y tipos de fuentes.",
+   "minuti_video": 25,
+   "valido_da": "2025-09-23",
+   "perche_data": "Desde el 23/9/2025 AI Mode está en español; los vídeos anteriores lo presentan como algo solo de EE. UU. y no conocen el modo IA en nuestros mercados.",
+   "valido_da_ricerca": "2025-01-01",
+   "concetti": [
+    {
+     "testo": "El GEO nace en un estudio académico (Princeton, KDD 2024) como forma de que quien crea contenido mejore su visibilidad en las respuestas de los motores generativos.",
+     "fonte": "arxiv-org-html-2311-09735v3.md",
+     "citazione": "we introduce Generative Engine Optimization (GEO), the first novel paradigm to aid content creators in improving their content visibility in generative engine responses"
+    },
+    {
+     "testo": "Un motor generativo responde juntando información de varias fuentes y resumiéndola con un modelo de lenguaje.",
+     "fonte": "arxiv-org-html-2311-09735v3.md",
+     "citazione": "Generative Engines typically satisfy queries by synthesizing information from multiple sources and summarizing them using LLMs."
+    },
+    {
+     "testo": "En Google, AI Overviews y AI Mode se apoyan en los mismos sistemas de ranking y calidad de la búsqueda: por eso el SEO sigue valiendo.",
+     "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md",
+     "citazione": "continue to be relevant because our generative AI features on Google Search are rooted in our core Search ranking and quality systems"
+    },
+    {
+     "testo": "Google usa «grounding» (RAG): recupera páginas de su índice con su ranking y genera la respuesta con enlaces a esas páginas.",
+     "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md",
+     "citazione": "A technique (also known as grounding) used to improve the quality, accuracy, and freshness of AI responses by relying on our core Search ranking systems to retrieve relevant, up-to-date web pages from our Search index."
+    },
+    {
+     "testo": "«Query fan-out»: el modelo lanza a la vez varias búsquedas relacionadas para completar la respuesta.",
+     "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md",
+     "citazione": "A set of concurrent, related queries generated by the model to request more information and fetch additional relevant search results to address the user's query."
+    },
+    {
+     "testo": "AI Overviews solo aparece cuando Google cree que aporta algo a la búsqueda clásica, así que a menudo no sale.",
+     "fonte": "developers-google-com-search-docs-appearance-ai-features.md",
+     "citazione": "AI Overviews are only shown when our systems determine that it is additive to classic Search, and as such, often don't trigger."
+    },
+    {
+     "testo": "AI Mode y AI Overviews pueden usar modelos y técnicas distintos: muestran respuestas y enlaces diferentes.",
+     "fonte": "developers-google-com-search-docs-appearance-ai-features.md",
+     "citazione": "AI Mode and AI Overviews may use different models and techniques, so the set of responses and links they show will vary."
+    },
+    {
+     "testo": "Según Google, AI Overviews supera los 2.500 millones de usuarios al mes y AI Mode los mil millones.",
+     "fonte": "blog-google-products-and-platforms-products-search-new-controls-website-owners.md",
+     "citazione": "AI Overviews now has over 2.5 billion monthly active users, while AI Mode has surpassed one billion monthly users."
+    },
+    {
+     "testo": "ChatGPT, cuando busca con proveedores externos, reescribe tu pregunta en una o varias consultas concretas.",
+     "fonte": "help-openai-com-en-articles-9237897-chatgpt-search.md",
+     "citazione": "ChatGPT search typically rewrites your query into one or more targeted queries that it sends those providers."
+    },
+    {
+     "testo": "ChatGPT ordena los resultados con varios factores de relevancia y fiabilidad; salir no está garantizado.",
+     "fonte": "help-openai-com-en-articles-9237897-chatgpt-search.md",
+     "citazione": "ChatGPT ranks search results using multiple factors intended to help users find relevant, reliable information. Placement is not guaranteed."
+    },
+    {
+     "testo": "Perplexity busca en la web en tiempo real y cada respuesta lleva citas numeradas con enlace a la fuente.",
+     "fonte": "www-perplexity-ai-help-center-en-articles-10352895-how-does-perplexity-work.md",
+     "citazione": "Each answer includes numbered citations linking to the original sources, allowing you to easily verify the information or explore further."
+    },
+    {
+     "testo": "Perplexity valora el sitio web entero, no cada página, al poner sus etiquetas de fuente (Gobierno, Académica, De confianza).",
+     "fonte": "www-perplexity-ai-help-center-en-articles-20260806-understanding-source-labels.md",
+     "citazione": "Perplexity rates the whole website a source comes from, not each individual page."
+    },
+    {
+     "testo": "Estudio de 2025 (preprint): los buscadores con IA prefieren con mucha diferencia fuentes de terceros con autoridad a los contenidos de la marca y a las redes sociales; Google mezcla más.",
+     "fonte": "arxiv-org-html-2509-08919v1.md",
+     "citazione": "AI Search exhibit a systematic and overwhelming bias towards Earned media (third-party, authoritative sources) over Brand-owned and Social content, a stark contrast to Google’s more balanced mix."
+    },
+    {
+     "testo": "Pew (EE. UU., 2025): con un resumen de IA se hace clic en un resultado en el 8 % de las visitas; sin resumen, casi el doble (15 %).",
+     "fonte": "2-google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results.md",
+     "citazione": "Users who encountered an AI summary clicked on a traditional search result link in 8% of all visits."
+    },
+    {
+     "testo": "Pew: en los enlaces del propio resumen de IA se hizo clic solo en el 1 % de las visitas.",
+     "fonte": "2-google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results.md",
+     "citazione": "This occurred in just 1% of all visits to pages with such a summary."
+    }
+   ],
+   "ricerche_youtube": {
+    "es": [
+     "qué es GEO generative engine optimization",
+     "cómo eligen sus fuentes ChatGPT Perplexity y AI Overviews",
+     "GEO vs SEO posicionamiento en inteligencia artificial"
+    ],
+    "en": [
+     "what is generative engine optimization GEO explained",
+     "how AI Overviews ChatGPT Perplexity choose sources",
+     "GEO vs SEO AI search visibility"
+    ],
+    "it": [
+     "cos'è la GEO generative engine optimization",
+     "come scelgono le fonti ChatGPT e AI Overviews",
+     "GEO vs SEO visibilità nelle risposte dell'IA"
+    ]
+   },
+   "cosa_deve_mostrare_il_video": [
+    "Respuestas reales de AI Overviews o AI Mode, de la búsqueda de ChatGPT y de Perplexity, con sus enlaces o citas",
+    "Que la IA busca en un índice y resume varias fuentes (grounding / RAG, query fan-out), no que «se lo inventa de memoria»",
+    "Qué cambia y qué no respecto al SEO, con ejemplos",
+    "Datos de estudios citados con su fuente (el estudio GEO de Princeton, Pew u otros)"
+   ],
+   "errori_tipici_da_scartare": [
+    "«El SEO ha muerto, el GEO lo sustituye» (Google dice que las prácticas de SEO siguen siendo la base)",
+    "«Se puede pagar o pedir para salir en AI Overviews» o «salir en ChatGPT está garantizado si haces X»",
+    "«ChatGPT responde solo de memoria y no busca en la web»",
+    "«AI Mode no está disponible en español / en España» (desactualizado desde otoño de 2025)",
+    "Cifras de tráfico o de «aumento del 40 %» presentadas como promesa, sin decir que vienen de un experimento"
+   ],
+   "letture_ufficiali": [
+    {
+     "titolo": "Google · AI features and your website",
+     "url": "https://developers.google.com/search/docs/appearance/ai-features"
+    },
+    {
+     "titolo": "Google · Optimizing your website for generative AI features",
+     "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+    },
+    {
+     "titolo": "OpenAI · Searching the web with ChatGPT",
+     "url": "https://help.openai.com/en/articles/9237897-chatgpt-search"
+    },
+    {
+     "titolo": "Perplexity · How does Perplexity work?",
+     "url": "https://www.perplexity.ai/help-center/en/articles/10352895-how-does-perplexity-work"
+    },
+    {
+     "titolo": "Estudio · GEO: Generative Engine Optimization (KDD 2024)",
+     "url": "https://arxiv.org/abs/2311.09735"
+    },
+    {
+     "titolo": "Pew Research · Google users are less likely to click on links when an AI summary appears",
+     "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titolo": "Revisa tu web: rastreadores, indexación y contenido que se cite",
+   "obiettivo": "Sabes comprobar que Googlebot, OAI-SearchBot y PerplexityBot pueden entrar (y qué hacen GPTBot y Google-Extended), que tus páginas están indexadas con fragmento, y qué cambiar en el contenido según Google y los estudios; y sabes qué «trucos GEO» puedes ignorar.",
+   "minuti_video": 30,
+   "valido_da": "2026-05-20",
+   "perche_data": "La guía oficial de Google para IA generativa (llms.txt, «chunking», schema especial y menciones no hacen falta) salió hacia el 20/5/2026: la página solo dice «última actualización 10/7/2026», la fecha viene de los vídeos que la comentan el 21 y el 23/5/2026. Los vídeos anteriores pueden recomendar esos trucos como obligatorios.",
+   "valido_da_ricerca": "2025-03-01",
+   "concetti": [
+    {
+     "testo": "Para salir como enlace en AI Overviews o AI Mode la página debe estar indexada y poder mostrarse en Google con fragmento.",
+     "fonte": "developers-google-com-search-docs-appearance-ai-features.md",
+     "citazione": "To be eligible to be shown as a supporting link in AI Overviews or AI Mode, a page must be indexed and eligible to be shown in Google Search with a snippet"
+    },
+    {
+     "testo": "No hace falta una optimización especial para AI Overviews y AI Mode: valen los fundamentos de SEO.",
+     "fonte": "developers-google-com-search-docs-appearance-ai-features.md",
+     "citazione": "While specific optimization isn't required for AI Overviews and AI Mode"
+    },
+    {
+     "testo": "Primer control técnico: que el rastreo esté permitido en robots.txt y también en el CDN o el hosting.",
+     "fonte": "developers-google-com-search-docs-appearance-ai-features.md",
+     "citazione": "Ensuring that crawling is allowed in robots.txt, and by any CDN or hosting infrastructure"
+    },
+    {
+     "testo": "El contenido importante tiene que estar en texto, y los datos estructurados deben coincidir con lo que se ve en la página.",
+     "fonte": "developers-google-com-search-docs-appearance-ai-features.md",
+     "citazione": "Making sure that important content is available in textual form"
+    },
+    {
+     "testo": "Bloquear Google-Extended no te saca de la búsqueda de Google ni afecta al ranking: controla el entrenamiento de Gemini y el grounding en la app de Gemini y Vertex AI.",
+     "fonte": "developers-google-com-search-docs-crawling-indexing-google-common-crawlers.md",
+     "citazione": "Google-Extended does not impact a site's inclusion in Google Search nor is it used as a ranking signal in Google Search."
+    },
+    {
+     "testo": "En ChatGPT, si bloqueas OAI-SearchBot tu web no sale en las respuestas de búsqueda (solo como enlace de navegación).",
+     "fonte": "developers-openai-com-docs-gptbot.md",
+     "citazione": "Sites that are opted out of OAI-SearchBot will not be shown in ChatGPT search answers, though can still appear as navigational links."
+    },
+    {
+     "testo": "OAI-SearchBot (búsqueda) y GPTBot (entrenamiento) son independientes: puedes permitir uno y bloquear el otro.",
+     "fonte": "developers-openai-com-docs-gptbot.md",
+     "citazione": "a webmaster can allow OAI-SearchBot in order to appear in search results while disallowing GPTBot to indicate that crawled content should not be used for training OpenAI’s generative AI foundation models"
+    },
+    {
+     "testo": "OpenAI pide permitir OAI-SearchBot y que el hosting o el CDN dejen pasar sus IP publicadas.",
+     "fonte": "help-openai-com-en-articles-9237897-chatgpt-search.md",
+     "citazione": "To make a website eligible for inclusion, allow OAI-Searchbot to crawl the site and confirm that the website host or content delivery network allows traffic from OpenAI’s"
+    },
+    {
+     "testo": "En Perplexity, PerplexityBot es el que te pone en los resultados; recomiendan permitirlo en robots.txt.",
+     "fonte": "docs-perplexity-ai-docs-resources-perplexity-crawlers.md",
+     "citazione": "we recommend allowing PerplexityBot in your site’s robots.txt file"
+    },
+    {
+     "testo": "Perplexity-User (visitas pedidas por un usuario) en general no respeta robots.txt.",
+     "fonte": "docs-perplexity-ai-docs-resources-perplexity-crawlers.md",
+     "citazione": "Since a user requested the fetch, this fetcher generally ignores robots.txt rules."
+    },
+    {
+     "testo": "Lo que más pesa a largo plazo, según Google: contenido único, convincente y útil.",
+     "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md",
+     "citazione": "Creating content that people find unique, compelling, and useful will likely influence your website's presence in generative AI search in the long run more than any of the other suggestions in this guide."
+    },
+    {
+     "testo": "Contenido «commodity» (lo que cualquiera puede escribir, tipo «7 consejos») frente a contenido con experiencia propia o de experto.",
+     "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md",
+     "citazione": "is often based on common knowledge, which could originate from anyone, and typically adds little unique insight for readers"
+    },
+    {
+     "testo": "Mito 1: llms.txt y otros archivos o marcados «para IA» no los usa Google Search.",
+     "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md",
+     "citazione": "You don't need to create new machine readable files, AI text files, markup, or Markdown to appear in Google Search (including its generative AI capabilities), as Google Search itself doesn't use them."
+    },
+    {
+     "testo": "Mito 2: no hace falta trocear el contenido en pedacitos («chunking»).",
+     "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md",
+     "citazione": "There's no requirement to break your content into tiny pieces for AI to better understand it."
+    },
+    {
+     "testo": "Mito 3: buscar menciones no auténticas en la web no ayuda tanto como parece.",
+     "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md",
+     "citazione": "seeking inauthentic \"mentions\" across the web isn't as helpful as it might seem"
+    },
+    {
+     "testo": "Mito 4: los datos estructurados no son obligatorios para la IA generativa y no hay un schema especial.",
+     "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md",
+     "citazione": "Structured data isn't required for generative AI search, and there's no special schema.org markup you need to add."
+    },
+    {
+     "testo": "Crear una página por cada variante de consulta (incluidas las de fan-out) para manipular las respuestas de IA va contra las políticas de spam de Google.",
+     "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md",
+     "citazione": "doing so primarily to manipulate rankings or generative AI responses in Google Search violates Google's"
+    },
+    {
+     "testo": "Estudio GEO: añadir citas, frases citadas de fuentes relevantes y estadísticas subió la visibilidad más de un 40 % en sus pruebas.",
+     "fonte": "arxiv-org-html-2311-09735v3.md",
+     "citazione": "we find that including citations, quotations from relevant sources, and statistics can significantly boost source visibility, with an increase of over 40% across various queries."
+    },
+    {
+     "testo": "Estudio GEO: el relleno de palabras clave apenas mejora nada en los motores generativos.",
+     "fonte": "arxiv-org-html-2311-09735v3.md",
+     "citazione": "we find such methods offer little to no improvement on generative engine’s responses"
+    },
+    {
+     "testo": "Estudio GEO: las webs en quinta posición ganaron mucho más que la primera al citar fuentes (+115,1 % frente a −30,3 %).",
+     "fonte": "arxiv-org-html-2311-09735v3.md",
+     "citazione": "the Cite Sources method led to a substantial 115.1% increase in visibility for websites ranked fifth in SERP, while on average, the visibility of the top-ranked website decreased by 30.3%."
+    },
+    {
+     "testo": "Negocio local o tienda: las respuestas pueden incluir productos y datos de negocios locales (Merchant Center y Perfil de Empresa al día).",
+     "fonte": "developers-google-com-search-docs-fundamentals-ai-optimization-guide.md",
+     "citazione": "Where appropriate, generative AI responses can include product listings, product information, and information about local businesses."
+    }
+   ],
+   "ricerche_youtube": {
+    "es": [
+     "cómo optimizar tu web para AI Overviews y AI Mode",
+     "cómo aparecer en ChatGPT y Perplexity GEO",
+     "contenido GEO para que la IA te cite"
+    ],
+    "en": [
+     "how to optimize website for AI Overviews and AI Mode",
+     "how to get cited by ChatGPT and Perplexity",
+     "robots.txt OAI-SearchBot PerplexityBot GPTBot"
+    ],
+    "it": [
+     "come ottimizzare il sito per AI Overviews e AI Mode",
+     "come farsi citare da ChatGPT e Perplexity",
+     "GEO contenuti per l'intelligenza artificiale"
+    ]
+   },
+   "cosa_deve_mostrare_il_video": [
+    "Un robots.txt real con Googlebot, OAI-SearchBot, PerplexityBot y la diferencia con GPTBot y Google-Extended",
+    "Cómo comprobar que una página está indexada (por ejemplo con la Inspección de URLs de Search Console)",
+    "Un contenido reescrito con datos, fuentes citadas y experiencia propia, con el antes y el después",
+    "Qué «trucos GEO» no sirven en Google (llms.txt, chunking, schema especial, menciones compradas)"
+   ],
+   "errori_tipici_da_scartare": [
+    "«Sin llms.txt no sales en la IA de Google» o «hay que trocear el contenido en chunks»",
+    "«Bloquear GPTBot te saca de ChatGPT» (la búsqueda depende de OAI-SearchBot)",
+    "«Bloquear Google-Extended te saca de AI Overviews» (no afecta a la búsqueda de Google)",
+    "«Hay un schema especial para la IA» o «sin datos estructurados no te cita»",
+    "Crear páginas para cada consulta posible, comprar menciones o hacer spam en foros",
+    "Rellenar el texto de palabras clave como estrategia GEO"
+   ],
+   "letture_ufficiali": [
+    {
+     "titolo": "Google · Optimizing your website for generative AI features (mitos incluidos)",
+     "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+    },
+    {
+     "titolo": "Google · Creating helpful, reliable, people-first content",
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+    },
+    {
+     "titolo": "Google · Google-Extended (rastreadores comunes)",
+     "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers"
+    },
+    {
+     "titolo": "OpenAI · Rastreadores (OAI-SearchBot, GPTBot, ChatGPT-User)",
+     "url": "https://developers.openai.com/api/docs/bots"
+    },
+    {
+     "titolo": "Perplexity · Perplexity Crawlers",
+     "url": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "titolo": "Mide tu visibilidad y arma tu plan GEO",
+   "obiettivo": "Sabes leer el informe de IA generativa de Search Console, separar el tráfico de ChatGPT y Perplexity en Analytics, hacer una prueba manual de preguntas en los tres buscadores, decidir si incluir o excluir tu web, y escribir un plan de acciones priorizadas con cómo medirlas.",
+   "minuti_video": 25,
+   "valido_da": "2026-06-03",
+   "perche_data": "El 3/6/2026 nace el informe de rendimiento de IA generativa de Search Console (global desde el 31/8/2026): los vídeos anteriores dicen que en Search Console no se puede ver la IA por separado.",
+   "valido_da_ricerca": "2025-03-01",
+   "nota_letture": "El informe y el control de Search Console son de junio-agosto de 2026: si ningún vídeo en español los enseña, se aprenden con las dos páginas de ayuda de Google enlazadas abajo.",
+   "concetti": [
+    {
+     "testo": "El informe de rendimiento de IA generativa de Search Console muestra cómo le va a tu web en las funciones de IA de Google.",
+     "fonte": "support-google-com-webmasters-answer-16984139.md",
+     "citazione": "The generative AI performance report shows data about how your site performs in generative AI features on Google Search."
+    },
+    {
+     "testo": "Está disponible para todas las webs del mundo desde el 31/8/2026.",
+     "fonte": "support-google-com-webmasters-answer-16984139.md",
+     "citazione": "As of August 31, 2026, we’ve rolled out these insights to all websites worldwide."
+    },
+    {
+     "testo": "Una impresión es cada vez que un enlace a tu web se mostró en una función de IA generativa de Google.",
+     "fonte": "support-google-com-webmasters-answer-16984139.md",
+     "citazione": "Impressions are how many times links to your site were shown to a user in a generative AI feature on Google Search."
+    },
+    {
+     "testo": "Se puede agrupar por páginas, países, fechas y dispositivos; el país es desde donde se hizo la búsqueda (útil para España frente a Latinoamérica).",
+     "fonte": "support-google-com-webmasters-answer-16984139.md",
+     "citazione": "Groups data by the country where the search originated."
+    },
+    {
+     "testo": "Si no ves el informe, lo normal es que tu web aún no tenga suficientes impresiones en IA (o que la hayas excluido).",
+     "fonte": "support-google-com-webmasters-answer-16984139.md",
+     "citazione": "This usually happens when your site hasn't received enough impressions in generative AI features on Google Search."
+    },
+    {
+     "testo": "Esos datos siguen contando también en el informe de rendimiento general.",
+     "fonte": "developers-google-com-search-blog-2026-06-gen-ai-performance-reports.md",
+     "citazione": "This data is included in the overall performance report, where it will continue to be tracked to give site owners an overview of the overall visibility of their site in Google Search."
+    },
+    {
+     "testo": "Con el control de Search Console puedes excluir tu web de AI Overviews, AI Mode y Discover con IA: entonces no recibes tráfico ni impresiones de esas funciones.",
+     "fonte": "blog-google-products-and-platforms-products-search-new-controls-website-owners.md",
+     "citazione": "Sites that opt out will not receive traffic or impressions from our generative AI features."
+    },
+    {
+     "testo": "Ese control no se usa como señal de ranking en el resto de la búsqueda.",
+     "fonte": "support-google-com-webmasters-answer-16908024.md",
+     "citazione": "this control isn't used as a ranking or inclusion signal affecting other parts of Search"
+    },
+    {
+     "testo": "El cambio tarda: 1-2 días desde que el control está activo, a veces más por cachés.",
+     "fonte": "support-google-com-webmasters-answer-16908024.md",
+     "citazione": "Content will be excluded within 1-2 days after the control goes live, but some content may take longer to be excluded due to caching and propagation across Google systems."
+    },
+    {
+     "testo": "Además de Search Console, mide conversiones y tiempo en la web con herramientas como Google Analytics.",
+     "fonte": "developers-google-com-search-docs-appearance-ai-features.md",
+     "citazione": "In addition to Search Console, you could also track conversions and time spent on your site in other tools, such as Google Analytics."
+    },
+    {
+     "testo": "Google afirma que los clics desde páginas con AI Overviews son de más calidad (más tiempo en la web): compruébalo con tus datos.",
+     "fonte": "developers-google-com-search-docs-appearance-ai-features.md",
+     "citazione": "We've seen that when people click from search results pages with AI Overviews, these clicks are higher quality (meaning, users are more likely to spend more time on the site)."
+    },
+    {
+     "testo": "Tras cambiar robots.txt, ChatGPT tarda unas 24 horas en ajustarse.",
+     "fonte": "developers-openai-com-docs-gptbot.md",
+     "citazione": "For search results, please note it can take ~24 hours from a site’s robots.txt update for our systems to adjust."
+    },
+    {
+     "testo": "En Perplexity cada ajuste de robots.txt es independiente y puede tardar hasta 24 horas.",
+     "fonte": "docs-perplexity-ai-docs-resources-perplexity-crawlers.md",
+     "citazione": "Each setting works independently, and it may take up to 24 hours for our systems to reflect changes."
+    },
+    {
+     "testo": "Los buscadores con IA difieren mucho entre sí (variedad de dominios, frescura, estabilidad entre idiomas, sensibilidad a cómo se pregunta): prueba cada uno y en español.",
+     "fonte": "arxiv-org-html-2509-08919v1.md",
+     "citazione": "AI Search services differ significantly from each other in their domain diversity, freshness, cross-language stability, and sensitivity to phrasing."
+    },
+    {
+     "testo": "Pew: las búsquedas en forma de pregunta generan resumen de IA mucho más a menudo (60 %): usa preguntas para tu prueba manual.",
+     "fonte": "2-google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results.md",
+     "citazione": "60% of search queries that began with question words such as “who,” “what,” “when” or “why” resulted in an AI summary."
+    },
+    {
+     "testo": "El estudio GEO mide la visibilidad en una respuesta por cuántas palabras se apoyan en tu fuente y en qué posición aparece.",
+     "fonte": "arxiv-org-html-2311-09735v3.md",
+     "citazione": "Position-Adjusted Word Count, which combines word count and position count."
+    },
+    {
+     "testo": "Lo que funciona cambia según el sector: el plan se prueba y se ajusta a tu tema.",
+     "fonte": "arxiv-org-html-2311-09735v3.md",
+     "citazione": "the efficacy of these strategies varies across domains, underscoring the need for domain-specific optimization methods"
+    },
+    {
+     "testo": "Las respuestas y citas de ChatGPT pueden estar incompletas, viejas o mal: revisa qué dicen de tu marca y qué fuente usan.",
+     "fonte": "help-openai-com-en-articles-9237897-chatgpt-search.md",
+     "citazione": "Search results and citations can be incomplete, outdated, or incorrect."
+    }
+   ],
+   "ricerche_youtube": {
+    "es": [
+     "Search Console informe de IA generativa AI Overviews",
+     "medir tráfico de ChatGPT y Perplexity en Google Analytics 4",
+     "auditoría GEO visibilidad de marca en inteligencia artificial"
+    ],
+    "en": [
+     "Search Console generative AI performance report",
+     "track ChatGPT Perplexity traffic in GA4",
+     "GEO audit brand visibility in AI search"
+    ],
+    "it": [
+     "Search Console report IA generativa",
+     "traffico da ChatGPT in Google Analytics 4",
+     "audit GEO visibilità del brand nell'IA"
+    ]
+   },
+   "cosa_deve_mostrare_il_video": [
+    "Search Console → informe de rendimiento de IA generativa (páginas, países, dispositivos) o, en su defecto, el informe de rendimiento web",
+    "GA4: tráfico de referencia de chatgpt.com y perplexity.ai (fuente/medio o UTM) en un informe o exploración",
+    "Una prueba manual: una lista de preguntas de clientes hecha en AI Overviews/AI Mode, ChatGPT y Perplexity, anotando si te citan y a quién citan",
+    "Cómo convertir el diagnóstico en una lista de acciones priorizadas con su métrica"
+   ],
+   "errori_tipici_da_scartare": [
+    "«Search Console no muestra nada de la IA» o «no se puede separar AI Overviews» (desactualizado desde junio de 2026)",
+    "«La UTM de ChatGPT llega siempre» (hubo un fallo en octubre de 2026 y parte llega como directo)",
+    "«Sin una herramienta de pago no puedes medir el GEO»",
+    "Medir con una sola pregunta, un solo buscador o solo en inglés y sacar conclusiones"
+   ],
+   "letture_ufficiali": [
+    {
+     "titolo": "Search Console · Generative AI performance report (Search)",
+     "url": "https://support.google.com/webmasters/answer/16984139?hl=es"
+    },
+    {
+     "titolo": "Search Console · Search generative AI control",
+     "url": "https://support.google.com/webmasters/answer/16908024?hl=es"
+    },
+    {
+     "titolo": "Google Search Central Blog · Search Generative AI performance reports",
+     "url": "https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports"
+    },
+    {
+     "titolo": "Google · New opportunities, control and insights for website owners",
+     "url": "https://blog.google/products-and-platforms/products/search/new-controls-website-owners/"
+    }
+   ]
+  }
+ ],
+ "approvata": "2026-11-08"
+}

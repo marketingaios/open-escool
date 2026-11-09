@@ -1,0 +1,160 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo analiza la guía oficial de Google sobre optimización para búsquedas con IA generativa (AI Overviews y AI Mode). Sergio explica por qué el SEO sigue siendo la base fundamental del GEO, desmiente mitos populares como el uso del archivo llms.txt o el troceado en 'chunks', y ofrece una lista de verificación práctica para crear contenido de valor citables por motores de búsqueda de IA.",
+ "mostra_schermo": false,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:45",
+   "titolo": "Introducción y el SEO no ha muerto",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "La guía oficial de Google confirma que la IA se apoya en los sistemas clásicos de ranking.",
+    "AI Overviews y AI Mode requieren que la web esté bien indexada y rastreada."
+   ]
+  },
+  {
+   "inizio": "1:45",
+   "fine": "2:46",
+   "titolo": "De keywords a intenciones completas",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "La IA amplía las búsquedas mediante consultas relacionadas ('query fan-out').",
+    "Cubrir intenciones completas en lugar de crear múltiples páginas para variaciones de palabras clave."
+   ]
+  },
+  {
+   "inizio": "2:46",
+   "fine": "3:35",
+   "titolo": "El GEO es parte del SEO",
+   "tappe": [
+    1,
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Google enmarca la optimización para IA dentro de las bases del propio SEO.",
+    "No existen trucos mágicos ni etiquetas milagrosas para aparecer en la IA."
+   ]
+  },
+  {
+   "inizio": "3:35",
+   "fine": "5:36",
+   "titolo": "Contenido no genérico (evitar el contenido commodity)",
+   "tappe": [
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Evitar publicar información genérica que cualquier IA puede responder sin citar la fuente.",
+    "Aportar experiencia real, datos concretos, ejemplos propios y criterio experto."
+   ]
+  },
+  {
+   "inizio": "5:36",
+   "fine": "7:08",
+   "titolo": "La técnica y la presencia del negocio siguen importando",
+   "tappe": [
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Revisar rastreo, indexación, canonicals, sitemap, rendimiento móvil y JavaScript.",
+    "Para e-commerce y negocios locales son clave Merchant Center y Google Business Profile."
+   ]
+  },
+  {
+   "inizio": "7:08",
+   "fine": "7:58",
+   "titolo": "Mitos desmentidos por Google",
+   "tappe": [
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "No es necesario el archivo llms.txt ni el troceado en chunks.",
+    "Los datos estructurados no garantizan salir en IA y las menciones inauténticas no funcionan."
+   ]
+  },
+  {
+   "inizio": "7:58",
+   "fine": "10:02",
+   "titolo": "Checklist práctica y conclusiones",
+   "tappe": [
+    2,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Checklist de 9 pasos para optimizar una web frente a motores generativos.",
+    "La IA no elimina el SEO, lo hace más exigente y enfocado en aportar valor real."
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:14",
+   "dice": "Google ha publicado una guía oficial sobre cómo optimizar una web para sus experiencias de búsqueda con IA generativa como AI Overviews y AI Mode.",
+   "verdetto": "giusta",
+   "perche": "Coincide con la guía oficial de optimización para IA generativa publicada por Google reflejada en la MAPPA (cambio del 03/06/2026 y 10/07/2026)."
+  },
+  {
+   "minuto": "1:08",
+   "dice": "AI Overviews y AI Mode no funcionan completamente al margen del buscador: se apoyan en los sistemas principales de ranking y calidad.",
+   "verdetto": "giusta",
+   "perche": "Coincide exactamente con el concepto de la Tappa 1 de la MAPPA: 'En Google, AI Overviews y AI Mode se apoyan en los mismos sistemas de ranking y calidad de la búsqueda'."
+  },
+  {
+   "minuto": "2:48",
+   "dice": "Google menciona términos como GEO o AEO en su guía.",
+   "verdetto": "giusta",
+   "perche": "Coincide con la MAPPA en la Tappa 2 donde se aborda la terminología GEO/AEO abordada por la guía oficial de Google."
+  },
+  {
+   "minuto": "7:13",
+   "dice": "El primer mito es que necesitas un archivo llms.txt para aparecer en la IA de Google: Google dice que no es necesario.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el Mito 1 de la Tappa 2 de la MAPPA: 'llms.txt y otros archivos o marcados «para IA» no los usa Google Search'."
+  },
+  {
+   "minuto": "7:21",
+   "dice": "El segundo mito es que hay que dividir todo el contenido en bloques pequeños (chunking) para que la IA lo entienda: tampoco es relevante.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el Mito 2 de la Tappa 2 de la MAPPA: 'no hace falta trocear el contenido en pedacitos («chunking»)'."
+  },
+  {
+   "minuto": "7:36",
+   "dice": "El cuarto mito es que los datos estructurados son una llave mágica para la IA: no lo son.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el Mito 4 de la Tappa 2 de la MAPPA: 'los datos estructurados no son obligatorios para la IA generativa y no hay un schema especial'."
+  },
+  {
+   "minuto": "7:47",
+   "dice": "El quinto mito es que buscar menciones artificiales por internet va a hacer que la IA te cite.",
+   "verdetto": "giusta",
+   "perche": "Confirmado por el Mito 3 de la Tappa 2 de la MAPPA: las menciones inauténticas no ayudan y los sistemas antispam de Google lo detectan."
+  }
+ ],
+ "per_chi_impara": "El contenido es 100 % aplicable tanto para España como para Latinoamérica, ya que las directrices oficiales de Google sobre IA generativa y los fundamentos del SEO técnico y de contenidos son universales en el ecosistema hispanohablante.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Explicación impecable y rigurosa basada fielmente en las directrices de la guía de Google. Desmiente con claridad varios mitos populares (llms.txt, chunking, etc.) y aporta un resumen altamente estructurado."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Es una síntesis teórica imprescindible para comprender la visión de Google sobre la optimización para IA sin caer en trampas o mitos infundados.",
+ "tappa_migliore": 2,
+ "spezzone_migliore": {
+  "inizio": "7:08",
+  "fine": "8:38"
+ },
+ "video": "pxVomytG9UU",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T11:41:02+00:00"
+}

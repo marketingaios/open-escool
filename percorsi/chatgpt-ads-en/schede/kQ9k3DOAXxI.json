@@ -1,0 +1,125 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Guida pratica in inglese che illustra la creazione di una campagna su ChatGPT Ads (OpenAI Ads Manager) per la generazione di contatti. Il video mostra come impostare l'account, configurare campagna e ad group, generare annunci e immagini tramite Claude e installare il Pixel con l'evento di conversione sul sito web.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "00:42",
+   "titolo": "Introduzione e verifica account",
+   "tappe": [
+    2
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Registrazione account Ads Manager e inserimento dati aziendali/carta",
+    "Attesa per la verifica dell'account prima di pubblicare"
+   ]
+  },
+  {
+   "inizio": "00:42",
+   "fine": "02:18",
+   "titolo": "Creazione della campagna e obiettivo Conversions",
+   "tappe": [
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Selezione dell'obiettivo Conversions",
+    "Impostazione della location e delle piattaforme target",
+    "Impostazione del budget giornaliero"
+   ]
+  },
+  {
+   "inizio": "02:18",
+   "fine": "03:41",
+   "titolo": "Configurazione Ad Group e Context Hints",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Definizione di nome ad group e parametri UTM di tracciamento",
+    "Uso di Claude per estrarre parole chiave/hints dal sito del cliente",
+    "Inserimento degli hints nel campo Context Hints"
+   ]
+  },
+  {
+   "inizio": "03:41",
+   "fine": "05:01",
+   "titolo": "Creazione dell'annuncio con l'ausilio di AI",
+   "tappe": [
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Scrittura di titolo e descrizione",
+    "Generazione immagini con tool AI",
+    "Revisione del riepilogo campagna"
+   ]
+  },
+  {
+   "inizio": "05:01",
+   "fine": "06:57",
+   "titolo": "Installazione del Pixel e tracciamento conversioni",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Creazione della Data Source in Ads Manager",
+    "Inserimento dello script Pixel nell'head HTML del sito",
+    "Configurazione del codice dell'evento di conversione sulla pagina di ringraziamento"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "00:36",
+   "dice": "It's going to take about a day to get verified",
+   "verdetto": "superata",
+   "perche": "La verifica dell'attività può richiedere fino a 7 giorni lavorativi, e non è un freno alla spesa per tutti gli account (ma le campagne in sospeso vanno tenute in pausa)."
+  },
+  {
+   "minuto": "01:34",
+   "dice": "The lowest budget you can set is $25 a day",
+   "verdetto": "superata",
+   "perche": "Per un account con fatturazione in EUR il budget giornaliero minimo è di 15 €/giorno (il valore di 25 $ si riferisce alla fatturazione in USD)."
+  },
+  {
+   "minuto": "02:29",
+   "dice": "Bid strategy: Maximize results",
+   "verdetto": "superata",
+   "perche": "Dal 09/11/2026 la strategia automatica è stata rinominata 'Intelligent bidding' e Maximize Results / Max Bid sono state sostituite da Target CPA e Target CPC."
+  },
+  {
+   "minuto": "03:07",
+   "dice": "Context hints... these are basically like the keywords, think about Google Ads, same process",
+   "verdetto": "sbagliata",
+   "perche": "I Context Hints non sono parole chiave a corrispondenza come su Google Ads, ma frasi descrittive in linguaggio naturale che spiegano cosa offre il prodotto e a chi serve."
+  },
+  {
+   "minuto": "03:37",
+   "dice": "Remember to ask Chat to separate them by commas so you can just easily paste them in here",
+   "verdetto": "sbagliata",
+   "perche": "L'inserimento di un elenco di parole chiave separate da virgola nei Context Hints è un errore tipico: occorre inserire frasi di senso compiuto che descrivano contesti di ricerca."
+  }
+ ],
+ "per_chi_impara": "Per chi opera dall'Italia (UE): 1) Il budget minimo in euro è 15 €/giorno e non 25 $. 2) Il settore medico/sanitario mostrato come esempio nel video rientra tra le categorie fortemente regolamentate o vietate al di fuori degli USA. 3) L'installazione del Pixel sul sito deve avvenire nel rispetto del GDPR (previo consenso dell'utente sul banner cookie). 4) I pubblici personalizzati per retargeting non sono utilizzabili verso l'Area Economica Europea.",
+ "qualita": {
+  "voto": 2,
+  "perche": "Il video offre una buona panoramica visiva dell'interfaccia di Ads Manager, ma commette errori concettuali gravi spiegando i Context Hints come parole chiave di Google Ads separate da virgole, e sceglie come esempio un settore sanitario regolamentato senza avvisare sui limiti fuori dagli USA."
+ },
+ "consiglio": "scarta",
+ "consiglio_perche": "Insegna a configurare i Context Hints nel modo sbagliato (come lista di parole chiave separate da virgole stile Google Ads) e fa un esempio su servizi sanitari che in Europa/Italia incontrano forti restrizioni pubblicitarie.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "00:42",
+  "fine": "02:18"
+ },
+ "video": "kQ9k3DOAXxI",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T09:35:14+00:00"
+}

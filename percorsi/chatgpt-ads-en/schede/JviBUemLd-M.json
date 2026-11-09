@@ -1,0 +1,168 @@
+{
+ "lingua_parlata": "en",
+ "riassunto": "Il video mostra come creare, strutturare e lanciare una campagna pubblicitaria su ChatGPT Ads Manager per un'attività di coaching. L'autore configura la campagna passo passo definiendo budget, offerte a CPC, gruppi di annunci e context hints, ed analizza infine i risultati di tracciamento e il ritorno sull'investimento (ROAS) generato dal funnel.",
+ "mostra_schermo": true,
+ "da_zero": true,
+ "capitoli": [
+  {
+   "inizio": "00:00",
+   "fine": "01:13",
+   "titolo": "Introduzione a ChatGPT Ads e confronto con Meta/Google Ads",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Confronto tra l'intenzione d'acquisto su Google Ads, Meta Ads e ChatGPT Ads",
+    "ChatGPT Ads combina elementi di ricerca attiva e di intercettazione del contesto"
+   ]
+  },
+  {
+   "inizio": "01:13",
+   "fine": "03:35",
+   "titolo": "Creazione della campagna: obiettivo, paese e budget",
+   "tappe": [
+    2,
+    3,
+    5
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Selezione dell'obiettivo Clicks (tra Reach, Clicks e Conversions)",
+    "Impostazione del target geografico (United Kingdom)",
+    "Definizione del budget giornaliero a $100/giorno"
+   ]
+  },
+  {
+   "inizio": "03:35",
+   "fine": "06:17",
+   "titolo": "Configurazione del gruppo di annunci e scrittura dei Context Hints",
+   "tappe": [
+    3
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Impostazione dell'offerta CPC massima ($4.00)",
+    "Inserimento dei Context Hints descrittivi per orientare il sistema sul pubblico target"
+   ]
+  },
+  {
+   "inizio": "06:17",
+   "fine": "10:07",
+   "titolo": "Creazione e duplicazione delle varianti di annuncio e ad set",
+   "tappe": [
+    3,
+    4
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Inserimento di titolo (max 50 caratteri), descrizione (max 100) e immagine quadrata",
+    "Duplicazione degli annunci per testare diverse combinazioni di copy e immagini",
+    "Duplicazione dei gruppi di annunci per testare nicchie specifiche (Fitness, Business, Property Coaches)"
+   ]
+  },
+  {
+   "inizio": "10:07",
+   "fine": "13:00",
+   "titolo": "Revisione della campagna e invio per l'approvazione",
+   "tappe": [
+    3,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Verifica della struttura finale: 4 ad group e 24 annunci totali",
+    "Invio in revisione (stato: Not Serving / In Review)"
+   ]
+  },
+  {
+   "inizio": "13:00",
+   "fine": "15:58",
+   "titolo": "Analisi dei risultati di Ads Manager dopo 2 settimane",
+   "tappe": [
+    5,
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Analisi delle metriche: $1,515.86 spesi, 398 clic, CPM medio di $25.81 e CPC medio di $3.81",
+    "Riflessione sui costi CPM e CPC rispetto a Meta Ads e Google Ads"
+   ]
+  },
+  {
+   "inizio": "15:58",
+   "fine": "22:44",
+   "titolo": "Analisi delle conversioni del funnel e ritorno sull'investimento",
+   "tappe": [
+    6
+   ],
+   "schermo": true,
+   "punti_chiave": [
+    "Tracciamento delle fasi del funnel: 418 visualizzazioni, 21 opt-in, 5 chiamate prenotate",
+    "Ritorno economico generato ($6,743 incassati a fronte di $1,500 spesi)"
+   ]
+  },
+  {
+   "inizio": "22:44",
+   "fine": "25:50",
+   "titolo": "Considerazioni finali e limiti dell'ottimizzazione per conversioni",
+   "tappe": [
+    1,
+    5,
+    6
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Efficacia delle campagne a traffico (Clicks) su ChatGPT Ads",
+    "Prospettive future quando l'ottimizzazione per conversioni sarà completamente attiva"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "02:03",
+   "dice": "L'obiettivo 'Conversions' non è ancora selezionabile/utilizzabile in questa fase beta.",
+   "verdetto": "superata",
+   "perche": "Nel periodo di test iniziale/beta l'obiettivo principale era Clicks con Max CPC. Successivamente l'ottimizzazione per conversioni e le offerte Target CPA/CPC sono state introdotte ufficialmente (concetto tappa 3 e 5)."
+  },
+  {
+   "minuto": "03:47",
+   "dice": "Definisce un'offerta Max CPC di $3.50 poi alzata fino a $4.00 per vincere le aste.",
+   "verdetto": "superata",
+   "perche": "Le offerte Max CPC/Max Bid sono state rimpiazzate da Target CPC/Target CPA a partire dal 09/11/2026 (cambio recente 2026-11-09) e ritirate definitivamente il 01/01/2027."
+  },
+  {
+   "minuto": "04:22",
+   "dice": "I Context Hints devono essere scritti sotto forma di frase/paragrafo naturale per spiegare chi è il target idealmente e quali keyword sono rilevanti.",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 3: i context hints si scrivono come frasi naturali che descrivono cosa si offre e a chi serve, non come singole parole chiave."
+  },
+  {
+   "minuto": "07:27",
+   "dice": "Gli annunci richiedono un'immagine quadrata e testi molto brevi (titolo max 50 caratteri, descrizione max 100).",
+   "verdetto": "giusta",
+   "perche": "Confermato dalla Tappa 4: immagine quadrata PNG/JPG, titolo massimo 50 caratteri e testo massimo 100 caratteri."
+  },
+  {
+   "minuto": "14:12",
+   "dice": "Il CPM medio registrato è di $25.81 e il CPC medio di $3.81 con budget giornaliero di $100/giorno.",
+   "verdetto": "non_verificabile",
+   "perche": "La mappa specifica che ChatGPT Ads è una piattaforma in beta senza parametri di riferimento ufficiali per metriche quali CPC, CPM o CTR (Tappa 1)."
+  }
+ ],
+ "per_chi_impara": "In Italia l'account Ads Manager opera in EUR, con un budget giornaliero minimo di 15 € (anziché $25 o $100). Inoltre, nello Spazio Economico Europeo (SEE) non è possibile utilizzare i pubblici personalizzati per la personalizzazione degli annunci basata su dati cliente. Occorre inoltre assicurarsi che il tracciamento delle conversioni rispetti la normativa GDPR (banner dei consensi per il Pixel).",
+ "qualita": {
+  "voto": 4,
+  "perche": "Spiegazione pratica e dettagliata della schermata di configurazione di Ads Manager e analisi reale dei dati di funnel. Le strategie di offerta mostrate (Max CPC) sono però superate rispetto alle funzionalità aggiornate della piattaforma (Intelligent Bidding / Target CPC)."
+ },
+ "consiglio": "alternativo",
+ "consiglio_perche": "Il video fornisce un ottimo esempio pratico di come strutturare i Context Hints e un funnel di conversione, ma la parte relativa all'impostazione delle offerte (Max CPC) e alla mancanza dell'obiettivo conversione è superata dagli aggiornamenti della piattaforma.",
+ "tappa_migliore": 3,
+ "spezzone_migliore": {
+  "inizio": "04:15",
+  "fine": "06:17"
+ },
+ "video": "JviBUemLd-M",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T09:55:56+00:00"
+}

@@ -1,0 +1,175 @@
+{
+ "lingua_parlata": "es",
+ "riassunto": "El vídeo explica la diferencia fundamental entre SEO y GEO (Generative Engine Optimization), demostrando con datos reales de la industria que la IA no reemplaza al SEO sino que transforma cómo se consume la información. Muestra qué factores influyen realmente en que una marca sea citada por los motores generativos, desmiente mitos como la efectividad de llms.txt o el spam de contenido con IA, y propone un plan de acción práctico para adaptar la estrategia de marketing.",
+ "mostra_schermo": false,
+ "da_zero": false,
+ "capitoli": [
+  {
+   "inizio": "0:00",
+   "fine": "1:34",
+   "titolo": "Contexto actual: qué está pasando con el tráfico orgánico",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "El tráfico de IA representa solo un 0,3% mientras que Google pierde cuota de clics",
+    "El tráfico no se ha ido a ChatGPT, sino que se evapora dentro de las búsquedas sin clic de Google"
+   ]
+  },
+  {
+   "inizio": "1:35",
+   "fine": "3:29",
+   "titolo": "Definición y diferencias clave entre SEO y GEO",
+   "tappe": [
+    1
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "SEO busca posiciones en listas para conseguir visitas; GEO busca menciones y recomendaciones en las respuestas de la IA",
+    "En SEO se compite por un puesto en una lista, en GEO por ser recomendado"
+   ]
+  },
+  {
+   "inizio": "3:30",
+   "fine": "5:24",
+   "titolo": "Lo que sigue funcionando y la diversidad entre motores",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Estar en el puesto 1 de Google aumenta 3,5 veces las probabilidades de ser citado por ChatGPT",
+    "Google desglosa la pregunta en varias consultas pequeñas (query fan-out)",
+    "El 91% de las fuentes citadas por IA aparecen únicamente en un solo motor (ChatGPT, Perplexity o Google)"
+   ]
+  },
+  {
+   "inizio": "5:25",
+   "fine": "7:16",
+   "titolo": "Factores reales que hacen que la IA te nombre",
+   "tappe": [
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Las menciones en fuentes de terceros (YouTube, otras webs, menciones de marca sin enlace) pesan 3 veces más que los enlaces",
+    "El 80% de las empresas auditadas no existen como entidad identificada para la IA en Wikipedia o Wikidata"
+   ]
+  },
+  {
+   "inizio": "7:17",
+   "fine": "9:02",
+   "titolo": "Por qué el GEO no traerá tráfico directo masivo",
+   "tappe": [
+    1,
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "El 68% de las búsquedas en Google terminan sin clic en ningún enlace",
+    "En servicios profesionales, ChatGPT incluye enlace a la fuente en menos del 4% de los casos"
+   ]
+  },
+  {
+   "inizio": "9:03",
+   "fine": "11:57",
+   "titolo": "Mitos del GEO y tácticas perjudiciales",
+   "tappe": [
+    2
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "El archivo llms.txt es un índice para agentes, no una señal de posicionamiento en buscadores",
+    "Google ha confirmado que no soporta llms.txt y lo compara con la antigua etiqueta meta keywords",
+    "Crear artículos masivos con IA o manipular fechas hunde tanto el SEO como la visibilidad en GEO"
+   ]
+  },
+  {
+   "inizio": "11:58",
+   "fine": "13:43",
+   "titolo": "Plan de acción práctico: qué cambiar el lunes",
+   "tappe": [
+    3
+   ],
+   "schermo": false,
+   "punti_chiave": [
+    "Lo que se mantiene: velocidad web, contenido propio y estar arriba en Google",
+    "Lo que se añade: presencia en YouTube, LinkedIn, Reddit, reseñas y contenido más corto y enfocado",
+    "Nuevas métricas: frecuencia de mención de la IA hacia tu marca y hacia la competencia"
+   ]
+  }
+ ],
+ "affermazioni": [
+  {
+   "minuto": "0:47",
+   "dice": "Las plataformas de inteligencia artificial aportan solo un 0,3% del tráfico en webs españolas",
+   "verdetto": "non_verificabile",
+   "perche": "Es un dato específico del estudio de SE Ranking citado en el vídeo; la mapa no recoge datos locales de SE Ranking."
+  },
+  {
+   "minuto": "3:54",
+   "dice": "ChatGPT cita las páginas en el puesto 1 de Google el 43,2% de las veces frente al 12,3% fuera del top 20 (3,5 veces más)",
+   "verdetto": "non_verificabile",
+   "perche": "Dato del estudio AirOps (marzo 2026) mostrado en pantalla; la mapa confirma que el posicionamiento orgánico en Google es fundamental pero no contiene estas métricas concretas."
+  },
+  {
+   "minuto": "4:33",
+   "dice": "Solo entre el 17% y el 38% de lo que Google cita en sus respuestas de IA sale de los 10 primeros resultados",
+   "verdetto": "non_verificabile",
+   "perche": "Dato de estudio de la ponente no detallado directamente en la mapa."
+  },
+  {
+   "minuto": "5:00",
+   "dice": "El 91% de las veces una fuente citada aparece en un solo motor (Growth Memo, julio 2026)",
+   "verdetto": "non_verificabile",
+   "perche": "Dato específico de estudio externo citado en el vídeo; concuerda conceptualmente con la diversidad entre motores explicada en la Tappa 3 de la mapa."
+  },
+  {
+   "minuto": "6:20",
+   "dice": "Las menciones sin enlace pesan 3 veces más que los enlaces hacia tu web (Ahrefs, diciembre 2025)",
+   "verdetto": "giusta",
+   "perche": "Concuerda con el estudio académico de 2025 de la Tappa 1 que demuestra que los buscadores con IA prefieren fuentes de terceros con autoridad antes que la propia marca o enlaces."
+  },
+  {
+   "minuto": "7:57",
+   "dice": "El 68% de las búsquedas en Google terminan sin que nadie haga clic en nada (SparkToro, 2026)",
+   "verdetto": "non_verificabile",
+   "perche": "Es una cifra del estudio SparkToro EE. UU. 2026. La mapa recoge datos similares de Pew Research (8% de clics con resumen de IA), pero no esta cifra específica."
+  },
+  {
+   "minuto": "8:50",
+   "dice": "En servicios profesionales ChatGPT pone enlace a la fuente en menos del 4% de las consultas",
+   "verdetto": "non_verificabile",
+   "perche": "Estudio de Similarweb mayo 2026 presentado en el vídeo."
+  },
+  {
+   "minuto": "9:42",
+   "dice": "Google ha dicho que no soporta llms.txt y John Mueller lo compara con la antigua etiqueta de palabras clave",
+   "verdetto": "giusta",
+   "perche": "Confirmado por la guía oficial de optimización para IA de Google (Tappa 2, Mito 1): llms.txt no es utilizado por Google Search ni sirve como señal de ranking."
+  },
+  {
+   "minuto": "10:10",
+   "dice": "El 97% de los archivos llms.txt no recibió ni una sola visita y solo 1 de 50 sitios más citados lo tenía puesto (Ahrefs, junio 2026)",
+   "verdetto": "non_verificabile",
+   "perche": "Métrica concreta del estudio de Ahrefs 2026 no incluida explícitamente en los enunciados de la mapa."
+  }
+ ],
+ "per_chi_impara": "Excelente para profesionales del marketing y SEO en España y Latinoamérica que buscan comprender la transición entre la búsqueda tradicional y la IA generativa. Advierte de la importancia de medir en español y no dejarse llevar por soluciones mágicas como llms.txt.",
+ "qualita": {
+  "voto": 5,
+  "perche": "Explicación impecable, basada en estudios de datos actualizados y con conclusiones muy realistas sobre cómo trabajar la visibilidad de marca sin caer en mitos ni engaños de la industria."
+ },
+ "consiglio": "principale",
+ "consiglio_perche": "Es uno de los mejores análisis estratégicos de GEO vs SEO disponibles: desmitifica el tráfico generativo, explica la necesidad de reputación/menciones de marca fuera de la web y da un plan práctico aplicable.",
+ "tappa_migliore": 2,
+ "spezzone_migliore": {
+  "inizio": "9:03",
+  "fine": "11:57"
+ },
+ "video": "oVR4bAwG64A",
+ "modello": "gemini-3.5-flash",
+ "creata": "2026-11-08T11:40:39+00:00"
+}
