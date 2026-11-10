@@ -15,7 +15,7 @@ ChatGPT que ya tienes.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/img/filtros-oscuro.svg">
-  <img alt="De 704 vídeos encontrados con la API de YouTube a 18 fragmentos en la ruta de ChatGPT Ads" src="docs/img/filtros-claro.svg" width="720">
+  <img alt="De 704 vídeos encontrados con la API de YouTube a 18 fragmentos en la ruta de ChatGPT Ads en español" src="docs/img/filtros-claro.svg" width="720">
 </picture>
 
 ## Cómo funciona
@@ -73,7 +73,7 @@ también en italiano y en español:
 
 En la plataforma:
 - **chat** al lado del vídeo, sobre el vídeo o sobre toda la ruta;
-- **notas** con el minuto y «No entendí aquí»;
+- **notas** con el minuto y «No lo entendí aquí»;
 - **señal de hueco** cuando una etapa acumula dudas, y **repaso** construido sobre tus dudas;
 - **teléfono** por el Wi-Fi de casa con un código;
 - **exportar e importar** rutas, sin notas ni chat.
@@ -102,7 +102,7 @@ pide la plataforma a YouTube con tu clave y los renueva cada 25 días: las [pol�
 ## Licencia
 
 [PolyForm Noncommercial 1.0.0](LICENSE): puedes usar, copiar y modificar Open Escool para fines **no comerciales** (uso
-personal, estudio, investigación, organizaciones sin ánimo de lucro). Para un uso comercial, escribe a Ismagit.
+personal, estudio, investigación, organizaciones sin ánimo de lucro).
 
 Los vídeos de YouTube son de sus autores y se ven con el reproductor oficial. El nombre y el logo de Ismagit (`web/marca/`) no
 están incluidos en la licencia.

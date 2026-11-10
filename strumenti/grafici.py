@@ -16,7 +16,7 @@ sys.path.insert(0, str(RADICE / "strumenti"))
 from comune import PERCORSI, aiuto, leggi, tr  # noqa: E402
 
 OUT = RADICE / "docs" / "img"
-RUTA_FILTROS = "chatgpt-ads"
+RUTA_FILTROS = "chatgpt-ads-es"  # la ruta en español: el README principal es en español
 RUTAS = [("chatgpt-ads", "ChatGPT Ads · italiano"), ("chatgpt-ads-es", "ChatGPT Ads · español"),
          ("chatgpt-ads-en", "ChatGPT Ads · inglés"), ("geo", "GEO · español")]
 TEMAS = {
@@ -64,6 +64,9 @@ def grafico(titulo, subtitulo, filas, colores, tema, unidad=""):
     return "\n".join(p) + "\n"
 
 
+IDIOMAS = {"it": "italiano", "es": "español", "en": "inglés"}
+
+
 def datos():
     guardados = leggi(OUT / "datos.json", {}) or {}
     d = PERCORSI / RUTA_FILTROS
@@ -76,7 +79,8 @@ def datos():
                    "pertinentes": len(leggi(yt / "pertinenti.json", []) or []),
                    "vistos": len(list((d / "schede").glob("*.json"))),
                    "en_la_ruta": sum(1 for t in p.get("tappe", []) for v in t.get("video", []) if v.get("tipo") != "lezione"),
-                   "minutos": p.get("durata_min")}
+                   "minutos": p.get("durata_min"), "ruta": RUTA_FILTROS, "titulo": p.get("titolo"),
+                   "idioma": p.get("lingua_video") or p.get("lingua")}
     rutas = []
     for slug, nombre in RUTAS:
         q = leggi(PERCORSI / slug / "percorso.json", {}) or {}
@@ -99,7 +103,8 @@ def main():
                      ("Fragmentos en la ruta", f["en_la_ruta"], f"{f['en_la_ruta']} fragmentos · {f['minutos']} min")]
             (OUT / f"filtros-{tema}.svg").write_text(grafico(
                 f"De {f['encontrados']} vídeos a {f['en_la_ruta']} fragmentos",
-                "Ruta «ChatGPT Ads, de cero a la primera campaña», vídeos en italiano: lo que pasa cada filtro",
+                f"Ruta «{f.get('titulo') or RUTA_FILTROS}», vídeos en {IDIOMAS.get(f.get('idioma'), 'varios idiomas')}: "
+                "lo que pasa cada filtro",
                 filas, t["escala"], tema), encoding="utf-8")
         filas = [(r["nombre"] + f" · {r['etapas']} etapas", r["minutos"], f"{r['minutos']} min") for r in d["rutas"]]
         (OUT / f"rutas-{tema}.svg").write_text(grafico(

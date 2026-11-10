@@ -2,10 +2,13 @@
  "filtros": {
   "busquedas": 54,
   "encontrados": 704,
-  "pertinentes": 178,
-  "vistos": 19,
+  "pertinentes": 32,
+  "vistos": 24,
   "en_la_ruta": 18,
-  "minutos": 35
+  "minutos": 34,
+  "ruta": "chatgpt-ads-es",
+  "titulo": "ChatGPT Ads, desde cero hasta la primera campaña",
+  "idioma": "es"
  },
  "rutas": [
   {
