@@ -1,6 +1,6 @@
 # Open Escool
 
-[Italiano](README.it.md) · [English](README.en.md)
+**Italiano:** [leggi in italiano](README.it.md) · **English:** [read in English](README.en.md)
 
 **Tu escuela personal hecha de vídeos gratuitos.** Eliges un tema y tu asistente (Claude Code o Codex) hace el resto:
 - busca las fuentes oficiales y te enseña el mapa de la ruta;
