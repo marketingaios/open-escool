@@ -175,10 +175,10 @@
    "perche": "El mapa (cambios del 2026-09-30 y etapa 6) indica las ventanas de atribución flexibles: 7, 14 o 30 días para el clic y 0 o 1 día para la visualización."
   }
  ],
- "per_chi_impara": "Para quien estudia desde Italia (Unión Europea), hay que tener en cuenta dos restricciones fundamentales respecto al vídeo: 1) las listas de audiencias personalizadas (Custom Audiences) no se pueden usar para segmentar en el EEE. 2) El presupuesto diario mínimo en Italia es de 15 € (no 100 $ como en el ejemplo) y la facturación se hace a posteriori con cargo a la tarjeta de crédito asociada a la cuenta.",
+ "per_chi_impara": "Respecto al vídeo hay dos diferencias que tener en cuenta: 1) en campañas dirigidas al EEE (España incluida) no se pueden usar las listas de audiencias personalizadas (Custom Audiences); fuera del EEE y Suiza sí, con al menos 25.000 usuarios coincidentes. 2) El presupuesto diario mínimo depende de la moneda (15 € en euros, 150 MXN en pesos mexicanos, 25 $ en dólares): los 100 $ del vídeo son solo un ejemplo. La facturación se hace a posteriori con cargo a la tarjeta asociada a la cuenta.",
  "qualita": {
   "voto": 3,
-  "perche": "Ofrece una guía visual excelente de la interfaz de Ads Manager y de la configuración técnica del Pixel. Sin embargo, incluye opciones de segmentación (audiencias personalizadas) prohibidas en Italia/UE y nombres de pujas que la plataforma ya ha cambiado."
+  "perche": "Ofrece una guía visual excelente de la interfaz de Ads Manager y de la configuración técnica del Pixel. Sin embargo, incluye opciones de segmentación (audiencias personalizadas) que deben evitarse en campañas dirigidas al EEE (España incluida) y nombres de pujas que la plataforma ya ha cambiado."
  },
  "consiglio": "alternativo",
  "consiglio_perche": "Es muy útil para ver en concreto cómo funciona la interfaz y la configuración de los anuncios y del Pixel, pero las partes sobre las estrategias de puja y sobre las custom audiences hay que adaptarlas a las reglas europeas del mapa.",

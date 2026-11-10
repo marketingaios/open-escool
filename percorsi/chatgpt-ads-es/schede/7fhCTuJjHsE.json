@@ -184,13 +184,13 @@
    "perche": "La documentación oficial del mapa explica la gestión de las campañas y la visualización de los anuncios, pero no menciona esta disyuntiva concreta para los usuarios."
   }
  ],
- "per_chi_impara": "Las reglas básicas que expone (quién ve los anuncios, ausencia de anuncios en los planes de pago, protección de los chats y separación entre respuestas y patrocinios) valen plenamente también para Italia. Sin embargo, a un anunciante italiano hay que recordarle que en el Espacio Económico Europeo no se permite la personalización avanzada ni las listas de clientes, y el vídeo no muestra cómo abrir o configurar Ads Manager desde Italia.",
+ "per_chi_impara": "Las reglas básicas que expone (quién ve los anuncios, ausencia de anuncios en los planes de pago, protección de los chats y separación entre respuestas y patrocinios) valen igual en España y en América Latina. A quien hace publicidad hacia España hay que recordarle que en el Espacio Económico Europeo no hay personalización avanzada ni listas de clientes; y el vídeo no enseña cómo abrir ni configurar Ads Manager.",
  "qualita": {
   "voto": 3,
   "perche": "Exposición muy clara, excelente gráfica y respeto riguroso de las políticas de privacidad y de etiquetado de los anuncios de OpenAI. La nota es limitada porque se trata de un vídeo divulgativo para usuarios y consumidores, sin ninguna captura práctica de la plataforma Ads Manager ni instrucciones para configurar una campaña."
  },
  "consiglio": "scarta",
- "consiglio_perche": "El vídeo está en español y trata el tema solo desde el punto de vista del usuario final de ChatGPT (noticia, privacidad, ética). Quien aprende necesita una guía práctica de Ads Manager (apertura de la cuenta en Italia, presupuesto en euros, context hints, configuración de anuncios y seguimiento), aspectos que aquí faltan por completo.",
+ "consiglio_perche": "El vídeo trata el tema solo desde el punto de vista del usuario final de ChatGPT (noticia, privacidad, ética). Quien aprende necesita una guía práctica de Ads Manager (apertura de la cuenta en su país, presupuesto en su moneda, context hints, configuración de anuncios y seguimiento), aspectos que aquí faltan por completo.",
  "tappa_migliore": 1,
  "spezzone_migliore": {
   "inizio": "2:40",

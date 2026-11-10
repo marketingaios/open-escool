@@ -151,7 +151,7 @@
    "perche": "Coherente con el procedimiento de configuración de la cuenta publicitaria y la gestión de los roles de usuario descritos en los documentos 20001213 y 20001245."
   }
  ],
- "per_chi_impara": "Para un usuario italiano (Unión Europea), muchas de las indicaciones estratégicas generales sobre el contexto son válidas, pero hay que prestar atención a dos aspectos fundamentales: en la UE/EEE las audiencias personalizadas (listas de clientes) no se pueden usar para personalizar los anuncios (se basan solo en la conversación en curso), y desde el 30/10/2026 los creative enhancements están activos por defecto y pueden modificar/traducir automáticamente los textos en italiano.",
+ "per_chi_impara": "Muchas de las indicaciones estratégicas generales sobre el contexto valen en cualquier país, pero hay dos aspectos que tener en cuenta: en el EEE (España incluida) no se pueden usar audiencias personalizadas (listas de clientes) y los anuncios se basan solo en la conversación en curso; y desde el 30/10/2026 los creative enhancements están activos por defecto y pueden modificar o traducir automáticamente los textos en español.",
  "qualita": {
   "voto": 3,
   "perche": "El vídeo ofrece un excelente análisis conceptual y estratégico basado en la documentación de soporte de OpenAI y explica bien la lógica de los context hints y de los rastreadores. Sin embargo, nunca muestra la interfaz real de Ads Manager (ads.openai.com) en funcionamiento y no es un tutorial práctico paso a paso."

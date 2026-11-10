@@ -4,7 +4,7 @@
  "titolo": "Presupuesto y pujas: cuánto puedes gastar de verdad",
  "percorso": "ChatGPT Ads, de cero a la primera campaña",
  "controllata": "2026-11-06",
- "nota": "Traduzione di copione.it.json: stesse scene, stessi segnaposto, stesse fonti.",
+ "nota": "Traduzione di copione.it.json: stesse scene, stessi segnaposto, stesse fonti. 10/11: nelle scene «settimana» e «prima» il minimo vale per la valuta di chi impara (Spagna e America Latina).",
  "passi": [
   "Presupuestos",
   "Media de 7 días",
@@ -76,7 +76,7 @@
     "20001413-daily-budgets.md",
     "20001210-creating-campaigns-for-chatgpt-ads.md"
    ],
-   "voce": "Y aquí está lo que muchos vídeos explican mal. {{media}}El presupuesto diario no es un tope del día: es una media de siete días. La semana va de domingo a sábado, en la zona horaria de tu cuenta. {{barre}}Pongamos quince euros al día, que en euros también es el mínimo. {{doppio}}En un solo día la campaña puede gastar hasta el doble, es decir, treinta euros. {{settimana}}Pero en toda la semana no pasa de siete veces el presupuesto: ciento cinco euros. Los días en que gasta menos dejan margen para los días siguientes. {{manager}}Cuando creas o editas la campaña, Ads Manager te muestra justo estos dos máximos.",
+   "voce": "Y aquí está lo que muchos vídeos explican mal. {{media}}El presupuesto diario no es un tope del día: es una media de siete días. La semana va de domingo a sábado, en la zona horaria de tu cuenta. {{barre}}Pongamos quince euros al día: es el mínimo si tu cuenta factura en euros, como en España. En pesos mexicanos el mínimo es de ciento cincuenta; en dólares, de veinticinco. {{doppio}}En un solo día la campaña puede gastar hasta el doble, es decir, treinta euros. {{settimana}}Pero en toda la semana no pasa de siete veces el presupuesto: ciento cinco euros. Los días en que gasta menos dejan margen para los días siguientes. {{manager}}Cuando creas o editas la campaña, Ads Manager te muestra justo estos dos máximos.",
    "schermo": {
     "titolo": "El diario es una media de 7 días",
     "media": {
@@ -317,13 +317,13 @@
     "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
    ],
    "consiglio": true,
-   "voce": "Así que este es nuestro consejo para tu primera campaña. {{u1}}Presupuesto diario, al menos quince euros, sabiendo que un día puede llegar a treinta. {{u2}}Intelligent bidding, sin objetivo de coste: al principio todavía no tienes datos propios de los que partir. {{u3}}Los objetivos de coste los añades después, cuando tengas un coste real que mirar. {{u4}}Y en este recorrido la campaña se queda en pausa: la preparas, pero no gastas nada. En la siguiente etapa vemos cómo medir los resultados.",
+   "voce": "Así que este es nuestro consejo para tu primera campaña. {{u1}}Presupuesto diario: al menos el mínimo de tu moneda, quince euros o ciento cincuenta pesos mexicanos, sabiendo que un día puede llegar al doble. {{u2}}Intelligent bidding, sin objetivo de coste: al principio todavía no tienes datos propios de los que partir. {{u3}}Los objetivos de coste los añades después, cuando tengas un coste real que mirar. {{u4}}Y en este recorrido la campaña se queda en pausa: la preparas, pero no gastas nada. En la siguiente etapa vemos cómo medir los resultados.",
    "schermo": {
     "titolo": "Tu primera campaña",
     "righe": [
      {
       "cue": "u1",
-      "testo": "Presupuesto diario de 15 € (un día hasta 30 €)"
+      "testo": "Presupuesto diario mínimo (un día, hasta el doble)"
      },
      {
       "cue": "u2",

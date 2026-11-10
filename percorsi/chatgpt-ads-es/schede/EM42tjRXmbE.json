@@ -152,7 +152,7 @@
    "perche": "El MAPA indica que la verificación del negocio de la cuenta y del dominio es un requisito bloqueante antes de que las campañas puedan publicarse."
   }
  ],
- "per_chi_impara": "Los usuarios italianos pueden seguir paso a paso este tutorial, porque la interfaz de Ads Manager en ads.openai.com es idéntica en toda Europa, el presupuesto diario mínimo en euros es de 15 € y la lógica de perfilado con context hints y parámetros UTM se aplica exactamente igual en el mercado italiano.",
+ "per_chi_impara": "Se puede seguir paso a paso desde España o América Latina: Ads Manager (ads.openai.com) y la lógica de context hints y parámetros UTM son los mismos. Lo que cambia según el país es la moneda de la cuenta y, con ella, el presupuesto diario mínimo (15 € en euros, 150 MXN en pesos mexicanos, 25 $ en dólares).",
  "qualita": {
   "voto": 5,
   "perche": "Explicación fluida, completa y muy práctica. Muestra sin filtros la plataforma real de gestión de anuncios y propone un flujo de trabajo creativo original que usa el propio ChatGPT para optimizar contextos y textos."

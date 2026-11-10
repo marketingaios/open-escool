@@ -166,7 +166,7 @@
    "perche": "Desde el 26/10/2026 OpenAI introdujo en beta abierta el formato de varias imágenes (4-6 imágenes cuadradas) en Ads Manager."
   }
  ],
- "per_chi_impara": "Válido para quien trabaja desde Italia y en la Unión Europea. Recuerda que Italia está entre los países disponibles en self-service en ads.openai.com. En el EEE y en Suiza no se permite usar audiencias personalizadas (listas de clientes) para segmentar, y las campañas deben basarse en el contexto de la conversación.",
+ "per_chi_impara": "Válido para quien trabaja desde España o América Latina: España y casi toda América Latina figuran entre los países disponibles en self-service en ads.openai.com. En campañas dirigidas al EEE (España incluida) o a Suiza no se permite usar audiencias personalizadas (listas de clientes) para segmentar, y los anuncios se basan en el contexto de la conversación.",
  "qualita": {
   "voto": 5,
   "perche": "Tutorial muy práctico, completo y transparente. Muestra todo el flujo de trabajo real, desde el registro en Ads Manager hasta la creación automatizada de la landing page y el seguimiento UTM."

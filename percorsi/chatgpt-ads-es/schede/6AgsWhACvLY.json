@@ -102,7 +102,7 @@
    "perche": "Confirmado por el mapa (etapa 6): se puede usar el Pixel de OpenAI, la Conversions API o ambos."
   }
  ],
- "per_chi_impara": "Muy útil para entender la parte técnica del seguimiento de eventos y la prueba del Pixel. Los usuarios italianos deben tener en cuenta que los importes que se muestran están en pesos chilenos (CLP) y que en Italia/UE el envío de datos de conversión mediante el Pixel exige cumplir las normas del GDPR (recoger el consentimiento de los usuarios con un banner de cookies antes de activar el seguimiento).",
+ "per_chi_impara": "Muy útil para entender la parte técnica del seguimiento de eventos y la prueba del Pixel. Los importes que se muestran están en pesos chilenos (CLP): con otra moneda cambian los mínimos (por ejemplo, 15 € en euros o 150 MXN en pesos mexicanos). En España, por el RGPD, el Pixel solo debe enviar datos de conversión después de recoger el consentimiento con el banner de cookies; en América Latina depende de la ley de protección de datos de cada país.",
  "qualita": {
   "voto": 4,
   "perche": "Explicación práctica y transparente del procedimiento de configuración y prueba del Pixel en ChatGPT Ads Manager, con un caso de estudio real paso a paso."

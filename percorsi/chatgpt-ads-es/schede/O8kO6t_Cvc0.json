@@ -156,13 +156,13 @@
    "perche": "La verificación del negocio puede tardar hasta 7 días hábiles."
   }
  ],
- "per_chi_impara": "Muy relevante para quien trabaja desde Italia y en la Unión Europea: muestra claramente la interfaz europea en euros, la prohibición de las custom audiences en el Espacio Económico Europeo, el procedimiento de verificación de la empresa y la configuración con el IVA intracomunitario.",
+ "per_chi_impara": "Muy relevante para quien trabaja desde España: muestra la interfaz europea en euros, la prohibición de las custom audiences en el Espacio Económico Europeo, el procedimiento de verificación de la empresa y la configuración con el IVA intracomunitario. Desde América Latina el procedimiento es el mismo, pero cambian la moneda, los datos fiscales y la regla de las custom audiences, que fuera del EEE y Suiza sí se pueden usar.",
  "qualita": {
   "voto": 4,
   "perche": "Excelente demostración práctica de principio a fin sobre una cuenta de empresa real europea, con Ads Manager en pantalla. Único defecto: está en español y dedica bastante tiempo a herramientas externas de terminal (Claude Code) para pulir el copywriting, pero el flujo de trabajo general es claro y coherente con la documentación."
  },
  "consiglio": "alternativo",
- "consiglio_perche": "Es un excelente caso de estudio práctico para ver Ads Manager funcionando en Europa, pero no está en italiano y parte del tiempo se dedica a prompt engineering avanzado en lugar de solo a la plataforma.",
+ "consiglio_perche": "Es un excelente caso de estudio práctico para ver Ads Manager funcionando en Europa, pero parte del tiempo se dedica a prompt engineering avanzado en lugar de solo a la plataforma.",
  "tappa_migliore": 4,
  "spezzone_migliore": {
   "inizio": "1:28",

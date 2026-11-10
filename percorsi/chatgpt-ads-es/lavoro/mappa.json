@@ -5,19 +5,19 @@
  "lingua": "es",
  "creata": "2026-11-06",
  "avvisi_italia": [
-  "Self-service disponible: en la tabla oficial Italia figura como «Available»; la persona jurídica que hace publicidad y recibe la factura debe tener sede en un país de la lista (20001245-ads-manager-availability.md). La fecha de inicio en Europa, 31/8/2026, viene de chatgpt_ads.md (no oficial).",
-  "Ambigüedad en la misma página: también dice que los anunciantes de los «new European markets» por ahora empiezan a través del equipo de OpenAI Ads o de partners. Si el registro directo desde Italia se bloquea, la razón probable es esta (ver Dubbi en mappa.md).",
-  "Moneda y mínimos: con facturación en EUR el presupuesto diario mínimo es de 15 € (20001210-creating-campaigns-for-chatgpt-ads.md). El mínimo para el presupuesto total de la campaña no está escrito. Los ejemplos de umbral de pago están solo en dólares (25 $, luego 50 $, 100 $...): los importes en euros no están escritos (20001216-billing-payment.md).",
-  "País, moneda y zona horaria se eligen al crear la cuenta y luego no se cambian: revisa Italia, euro y zona horaria italiana antes de confirmar (20001213-ads-manager-account-setup.md). La tarjeta y la dirección de facturación deben corresponder al país del negocio (20001216-billing-payment.md).",
+  "Self-service disponible: en la tabla oficial figuran como «Available» España, México, Argentina, Colombia, Chile, Perú y casi toda América Latina (no aparecen Venezuela, Honduras, Nicaragua ni Cuba); la persona jurídica que hace publicidad y recibe la factura debe tener sede en un país de la lista (20001245-ads-manager-availability.md, vuelta a leer el 10/11/2026). La fecha de inicio en Europa, 31/8/2026, viene de chatgpt_ads.md (no oficial).",
+  "Ambigüedad en la misma página: también dice que los anunciantes de los «new European markets» por ahora empiezan a través del equipo de OpenAI Ads o de partners. Si el registro directo desde España se bloquea, la razón probable es esta.",
+  "Moneda y mínimos: el presupuesto diario mínimo depende de la moneda de facturación: 15 EUR, 150 MXN, 10.000 COP, 3.750 CLP, 13 PEN, 25 USD (20001210-creating-campaigns-for-chatgpt-ads.md). El peso argentino y las demás monedas de la región no están en la tabla: mira qué moneda te propone la cuenta al crearla. El mínimo para el presupuesto total de la campaña no está escrito. Los ejemplos de umbral de pago están solo en dólares (25 $, luego 50 $, 100 $...): los importes en otras monedas no están escritos (20001216-billing-payment.md).",
+  "País, moneda y zona horaria se eligen al crear la cuenta y luego no se cambian: revisa los de tu negocio antes de confirmar (20001213-ads-manager-account-setup.md). La tarjeta y la dirección de facturación deben corresponder al país del negocio (20001216-billing-payment.md).",
   "Número de IVA (partita IVA): se añade en Billing → Settings y vale solo para las facturas siguientes (20001216-billing-payment.md).",
-  "Sin personalización en el Espacio Económico Europeo ni en Suiza: los anuncios se basan en la conversación en curso; las audiencias personalizadas (listas de clientes) para campañas dirigidas al EEE o a Suiza deben evitarse (20001047-ads-in-chatgpt.md, 20001210-creating-campaigns-for-chatgpt-ads.md, 20001346-set-up-custom-audiences-for-your-campaign.md).",
-  "Cuenta nueva: al principio solo puede hacer publicidad en el país de origen (Italia); los demás países se desbloquean tras la verificación de identidad aprobada y un gasto mínimo en el país de origen. Hay que incluir el país de forma explícita: excluir los demás no basta (20001210-creating-campaigns-for-chatgpt-ads.md).",
+  "Sin personalización en el Espacio Económico Europeo ni en Suiza (España incluida): los anuncios se basan en la conversación en curso; las audiencias personalizadas (listas de clientes) para campañas dirigidas al EEE o a Suiza deben evitarse (20001047-ads-in-chatgpt.md, 20001210-creating-campaigns-for-chatgpt-ads.md, 20001346-set-up-custom-audiences-for-your-campaign.md). Para América Latina las páginas oficiales no ponen este límite.",
+  "Cuenta nueva: al principio puede que solo pueda hacer publicidad en el país de origen (el de la cuenta: España, México...); una campaña para varios países de habla hispana llega después: los demás países se desbloquean tras la verificación de identidad aprobada y un gasto mínimo en el país de origen. Hay que incluir el país de forma explícita: excluir los demás no basta (20001210-creating-campaigns-for-chatgpt-ads.md).",
   "Verificación del negocio: puede tardar hasta 7 días hábiles, y algunas cuentas pueden gastar antes de que termine. No es un freno: para no gastar, la campaña debe quedarse en pausa (20001534-troubleshooting-common-onboarding-and-policy-issues.md).",
   "Sectores regulados: fuera de EE. UU. gran parte de las categorías de salud, muchas de finanzas y los servicios legales no están permitidos o están reservados a anunciantes aprobados (tabla en 20001534-troubleshooting-common-onboarding-and-policy-issues.md).",
-  "Idioma: un anuncio puede aparecer en un idioma distinto al de la conversación y desde el 30/10/2026 los creative enhancements pueden traducir el texto; quien escribe en italiano debe decidir si dejarlos activos (20001047-ads-in-chatgpt.md, 20001614-creative-enhancements-for-chatgpt-ads.md).",
+  "Idioma: un anuncio puede aparecer en un idioma distinto al de la conversación y desde el 30/10/2026 los creative enhancements pueden traducir el texto; quien escribe en español debe decidir si dejarlos activos (20001047-ads-in-chatgpt.md, 20001614-creative-enhancements-for-chatgpt-ads.md).",
   "Herramientas limitadas: la app de Shopify hoy es solo para tiendas de EE. UU. (20001523-set-up-chatgpt-ads-for-shopify.md); la conexión con GA4 está en beta a través del account manager (20001562-connecting-google-analytics-4-to-openai-ads-manager.md); el límite de gasto diario de la cuenta no existe para las cuentas self-service pagadas con tarjeta (20001216-billing-payment.md).",
   "Tarjeta: al añadirla puede aparecer un bloqueo temporal de importe variable según el país; no es un gasto publicitario y puede seguir visible en el banco 8 días o más (20001216-billing-payment.md).",
-  "Consentimiento: los datos de conversión se envían solo después de informar a los usuarios y recoger los consentimientos donde la ley los exige (20001409-conversion-measurement.md). Para un sitio italiano significa poner el Pixel detrás del banner de consentimiento: es una deducción, la página no nombra el GDPR."
+  "Consentimiento: los datos de conversión se envían solo después de informar a los usuarios y recoger los consentimientos donde la ley los exige (20001409-conversion-measurement.md). Para un sitio en España significa poner el Pixel detrás del banner de consentimiento (RGPD); en América Latina depende de la ley de protección de datos de cada país: es una deducción, la página no nombra leyes."
  ],
  "cambi_recenti": [
   {
@@ -32,7 +32,7 @@
   },
   {
    "data": "2026-08-31",
-   "cosa": "Self-service desde Ads Manager en Europa, Italia incluida (no oficial como fecha; la página oficial solo dice que hoy Italia figura como «Available»).",
+   "cosa": "Self-service desde Ads Manager en Europa, España incluida (no oficial como fecha; la página oficial solo dice que hoy España figura como «Available», igual que casi toda América Latina).",
    "fonte": "chatgpt_ads.md"
   },
   {
@@ -119,7 +119,7 @@
      "citazione": "Advertisers only receive aggregated, non-identifying information about how their ads perform, such as total views or clicks."
     },
     {
-     "testo": "En el EEE y Suiza no hay anuncios personalizados, por ahora: cuenta la conversación en curso.",
+     "testo": "En el EEE y Suiza (España incluida) no hay anuncios personalizados, por ahora: cuenta la conversación en curso.",
      "fonte": "20001047-ads-in-chatgpt.md",
      "citazione": "Personalized ads are not initially available in the European Economic Area (EEA) or Switzerland."
     },
@@ -161,7 +161,7 @@
     "«Los anuncios los ve todo el mundo, también los usuarios Plus o Pro».",
     "«Los anunciantes ven los chats de los usuarios».",
     "Promesas de CTR, CPC o ROAS «medios» presentadas como datos oficiales: OpenAI dice que todavía no hay parámetros de referencia.",
-    "«En Italia no se puede hacer publicidad en ChatGPT» (superado: hoy Italia está disponible en self-service).",
+    "«En España o en América Latina no se puede hacer publicidad en ChatGPT» (superado: hoy España y casi toda América Latina están disponibles en self-service).",
     "Vídeos anteriores al 9/2/2026 basados en rumores."
    ],
    "letture_ufficiali": [
@@ -181,14 +181,14 @@
   },
   {
    "n": 2,
-   "titolo": "Abrir la cuenta de Ads Manager desde Italia sin lanzar nada",
-   "obiettivo": "Tienes una cuenta de anunciante italiana en Ads Manager con nombres, logo, facturación y verificación iniciada, sin ningún anuncio que pueda empezar a publicarse.",
+   "titolo": "Abrir la cuenta de Ads Manager desde tu país sin lanzar nada",
+   "obiettivo": "Tienes una cuenta de anunciante de tu país (España, México, Argentina...) en Ads Manager con nombres, logo, facturación y verificación iniciada, sin ningún anuncio que pueda empezar a publicarse.",
    "minuti_video": 25,
    "concetti": [
     {
-     "testo": "Italia está disponible en self-service; quien hace publicidad y recibe la factura debe tener sede en un país de la lista.",
+     "testo": "España, México y casi toda América Latina están disponibles en self-service; quien hace publicidad y recibe la factura debe tener sede en un país de la lista.",
      "fonte": "20001245-ads-manager-availability.md",
-     "citazione": "Italy | Available"
+     "citazione": "Spain | Available"
     },
     {
      "testo": "La persona jurídica que publica y paga debe tener sede en un país disponible.",
@@ -267,7 +267,7 @@
     }
    ],
    "valido_da": "2026-08-31",
-   "perche_data": "El self-service en Europa y en Italia empieza el 31/8/2026 (fecha de chatgpt_ads.md, no oficial; la página oficial solo dice que hoy Italia figura como «Available»). Los vídeos anteriores muestran cuentas de EE. UU. en dólares o la lista de espera. Desde el 25/9/2026 (oficial) los tres nombres están separados: un vídeo entre el 31/8 y el 25/9 sirve, con un aviso sobre Settings → General.",
+   "perche_data": "El self-service en Europa, España incluida, empieza el 31/8/2026 (fecha de chatgpt_ads.md, no oficial; la página oficial solo dice que hoy España y casi toda América Latina figuran como «Available»). Los vídeos anteriores muestran cuentas de EE. UU. en dólares o la lista de espera. Desde el 25/9/2026 (oficial) los tres nombres están separados: un vídeo entre el 31/8 y el 25/9 sirve, con un aviso sobre Settings → General.",
    "ricerche_youtube": {
     "it": [
      "come creare account chatgpt ads manager",
@@ -290,11 +290,11 @@
     "La elección entre crear el primer anuncio desde el sitio o saltar el paso, y lo que implica la primera opción.",
     "Los campos país, moneda y zona horaria en el momento de la creación, con el aviso de que no se cambian.",
     "Settings → General con el nombre de la cuenta, el nombre de la marca, la razón social y el logo.",
-    "Billing: perfil de facturación, tarjeta, bloqueo temporal; mejor si es con una cuenta europea en euros.",
+    "Billing: perfil de facturación, tarjeta, bloqueo temporal; mejor si es con una cuenta en moneda local (euros o pesos).",
     "Dónde aparece la solicitud de verificación del negocio y su estado."
    ],
    "errori_tipici_da_scartare": [
-    "«Desde Italia hace falta una agencia o la lista de espera» (superado para el self-service, pero ver la duda sobre la misma página).",
+    "«Desde España o América Latina hace falta una agencia o la lista de espera» (superado para el self-service, pero ver la duda sobre la misma página).",
     "«La moneda y el país se cambian después en la configuración».",
     "«El bloqueo en la tarjeta es un costo» o «se paga por adelantado con una recarga» (el modelo es a posteriori).",
     "«Puedes poner un tope de gasto diario en la cuenta» (no en las cuentas self-service con tarjeta).",
@@ -369,7 +369,7 @@
      "citazione": "Some new self-serve ad accounts can initially advertise only in their home country—the country associated with the ad account."
     },
     {
-     "testo": "El país hay que incluirlo de forma explícita: excluir los demás no basta (el ejemplo oficial es sobre EE. UU., vale para Italia).",
+     "testo": "El país hay que incluirlo de forma explícita: excluir los demás no basta (el ejemplo oficial es sobre EE. UU., vale para cualquier país).",
      "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
      "citazione": "Excluding other countries alone does not restrict delivery to the United States."
     },
@@ -379,7 +379,7 @@
      "citazione": "select one or more supported platforms: Android app, Android web, Desktop web, iOS app, or iOS web."
     },
     {
-     "testo": "Hacia el EEE y Suiza, nada de audiencias personalizadas.",
+     "testo": "Hacia el EEE y Suiza (España incluida), nada de audiencias personalizadas.",
      "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
      "citazione": "For campaigns targeting the EEA or Switzerland, avoid custom audiences while ads personalization is unavailable there."
     },
@@ -409,7 +409,7 @@
      "citazione": "Cushioned everyday running shoes for beginners training for their first 5K"
     },
     {
-     "testo": "Los hints no son instrucciones («muéstralo solo a quien está en Milán» no funciona): para los límites se usan los controles de la campaña.",
+     "testo": "Los hints no son instrucciones («muéstralo solo a quien está en Madrid» no funciona): para los límites se usan los controles de la campaña.",
      "fonte": "20001521-writing-context-hints-for-chatgpt-ads.md",
      "citazione": "Hints are not targeting rules or delivery instructions."
     },
@@ -449,7 +449,7 @@
     "«Los context hints son palabras clave de concordancia exacta: pon muchas, una palabra cada una».",
     "«Escribe en los hints a quién mostrarlo o dónde» (son descripciones, no instrucciones).",
     "«El objetivo se cambia después» o «con Conversions pagas solo las conversiones».",
-    "«Haz retargeting en Italia con las listas de clientes» (audiencias personalizadas que deben evitarse hacia el EEE y Suiza).",
+    "«Haz retargeting en España con las listas de clientes» (audiencias personalizadas que deben evitarse hacia el EEE y Suiza).",
     "«Para quedarte en un país basta con excluir los demás».",
     "«Añade palabras clave negativas» presentado como una función para todos (Negative Phrases solo para anunciantes cualificados).",
     "«Solo existe el objetivo por impresiones/CPM» (vídeos del piloto, antes de mayo de 2026)."
@@ -624,7 +624,7 @@
   {
    "n": 5,
    "titolo": "Presupuesto y pujas: cuánto puedes gastar de verdad",
-   "obiettivo": "Sabes configurar un presupuesto diario en euros, sabes cuánto puede gastar como máximo la campaña en un día y en una semana, y eliges la estrategia de puja adecuada para una primera campaña.",
+   "obiettivo": "Sabes configurar un presupuesto diario en tu moneda, sabes cuánto puede gastar como máximo la campaña en un día y en una semana, y eliges la estrategia de puja adecuada para una primera campaña.",
    "minuti_video": 30,
    "concetti": [
     {
@@ -648,7 +648,7 @@
      "citazione": "Your maximum 7-day spend is seven times your daily budget."
     },
     {
-     "testo": "En euros el presupuesto diario mínimo es de 15 €.",
+     "testo": "El presupuesto diario mínimo depende de la moneda: 15 € en euros, 150 MXN en pesos mexicanos, 25 $ en dólares.",
      "fonte": "20001210-creating-campaigns-for-chatgpt-ads.md",
      "citazione": "EUR | 15 EUR"
     },
@@ -737,11 +737,11 @@
     "La sección Bid strategy del grupo de anuncios, con la estrategia automática seleccionada por defecto.",
     "Después del 9/11: Target CPC o Target CPA y la explicación de que son medias.",
     "La diferencia entre lo que se paga (impresiones o clics) y lo que se optimiza.",
-    "Mejor si es con una cuenta en euros (mínimo 15 € al día)."
+    "Mejor si es con una cuenta en euros o en pesos (mínimo 15 € o 150 MXN al día)."
    ],
    "errori_tipici_da_scartare": [
     "«El presupuesto diario es un tope: nunca gastas más de X al día» (se puede llegar al doble en un día).",
-    "«El mínimo es de 25 $ al día» dicho a un italiano (en euros son 15 €).",
+    "«El mínimo es de 25 $ al día» dicho a quien factura en euros o en pesos mexicanos (son 15 € o 150 MXN).",
     "«Target CPC o Target CPA es el precio máximo que pagas» (son medias).",
     "«Con el objetivo Conversions pagas solo las conversiones».",
     "«Configura Max CPC en 3-5 $» presentado como la opción de hoy para las campañas nuevas (opción que se retira: avisar después del 9/11/2026).",
@@ -771,7 +771,7 @@
     }
    ],
    "valido_da_ricerca": "2026-08-31",
-   "video_su": "solo presupuesto (diario, total, ritmo de gasto, mínimo en euros): las pujas cambian el 9/11",
+   "video_su": "solo presupuesto (diario, total, ritmo de gasto, mínimo según la moneda): las pujas cambian el 9/11",
    "ricontrolla_dopo": "2026-11-09",
    "nota_offerte": "Las estrategias de puja (Target CPC, Target CPA, Intelligent bidding) se estudian en la página oficial: los vídeos de hoy todavía explican Max CPC y Max Bid, que se retiran el 1/1/2027.",
    "nota_letture": "Las estrategias de puja (Target CPC, Target CPA, Intelligent bidding) se estudian en la página oficial: los vídeos de hoy todavía explican Max CPC y Max Bid, que se retiran el 1/1/2027.",
@@ -935,7 +935,7 @@
   "Sponsored Agents (20001524): alpha limitada a anunciantes seleccionados; OpenAI no acepta solicitudes de acceso.",
   "Partners de medición y MMP (20001416: Fospha, Northbeam, Triple Whale...): para quien ya tiene volumen y un análisis multicanal.",
   "Conexión con GA4 (20001562): en beta a través del account manager; los totales importados no son conversiones de la campaña.",
-  "Audiencias personalizadas y multiplicadores de puja por audiencia (20001346, 20001634): hacen falta al menos 25.000 usuarios coincidentes para incluir o ajustar la puja, y deben evitarse hacia el EEE y Suiza.",
+  "Audiencias personalizadas y multiplicadores de puja por audiencia (20001346, 20001634): hacen falta al menos 25.000 usuarios coincidentes para incluir o ajustar la puja, y deben evitarse hacia el EEE y Suiza (España incluida).",
   "Carga masiva con la plantilla CSV y cambios masivos (20001218, 20001215): útiles con muchas campañas, no para la primera.",
   "Conversions API, Event Quality Score, advanced matching (20001409, 20001513): trabajo de desarrollador; para la primera campaña bastan las UTM y, si acaso, el Pixel.",
   "Campañas optimizadas para conversión con facturación por impresiones (20001412): hacen falta eventos estándar que lleguen de verdad; después de la primera campaña.",
@@ -949,7 +949,7 @@
  "titolo_percorso": "ChatGPT Ads, desde cero hasta la primera campaña",
  "sottotitolo": "De la primera idea a una campaña lista en Ads Manager, en pausa y nunca activada.",
  "strumento": "Ads Manager de ChatGPT (ads.openai.com)",
- "paese": "Italia (Unión Europea)",
+ "paese": "España y Latinoamérica",
  "fonti_descrizione": "37 páginas del centro de ayuda de OpenAI, descargadas el 6/11/2026",
  "parole_titolo": [
   [

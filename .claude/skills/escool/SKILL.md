@@ -109,6 +109,9 @@ se quedan con «Hueco declarado» y las lecturas oficiales: dilo, no lo escondas
 La misma ruta con los vídeos en otro idioma: una ruta nueva `<ruta>-<idioma>` con el mismo mapa, ya aprobado.
 1. `python strumenti/lingua.py <ruta> <idioma>`: copia mapa, fuentes y resultados de YouTube y reutiliza las fichas ya hechas de los vídeos
    hablados en ese idioma (no gastan cuota de Gemini).
+   **¿Para quién es la ruta nueva?** Si es para otro país (la ruta en español, para España y América Latina), cambia `paese`
+   en el mapa y reescribe los avisos y conceptos ligados al país (moneda, disponibilidad, leyes) antes de las fichas: las
+   fichas escriben «para ti» para ese país, y en las reutilizadas revisa `per_chi_impara`.
 2. Si las búsquedas tienen más de 7 días o el mapa no tiene frases en ese idioma: añádelas y `python strumenti/video.py cerca <nuovo>`.
 3. `python strumenti/video.py lista <nuovo>`, **revisa la lista** como en el paso 5 (los vídeos sin idioma declarado pueden ser
    de otro: la ficha lo dirá y `costruisci.py` los descarta), luego los pasos 6-8. Di antes cuántas fichas hacen falta y cuántos días de

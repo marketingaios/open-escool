@@ -166,7 +166,7 @@
    "perche": "Confirmado por el mapa (etapas 2 y 3): fuera de EE. UU. gran parte de las categorías de salud, finanzas y servicios legales no están permitidas."
   }
  ],
- "per_chi_impara": "Para quien trabaja desde Italia y la Unión Europea hay que tener en cuenta que el presupuesto diario mínimo en euros es de 15 € (no 10.000 COP / 3 $ como se muestra para Colombia). Además, en el Espacio Económico Europeo no se pueden usar las audiencias personalizadas (listas de clientes) por motivos de privacidad (GDPR), y hay que asegurarse de que el Pixel de seguimiento esté integrado respetando el consentimiento del usuario (banner de cookies).",
+ "per_chi_impara": "El vídeo muestra una cuenta de Colombia: para quien factura en pesos colombianos los importes valen tal cual (mínimo 10.000 COP al día). En euros el mínimo es de 15 € al día, en pesos mexicanos 150 MXN y en dólares 25 $. En campañas dirigidas al EEE (España incluida) no se pueden usar las audiencias personalizadas (listas de clientes), y en todos los países hay que integrar el Pixel respetando el consentimiento del usuario (en España, banner de cookies por el RGPD).",
  "qualita": {
   "voto": 5,
   "perche": "El vídeo ofrece una explicación clara, práctica y completa de todo el flujo de creación de campañas en ChatGPT Ads, y muestra directamente el panel de Ads Manager, la redacción de los copys y la configuración del seguimiento."

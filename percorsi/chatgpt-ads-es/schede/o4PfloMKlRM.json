@@ -164,13 +164,13 @@
    "perche": "La etapa 4 lo indica con claridad: 'Título: recomendados 16-24 caracteres, máximo 50' (en el vídeo la interfaz muestra un límite contado en el campo que no corresponde al máximo permitido según el mapa)."
   }
  ],
- "per_chi_impara": "Este vídeo está grabado en español y configurado en una cuenta colombiana (moneda COP). Para quien aprende desde Italia, la moneda (EUR), la zona horaria y las restricciones geográficas son distintas (en Italia el mínimo es de 15 €/día). Además, el usuario intenta segmentar varios países de América Latina, algo prohibido para una cuenta recién creada (que debe empezar en el país de origen). Sin embargo, el procedimiento técnico que muestra para copiar el código del Pixel en el head del sitio y configurar la Conversion API es idéntico y útil para aprender.",
+ "per_chi_impara": "El vídeo está configurado en una cuenta colombiana (moneda COP): para quien factura en pesos colombianos los importes valen tal cual; con otra moneda cambian (15 € en euros, 150 MXN en pesos mexicanos). Además, el usuario intenta segmentar varios países de América Latina, algo que una cuenta recién creada a menudo no puede hacer: al principio solo publica en su país de origen. El procedimiento técnico que muestra para copiar el código del Pixel en el head del sitio y configurar la Conversion API es igual en todos los países y útil para aprender.",
  "qualita": {
   "voto": 3,
   "perche": "El vídeo ofrece una excelente visualización auténtica de la interfaz de Ads Manager y de la instalación del Pixel en un embudo real, pero está en español, se topa con varios problemas técnicos y bloqueos de facturación, y tiene algunas imprecisiones sobre los límites de segmentación para cuentas nuevas."
  },
  "consiglio": "alternativo",
- "consiglio_perche": "Se recomienda solo como recurso secundario para quien quiere ver cómo se instala en concreto el código de seguimiento de ChatGPT Ads y cómo se ve en directo la interfaz de gestión de campañas, pero no sirve como guía principal para el público italiano por el idioma, la moneda distinta y los problemas de facturación que muestra.",
+ "consiglio_perche": "Se recomienda solo como recurso secundario para ver cómo se instala en concreto el código de seguimiento de ChatGPT Ads y cómo se ve en directo la interfaz de gestión de campañas, pero no sirve como guía principal por los problemas de facturación que muestra.",
  "tappa_migliore": 6,
  "spezzone_migliore": {
   "inizio": "6:10",

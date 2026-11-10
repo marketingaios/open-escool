@@ -155,7 +155,7 @@
    "minuto": "0:52",
    "dice": "ChatGPT Ads actualmente solo está disponible en Estados Unidos, y en América Latina en México y Brasil.",
    "verdetto": "superata",
-   "perche": "Italia y varios países europeos están disponibles en self-service desde el 31/08/2026."
+   "perche": "Hoy la tabla oficial da como disponibles en self-service, además de México y Brasil, a España, Argentina, Colombia, Chile, Perú y casi toda América Latina."
   },
   {
    "minuto": "1:48",
@@ -236,7 +236,7 @@
    "perche": "El mapa oficial no especifica un número mínimo exacto de contactos para las listas de clientes."
   }
  ],
- "per_chi_impara": "Para quien trabaja desde Italia (Unión Europea), el procedimiento general de Ads Manager es idéntico, pero hay que prestar atención a algunas diferencias normativas y operativas: 1) Italia está plenamente disponible en self-service desde el 31/08/2026. 2) El presupuesto diario mínimo en euros es de 15 €. 3) Por la normativa GDPR, el Pixel de OpenAI debe activarse solo después de recoger el consentimiento del usuario con el banner de cookies. 4) Las audiencias personalizadas (listas de clientes) no deben usarse en campañas dirigidas al EEE/Suiza. 5) Desde el 30/10/2026 los 'Creative Enhancements' están activos por defecto y pueden modificar o traducir automáticamente anuncios y títulos si no se desactivan en la configuración.",
+ "per_chi_impara": "Para quien trabaja desde España o América Latina el procedimiento general de Ads Manager es idéntico, con algunas diferencias: 1) España y casi toda América Latina figuran hoy como disponibles en self-service (en Europa desde el 31/08/2026, fecha no oficial). 2) El presupuesto diario mínimo depende de la moneda: 15 € en euros, 150 MXN en pesos mexicanos, 25 $ en dólares. 3) En España, por el RGPD, el Pixel de OpenAI debe activarse solo después de recoger el consentimiento con el banner de cookies; en América Latina depende de la ley de cada país. 4) Las audiencias personalizadas (listas de clientes) no deben usarse en campañas dirigidas al EEE o a Suiza. 5) Desde el 30/10/2026 los 'Creative Enhancements' están activos por defecto y pueden modificar o traducir automáticamente anuncios y títulos si no se desactivan en la configuración.",
  "qualita": {
   "voto": 5,
   "perche": "El vídeo ofrece un recorrido completo, claro y práctico por todas las fases de creación de la campaña en ChatGPT Ads, incluida la parte compleja del seguimiento con el Pixel y Google Tag Manager. Aunque se grabó antes de los cambios en las pujas de noviembre de 2026 y de la ampliación a Europa, la explicación de los principios básicos y de la estructura de la cuenta es excelente."

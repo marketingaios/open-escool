@@ -239,7 +239,7 @@
    "perche": "La etapa 1 del mapa advierte que hay que desconfiar de quien da porcentajes de CTR o CPC 'medios', porque OpenAI precisa que la plataforma está en beta y todavía no existen benchmarks ni métricas de referencia oficiales."
   }
  ],
- "per_chi_impara": "Para quien trabaja desde Italia (Unión Europea), el servicio Ads Manager está activo en self-service con la moneda configurable en euros (presupuesto diario mínimo de 15 €). Es fundamental recordar que en el Espacio Económico Europeo no se permite la personalización de los anuncios basada en el historial de chats del usuario (los anuncios solo usan el contexto de la conversación en curso) y que las audiencias personalizadas basadas en listas de clientes no deben usarse.",
+ "per_chi_impara": "En España y en casi toda América Latina Ads Manager está activo en self-service; el presupuesto diario mínimo depende de la moneda (15 € en euros, 150 MXN en pesos mexicanos, 25 $ en dólares). En el Espacio Económico Europeo (España incluida) no hay personalización de los anuncios basada en el historial de chats del usuario (los anuncios solo usan el contexto de la conversación en curso) y las audiencias personalizadas basadas en listas de clientes no deben usarse.",
  "qualita": {
   "voto": 4,
   "perche": "El vídeo muestra con claridad la estructura de las campañas y los pasos prácticos en Ads Manager, con una explicación intuitiva de los Context Hints. Sin embargo, es impreciso sobre los límites de caracteres del anuncio, cita benchmarks de CTR no reconocidos oficialmente y sugiere estrategias de puja manual que hoy están quedando superadas."

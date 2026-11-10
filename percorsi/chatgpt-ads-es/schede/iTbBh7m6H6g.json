@@ -122,7 +122,7 @@
    "perche": "Los context hints sirven para describir la oferta y la intención; no son palabras clave ni reglas rígidas de segmentación."
   }
  ],
- "per_chi_impara": "Para quien trabaja desde Italia hay que adaptar dos aspectos fundamentales: el presupuesto diario mínimo en euros es de 15 € (y no 25 USD) y la función de retargeting con listas de clientes (Audiencias) no está permitida en campañas dirigidas a usuarios del Espacio Económico Europeo y de Suiza. Además, la zona horaria, el país y la moneda deben configurarse correctamente en Italia y EUR en la primera configuración de la cuenta.",
+ "per_chi_impara": "Hay que adaptar dos aspectos: el presupuesto diario mínimo depende de la moneda (25 $ en dólares, como en el vídeo; 15 € en euros; 150 MXN en pesos mexicanos), y el retargeting con listas de clientes (Audiencias) no está permitido en campañas dirigidas al Espacio Económico Europeo (España incluida) ni a Suiza. Además, país, zona horaria y moneda se eligen en la primera configuración de la cuenta y luego no se cambian.",
  "qualita": {
   "voto": 4,
   "perche": "Explicación práctica, clara y muy visual de la interfaz real. Excelente para entender cómo moverse dentro de Ads Manager y cómo configurar los campos de texto y de contexto."

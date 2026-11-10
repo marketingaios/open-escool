@@ -98,7 +98,7 @@
    "minuto": "09:30",
    "dice": "El presupuesto diario mínimo que pide Ads Manager es de 25 $.",
    "verdetto": "giusta",
-   "perche": "Conforme a los parámetros de la interfaz en USD que se ve en pantalla. Nota para Italia: con la cuenta configurada en EUR el presupuesto diario mínimo es de 15 € (etapa 5)."
+   "perche": "Conforme a los parámetros de la interfaz en USD que se ve en pantalla. Con la cuenta en euros el mínimo es de 15 € y en pesos mexicanos de 150 MXN (etapa 5)."
   },
   {
    "minuto": "10:30",
@@ -131,7 +131,7 @@
    "perche": "Conforme al mapa (etapa 6: métricas disponibles en el informe de Ads Manager)."
   }
  ],
- "per_chi_impara": "Para quien trabaja desde Italia: Italia está plenamente disponible para el self-service en Ads Manager. Al abrir la cuenta es importante elegir Italia, moneda euro (EUR, con un presupuesto mínimo de 15 €/día) y zona horaria italiana. Recuerda que en las campañas dirigidas a Italia/EEE las audiencias personalizadas (listas de clientes) no deben usarse y los anuncios se basan solo en el contexto de la conversación en curso.",
+ "per_chi_impara": "España y casi toda América Latina están disponibles para el self-service en Ads Manager. Al abrir la cuenta es importante elegir bien país, moneda y zona horaria del negocio, porque luego no se cambian; el presupuesto mínimo depende de la moneda (15 € en euros, 150 MXN en pesos mexicanos, 25 $ en dólares). En campañas dirigidas al EEE (España incluida) las audiencias personalizadas (listas de clientes) no deben usarse y los anuncios se basan solo en el contexto de la conversación en curso.",
  "qualita": {
   "voto": 4,
   "perche": "Tutorial claro, con buen ritmo y con la pantalla grabada completa. Refleja el estado de la plataforma en agosto de 2026, así que hay que sumarle las actualizaciones posteriores (Target CPC, formato de varias imágenes y creative enhancements)."

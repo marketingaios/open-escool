@@ -10,24 +10,24 @@
  "copertina": null,
  "categoria": null,
  "creato": "2026-11-06",
- "controllato": "2026-11-09",
+ "controllato": "2026-11-10",
  "stato": "pronto",
  "schede_mancanti": 0,
  "fonti": "37 páginas del centro de ayuda de OpenAI, descargadas el 6/11/2026",
  "avvisi": [
-  "Self-service disponible: en la tabla oficial Italia figura como «Available»; la persona jurídica que hace publicidad y recibe la factura debe tener sede en un país de la lista (20001245-ads-manager-availability.md). La fecha de inicio en Europa, 31/8/2026, viene de chatgpt_ads.md (no oficial).",
-  "Ambigüedad en la misma página: también dice que los anunciantes de los «new European markets» por ahora empiezan a través del equipo de OpenAI Ads o de partners. Si el registro directo desde Italia se bloquea, la razón probable es esta (ver Dubbi en mappa.md).",
-  "Moneda y mínimos: con facturación en EUR el presupuesto diario mínimo es de 15 € (20001210-creating-campaigns-for-chatgpt-ads.md). El mínimo para el presupuesto total de la campaña no está escrito. Los ejemplos de umbral de pago están solo en dólares (25 $, luego 50 $, 100 $...): los importes en euros no están escritos (20001216-billing-payment.md).",
-  "País, moneda y zona horaria se eligen al crear la cuenta y luego no se cambian: revisa Italia, euro y zona horaria italiana antes de confirmar (20001213-ads-manager-account-setup.md). La tarjeta y la dirección de facturación deben corresponder al país del negocio (20001216-billing-payment.md).",
+  "Self-service disponible: en la tabla oficial figuran como «Available» España, México, Argentina, Colombia, Chile, Perú y casi toda América Latina (no aparecen Venezuela, Honduras, Nicaragua ni Cuba); la persona jurídica que hace publicidad y recibe la factura debe tener sede en un país de la lista (20001245-ads-manager-availability.md, vuelta a leer el 10/11/2026). La fecha de inicio en Europa, 31/8/2026, viene de chatgpt_ads.md (no oficial).",
+  "Ambigüedad en la misma página: también dice que los anunciantes de los «new European markets» por ahora empiezan a través del equipo de OpenAI Ads o de partners. Si el registro directo desde España se bloquea, la razón probable es esta.",
+  "Moneda y mínimos: el presupuesto diario mínimo depende de la moneda de facturación: 15 EUR, 150 MXN, 10.000 COP, 3.750 CLP, 13 PEN, 25 USD (20001210-creating-campaigns-for-chatgpt-ads.md). El peso argentino y las demás monedas de la región no están en la tabla: mira qué moneda te propone la cuenta al crearla. El mínimo para el presupuesto total de la campaña no está escrito. Los ejemplos de umbral de pago están solo en dólares (25 $, luego 50 $, 100 $...): los importes en otras monedas no están escritos (20001216-billing-payment.md).",
+  "País, moneda y zona horaria se eligen al crear la cuenta y luego no se cambian: revisa los de tu negocio antes de confirmar (20001213-ads-manager-account-setup.md). La tarjeta y la dirección de facturación deben corresponder al país del negocio (20001216-billing-payment.md).",
   "Número de IVA (partita IVA): se añade en Billing → Settings y vale solo para las facturas siguientes (20001216-billing-payment.md).",
-  "Sin personalización en el Espacio Económico Europeo ni en Suiza: los anuncios se basan en la conversación en curso; las audiencias personalizadas (listas de clientes) para campañas dirigidas al EEE o a Suiza deben evitarse (20001047-ads-in-chatgpt.md, 20001210-creating-campaigns-for-chatgpt-ads.md, 20001346-set-up-custom-audiences-for-your-campaign.md).",
-  "Cuenta nueva: al principio solo puede hacer publicidad en el país de origen (Italia); los demás países se desbloquean tras la verificación de identidad aprobada y un gasto mínimo en el país de origen. Hay que incluir el país de forma explícita: excluir los demás no basta (20001210-creating-campaigns-for-chatgpt-ads.md).",
+  "Sin personalización en el Espacio Económico Europeo ni en Suiza (España incluida): los anuncios se basan en la conversación en curso; las audiencias personalizadas (listas de clientes) para campañas dirigidas al EEE o a Suiza deben evitarse (20001047-ads-in-chatgpt.md, 20001210-creating-campaigns-for-chatgpt-ads.md, 20001346-set-up-custom-audiences-for-your-campaign.md). Para América Latina las páginas oficiales no ponen este límite.",
+  "Cuenta nueva: al principio puede que solo pueda hacer publicidad en el país de origen (el de la cuenta: España, México...); una campaña para varios países de habla hispana llega después: los demás países se desbloquean tras la verificación de identidad aprobada y un gasto mínimo en el país de origen. Hay que incluir el país de forma explícita: excluir los demás no basta (20001210-creating-campaigns-for-chatgpt-ads.md).",
   "Verificación del negocio: puede tardar hasta 7 días hábiles, y algunas cuentas pueden gastar antes de que termine. No es un freno: para no gastar, la campaña debe quedarse en pausa (20001534-troubleshooting-common-onboarding-and-policy-issues.md).",
   "Sectores regulados: fuera de EE. UU. gran parte de las categorías de salud, muchas de finanzas y los servicios legales no están permitidos o están reservados a anunciantes aprobados (tabla en 20001534-troubleshooting-common-onboarding-and-policy-issues.md).",
-  "Idioma: un anuncio puede aparecer en un idioma distinto al de la conversación y desde el 30/10/2026 los creative enhancements pueden traducir el texto; quien escribe en italiano debe decidir si dejarlos activos (20001047-ads-in-chatgpt.md, 20001614-creative-enhancements-for-chatgpt-ads.md).",
+  "Idioma: un anuncio puede aparecer en un idioma distinto al de la conversación y desde el 30/10/2026 los creative enhancements pueden traducir el texto; quien escribe en español debe decidir si dejarlos activos (20001047-ads-in-chatgpt.md, 20001614-creative-enhancements-for-chatgpt-ads.md).",
   "Herramientas limitadas: la app de Shopify hoy es solo para tiendas de EE. UU. (20001523-set-up-chatgpt-ads-for-shopify.md); la conexión con GA4 está en beta a través del account manager (20001562-connecting-google-analytics-4-to-openai-ads-manager.md); el límite de gasto diario de la cuenta no existe para las cuentas self-service pagadas con tarjeta (20001216-billing-payment.md).",
   "Tarjeta: al añadirla puede aparecer un bloqueo temporal de importe variable según el país; no es un gasto publicitario y puede seguir visible en el banco 8 días o más (20001216-billing-payment.md).",
-  "Consentimiento: los datos de conversión se envían solo después de informar a los usuarios y recoger los consentimientos donde la ley los exige (20001409-conversion-measurement.md). Para un sitio italiano significa poner el Pixel detrás del banner de consentimiento: es una deducción, la página no nombra el GDPR."
+  "Consentimiento: los datos de conversión se envían solo después de informar a los usuarios y recoger los consentimientos donde la ley los exige (20001409-conversion-measurement.md). Para un sitio en España significa poner el Pixel detrás del banner de consentimiento (RGPD); en América Latina depende de la ley de protección de datos de cada país: es una deducción, la página no nombra leyes."
  ],
  "cambi_recenti": [
   {
@@ -42,7 +42,7 @@
   },
   {
    "data": "2026-08-31",
-   "cosa": "Self-service desde Ads Manager en Europa, Italia incluida (no oficial como fecha; la página oficial solo dice que hoy Italia figura como «Available»).",
+   "cosa": "Self-service desde Ads Manager en Europa, España incluida (no oficial como fecha; la página oficial solo dice que hoy España figura como «Available», igual que casi toda América Latina).",
    "fonte": "chatgpt_ads.md"
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
   }
  ],
- "durata_min": 28,
+ "durata_min": 34,
  "tappe": [
   {
    "n": 1,
@@ -100,7 +100,7 @@
     "La elección del anuncio usa el contexto de la conversación, la página de destino, el título, el texto y los context hints del anunciante: no palabras clave.",
     "Entre varios anuncios elegibles decide una subasta de segundo precio ponderada por la relevancia.",
     "El anunciante solo recibe datos agregados (visualizaciones, clics), nunca las conversaciones.",
-    "En el EEE y Suiza no hay anuncios personalizados, por ahora: cuenta la conversación en curso.",
+    "En el EEE y Suiza (España incluida) no hay anuncios personalizados, por ahora: cuenta la conversación en curso.",
     "Es una plataforma en beta, sin parámetros de referencia sobre los resultados: desconfía de quien promete cifras."
    ],
    "letture": [
@@ -176,7 +176,7 @@
        "minuto": "0:52",
        "dice": "ChatGPT Ads actualmente solo está disponible en Estados Unidos, y en América Latina en México y Brasil.",
        "verdetto": "superata",
-       "perche": "Italia y varios países europeos están disponibles en self-service desde el 31/08/2026."
+       "perche": "Hoy la tabla oficial da como disponibles en self-service, además de México y Brasil, a España, Argentina, Colombia, Chile, Perú y casi toda América Latina."
       }
      ],
      "perche": "Es una guía práctica «de principio a fin» muy clara y detallada para quien se acerca a Ads Manager por primera vez. Muestra la interfaz real, la lógica de los Context Hints y la integración técnica con GTM.",
@@ -186,14 +186,14 @@
   },
   {
    "n": 2,
-   "titolo": "Abrir la cuenta de Ads Manager desde Italia sin lanzar nada",
-   "obiettivo": "Tienes una cuenta de anunciante italiana en Ads Manager con nombres, logo, facturación y verificación iniciada, sin ningún anuncio que pueda empezar a publicarse.",
-   "minuti_video": 1,
+   "titolo": "Abrir la cuenta de Ads Manager desde tu país sin lanzar nada",
+   "obiettivo": "Tienes una cuenta de anunciante de tu país (España, México, Argentina...) en Ads Manager con nombres, logo, facturación y verificación iniciada, sin ningún anuncio que pueda empezar a publicarse.",
+   "minuti_video": 4,
    "valido_da": "2026-08-31",
    "ricontrolla_dopo": null,
    "nota_ricontrollo": null,
    "concetti": [
-    "Italia está disponible en self-service; quien hace publicidad y recibe la factura debe tener sede en un país de la lista.",
+    "España, México y casi toda América Latina están disponibles en self-service; quien hace publicidad y recibe la factura debe tener sede en un país de la lista.",
     "La persona jurídica que publica y paga debe tener sede en un país disponible.",
     "Te registras en ads.openai.com con la misma cuenta de OpenAI de ChatGPT, o creas una.",
     "Dos caminos: crear enseguida un anuncio desde tu web o saltar ese paso. Con el primero el anuncio puede publicarse tras la revisión y empezar a gastar: por eso en esta ruta conviene saltarlo.",
@@ -232,21 +232,21 @@
    "buco": null,
    "video": [
     {
-     "id": "J75Z1tswC6s",
+     "id": "eVaJJO1EpPU",
      "ruolo": "principale",
      "lingua": "es",
-     "inizio": "5:46",
-     "fine": "7:06",
-     "riassunto": "El vídeo muestra paso a paso cómo crear y configurar la primera campaña publicitaria en ChatGPT Ads (ads.openai.com). El autor explica el registro a partir de su propio sitio web, la creación automática del borrador del anuncio, la gestión de las pujas, el cambio del presupuesto diario y cómo desactivar la campaña para evitar cargos no deseados.",
+     "inizio": "4:37",
+     "fine": "8:38",
+     "riassunto": "Un tutorial en vídeo detallado en español que muestra paso a paso cómo crear y configurar una cuenta de anunciante y lanzar campañas en ChatGPT Ads Manager. El ponente explica la estructura de las campañas, los objetivos disponibles, el uso de los context hints (pistas de contexto), la creación de anuncios persuasivos con ayuda de ChatGPT y las restricciones por sector. Está dirigido a emprendedores y marketers que quieren aprovechar la publicidad contextual en ChatGPT.",
      "punti": [
       {
-       "minuto": "5:46",
-       "testo": "Verificación de la cuenta y métodos de pago: Introducción de los datos de la tarjeta de crédito; Selección del tipo de cuenta (Business frente a Individual)"
+       "minuto": "4:37",
+       "testo": "Creación de la cuenta de anunciante en ads.openai.com: Registro y configuración del perfil de la empresa; Selección del país, la moneda y la zona horaria; Vista general de la interfaz de Ads Manager"
       }
      ],
      "attenzione": [],
-     "perche": "Ofrece una guía visual inmediata y transparente sobre cómo acceder a la plataforma, ajustar los costos y mantener el control total del estado de la campaña.",
-     "punteggio": 8.0
+     "perche": "Es un recurso excelente para entender la lógica de la publicidad contextual en ChatGPT Ads, desde la creación de la cuenta hasta la redacción del anuncio y el análisis de las restricciones por sector.",
+     "punteggio": "a mano"
     },
     {
      "id": "EM42tjRXmbE",
@@ -263,24 +263,24 @@
      ],
      "attenzione": [],
      "perche": "Es un tutorial claro y completo que guía al usuario desde el registro hasta el envío a revisión, y explica conceptos clave como los context hints y la integración de los parámetros UTM de forma muy fácil de seguir.",
-     "punteggio": 8.0
+     "punteggio": "a mano"
     },
     {
-     "id": "eVaJJO1EpPU",
+     "id": "J75Z1tswC6s",
      "ruolo": "alternativo",
      "lingua": "es",
-     "inizio": "4:37",
-     "fine": "8:38",
-     "riassunto": "Un tutorial en vídeo detallado en español que muestra paso a paso cómo crear y configurar una cuenta de anunciante y lanzar campañas en ChatGPT Ads Manager. El ponente explica la estructura de las campañas, los objetivos disponibles, el uso de los context hints (pistas de contexto), la creación de anuncios persuasivos con ayuda de ChatGPT y las restricciones por sector. Está dirigido a emprendedores y marketers que quieren aprovechar la publicidad contextual en ChatGPT.",
+     "inizio": "5:46",
+     "fine": "7:06",
+     "riassunto": "El vídeo muestra paso a paso cómo crear y configurar la primera campaña publicitaria en ChatGPT Ads (ads.openai.com). El autor explica el registro a partir de su propio sitio web, la creación automática del borrador del anuncio, la gestión de las pujas, el cambio del presupuesto diario y cómo desactivar la campaña para evitar cargos no deseados.",
      "punti": [
       {
-       "minuto": "4:37",
-       "testo": "Creación de la cuenta de anunciante en ads.openai.com: Registro y configuración del perfil de la empresa; Selección del país, la moneda y la zona horaria; Vista general de la interfaz de Ads Manager"
+       "minuto": "5:46",
+       "testo": "Verificación de la cuenta y métodos de pago: Introducción de los datos de la tarjeta de crédito; Selección del tipo de cuenta (Business frente a Individual)"
       }
      ],
      "attenzione": [],
-     "perche": "Es un recurso excelente para entender la lógica de la publicidad contextual en ChatGPT Ads, desde la creación de la cuenta hasta la redacción del anuncio y el análisis de las restricciones por sector.",
-     "punteggio": 8.0
+     "perche": "Ofrece una guía visual inmediata y transparente sobre cómo acceder a la plataforma, ajustar los costos y mantener el control total del estado de la campaña.",
+     "punteggio": "a mano"
     }
    ]
   },
@@ -288,7 +288,7 @@
    "n": 3,
    "titolo": "La estructura de campaña, grupo de anuncios y context hints",
    "obiettivo": "Sabes crear en Ads Manager una campaña con el objetivo, el país y las plataformas correctos y un grupo de anuncios con context hints escritos como frases claras.",
-   "minuti_video": 2,
+   "minuti_video": 5,
    "valido_da": "2026-05-05",
    "ricontrolla_dopo": null,
    "nota_ricontrollo": null,
@@ -301,15 +301,15 @@
     "Conversions requiere el seguimiento activo y un evento estándar: para una primera campaña sin Pixel el objetivo sensato es Clicks.",
     "El objetivo no se cambia después: hace falta una campaña nueva.",
     "Una cuenta nueva al principio solo puede hacer publicidad en el país de origen.",
-    "El país hay que incluirlo de forma explícita: excluir los demás no basta (el ejemplo oficial es sobre EE. UU., vale para Italia).",
+    "El país hay que incluirlo de forma explícita: excluir los demás no basta (el ejemplo oficial es sobre EE. UU., vale para cualquier país).",
     "Plataformas que se pueden elegir: app y web de Android, web de escritorio, app y web de iOS.",
-    "Hacia el EEE y Suiza, nada de audiencias personalizadas.",
+    "Hacia el EEE y Suiza (España incluida), nada de audiencias personalizadas.",
     "Grupos separados cuando hacen falta mensajes o páginas de destino distintos.",
     "Los context hints no son palabras clave ni reglas de segmentación y no garantizan que el anuncio aparezca.",
     "Para escribirlos: qué ofreces, a quién le sirve, cuándo es útil.",
     "Una frase natural para una sola idea, no una lista de palabras.",
     "Ejemplo oficial de hint bueno (frente al genérico «running shoes»).",
-    "Los hints no son instrucciones («muéstralo solo a quien está en Milán» no funciona): para los límites se usan los controles de la campaña.",
+    "Los hints no son instrucciones («muéstralo solo a quien está en Madrid» no funciona): para los límites se usan los controles de la campaña.",
     "Las frases negativas (Negative Phrases) existen solo para anunciantes cualificados, no para todos."
    ],
    "letture": [
@@ -334,25 +334,8 @@
    "buco": null,
    "video": [
     {
-     "id": "h6Aliamr9Ow",
-     "ruolo": "principale",
-     "lingua": "es",
-     "inizio": "13:08",
-     "fine": "15:17",
-     "riassunto": "El vídeo guía al usuario paso a paso en la creación de la primera campaña publicitaria en ChatGPT Ads Manager. Muestra cómo registrar tu empresa, configurar el presupuesto y la segmentación geográfica, usar la IA para crear una landing page de alta conversión, introducir los context hints y configurar los parámetros de seguimiento UTM. Está pensado para marketers y emprendedores que quieren empezar a anunciarse en ChatGPT.",
-     "punti": [
-      {
-       "minuto": "13:08",
-       "testo": "Integración de la URL de destino y de los Context Hints: Configuración manual de las cadenas UTM para el seguimiento en Google Analytics; Redacción de context hints descriptivos en lenguaje natural para captar la intención del usuario"
-      }
-     ],
-     "attenzione": [],
-     "perche": "Es uno de los mejores recorridos prácticos disponibles para aprender a crear campañas en ChatGPT Ads Manager, y explica tanto la parte estratégica como los detalles operativos.",
-     "punteggio": 8.5
-    },
-    {
      "id": "EM42tjRXmbE",
-     "ruolo": "alternativo",
+     "ruolo": "principale",
      "lingua": "es",
      "inizio": "3:41",
      "fine": "8:43",
@@ -369,7 +352,7 @@
      ],
      "attenzione": [],
      "perche": "Es un tutorial claro y completo que guía al usuario desde el registro hasta el envío a revisión, y explica conceptos clave como los context hints y la integración de los parámetros UTM de forma muy fácil de seguir.",
-     "punteggio": 8.5
+     "punteggio": "a mano"
     },
     {
      "id": "eVaJJO1EpPU",
@@ -390,7 +373,24 @@
      ],
      "attenzione": [],
      "perche": "Es un recurso excelente para entender la lógica de la publicidad contextual en ChatGPT Ads, desde la creación de la cuenta hasta la redacción del anuncio y el análisis de las restricciones por sector.",
-     "punteggio": 8.5
+     "punteggio": "a mano"
+    },
+    {
+     "id": "h6Aliamr9Ow",
+     "ruolo": "alternativo",
+     "lingua": "es",
+     "inizio": "13:08",
+     "fine": "15:17",
+     "riassunto": "El vídeo guía al usuario paso a paso en la creación de la primera campaña publicitaria en ChatGPT Ads Manager. Muestra cómo registrar tu empresa, configurar el presupuesto y la segmentación geográfica, usar la IA para crear una landing page de alta conversión, introducir los context hints y configurar los parámetros de seguimiento UTM. Está pensado para marketers y emprendedores que quieren empezar a anunciarse en ChatGPT.",
+     "punti": [
+      {
+       "minuto": "13:08",
+       "testo": "Integración de la URL de destino y de los Context Hints: Configuración manual de las cadenas UTM para el seguimiento en Google Analytics; Redacción de context hints descriptivos en lenguaje natural para captar la intención del usuario"
+      }
+     ],
+     "attenzione": [],
+     "perche": "Es uno de los mejores recorridos prácticos disponibles para aprender a crear campañas en ChatGPT Ads Manager, y explica tanto la parte estratégica como los detalles operativos.",
+     "punteggio": "a mano"
     }
    ]
   },
@@ -512,7 +512,7 @@
   {
    "n": 5,
    "titolo": "Presupuesto y pujas: cuánto puedes gastar de verdad",
-   "obiettivo": "Sabes configurar un presupuesto diario en euros, sabes cuánto puede gastar como máximo la campaña en un día y en una semana, y eliges la estrategia de puja adecuada para una primera campaña.",
+   "obiettivo": "Sabes configurar un presupuesto diario en tu moneda, sabes cuánto puede gastar como máximo la campaña en un día y en una semana, y eliges la estrategia de puja adecuada para una primera campaña.",
    "minuti_video": 4,
    "valido_da": "2026-11-09",
    "ricontrolla_dopo": "2026-11-09",
@@ -522,7 +522,7 @@
     "El presupuesto diario es una media de 7 días, no un tope del día.",
     "En un día se puede gastar hasta el doble del presupuesto diario.",
     "En la semana (domingo-sábado), como máximo 7 veces el presupuesto diario.",
-    "En euros el presupuesto diario mínimo es de 15 €.",
+    "El presupuesto diario mínimo depende de la moneda: 15 € en euros, 150 MXN en pesos mexicanos, 25 $ en dólares.",
     "A quien empieza, OpenAI le recomienda el presupuesto diario.",
     "Se puede pasar de total a diario, pero no se puede volver atrás.",
     "El ritmo de gasto no garantiza un gasto uniforme ni completo.",
@@ -568,12 +568,12 @@
      "titolo": "Presupuesto y pujas: cuánto puedes gastar de verdad",
      "canale": "Open Escool · lección",
      "lingua": "es",
-     "pubblicato": "2026-11-09",
-     "durata_s": 225,
+     "pubblicato": "2026-11-10",
+     "durata_s": 235,
      "file": "lezioni/t5.mp4",
      "copertina": "lezioni/t5.jpg",
      "inizio": "0:00",
-     "fine": "3:45",
+     "fine": "3:55",
      "riassunto": "En esta lección vemos cuánto puede gastar de verdad una campaña de ChatGPT Ads, y qué puja elegir para la primera. Todo lo que escuchas viene de las páginas oficiales de OpenAI, leídas el seis de noviembre de dos mil veintiséis. Cuando creas una campaña eliges entre dos tipos de presupuesto. El presupuesto total es la cantidad que se gasta durante toda la campaña: es el control más estricto del gasto total. El presupuesto diario es lo que quieres gastar de media cada día. A quien empieza en la plataforma, OpenAI le recomienda el diario, para ver cómo funciona antes de comprometer un total. Cui",
      "punti": [
       {
@@ -589,27 +589,27 @@
        "testo": "El diario es una media de 7 días"
       },
       {
-       "minuto": "1:12",
+       "minuto": "1:18",
        "testo": "Que no se confundan"
       },
       {
-       "minuto": "1:38",
+       "minuto": "1:45",
        "testo": "Qué optimizas y qué pagas"
       },
       {
-       "minuto": "2:01",
+       "minuto": "2:08",
        "testo": "Las pujas cambian"
       },
       {
-       "minuto": "2:40",
+       "minuto": "2:47",
        "testo": "Target CPA y Target CPC son medias"
       },
       {
-       "minuto": "3:00",
+       "minuto": "3:06",
        "testo": "Un objetivo realista"
       },
       {
-       "minuto": "3:17",
+       "minuto": "3:24",
        "testo": "Tu primera campaña"
       }
      ],

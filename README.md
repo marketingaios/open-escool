@@ -82,7 +82,7 @@ En la plataforma:
 
 | Ruta | Vídeos en | Etapas | Minutos |
 |---|---|---|---|
-| ChatGPT Ads, de cero a la primera campaña | italiano · español · inglés | 6 | 35 · 28 · 45 |
+| ChatGPT Ads, de cero a la primera campaña | italiano · español · inglés | 6 | 35 · 34 · 45 |
 | GEO: que la IA encuentre y cite tu web | español | 3 | 18 |
 
 Las rutas guardan solo el ID de cada vídeo y textos propios (fragmento, resumen, avisos). Título, canal, fecha y duración los

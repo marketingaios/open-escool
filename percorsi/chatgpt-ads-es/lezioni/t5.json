@@ -2,12 +2,12 @@
  "tappa": 5,
  "lingua": "es",
  "titolo": "Presupuesto y pujas: cuánto puedes gastar de verdad",
- "durata_s": 225,
+ "durata_s": 235,
  "file": "lezioni/t5.mp4",
  "copertina": "lezioni/t5.jpg",
  "controllata": "2026-11-06",
- "creata": "2026-11-09",
- "voce": "Chatterbox (voce gratuita sul computer)",
+ "creata": "2026-11-10",
+ "voce": "Chatterbox (voz gratuita en el ordenador)",
  "voce_info": {
   "motore": "gratuita",
   "modello": "chatterbox",
@@ -38,8 +38,8 @@
    "id": "settimana",
    "titolo": "El diario es una media de 7 días",
    "inizio": 40.6,
-   "fine": 72.0,
-   "testo": "Y aquí está lo que muchos vídeos explican mal. El presupuesto diario no es un tope del día: es una media de siete días. La semana va de domingo a sábado, en la zona horaria de tu cuenta. Pongamos quince euros al día, que en euros también es el mínimo. En un solo día la campaña puede gastar hasta el doble, es decir, treinta euros. Pero en toda la semana no pasa de siete veces el presupuesto: ciento cinco euros. Los días en que gasta menos dejan margen para los días siguientes. Cuando creas o editas la campaña, Ads Manager te muestra justo estos dos máximos.",
+   "fine": 78.5,
+   "testo": "Y aquí está lo que muchos vídeos explican mal. El presupuesto diario no es un tope del día: es una media de siete días. La semana va de domingo a sábado, en la zona horaria de tu cuenta. Pongamos quince euros al día: es el mínimo si tu cuenta factura en euros, como en España. En pesos mexicanos el mínimo es de ciento cincuenta; en dólares, de veinticinco. En un solo día la campaña puede gastar hasta el doble, es decir, treinta euros. Pero en toda la semana no pasa de siete veces el presupuesto: ciento cinco euros. Los días en que gasta menos dejan margen para los días siguientes. Cuando creas o editas la campaña, Ads Manager te muestra justo estos dos máximos.",
    "fonti": [
     "20001413-daily-budgets.md",
     "20001210-creating-campaigns-for-chatgpt-ads.md"
@@ -49,8 +49,8 @@
   {
    "id": "addebiti",
    "titolo": "Que no se confundan",
-   "inizio": 72.0,
-   "fine": 98.7,
+   "inizio": 78.5,
+   "fine": 105.3,
    "testo": "Dos cosas que no hay que confundir. El ritmo de gasto reparte el presupuesto en el tiempo, pero no garantiza ni un gasto igual cada día, ni que se gaste todo el presupuesto. Luego está el umbral de pago: es el momento en que se cobra la tarjeta. No es el presupuesto de la campaña, y no es un límite de gasto. Y recuerda que los datos de gasto pueden llegar con siete u ocho horas de retraso: un gasto a cero no significa que no estés gastando.",
    "fonti": [
     "20001515-budget-pacing.md",
@@ -61,8 +61,8 @@
   {
    "id": "paghi",
    "titolo": "Qué optimizas y qué pagas",
-   "inizio": 98.7,
-   "fine": 121.7,
+   "inizio": 105.3,
+   "fine": 128.3,
    "testo": "Ahora, qué pagas. Depende del objetivo de la campaña. Con Views pagas las impresiones, a coste por mil: es el CPM. Con Clicks pagas cada clic: es el CPC. Con Conversions el sistema busca conversiones, pero pagas igualmente por clic o por impresiones, según la opción elegida. En ningún caso pagas por conversión: lo que optimizas y lo que pagas son dos ajustes distintos.",
    "fonti": [
     "20001216-billing-payment.md",
@@ -73,8 +73,8 @@
   {
    "id": "date",
    "titolo": "Las pujas cambian",
-   "inizio": 121.7,
-   "fine": 160.6,
+   "inizio": 128.3,
+   "fine": 167.2,
    "testo": "Las pujas están cambiando justo estos días. La estrategia automática, que se llamaba Maximize Results, ahora se llama Intelligent bidding: ajusta sola las pujas para conseguir más resultados dentro del presupuesto, y ya viene seleccionada por defecto en los grupos de anuncios nuevos. Desde el lunes nueve de noviembre, en las campañas nuevas llegan Target CPC para los clics, y Target CPA para las conversiones, que sustituye a Max Bid. El uno de enero de dos mil veintisiete, Max Bid y Max CPC se retiran también de las campañas que ya existen. Por eso, si un vídeo o una página antigua recomienda un Max CPC de tres a cinco dólares, está hablando de una opción que se va.",
    "fonti": [
     "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md",
@@ -86,8 +86,8 @@
   {
    "id": "media",
    "titolo": "Target CPA y Target CPC son medias",
-   "inizio": 160.6,
-   "fine": 180.1,
+   "inizio": 167.2,
+   "fine": 186.7,
    "testo": "Y aquí está el error más común. Target CPC y Target CPA no son precios máximos: son medias. Si pides, por ejemplo, un coste medio de cincuenta euros por conversión, algunas conversiones costarán más y otras menos, y también la media final puede salir más alta o más baja que tu objetivo.",
    "fonti": [
     "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
@@ -97,8 +97,8 @@
   {
    "id": "realistico",
    "titolo": "Un objetivo realista",
-   "inizio": 180.1,
-   "fine": 197.7,
+   "inizio": 186.7,
+   "fine": 204.2,
    "testo": "¿Cómo eliges un objetivo realista? Mira los resultados recientes: si has gastado cuatrocientos euros y has conseguido diez compras, tu coste real por compra es de cuarenta euros. Poner un objetivo de veinte no hará que pagues la mitad: un objetivo por debajo de los resultados reales puede frenar la entrega de los anuncios.",
    "fonti": [
     "20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads.md"
@@ -108,9 +108,9 @@
   {
    "id": "prima",
    "titolo": "Tu primera campaña",
-   "inizio": 197.7,
-   "fine": 225.0,
-   "testo": "Así que este es nuestro consejo para tu primera campaña. Presupuesto diario, al menos quince euros, sabiendo que un día puede llegar a treinta. Intelligent bidding, sin objetivo de coste: al principio todavía no tienes datos propios de los que partir. Los objetivos de coste los añades después, cuando tengas un coste real que mirar. Y en este recorrido la campaña se queda en pausa: la preparas, pero no gastas nada. En la siguiente etapa vemos cómo medir los resultados.",
+   "inizio": 204.2,
+   "fine": 234.8,
+   "testo": "Así que este es nuestro consejo para tu primera campaña. Presupuesto diario: al menos el mínimo de tu moneda, quince euros o ciento cincuenta pesos mexicanos, sabiendo que un día puede llegar al doble. Intelligent bidding, sin objetivo de coste: al principio todavía no tienes datos propios de los que partir. Los objetivos de coste los añades después, cuando tengas un coste real que mirar. Y en este recorrido la campaña se queda en pausa: la preparas, pero no gastas nada. En la siguiente etapa vemos cómo medir los resultados.",
    "fonti": [
     "20001210-creating-campaigns-for-chatgpt-ads.md",
     "20001413-daily-budgets.md",
@@ -202,266 +202,278 @@
   },
   {
    "inizio": 50.7,
-   "testo": "Pongamos quince euros al día,"
+   "testo": "Pongamos quince euros al día:"
   },
   {
    "inizio": 52.4,
-   "testo": "que en euros también es el mínimo."
+   "testo": "es el mínimo si tu cuenta factura en euros,"
   },
   {
-   "inizio": 54.3,
+   "inizio": 54.4,
+   "testo": "como en España. En pesos mexicanos el mínimo es de ciento"
+  },
+  {
+   "inizio": 58.0,
+   "testo": "cincuenta; en dólares, de veinticinco."
+  },
+  {
+   "inizio": 60.1,
    "testo": "En un solo día la campaña puede gastar hasta el doble,"
   },
   {
-   "inizio": 57.2,
+   "inizio": 62.8,
    "testo": "es decir, treinta euros. Pero en toda la semana no pasa"
   },
   {
-   "inizio": 60.3,
+   "inizio": 65.6,
    "testo": "de siete veces el presupuesto:"
   },
   {
-   "inizio": 62.0,
+   "inizio": 67.3,
    "testo": "ciento cinco euros. Los días en que gasta menos dejan margen"
   },
   {
-   "inizio": 65.1,
+   "inizio": 70.8,
    "testo": "para los días siguientes. Cuando creas o editas la campaña,"
   },
   {
-   "inizio": 68.6,
+   "inizio": 74.7,
    "testo": "Ads Manager te muestra justo estos dos máximos."
   },
   {
-   "inizio": 72.3,
+   "inizio": 78.8,
    "testo": "Dos cosas que no hay que confundir."
   },
   {
-   "inizio": 74.8,
+   "inizio": 81.3,
    "testo": "El ritmo de gasto reparte el presupuesto en el tiempo,"
   },
   {
-   "inizio": 77.6,
+   "inizio": 84.2,
    "testo": "pero no garantiza ni un gasto igual cada día,"
   },
   {
-   "inizio": 80.3,
+   "inizio": 86.8,
    "testo": "ni que se gaste todo el presupuesto."
   },
   {
-   "inizio": 82.6,
+   "inizio": 89.1,
    "testo": "Luego está el umbral de pago:"
   },
   {
-   "inizio": 84.4,
+   "inizio": 90.9,
    "testo": "es el momento en que se cobra la tarjeta."
   },
   {
-   "inizio": 86.6,
+   "inizio": 93.1,
    "testo": "No es el presupuesto de la campaña,"
   },
   {
-   "inizio": 88.5,
+   "inizio": 95.1,
    "testo": "y no es un límite de gasto."
   },
   {
-   "inizio": 90.4,
+   "inizio": 97.0,
    "testo": "Y recuerda que los datos de gasto pueden llegar con siete"
   },
   {
-   "inizio": 93.3,
+   "inizio": 99.8,
    "testo": "u ocho horas de retraso:"
   },
   {
-   "inizio": 95.2,
+   "inizio": 101.7,
    "testo": "un gasto a cero no significa que no estés gastando."
   },
   {
-   "inizio": 99.1,
+   "inizio": 105.6,
    "testo": "Ahora, qué pagas. Depende del objetivo de la campaña."
   },
   {
-   "inizio": 102.5,
+   "inizio": 109.1,
    "testo": "Con Views pagas las impresiones,"
   },
   {
-   "inizio": 104.0,
+   "inizio": 110.5,
    "testo": "a coste por mil: es el CPM."
   },
   {
-   "inizio": 106.0,
+   "inizio": 112.6,
    "testo": "Con Clicks pagas cada clic:"
   },
   {
-   "inizio": 107.3,
+   "inizio": 113.8,
    "testo": "es el CPC. Con Conversions el sistema busca conversiones,"
   },
   {
-   "inizio": 111.3,
+   "inizio": 117.9,
    "testo": "pero pagas igualmente por clic o por impresiones,"
   },
   {
-   "inizio": 114.1,
+   "inizio": 120.7,
    "testo": "según la opción elegida. En ningún caso pagas por conversión:"
   },
   {
-   "inizio": 117.6,
+   "inizio": 124.2,
    "testo": "lo que optimizas y lo que pagas son dos ajustes distintos."
   },
   {
-   "inizio": 122.1,
+   "inizio": 128.6,
    "testo": "Las pujas están cambiando justo estos días."
   },
   {
-   "inizio": 125.2,
+   "inizio": 131.7,
    "testo": "La estrategia automática, que se llamaba Maximize Results,"
   },
   {
-   "inizio": 128.4,
+   "inizio": 134.9,
    "testo": "ahora se llama Intelligent bidding:"
   },
   {
-   "inizio": 130.3,
+   "inizio": 136.9,
    "testo": "ajusta sola las pujas para conseguir más resultados dentro del presupuesto,"
   },
   {
-   "inizio": 133.8,
+   "inizio": 140.3,
    "testo": "y ya viene seleccionada por defecto en los grupos de anuncios"
   },
   {
-   "inizio": 136.8,
+   "inizio": 143.3,
    "testo": "nuevos. Desde el lunes nueve de noviembre,"
   },
   {
-   "inizio": 139.4,
+   "inizio": 146.0,
    "testo": "en las campañas nuevas llegan Target CPC para los clics,"
   },
   {
-   "inizio": 142.4,
+   "inizio": 148.9,
    "testo": "y Target CPA para las conversiones,"
   },
   {
-   "inizio": 144.6,
+   "inizio": 151.1,
    "testo": "que sustituye a Max Bid."
   },
   {
-   "inizio": 146.4,
+   "inizio": 153.0,
    "testo": "El uno de enero de dos mil veintisiete,"
   },
   {
-   "inizio": 148.3,
+   "inizio": 154.8,
    "testo": "Max Bid y Max CPC se retiran también de las campañas"
   },
   {
-   "inizio": 151.3,
+   "inizio": 157.8,
    "testo": "que ya existen. Por eso,"
   },
   {
-   "inizio": 153.1,
+   "inizio": 159.7,
    "testo": "si un vídeo o una página antigua recomienda un Max CPC"
   },
   {
-   "inizio": 156.5,
+   "inizio": 163.0,
    "testo": "de tres a cinco dólares,"
   },
   {
-   "inizio": 158.2,
+   "inizio": 164.7,
    "testo": "está hablando de una opción que se va."
   },
   {
-   "inizio": 161.0,
+   "inizio": 167.5,
    "testo": "Y aquí está el error más común."
   },
   {
-   "inizio": 163.5,
+   "inizio": 170.0,
    "testo": "Target CPC y Target CPA no son precios máximos:"
   },
   {
-   "inizio": 167.0,
+   "inizio": 173.6,
    "testo": "son medias. Si pides, por ejemplo,"
   },
   {
-   "inizio": 169.6,
+   "inizio": 176.1,
    "testo": "un coste medio de cincuenta euros por conversión,"
   },
   {
-   "inizio": 172.7,
+   "inizio": 179.2,
    "testo": "algunas conversiones costarán más y otras menos,"
   },
   {
-   "inizio": 175.5,
+   "inizio": 182.0,
    "testo": "y también la media final puede salir más alta o más"
   },
   {
-   "inizio": 178.2,
+   "inizio": 184.7,
    "testo": "baja que tu objetivo."
   },
   {
-   "inizio": 180.5,
+   "inizio": 187.0,
    "testo": "¿Cómo eliges un objetivo realista?"
   },
   {
-   "inizio": 182.7,
+   "inizio": 189.2,
    "testo": "Mira los resultados recientes: si has gastado cuatrocientos euros"
   },
   {
-   "inizio": 185.8,
+   "inizio": 192.3,
    "testo": "y has conseguido diez compras,"
   },
   {
-   "inizio": 187.5,
+   "inizio": 194.1,
    "testo": "tu coste real por compra es de cuarenta euros."
   },
   {
-   "inizio": 190.1,
+   "inizio": 196.6,
    "testo": "Poner un objetivo de veinte no hará que pagues la mitad:"
   },
   {
-   "inizio": 192.8,
+   "inizio": 199.4,
    "testo": "un objetivo por debajo de los resultados reales puede frenar la"
   },
   {
-   "inizio": 195.8,
+   "inizio": 202.3,
    "testo": "entrega de los anuncios."
   },
   {
-   "inizio": 198.0,
+   "inizio": 204.5,
    "testo": "Así que este es nuestro consejo para tu primera campaña."
   },
   {
-   "inizio": 201.3,
-   "testo": "Presupuesto diario, al menos quince euros,"
+   "inizio": 207.8,
+   "testo": "Presupuesto diario: al menos el mínimo de tu moneda,"
   },
   {
-   "inizio": 203.5,
-   "testo": "sabiendo que un día puede llegar a treinta."
+   "inizio": 210.6,
+   "testo": "quince euros o ciento cincuenta pesos mexicanos,"
   },
   {
-   "inizio": 205.7,
+   "inizio": 213.2,
+   "testo": "sabiendo que un día puede llegar al doble."
+  },
+  {
+   "inizio": 215.5,
    "testo": "Intelligent bidding, sin objetivo de coste:"
   },
   {
-   "inizio": 207.8,
+   "inizio": 217.6,
    "testo": "al principio todavía no tienes datos propios de los que partir."
   },
   {
-   "inizio": 210.9,
+   "inizio": 220.7,
    "testo": "Los objetivos de coste los añades después,"
   },
   {
-   "inizio": 213.0,
+   "inizio": 222.8,
    "testo": "cuando tengas un coste real que mirar."
   },
   {
-   "inizio": 215.0,
+   "inizio": 224.8,
    "testo": "Y en este recorrido la campaña se queda en pausa:"
   },
   {
-   "inizio": 217.5,
+   "inizio": 227.3,
    "testo": "la preparas, pero no gastas nada."
   },
   {
-   "inizio": 219.6,
+   "inizio": 229.4,
    "testo": "En la siguiente etapa vemos cómo medir los resultados."
   }
  ]

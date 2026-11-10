@@ -72,6 +72,16 @@ def main(slug, lingua):
              f"{schede} fichas ya hechas reutilizadas",
              f"percorsi/{nuovo}: map copied (videos in {nl}), {len(pert)} relevant videos already found, "
              f"{schede} cards already done reused"))
+    paese = m.get("paese") or "Italia"  # las fichas escriben «per_chi_impara» para este país (10/11: el curso español hablaba a Italia)
+    print(tr(f"paese di chi impara: {paese}. Se il percorso in {nl} è per un altro pubblico, cambia «paese» nella mappa e "
+             f"riscrivi avvisi e concetti legati al paese (valuta, disponibilità, leggi) prima delle schede nuove; le schede "
+             f"riusate parlano ancora a chi impara da {paese}",
+             f"país de quien aprende: {paese}. Si la ruta en {nl} es para otro público, cambia «paese» en el mapa y reescribe "
+             f"los avisos y conceptos ligados al país (moneda, disponibilidad, leyes) antes de las fichas nuevas; las fichas "
+             f"reutilizadas siguen hablando a quien aprende desde {paese}",
+             f"learner's country: {paese}. If the path in {nl} is for another audience, change «paese» in the map and rewrite "
+             f"the country-bound warnings and concepts (currency, availability, laws) before the new cards; the reused cards "
+             f"still speak to learners in {paese}"))
     comandi = (f"python strumenti/video.py lista {nuovo} · python strumenti/schede.py {nuovo} · "
                f"python strumenti/costruisci.py {nuovo}")
     print(tr(f"poi: {comandi}", f"después: {comandi}", f"next: {comandi}"))

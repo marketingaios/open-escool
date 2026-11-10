@@ -102,7 +102,7 @@
    "minuto": "00:05",
    "dice": "OpenAI ha abierto Ads Manager Beta en España y otros mercados",
    "verdetto": "giusta",
-   "perche": "El mapa confirma que Ads Manager self-service está disponible en España e Italia (tabla oficial de países, 'Available')."
+   "perche": "El mapa confirma que Ads Manager self-service está disponible en España y en casi toda América Latina (tabla oficial de países, 'Available')."
   },
   {
    "minuto": "00:53",
@@ -135,7 +135,7 @@
    "perche": "Es un buen consejo práctico de la autora, pero el mapa no fija un número mínimo obligatorio de variantes por grupo de anuncios."
   }
  ],
- "per_chi_impara": "Muy relevante para Italia (EEE): la interfaz de Ads Manager es idéntica a la italiana y europea. Sin embargo, el usuario italiano debe tener presente que en el Espacio Económico Europeo y en Suiza no se permite el uso de audiencias personalizadas (listas de clientes), que el presupuesto diario mínimo en euros es de 15 € y que es obligatorio poner el Pixel detrás del banner de consentimiento para cumplir las normas vigentes.",
+ "per_chi_impara": "Muy relevante para España (EEE): muestra la interfaz europea de Ads Manager. Hay que tener presente que en el Espacio Económico Europeo y en Suiza no se permite el uso de audiencias personalizadas (listas de clientes), que el presupuesto diario mínimo en euros es de 15 € y que el Pixel va detrás del banner de consentimiento para cumplir el RGPD. Desde América Latina cambian la moneda y el mínimo (150 MXN en pesos mexicanos, 25 $ en dólares) y la regla de las audiencias personalizadas no se aplica.",
  "qualita": {
   "voto": 4,
   "perche": "El vídeo es muy claro, está bien estructurado y muestra la interfaz real de Ads Manager en español, con una explicación detallada tanto de la teoría del contexto como de la práctica de creación de la campaña. Algunos detalles sobre las pujas de CPC manuales cambiaron después del lanzamiento de Intelligent Bidding en noviembre de 2026."

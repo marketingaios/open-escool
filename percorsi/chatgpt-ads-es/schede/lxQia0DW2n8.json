@@ -130,7 +130,7 @@
    "minuto": "0:14",
    "dice": "A inicios de agosto está abierta en México y Brasil, y el próximo mes va a estar en Europa incluyendo España.",
    "verdetto": "superata",
-   "perche": "El vídeo se grabó en agosto de 2026 durante la fase inicial del despliegue; el mapa indica que Italia y los países europeos están oficialmente disponibles en self-service en la lista oficial de Ads Manager."
+   "perche": "El vídeo se grabó en agosto de 2026, durante la fase inicial del despliegue; hoy la lista oficial de Ads Manager da como disponibles en self-service a España, a los demás países europeos y a casi toda América Latina."
   },
   {
    "minuto": "3:38",
@@ -157,7 +157,7 @@
    "perche": "Como confirma el punto 1 del mapa, los anuncios solo se muestran a los usuarios de los planes Free y Go, y no aparecen a los usuarios de los planes Plus, Pro, Business, Enterprise y Edu."
   }
  ],
- "per_chi_impara": "El vídeo ofrece una excelente demostración práctica del uso de GA4 y de los parámetros UTM para hacer el seguimiento de las campañas en ChatGPT Ads. Para los anunciantes italianos (UE), hay que recordar que el presupuesto diario mínimo para cuentas en EUR es de 15 € (no 25 $) y que las listas de clientes/retargeting no se pueden aplicar hacia el EEE por restricciones de privacidad.",
+ "per_chi_impara": "El vídeo ofrece una excelente demostración práctica del uso de GA4 y de los parámetros UTM para hacer el seguimiento de las campañas en ChatGPT Ads. Recuerda que el presupuesto diario mínimo depende de la moneda (15 € en euros, 150 MXN en pesos mexicanos, 25 $ en dólares) y que las listas de clientes y el retargeting no se pueden aplicar en campañas dirigidas al EEE (España incluida) por restricciones de privacidad.",
  "qualita": {
   "voto": 5,
   "perche": "Excelente caso de estudio real, con un análisis transparente de los costos, comparación directa entre Ads Manager y GA4, y reflexiones críticas y concretas sobre la calidad de los leads B2B."

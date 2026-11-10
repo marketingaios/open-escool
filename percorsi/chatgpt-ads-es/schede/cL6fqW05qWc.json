@@ -115,7 +115,7 @@
    "minuto": "0:36",
    "dice": "El self-service para España y la expansión europea se anunció a finales de agosto (31 de agosto de 2026)",
    "verdetto": "giusta",
-   "perche": "El mapa lo confirma en los cambios recientes: '2026-08-31: Self-service desde Ads Manager en Europa, Italia incluida'"
+   "perche": "El mapa lo confirma en los cambios recientes: '2026-08-31: Self-service desde Ads Manager en Europa, España incluida'"
   },
   {
    "minuto": "0:54",
@@ -184,7 +184,7 @@
    "perche": "El mapa, en la etapa 1, lo confirma: 'Los anuncios no cambian las respuestas de ChatGPT: funcionan en sistemas separados' y 'El anunciante solo recibe datos agregados... nunca las conversaciones'"
   }
  ],
- "per_chi_impara": "Muy relevante para entender las reglas europeas e internacionales: aclara las restricciones estrictas fuera de EE. UU. sobre salud, finanzas y legal, la disponibilidad en Europa (Italia incluida) y la gestión de la zona horaria y del calendario (semana de domingo a sábado). Atención solo a dos detalles concretos para Italia: el presupuesto diario mínimo real en EUR es de 15 € (y no 10 €) y el idioma hablado es el español.",
+ "per_chi_impara": "Muy relevante para entender las reglas europeas e internacionales: aclara las restricciones estrictas fuera de EE. UU. sobre salud, finanzas y legal, la disponibilidad en Europa (España incluida) y la gestión de la zona horaria y del calendario (semana de domingo a sábado). Un detalle concreto: el presupuesto diario mínimo en euros es de 15 € (no 10 €); en otras monedas cambia (150 MXN en pesos mexicanos, 25 $ en dólares).",
  "qualita": {
   "voto": 4,
   "perche": "Explicación conceptual impecable, basada rigurosamente en las guías oficiales de OpenAI. Excelentes la claridad gráfica y la prudencia financiera al enseñar cómo funciona el presupuesto flexible (hasta 2x al día). No llega a la nota máxima solo porque no muestra directamente la interfaz de Ads Manager y por el idioma español."
