@@ -8,7 +8,7 @@
  "disposizione": {"chat": "destra", "tappe": "sinistra", "densita": "comoda"},
  "assistente": {"motore": "claude", "modello_claude": "sonnet", "modello_codex": ""},
  "profilo": {"nome": "", "livello": "principiante", "obiettivo": "", "come_spiegare": "esempi concreti, frasi brevi"},
- "sottotitoli": {"lingua": "es", "sempre": true},
+ "sottotitoli": {"lingua": "", "sempre": true},
  "aggiornamento": {"avviso_dopo_giorni": 30},
  "buco": {"dubbi_per_segnale": 2},
  "lezioni": {

@@ -166,6 +166,8 @@ principal de la etapa (los vídeos de YouTube se quedan como alternativas). Form
    instalar.
 2. **El código.** Si el usuario da un enlace al repositorio: `git clone <link>` en la carpeta que elija (por defecto
    `~/open-escool`, en Windows `%USERPROFILE%\open-escool`); sin git, descarga el zip del repositorio y descomprímelo.
+   **Idioma:** si la persona te escribe en italiano o en inglés, antes del instalador crea `config.json` con `{"lingua": "it"}`
+   (o `"en"`): el instalador lo respeta y la página, los subtítulos y los mensajes salen en su idioma desde el principio.
 3. Lanza el instalador: Mac/Linux `sh installa.sh`, Windows `powershell -ExecutionPolicy Bypass -File installa.ps1`.
    Crea `config.json`, las carpetas, el arranque automático al iniciar sesión (pregunta antes: «¿quieres que arranque sola al
    encender el ordenador?») y abre la página. Instala también las **lecciones generadas** (Node, ffmpeg, Remotion, voz gratuita: ~2 GB, en Mac con Apple Silicon
